@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Matematika PEC</title>
+<meta name="description" content="Přípravný kurz matematiky PEC Praha: lekce, domácí úkoly, vzorce a samokontrola pro linie VŠE a ČVUT.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+:root {
+  --bg: #1F2933; --fg: #FFFFFF; --muted: #AEB7C2; --line: #3A4552; --accent: #8DB8EC; --card: #26323E; --card-hover: #2D3B49;
+  --f-display: "Space Grotesk", "Inter", system-ui, sans-serif; --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box }
+html, body { height: 100% }
+body {
+  margin: 0; font-family: var(--f-body); color: var(--fg); background: var(--bg);
+  background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+  display: grid; place-items: center;
+  padding: max(32px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(32px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+}
+main { width: 100%; max-width: 720px; display: grid; gap: 28px }
+.eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+h1 { font-family: var(--f-display); font-size: clamp(36px, 9vw, 58px); line-height: 1; margin: 8px 0 12px; letter-spacing: -.015em }
+h1 span { color: var(--accent); font-weight: 500 }
+p { color: var(--muted); margin: 0; max-width: 52ch; line-height: 1.55 }
+.lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px }
+a.line { display: grid; gap: 6px; text-decoration: none; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px 22px 20px; position: relative; overflow: hidden; min-height: 150px; align-content: end }
+a.line:hover { background: var(--card-hover); border-color: var(--accent) }
+a.line:focus-visible { outline: 3px solid #E0C15A; outline-offset: 3px }
+a.line .tag { position: absolute; top: 16px; right: 18px; font-family: var(--f-display); font-weight: 700; font-size: 44px; color: rgba(141,184,236,.18); line-height: 1 }
+a.line b { font-family: var(--f-display); font-size: 26px }
+a.line small { color: var(--muted); font-size: 14px; line-height: 1.45 }
+a.line .go { color: var(--accent); font-weight: 600; font-size: 14px; margin-top: 6px }
+footer { font-size: 12px; color: var(--muted) }
+@media (prefers-reduced-motion: no-preference) { a.line { transition: background .15s, border-color .15s } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">PEC Praha · přípravný kurz</div>
+    <h1>Matematika <span>PEC</span></h1>
+    <p>Лекции, домашние задания, шпаргалки и самопроверка. Выберите свою группу.</p>
+  </header>
+  <div class="lines">
+    <a class="line" href="vse/">
+      <span class="tag">90′</span>
+      <b>Linie VŠE</b>
+      <small>Подготовка к přijímačkám VŠE и SCIO OSP · занятия по 90 минут</small>
+      <span class="go">Открыть →</span>
+    </a>
+    <a class="line" href="cvut/">
+      <span class="tag">135′</span>
+      <b>Linie ČVUT</b>
+      <small>Подготовка к přijímačkám ČVUT (FIT, FEL, FBMI…) · занятия по 135 минут</small>
+      <span class="go">Открыть →</span>
+    </a>
+  </div>
+  <footer>Сохраните ссылку своей группы в закладки — новые темы появляются на ней сами.</footer>
+</main>
+</body>
+</html>

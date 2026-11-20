@@ -1,0 +1,1103 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><title>Matematika VŠE · PEC</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: тёмная полоса как титул листов курса + числовая ось курса (1…35); ниже «тема недели» и темы по месяцам на клетчатой бумаге; шпаргалка и самопроверка — в выезжающей панели */
+:root {
+  --ink: #1F2933; --bg: #FAFBFC; --paper: #FFFFFF; --grid: #E7ECF2;
+  --fg: #1F2933; --muted: #5F6B7A; --line: #D5DBE2;
+  --accent: #2A64A8; --accent-bg: #EEF3FA; --gold: #A88400; --gold-bg: #FDF9EC;
+  --ok: #3E7D52; --ok-bg: #EDF6F0; --bad: #A8322F; --bad-bg: #FBEFEF;
+  --band: #1F2933; --band-fg: #FFFFFF; --band-muted: #AEB7C2; --band-line: #3A4552; --band-accent: #8DB8EC;
+  --scrim: rgba(15,20,26,.45);
+  --shadow: 0 1px 2px rgba(31,41,51,.06), 0 4px 16px rgba(31,41,51,.06);
+  --f-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12171D; --paper: #1A2129; --grid: #1A2028; --fg: #E6EAEF; --muted: #98A3B0; --line: #2C3540;
+  --accent: #7FAEE6; --accent-bg: #1C2A3B; --gold: #E0C15A; --gold-bg: #2A2615;
+  --ok: #7CC493; --ok-bg: #1B2B21; --bad: #EE8A85; --bad-bg: #331E1E;
+  --band: #0B0F14; --band-fg: #F3F5F7; --band-muted: #8C97A4; --band-line: #2A333D; --band-accent: #8DB8EC;
+  --scrim: rgba(0,0,0,.6); --shadow: 0 1px 2px rgba(0,0,0,.3); color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12171D; --paper: #1A2129; --grid: #1A2028; --fg: #E6EAEF; --muted: #98A3B0; --line: #2C3540;
+  --accent: #7FAEE6; --accent-bg: #1C2A3B; --gold: #E0C15A; --gold-bg: #2A2615;
+  --ok: #7CC493; --ok-bg: #1B2B21; --bad: #EE8A85; --bad-bg: #331E1E;
+  --band: #0B0F14; --band-fg: #F3F5F7; --band-muted: #8C97A4; --band-line: #2A333D; --band-accent: #8DB8EC;
+  --scrim: rgba(0,0,0,.6); --shadow: 0 1px 2px rgba(0,0,0,.3); color-scheme: dark }
+
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+body {
+  margin: 0; font-family: var(--f-body); font-size: 15px; line-height: 1.5; color: var(--fg);
+  background-color: var(--bg);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.wrap { max-width: 780px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+math { font-size: 1.08em }
+
+/* header */
+header.band { background: var(--band); color: var(--band-fg); margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: calc(env(safe-area-inset-top, 0px) + 28px); padding-bottom: 22px }
+.eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--band-muted); display: flex; gap: 10px; flex-wrap: wrap }
+h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(32px, 7.5vw, 46px); line-height: 1.05; margin: 6px 0 8px; letter-spacing: -.01em; text-wrap: balance }
+h1 .fx { font-weight: 500; color: var(--band-accent) }
+.sub { color: var(--band-muted); margin: 0; max-width: 60ch }
+.axis { margin-top: 22px }
+.axis-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--band-muted) }
+.axis-head b { color: var(--band-fg); font-family: var(--f-display); font-size: 15px; font-variant-numeric: tabular-nums }
+.axis svg { display: block; width: 100%; height: 46px; margin-top: 6px; overflow: visible }
+
+main { padding-block: 24px 40px; display: grid; gap: 30px }
+h2 { font-family: var(--f-display); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; font-weight: 500; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap }
+h2 .mine { text-transform: none; letter-spacing: 0; font-family: var(--f-body); font-size: 13px; color: var(--ok) }
+
+/* this week */
+.week { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 22px; display: grid; gap: 16px; position: relative; overflow: hidden }
+.week::after { content: attr(data-n); position: absolute; right: -6px; bottom: -34px; font-family: var(--f-display); font-weight: 700; font-size: 150px; line-height: 1; color: var(--accent-bg); pointer-events: none; font-variant-numeric: tabular-nums }
+.week > * { position: relative; z-index: 1 }
+@media (max-width: 560px) { .week::after { display: none } }
+.week .num { font-family: var(--f-display); font-size: 13px; color: var(--accent); font-weight: 700; letter-spacing: .06em }
+.week h3 { font-family: var(--f-display); font-size: 25px; line-height: 1.2; margin: 2px 0 0; text-wrap: balance; max-width: 22ch }
+.btns { display: flex; flex-wrap: wrap; gap: 10px }
+.btn { appearance: none; border: 1px solid var(--accent); background: var(--accent); color: var(--paper); font: 600 15px/1 var(--f-body);
+  padding: 12px 16px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; min-height: 44px }
+.btn.ghost { background: var(--paper); color: var(--accent) }
+.btn.soft { background: var(--accent-bg); color: var(--accent); border-color: var(--line) }
+.btn small { font-weight: 500; opacity: .75; font-variant-numeric: tabular-nums }
+.btn:focus-visible, .chip:focus-visible, .x:focus-visible, .vbtn:focus-visible, .opt:focus-visible, .score:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px }
+.hint { font-size: 13px; color: var(--muted); background: var(--gold-bg); border-left: 3px solid var(--gold); padding: 8px 12px; border-radius: 0 6px 6px 0; margin: 0; max-width: 60ch }
+
+/* topic list */
+.month { display: grid; gap: 8px }
+.month + .month { margin-top: 18px }
+.mname { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding-left: 2px }
+ol.topics { list-style: none; padding: 0; margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; overflow: hidden }
+ol.topics li { display: grid; grid-template-columns: 40px 1fr auto; gap: 12px; align-items: center; padding: 12px 14px; border-top: 1px solid var(--line) }
+ol.topics li:first-child { border-top: 0 }
+ol.topics li.done .tn { color: var(--ok) }
+.tn { font-family: var(--f-display); font-weight: 700; font-size: 19px; color: var(--muted); font-variant-numeric: tabular-nums }
+.tt { min-width: 0; font-weight: 500 }
+.tt .new { display: inline-block; margin-left: 8px; font-size: 11px; font-weight: 700; letter-spacing: .06em; color: var(--accent); background: var(--accent-bg); border-radius: 4px; padding: 2px 6px; vertical-align: 2px }
+.acts { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end }
+.chip { appearance: none; border: 1px solid var(--line); background: var(--accent-bg); color: var(--accent); font: 600 13px/1 var(--f-body); padding: 9px 11px; border-radius: 6px; cursor: pointer; min-height: 36px }
+.chip.plain { background: var(--paper) }
+.chip:hover, .btn.ghost:hover, .btn.soft:hover { border-color: var(--accent) }
+.score { appearance: none; font: 600 13px/1 var(--f-body); border-radius: 6px; padding: 9px 10px; min-height: 36px; cursor: pointer; border: 1px dashed var(--line); background: transparent; color: var(--muted); font-variant-numeric: tabular-nums }
+.score.has { border-style: solid; border-color: var(--ok); color: var(--ok); background: var(--ok-bg) }
+.score.mid { border-style: solid; border-color: var(--gold); color: var(--gold); background: var(--gold-bg) }
+@media (max-width: 640px) {
+  ol.topics li { grid-template-columns: 28px 1fr; row-gap: 8px; column-gap: 10px; padding: 12px }
+  .acts { grid-column: 2; justify-content: flex-start; gap: 5px }
+  .chip, .score { padding: 8px 8px; font-size: 12.5px }
+}
+footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: grid; gap: 6px; max-width: 64ch }
+
+/* side sheet (formulas, self-check) */
+.sheet-wrap { position: fixed; inset: 0; z-index: 40; background: var(--scrim); display: flex; justify-content: flex-end }
+.sheet { background: var(--bg); width: min(560px, 100%); height: 100%; display: flex; flex-direction: column; box-shadow: -8px 0 32px rgba(0,0,0,.18) }
+.shead { display: flex; align-items: flex-start; gap: 12px; padding-top: calc(env(safe-area-inset-top, 0px) + 16px); padding-bottom: 14px; padding-left: 20px; padding-right: max(16px, env(safe-area-inset-right, 0px)); border-bottom: 1px solid var(--line); background: var(--paper) }
+.shead .k { font-family: var(--f-display); font-size: 12px; letter-spacing: .08em; color: var(--accent); font-weight: 700; text-transform: uppercase }
+.shead h3 { margin: 2px 0 0; font-family: var(--f-display); font-size: 20px; line-height: 1.25; text-wrap: balance }
+.shead > div { flex: 1; min-width: 0 }
+.sbody { flex: 1; overflow: auto; padding: 18px 20px 28px; padding-right: max(20px, env(safe-area-inset-right, 0px)); display: grid; gap: 16px; align-content: start }
+.x { appearance: none; background: transparent; border: 1px solid var(--line); color: var(--fg); border-radius: 8px; min-width: 38px; min-height: 38px; font-size: 20px; cursor: pointer; flex: none }
+
+.card { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; line-height: 1.75; overflow-x: auto }
+.card b { font-family: var(--f-display); font-weight: 700; color: var(--accent) }
+.card br.gap { display: block; content: ""; margin-top: 10px }
+.note { font-size: 13px; color: var(--muted); margin: 0 }
+
+.qpart h4 { margin: 0 0 8px; font-family: var(--f-display); font-size: 15px; display: flex; justify-content: space-between; gap: 8px }
+.qpart h4 span { color: var(--muted); font-family: var(--f-body); font-weight: 500; font-size: 13px; font-variant-numeric: tabular-nums }
+.qlist { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; overflow: hidden }
+.qrow { display: grid; grid-template-columns: 44px 1fr auto; gap: 10px; align-items: center; padding: 7px 10px; border-top: 1px solid var(--line) }
+.qrow:first-child { border-top: 0 }
+.qn { font-family: var(--f-display); font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums }
+.opts { display: flex; gap: 6px; flex-wrap: wrap }
+.opt { appearance: none; width: 38px; height: 38px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: 600 15px/1 var(--f-display); cursor: pointer }
+.opt[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--paper) }
+.qrow .res { font-size: 13px; font-weight: 600; min-width: 64px; text-align: right }
+.qrow.right { background: var(--ok-bg) } .qrow.right .res { color: var(--ok) }
+.qrow.wrong { background: var(--bad-bg) } .qrow.wrong .res { color: var(--bad) }
+.qrow.wrong .opt.correct, .qrow.empty .opt.correct { border: 2px solid var(--ok); color: var(--ok) }
+.qrow.empty .res { color: var(--muted) }
+.qbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 12px 20px calc(12px + env(safe-area-inset-bottom, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); background: var(--paper); border-top: 1px solid var(--line) }
+.qbar .sum { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums }
+.qbar .sum b { color: var(--fg); font-family: var(--f-display); font-size: 18px }
+.verdict { border-radius: 10px; padding: 14px 16px; display: grid; gap: 4px }
+.verdict.good { background: var(--ok-bg); color: var(--ok) } .verdict.mid { background: var(--gold-bg); color: var(--gold) } .verdict.low { background: var(--bad-bg); color: var(--bad) }
+.verdict b { font-family: var(--f-display); font-size: 22px; font-variant-numeric: tabular-nums }
+.verdict span { color: var(--fg); font-size: 14px }
+@media (max-width: 420px) { .opt { width: 34px; height: 36px } .qrow { grid-template-columns: 36px 1fr } .qrow .res { grid-column: 2; text-align: left; min-width: 0 } }
+
+/* result code */
+.codebox { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 10px }
+.codebox .lbl { font-size: 13px; color: var(--muted) }
+.codebox code { display: block; font: 600 14px/1.45 ui-monospace, "SF Mono", Menlo, Consolas, monospace; background: var(--accent-bg); color: var(--fg); border-radius: 6px; padding: 10px 12px; word-break: break-word; user-select: all }
+.namerow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+.namerow label { font-size: 13px; color: var(--muted) }
+.namerow input { font: 500 15px/1 var(--f-body); padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); min-width: 0; flex: 1 1 160px; min-height: 40px }
+.namerow input:focus-visible { outline: 3px solid var(--gold); outline-offset: 1px }
+
+/* exam */
+.examcta { background: var(--band); color: var(--band-fg); border-radius: 12px; padding: 22px; display: grid; gap: 14px; grid-template-columns: 1fr auto; align-items: center }
+.examcta h3 { margin: 0; font-family: var(--f-display); font-size: 22px }
+.examcta p { margin: 4px 0 0; color: var(--band-muted); font-size: 14px; max-width: 46ch }
+.examcta .best { font-size: 13px; color: var(--band-accent); margin-top: 6px }
+.examcta .btn { background: var(--band-accent); border-color: var(--band-accent); color: var(--band) }
+#examcta { display: grid; gap: 12px }
+#examcta > .examcta.alt { background: var(--paper); color: var(--fg); border: 1px solid var(--line) }
+#examcta > .examcta.alt p { color: var(--muted) }
+#examcta > .examcta.alt .best { color: var(--accent) }
+#examcta > .examcta.alt .btn { background: var(--accent); border-color: var(--accent); color: var(--paper) }
+.esol { font-size: 14px; line-height: 1.7; background: var(--bg); border-radius: 8px; padding: 10px 12px; overflow-x: auto }
+@media (max-width: 560px) { .examcta { grid-template-columns: 1fr } }
+.sheet.wide { width: min(780px, 100%) }
+.etask { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 12px; scroll-margin-top: 12px }
+.etask .eh { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; align-items: baseline }
+.etask .eh b { font-family: var(--f-display); font-size: 17px }
+.etask .eh span { font-size: 12px; color: var(--muted) }
+.etask .ebody { line-height: 1.7; overflow-x: auto }
+.eopts { display: grid; gap: 8px }
+.eopt { appearance: none; text-align: left; display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: center; padding: 8px 12px 8px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); font: 400 15px/1.5 var(--f-body); cursor: pointer; min-height: 44px }
+.eopt .L { width: 30px; height: 30px; border-radius: 6px; display: grid; place-items: center; font: 700 14px/1 var(--f-display); background: var(--accent-bg); color: var(--accent) }
+.eopt[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent) }
+.eopt[aria-pressed="true"] .L { background: var(--accent); color: var(--paper) }
+.eopt:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px }
+.etask.right { border-color: var(--ok) } .etask.wrong { border-color: var(--bad) }
+.eopt.correct { border-color: var(--ok); background: var(--ok-bg) } .eopt.correct .L { background: var(--ok); color: var(--paper) }
+.eopt.chosen-wrong { border-color: var(--bad); background: var(--bad-bg) } .eopt.chosen-wrong .L { background: var(--bad); color: var(--paper) }
+.etag { font-size: 13px; font-weight: 600 } .etask.right .etag { color: var(--ok) } .etask.wrong .etag { color: var(--bad) } .etask.empty .etag { color: var(--muted) }
+.timer { font: 700 20px/1 var(--f-display); font-variant-numeric: tabular-nums; color: var(--fg) }
+.timer.low { color: var(--bad) }
+.dots { display: flex; gap: 4px; flex-wrap: wrap }
+.dots button { appearance: none; width: 26px; height: 26px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--muted); font: 600 12px/1 var(--f-body); cursor: pointer }
+.dots button.on { background: var(--accent); border-color: var(--accent); color: var(--paper) }
+.hist { display: grid; gap: 6px; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums }
+.hist b { color: var(--fg) }
+
+/* new marks */
+.fresh { position: relative }
+.fresh::after { content: ""; position: absolute; top: -4px; right: -4px; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); border: 2px solid var(--paper) }
+/* warm-up card on paper */
+#warmcta, #toolscta > .examcta { background: var(--paper); color: var(--fg); border: 1px solid var(--line) }
+#warmcta p, #toolscta p { color: var(--muted) }
+#warmcta .best { color: var(--ok) }
+#warmcta .btn, #toolscta .btn { background: var(--accent); border-color: var(--accent); color: var(--paper) }
+/* glossary */
+.glist { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; overflow: hidden }
+.gtopic { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 12px 14px 6px; background: var(--bg) }
+.grow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 9px 14px; border-top: 1px solid var(--line) }
+.gcz { font-weight: 600; font-style: italic } .gru { color: var(--muted) }
+@media (max-width: 420px) { .grow { grid-template-columns: 1fr; gap: 2px } }
+.fcard { appearance: none; width: 100%; min-height: 220px; border-radius: 14px; border: 1px solid var(--line); background: var(--paper); color: var(--fg); display: grid; place-items: center; align-content: center; gap: 10px; padding: 24px; cursor: pointer; box-shadow: var(--shadow); font-family: var(--f-body) }
+.fcard.flipped { background: var(--accent-bg); border-color: var(--accent) }
+.fcard:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px }
+.fside { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+.fmain { font-family: var(--f-display); font-size: 26px; font-weight: 700; text-align: center; text-wrap: balance }
+.fsub { font-size: 14px; color: var(--muted); text-align: center }
+
+/* pdf viewer */
+.viewer { position: fixed; inset: 0; z-index: 50; background: var(--bg); display: flex; flex-direction: column }
+.vbar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; background: var(--band); color: var(--band-fg);
+  padding-top: calc(env(safe-area-inset-top, 0px) + 10px); padding-bottom: 10px;
+  padding-left: max(12px, env(safe-area-inset-left, 0px)); padding-right: max(12px, env(safe-area-inset-right, 0px)) }
+.vbar .x { border-color: var(--band-line); color: var(--band-fg) }
+.vtitle { flex: 1 1 220px; min-width: 0; display: grid; line-height: 1.25 }
+.vtitle b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 600 }
+.vtitle span { font-size: 12px; color: var(--band-muted); font-variant-numeric: tabular-nums }
+.vbtn { appearance: none; border: 1px solid var(--band-line); background: transparent; color: var(--band-fg); font: 600 14px/1 var(--f-body); padding: 9px 12px; border-radius: 8px; cursor: pointer; min-height: 38px; text-decoration: none; display: inline-flex; align-items: center }
+.vbtn.primary { background: var(--accent); border-color: var(--accent); color: var(--paper) }
+.vbtn.key { border-color: var(--gold); color: var(--gold) }
+.pages { flex: 1; overflow: auto; padding: 16px max(12px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); display: grid; gap: 14px; justify-items: center; align-content: start }
+.pages canvas { width: 100%; max-width: 860px; height: auto; background: #fff; box-shadow: var(--shadow); border-radius: 2px; scroll-margin-top: 12px }
+.status { color: var(--muted); padding: 24px; text-align: center; max-width: 46ch }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: #fff; padding: 10px 14px; border-radius: 8px; font-size: 14px; z-index: 60; max-width: calc(100% - 32px) }
+@media (prefers-reduced-motion: no-preference) {
+  .chip, .btn, .opt, .score { transition: border-color .15s, background .15s, color .15s }
+  .sheet { animation: slide .22s ease-out }
+  @keyframes slide { from { transform: translateX(24px); opacity: .6 } to { transform: none; opacity: 1 } }
+}
+</style>
+
+</head><body><header class="band">
+  <div class="wrap">
+    <div class="eyebrow"><span>PEC Praha</span><span>·</span><span>Linie VŠE</span><span>·</span><span>90 min</span></div>
+    <h1>Matematika <span class="fx">VŠE</span></h1>
+    <p class="sub">Přípravný kurz na přijímací zkoušky VŠE: lekce a domácí úkoly</p>
+    <div class="axis">
+      <div class="axis-head"><span>Курс: 35 тем, от множеств до стереометрии</span><span>пройдено <b id="axis-n"></b> из 35</span></div>
+      <svg id="axis" viewBox="0 0 700 46" role="img"></svg>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<main>
+  <section aria-labelledby="h-week">
+    <h2 id="h-week">Тема этой недели</h2>
+    <div class="week" id="week"></div>
+  </section>
+
+  <section aria-labelledby="h-warm">
+    <h2 id="h-warm">Повторение</h2>
+    <div class="examcta alt" id="warmcta"></div>
+  </section>
+
+  <section aria-labelledby="h-exam">
+    <h2 id="h-exam">Экзамены</h2>
+    <div id="examcta"></div>
+  </section>
+
+  <section aria-labelledby="h-tools" id="toolswrap">
+    <h2 id="h-tools">Язык экзамена</h2>
+    <div id="toolscta"></div>
+  </section>
+
+  <section aria-labelledby="h-all">
+    <h2 id="h-all"><span>Все темы</span><span class="mine" id="mine"></span></h2>
+    <div id="months"></div>
+  </section>
+
+  <footer>
+    <span><b>Лекция</b> — то, что разбираем на занятии. <b>Domácí úkol</b> — решите до следующего занятия. <b>Формулы</b> — вся тема на одной карточке.</span>
+    <span><b>Тест</b>: решите ДЗ на бумаге, отметьте свои ответы и сразу узнайте результат. Ответы видите только вы, они хранятся в этом браузере.</span>
+  </footer>
+</main>
+</div>
+
+<div class="sheet-wrap" id="sheetwrap" hidden>
+  <aside class="sheet" role="dialog" aria-modal="true" aria-labelledby="stitle">
+    <div class="shead"><div><div class="k" id="skind"></div><h3 id="stitle"></h3></div><button class="x" id="sclose" aria-label="Закрыть">×</button></div>
+    <div class="sbody" id="sbody"></div>
+    <div class="qbar" id="qbar" hidden></div>
+  </aside>
+</div>
+
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="vtitle-b">
+  <div class="vbar">
+    <button class="x" id="vclose" aria-label="Закрыть">×</button>
+    <div class="vtitle"><b id="vtitle-b"></b><span id="vpage"></span></div>
+    <button class="vbtn key" id="vtest" hidden>Проверка</button>
+    <button class="vbtn key" id="vkey" hidden>К решениям</button>
+    <button class="vbtn primary" id="vsave" hidden>Скачать PDF</button>
+    <a class="vbtn primary" id="vdl" hidden download>Скачать PDF</a>
+    <a class="vbtn" id="vopen" target="_blank" rel="noopener">Открыть отдельно</a>
+  </div>
+  <div class="pages" id="pages"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script>
+const DATA = [{"n": 3, "name": "Rovnice (lineární, kvadratické, soustavy)", "lekce": {"path": "pdf/lekce_03.pdf", "pages": 11, "file": "Lekce_03_VSE.pdf"}, "du": {"path": "pdf/du_03.pdf", "pages": 8, "file": "DU_03_VSE.pdf"}, "card": ["<b>Линейное<\/b> <span class=\"m\" data-tex=\"ax=b\"><\/span>:  <span class=\"m\" data-tex=\"\\{\\frac ba\\}\"><\/span>, <span class=\"m\" data-tex=\"\\emptyset\"><\/span> или <span class=\"m\" data-tex=\"\\R\"><\/span><br> <b>Проценты:<\/b> <span class=\"m\" data-tex=\"\\pm p\\,\\%\"><\/span> = умножить на <span class=\"m\" data-tex=\"1\\pm\\frac p{100}\"><\/span><br> <b>Нельзя<\/b> делить на выражение с <span class=\"m\" data-tex=\"x\"><\/span><br> <b>Дробные:<\/b> сначала <span class=\"m\" data-tex=\"D\"><\/span>, в конце — отбросить<br> <b>Биквадратные:<\/b> <span class=\"m\" data-tex=\"t=x^2\\ge0\"><\/span><br> <b>Замена:<\/b> не забыть вернуться к <span class=\"m\" data-tex=\"x\"><\/span>", "<span class=\"m\" data-tex=\"D=b^2-4ac\"><\/span>,  <span class=\"m\" data-tex=\"x_{1,2}=\\dfrac{-b\\pm\\sqrt D}{2a}\"><\/span><br> <span class=\"m\" data-tex=\"x_1+x_2=-\\frac ba\"><\/span>,  <span class=\"m\" data-tex=\"x_1x_2=\\frac ca\"><\/span><br> <span class=\"m\" data-tex=\"x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2\"><\/span><br> <b>Системы:<\/b> подстановка / сложение;<br> <span class=\"m\" data-tex=\"x+y=s\"><\/span>, <span class=\"m\" data-tex=\"xy=r\"><\/span> <span class=\"m\" data-tex=\"\\Rightarrow\"><\/span> <span class=\"m\" data-tex=\"t^2-st+r=0\"><\/span>"], "gloss": [["rovnice / kořen", "уравнение / корень"], ["Vietovy vzorce", "формулы Виета"], ["množina kořenů", "множество корней"], ["lomená rovnice", "дробное уравнение"], ["definiční obor", "область определения"], ["bikvadratická rovnice", "биквадратное уравнение"], ["zkouška", "проверка"], ["substituce / zpětná s.", "замена / обратная замена"], ["společný jmenovatel", "общий знаменатель"], ["soustava rovnic", "система уравнений"], ["kvadratická rovnice", "квадратное уравнение"], ["dosazovací / sčítací metoda", "метод подстановки / сложения"], ["diskriminant", "дискриминант"], ["nemá řešení", "не имеет решений"], ["dvojnásobný kořen", "двойной корень"], ["sleva / zdražení / úrok", "скидка / подорожание / проценты"]], "quiz": [{"part": "A", "items": [{"q": "A1", "key": "A", "opts": "ABCDE"}, {"q": "A2", "key": "B", "opts": "ABCDE"}, {"q": "A3", "key": "C", "opts": "ABCDE"}, {"q": "A4", "key": "B", "opts": "ABCDE"}, {"q": "A5", "key": "A", "opts": "ABCDE"}, {"q": "A6", "key": "D", "opts": "ABCDE"}, {"q": "A7", "key": "C", "opts": "ABCDE"}, {"q": "A8", "key": "A", "opts": "ABCDE"}, {"q": "A9", "key": "E", "opts": "ABCDE"}, {"q": "A10", "key": "C", "opts": "ABCDE"}, {"q": "A11", "key": "D", "opts": "ABCDE"}, {"q": "A12", "key": "C", "opts": "ABCDE"}, {"q": "A13", "key": "D", "opts": "ABCDE"}, {"q": "A14", "key": "B", "opts": "ABCDE"}, {"q": "A15", "key": "A", "opts": "ABCDE"}, {"q": "A16", "key": "E", "opts": "ABCDE"}]}, {"part": "B", "items": [{"q": "B1", "key": "B", "opts": "ABCDE"}, {"q": "B2", "key": "D", "opts": "ABCDE"}, {"q": "B3", "key": "E", "opts": "ABCDE"}, {"q": "B4", "key": "C", "opts": "ABCDE"}, {"q": "B5", "key": "A", "opts": "ABCDE"}, {"q": "B6", "key": "D", "opts": "ABCDE"}]}, {"part": "D", "items": [{"q": "D1", "key": "d", "opts": "abcde"}, {"q": "D2", "key": "b", "opts": "abcd"}, {"q": "D3", "key": "b", "opts": "abcde"}, {"q": "D4", "key": "a", "opts": "abcd"}, {"q": "D5", "key": "b", "opts": "abcd"}, {"q": "D6", "key": "c", "opts": "abcd"}, {"q": "D7", "key": "e", "opts": "abcde"}, {"q": "D8", "key": "d", "opts": "abcde"}, {"q": "D9", "key": "c", "opts": "abcde"}, {"q": "D10", "key": "d", "opts": "abcde"}]}], "exam": [{"q": "D2", "src": "VŠE, vzorový test z matematiky, příklad 14, 10 bodů", "body": "O skupině 32 zaměstnanců máme následující informace ve vztahu k ovládání programu MS Teams a tvorbě kontingenčních tabulek. 24 zaměstnanců má alespoň jednu z těchto dovedností. 25 zaměstnanců má nejvýše jednu z nich. MS Teams ovládá o 7 více zaměstnanců, než je počet těch, co umí vytvářet kontingenční tabulky. Kolik minimálně členů musí mít tým, který bude náhodně vytvořený z této skupiny, aby byla jistota, že v týmu bude člen, který umí vytvářet kontingenční tabulky?", "opts": ["<span class=\"m\" data-tex=\"13\"><\/span>", "<span class=\"m\" data-tex=\"21\"><\/span>", "<span class=\"m\" data-tex=\"24\"><\/span>", "<span class=\"m\" data-tex=\"19\"><\/span>"], "letters": "abcd", "key": "b"}, {"q": "D4", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Součin všech reálných řešení rovnice <span class=\"m\" data-tex=\"(x^2-2x)^2-11(x^2-2x)+24=0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"24\"><\/span>", "<span class=\"m\" data-tex=\"-24\"><\/span>", "<span class=\"m\" data-tex=\"2\"><\/span>", "<span class=\"m\" data-tex=\"4\"><\/span>"], "letters": "abcd", "key": "a"}, {"q": "D5", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Množina všech reálných řešení rovnice <span class=\"m\" data-tex=\"\\dfrac{x}{x-2}+\\dfrac{2}{x+2}=\\dfrac{8}{x^2-4}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{2;-6\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-6\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "abcd", "key": "b"}, {"q": "D6", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Adam, Bára a Cyril mají dohromady 90 Kč. Adam má dvakrát víc než Bára a Bára má o 10 Kč víc než Cyril. Kolik korun má Adam?", "opts": ["<span class=\"m\" data-tex=\"40\"><\/span>", "<span class=\"m\" data-tex=\"25\"><\/span>", "<span class=\"m\" data-tex=\"50\"><\/span>", "<span class=\"m\" data-tex=\"60\"><\/span>"], "letters": "abcd", "key": "c"}, {"q": "D8", "src": "VŠE, vzor přijímacích zkoušek B, úloha 11 (přeformulováno)", "body": "Průměrný věk dětí v turistickém oddílu je 10 let. Když se do průměru započítá i vedoucí (54 let), průměrný věk vzroste o 2 roky. Počet dětí v oddílu leží v intervalu", "opts": ["<span class=\"m\" data-tex=\"(0;7)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle7;14)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle14;21)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle21;28)\"><\/span>", "jiná odpověď"], "letters": "abcde", "key": "d"}, {"q": "D9", "src": "VŠE, vzor přijímacích zkoušek B, úloha 9 (přeformulováno)", "body": "Náklad se má rozvézt v připravených kontejnerech. Kdyby se do každého naložilo 15,5 t, zbyly by 3 t nenaložené. Kdyby se do každého naložilo 18 t, jeden kontejner by zůstal prázdný a jeden by byl naložen jen zpola. Počet připravených kontejnerů leží v intervalu", "opts": ["<span class=\"m\" data-tex=\"(0;10)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle10;12)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle12;14)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle14;18)\"><\/span>", "jiná odpověď"], "letters": "abcde", "key": "c"}, {"q": "D10", "src": "VŠE, vzor přijímacích zkoušek A, úloha 11 (přeformulováno)", "body": "Průměrný počet bodů 10 studentů z testu je 75. Nejlepší student má o 40 \\", "opts": ["<span class=\"m\" data-tex=\"(60;65\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(65;70\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(70;75\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(75;80\\rangle\"><\/span>", "jiná odpověď"], "letters": "abcde", "key": "d"}], "bank": [{"q": "A1", "src": "Rovnice se zlomky", "body": "Řešte v <span class=\"m\" data-tex=\"\\R\"><\/span>:  <span class=\"m\" data-tex=\"\\dfrac{x-3}{4}-\\dfrac{2x+1}{6}=-1\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"1\"><\/span>", "<span class=\"m\" data-tex=\"-1\"><\/span>", "<span class=\"m\" data-tex=\"23\"><\/span>", "<span class=\"m\" data-tex=\"-23\"><\/span>", "<span class=\"m\" data-tex=\"5\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A2", "src": "Počet řešení", "body": "Kolik řešení má rovnice <span class=\"m\" data-tex=\"2(x+3)-2x=5\"><\/span>?", "opts": ["právě jedno", "žádné", "právě dvě", "nekonečně mnoho", "jen <span class=\"m\" data-tex=\"x=0\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A3", "src": "Pozor na definiční obor", "body": "Řešte v <span class=\"m\" data-tex=\"\\R\"><\/span>:  <span class=\"m\" data-tex=\"\\dfrac{x^2}{x+2}=\\dfrac{4}{x+2}\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"\\{-2;2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{-2\\}\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A4", "src": "Původní cena", "body": "Po zdražení o 8 \\", "opts": ["<span class=\"m\" data-tex=\"1\\,490{,}40\"><\/span> Kč", "<span class=\"m\" data-tex=\"1\\,500\"><\/span> Kč", "<span class=\"m\" data-tex=\"1\\,749{,}60\"><\/span> Kč", "<span class=\"m\" data-tex=\"1\\,612\"><\/span> Kč", "<span class=\"m\" data-tex=\"1\\,512\"><\/span> Kč"], "letters": "ABCDE", "key": "B"}, {"q": "A5", "src": "Neúplná kvadratická rovnice", "body": "Řešte v <span class=\"m\" data-tex=\"\\R\"><\/span>:  <span class=\"m\" data-tex=\"4x^2=12x\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"\\{0;3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-3;3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-3;0\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{0;12\\}\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A6", "src": "Diskriminant", "body": "Řešte v <span class=\"m\" data-tex=\"\\R\"><\/span>:  <span class=\"m\" data-tex=\"2x^2-x-6=0\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"\\bigl\\{-2;\\frac32\\bigr\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\bigl\\{\\frac32;2\\bigr\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\bigl\\{-2;-\\frac32\\bigr\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\bigl\\{-\\frac32;2\\bigr\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A7", "src": "Bez reálných kořenů", "body": "Která z rovnic <i>nemá<\/i> v <span class=\"m\" data-tex=\"\\R\"><\/span> žádné řešení?", "opts": ["<span class=\"m\" data-tex=\"x^2-4x+4=0\"><\/span>", "<span class=\"m\" data-tex=\"x^2-4=0\"><\/span>", "<span class=\"m\" data-tex=\"3x^2+2x+1=0\"><\/span>", "<span class=\"m\" data-tex=\"x^2+4x=0\"><\/span>", "<span class=\"m\" data-tex=\"2x^2-x-1=0\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A8", "src": "Vietovy vzorce", "body": "Čísla <span class=\"m\" data-tex=\"x_1,x_2\"><\/span> jsou kořeny rovnice <span class=\"m\" data-tex=\"x^2-7x+5=0\"><\/span>. Vypočtěte <span class=\"m\" data-tex=\"\\dfrac1{x_1}+\\dfrac1{x_2}\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"\\dfrac75\"><\/span>", "<span class=\"m\" data-tex=\"-\\dfrac75\"><\/span>", "<span class=\"m\" data-tex=\"\\dfrac57\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>", "<span class=\"m\" data-tex=\"35\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A9", "src": "Rovnice se zadanými kořeny", "body": "Která rovnice má kořeny <span class=\"m\" data-tex=\"x_1=-1\"><\/span> a <span class=\"m\" data-tex=\"x_2=\\frac25\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"5x^2-3x-2=0\"><\/span>", "<span class=\"m\" data-tex=\"5x^2+3x+2=0\"><\/span>", "<span class=\"m\" data-tex=\"x^2+3x-2=0\"><\/span>", "<span class=\"m\" data-tex=\"5x^2+7x+2=0\"><\/span>", "<span class=\"m\" data-tex=\"5x^2+3x-2=0\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A10", "src": "Rozklad a krácení", "body": "Zjednodušte pro <span class=\"m\" data-tex=\"x\\neq\\pm3\"><\/span>:  <span class=\"m\" data-tex=\"\\dfrac{x^2-5x+6}{x^2-9}\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"\\dfrac{x-2}{x-3}\"><\/span>", "<span class=\"m\" data-tex=\"\\dfrac{x+2}{x+3}\"><\/span>", "<span class=\"m\" data-tex=\"\\dfrac{x-2}{x+3}\"><\/span>", "<span class=\"m\" data-tex=\"\\dfrac{x-3}{x+3}\"><\/span>", "<span class=\"m\" data-tex=\"\\dfrac23\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A11", "src": "Lomená rovnice", "body": "Součet všech řešení rovnice <span class=\"m\" data-tex=\"\\dfrac1x+\\dfrac{1}{x-2}=\\dfrac43\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"3\"><\/span>", "<span class=\"m\" data-tex=\"\\dfrac12\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>", "<span class=\"m\" data-tex=\"\\dfrac72\"><\/span>", "<span class=\"m\" data-tex=\"-\\dfrac72\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A12", "src": "Bikvadratická rovnice", "body": "Kolik reálných řešení má rovnice <span class=\"m\" data-tex=\"x^4-5x^2-36=0\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"0\"><\/span>", "<span class=\"m\" data-tex=\"1\"><\/span>", "<span class=\"m\" data-tex=\"2\"><\/span>", "<span class=\"m\" data-tex=\"3\"><\/span>", "<span class=\"m\" data-tex=\"4\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A13", "src": "Soustava lineárních rovnic", "body": "Pro řešení <span class=\"m\" data-tex=\"(x;y)\"><\/span> soustavy <span class=\"m\" data-tex=\"3x-2y=12\"><\/span>,  <span class=\"m\" data-tex=\"x+4y=-10\"><\/span> platí <span class=\"m\" data-tex=\"x\\cdot y=\"><\/span>", "opts": ["<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"-1\"><\/span>", "<span class=\"m\" data-tex=\"1\"><\/span>", "<span class=\"m\" data-tex=\"-6\"><\/span>", "soustava nemá řešení"], "letters": "ABCDE", "key": "D"}, {"q": "A14", "src": "Složené úročení", "body": "Vklad 30 000 Kč vzrostl za 2 roky (roční připisování úroků) na 31 827 Kč. Roční úroková sazba je", "opts": ["<span class=\"m\" data-tex=\"6\\,\\%\"><\/span>", "<span class=\"m\" data-tex=\"3\\,\\%\"><\/span>", "<span class=\"m\" data-tex=\"6{,}09\\,\\%\"><\/span>", "<span class=\"m\" data-tex=\"3{,}045\\,\\%\"><\/span>", "<span class=\"m\" data-tex=\"9\\,\\%\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A15", "src": "Opakování lekce 2 — mocniny", "body": "Vypočtěte <span class=\"m\" data-tex=\"1{,}2^2\\cdot\\left(\\dfrac56\\right)^2\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"1\"><\/span>", "<span class=\"m\" data-tex=\"1{,}44\"><\/span>", "<span class=\"m\" data-tex=\"\\dfrac{25}{36}\"><\/span>", "<span class=\"m\" data-tex=\"2\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A16", "src": "Opakování lekce 2 — odmocnina a záporný exponent", "body": "Vypočtěte <span class=\"m\" data-tex=\"\\sqrt{0{,}09}+0{,}5^{-1}\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"0{,}8\"><\/span>", "<span class=\"m\" data-tex=\"2{,}03\"><\/span>", "<span class=\"m\" data-tex=\"3{,}2\"><\/span>", "<span class=\"m\" data-tex=\"0{,}55\"><\/span>", "<span class=\"m\" data-tex=\"2{,}3\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "B1", "src": "Substituce", "body": "Součet všech reálných řešení rovnice <span class=\"m\" data-tex=\"(x^2-x)^2-8(x^2-x)+12=0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"1\"><\/span>", "<span class=\"m\" data-tex=\"2\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>", "<span class=\"m\" data-tex=\"4\"><\/span>", "<span class=\"m\" data-tex=\"-2\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B2", "src": "Součet a součet čtverců", "body": "Čísla <span class=\"m\" data-tex=\"x,y\"><\/span> splňují <span class=\"m\" data-tex=\"x+y=7\"><\/span> a <span class=\"m\" data-tex=\"x^2+y^2=25\"><\/span>. Kolik je <span class=\"m\" data-tex=\"x\\cdot y\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"24\"><\/span>", "<span class=\"m\" data-tex=\"25\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>", "<span class=\"m\" data-tex=\"12\"><\/span>", "taková čísla neexistují"], "letters": "ABCDE", "key": "D"}, {"q": "B3", "src": "Cena a množství", "body": "Při současné ceně je tržba 2 400 Kč. Kdyby obchod zlevnil o 10 Kč, prodal by o 20 kusů více a tržba by byla 3 000 Kč. Jaká je současná cena?", "opts": ["<span class=\"m\" data-tex=\"40\"><\/span> Kč", "<span class=\"m\" data-tex=\"50\"><\/span> Kč", "<span class=\"m\" data-tex=\"80\"><\/span> Kč", "<span class=\"m\" data-tex=\"20\"><\/span> Kč", "<span class=\"m\" data-tex=\"60\"><\/span> Kč"], "letters": "ABCDE", "key": "E"}, {"q": "B4", "src": "Kořeny se liší o 4", "body": "Pro jaké číslo <span class=\"m\" data-tex=\"c\"><\/span> se kořeny rovnice <span class=\"m\" data-tex=\"x^2-10x+c=0\"><\/span> liší přesně o 4?", "opts": ["<span class=\"m\" data-tex=\"25\"><\/span>", "<span class=\"m\" data-tex=\"24\"><\/span>", "<span class=\"m\" data-tex=\"21\"><\/span>", "<span class=\"m\" data-tex=\"16\"><\/span>", "<span class=\"m\" data-tex=\"9\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "B5", "src": "Tři neznámé", "body": "Řešení <span class=\"m\" data-tex=\"(a;b;c)\"><\/span> soustavy <span class=\"m\" data-tex=\"a+b=1\\,250\"><\/span>,  <span class=\"m\" data-tex=\"b+c=1\\,700\"><\/span>,  <span class=\"m\" data-tex=\"a+c=1\\,550\"><\/span> splňuje <span class=\"m\" data-tex=\"b=\"><\/span>", "opts": ["<span class=\"m\" data-tex=\"700\"><\/span>", "<span class=\"m\" data-tex=\"550\"><\/span>", "<span class=\"m\" data-tex=\"1\\,000\"><\/span>", "<span class=\"m\" data-tex=\"850\"><\/span>", "<span class=\"m\" data-tex=\"1\\,250\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "B6", "src": "Dvě různá zdražení", "body": "Cena vzrostla v prvním roce o <span class=\"m\" data-tex=\"p\\,\\%\"><\/span> a ve druhém o <span class=\"m\" data-tex=\"2p\\,\\%\"><\/span>. Za dva roky vzrostla celkem o 32 \\", "opts": ["<span class=\"m\" data-tex=\"11\"><\/span>", "<span class=\"m\" data-tex=\"16\"><\/span>", "<span class=\"m\" data-tex=\"8\"><\/span>", "<span class=\"m\" data-tex=\"10\"><\/span>", "<span class=\"m\" data-tex=\"12\"><\/span>"], "letters": "ABCDE", "key": "D"}]}, {"n": 4, "name": "Rovnice s parametrem", "lekce": {"path": "pdf/lekce_04.pdf", "pages": 10, "file": "Lekce_04_VSE.pdf"}, "du": {"path": "pdf/du_04.pdf", "pages": 8, "file": "DU_04_VSE.pdf"}, "card": ["<b>Линейное<\/b> <span class=\"m\" data-tex=\"A(p)x=B(p)\"><\/span>:<br> <span class=\"m\" data-tex=\"A\\neq0\"><\/span> — <span class=\"m\" data-tex=\"\\{\\frac BA\\}\"><\/span>;  <span class=\"m\" data-tex=\"A=0,B\\neq0\"><\/span> — <span class=\"m\" data-tex=\"\\emptyset\"><\/span>;  <span class=\"m\" data-tex=\"A=0,B=0\"><\/span> — <span class=\"m\" data-tex=\"\\R\"><\/span><br> <b>Ответ<\/b> — для каждого <span class=\"m\" data-tex=\"p\"><\/span><br> <b>Смысл:<\/b> отрицательные ГБ, штуки, цены отбрасываем<br> <b>Системы:<\/b> исключить неизвестную <span class=\"m\" data-tex=\"\\to\"><\/span> <span class=\"m\" data-tex=\"A(p)y=B(p)\"><\/span>", "<b>Квадратное:<\/b> сначала <span class=\"m\" data-tex=\"a=0\"><\/span>, потом <span class=\"m\" data-tex=\"D(p)\"><\/span><br> <span class=\"m\" data-tex=\"D&gt;0\"><\/span>: 2 корня;  <span class=\"m\" data-tex=\"D=0\"><\/span>: 1;  <span class=\"m\" data-tex=\"D&lt;0\"><\/span>: 0<br> <b>Ровно одно решение:<\/b> (<span class=\"m\" data-tex=\"a=0\"><\/span>) или (<span class=\"m\" data-tex=\"D=0\"><\/span>)<br> <b>Знаки корней:<\/b> Виета + <span class=\"m\" data-tex=\"D\"><\/span><br> <b>Макс. выручка:<\/b> условие <span class=\"m\" data-tex=\"D\\ge0\"><\/span>"], "gloss": [["parametr", "параметр"], ["právě jedno řešení", "ровно одно решение"], ["diskuse řešení", "разбор (обсуждение) решения"], ["dvojnásobný kořen", "двойной корень"], ["pro každé <span class=\"m\" data-tex=\"p\"><\/span>", "для каждого <span class=\"m\" data-tex=\"p\"><\/span>"], ["kořeny opačných znamének", "корни разных знаков"], ["nekonečně mnoho řešení", "бесконечно много решений"], ["tarif / spotřeba", "тариф / расход"], ["nemá řešení", "не имеет решений"], ["bod zvratu", "точка безубыточности"]], "quiz": [{"part": "A", "items": [{"q": "A1", "key": "B", "opts": "ABCDE"}, {"q": "A2", "key": "C", "opts": "ABCDE"}, {"q": "A3", "key": "A", "opts": "ABCDE"}, {"q": "A4", "key": "D", "opts": "ABCDE"}, {"q": "A5", "key": "B", "opts": "ABCDE"}, {"q": "A6", "key": "A", "opts": "ABCDE"}, {"q": "A7", "key": "E", "opts": "ABCDE"}, {"q": "A8", "key": "C", "opts": "ABCDE"}, {"q": "A9", "key": "C", "opts": "ABCDE"}, {"q": "A10", "key": "B", "opts": "ABCDE"}, {"q": "A11", "key": "A", "opts": "ABCDE"}, {"q": "A12", "key": "E", "opts": "ABCDE"}, {"q": "A13", "key": "A", "opts": "ABCDE"}, {"q": "A14", "key": "B", "opts": "ABCDE"}, {"q": "A15", "key": "D", "opts": "ABCDE"}, {"q": "A16", "key": "E", "opts": "ABCDE"}]}, {"part": "B", "items": [{"q": "B1", "key": "A", "opts": "ABCDE"}, {"q": "B2", "key": "C", "opts": "ABCDE"}, {"q": "B3", "key": "A", "opts": "ABCDE"}, {"q": "B4", "key": "B", "opts": "ABCDE"}, {"q": "B5", "key": "B", "opts": "ABCDE"}, {"q": "B6", "key": "A", "opts": "ABCDE"}]}, {"part": "D", "items": [{"q": "D1", "key": "c", "opts": "abcde"}, {"q": "D2", "key": "a", "opts": "abcde"}, {"q": "D3", "key": "b", "opts": "abcde"}, {"q": "D4", "key": "c", "opts": "abcde"}, {"q": "D5", "key": "d", "opts": "abcd"}, {"q": "D6", "key": "b", "opts": "abcd"}, {"q": "D7", "key": "a", "opts": "abcd"}, {"q": "D8", "key": "c", "opts": "abcde"}]}], "exam": [{"q": "D5", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Počet celých čísel <span class=\"m\" data-tex=\"p\"><\/span>, pro která rovnice <span class=\"m\" data-tex=\"x^2+px+4=0\"><\/span> nemá reálné kořeny, je", "opts": ["<span class=\"m\" data-tex=\"5\"><\/span>", "<span class=\"m\" data-tex=\"8\"><\/span>", "<span class=\"m\" data-tex=\"9\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>"], "letters": "abcd", "key": "d"}, {"q": "D6", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Vstupenka pro dospělého je o <span class=\"m\" data-tex=\"80\"><\/span> Kč dražší než dětská. Dva dospělí a tři děti zaplatili celkem <span class=\"m\" data-tex=\"910\"><\/span> Kč. Kolik stojí dětská vstupenka?", "opts": ["<span class=\"m\" data-tex=\"170\"><\/span> Kč", "<span class=\"m\" data-tex=\"150\"><\/span> Kč", "<span class=\"m\" data-tex=\"230\"><\/span> Kč", "<span class=\"m\" data-tex=\"130\"><\/span> Kč"], "letters": "abcd", "key": "b"}, {"q": "D7", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Tiskárna A vytiskne zakázku za 6 hodin, tiskárna B tutéž zakázku za 3 hodiny. Za jak dlouho ji vytisknou, budou-li tisknout společně?", "opts": ["<span class=\"m\" data-tex=\"2\"><\/span> h", "<span class=\"m\" data-tex=\"4{,}5\"><\/span> h", "<span class=\"m\" data-tex=\"1{,}5\"><\/span> h", "<span class=\"m\" data-tex=\"3\"><\/span> h"], "letters": "abcd", "key": "a"}, {"q": "D8", "src": "VŠE, vzor přijímacích zkoušek B, úloha 10 (přeformulováno)", "body": "Atletický klub má 120 členů a uspořádal 3 závody. Nikdo se nezúčastnil dvou závodů jdoucích po sobě. Alespoň jednoho závodu se zúčastnilo 90 \\", "opts": ["<span class=\"m\" data-tex=\"(20;30\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(30;40\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(40;50\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(50;60\\rangle\"><\/span>", "jiná odpověď"], "letters": "abcde", "key": "c"}], "bank": [{"q": "A1", "src": "Nekonečně mnoho řešení", "body": "Rovnice <span class=\"m\" data-tex=\"(p-6)x=p^2-36\"><\/span> má nekonečně mnoho řešení právě pro", "opts": ["<span class=\"m\" data-tex=\"p=-6\"><\/span>", "<span class=\"m\" data-tex=\"p=6\"><\/span>", "<span class=\"m\" data-tex=\"p=\\pm6\"><\/span>", "<span class=\"m\" data-tex=\"p=36\"><\/span>", "žádné <span class=\"m\" data-tex=\"p\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A2", "src": "Žádné řešení", "body": "Rovnice <span class=\"m\" data-tex=\"(p-4)x=p\"><\/span> nemá řešení právě pro", "opts": ["<span class=\"m\" data-tex=\"p=0\"><\/span>", "<span class=\"m\" data-tex=\"p\\in\\{0;4\\}\"><\/span>", "<span class=\"m\" data-tex=\"p=4\"><\/span>", "<span class=\"m\" data-tex=\"p=-4\"><\/span>", "žádné <span class=\"m\" data-tex=\"p\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A3", "src": "Zadaný kořen", "body": "Pro které <span class=\"m\" data-tex=\"p\"><\/span> je číslo <span class=\"m\" data-tex=\"2\"><\/span> kořenem rovnice <span class=\"m\" data-tex=\"px+1=3x+p\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"p=5\"><\/span>", "<span class=\"m\" data-tex=\"p=-5\"><\/span>", "<span class=\"m\" data-tex=\"p=\\frac15\"><\/span>", "<span class=\"m\" data-tex=\"p=3\"><\/span>", "žádné <span class=\"m\" data-tex=\"p\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A4", "src": "Dva tarify", "body": "Tarif T1 stojí <span class=\"m\" data-tex=\"99\"><\/span> Kč měsíčně a <span class=\"m\" data-tex=\"3\"><\/span> Kč za každou minutu, tarif T2 stojí <span class=\"m\" data-tex=\"249\"><\/span> Kč měsíčně a <span class=\"m\" data-tex=\"p\"><\/span> Kč za minutu. Pro <span class=\"m\" data-tex=\"p=1\"><\/span> vyjdou oba tarify stejně při počtu minut", "opts": ["<span class=\"m\" data-tex=\"50\"><\/span>", "<span class=\"m\" data-tex=\"150\"><\/span>", "<span class=\"m\" data-tex=\"37{,}5\"><\/span>", "<span class=\"m\" data-tex=\"75\"><\/span>", "nikdy"], "letters": "ABCDE", "key": "D"}, {"q": "A5", "src": "Tarify se nikdy nevyrovnají", "body": "Pro které <span class=\"m\" data-tex=\"p\"><\/span> nevyjdou tarify z úlohy A4 stejně při žádném počtu minut?", "opts": ["<span class=\"m\" data-tex=\"p=1\"><\/span>", "<span class=\"m\" data-tex=\"p\\ge3\"><\/span>", "<span class=\"m\" data-tex=\"p=0\"><\/span>", "<span class=\"m\" data-tex=\"p=3\"><\/span>", "pro každé <span class=\"m\" data-tex=\"p\"><\/span> se vyrovnají"], "letters": "ABCDE", "key": "B"}, {"q": "A6", "src": "Dvojnásobný kořen", "body": "Rovnice <span class=\"m\" data-tex=\"x^2-12x+p=0\"><\/span> má dvojnásobný kořen pro", "opts": ["<span class=\"m\" data-tex=\"p=36\"><\/span>", "<span class=\"m\" data-tex=\"p=-36\"><\/span>", "<span class=\"m\" data-tex=\"p=144\"><\/span>", "<span class=\"m\" data-tex=\"p=6\"><\/span>", "<span class=\"m\" data-tex=\"p=\\pm36\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A7", "src": "Bez reálných kořenů", "body": "Rovnice <span class=\"m\" data-tex=\"x^2+px+25=0\"><\/span> nemá reálné kořeny právě pro", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;10)\"><\/span>", "<span class=\"m\" data-tex=\"(-5;5)\"><\/span>", "<span class=\"m\" data-tex=\"p\\neq\\pm10\"><\/span>", "<span class=\"m\" data-tex=\"(10;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-10;10)\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A8", "src": "Druhý kořen", "body": "Číslo <span class=\"m\" data-tex=\"4\"><\/span> je kořenem rovnice <span class=\"m\" data-tex=\"x^2-px+12=0\"><\/span>. Druhý kořen je", "opts": ["<span class=\"m\" data-tex=\"-3\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>", "<span class=\"m\" data-tex=\"3\"><\/span>", "<span class=\"m\" data-tex=\"-4\"><\/span>", "<span class=\"m\" data-tex=\"8\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A9", "src": "Právě jedno řešení", "body": "Rovnice <span class=\"m\" data-tex=\"(p-2)x^2+2x+1=0\"><\/span> má právě jedno řešení právě pro", "opts": ["<span class=\"m\" data-tex=\"p=3\"><\/span>", "<span class=\"m\" data-tex=\"p=2\"><\/span>", "<span class=\"m\" data-tex=\"p\\in\\{2;3\\}\"><\/span>", "<span class=\"m\" data-tex=\"p\\in\\{-2;3\\}\"><\/span>", "žádné <span class=\"m\" data-tex=\"p\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A10", "src": "Dva kladné kořeny", "body": "Rovnice <span class=\"m\" data-tex=\"x^2-6x+p=0\"><\/span> má dva různé kladné kořeny právě pro", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;9)\"><\/span>", "<span class=\"m\" data-tex=\"(0;9)\"><\/span>", "<span class=\"m\" data-tex=\"(9;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-9;0)\"><\/span>", "<span class=\"m\" data-tex=\"(0;6)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A11", "src": "Kořeny opačných znamének", "body": "Rovnice <span class=\"m\" data-tex=\"x^2+4x+p-5=0\"><\/span> má kořeny opačných znamének právě pro", "opts": ["<span class=\"m\" data-tex=\"p&lt;5\"><\/span>", "<span class=\"m\" data-tex=\"p&gt;5\"><\/span>", "<span class=\"m\" data-tex=\"p&lt;0\"><\/span>", "<span class=\"m\" data-tex=\"p&lt;9\"><\/span>", "<span class=\"m\" data-tex=\"p\\in(0;5)\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A12", "src": "Maximální tržba", "body": "Při ceně <span class=\"m\" data-tex=\"p\"><\/span> Kč se prodá <span class=\"m\" data-tex=\"60-p\"><\/span> kusů výrobku (pro <span class=\"m\" data-tex=\"0&lt;p&lt;60\"><\/span>). Největší možná tržba je", "opts": ["<span class=\"m\" data-tex=\"600\"><\/span> Kč", "<span class=\"m\" data-tex=\"1800\"><\/span> Kč", "<span class=\"m\" data-tex=\"3600\"><\/span> Kč", "<span class=\"m\" data-tex=\"450\"><\/span> Kč", "<span class=\"m\" data-tex=\"900\"><\/span> Kč"], "letters": "ABCDE", "key": "E"}, {"q": "A13", "src": "Soustava", "body": "Soustava <span class=\"m\" data-tex=\"2x+py=4\"><\/span>,  <span class=\"m\" data-tex=\"x+2y=2\"><\/span> má nekonečně mnoho řešení právě pro", "opts": ["<span class=\"m\" data-tex=\"p=4\"><\/span>", "<span class=\"m\" data-tex=\"p=-4\"><\/span>", "<span class=\"m\" data-tex=\"p=\\pm4\"><\/span>", "<span class=\"m\" data-tex=\"p=2\"><\/span>", "žádné <span class=\"m\" data-tex=\"p\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A14", "src": "Lomená rovnice", "body": "Rovnice <span class=\"m\" data-tex=\"\\dfrac{x+p}{x-4}=3\"><\/span> nemá řešení právě pro", "opts": ["<span class=\"m\" data-tex=\"p=4\"><\/span>", "<span class=\"m\" data-tex=\"p=-4\"><\/span>", "<span class=\"m\" data-tex=\"p=12\"><\/span>", "<span class=\"m\" data-tex=\"p=-12\"><\/span>", "žádné <span class=\"m\" data-tex=\"p\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A15", "src": "Opakování lekce 3 — procenta", "body": "Po zdražení o <span class=\"m\" data-tex=\"25\\,\\%\"><\/span> stojí výrobek <span class=\"m\" data-tex=\"500\"><\/span> Kč. Původní cena byla", "opts": ["<span class=\"m\" data-tex=\"375\"><\/span> Kč", "<span class=\"m\" data-tex=\"475\"><\/span> Kč", "<span class=\"m\" data-tex=\"420\"><\/span> Kč", "<span class=\"m\" data-tex=\"400\"><\/span> Kč", "<span class=\"m\" data-tex=\"625\"><\/span> Kč"], "letters": "ABCDE", "key": "D"}, {"q": "A16", "src": "Opakování lekce 3 — kvadratická rovnice", "body": "Řešte v <span class=\"m\" data-tex=\"\\R\"><\/span>:  <span class=\"m\" data-tex=\"x^2-5x-14=0\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"\\{2;-7\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{7\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-7;-2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{-2;7\\}\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "B1", "src": "Diskuse", "body": "Rovnice <span class=\"m\" data-tex=\"(p+2)x=p(p+2)\"><\/span> má", "opts": ["pro <span class=\"m\" data-tex=\"p=-2\"><\/span> nekonečně mnoho řešení, jinak jediné řešení <span class=\"m\" data-tex=\"x=p\"><\/span>;", "pro každé <span class=\"m\" data-tex=\"p\"><\/span> jediné řešení <span class=\"m\" data-tex=\"x=p\"><\/span>;", "pro <span class=\"m\" data-tex=\"p=-2\"><\/span> žádné řešení, jinak <span class=\"m\" data-tex=\"x=p\"><\/span>;", "pro <span class=\"m\" data-tex=\"p=0\"><\/span> nekonečně mnoho řešení;", "pro <span class=\"m\" data-tex=\"p=-2\"><\/span> jediné řešení <span class=\"m\" data-tex=\"x=-2\"><\/span>."], "letters": "ABCDE", "key": "A"}, {"q": "B2", "src": "Permanentka do fitka", "body": "Jednorázový vstup stojí <span class=\"m\" data-tex=\"120\"><\/span> Kč. Měsíční permanentka stojí <span class=\"m\" data-tex=\"p\"><\/span> Kč a každý vstup s ní stojí ještě <span class=\"m\" data-tex=\"40\"><\/span> Kč. Při <span class=\"m\" data-tex=\"4\"><\/span> vstupech za měsíc vyjdou obě možnosti stejně. Pak", "opts": ["<span class=\"m\" data-tex=\"p=160\"><\/span>", "<span class=\"m\" data-tex=\"p=480\"><\/span>", "<span class=\"m\" data-tex=\"p=320\"><\/span>", "<span class=\"m\" data-tex=\"p=280\"><\/span>", "<span class=\"m\" data-tex=\"p=360\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "B3", "src": "Dva různé kořeny", "body": "Rovnice <span class=\"m\" data-tex=\"x^2-2(p+1)x+p^2=0\"><\/span> má dva různé reálné kořeny právě pro", "opts": ["<span class=\"m\" data-tex=\"p&gt;-\\frac12\"><\/span>", "<span class=\"m\" data-tex=\"p&lt;-\\frac12\"><\/span>", "<span class=\"m\" data-tex=\"p&gt;-1\"><\/span>", "<span class=\"m\" data-tex=\"p\\neq-\\frac12\"><\/span>", "každé <span class=\"m\" data-tex=\"p\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "B4", "src": "Součet čtverců kořenů", "body": "Kořeny <span class=\"m\" data-tex=\"x_1,x_2\"><\/span> rovnice <span class=\"m\" data-tex=\"x^2-8x+p=0\"><\/span> splňují <span class=\"m\" data-tex=\"x_1^2+x_2^2=34\"><\/span>. Pak", "opts": ["<span class=\"m\" data-tex=\"p=-15\"><\/span>", "<span class=\"m\" data-tex=\"p=15\"><\/span>", "<span class=\"m\" data-tex=\"p=30\"><\/span>", "<span class=\"m\" data-tex=\"p=17\"><\/span>", "takové <span class=\"m\" data-tex=\"p\"><\/span> neexistuje"], "letters": "ABCDE", "key": "B"}, {"q": "B5", "src": "Poptávka", "body": "Při ceně <span class=\"m\" data-tex=\"p\"><\/span> Kč se prodá <span class=\"m\" data-tex=\"q=200-4p\"><\/span> kusů. Při jaké ceně je tržba <span class=\"m\" data-tex=\"p\\cdot q\"><\/span> největší a kolik činí?", "opts": ["<span class=\"m\" data-tex=\"p=50\"><\/span>, tržba <span class=\"m\" data-tex=\"5000\"><\/span> Kč", "<span class=\"m\" data-tex=\"p=25\"><\/span>, tržba <span class=\"m\" data-tex=\"2500\"><\/span> Kč", "<span class=\"m\" data-tex=\"p=25\"><\/span>, tržba <span class=\"m\" data-tex=\"5000\"><\/span> Kč", "<span class=\"m\" data-tex=\"p=20\"><\/span>, tržba <span class=\"m\" data-tex=\"2400\"><\/span> Kč", "<span class=\"m\" data-tex=\"p=100\"><\/span>, tržba <span class=\"m\" data-tex=\"10\\,000\"><\/span> Kč"], "letters": "ABCDE", "key": "B"}, {"q": "B6", "src": "Soustava se součinem", "body": "Soustava <span class=\"m\" data-tex=\"x+y=3\"><\/span>,  <span class=\"m\" data-tex=\"xy=p\"><\/span> má reálné řešení právě pro", "opts": ["<span class=\"m\" data-tex=\"p\\le\\frac94\"><\/span>", "<span class=\"m\" data-tex=\"p&lt;\\frac94\"><\/span>", "<span class=\"m\" data-tex=\"p\\ge\\frac94\"><\/span>", "<span class=\"m\" data-tex=\"p\\le3\"><\/span>", "každé <span class=\"m\" data-tex=\"p\"><\/span>"], "letters": "ABCDE", "key": "A"}]}, {"n": 5, "name": "Rovnice s absolutní hodnotou", "lekce": {"path": "pdf/lekce_05.pdf", "pages": 11, "file": "Lekce_05_VSE.pdf"}, "du": {"path": "pdf/du_05.pdf", "pages": 8, "file": "DU_05_VSE.pdf"}, "card": ["<b>Смысл:<\/b> <span class=\"m\" data-tex=\"|x-a|\"><\/span> — отклонение <span class=\"m\" data-tex=\"x\"><\/span> от <span class=\"m\" data-tex=\"a\"><\/span><br> <span class=\"m\" data-tex=\"\\sqrt{x^2}=|x|\"><\/span>;  <span class=\"m\" data-tex=\"|kx-m|=|k|\\cdot|x-\\frac mk|\"><\/span><br class=gap> <b><span class=\"m\" data-tex=\"|x-a|=c\"><\/span>:<\/b> <span class=\"m\" data-tex=\"c&lt;0\"><\/span> — <span class=\"m\" data-tex=\"\\emptyset\"><\/span>;  <span class=\"m\" data-tex=\"c\\ge0\"><\/span> — <span class=\"m\" data-tex=\"x=a\\pm c\"><\/span><br> <b><span class=\"m\" data-tex=\"|f|=|g|\"><\/span>:<\/b> <span class=\"m\" data-tex=\"f=g\"><\/span> или <span class=\"m\" data-tex=\"f=-g\"><\/span><br> <b><span class=\"m\" data-tex=\"|f|=g\"><\/span>:<\/b> условие <span class=\"m\" data-tex=\"g\\ge0\"><\/span>, потом <span class=\"m\" data-tex=\"f=\\pm g\"><\/span><br> <b><span class=\"m\" data-tex=\"|f|=-f\"><\/span>:<\/b> <span class=\"m\" data-tex=\"f\\le0\"><\/span> (промежуток)", "<b>Два модуля — нулевые точки:<\/b><br> промежутки <span class=\"m\" data-tex=\"\\to\"><\/span> раскрыть <span class=\"m\" data-tex=\"\\to\"><\/span> решить <span class=\"m\" data-tex=\"\\to\"><\/span><br> <b>корень в своём промежутке?<\/b><br class=gap> <b>Быстрый счёт<\/b> <span class=\"m\" data-tex=\"|x-a|+|x-b|=c\"><\/span>:<br> <span class=\"m\" data-tex=\"c&lt;|a-b|\"><\/span>: <span class=\"m\" data-tex=\"\\emptyset\"><\/span>;  <span class=\"m\" data-tex=\"=\"><\/span>: отрезок;  <span class=\"m\" data-tex=\"&gt;\"><\/span>: <span class=\"m\" data-tex=\"\\frac{a+b\\pm c}{2}\"><\/span><br class=gap> <b><span class=\"m\" data-tex=\"x^2\"><\/span> и <span class=\"m\" data-tex=\"|x|\"><\/span>:<\/b> <span class=\"m\" data-tex=\"t=|x|\\ge0\"><\/span>"], "gloss": [["absolutní hodnota", "модуль, абсолютная величина"], ["nulový bod", "нулевая точка"], ["odchylka", "отклонение"], ["metoda nulových bodů", "метод нулевых точек"], ["toleranční pásmo", "допуск, полоса допуска"], ["podmínka", "условие"], ["inflační cíl", "инфляционная цель"], ["zkouška", "проверка (подстановкой)"], ["procentní bod (p. b.)", "процентный пункт"], ["vyhovuje / nevyhovuje", "подходит / не подходит"], ["liší se o", "отличается на"], ["vzdálenost", "расстояние"], ["odhad / skutečnost", "прогноз / факт"], ["sjednocení", "объединение"]], "quiz": [{"part": "A", "items": [{"q": "A1", "key": "C", "opts": "ABCDE"}, {"q": "A2", "key": "B", "opts": "ABCDE"}, {"q": "A3", "key": "E", "opts": "ABCDE"}, {"q": "A4", "key": "A", "opts": "ABCDE"}, {"q": "A5", "key": "D", "opts": "ABCDE"}, {"q": "A6", "key": "B", "opts": "ABCDE"}, {"q": "A7", "key": "C", "opts": "ABCDE"}, {"q": "A8", "key": "D", "opts": "ABCDE"}, {"q": "A9", "key": "A", "opts": "ABCDE"}, {"q": "A10", "key": "E", "opts": "ABCDE"}, {"q": "A11", "key": "B", "opts": "ABCDE"}, {"q": "A12", "key": "D", "opts": "ABCDE"}, {"q": "A13", "key": "C", "opts": "ABCDE"}, {"q": "A14", "key": "B", "opts": "ABCDE"}, {"q": "A15", "key": "C", "opts": "ABCDE"}, {"q": "A16", "key": "E", "opts": "ABCDE"}]}, {"part": "B", "items": [{"q": "B1", "key": "A", "opts": "ABCDE"}, {"q": "B2", "key": "B", "opts": "ABCDE"}, {"q": "B3", "key": "C", "opts": "ABCDE"}, {"q": "B4", "key": "D", "opts": "ABCDE"}, {"q": "B5", "key": "B", "opts": "ABCDE"}, {"q": "B6", "key": "E", "opts": "ABCDE"}]}, {"part": "D", "items": [{"q": "D1", "key": "c", "opts": "abcde"}, {"q": "D2", "key": "b", "opts": "abcde"}, {"q": "D3", "key": "d", "opts": "abcd"}, {"q": "D4", "key": "b", "opts": "abcd"}, {"q": "D5", "key": "c", "opts": "abcd"}, {"q": "D6", "key": "a", "opts": "abcd"}, {"q": "D7", "key": "b", "opts": "abcd"}, {"q": "D8", "key": "b", "opts": "abcde"}]}], "exam": [{"q": "D3", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Počet reálných řešení rovnice <span class=\"m\" data-tex=\"x^2-5|x|+4=0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"2\"><\/span>", "<span class=\"m\" data-tex=\"3\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>", "<span class=\"m\" data-tex=\"4\"><\/span>"], "letters": "abcd", "key": "d"}, {"q": "D4", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Skutečné tržby firmy se od plánovaných 120 000 Kč liší o <span class=\"m\" data-tex=\"12\\,\\%\"><\/span>. Rozdíl mezi nejvyšší a nejnižší možnou skutečnou tržbou je", "opts": ["<span class=\"m\" data-tex=\"14\\,400\"><\/span> Kč", "<span class=\"m\" data-tex=\"28\\,800\"><\/span> Kč", "<span class=\"m\" data-tex=\"120\\,000\"><\/span> Kč", "<span class=\"m\" data-tex=\"24\\,000\"><\/span> Kč"], "letters": "abcd", "key": "b"}, {"q": "D5", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Pro kolik celých čísel <span class=\"m\" data-tex=\"p\\le10\"><\/span> má rovnice <span class=\"m\" data-tex=\"|x-2|+|x-6|=p\"><\/span> právě dvě řešení?", "opts": ["<span class=\"m\" data-tex=\"5\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>", "<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"4\"><\/span>"], "letters": "abcd", "key": "c"}, {"q": "D6", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Na číselné ose leží body <span class=\"m\" data-tex=\"A=-3\"><\/span> a <span class=\"m\" data-tex=\"B=9\"><\/span>. Bod <span class=\"m\" data-tex=\"X\"><\/span> je od bodu <span class=\"m\" data-tex=\"A\"><\/span> třikrát dál než od bodu <span class=\"m\" data-tex=\"B\"><\/span>. Součet všech možných poloh bodu <span class=\"m\" data-tex=\"X\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"21\"><\/span>", "<span class=\"m\" data-tex=\"15\"><\/span>", "<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"12\"><\/span>"], "letters": "abcd", "key": "a"}, {"q": "D7", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Petr říká: „Teplota se liší od nuly o 4 stupně.“ Jana říká: „Teplota se liší od <span class=\"m\" data-tex=\"-2\\,^\\circ\"><\/span>C o 6 stupňů.“ Oba mají pravdu. Jaká je teplota?", "opts": ["<span class=\"m\" data-tex=\"-4\\,^\\circ\"><\/span>C", "<span class=\"m\" data-tex=\"4\\,^\\circ\"><\/span>C", "<span class=\"m\" data-tex=\"-8\\,^\\circ\"><\/span>C", "<span class=\"m\" data-tex=\"2\\,^\\circ\"><\/span>C"], "letters": "abcd", "key": "b"}, {"q": "D8", "src": "VŠE, vzor přijímacích zkoušek A, úloha 9 (přeformulováno)", "body": "Na škole používá alespoň jeden z programů MS Teams a Zoom 250 vyučujících a nejvýše jeden z nich 240 vyučujících. MS Teams používá 130 vyučujících, Zoom 150. Počet vyučujících, kteří nepoužívají ani jeden program, leží v intervalu", "opts": ["<span class=\"m\" data-tex=\"\\langle0;9\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle10;20\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle21;30\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle31;40\\rangle\"><\/span>", "jiná odpověď"], "letters": "abcde", "key": "b"}], "bank": [{"q": "A1", "src": "Vzdálenost od čísla", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x-4|=6\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{10\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-10;2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-2;10\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{2;10\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A2", "src": "Nula", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x+7|=0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{7\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-7\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{\\pm7\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A3", "src": "Záporné číslo vpravo", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|3x-2|=-4\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\left\\{2;-\\frac23\\right\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\left\\{-\\frac23\\right\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A4", "src": "Stejně daleko", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x-6|=|x+2|\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-2;6\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-2\\}\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A5", "src": "Neznámá vpravo", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|2x-1|=x+4\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{5\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-5;1\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1;5\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A6", "src": "Pozor na podmínku", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x-3|=x-5\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{4;5\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{5\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A7", "src": "Odchylka od normy", "body": "Balíček kávy má vážit 500 g. Kontrola zjistila, že hmotnost <span class=\"m\" data-tex=\"m\"><\/span> balíčku se od normy liší o 15 g, tj. <span class=\"m\" data-tex=\"|m-500|=15\"><\/span>. Hmotnost balíčku může být", "opts": ["<span class=\"m\" data-tex=\"515\"><\/span> g", "<span class=\"m\" data-tex=\"485\"><\/span> g", "<span class=\"m\" data-tex=\"485\"><\/span> g nebo <span class=\"m\" data-tex=\"515\"><\/span> g", "cokoli mezi <span class=\"m\" data-tex=\"485\"><\/span> a <span class=\"m\" data-tex=\"515\"><\/span> g", "<span class=\"m\" data-tex=\"470\"><\/span> g nebo <span class=\"m\" data-tex=\"530\"><\/span> g"], "letters": "ABCDE", "key": "C"}, {"q": "A8", "src": "Součet vzdáleností", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x-2|+|x-8|=6\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{2;8\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{5\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\langle2;8\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A9", "src": "Tatáž levá strana", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x-2|+|x-8|=10\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{0;10\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{10\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\langle2;8\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1;11\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A10", "src": "Příliš malé číslo", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x|+|x-5|=3\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{-1;4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\langle0;5\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\{1;4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A11", "src": "Vytkněte", "body": "Kolik reálných řešení má rovnice <span class=\"m\" data-tex=\"x^2-4|x|=0\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"2\"><\/span>", "<span class=\"m\" data-tex=\"3\"><\/span>", "<span class=\"m\" data-tex=\"1\"><\/span>", "<span class=\"m\" data-tex=\"4\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A12", "src": "Substituce", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"x^2-|x|-12=0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{\\pm3;\\pm4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-3;4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{\\pm4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A13", "src": "Kvadratická uvnitř", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x^2-8|=8\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{\\pm4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{0;4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{0;\\pm4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{0\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{\\pm2\\sqrt2\\}\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A14", "src": "Cena akcie", "body": "Cena akcie se od částky 200 Kč liší o <span class=\"m\" data-tex=\"15\\,\\%\"><\/span> (tj. o <span class=\"m\" data-tex=\"30\"><\/span> Kč). Cena akcie je", "opts": ["<span class=\"m\" data-tex=\"230\"><\/span> Kč", "<span class=\"m\" data-tex=\"170\"><\/span> Kč nebo <span class=\"m\" data-tex=\"230\"><\/span> Kč", "<span class=\"m\" data-tex=\"185\"><\/span> Kč nebo <span class=\"m\" data-tex=\"215\"><\/span> Kč", "<span class=\"m\" data-tex=\"170\"><\/span> Kč", "od <span class=\"m\" data-tex=\"170\"><\/span> do <span class=\"m\" data-tex=\"230\"><\/span> Kč"], "letters": "ABCDE", "key": "B"}, {"q": "A15", "src": "Opakování lekce 4 — parametr", "body": "Rovnice <span class=\"m\" data-tex=\"(p-2)x=p^2-4\"><\/span> má nekonečně mnoho řešení právě pro", "opts": ["<span class=\"m\" data-tex=\"p=-2\"><\/span>", "<span class=\"m\" data-tex=\"p=\\pm2\"><\/span>", "<span class=\"m\" data-tex=\"p=2\"><\/span>", "<span class=\"m\" data-tex=\"p=4\"><\/span>", "žádné <span class=\"m\" data-tex=\"p\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A16", "src": "Opakování lekce 4 — dvojnásobný kořen", "body": "Rovnice <span class=\"m\" data-tex=\"x^2-10x+p=0\"><\/span> má dvojnásobný kořen pro", "opts": ["<span class=\"m\" data-tex=\"p=10\"><\/span>", "<span class=\"m\" data-tex=\"p=-25\"><\/span>", "<span class=\"m\" data-tex=\"p=100\"><\/span>", "<span class=\"m\" data-tex=\"p=5\"><\/span>", "<span class=\"m\" data-tex=\"p=25\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "B1", "src": "Nejmenší hodnota", "body": "Nejmenší hodnota výrazu <span class=\"m\" data-tex=\"|x-1|+|x-3|+|x-8|\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"7\"><\/span>", "<span class=\"m\" data-tex=\"8\"><\/span>", "<span class=\"m\" data-tex=\"4\"><\/span>", "<span class=\"m\" data-tex=\"5\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "B2", "src": "Rozdíl", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x+1|-|x-3|=4\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\langle3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-1\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B3", "src": "Přesně tři řešení", "body": "Rovnice <span class=\"m\" data-tex=\"|x^2-6x|=p\"><\/span> má právě tři řešení pro", "opts": ["<span class=\"m\" data-tex=\"p=0\"><\/span>", "<span class=\"m\" data-tex=\"p=3\"><\/span>", "<span class=\"m\" data-tex=\"p=9\"><\/span>", "<span class=\"m\" data-tex=\"p=6\"><\/span>", "<span class=\"m\" data-tex=\"p=36\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "B4", "src": "Součet řešení", "body": "Součet všech řešení rovnice <span class=\"m\" data-tex=\"|x^2-2x-8|=7\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"2\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>", "<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"4\"><\/span>", "<span class=\"m\" data-tex=\"8\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "B5", "src": "Kam postavit sklad", "body": "Firma zásobuje tři prodejny u jedné silnice: na kilometru 0, 10 a 30. Do každé jede jednou denně ze skladu na kilometru <span class=\"m\" data-tex=\"x\"><\/span>. Kde má sklad stát, aby byl součet vzdáleností co nejmenší, a jaký je tento součet?", "opts": ["na km <span class=\"m\" data-tex=\"15\"><\/span>, součet <span class=\"m\" data-tex=\"35\"><\/span> km", "na km <span class=\"m\" data-tex=\"10\"><\/span>, součet <span class=\"m\" data-tex=\"30\"><\/span> km", "na km <span class=\"m\" data-tex=\"13\\frac13\"><\/span>, součet <span class=\"m\" data-tex=\"33\\frac13\"><\/span> km", "na km <span class=\"m\" data-tex=\"0\"><\/span>, součet <span class=\"m\" data-tex=\"40\"><\/span> km", "na km <span class=\"m\" data-tex=\"10\"><\/span>, součet <span class=\"m\" data-tex=\"40\"><\/span> km"], "letters": "ABCDE", "key": "B"}, {"q": "B6", "src": "Celá čísla", "body": "Kolik celých čísel <span class=\"m\" data-tex=\"x\"><\/span> splňuje rovnici <span class=\"m\" data-tex=\"|x-3|+|x+3|=6\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"2\"><\/span>", "<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>", "<span class=\"m\" data-tex=\"13\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>"], "letters": "ABCDE", "key": "E"}]}, {"n": 6, "name": "Nerovnice. Soustava nerovnic", "lekce": {"path": "pdf/lekce_06.pdf", "pages": 11, "file": "Lekce_06_VSE.pdf"}, "du": {"path": "pdf/du_06.pdf", "pages": 8, "file": "DU_06_VSE.pdf"}, "card": ["<b>Линейное:<\/b> <span class=\"m\" data-tex=\"\\cdot(&lt;0)\"><\/span> <span class=\"m\" data-tex=\"\\Rightarrow\"><\/span> знак наоборот<br> <b>Нельзя<\/b> умножать / делить на выражение с <span class=\"m\" data-tex=\"x\"><\/span><br> <span class=\"m\" data-tex=\"0x&gt;-3\"><\/span>: <span class=\"m\" data-tex=\"\\R\"><\/span>;  <span class=\"m\" data-tex=\"0x&gt;3\"><\/span>: <span class=\"m\" data-tex=\"\\emptyset\"><\/span><br> <b>Ответ<\/b> — интервал; <span class=\"m\" data-tex=\"\\infty\"><\/span> всегда с <span class=\"m\" data-tex=\"(\"><\/span> <span class=\"m\" data-tex=\")\"><\/span><br> <b>Текстовые:<\/b> округлять <i>по смыслу<\/i>", "<b>Квадратное (<span class=\"m\" data-tex=\"a&gt;0\"><\/span>):<\/b> между корнями «<span class=\"m\" data-tex=\"-\"><\/span>», снаружи «<span class=\"m\" data-tex=\"+\"><\/span>»<br> <span class=\"m\" data-tex=\"x^2&lt;a^2 \\Leftrightarrow -a&lt;x&lt;a\"><\/span><br> <b>Дробное:<\/b> к нулю <span class=\"m\" data-tex=\"\\to\"><\/span> одна дробь <span class=\"m\" data-tex=\"\\to\"><\/span> таблица знаков; нули знаменателя — всегда <span class=\"m\" data-tex=\"(\"><\/span> <span class=\"m\" data-tex=\")\"><\/span><br> <b>Система:<\/b> пересечение на одной оси"], "gloss": [["nerovnice", "неравенство"], ["soustava nerovnic", "система неравенств"], ["ostrá / neostrá nerovnost", "строгое / нестрогое неравенство"], ["průnik / sjednocení", "пересечение / объединение"], ["interval (otevřený, uzavřený)", "интервал (открытый, закрытый)"], ["nulový bod", "нулевая точка"], ["množina všech řešení", "множество всех решений"], ["nerovnice v podílovém tvaru", "дробное неравенство"], ["ekvivalentní úprava", "равносильное преобразование"], ["tabulka znamének", "таблица знаков"], ["obrátit znaménko nerovnosti", "перевернуть знак неравенства"], ["alespoň / nejvýše", "не меньше / не больше"], ["vyhovovat nerovnici", "удовлетворять неравенству"], ["zisk / přirážka / rozpočet", "прибыль / наценка / бюджет"]], "quiz": [{"part": "A", "items": [{"q": "A1", "key": "B", "opts": "ABCDE"}, {"q": "A2", "key": "E", "opts": "ABCDE"}, {"q": "A3", "key": "C", "opts": "ABCDE"}, {"q": "A4", "key": "D", "opts": "ABCDE"}, {"q": "A5", "key": "B", "opts": "ABCDE"}, {"q": "A6", "key": "D", "opts": "ABCDE"}, {"q": "A7", "key": "C", "opts": "ABCDE"}, {"q": "A8", "key": "A", "opts": "ABCDE"}, {"q": "A9", "key": "E", "opts": "ABCDE"}, {"q": "A10", "key": "B", "opts": "ABCDE"}, {"q": "A11", "key": "D", "opts": "ABCDE"}, {"q": "A12", "key": "C", "opts": "ABCDE"}, {"q": "A13", "key": "A", "opts": "ABCDE"}, {"q": "A14", "key": "E", "opts": "ABCDE"}, {"q": "A15", "key": "D", "opts": "ABCDE"}, {"q": "A16", "key": "A", "opts": "ABCDE"}]}, {"part": "B", "items": [{"q": "B1", "key": "B", "opts": "ABCDE"}, {"q": "B2", "key": "C", "opts": "ABCDE"}, {"q": "B3", "key": "A", "opts": "ABCDE"}, {"q": "B4", "key": "B", "opts": "ABCDE"}, {"q": "B5", "key": "D", "opts": "ABCDE"}, {"q": "B6", "key": "E", "opts": "ABCDE"}]}, {"part": "D", "items": [{"q": "D1", "key": "d", "opts": "abcde"}, {"q": "D2", "key": "c", "opts": "abcde"}, {"q": "D3", "key": "e", "opts": "abcde"}, {"q": "D4", "key": "b", "opts": "abcde"}, {"q": "D5", "key": "c", "opts": "abcd"}, {"q": "D6", "key": "a", "opts": "abcd"}, {"q": "D7", "key": "d", "opts": "abcd"}]}], "exam": [{"q": "D5", "src": "ve stylu přijímacího testu VŠE (vlastní úloha)", "body": "Počet celých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"\\dfrac{x-2}{x+3}\\le0\"><\/span>, je", "opts": ["<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"4\"><\/span>", "<span class=\"m\" data-tex=\"5\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>"], "letters": "abcd", "key": "c"}, {"q": "D6", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "O číslech <span class=\"m\" data-tex=\"a\"><\/span>, <span class=\"m\" data-tex=\"b\"><\/span>, <span class=\"m\" data-tex=\"c\"><\/span>, <span class=\"m\" data-tex=\"d\"><\/span> víme: <span class=\"m\" data-tex=\"a&lt;b\"><\/span>,  <span class=\"m\" data-tex=\"c&lt;a\"><\/span>,  <span class=\"m\" data-tex=\"d&gt;b\"><\/span>. Které tvrzení platí <i>určitě<\/i>?", "opts": ["<span class=\"m\" data-tex=\"c&lt;d\"><\/span>", "<span class=\"m\" data-tex=\"d&lt;a\"><\/span>", "<span class=\"m\" data-tex=\"c&gt;b\"><\/span>", "<span class=\"m\" data-tex=\"a&gt;d\"><\/span>"], "letters": "abcd", "key": "a"}, {"q": "D7", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Na brigádě dostává Tom 150 Kč za hodinu a Lucie 180 Kč za hodinu. Lucie pracovala o 2 hodiny méně než Tom, a přesto si vydělala víc. Nejmenší možný počet celých hodin, které odpracoval Tom, je", "opts": ["<span class=\"m\" data-tex=\"12\"><\/span>", "<span class=\"m\" data-tex=\"10\"><\/span>", "<span class=\"m\" data-tex=\"14\"><\/span>", "<span class=\"m\" data-tex=\"13\"><\/span>"], "letters": "abcd", "key": "d"}], "bank": [{"q": "A1", "src": "Lineární nerovnice", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"7-3x&gt;1\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(2;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;2)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-2)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;2\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-2;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A2", "src": "Zlomky", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{x-2}{3}-\\dfrac{x+1}{4}\\le0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;5\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle11;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;11)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-11\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;11\\rangle\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A3", "src": "Taxi", "body": "Taxi účtuje 60 Kč za nástup a 28 Kč za každý započatý kilometr. Máte 400 Kč. Kolik nejvýše celých kilometrů můžete ujet?", "opts": ["<span class=\"m\" data-tex=\"13\"><\/span>", "<span class=\"m\" data-tex=\"11\"><\/span>", "<span class=\"m\" data-tex=\"12\"><\/span>", "<span class=\"m\" data-tex=\"14\"><\/span>", "<span class=\"m\" data-tex=\"15\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A4", "src": "Zmizelé <span class=\"m\" data-tex=\"x\"><\/span>", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"2(x+3)-2x\\ge7\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\R\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;7\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\{0\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\langle\\frac12;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A5", "src": "Kvadratická nerovnice", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"x^2-5x+6\\le0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(2;3)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle2;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;2\\rangle\\cup\\langle3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-3;-2\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A6", "src": "Záporný koeficient u <span class=\"m\" data-tex=\"x^2\"><\/span>", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"-x^2+4x+5&gt;0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;-1)\\cup(5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-5;1)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-1;5\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-1;5)\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A7", "src": "Nedělit <span class=\"m\" data-tex=\"x\"><\/span>", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"x^2&lt;3x\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;3)\"><\/span>", "<span class=\"m\" data-tex=\"(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(0;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-3;3)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle0;3\\rangle\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A8", "src": "Záporný diskriminant", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"x^2+2x+5&gt;0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\R\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{-1\\}\"><\/span>", "<span class=\"m\" data-tex=\"(-1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(0;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A9", "src": "Úplný čtverec", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"x^2-6x+9\\le0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-3;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\{3\\}\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A10", "src": "Podílový tvar", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{x+2}{x-3}&gt;0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-2;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-2)\\cup(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-2\\rangle\\cup(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-3)\\cup(2;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A11", "src": "Převést na nulu", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{3}{x-1}\\ge1\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle1;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(1;4)\"><\/span>", "<span class=\"m\" data-tex=\"(1;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;1)\\cup\\langle4;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A12", "src": "Tři nulové body", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{x(x-3)}{x+2}\\le0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;-2\\rangle\\cup\\langle0;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-2;0\\rangle\\cup\\langle3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-2)\\cup\\langle0;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle0;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;3\\rangle\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A13", "src": "Soustava", "body": "Množina všech řešení soustavy <span class=\"m\" data-tex=\"2x+1\\ge x-3\"><\/span>,  <span class=\"m\" data-tex=\"5-x&gt;2\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle-4;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-4;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A14", "src": "Dvojitá nerovnice", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"-1\\le\\dfrac{3-x}{2}&lt;4\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle-5;5)\"><\/span>", "<span class=\"m\" data-tex=\"(-5;5)\"><\/span>", "<span class=\"m\" data-tex=\"(-1;11\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-5;5\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-5;5\\rangle\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A15", "src": "Opakování lekce 5", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|2x-3|=5\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{1;-4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1;4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1\\}\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A16", "src": "Opakování lekce 5", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"|x+3|=2x\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1;3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{1;3\\}\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "B1", "src": "Dvojnásobný nulový bod", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{(x-1)^2(x-4)}{x+2}\\le0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-2;1)\\cup(1;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-2;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-2;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-2)\\cup\\langle1;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-2;1\\rangle\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B2", "src": "Převrácená hodnota", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac1x&lt;1\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(0;1)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;0)\\cup(1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;1)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{0\\}\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "B3", "src": "Čtyři nulové body", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{x^2-x-2}{x^2-9}\\ge0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;-3)\\cup\\langle-1;2\\rangle\\cup(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-1;2\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-3\\rangle\\cup\\langle-1;2\\rangle\\cup\\langle3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-3;-1\\rangle\\cup\\langle2;3)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{-3;3\\}\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "B4", "src": "Mezikruží na ose", "body": "Množina všech řešení soustavy <span class=\"m\" data-tex=\"x^2-4\\ge0\"><\/span>,  <span class=\"m\" data-tex=\"x^2-9&lt;0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle2;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-3;-2\\rangle\\cup\\langle2;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-3;3)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-2;2\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-3;-2)\\cup(2;3)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B5", "src": "Kino", "body": "Při ceně vstupenky <span class=\"m\" data-tex=\"p\"><\/span> Kč přijde do kina <span class=\"m\" data-tex=\"400-4p\"><\/span> diváků (<span class=\"m\" data-tex=\"0&lt;p&lt;100\"><\/span>). Náklady na promítání jsou 1 400 Kč. Pro které ceny bude zisk alespoň 5 000 Kč?", "opts": ["<span class=\"m\" data-tex=\"(20;80)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle40;60\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle25;75\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle20;80\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(0;20\\rangle\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "B6", "src": "Pro všechna <span class=\"m\" data-tex=\"x\"><\/span>", "body": "Pro která <span class=\"m\" data-tex=\"p\"><\/span> platí nerovnost <span class=\"m\" data-tex=\"x^2+px+9&gt;0\"><\/span> pro <i>všechna<\/i> reálná <span class=\"m\" data-tex=\"x\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"\\langle-6;6\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-3;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-6)\\cup(6;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(0;6)\"><\/span>", "<span class=\"m\" data-tex=\"(-6;6)\"><\/span>"], "letters": "ABCDE", "key": "E"}]}, {"n": 7, "name": "Nerovnice s absolutní hodnotou", "lekce": {"path": "pdf/lekce_07.pdf", "pages": 9, "file": "Lekce_07_VSE.pdf"}, "du": {"path": "pdf/du_07.pdf", "pages": 8, "file": "DU_07_VSE.pdf"}, "card": ["<span class=\"m\" data-tex=\"|x-a|\\le c \\Leftrightarrow x\\in\\langle a-c;a+c\\rangle\"><\/span> (внутри)<br> <span class=\"m\" data-tex=\"|x-a|&gt;c \\Leftrightarrow x&lt;a-c\"><\/span> или <span class=\"m\" data-tex=\"x&gt;a+c\"><\/span> (снаружи)<br> <span class=\"m\" data-tex=\"\\langle p;q\\rangle \\;\\to\\; |x-\\frac{p+q}2|\\le\\frac{q-p}2\"><\/span><br> <span class=\"m\" data-tex=\"|\\ldots|&lt;\\text{отриц.}\"><\/span>: <span class=\"m\" data-tex=\"\\emptyset\"><\/span>;  <span class=\"m\" data-tex=\"|\\ldots|&gt;\\text{отриц.}\"><\/span>: <span class=\"m\" data-tex=\"\\R\"><\/span><br> «не больше 5 \\", "<span class=\"m\" data-tex=\"|f|&lt;g \\Leftrightarrow -g&lt;f&lt;g\"><\/span> (система)<br> <span class=\"m\" data-tex=\"|f|&gt;g \\Leftrightarrow f&gt;g\"><\/span> или <span class=\"m\" data-tex=\"f&lt;-g\"><\/span> (объединение)<br> <b>Два модуля:<\/b> нулевые точки, пересечь с промежутком<br> <b><span class=\"m\" data-tex=\"x^2\"><\/span> и <span class=\"m\" data-tex=\"|x|\"><\/span>:<\/b> <span class=\"m\" data-tex=\"t=|x|\\ge0\"><\/span>, вернуться к <span class=\"m\" data-tex=\"|x|\"><\/span><br> <b>Целые:<\/b> в <span class=\"m\" data-tex=\"\\langle m;n\\rangle\"><\/span> их <span class=\"m\" data-tex=\"n-m+1\"><\/span>"], "gloss": [["nerovnice s absolutní hodnotou", "неравенство с модулем"], ["odchylka nejvýše <span class=\"m\" data-tex=\"c\"><\/span>", "отклонение не больше <span class=\"m\" data-tex=\"c\"><\/span>"], ["vzdálenost od čísla <span class=\"m\" data-tex=\"a\"><\/span>", "расстояние от числа <span class=\"m\" data-tex=\"a\"><\/span>"], ["toleranční pásmo", "полоса допуска"], ["střed / poloměr intervalu", "центр / радиус интервала"], ["statistická chyba", "статистическая погрешность"], ["uvnitř / vně intervalu", "внутри / снаружи интервала"], ["kurzový závazek", "курсовое обязательство"], ["nulový bod", "нулевая точка"], ["devizové intervence", "валютные интервенции"], ["substituce", "замена"], ["celočíselné řešení", "целое решение"]], "quiz": [{"part": "A", "items": [{"q": "A1", "key": "B", "opts": "ABCDE"}, {"q": "A2", "key": "C", "opts": "ABCDE"}, {"q": "A3", "key": "A", "opts": "ABCDE"}, {"q": "A4", "key": "D", "opts": "ABCDE"}, {"q": "A5", "key": "E", "opts": "ABCDE"}, {"q": "A6", "key": "B", "opts": "ABCDE"}, {"q": "A7", "key": "C", "opts": "ABCDE"}, {"q": "A8", "key": "A", "opts": "ABCDE"}, {"q": "A9", "key": "D", "opts": "ABCDE"}, {"q": "A10", "key": "B", "opts": "ABCDE"}, {"q": "A11", "key": "D", "opts": "ABCDE"}, {"q": "A12", "key": "A", "opts": "ABCDE"}, {"q": "A13", "key": "C", "opts": "ABCDE"}, {"q": "A14", "key": "E", "opts": "ABCDE"}, {"q": "A15", "key": "B", "opts": "ABCDE"}, {"q": "A16", "key": "D", "opts": "ABCDE"}]}, {"part": "B", "items": [{"q": "B1", "key": "C", "opts": "ABCDE"}, {"q": "B2", "key": "A", "opts": "ABCDE"}, {"q": "B3", "key": "E", "opts": "ABCDE"}, {"q": "B4", "key": "B", "opts": "ABCDE"}, {"q": "B5", "key": "D", "opts": "ABCDE"}, {"q": "B6", "key": "A", "opts": "ABCDE"}]}, {"part": "D", "items": [{"q": "D1", "key": "a", "opts": "abcde"}, {"q": "D2", "key": "c", "opts": "abcde"}, {"q": "D3", "key": "e", "opts": "abcde"}, {"q": "D4", "key": "a", "opts": "abcd"}, {"q": "D5", "key": "d", "opts": "abcde"}, {"q": "D6", "key": "b", "opts": "abcde"}, {"q": "D7", "key": "c", "opts": "abcd"}, {"q": "D8", "key": "c", "opts": "abcd"}]}], "exam": [{"q": "D1", "src": "VŠE, vzor přijímacích zkoušek B, úloha 5 (přeformulováno)", "body": "Určete množinu všech reálných <span class=\"m\" data-tex=\"x\"><\/span>, pro která platí <span class=\"m\" data-tex=\"(x+3)^2&lt;9x+19\"><\/span>.", "opts": ["<span class=\"m\" data-tex=\"(-2;5)\"><\/span>", "<span class=\"m\" data-tex=\"(-1;10)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-2)\\cup(5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-1)\\cup(10;\\infty)\"><\/span>", "jiná odpověď"], "letters": "abcde", "key": "a"}, {"q": "D4", "src": "ve stylu přijímacího testu VŠE (vlastní úloha)", "body": "Součet všech celých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"|2x+1|\\le7\"><\/span>, je", "opts": ["<span class=\"m\" data-tex=\"-4\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>", "<span class=\"m\" data-tex=\"-3\"><\/span>", "<span class=\"m\" data-tex=\"3\"><\/span>"], "letters": "abcd", "key": "a"}, {"q": "D7", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Celé číslo <span class=\"m\" data-tex=\"x\"><\/span> je od čísla <span class=\"m\" data-tex=\"10\"><\/span> vzdáleno nejvýše o <span class=\"m\" data-tex=\"4\"><\/span> a od nuly alespoň o <span class=\"m\" data-tex=\"9\"><\/span>. Kolik takových čísel existuje?", "opts": ["<span class=\"m\" data-tex=\"3\"><\/span>", "<span class=\"m\" data-tex=\"5\"><\/span>", "<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"9\"><\/span>"], "letters": "abcd", "key": "c"}, {"q": "D8", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "V pondělí se kurz eura lišil od 25 Kč o méně než 20 haléřů. V úterý se lišil od pondělního kurzu také o méně než 20 haléřů. Který z kurzů <i>nemohl<\/i> v úterý nastat?", "opts": ["<span class=\"m\" data-tex=\"24{,}65\"><\/span> Kč", "<span class=\"m\" data-tex=\"25{,}35\"><\/span> Kč", "<span class=\"m\" data-tex=\"24{,}55\"><\/span> Kč", "<span class=\"m\" data-tex=\"25{,}00\"><\/span> Kč"], "letters": "abcd", "key": "c"}], "bank": [{"q": "A1", "src": "Koridor", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x-5|&lt;2\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;7)\"><\/span>", "<span class=\"m\" data-tex=\"(3;7)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle3;7\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-7;-3)\"><\/span>", "<span class=\"m\" data-tex=\"(-2;2)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A2", "src": "Vně koridoru", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x+1|\\ge4\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle-5;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-3\\rangle\\cup\\langle5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-5\\rangle\\cup\\langle3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-5)\\cup(3;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A3", "src": "Koeficient u <span class=\"m\" data-tex=\"x\"><\/span>", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|2x-1|\\le7\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle-3;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-4;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-3;4)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-6;8\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;4\\rangle\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A4", "src": "Záporný koeficient", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|4-3x|&gt;2\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\left(\\frac23;2\\right)\"><\/span>", "<span class=\"m\" data-tex=\"\\left(-\\infty;-2\\right)\\cup\\left(-\\frac23;\\infty\\right)\"><\/span>", "<span class=\"m\" data-tex=\"(2;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\left(-\\infty;\\frac23\\right)\\cup(2;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\left(-\\infty;\\frac23\\right\\rangle\\cup\\langle2;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A5", "src": "Nula vpravo", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x-7|\\le0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>", "<span class=\"m\" data-tex=\"\\langle0;7\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\{\\pm7\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{7\\}\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A6", "src": "Záporné číslo vpravo", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|3x+2|&gt;-5\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>", "<span class=\"m\" data-tex=\"\\left(-\\frac73;1\\right)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\left\\{-\\frac23\\right\\}\"><\/span>", "<span class=\"m\" data-tex=\"(1;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A7", "src": "Celá čísla", "body": "Kolik celých čísel vyhovuje nerovnici <span class=\"m\" data-tex=\"|x-2|\\le3\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"5\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>", "<span class=\"m\" data-tex=\"3\"><\/span>", "nekonečně mnoho"], "letters": "ABCDE", "key": "C"}, {"q": "A8", "src": "Z intervalu zpět", "body": "Interval <span class=\"m\" data-tex=\"(-6;2)\"><\/span> je množinou všech řešení nerovnice", "opts": ["<span class=\"m\" data-tex=\"|x+2|&lt;4\"><\/span>", "<span class=\"m\" data-tex=\"|x-2|&lt;4\"><\/span>", "<span class=\"m\" data-tex=\"|x+2|\\le4\"><\/span>", "<span class=\"m\" data-tex=\"|x+4|&lt;2\"><\/span>", "<span class=\"m\" data-tex=\"|x+6|&lt;2\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A9", "src": "Tolerance hmotnosti", "body": "Tabulka čokolády má vážit 100 g, odchylka smí být nejvýše 3 \\", "opts": ["<span class=\"m\" data-tex=\"97{,}0\"><\/span> g", "<span class=\"m\" data-tex=\"98{,}5\"><\/span> g", "<span class=\"m\" data-tex=\"103{,}0\"><\/span> g", "<span class=\"m\" data-tex=\"96{,}9\"><\/span> g", "<span class=\"m\" data-tex=\"102{,}9\"><\/span> g"], "letters": "ABCDE", "key": "D"}, {"q": "A10", "src": "Neznámá vpravo", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x-3|&lt;x+1\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-1;1)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A11", "src": "Neznámá vpravo podruhé", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|2x-4|\\le x\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle0;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\left(\\frac43;4\\right)\"><\/span>", "<span class=\"m\" data-tex=\"\\left\\langle\\frac43;4\\right\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle4;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A12", "src": "Větší než", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x+2|&gt;2x-1\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;3)\"><\/span>", "<span class=\"m\" data-tex=\"\\left(-\\frac13;3\\right)\"><\/span>", "<span class=\"m\" data-tex=\"\\left(-\\infty;-\\frac13\\right)\"><\/span>", "<span class=\"m\" data-tex=\"(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A13", "src": "Dvě absolutní hodnoty", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x-1|+|x+3|&lt;6\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-3;1)\"><\/span>", "<span class=\"m\" data-tex=\"(-5;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-4;2)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-4;2\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A14", "src": "Substituce", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"x^2-2|x|-8&lt;0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-2;4)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle0;4)\"><\/span>", "<span class=\"m\" data-tex=\"(-4;2)\"><\/span>", "<span class=\"m\" data-tex=\"(-2;2)\"><\/span>", "<span class=\"m\" data-tex=\"(-4;4)\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A15", "src": "Opakování lekce 6 — podílový tvar", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{x-1}{x+4}\\ge0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle-4;1\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-4)\\cup\\langle1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-4\\rangle\\cup\\langle1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-4;1\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle1;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A16", "src": "Opakování lekce 6 — kvadratická nerovnice", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"x^2+2x-15&lt;0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-3;5)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-5)\\cup(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-5;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-5;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;3)\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "B1", "src": "Součet vzdáleností", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x-1|+|x-5|&gt;6\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(0;6)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;1)\\cup(5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;0)\\cup(6;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(6;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "B2", "src": "Rozdíl", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x+3|-|x-1|\\ge2\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle0;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle0;1)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "B3", "src": "Substituce s „mezerou“", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"x^2-5|x|+6&gt;0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;2)\\cup(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-3;-2)\\cup(2;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-3)\\cup(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-2;2)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-3)\\cup(-2;2)\\cup(3;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "B4", "src": "Kvadratický výraz v absolutní hodnotě", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x^2-4|&lt;3\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\sqrt7;\\sqrt7)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\sqrt7;-1)\\cup(1;\\sqrt7)\"><\/span>", "<span class=\"m\" data-tex=\"(1;\\sqrt7)\"><\/span>", "<span class=\"m\" data-tex=\"(-1;1)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-\\sqrt7)\\cup(\\sqrt7;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B5", "src": "Blíž ke 2 než k <span class=\"m\" data-tex=\"-4\"><\/span>", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x-2|&lt;|x+4|\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;-1)\"><\/span>", "<span class=\"m\" data-tex=\"(1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-4;2)\"><\/span>", "<span class=\"m\" data-tex=\"(-1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "B6", "src": "Celá čísla", "body": "Kolik celých čísel vyhovuje nerovnici <span class=\"m\" data-tex=\"|x^2-6x|\\le5\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"4\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>", "<span class=\"m\" data-tex=\"2\"><\/span>", "<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>"], "letters": "ABCDE", "key": "A"}]}, {"n": 8, "name": "Iracionální rovnice a nerovnice", "lekce": {"path": "pdf/lekce_08.pdf", "pages": 12, "file": "Lekce_08_VSE.pdf"}, "du": {"path": "pdf/du_08.pdf", "pages": 7, "file": "DU_08_VSE.pdf"}, "card": ["<b>Корень:<\/b> под корнем <span class=\"m\" data-tex=\"\\ge0\"><\/span>, сам корень <span class=\"m\" data-tex=\"\\ge0\"><\/span><br> <span class=\"m\" data-tex=\"\\sqrt{x^2}=|x|\"><\/span>;  <span class=\"m\" data-tex=\"\\sqrt{a+b}\\neq\\sqrt a+\\sqrt b\"><\/span><br> <b>Definiční obor:<\/b> все условия <span class=\"m\" data-tex=\"\\to\"><\/span> пересечение; корень в знаменателе — строго <span class=\"m\" data-tex=\"&gt;0\"><\/span><br> <b>Средний рост за 2 года:<\/b> <span class=\"m\" data-tex=\"\\sqrt{(1+p)(1+q)}\"><\/span><br> <b>Правило корня:<\/b> <span class=\"m\" data-tex=\"\\times4\"><\/span> <span class=\"m\" data-tex=\"\\to\"><\/span> <span class=\"m\" data-tex=\"\\times2\"><\/span>", "<b><span class=\"m\" data-tex=\"\\sqrt f=g\"><\/span><\/b> <span class=\"m\" data-tex=\"\\Leftrightarrow\"><\/span> <span class=\"m\" data-tex=\"g\\ge0\"><\/span> и <span class=\"m\" data-tex=\"f=g^2\"><\/span> (или проверка)<br> сначала <b>уединить<\/b> корень;  <span class=\"m\" data-tex=\"\\sqrt f=-c\"><\/span>: <span class=\"m\" data-tex=\"\\emptyset\"><\/span><br> <span class=\"m\" data-tex=\"x\"><\/span> и <span class=\"m\" data-tex=\"\\sqrt x\"><\/span> <span class=\"m\" data-tex=\"\\to\"><\/span> замена <span class=\"m\" data-tex=\"t=\\sqrt x\\ge0\"><\/span><br> <b><span class=\"m\" data-tex=\"\\sqrt f&lt;g\"><\/span>:<\/b> <span class=\"m\" data-tex=\"f\\ge0\"><\/span>, <span class=\"m\" data-tex=\"g&gt;0\"><\/span>, <span class=\"m\" data-tex=\"f&lt;g^2\"><\/span><br> <b><span class=\"m\" data-tex=\"\\sqrt f&gt;g\"><\/span>:<\/b> (<span class=\"m\" data-tex=\"g&lt;0\"><\/span>, <span class=\"m\" data-tex=\"f\\ge0\"><\/span>) или (<span class=\"m\" data-tex=\"g\\ge0\"><\/span>, <span class=\"m\" data-tex=\"f&gt;g^2\"><\/span>)"], "gloss": [["druhá odmocnina", "квадратный корень"], ["cizí kořen", "посторонний корень"], ["iracionální rovnice", "иррациональное уравнение"], ["zkouška", "проверка"], ["iracionální nerovnice", "иррациональное неравенство"], ["umocnit na druhou", "возвести в квадрат"], ["(maximální) definiční obor", "(наибольшая) область определения"], ["osamostatnit odmocninu", "уединить корень"], ["výraz pod odmocninou", "подкоренное выражение"], ["substituce", "замена"], ["geometrický průměr", "среднее геометрическое"], ["průměrné tempo růstu", "средний темп роста"], ["optimální objednávka", "оптимальный заказ"], ["statistická chyba průzkumu", "погрешность опроса"]], "quiz": [{"part": "A", "items": [{"q": "A1", "key": "B", "opts": "ABCDE"}, {"q": "A2", "key": "C", "opts": "ABCDE"}, {"q": "A3", "key": "A", "opts": "ABCDE"}, {"q": "A4", "key": "C", "opts": "ABCDE"}, {"q": "A5", "key": "B", "opts": "ABCDE"}, {"q": "A6", "key": "E", "opts": "ABCDE"}, {"q": "A7", "key": "D", "opts": "ABCDE"}, {"q": "A8", "key": "B", "opts": "ABCDE"}, {"q": "A9", "key": "A", "opts": "ABCDE"}, {"q": "A10", "key": "E", "opts": "ABCDE"}, {"q": "A11", "key": "C", "opts": "ABCDE"}, {"q": "A12", "key": "D", "opts": "ABCDE"}, {"q": "A13", "key": "A", "opts": "ABCDE"}, {"q": "A14", "key": "E", "opts": "ABCDE"}, {"q": "A15", "key": "D", "opts": "ABCDE"}, {"q": "A16", "key": "B", "opts": "ABCDE"}]}, {"part": "B", "items": [{"q": "B1", "key": "A", "opts": "ABCDE"}, {"q": "B2", "key": "D", "opts": "ABCDE"}, {"q": "B3", "key": "B", "opts": "ABCDE"}, {"q": "B4", "key": "C", "opts": "ABCDE"}, {"q": "B5", "key": "E", "opts": "ABCDE"}, {"q": "B6", "key": "B", "opts": "ABCDE"}]}, {"part": "D", "items": [{"q": "D1", "key": "c", "opts": "abcde"}, {"q": "D2", "key": "b", "opts": "abcde"}, {"q": "D3", "key": "d", "opts": "abcde"}, {"q": "D4", "key": "a", "opts": "abcde"}, {"q": "D5", "key": "e", "opts": "abcde"}, {"q": "D6", "key": "c", "opts": "abcde"}, {"q": "D7", "key": "b", "opts": "abcd"}, {"q": "D8", "key": "c", "opts": "abcde"}]}], "exam": [{"q": "D1", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Maximální definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{4-|x-1|}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-3;5)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-5;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-3;5\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-3\\rangle\\cup\\langle5;\\infty)\"><\/span>", "jiná odpověď"], "letters": "abcde", "key": "c"}, {"q": "D2", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Součet všech reálných řešení rovnice <span class=\"m\" data-tex=\"\\sqrt{2x+7}=x+2\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"-2\"><\/span>", "<span class=\"m\" data-tex=\"1\"><\/span>", "<span class=\"m\" data-tex=\"-3\"><\/span>", "<span class=\"m\" data-tex=\"3\"><\/span>", "Žádná z předchozích možností."], "letters": "abcde", "key": "b"}, {"q": "D3", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Množina všech reálných čísel, pro která platí <span class=\"m\" data-tex=\"\\sqrt{x+1}\\le x-1\"><\/span>, je rovna množině", "opts": ["<span class=\"m\" data-tex=\"\\langle-1;0\\rangle\\cup\\langle3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle1;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle3;\\infty)\"><\/span>", "jiná odpověď"], "letters": "abcde", "key": "d"}, {"q": "D4", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Všechna řešení rovnice <span class=\"m\" data-tex=\"x-7\\sqrt x+10=0\"><\/span> leží v intervalu", "opts": ["<span class=\"m\" data-tex=\"\\langle3;26\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle0;5\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle5;30\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle2;20\\rangle\"><\/span>", "Žádná z předchozích možností."], "letters": "abcde", "key": "a"}, {"q": "D5", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Investiční fond první rok vydělal <span class=\"m\" data-tex=\"60\\,\\%\"><\/span>, druhý rok ztratil <span class=\"m\" data-tex=\"10\\,\\%\"><\/span>. Průměrná roční výnosnost fondu (tempo, které by za dva roky dalo stejný výsledek) je", "opts": ["<span class=\"m\" data-tex=\"25\\,\\%\"><\/span>", "<span class=\"m\" data-tex=\"44\\,\\%\"><\/span>", "<span class=\"m\" data-tex=\"35\\,\\%\"><\/span>", "<span class=\"m\" data-tex=\"15\\,\\%\"><\/span>", "Žádná z předchozích možností."], "letters": "abcde", "key": "e"}, {"q": "D6", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Firma platí za software měsíčně <span class=\"m\" data-tex=\"C=2\\,000\\sqrt n\"><\/span> Kč, kde <span class=\"m\" data-tex=\"n\"><\/span> je počet uživatelů. Nejmenší počet uživatelů, při kterém cena na jednoho uživatele nepřesáhne 250 Kč, je", "opts": ["<span class=\"m\" data-tex=\"8\"><\/span>", "<span class=\"m\" data-tex=\"16\"><\/span>", "<span class=\"m\" data-tex=\"64\"><\/span>", "<span class=\"m\" data-tex=\"63\"><\/span>", "Žádná z předchozích možností."], "letters": "abcde", "key": "c"}, {"q": "D7", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Porovnejte veličiny  <span class=\"m\" data-tex=\"\\mathbf{A}=\\sqrt{16+9}\"><\/span>  a  <span class=\"m\" data-tex=\"\\mathbf{B}=\\sqrt{16}+\\sqrt9\"><\/span>.", "opts": ["A je větší", "B je větší", "A a B jsou si rovny", "nelze rozhodnout"], "letters": "abcd", "key": "b"}, {"q": "D8", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Pavel má čtvercový pozemek o ploše 400 m². Jeho soused má čtvercový pozemek s <i>dvojnásobnou<\/i> plochou. Kolik metrů plotu přibližně potřebuje soused na oplocení celého pozemku?", "opts": ["<span class=\"m\" data-tex=\"160\"><\/span>", "<span class=\"m\" data-tex=\"80\"><\/span>", "<span class=\"m\" data-tex=\"113\"><\/span>", "<span class=\"m\" data-tex=\"120\"><\/span>", "<span class=\"m\" data-tex=\"100\"><\/span>"], "letters": "abcde", "key": "c"}], "bank": [{"q": "A1", "src": "Definiční obor", "body": "Definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{12-3x}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle4;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;4)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A2", "src": "Odmocnina ve jmenovateli", "body": "Definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{1}{\\sqrt{x+5}}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle-5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-5)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{-5\\}\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A3", "src": "Dvě odmocniny", "body": "Definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{x+1}+\\sqrt{4-x}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle-1;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-1;4)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-4;1\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle4;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A4", "src": "Kvadratický výraz", "body": "Definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{x^2-16}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle4;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-4;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-4\\rangle\\cup\\langle4;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-4)\\cup(4;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A5", "src": "Nejjednodušší rovnice", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\sqrt{x-3}=4\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{7\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{19\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{5\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-13\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A6", "src": "Záporná pravá strana", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\sqrt{5-x}=-2\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{1\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{9\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A7", "src": "Cizí kořen", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\sqrt{x+12}=x\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{-3;4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{3\\}\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A8", "src": "Tentokrát bez cizího kořene", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\sqrt{3x+4}=x+2\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{0\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1;0\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{0;1\\}\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A9", "src": "Odmocnina rovná odmocnině", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\sqrt{2x+1}=\\sqrt{x+4}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{5\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{1\\}\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A10", "src": "Substituce", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"x-6\\sqrt x+8=0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{2;4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{16\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-2;-4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{4;16\\}\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "A11", "src": "Substituce se záporným kořenem", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"x+2\\sqrt x-8=0\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{4;16\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{16\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "A12", "src": "Nerovnice s konstantou", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\sqrt{x+2}\\le3\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;7\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-2;7)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-2;1\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-2;7\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle7;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A13", "src": "Odmocnina větší než číslo", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\sqrt{x-2}&gt;1\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle2;3)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle2;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A14", "src": "Plot kolem pozemku", "body": "Čtvercový pozemek má plochu <span class=\"m\" data-tex=\"1\\,225\"><\/span> m². Plot kolem celého pozemku stojí 150 Kč za metr. Plot bude stát", "opts": ["<span class=\"m\" data-tex=\"5\\,250\"><\/span> Kč", "<span class=\"m\" data-tex=\"183\\,750\"><\/span> Kč", "<span class=\"m\" data-tex=\"10\\,500\"><\/span> Kč", "<span class=\"m\" data-tex=\"42\\,000\"><\/span> Kč", "<span class=\"m\" data-tex=\"21\\,000\"><\/span> Kč"], "letters": "ABCDE", "key": "E"}, {"q": "A15", "src": "Opakování lekce 7 — tolerance", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x-4|\\le3\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(1;7)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-1;7\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;1\\rangle\\cup\\langle7;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle1;7\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-7;-1\\rangle\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "A16", "src": "Opakování lekce 7 — vně intervalu", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|2x-1|&gt;5\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-2;3)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-2)\\cup(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-3)\\cup(2;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-2;3\\rangle\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B1", "src": "Dvě odmocniny v rovnici", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\sqrt{x+5}-\\sqrt x=1\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{16\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{0;4\\}\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "B2", "src": "Kořen, který zmizí", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\sqrt{x^2-5}=x+1\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{-3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-3;3\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{2\\}\"><\/span>"], "letters": "ABCDE", "key": "D"}, {"q": "B3", "src": "Odmocnina alespoň výraz", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\sqrt{4-x}\\ge x-2\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\langle0;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle2;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;4\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle3;4\\rangle\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B4", "src": "Odmocnina menší než výraz", "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"\\sqrt{x+4}&lt;x-2\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(2;5)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-4;0)\\cup(5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(0;5)\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "B5", "src": "Celá čísla v definičním oboru", "body": "Kolik celých čísel patří do definičního oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\sqrt{10-x}}{\\sqrt{x-3}}\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"8\"><\/span>", "<span class=\"m\" data-tex=\"6\"><\/span>", "<span class=\"m\" data-tex=\"10\"><\/span>", "<span class=\"m\" data-tex=\"3\"><\/span>", "<span class=\"m\" data-tex=\"7\"><\/span>"], "letters": "ABCDE", "key": "E"}, {"q": "B6", "src": "Pravidlo odmocniny", "body": "Podle Wilsonova vzorce <span class=\"m\" data-tex=\"Q=\\sqrt{\\dfrac{2DK}{h}}\"><\/span> je při roční poptávce <span class=\"m\" data-tex=\"D=900\"><\/span> ks, nákladech na objednávku <span class=\"m\" data-tex=\"K=200\"><\/span> Kč a skladování <span class=\"m\" data-tex=\"h=4\"><\/span> Kč optimální objednávka <span class=\"m\" data-tex=\"Q=300\"><\/span> ks. Poptávka vzroste čtyřnásobně, ostatní zůstane stejné. Nová optimální objednávka je", "opts": ["<span class=\"m\" data-tex=\"1\\,200\"><\/span> ks", "<span class=\"m\" data-tex=\"600\"><\/span> ks", "<span class=\"m\" data-tex=\"300\"><\/span> ks", "<span class=\"m\" data-tex=\"900\"><\/span> ks", "<span class=\"m\" data-tex=\"2\\,400\"><\/span> ks"], "letters": "ABCDE", "key": "B"}]}, {"n": 9, "name": "Funkce (lineární, kvadratická, lomená). Grafy", "lekce": {"path": "pdf/lekce_09.pdf", "pages": 10, "file": "Lekce_09_VSE.pdf"}, "du": {"path": "pdf/du_09.pdf", "pages": 8, "file": "DU_09_VSE.pdf"}, "card": ["<b><span class=\"m\" data-tex=\"D(f)\"><\/span><\/b> — тень графика на оси <span class=\"m\" data-tex=\"x\"><\/span>, <b><span class=\"m\" data-tex=\"H(f)\"><\/span><\/b> — на оси <span class=\"m\" data-tex=\"y\"><\/span><br> <b>prostá:<\/b> горизонталь — не больше раза<br> <b>sudá:<\/b> <span class=\"m\" data-tex=\"f(-x)=f(x)\"><\/span>;  <b>lichá:<\/b> <span class=\"m\" data-tex=\"f(-x)=-f(x)\"><\/span><br> <b>Прямая:<\/b> <span class=\"m\" data-tex=\"k=\\frac{y_2-y_1}{x_2-x_1}\"><\/span>, <span class=\"m\" data-tex=\"q=f(0)\"><\/span><br> <b>Bod zvratu:<\/b> <span class=\"m\" data-tex=\"q=\\frac{F}{p-c}\"><\/span>", "<b>Парабола:<\/b> <span class=\"m\" data-tex=\"m=-\\frac b{2a}\"><\/span>, <span class=\"m\" data-tex=\"n=f(m)\"><\/span><br> <span class=\"m\" data-tex=\"a&gt;0\"><\/span>: min, <span class=\"m\" data-tex=\"H=\\langle n;\\infty)\"><\/span>;  <span class=\"m\" data-tex=\"a&lt;0\"><\/span>: max, <span class=\"m\" data-tex=\"H=(-\\infty;n\\rangle\"><\/span><br> <b>Max выручки<\/b> <span class=\"m\" data-tex=\"p(A-Bp)\"><\/span>: <span class=\"m\" data-tex=\"p=\\frac{A}{2B}\"><\/span> (середина между корнями)<br> <b>Гипербола<\/b> <span class=\"m\" data-tex=\"n+\\frac k{x-m}\"><\/span>: асимптоты <span class=\"m\" data-tex=\"x=m\"><\/span>, <span class=\"m\" data-tex=\"y=n\"><\/span>"], "gloss": [["definiční obor", "область определения"], ["obor hodnot", "множество значений"], ["rostoucí / klesající", "возрастающая / убывающая"], ["prostá", "взаимно однозначная"], ["sudá / lichá", "чётная / нечётная"], ["omezená", "ограниченная"], ["směrnice", "угловой коэффициент"], ["vrchol paraboly", "вершина параболы"], ["fixní / variabilní náklady", "постоянные / переменные затраты"], ["tržba, zisk", "выручка, прибыль"], ["bod zvratu", "точка безубыточности"], ["nepřímá úměrnost", "обратная пропорциональность"]], "quiz": [{"part": "A", "items": [{"q": "A1", "key": "B", "opts": "ABCDE"}, {"q": "A2", "key": "B", "opts": "ABCDE"}, {"q": "A3", "key": "A", "opts": "ABCDE"}, {"q": "A4", "key": "B", "opts": "ABCDE"}, {"q": "A5", "key": "B", "opts": "ABCDE"}, {"q": "A6", "key": "C", "opts": "ABCDE"}, {"q": "A7", "key": "A", "opts": "ABCDE"}, {"q": "A8", "key": "B", "opts": "ABCDE"}, {"q": "A9", "key": "A", "opts": "ABCDE"}, {"q": "A10", "key": "A", "opts": "ABCDE"}, {"q": "A11", "key": "A", "opts": "ABCDE"}, {"q": "A12", "key": "A", "opts": "ABCDE"}, {"q": "A13", "key": "A", "opts": "ABCDE"}, {"q": "A14", "key": "A", "opts": "ABCDE"}, {"q": "A15", "key": "B", "opts": "ABCDE"}, {"q": "A16", "key": "B", "opts": "ABCDE"}]}, {"part": "B", "items": [{"q": "B1", "key": "B", "opts": "ABCDE"}, {"q": "B2", "key": "B", "opts": "ABCDE"}, {"q": "B3", "key": "C", "opts": "ABCDE"}, {"q": "B4", "key": "B", "opts": "ABCDE"}, {"q": "B5", "key": "B", "opts": "ABCDE"}, {"q": "B6", "key": "B", "opts": "ABCDE"}]}, {"part": "D", "items": [{"q": "D1", "key": "b", "opts": "abcd"}, {"q": "D2", "key": "a", "opts": "abcd"}, {"q": "D3", "key": "c", "opts": "abcd"}, {"q": "D4", "key": "d", "opts": "abcd"}, {"q": "D5", "key": "c", "opts": "abcde"}, {"q": "D6", "key": "b", "opts": "abcde"}, {"q": "D7", "key": "a", "opts": "abcde"}, {"q": "D8", "key": "a", "opts": "abcde"}]}], "exam": [{"q": "D1", "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 28; přeformulováno)", "body": "Graf funkce <span class=\"m\" data-tex=\"y=\\frac23x+\\frac16\"><\/span> prochází body", "opts": ["<span class=\"m\" data-tex=\"\\left[-1;\\frac16\\right]\"><\/span>, <span class=\"m\" data-tex=\"\\left[0;\\frac16\\right]\"><\/span>", "<span class=\"m\" data-tex=\"\\left[0;\\frac16\\right]\"><\/span>, <span class=\"m\" data-tex=\"\\left[\\frac12;\\frac12\\right]\"><\/span>", "<span class=\"m\" data-tex=\"\\left[-1;\\frac23\\right]\"><\/span>, <span class=\"m\" data-tex=\"\\left[0;\\frac16\\right]\"><\/span>", "<span class=\"m\" data-tex=\"\\left[0;\\frac16\\right]\"><\/span>, <span class=\"m\" data-tex=\"\\left[\\frac12;\\frac23\\right]\"><\/span>"], "letters": "abcd", "key": "b"}, {"q": "D2", "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 29; přeformulováno)", "body": "Graf funkce <span class=\"m\" data-tex=\"y=x^2+x+\\frac12\"><\/span> prochází body", "opts": ["<span class=\"m\" data-tex=\"\\left[-1;\\frac12\\right]\"><\/span>, <span class=\"m\" data-tex=\"\\left[0;\\frac12\\right]\"><\/span>", "<span class=\"m\" data-tex=\"\\left[0;\\frac12\\right]\"><\/span>, <span class=\"m\" data-tex=\"\\left[1;\\frac32\\right]\"><\/span>", "<span class=\"m\" data-tex=\"\\left[-1;\\frac23\\right]\"><\/span>, <span class=\"m\" data-tex=\"\\left[0;\\frac12\\right]\"><\/span>", "<span class=\"m\" data-tex=\"\\left[0;\\frac12\\right]\"><\/span>, <span class=\"m\" data-tex=\"\\left[\\frac12;\\frac23\\right]\"><\/span>"], "letters": "abcd", "key": "a"}, {"q": "D3", "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 31; přeformulováno)", "body": "Kvadratická funkce <span class=\"m\" data-tex=\"y=x^2+2x+3\"><\/span> je klesající na intervalu", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;1\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle1;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;-1\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-1;\\infty)\"><\/span>"], "letters": "abcd", "key": "c"}, {"q": "D4", "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 33; přeformulováno)", "body": "Lineární funkce, jejíž graf prochází body <span class=\"m\" data-tex=\"[2;3]\"><\/span> a <span class=\"m\" data-tex=\"[4;-1]\"><\/span>, je", "opts": ["<span class=\"m\" data-tex=\"y=x+1\"><\/span>", "<span class=\"m\" data-tex=\"y=-x+5\"><\/span>", "<span class=\"m\" data-tex=\"y=2x-1\"><\/span>", "<span class=\"m\" data-tex=\"y=-2x+7\"><\/span>"], "letters": "abcd", "key": "d"}, {"q": "D6", "src": "ve stylu testu VŠE (vlastní úloha)", "body": "Hladina vody v nádrži klesá rovnoměrně. V pondělí ráno byla <span class=\"m\" data-tex=\"4{,}8\"><\/span> m, ve čtvrtek ráno <span class=\"m\" data-tex=\"3{,}9\"><\/span> m. Pokud pokles bude pokračovat stejně, klesne hladina pod <span class=\"m\" data-tex=\"3\"><\/span> m poprvé (počítáno po celých dnech od pondělního rána)", "opts": ["v neděli ráno", "v pondělí ráno za týden", "v sobotu ráno", "v úterý ráno za týden", "Žádná z předchozích možností."], "letters": "abcde", "key": "b"}, {"q": "D7", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Tisk 100 letáků stojí 700 Kč, tisk 300 letáků 1 100 Kč; cena závisí na počtu lineárně. Kolik stojí tisk 1 000 letáků?", "opts": ["<span class=\"m\" data-tex=\"2\\,500\"><\/span> Kč", "<span class=\"m\" data-tex=\"3\\,500\"><\/span> Kč", "<span class=\"m\" data-tex=\"7\\,000\"><\/span> Kč", "<span class=\"m\" data-tex=\"2\\,200\"><\/span> Kč", "nelze určit"], "letters": "abcde", "key": "a"}, {"q": "D8", "src": "ve stylu SCIO OSP (vlastní úloha)", "body": "Funkce <span class=\"m\" data-tex=\"f\"><\/span> je definovaná na <span class=\"m\" data-tex=\"\\R\"><\/span>, je lichá a <span class=\"m\" data-tex=\"f(3)=5\"><\/span>. Kolik je <span class=\"m\" data-tex=\"f(-3)+f(0)\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"-5\"><\/span>", "<span class=\"m\" data-tex=\"5\"><\/span>", "<span class=\"m\" data-tex=\"0\"><\/span>", "<span class=\"m\" data-tex=\"-10\"><\/span>", "nelze určit"], "letters": "abcde", "key": "a"}], "bank": [{"q": "A1", "src": "Definiční obor", "body": "Definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{x+2}{x-5}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\R\\setminus\\{-2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{5\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{-5\\}\"><\/span>", "<span class=\"m\" data-tex=\"(5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A2", "src": "Obor hodnot", "body": "Obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=x^2-3\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\R\"><\/span>", "<span class=\"m\" data-tex=\"\\langle-3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle0;\\infty)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A3", "src": "Přímka dvěma body", "body": "Přímka procházející body <span class=\"m\" data-tex=\"[0;4]\"><\/span> a <span class=\"m\" data-tex=\"[2;10]\"><\/span> má rovnici", "opts": ["<span class=\"m\" data-tex=\"y=3x+4\"><\/span>", "<span class=\"m\" data-tex=\"y=4x+3\"><\/span>", "<span class=\"m\" data-tex=\"y=5x\"><\/span>", "<span class=\"m\" data-tex=\"y=3x-4\"><\/span>", "<span class=\"m\" data-tex=\"y=6x+4\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A4", "src": "Vrchol", "body": "Vrchol paraboly <span class=\"m\" data-tex=\"y=x^2+4x+7\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"[2;19]\"><\/span>", "<span class=\"m\" data-tex=\"[-2;3]\"><\/span>", "<span class=\"m\" data-tex=\"[-4;7]\"><\/span>", "<span class=\"m\" data-tex=\"[-2;7]\"><\/span>", "<span class=\"m\" data-tex=\"[2;3]\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A5", "src": "Lichá funkce", "body": "Která z funkcí je lichá?", "opts": ["<span class=\"m\" data-tex=\"x^2+1\"><\/span>", "<span class=\"m\" data-tex=\"x^3\"><\/span>", "<span class=\"m\" data-tex=\"|x|\"><\/span>", "<span class=\"m\" data-tex=\"x+2\"><\/span>", "<span class=\"m\" data-tex=\"x^4\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A6", "src": "Bod zvratu", "body": "Fixní náklady jsou <span class=\"m\" data-tex=\"50\\,000\"><\/span> Kč, variabilní náklady <span class=\"m\" data-tex=\"120\"><\/span> Kč na kus, cena <span class=\"m\" data-tex=\"220\"><\/span> Kč. Bod zvratu je", "opts": ["<span class=\"m\" data-tex=\"227\"><\/span> ks", "<span class=\"m\" data-tex=\"417\"><\/span> ks", "<span class=\"m\" data-tex=\"500\"><\/span> ks", "<span class=\"m\" data-tex=\"1000\"><\/span> ks", "<span class=\"m\" data-tex=\"250\"><\/span> ks"], "letters": "ABCDE", "key": "C"}, {"q": "A7", "src": "Zisk", "body": "Za podmínek úlohy A6 firma prodá 800 kusů. Její zisk je", "opts": ["<span class=\"m\" data-tex=\"30\\,000\"><\/span> Kč", "<span class=\"m\" data-tex=\"80\\,000\"><\/span> Kč", "<span class=\"m\" data-tex=\"126\\,000\"><\/span> Kč", "<span class=\"m\" data-tex=\"-20\\,000\"><\/span> Kč", "<span class=\"m\" data-tex=\"176\\,000\"><\/span> Kč"], "letters": "ABCDE", "key": "A"}, {"q": "A8", "src": "Maximální tržba", "body": "Při ceně <span class=\"m\" data-tex=\"p\"><\/span> Kč se prodá <span class=\"m\" data-tex=\"300-3p\"><\/span> kusů. Největší možná tržba je", "opts": ["<span class=\"m\" data-tex=\"50\"><\/span> Kč", "<span class=\"m\" data-tex=\"7\\,500\"><\/span> Kč", "<span class=\"m\" data-tex=\"15\\,000\"><\/span> Kč", "<span class=\"m\" data-tex=\"22\\,500\"><\/span> Kč", "<span class=\"m\" data-tex=\"4\\,500\"><\/span> Kč"], "letters": "ABCDE", "key": "B"}, {"q": "A9", "src": "Obor hodnot", "body": "Obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=-x^2+4x+1\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;5\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\langle5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;2\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;1\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A10", "src": "Asymptoty", "body": "Asymptoty grafu funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{x-1}{x+2}\"><\/span> jsou", "opts": ["<span class=\"m\" data-tex=\"x=-2,\\ y=1\"><\/span>", "<span class=\"m\" data-tex=\"x=2,\\ y=1\"><\/span>", "<span class=\"m\" data-tex=\"x=-2,\\ y=-1\"><\/span>", "<span class=\"m\" data-tex=\"x=1,\\ y=-2\"><\/span>", "<span class=\"m\" data-tex=\"x=-2,\\ y=-\\frac12\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A11", "src": "Průsečíky s osami", "body": "Graf funkce <span class=\"m\" data-tex=\"f(x)=2x-6\"><\/span> protíná osy v bodech", "opts": ["<span class=\"m\" data-tex=\"[3;0]\"><\/span> a <span class=\"m\" data-tex=\"[0;-6]\"><\/span>", "<span class=\"m\" data-tex=\"[-3;0]\"><\/span> a <span class=\"m\" data-tex=\"[0;-6]\"><\/span>", "<span class=\"m\" data-tex=\"[3;0]\"><\/span> a <span class=\"m\" data-tex=\"[0;6]\"><\/span>", "<span class=\"m\" data-tex=\"[6;0]\"><\/span> a <span class=\"m\" data-tex=\"[0;-3]\"><\/span>", "<span class=\"m\" data-tex=\"[2;0]\"><\/span> a <span class=\"m\" data-tex=\"[0;-6]\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A12", "src": "Teplota a výška", "body": "V Krkonoších klesá teplota zhruba lineárně o <span class=\"m\" data-tex=\"0{,}6\\,^\\circ\"><\/span>C na každých 100 m výšky. V Trutnově (<span class=\"m\" data-tex=\"400\"><\/span> m n. m.) je <span class=\"m\" data-tex=\"10\\,^\\circ\"><\/span>C. Kolik stupňů je přibližně na Sněžce (<span class=\"m\" data-tex=\"1600\"><\/span> m n. m.)?", "opts": ["<span class=\"m\" data-tex=\"2{,}8\\,^\\circ\"><\/span>C", "<span class=\"m\" data-tex=\"7{,}2\\,^\\circ\"><\/span>C", "<span class=\"m\" data-tex=\"0\\,^\\circ\"><\/span>C", "<span class=\"m\" data-tex=\"-2{,}8\\,^\\circ\"><\/span>C", "<span class=\"m\" data-tex=\"3{,}4\\,^\\circ\"><\/span>C"], "letters": "ABCDE", "key": "A"}, {"q": "A13", "src": "Rovnoběžka", "body": "Přímka rovnoběžná s <span class=\"m\" data-tex=\"y=2x-1\"><\/span> procházející bodem <span class=\"m\" data-tex=\"[1;5]\"><\/span> má rovnici", "opts": ["<span class=\"m\" data-tex=\"y=2x+3\"><\/span>", "<span class=\"m\" data-tex=\"y=2x+5\"><\/span>", "<span class=\"m\" data-tex=\"y=-\\frac12x+\\frac{11}2\"><\/span>", "<span class=\"m\" data-tex=\"y=2x-3\"><\/span>", "<span class=\"m\" data-tex=\"y=5x\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A14", "src": "Parabola pod osou", "body": "Pro která <span class=\"m\" data-tex=\"x\"><\/span> leží graf funkce <span class=\"m\" data-tex=\"f(x)=x^2-4x+3\"><\/span> pod osou <span class=\"m\" data-tex=\"x\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"(1;3)\"><\/span>", "<span class=\"m\" data-tex=\"\\langle1;3\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;1)\\cup(3;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"(-3;-1)\"><\/span>", "<span class=\"m\" data-tex=\"(0;3)\"><\/span>"], "letters": "ABCDE", "key": "A"}, {"q": "A15", "src": "Opakování lekce 8", "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\sqrt{x+2}=x\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\{-1;2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\{-1\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\emptyset\"><\/span>", "<span class=\"m\" data-tex=\"\\{4\\}\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "A16", "src": "Opakování lekce 8", "body": "Definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{1}{\\sqrt{5-x}}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"(-\\infty;5\\rangle\"><\/span>", "<span class=\"m\" data-tex=\"(-\\infty;5)\"><\/span>", "<span class=\"m\" data-tex=\"(5;\\infty)\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{5\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\langle0;5)\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B1", "src": "Výběh u zdi", "body": "Farmář má 60 m pletiva a chce u dlouhé zdi ohradit obdélníkový výběh (zeď tvoří jednu stranu). Největší možná plocha výběhu je", "opts": ["<span class=\"m\" data-tex=\"225\"><\/span> m<span class=\"m\" data-tex=\"^2\"><\/span>", "<span class=\"m\" data-tex=\"450\"><\/span> m<span class=\"m\" data-tex=\"^2\"><\/span>", "<span class=\"m\" data-tex=\"400\"><\/span> m<span class=\"m\" data-tex=\"^2\"><\/span>", "<span class=\"m\" data-tex=\"900\"><\/span> m<span class=\"m\" data-tex=\"^2\"><\/span>", "<span class=\"m\" data-tex=\"300\"><\/span> m<span class=\"m\" data-tex=\"^2\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B2", "src": "Poptávka", "body": "Poptávka po vstupenkách je <span class=\"m\" data-tex=\"q=1000-4p\"><\/span> (cena <span class=\"m\" data-tex=\"p\"><\/span> v Kč). Při jaké ceně je tržba největší?", "opts": ["<span class=\"m\" data-tex=\"250\"><\/span> Kč", "<span class=\"m\" data-tex=\"125\"><\/span> Kč", "<span class=\"m\" data-tex=\"100\"><\/span> Kč", "<span class=\"m\" data-tex=\"500\"><\/span> Kč", "<span class=\"m\" data-tex=\"62{,}5\"><\/span> Kč"], "letters": "ABCDE", "key": "B"}, {"q": "B3", "src": "Vrchol na ose", "body": "Pro které <span class=\"m\" data-tex=\"c\"><\/span> leží vrchol paraboly <span class=\"m\" data-tex=\"y=x^2-6x+c\"><\/span> na ose <span class=\"m\" data-tex=\"x\"><\/span>?", "opts": ["<span class=\"m\" data-tex=\"c=3\"><\/span>", "<span class=\"m\" data-tex=\"c=6\"><\/span>", "<span class=\"m\" data-tex=\"c=9\"><\/span>", "<span class=\"m\" data-tex=\"c=-9\"><\/span>", "<span class=\"m\" data-tex=\"c=36\"><\/span>"], "letters": "ABCDE", "key": "C"}, {"q": "B4", "src": "Cvrček-teploměr", "body": "Podle pravidla z úvodu lekce je teplota <span class=\"m\" data-tex=\"T=10+\\frac{N-40}{7}\"><\/span> (<span class=\"m\" data-tex=\"N\"><\/span> — počet cvrknutí za minutu). Kolikrát za minutu cvrčí cvrček při <span class=\"m\" data-tex=\"24\\,^\\circ\"><\/span>C?", "opts": ["<span class=\"m\" data-tex=\"98\"><\/span>", "<span class=\"m\" data-tex=\"138\"><\/span>", "<span class=\"m\" data-tex=\"168\"><\/span>", "<span class=\"m\" data-tex=\"128\"><\/span>", "<span class=\"m\" data-tex=\"208\"><\/span>"], "letters": "ABCDE", "key": "B"}, {"q": "B5", "src": "Průměrné náklady", "body": "Fixní náklady jsou <span class=\"m\" data-tex=\"90\\,000\"><\/span> Kč, variabilní <span class=\"m\" data-tex=\"300\"><\/span> Kč na kus. Kolik kusů je třeba vyrobit, aby průměrné náklady na kus nepřesáhly <span class=\"m\" data-tex=\"400\"><\/span> Kč?", "opts": ["aspoň <span class=\"m\" data-tex=\"300\"><\/span>", "aspoň <span class=\"m\" data-tex=\"900\"><\/span>", "aspoň <span class=\"m\" data-tex=\"225\"><\/span>", "aspoň <span class=\"m\" data-tex=\"1200\"><\/span>", "nikdy"], "letters": "ABCDE", "key": "B"}, {"q": "B6", "src": "Obor hodnot hyperboly", "body": "Obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{2x+4}{x-1}\"><\/span> je", "opts": ["<span class=\"m\" data-tex=\"\\R\\setminus\\{1\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{-4\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\R\\setminus\\{-2\\}\"><\/span>", "<span class=\"m\" data-tex=\"\\R\"><\/span>"], "letters": "ABCDE", "key": "B"}]}];
+const LINE = "VŠE";
+const TOTAL = 35;
+const MONTHS = [["Říjen", 1, 4], ["Listopad", 5, 12], ["Prosinec", 13, 18], ["Leden", 19, 22], ["Únor", 23, 27], ["Březen", 28, 31], ["Duben", 32, 35]];
+const KIND = { lekce: "Лекция", du: "Domácí úkol" };
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const plural = (n, a, b, c) => n % 10 === 1 && n % 100 !== 11 ? a : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? b : c);
+const latest = DATA[DATA.length - 1];
+const byN = (n) => DATA.find((t) => t.n === n);
+const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---- personal storage (this browser only) ---- */
+const SKEY = "pec-quiz-" + LINE;
+let store = {};
+try { store = JSON.parse(localStorage.getItem(SKEY) || "{}") || {}; } catch (e) { store = {}; }
+const persist = () => { try { localStorage.setItem(SKEY, JSON.stringify(store)); } catch (e) {} };
+const rec = (n) => (store[n] = store[n] || { a: {}, checked: false });
+
+function totals(t) {
+  const items = (t.quiz || []).flatMap((p) => p.items);
+  const r = store[t.n];
+  if (!r || !r.checked) return { total: items.length, right: null };
+  return { total: items.length, right: items.filter((it) => r.a[it.q] === it.key).length };
+}
+
+/* ---- math ---- */
+function typeset(root) {
+  root.querySelectorAll(".m[data-tex]").forEach((s) => {
+    const tex = s.dataset.tex;
+    try {
+      if (!window.katex) throw 0;
+      katex.render(tex, s, { output: "mathml", throwOnError: false, macros: { "\\R": "\\mathbb{R}", "\\N": "\\mathbb{N}", "\\Z": "\\mathbb{Z}", "\\Q": "\\mathbb{Q}" } });
+    } catch (e) { s.textContent = tex; }
+  });
+}
+
+/* ---- course axis 1…35 ---- */
+function drawAxis() {
+  const svg = $("axis"), NS = "http://www.w3.org/2000/svg";
+  const W = Math.max(280, svg.clientWidth || 700), H = 46, x0 = 8, x1 = W - 8, y = 14, step = (x1 - x0) / (TOTAL - 1);
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const X = (n) => x0 + (n - 1) * step;
+  const mk = (t, a, txt) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; svg.append(e); return e; };
+  svg.replaceChildren();
+  mk("line", { x1: x0, y1: y, x2: x1, y2: y, stroke: "var(--band-line)", "stroke-width": 2 });
+  mk("line", { x1: x0, y1: y, x2: X(latest.n), y2: y, stroke: "var(--band-accent)", "stroke-width": 3, "stroke-linecap": "round" });
+  const labels = W < 420 ? [1, 10, 20, 30, 35] : [1, 5, 10, 15, 20, 25, 30, 35];
+  for (let n = 1; n <= TOTAL; n++) {
+    const passed = n <= latest.n, big = n === 1 || n % 5 === 0;
+    mk("line", { x1: X(n), y1: y - (big ? 6 : 3), x2: X(n), y2: y + (big ? 6 : 3), stroke: passed ? "var(--band-accent)" : "var(--band-line)", "stroke-width": big ? 2 : 1.5 });
+    if (labels.includes(n) && Math.abs(n - latest.n) > (W < 420 ? 2 : 1)) mk("text", { x: X(n), y: y + 24, "text-anchor": "middle", "font-size": 11, fill: passed ? "var(--band-fg)" : "var(--band-muted)", "font-family": "Inter, sans-serif" }, n);
+  }
+  mk("circle", { cx: X(latest.n), cy: y, r: 6, fill: "var(--band-fg)", stroke: "var(--band-accent)", "stroke-width": 3 });
+  mk("text", { x: X(latest.n), y: y + 25, "text-anchor": "middle", "font-size": 12, "font-weight": 700, fill: "var(--band-accent)", "font-family": "Space Grotesk, Inter, sans-serif" }, latest.n);
+  $("axis-n").textContent = latest.n;
+  svg.setAttribute("aria-label", `Пройдено ${latest.n} тем из ${TOTAL}`);
+}
+
+/* ---- buttons ---- */
+function go(hash) { location.hash = hash; }
+function linkBtn(cls, hash, label, small) {
+  const b = el("button", cls, label); b.type = "button";
+  if (small) { b.append(" "); b.append(el("small", null, small)); }
+  if (typeof isNew === "function" && isNew(hash)) { b.classList.add("fresh"); b.setAttribute("aria-label", label + " (новое)"); }
+  b.addEventListener("click", () => go(hash));
+  return b;
+}
+function scoreBtn(t) {
+  const s = totals(t);
+  const b = el("button", "score"); b.type = "button";
+  if (s.right === null) { b.textContent = "Тест"; b.setAttribute("aria-label", "Проверить ДЗ к теме " + t.n); }
+  else {
+    b.textContent = `✓ ${s.right}/${s.total}`;
+    b.classList.add(s.right / s.total >= 0.7 ? "has" : "mid");
+    b.setAttribute("aria-label", `Самопроверка темы ${t.n}: ${s.right} из ${s.total}`);
+  }
+  b.addEventListener("click", () => go("test-" + t.n));
+  return b;
+}
+
+/* ---- this week ---- */
+function renderWeek() {
+  const w = $("week"); w.replaceChildren(); w.dataset.n = latest.n;
+  const head = el("div");
+  head.append(el("div", "num", "TÉMA " + latest.n), el("h3", null, latest.name));
+  const btns = el("div", "btns");
+  if (latest.lekce) btns.append(linkBtn("btn", "lekce-" + latest.n, "Лекция", latest.lekce.pages + " стр."));
+  if (latest.du) btns.append(linkBtn("btn ghost", "du-" + latest.n, "Domácí úkol", latest.du.pages + " стр."));
+  if (latest.card) btns.append(linkBtn("btn soft", "formuly-" + latest.n, "Формулы"));
+  if (latest.quiz) {
+    const s = totals(latest);
+    btns.append(linkBtn("btn soft", "test-" + latest.n, s.right === null ? "Проверить ДЗ" : `Проверка ✓ ${s.right}/${s.total}`));
+  }
+  w.append(head, btns, el("p", "hint", "Решите ДЗ на бумаге, потом нажмите «Проверить ДЗ»: отметьте свои ответы и сразу увидите результат. Подробные решения — в конце листа."));
+}
+
+/* ---- all topics by month ---- */
+function renderList() {
+  const root = $("months"); root.replaceChildren();
+  MONTHS.forEach(([name, a, b]) => {
+    const items = DATA.filter((t) => t.n >= a && t.n <= b).reverse();
+    if (!items.length) return;
+    const sec = el("div", "month");
+    sec.append(el("div", "mname", name));
+    const ol = el("ol", "topics");
+    items.forEach((t) => {
+      const s = totals(t);
+      const li = el("li", s.right !== null ? "done" : "");
+      const tt = el("span", "tt", t.name);
+      if (t.n === latest.n) tt.append(el("span", "new", "НОВОЕ"));
+      const acts = el("span", "acts");
+      if (t.lekce) acts.append(linkBtn("chip", "lekce-" + t.n, "Лекция"));
+      if (t.du) acts.append(linkBtn("chip", "du-" + t.n, "ДЗ"));
+      if (t.card) acts.append(linkBtn("chip plain", "formuly-" + t.n, "Формулы"));
+      if (t.quiz) acts.append(scoreBtn(t));
+      li.append(el("span", "tn", t.n), tt, acts);
+      ol.append(li);
+    });
+    sec.append(ol);
+    root.prepend(sec);
+  });
+  const withQ = DATA.filter((t) => t.quiz);
+  const doneN = withQ.filter((t) => totals(t).right !== null).length;
+  $("mine").textContent = doneN ? `проверено ${doneN} из ${withQ.length} ДЗ` : "";
+}
+function refresh() { renderWeek(); renderList(); }
+
+function toast(msg) {
+  document.querySelectorAll(".toast").forEach((t) => t.remove());
+  const t = el("div", "toast", msg); t.setAttribute("role", "status");
+  document.body.append(t); setTimeout(() => t.remove(), 3000);
+}
+
+/* ---- side sheet ---- */
+let lastFocus = null;
+function openSheet(kindLabel, title) {
+  lastFocus = lastFocus || document.activeElement;
+  $("skind").textContent = kindLabel; $("stitle").textContent = title;
+  $("sbody").replaceChildren(); $("qbar").replaceChildren(); $("qbar").hidden = true;
+  $("sheetwrap").hidden = false; document.body.style.overflow = "hidden";
+  $("sbody").scrollTop = 0; $("sclose").focus();
+}
+function closeAll(setHash = true) {
+  renderToken++; current = null;
+  if (examTick) { clearInterval(examTick); examTick = null; }
+  document.querySelector(".sheet").classList.remove("wide");
+  $("sheetwrap").hidden = true; $("viewer").hidden = true; $("pages").replaceChildren();
+  document.body.style.overflow = "";
+  if (setHash && location.hash) history.replaceState(null, "", location.pathname + location.search);
+  refresh(); renderExamCta(); renderWarmCta();
+  if (lastFocus && lastFocus.focus && document.contains(lastFocus)) lastFocus.focus();
+  lastFocus = null;
+}
+
+function showCard(n) {
+  const t = byN(n); if (!t || !t.card) return closeAll(false);
+  $("viewer").hidden = true; renderToken++;
+  openSheet("Téma " + n + " · формулы", t.name);
+  const body = $("sbody");
+  t.card.forEach((html) => { const c = el("div", "card"); c.innerHTML = html; body.append(c); });
+  body.append(el("p", "note", "Это карточка «Shrnutí» из лекции. Если что-то непонятно — откройте лекцию, там разобраны примеры."));
+  const btns = el("div", "btns");
+  if (t.lekce) btns.append(linkBtn("btn ghost", "lekce-" + n, "Открыть лекцию"));
+  if (t.quiz) btns.append(linkBtn("btn soft", "test-" + n, "Проверить ДЗ"));
+  body.append(btns);
+  typeset(body);
+}
+
+const PART = { A: "Část A · základ", B: "Část B · náročnější", D: "Část D · přijímačky" };
+function showTest(n) {
+  const t = byN(n); if (!t || !t.quiz) return closeAll(false);
+  $("viewer").hidden = true; renderToken++;
+  openSheet("Téma " + n + " · проверка ДЗ", t.name);
+  const r = rec(n);
+  const body = $("sbody");
+  const total = t.quiz.reduce((s, p) => s + p.items.length, 0);
+  body.append(el("p", "note", `Отметьте ответы, которые получились у вас на бумаге (${total} ${plural(total, "задача", "задачи", "задач")} с вариантами), и нажмите «Проверить». Часть C и задачи без вариантов сверяйте с решениями в конце листа.`));
+  const verdict = el("div"); verdict.setAttribute("role", "status"); body.append(verdict);
+  const rows = [];
+  t.quiz.forEach((p) => {
+    const sec = el("section", "qpart");
+    const h = el("h4", null, PART[p.part] || "Část " + p.part); const hs = el("span"); h.append(hs);
+    const list = el("div", "qlist");
+    p.items.forEach((it) => {
+      const row = el("div", "qrow");
+      const opts = el("div", "opts"); opts.setAttribute("role", "group"); opts.setAttribute("aria-label", "Úloha " + it.q);
+      [...it.opts].forEach((L) => {
+        const b = el("button", "opt", L); b.type = "button"; b.dataset.l = L;
+        b.addEventListener("click", () => {
+          if (r.a[it.q] === L) delete r.a[it.q]; else r.a[it.q] = L;
+          if (r.checked) { r.checked = false; refresh(); }
+          persist(); paint();
+        });
+        opts.append(b);
+      });
+      const res = el("span", "res");
+      row.append(el("span", "qn", it.q), opts, res);
+      list.append(row);
+      rows.push({ it, row, res, opts, hs, part: p });
+    });
+    sec.append(h, list); body.append(sec);
+  });
+  const extra = el("div", "btns");
+  if (t.du) extra.append(linkBtn("btn ghost", "du-" + n, "Открыть ДЗ"));
+  if (t.card) extra.append(linkBtn("btn soft", "formuly-" + n, "Формулы"));
+  body.append(extra);
+
+  const bar = $("qbar"); bar.hidden = false;
+  const sum = el("span", "sum");
+  const actions = el("div", "btns");
+  const reset = el("button", "btn ghost", "Заново"); reset.type = "button";
+  const check = el("button", "btn", "Проверить"); check.type = "button";
+  actions.append(reset, check); bar.append(sum, actions);
+
+  check.addEventListener("click", () => {
+    if (!Object.keys(r.a).length) { toast("Сначала отметьте хотя бы один ответ."); return; }
+    r.checked = true; persist(); paint(); refresh();
+    $("sbody").scrollTo({ top: 0, behavior: reduced() ? "auto" : "smooth" });
+  });
+  reset.addEventListener("click", () => { r.a = {}; r.checked = false; persist(); paint(); refresh(); });
+
+  function paint() {
+    let answered = 0, right = 0;
+    const perPart = {};
+    rows.forEach(({ it, row, res, opts, part }) => {
+      const a = r.a[it.q];
+      opts.querySelectorAll(".opt").forEach((b) => { b.setAttribute("aria-pressed", a === b.dataset.l ? "true" : "false"); b.classList.toggle("correct", r.checked && b.dataset.l === it.key); });
+      row.classList.remove("right", "wrong", "empty"); res.textContent = "";
+      const pp = (perPart[part.part] = perPart[part.part] || { right: 0 });
+      if (a) answered++;
+      if (r.checked) {
+        if (!a) { row.classList.add("empty"); res.textContent = "ответ " + it.key; }
+        else if (a === it.key) { row.classList.add("right"); res.textContent = "верно"; right++; pp.right++; }
+        else { row.classList.add("wrong"); res.textContent = "ответ " + it.key; }
+      }
+    });
+    rows.forEach(({ hs, part }) => { hs.textContent = r.checked ? `${perPart[part.part].right} из ${part.items.length}` : `${part.items.length} ${plural(part.items.length, "задача", "задачи", "задач")}`; });
+    sum.replaceChildren();
+    if (r.checked) {
+      sum.append(el("b", null, `${right}/${total}`), " верно");
+      const pct = right / total;
+      verdict.className = "verdict " + (pct >= 0.8 ? "good" : pct >= 0.5 ? "mid" : "low");
+      verdict.replaceChildren(
+        el("b", null, `${right} из ${total} · ${Math.round(pct * 100)} %`),
+        el("span", null, pct >= 0.8 ? "Отлично, тема усвоена. Загляните в решения задач с ошибками." : pct >= 0.5 ? "Хорошая база. Разберите ошибки по решениям в конце листа и повторите формулы." : "Вернитесь к лекции и формулам, а потом решите задачи с ошибками ещё раз.")
+      );
+      const wrong = rows.filter(({ it }) => r.a[it.q] && r.a[it.q] !== it.key).map(({ it }) => it.q);
+      const empty = rows.filter(({ it }) => !r.a[it.q]).map(({ it }) => it.q);
+      verdict.append(codeBox(`ДЗ ${n} · ${right}/${total}` + (wrong.length ? ` · ошибки: ${wrong.join(" ")}` : " · без ошибок") + (empty.length ? ` · пусто: ${empty.join(" ")}` : "")));
+      verdict.hidden = false;
+    } else {
+      sum.append(el("b", null, `${answered}/${total}`), " отмечено");
+      verdict.hidden = true;
+    }
+  }
+  paint();
+}
+
+/* ---- result code for the teacher ---- */
+const NKEY = "pec-name";
+let myName = "";
+try { myName = localStorage.getItem(NKEY) || ""; } catch (e) {}
+function codeBox(core) {
+  const box = el("div", "codebox");
+  box.append(el("div", "lbl", "Отправьте этот код преподавателю в Telegram — так он увидит ваш результат и ошибки."));
+  const row = el("div", "namerow");
+  const lab = el("label", null, "Ваше имя"); lab.htmlFor = "myname";
+  const inp = el("input"); inp.id = "myname"; inp.type = "text"; inp.placeholder = "например, Аня К."; inp.value = myName; inp.autocomplete = "name"; inp.maxLength = 40;
+  row.append(lab, inp);
+  const code = el("code");
+  const text = () => `PEC ${LINE} · ${(myName || "без имени").trim()} · ${core}`;
+  code.textContent = text();
+  inp.addEventListener("input", () => { myName = inp.value; try { localStorage.setItem(NKEY, myName); } catch (e) {} code.textContent = text(); });
+  const copy = el("button", "btn", "Скопировать код"); copy.type = "button";
+  copy.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(text()); toast("Код скопирован. Вставьте его в Telegram."); }
+    catch (e) { const rg = document.createRange(); rg.selectNodeContents(code); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(rg); toast("Код выделен — скопируйте его вручную."); }
+  });
+  const btns = el("div", "btns"); btns.append(copy);
+  box.append(row, code, btns);
+  return box;
+}
+
+/* ---- timed tests: practice exam + checkpoint exams (srez) ---- */
+const SREZ = [];
+const EXAM_N = 12, EXAM_MIN = 60;
+const POOL = DATA.flatMap((t) => (t.exam || []).map((x) => ({ ...x, n: t.n, id: t.n + "-" + x.q })));
+let examTick = null;
+const loadState = (k) => { try { const v = JSON.parse(localStorage.getItem(k) || "null"); return v && v.hist ? v : { hist: [], run: null }; } catch (e) { return { hist: [], run: null }; } };
+const saveState = (ctx) => { try { localStorage.setItem(ctx.key, JSON.stringify(ctx.st)); } catch (e) {} };
+const mmss = (ms) => { const s = Math.max(0, Math.round(ms / 1000)); return String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0"); };
+
+function pickTasks() {
+  const byTopic = {};
+  POOL.forEach((x) => (byTopic[x.n] = byTopic[x.n] || []).push(x));
+  Object.values(byTopic).forEach((a) => a.sort(() => Math.random() - 0.5));
+  const order = Object.keys(byTopic).sort(() => Math.random() - 0.5);
+  const out = [];
+  while (out.length < EXAM_N) {
+    let added = false;
+    for (const k of order) { if (out.length < EXAM_N && byTopic[k].length) { out.push(byTopic[k].pop().id); added = true; } }
+    if (!added) break;
+  }
+  return out.sort((a, b) => parseInt(a) - parseInt(b));
+}
+
+const CTX = {};
+CTX.zkouska = {
+  hash: "zkouska", key: "pec-exam-" + LINE, kind: "Пробный экзамен · " + LINE, title: "Přijímačky nanečisto",
+  minutes: EXAM_MIN, retake: true, codeName: "Пробный экзамен",
+  ids: () => pickTasks(), find: (id) => POOL.find((x) => x.id === id),
+  intro: () => [`${EXAM_N} задач, ${EXAM_MIN} минут. Решайте на бумаге без калькулятора и отмечайте ответ. Можно переходить между задачами и менять ответы. Когда время кончится, работа сдастся сама.`,
+                `Задачи — из части D домашних заданий пройденных тем (настоящие задачи přijímaček и задачи в их формате). Всего в банке ${POOL.length} задач.`],
+  enabled: () => POOL.length >= EXAM_N,
+};
+SREZ.forEach((s) => {
+  const tasks = s.tasks.map((x, i) => ({ ...x, id: "s" + s.n + "-" + (i + 1), q: "№" + (i + 1), src: "срез " + s.n }));
+  CTX["srez-" + s.n] = {
+    hash: "srez-" + s.n, key: `pec-srez-${s.n}-` + LINE, kind: `Срез ${s.n} · темы ${s.from}–${s.to}`, title: `Срезовый экзамен ${s.n}`,
+    minutes: s.minutes, retake: false, codeName: `Срез ${s.n}`, srez: s,
+    ids: () => tasks.map((x) => x.id), find: (id) => tasks.find((x) => x.id === id),
+    intro: () => [`${tasks.length} новых задач по темам ${s.from}–${s.to}, ${s.minutes} минут, без калькулятора. Попытка одна: начинайте, когда у вас есть час без перерыва.`,
+                  "Можно переходить между задачами и менять ответы. Когда время кончится, работа сдастся сама. После сдачи появится разбор и код результата — отправьте его преподавателю."],
+    enabled: () => true,
+  };
+  CTX["srez-" + s.n].st = loadState(CTX["srez-" + s.n].key);
+});
+CTX.zkouska.st = loadState(CTX.zkouska.key);
+
+function renderExamCta() {
+  const c = $("examcta"); c.replaceChildren();
+  const blocks = [];
+  SREZ.slice().reverse().forEach((s) => {
+    const ctx = CTX["srez-" + s.n], st = ctx.st;
+    const last = st.hist[st.hist.length - 1];
+    blocks.push({ ctx, h: `Срезовый экзамен ${s.n}`, p: `${s.tasks.length} новых задач по темам ${s.from}–${s.to}, ${s.minutes} минут, одна попытка. Результат — преподавателю.`,
+      note: st.run && !st.run.done ? "Срез идёт — можно продолжить." : last ? `Сдано: ${last.right}/${s.tasks.length} · ${last.date}` : "",
+      btn: st.run && !st.run.done ? "Продолжить" : last ? "Разбор" : "Начать срез", main: !last });
+  });
+  if (CTX.zkouska.enabled()) {
+    const st = CTX.zkouska.st;
+    const best = st.hist.length ? Math.max(...st.hist.map((h) => h.right)) : null;
+    blocks.push({ ctx: CTX.zkouska, h: "Přijímačky nanečisto", p: `${EXAM_N} задач в формате вступительного теста из пройденных тем, ${EXAM_MIN} минут, без калькулятора. Каждый раз новый набор.`,
+      note: st.run && !st.run.done ? "Экзамен идёт — можно продолжить." : best !== null ? `Попыток: ${st.hist.length} · лучший результат: ${best}/${EXAM_N}` : "",
+      btn: st.run && !st.run.done ? "Продолжить" : "Начать" });
+  }
+  blocks.forEach((b, i) => {
+    const box = el("div", "examcta" + (i ? " alt" : ""));
+    const left = el("div");
+    left.append(el("h3", null, b.h), el("p", null, b.p));
+    if (b.note) left.append(el("div", "best", b.note));
+    box.append(left, linkBtn("btn", b.ctx.hash, b.btn));
+    c.append(box);
+  });
+  c.parentElement.hidden = !blocks.length;
+}
+
+function showTimed(ctx) {
+  $("viewer").hidden = true; renderToken++;
+  openSheet(ctx.kind, ctx.title);
+  document.querySelector(".sheet").classList.add("wide");
+  const body = $("sbody"), st = ctx.st;
+  if (st.run && !st.run.done) return timedRun(ctx, body);
+  if (st.run && st.run.done) return timedResult(ctx, body, st.run);
+  timedIntro(ctx, body);
+}
+function startRun(ctx) {
+  ctx.st.run = { ids: ctx.ids(), a: {}, start: Date.now(), done: false };
+  saveState(ctx); renderExamCta(); $("sbody").replaceChildren(); $("sbody").scrollTop = 0; timedRun(ctx, $("sbody"));
+}
+function timedIntro(ctx, body) {
+  const [p1, p2] = ctx.intro();
+  body.append(el("p", null, p1), el("p", "note", p2));
+  if (ctx.st.hist.length) {
+    const h = el("div", "hist"); h.append(el("b", null, "Ваши попытки"));
+    ctx.st.hist.slice(-5).reverse().forEach((x) => h.append(el("span", null, `${x.date} — ${x.right}/${x.total || EXAM_N}, ${x.min} мин`)));
+    body.append(h);
+  }
+  const btns = el("div", "btns");
+  const go1 = el("button", "btn", ctx.retake ? "Начать экзамен" : "Начать срез"); go1.type = "button";
+  go1.addEventListener("click", () => startRun(ctx));
+  btns.append(go1); body.append(btns);
+}
+const runTasks = (ctx, run) => run.ids.map((id) => ctx.find(id)).filter(Boolean);
+
+function taskCard(x, i, run, onPick) {
+  const card = el("article", "etask"); card.id = "et-" + i;
+  const eh = el("div", "eh"); eh.append(el("b", null, `Úloha ${i + 1}`)); const src = el("span"); src.innerHTML = `téma ${x.n} · ` + x.src; eh.append(src);
+  const bd = el("div", "ebody"); bd.innerHTML = x.body;
+  const ops = el("div", "eopts");
+  x.opts.forEach((h, j) => {
+    const L = x.letters[j];
+    const b = el("button", "eopt"); b.type = "button"; b.dataset.l = L;
+    b.setAttribute("aria-pressed", run.a[x.id] === L ? "true" : "false");
+    const lab = el("span", "L", L); const tx = el("span"); tx.innerHTML = h;
+    b.append(lab, tx);
+    if (onPick) b.addEventListener("click", () => onPick(x, L, ops)); else b.disabled = true;
+    ops.append(b);
+  });
+  card.append(eh, bd, ops);
+  return card;
+}
+
+function timedRun(ctx, body) {
+  const run = ctx.st.run;
+  const tasks = runTasks(ctx, run);
+  const dots = el("div", "dots");
+  const paintDots = () => { dots.replaceChildren(); tasks.forEach((x, i) => { const d = el("button", run.a[x.id] ? "on" : "", i + 1); d.type = "button"; d.setAttribute("aria-label", `Úloha ${i + 1}` + (run.a[x.id] ? ", отвечено" : "")); d.addEventListener("click", () => $("et-" + i).scrollIntoView({ behavior: reduced() ? "auto" : "smooth", block: "start" })); dots.append(d); }); };
+  body.append(dots);
+  tasks.forEach((x, i) => body.append(taskCard(x, i, run, (task, L, ops) => {
+    if (run.a[task.id] === L) delete run.a[task.id]; else run.a[task.id] = L;
+    saveState(ctx);
+    ops.querySelectorAll(".eopt").forEach((b) => b.setAttribute("aria-pressed", run.a[task.id] === b.dataset.l ? "true" : "false"));
+    paintDots(); paintSum();
+  })));
+  typeset(body); paintDots();
+  const bar = $("qbar"); bar.hidden = false; bar.replaceChildren();
+  const timer = el("span", "timer"), sum = el("span", "sum");
+  const left = el("div"); left.style.display = "grid"; left.style.gap = "2px"; left.append(timer, sum);
+  const submit = el("button", "btn", "Сдать работу"); submit.type = "button";
+  let armed = false;
+  submit.addEventListener("click", () => {
+    const missing = tasks.length - Object.keys(run.a).length;
+    if (missing && !armed) { armed = true; submit.textContent = `Сдать? Пусто: ${missing}`; setTimeout(() => { armed = false; submit.textContent = "Сдать работу"; }, 4000); return; }
+    finish();
+  });
+  bar.append(left, submit);
+  function paintSum() { sum.textContent = `отвечено ${Object.keys(run.a).length} из ${tasks.length}`; }
+  function tick() {
+    const rest = run.start + ctx.minutes * 60000 - Date.now();
+    timer.textContent = "осталось " + mmss(rest);
+    timer.classList.toggle("low", rest < 5 * 60000);
+    if (rest <= 0) { toast("Время вышло — работа сдана."); finish(); }
+  }
+  function finish() {
+    if (examTick) { clearInterval(examTick); examTick = null; }
+    run.done = true; run.end = Math.min(Date.now(), run.start + ctx.minutes * 60000);
+    const right = tasks.filter((x) => run.a[x.id] === x.key).length;
+    const d = new Date();
+    ctx.st.hist.push({ date: d.toLocaleDateString("ru-RU") + " " + d.toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" }), right, total: tasks.length, min: Math.max(1, Math.round((run.end - run.start) / 60000)) });
+    saveState(ctx); renderExamCta();
+    $("qbar").replaceChildren(); $("qbar").hidden = true;
+    $("sbody").replaceChildren(); $("sbody").scrollTop = 0;
+    timedResult(ctx, $("sbody"), run);
+  }
+  paintSum(); tick();
+  examTick = setInterval(tick, 1000);
+}
+
+function timedResult(ctx, body, run) {
+  const tasks = runTasks(ctx, run);
+  const right = tasks.filter((x) => run.a[x.id] === x.key).length;
+  const pct = right / tasks.length;
+  const mins = Math.max(1, Math.round((run.end - run.start) / 60000));
+  const v = el("div", "verdict " + (pct >= 0.75 ? "good" : pct >= 0.5 ? "mid" : "low"));
+  v.append(el("b", null, `${right} из ${tasks.length} · ${mins} мин`),
+    el("span", null, pct >= 0.75 ? "Отличный результат. Посмотрите разбор ошибок ниже." : pct >= 0.5 ? "Неплохо. Темы с ошибками стоит повторить — разбор ниже." : "Повторите темы с ошибками: формулы и самопроверка ДЗ помогут."));
+  const wrongTopics = {};
+  tasks.forEach((x) => { if (run.a[x.id] !== x.key) wrongTopics[x.n] = (wrongTopics[x.n] || 0) + 1; });
+  const wt = Object.keys(wrongTopics).sort((a, b) => a - b);
+  if (wt.length) v.append(el("span", null, "Повторить: " + wt.map((n) => `тема ${n}` + (wrongTopics[n] > 1 ? ` (${wrongTopics[n]})` : "")).join(", ")));
+  const wrongNums = tasks.map((x, i) => (run.a[x.id] === x.key ? null : (i + 1) + (run.a[x.id] ? "" : "−"))).filter(Boolean);
+  v.append(codeBox(`${ctx.codeName} · ${right}/${tasks.length} · ${mins} мин` + (ctx.srez ? (wrongNums.length ? ` · ошибки: ${wrongNums.join(" ")}` : " · без ошибок") : (wt.length ? ` · темы с ошибками: ${wt.join(", ")}` : ""))));
+  body.append(v);
+  tasks.forEach((x, i) => {
+    const card = taskCard(x, i, run, null);
+    const a = run.a[x.id];
+    card.classList.add(!a ? "empty" : a === x.key ? "right" : "wrong");
+    card.querySelectorAll(".eopt").forEach((b) => { if (b.dataset.l === x.key) b.classList.add("correct"); else if (b.dataset.l === a) b.classList.add("chosen-wrong"); });
+    const foot = el("div", "btns"); foot.style.alignItems = "center";
+    foot.append(el("span", "etag", !a ? `без ответа · верно ${x.key}` : a === x.key ? "верно" : `ваш ответ ${a} · верно ${x.key}`));
+    if (x.sol) { const sd = el("div", "esol"); sd.innerHTML = "<b>Решение.</b> " + x.sol; card.append(foot, sd); }
+    else { if (byN(x.n) && byN(x.n).du) foot.append(linkBtn("chip", "du-" + x.n, `Решение: ДЗ ${x.n}, ${x.q}`)); card.append(foot); }
+    body.append(card);
+  });
+  if (ctx.retake) {
+    const again = el("div", "btns");
+    const b = el("button", "btn", "Новый экзамен"); b.type = "button";
+    b.addEventListener("click", () => startRun(ctx));
+    again.append(b); body.append(again);
+  } else body.append(el("p", "note", "Срез сдаётся один раз. Разбор останется здесь — к нему можно вернуться."));
+  typeset(body);
+}
+
+/* ---- "new" marks (this browser only) ---- */
+const SEENKEY = "pec-seen-" + LINE;
+const NEWABLE = /^(lekce|du|formuly|srez)-\d+$/;
+let seen = null;
+try { seen = JSON.parse(localStorage.getItem(SEENKEY) || "null"); } catch (e) { seen = null; }
+if (!Array.isArray(seen)) {
+  // first visit: everything except the newest topic counts as already seen
+  seen = [];
+  DATA.forEach((t) => { if (t.n !== latest.n) ["lekce", "du", "formuly"].forEach((k) => seen.push(k + "-" + t.n)); });
+}
+seen = new Set(seen);
+const saveSeen = () => { try { localStorage.setItem(SEENKEY, JSON.stringify([...seen])); } catch (e) {} };
+saveSeen();
+const isNew = (hash) => NEWABLE.test(hash) && !seen.has(hash);
+function markSeen(hash) { if (NEWABLE.test(hash) && !seen.has(hash)) { seen.add(hash); saveSeen(); } }
+
+/* ---- weekly warm-up (spaced repetition) ---- */
+const WKEY = "pec-warm-" + LINE;
+const BANK = DATA.flatMap((t) => [...(t.bank || []), ...(t.exam || [])].map((x) => ({ ...x, n: t.n, id: t.n + "-" + x.q })));
+let warm = null;
+try { warm = JSON.parse(localStorage.getItem(WKEY) || "null"); } catch (e) { warm = null; }
+if (!warm || typeof warm !== "object") warm = {};
+warm.hist = warm.hist || {}; warm.weeks = warm.weeks || [];
+const saveWarm = () => { try { localStorage.setItem(WKEY, JSON.stringify(warm)); } catch (e) {} };
+function isoWeek(d = new Date()) {
+  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);
+  const y = t.getUTCFullYear(); const w = Math.ceil(((t - Date.UTC(y, 0, 1)) / 86400000 + 1) / 7);
+  return y + "-W" + String(w).padStart(2, "0");
+}
+function rng(seed) { let h = 2166136261; for (const c of seed) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return () => { h += 0x6D2B79F5; let t = h; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+function weightOf(x) {
+  const h = warm.hist[x.id];
+  if (h === "wrong") return 6;
+  if (h === "right") return 0.25;
+  const r = store[x.n];
+  if (r && r.checked && x.q in r.a && r.a[x.q] !== x.key) return 5;
+  for (const k in CTX) {
+    const run = CTX[k].st && CTX[k].st.run;
+    if (run && run.done && run.ids.includes(x.id) && run.a[x.id] !== x.key) return 4;
+  }
+  return 1;
+}
+function pickWarm(seed) {
+  const older = BANK.filter((x) => x.n < latest.n);
+  const pool = older.length >= 5 ? older : BANK;
+  const R = rng(seed + LINE);
+  const out = [], usedTopics = new Set(), cand = pool.slice();
+  while (out.length < 5 && cand.length) {
+    const ws = cand.map((x) => weightOf(x) * (usedTopics.has(x.n) ? 0.35 : 1));
+    let r = R() * ws.reduce((a, b) => a + b, 0), i = 0;
+    while (r > ws[i] && i < ws.length - 1) { r -= ws[i]; i++; }
+    const x = cand.splice(i, 1)[0]; out.push(x.id); usedTopics.add(x.n);
+  }
+  return out;
+}
+function currentWarm() {
+  const wk = isoWeek();
+  if (!warm.cur || warm.cur.week !== wk) { warm.cur = { week: wk, ids: pickWarm(wk), a: {}, extra: 0 }; saveWarm(); }
+  return warm.cur;
+}
+function streak() {
+  let s = 0; const done = new Set(warm.weeks); let d = new Date();
+  if (!done.has(isoWeek(d))) d.setDate(d.getDate() - 7);
+  while (done.has(isoWeek(d))) { s++; d.setDate(d.getDate() - 7); }
+  return s;
+}
+function renderWarmCta() {
+  const c = $("warmcta"); c.replaceChildren();
+  if (BANK.length < 5) { c.parentElement.hidden = true; return; }
+  const cur = currentWarm();
+  const answered = cur.ids.filter((id) => cur.a[id]).length;
+  const left = el("div");
+  left.append(el("h3", null, "Разминка недели"));
+  left.append(el("p", null, "5 задач из прошлых тем. Чаще попадаются те, в которых вы ошибались. 10 минут в неделю — и старые темы не забываются."));
+  const st = streak();
+  left.append(el("div", "best", (answered === 5 ? "Готово на этой неделе ✓" : `Решено ${answered} из 5`) + (st ? ` · серия: ${st} ${plural(st, "неделя", "недели", "недель")} подряд` : "")));
+  const b = linkBtn("btn", "razminka", answered === 5 ? "Ещё 5 задач" : answered ? "Продолжить" : "Начать");
+  c.append(left, b);
+}
+function showWarm() {
+  $("viewer").hidden = true; renderToken++;
+  const cur = currentWarm();
+  const done5 = cur.ids.every((id) => cur.a[id]);
+  if (done5 && !cur.extraIds) { cur.extraIds = pickWarm(cur.week + "-x" + (++cur.extra)); cur.extraA = {}; saveWarm(); }
+  const extra = done5;
+  const ids = extra ? cur.extraIds : cur.ids, ans = extra ? cur.extraA : cur.a;
+  openSheet("Разминка · " + cur.week.replace("-W", ", неделя "), extra ? "Дополнительные 5 задач" : "5 задач на повторение");
+  document.querySelector(".sheet").classList.add("wide");
+  const body = $("sbody");
+  body.append(el("p", "note", "Решите на бумаге и нажмите ответ — сразу увидите, верно ли. Задачи из прошлых домашних заданий; чаще попадаются те, где вы ошибались."));
+  const tasks = ids.map((id) => BANK.find((x) => x.id === id)).filter(Boolean);
+  const sum = el("div"); body.append(sum);
+  tasks.forEach((x, i) => {
+    const run = { a: ans };
+    const card = taskCard(x, i, run, (task, L, ops) => {
+      if (ans[task.id]) return;
+      ans[task.id] = L;
+      warm.hist[task.id] = L === task.key ? "right" : "wrong";
+      paint(card, task);
+      if (!extra && tasks.every((t) => ans[t.id]) && !warm.weeks.includes(cur.week)) { warm.weeks.push(cur.week); toast("Разминка недели выполнена!"); }
+      saveWarm(); renderWarmCta(); paintSum();
+    });
+    body.append(card);
+    if (ans[x.id]) paint(card, x);
+  });
+  function paint(card, x) {
+    const a = ans[x.id];
+    card.classList.add(a === x.key ? "right" : "wrong");
+    card.querySelectorAll(".eopt").forEach((b) => { b.disabled = true; if (b.dataset.l === x.key) b.classList.add("correct"); else if (b.dataset.l === a) b.classList.add("chosen-wrong"); });
+    const foot = el("div", "btns"); foot.style.alignItems = "center";
+    foot.append(el("span", "etag", a === x.key ? "верно" : `ваш ответ ${a} · верно ${x.key}`));
+    if (byN(x.n) && byN(x.n).du) foot.append(linkBtn("chip", "du-" + x.n, `Решение: ДЗ ${x.n}, ${x.q}`));
+    if (byN(x.n) && byN(x.n).card) foot.append(linkBtn("chip plain", "formuly-" + x.n, "Формулы"));
+    card.append(foot);
+  }
+  function paintSum() {
+    const done = tasks.filter((t) => ans[t.id]);
+    if (done.length < tasks.length) { sum.replaceChildren(); return; }
+    const right = done.filter((t) => ans[t.id] === t.key).length;
+    sum.className = "verdict " + (right >= 4 ? "good" : right >= 3 ? "mid" : "low");
+    sum.replaceChildren(el("b", null, `${right} из ${tasks.length}`), el("span", null, right >= 4 ? "Старые темы держатся. Так держать!" : "Задачи с ошибками вернутся в следующих разминках — так они закрепятся."));
+    const more = el("button", "btn ghost", "Ещё 5 задач"); more.type = "button";
+    more.addEventListener("click", () => { cur.extraIds = pickWarm(cur.week + "-x" + (++cur.extra)); cur.extraA = {}; saveWarm(); showWarm(); });
+    const bb = el("div", "btns"); bb.append(more); sum.append(bb);
+  }
+  paintSum();
+  typeset(body);
+}
+
+/* ---- Czech–Russian glossary ---- */
+const GLOSS = (() => {
+  const seenCz = new Set(), out = [];
+  DATA.forEach((t) => (t.gloss || []).forEach(([cz, ru]) => { const k = cz.toLowerCase(); if (!seenCz.has(k)) { seenCz.add(k); out.push({ cz, ru, n: t.n }); } }));
+  return out;
+})();
+const plain = (h) => { const d = document.createElement("div"); d.innerHTML = h; return (d.textContent || "").toLowerCase(); };
+function renderToolsCta() {
+  const c = $("toolscta"); c.replaceChildren();
+  if (!GLOSS.length) { c.hidden = true; return; }
+  const box = el("div", "examcta alt");
+  const left = el("div");
+  left.append(el("h3", null, "Slovníček · чешско-русский"), el("p", null, `${GLOSS.length} ${plural(GLOSS.length, "термин", "термина", "терминов")} из пройденных тем: поиск и карточки для запоминания. Экзамен — на чешском, термины надо узнавать сразу.`));
+  box.append(left, linkBtn("btn", "slovnik", "Открыть"));
+  c.append(box);
+}
+function showGlossary() {
+  $("viewer").hidden = true; renderToken++;
+  openSheet("Slovníček", "Чешско-русский словарик");
+  const body = $("sbody");
+  const mode = el("div", "btns");
+  const bList = el("button", "btn", "Список"), bCards = el("button", "btn ghost", "Карточки");
+  bList.type = bCards.type = "button";
+  mode.append(bList, bCards); body.append(mode);
+  const area = el("div"); area.style.display = "grid"; area.style.gap = "12px"; body.append(area);
+  bList.addEventListener("click", () => { bList.className = "btn"; bCards.className = "btn ghost"; list(); });
+  bCards.addEventListener("click", () => { bCards.className = "btn"; bList.className = "btn ghost"; cards(); });
+  function list() {
+    area.replaceChildren();
+    const row = el("div", "namerow");
+    const lab = el("label", null, "Поиск"); lab.htmlFor = "gsearch";
+    const inp = el("input"); inp.id = "gsearch"; inp.type = "search"; inp.placeholder = "по-чешски или по-русски"; inp.autocomplete = "off";
+    row.append(lab, inp); area.append(row);
+    const tbl = el("div", "glist"); area.append(tbl);
+    const draw = () => {
+      const q = inp.value.trim().toLowerCase();
+      tbl.replaceChildren();
+      let lastN = null, shown = 0;
+      GLOSS.slice().sort((a, b) => b.n - a.n).forEach((g) => {
+        if (q && !plain(g.cz).includes(q) && !plain(g.ru).includes(q)) return;
+        if (g.n !== lastN && !q) { tbl.append(el("div", "gtopic", "Téma " + g.n + " · " + byN(g.n).name)); lastN = g.n; }
+        const r = el("div", "grow"); const a = el("span", "gcz"); a.innerHTML = g.cz; const b = el("span", "gru"); b.innerHTML = g.ru;
+        r.append(a, b); tbl.append(r); shown++;
+      });
+      if (!shown) tbl.append(el("p", "note", "Ничего не найдено."));
+      typeset(tbl);
+    };
+    inp.addEventListener("input", draw); draw();
+  }
+  function cards() {
+    area.replaceChildren();
+    const GK = "pec-gloss-" + LINE; let known = new Set();
+    try { known = new Set(JSON.parse(localStorage.getItem(GK) || "[]")); } catch (e) {}
+    const deck = GLOSS.filter((g) => !known.has(plain(g.cz))).sort(() => Math.random() - 0.5);
+    const info = el("p", "note"); area.append(info);
+    const card = el("button", "fcard"); card.type = "button"; area.append(card);
+    const btns = el("div", "btns"); area.append(btns);
+    const bKnow = el("button", "btn", "Знаю"), bAgain = el("button", "btn ghost", "Повторить"), bReset = el("button", "btn soft", "Начать заново");
+    [bKnow, bAgain, bReset].forEach((b) => (b.type = "button"));
+    btns.append(bAgain, bKnow);
+    let i = 0, flipped = false;
+    const show = () => {
+      info.textContent = deck.length ? `Осталось ${deck.length - i} · выучено ${known.size} из ${GLOSS.length}. Нажмите на карточку, чтобы перевернуть.` : "";
+      card.replaceChildren();
+      if (i >= deck.length) {
+        card.append(el("b", null, known.size >= GLOSS.length ? "Все термины выучены!" : "Колода пройдена"));
+        btns.replaceChildren(bReset); return;
+      }
+      const g = deck[i];
+      const top = el("span", "fside", flipped ? "по-русски" : "česky");
+      const main = el("span", "fmain"); main.innerHTML = flipped ? g.ru : g.cz;
+      const sub = el("span", "fsub"); sub.innerHTML = flipped ? g.cz : "téma " + g.n;
+      card.append(top, main, sub); card.classList.toggle("flipped", flipped);
+      typeset(card);
+    };
+    card.addEventListener("click", () => { if (i < deck.length) { flipped = !flipped; show(); } });
+    bKnow.addEventListener("click", () => { if (i < deck.length) { known.add(plain(deck[i].cz)); try { localStorage.setItem(GK, JSON.stringify([...known])); } catch (e) {} i++; flipped = false; show(); } });
+    bAgain.addEventListener("click", () => { if (i < deck.length) { deck.push(deck[i]); i++; flipped = false; show(); } });
+    bReset.addEventListener("click", () => { try { localStorage.removeItem(GK); } catch (e) {} cards(); });
+    show();
+  }
+  list();
+}
+
+/* ---- pdf viewer ---- */
+let downloads = null, current = null, renderToken = 0, keyPage = null;
+(async () => { try { downloads = await window.claude?.use?.("downloads"); } catch (e) { downloads = null; } if (current) $("vsave").hidden = !downloads; })();
+const pagesEl = $("pages");
+function updatePageLabel() {
+  if (!current || !current.total) return;
+  const top = pagesEl.getBoundingClientRect().top;
+  let idx = 1;
+  for (const c of pagesEl.querySelectorAll("canvas")) { if (c.getBoundingClientRect().top - top < pagesEl.clientHeight / 2) idx = Number(c.dataset.p); }
+  $("vpage").textContent = `стр. ${idx} из ${current.total}`;
+}
+pagesEl.addEventListener("scroll", () => requestAnimationFrame(updatePageLabel), { passive: true });
+
+async function openDoc(kind, n) {
+  const t = byN(n);
+  if (!t || !t[kind]) { closeAll(false); return; }
+  const doc = t[kind];
+  $("sheetwrap").hidden = true;
+  current = { ...doc, kind, n, total: 0 };
+  keyPage = null;
+  lastFocus = lastFocus || document.activeElement;
+  $("vtitle-b").textContent = KIND[kind] + " · téma " + n + ": " + t.name;
+  $("vpage").textContent = doc.pages + " " + plural(doc.pages, "страница", "страницы", "страниц");
+  $("vopen").href = doc.path;
+  $("vsave").hidden = !downloads;
+  if (!window.claude) { $("vdl").href = doc.path; $("vdl").setAttribute("download", doc.file); $("vdl").hidden = false; }
+  $("vkey").hidden = true;
+  $("vtest").hidden = !(kind === "du" && t.quiz);
+  $("viewer").hidden = false;
+  document.body.style.overflow = "hidden";
+  $("vclose").focus();
+  pagesEl.replaceChildren(); pagesEl.scrollTop = 0;
+  const st = el("div", "status", "Загружаю…"); pagesEl.append(st);
+  const token = ++renderToken;
+  const lib = window.pdfjsLib || window["pdfjs-dist/build/pdf"];
+  if (!lib) { st.textContent = "Не удалось загрузить просмотрщик. Нажмите «Открыть отдельно»."; return; }
+  try {
+    const pdf = await lib.getDocument({ url: doc.path, isEvalSupported: false, disableFontFace: true }).promise;
+    if (token !== renderToken) return;
+    current.total = pdf.numPages;
+    st.remove();
+    const width = Math.min(pagesEl.clientWidth - 24, 860);
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    for (let i = 1; i <= pdf.numPages; i++) {
+      const page = await pdf.getPage(i);
+      if (token !== renderToken) return;
+      const base = page.getViewport({ scale: 1 });
+      const vp = page.getViewport({ scale: (width / base.width) * dpr });
+      const c = el("canvas"); c.width = Math.floor(vp.width); c.height = Math.floor(vp.height);
+      c.dataset.p = i; c.setAttribute("aria-label", "Страница " + i);
+      pagesEl.append(c);
+      await page.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
+      if (i === 1) updatePageLabel();
+      if (kind === "du" && keyPage === null) {
+        try {
+          const txt = (await page.getTextContent()).items.map((it) => it.str).join(" ");
+          if (/Ответы\s+и\s+решения/.test(txt)) { keyPage = i; $("vkey").hidden = false; }
+        } catch (e) {}
+      }
+    }
+    updatePageLabel();
+  } catch (e) {
+    if (token === renderToken) st.textContent = "Не получилось показать файл здесь. Нажмите «Открыть отдельно».";
+  }
+}
+
+/* ---- routing ---- */
+function route() {
+  const tk = location.hash.slice(1);
+  markSeen(tk);
+  if (tk === "razminka") { showWarm(); return; }
+  if (tk === "slovnik") { showGlossary(); return; }
+  if (CTX[tk]) { if (CTX[tk].enabled()) showTimed(CTX[tk]); else closeAll(false); return; }
+  const m = /^#(lekce|du|formuly|test)-(\d+)$/.exec(location.hash);
+  if (!m) { if (!$("viewer").hidden || !$("sheetwrap").hidden) closeAll(false); return; }
+  const n = Number(m[2]);
+  if (m[1] === "formuly") showCard(n);
+  else if (m[1] === "test") showTest(n);
+  else openDoc(m[1], n);
+}
+$("vclose").addEventListener("click", () => closeAll());
+$("sclose").addEventListener("click", () => closeAll());
+$("sheetwrap").addEventListener("click", (e) => { if (e.target === $("sheetwrap")) closeAll(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && (!$("viewer").hidden || !$("sheetwrap").hidden)) closeAll(); });
+$("vtest").addEventListener("click", () => { if (current) go("test-" + current.n); });
+$("vkey").addEventListener("click", () => {
+  const c = keyPage && pagesEl.querySelector(`canvas[data-p="${keyPage}"]`);
+  if (c) c.scrollIntoView({ behavior: reduced() ? "auto" : "smooth", block: "start" });
+});
+$("vsave").addEventListener("click", async () => {
+  if (!current || !downloads) return;
+  const doc = current;
+  try {
+    const blob = await (await fetch(doc.path)).blob();
+    await downloads.save({ filename: doc.file, data: blob });
+  } catch (e) {
+    if (e && e.code === "declined") return;
+    if (e && (e.code === "unavailable" || e.code === "not_granted")) $("vsave").hidden = true;
+    toast("Скачать не получилось. Попробуйте «Открыть отдельно».");
+  }
+});
+window.addEventListener("hashchange", route);
+window.addEventListener("resize", () => drawAxis());
+
+drawAxis(); refresh(); renderWarmCta(); renderExamCta(); renderToolsCta(); route();
+</script>
+</body></html>
