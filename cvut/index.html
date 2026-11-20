@@ -542,9 +542,6 @@ function showTest(n) {
         el("b", null, `${right} из ${total} · ${Math.round(pct * 100)} %`),
         el("span", null, pct >= 0.8 ? "Отлично, тема усвоена. Загляните в решения задач с ошибками." : pct >= 0.5 ? "Хорошая база. Разберите ошибки по решениям в конце листа и повторите формулы." : "Вернитесь к лекции и формулам, а потом решите задачи с ошибками ещё раз.")
       );
-      const wrong = rows.filter(({ it }) => r.a[it.q] && r.a[it.q] !== it.key).map(({ it }) => it.q);
-      const empty = rows.filter(({ it }) => !r.a[it.q]).map(({ it }) => it.q);
-      verdict.append(codeBox(`ДЗ ${n} · ${right}/${total}` + (wrong.length ? ` · ошибки: ${wrong.join(" ")}` : " · без ошибок") + (empty.length ? ` · пусто: ${empty.join(" ")}` : "")));
       verdict.hidden = false;
     } else {
       sum.append(el("b", null, `${answered}/${total}`), " отмечено");
@@ -758,7 +755,7 @@ function timedResult(ctx, body, run) {
   const wt = Object.keys(wrongTopics).sort((a, b) => a - b);
   if (wt.length) v.append(el("span", null, "Повторить: " + wt.map((n) => `тема ${n}` + (wrongTopics[n] > 1 ? ` (${wrongTopics[n]})` : "")).join(", ")));
   const wrongNums = tasks.map((x, i) => (run.a[x.id] === x.key ? null : (i + 1) + (run.a[x.id] ? "" : "−"))).filter(Boolean);
-  v.append(codeBox(`${ctx.codeName} · ${right}/${tasks.length} · ${mins} мин` + (ctx.srez ? (wrongNums.length ? ` · ошибки: ${wrongNums.join(" ")}` : " · без ошибок") : (wt.length ? ` · темы с ошибками: ${wt.join(", ")}` : ""))));
+  if (ctx.srez) v.append(codeBox(`${ctx.codeName} · ${right}/${tasks.length} · ${mins} мин` + (ctx.srez ? (wrongNums.length ? ` · ошибки: ${wrongNums.join(" ")}` : " · без ошибок") : (wt.length ? ` · темы с ошибками: ${wt.join(", ")}` : ""))));
   body.append(v);
   tasks.forEach((x, i) => {
     const card = taskCard(x, i, run, null);
