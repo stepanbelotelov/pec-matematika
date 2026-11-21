@@ -2,7 +2,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
 /* Layout: тёмная полоса как титул листов курса + числовая ось курса (1…35); ниже «тема недели» и темы по месяцам на клетчатой бумаге; шпаргалка и самопроверка — в выезжающей панели */
 :root {
@@ -223,52 +223,180 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
   @keyframes slide { from { transform: translateX(24px); opacity: .6 } to { transform: none; opacity: 1 } }
 }
 </style>
+<style>
+/* ===== ČVUT · «Лаборатория»: приборная панель, координатная сетка, HUD-скобки. Тёмная тема по замыслу. ===== */
+body.line-cvut {
+  --bg: #070B10; --paper: #0D141C; --paper-2: #111B26; --grid: rgba(92,225,230,.045); --fg: #DCE7F2; --muted: #7E93A8; --faint: #4A5E72; --line: #1D2B38; --line-hi: #2B3F52;
+  --accent: #5CE1E6; --accent-bg: rgba(92,225,230,.12); --gold: #F2B84B; --gold-bg: rgba(242,184,75,.12);
+  --ok: #6EE7A8; --ok-bg: rgba(110,231,168,.12); --bad: #FF7A7A; --bad-bg: rgba(255,122,122,.13);
+  --band: #05080C; --band-fg: #DCE7F2; --band-muted: #7E93A8; --band-line: #2B3F52; --band-accent: #5CE1E6;
+  --ink: #0D141C; --scrim: rgba(2,4,8,.7); --shadow: none;
+  --f-display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(rgba(92,225,230,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(92,225,230,.045) 1px, transparent 1px),
+    linear-gradient(rgba(92,225,230,.022) 1px, transparent 1px), linear-gradient(90deg, rgba(92,225,230,.022) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+  color: var(--fg);
+}
+.line-cvut .wrap { max-width: 1040px }
+.line-cvut .lbl { font: 500 11px/1.2 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted) }
 
-</head><body><header class="band">
-  <div class="wrap">
-    <div class="eyebrow"><span>PEC Praha</span><span>·</span><span>Linie ČVUT</span><span>·</span><span>135 min</span></div>
-    <h1>Matematika <span class="fx">ČVUT</span></h1>
-    <p class="sub">Přípravný kurz na přijímací zkoušky ČVUT: lekce a domácí úkoly</p>
-    <div class="axis">
-      <div class="axis-head"><span>Курс: 35 тем, от множеств до стереометрии</span><span>пройдено <b id="axis-n"></b> из 35</span></div>
-      <svg id="axis" viewBox="0 0 700 46" role="img"></svg>
+/* status bar + hero */
+.line-cvut .statusbar { border-bottom: 1px solid var(--line); background: rgba(7,11,16,.85); margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: env(safe-area-inset-top, 0px) }
+.line-cvut .statusbar .wrap { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; padding-block: 10px; font: 500 11px/1 var(--f-mono); letter-spacing: .12em; color: var(--muted); text-transform: uppercase }
+.line-cvut .statusbar .live { color: var(--accent); display: inline-flex; gap: 8px; align-items: center }
+.line-cvut .statusbar .live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent) }
+.line-cvut .statusbar .sp { flex: 1 }
+.line-cvut .hero { padding-block: 44px 30px; display: grid; grid-template-columns: 1.15fr .85fr; gap: 28px; align-items: end }
+.line-cvut .hero > * { min-width: 0 }
+.line-cvut .hero h1 { font: 700 clamp(42px, 7vw, 76px)/.92 var(--f-display); letter-spacing: -.01em; text-transform: uppercase; margin: 12px 0 14px; color: var(--fg) }
+.line-cvut .hero h1 .c { color: var(--accent) }
+.line-cvut .lede { color: var(--muted); max-width: 46ch; margin: 0 }
+.line-cvut .scale { margin-top: 26px }
+.line-cvut .scale-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 10px }
+.line-cvut .scale-head b { font: 600 22px/1 var(--f-mono); color: var(--fg) }
+.line-cvut .scale-head b span { color: var(--faint) }
+.line-cvut .ticks { display: grid; grid-template-columns: repeat(35, 1fr); gap: 3px; height: 30px; align-items: end }
+.line-cvut .ticks i { display: block; background: var(--line-hi); height: 40% }
+.line-cvut .ticks i.m { height: 70% }
+.line-cvut .ticks i.on { background: var(--accent); box-shadow: 0 0 8px rgba(92,225,230,.35) }
+.line-cvut .ticks i.now { height: 100%; background: var(--gold); box-shadow: 0 0 10px rgba(242,184,75,.5) }
+.line-cvut .ticknums { display: flex; justify-content: space-between; font: 500 10px/1 var(--f-mono); color: var(--faint); margin-top: 6px }
+.line-cvut .plot { border: 1px solid var(--line-hi); background: linear-gradient(180deg, rgba(13,20,28,.9), rgba(7,11,16,.9)); padding: 14px 14px 10px }
+.line-cvut .plot svg { display: block; width: 100%; height: auto }
+.line-cvut .plot .cap { display: flex; justify-content: space-between; gap: 10px; margin-top: 8px }
+
+/* HUD frame */
+.line-cvut .hud { position: relative; background: var(--paper); border: 1px solid var(--line) }
+.line-cvut .hud::before, .line-cvut .hud::after { content: ""; position: absolute; width: 14px; height: 14px; border-color: var(--accent); border-style: solid; pointer-events: none }
+.line-cvut .hud::before { top: -1px; left: -1px; border-width: 2px 0 0 2px }
+.line-cvut .hud::after { bottom: -1px; right: -1px; border-width: 0 2px 2px 0 }
+.line-cvut .hud.alert { border-color: rgba(242,184,75,.45) }
+.line-cvut .hud.alert::before, .line-cvut .hud.alert::after { border-color: var(--gold) }
+
+/* section heads */
+.line-cvut main { gap: 32px; padding-block: 8px 56px }
+.line-cvut .sec-h { display: flex; align-items: center; gap: 12px; margin-bottom: 12px }
+.line-cvut .sec-h::after { content: ""; flex: 1; height: 1px; background: var(--line) }
+.line-cvut .sec-h h2 { font: 600 13px/1 var(--f-mono); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin: 0 }
+.line-cvut .sec-h .idx { font: 600 13px/1 var(--f-mono); color: var(--accent) }
+.line-cvut .sec-h .mine { order: 3; font: 500 12px/1 var(--f-mono); color: var(--ok); letter-spacing: .04em }
+
+/* buttons */
+.line-cvut .btn { font: 600 13px/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; border-radius: 0; border: 1px solid var(--accent); background: var(--accent); color: #05080C; min-height: 44px; padding: 13px 16px }
+.line-cvut .btn small { opacity: .7; font-weight: 500 }
+.line-cvut .btn.ghost { background: transparent; color: var(--accent) }
+.line-cvut .btn.soft { background: transparent; color: var(--fg); border-color: var(--line-hi) }
+.line-cvut .btn.warn { background: var(--gold); border-color: var(--gold) }
+.line-cvut .chip, .line-cvut .score { font: 500 12px/1 var(--f-mono); letter-spacing: .04em; border-radius: 0; border: 1px solid var(--line-hi); background: transparent; color: var(--fg); min-height: 34px; padding: 9px 10px }
+.line-cvut .chip.plain { background: transparent }
+.line-cvut .score.has { color: var(--ok); border-color: rgba(110,231,168,.45); background: transparent }
+.line-cvut .score.mid { color: var(--gold); border-color: rgba(242,184,75,.45); background: transparent }
+.line-cvut .fresh { border-color: var(--gold) !important; color: var(--gold) !important }
+.line-cvut .btn:not(.ghost):not(.soft).fresh { color: #05080C !important }
+.line-cvut .fresh::after { border-color: var(--bg) }
+
+/* week */
+.line-cvut .wk { display: grid; grid-template-columns: auto 1fr; gap: 26px; align-items: center; padding: 24px }
+.line-cvut .wk .bignum { font: 600 clamp(84px, 13vw, 150px)/.8 var(--f-mono); color: transparent; -webkit-text-stroke: 1.5px var(--accent); letter-spacing: -.04em }
+.line-cvut .wk h3 { font: 700 clamp(26px, 3.6vw, 40px)/1.05 var(--f-display); text-transform: uppercase; margin: 6px 0 16px; color: var(--fg); text-wrap: balance }
+.line-cvut .wk .hint { margin-top: 16px; background: transparent; border-left: 2px solid var(--gold); border-radius: 0; color: var(--muted) }
+
+/* modules */
+.line-cvut .mods { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px }
+.line-cvut .mod { padding: 22px; display: grid; gap: 10px; align-content: start }
+.line-cvut .mod-k { display: flex; justify-content: space-between; gap: 10px; align-items: center }
+.line-cvut .mod-k .lbl.hot { color: var(--gold) }
+.line-cvut .mod-k .rd { font: 500 12px/1.2 var(--f-mono); color: var(--muted) }
+.line-cvut .mod-k .rd b { color: var(--fg) }
+.line-cvut .mod h3 { font: 700 20px/1.1 var(--f-display); text-transform: uppercase; margin: 0; color: var(--fg) }
+.line-cvut .mod p { color: var(--muted); margin: 0; font-size: 14px }
+.line-cvut .mod .meter { height: 4px; background: var(--line); position: relative }
+.line-cvut .mod .meter i { position: absolute; inset: 0 auto 0 0; background: var(--accent) }
+.line-cvut .mod .note { font: 500 12px/1.4 var(--f-mono); color: var(--muted) }
+.line-cvut .mod .note b { color: var(--fg) }
+.line-cvut .mod .clock { font: 600 34px/1 var(--f-mono); color: var(--fg); letter-spacing: -.02em }
+.line-cvut .mod .flash { border: 1px dashed var(--line-hi); padding: 12px; font-family: var(--f-mono); font-size: 13px; color: var(--fg) }
+.line-cvut .mod .flash small { display: block; color: var(--muted); margin-top: 4px }
+.line-cvut .mod .foot { margin-top: 4px }
+
+/* topics index */
+.line-cvut .tlist { border: 1px solid var(--line); background: var(--paper) }
+.line-cvut .tl-month { padding: 9px 18px; font: 600 11px/1 var(--f-mono); letter-spacing: .16em; color: var(--muted); text-transform: uppercase; background: var(--paper-2); border-top: 1px solid var(--line) }
+.line-cvut .tl-month:first-child { border-top: 0 }
+.line-cvut .tl-row { display: grid; grid-template-columns: 64px 1fr auto; gap: 16px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line) }
+.line-cvut .tl-row .n { font: 600 18px/1 var(--f-mono); color: var(--faint) }
+.line-cvut .tl-row.cur { background: linear-gradient(90deg, rgba(92,225,230,.08), transparent 60%) }
+.line-cvut .tl-row.cur .n { color: var(--accent) }
+.line-cvut .tl-row.done .n { color: var(--ok) }
+.line-cvut .tl-row .t { font-weight: 500; min-width: 0 }
+.line-cvut .tl-row .t small { display: block; font: 500 11px/1.4 var(--f-mono); color: var(--faint); letter-spacing: .06em; margin-top: 3px }
+.line-cvut .tl-row .acts { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end }
+.line-cvut footer.foot { display: block; border-top: 1px solid var(--line); padding-block: 18px 40px; color: var(--faint); font: 500 11px/1.7 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; max-width: 1040px; margin: 0 auto }
+
+/* panels in dark */
+.line-cvut .sheet { box-shadow: -1px 0 0 var(--line-hi) }
+.line-cvut .shead, .line-cvut .qbar { background: var(--paper-2) }
+.line-cvut .shead .k { font-family: var(--f-mono); color: var(--accent) }
+.line-cvut .shead h3, .line-cvut .etask .eh b, .line-cvut .qpart h4 { font-family: var(--f-display); text-transform: uppercase; letter-spacing: .01em }
+.line-cvut .card, .line-cvut .qlist, .line-cvut .etask, .line-cvut .glist, .line-cvut .codebox, .line-cvut .fcard { border-radius: 0 }
+.line-cvut .opt, .line-cvut .eopt, .line-cvut .eopt .L, .line-cvut .dots button, .line-cvut .x, .line-cvut .vbtn, .line-cvut .namerow input { border-radius: 0 }
+.line-cvut .timer, .line-cvut .verdict b { font-family: var(--f-mono) }
+.line-cvut .card b { color: var(--accent) }
+.line-cvut .pages canvas { box-shadow: 0 0 0 1px var(--line-hi) }
+
+@media (max-width: 820px) {
+  .line-cvut .hero { grid-template-columns: 1fr }
+  .line-cvut .mods { grid-template-columns: 1fr }
+  .line-cvut .wk { grid-template-columns: 1fr; gap: 6px }
+  .line-cvut .tl-row { grid-template-columns: 40px 1fr; row-gap: 10px }
+  .line-cvut .tl-row .acts { grid-column: 2; justify-content: flex-start }
+  .line-cvut .statusbar .hide { display: none }
+}
+
+</style>
+
+</head><body><!--BODY-->
+<script>(function(){var f=function(){document.body.classList.add("line-cvut")};document.body?f():document.addEventListener("DOMContentLoaded",f)})()</script>
+<div class="statusbar"><div class="wrap"><span class="live">PEC · Laboratoř</span><span>Linie ČVUT</span><span class="hide">135 мин / занятие</span><span class="sp"></span><span class="hide">FIT · FEL · FBMI · FJFI</span><span id="hero-date"></span></div></div>
+<header class="wrap hero">
+  <div>
+    <div class="lbl">Подготовительный курс · математика</div>
+    <h1>Matematika<br><span class="c">ČVUT</span></h1>
+    <p class="lede">Лекции, домашние задания, формулы и самопроверка. У каждой задачи — ключ, у каждой темы — карточка формул.</p>
+    <div class="scale">
+      <div class="scale-head"><span class="lbl">Прогресс курса</span><b><span id="axis-n" style="color:inherit"></span> <span>/ 35</span></b></div>
+      <div class="ticks" id="ticks" role="img"></div>
+      <div class="ticknums"><span>01</span><span>05</span><span>10</span><span>15</span><span>20</span><span>25</span><span>30</span><span>35</span></div>
     </div>
   </div>
+  <div class="plot" id="plot"></div>
 </header>
+
 
 <div class="wrap">
 <main>
-  <section aria-labelledby="h-week">
-    <h2 id="h-week">Тема этой недели</h2>
-    <div class="week" id="week"></div>
+  <section id="sec-week" class="sec-week" aria-labelledby="h-week">
+    <div class="sec-h"><span class="idx">01</span><h2 id="h-week">Текущая тема</h2></div>
+    <div class="bento" id="bento"></div>
   </section>
 
-  <section aria-labelledby="h-warm">
-    <h2 id="h-warm">Повторение</h2>
-    <div class="examcta alt" id="warmcta"></div>
+  <section id="sec-mods" aria-labelledby="h-mods">
+    <div class="sec-h"><span class="idx">02</span><h2 id="h-mods">Модули</h2></div>
+    <div class="mods" id="mods"></div>
   </section>
 
-  <section aria-labelledby="h-exam">
-    <h2 id="h-exam">Экзамены</h2>
-    <div id="examcta"></div>
+  <section id="sec-all" aria-labelledby="h-all">
+    <div class="sec-h"><span class="idx">03</span><h2 id="h-all">Индекс тем</h2><span class="mine" id="mine"></span></div>
+    <div class="tlist" id="months"></div>
   </section>
-
-  <section aria-labelledby="h-tools" id="toolswrap">
-    <h2 id="h-tools">Язык экзамена</h2>
-    <div id="toolscta"></div>
-  </section>
-
-  <section aria-labelledby="h-all">
-    <h2 id="h-all"><span>Все темы</span><span class="mine" id="mine"></span></h2>
-    <div id="months"></div>
-  </section>
-
-  <footer>
-    <span><b>Лекция</b> — то, что разбираем на занятии. <b>Domácí úkol</b> — решите до следующего занятия. <b>Формулы</b> — вся тема на одной карточке.</span>
-    <span><b>Тест</b>: решите ДЗ на бумаге, отметьте свои ответы и сразу узнайте результат. Ответы видите только вы, они хранятся в этом браузере.</span>
-  </footer>
 </main>
 </div>
+<footer class="foot wrap">Лекция — то, что разбираем на занятии. Domácí úkol — решите до следующего занятия, потом проверьте себя «Тестом ДЗ». Ответы, разминка и словарик хранятся только в этом браузере.</footer>
 
 <div class="sheet-wrap" id="sheetwrap" hidden>
   <aside class="sheet" role="dialog" aria-modal="true" aria-labelledby="stitle">
@@ -333,26 +461,6 @@ function typeset(root) {
 }
 
 /* ---- course axis 1…35 ---- */
-function drawAxis() {
-  const svg = $("axis"), NS = "http://www.w3.org/2000/svg";
-  const W = Math.max(280, svg.clientWidth || 700), H = 46, x0 = 8, x1 = W - 8, y = 14, step = (x1 - x0) / (TOTAL - 1);
-  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-  const X = (n) => x0 + (n - 1) * step;
-  const mk = (t, a, txt) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; svg.append(e); return e; };
-  svg.replaceChildren();
-  mk("line", { x1: x0, y1: y, x2: x1, y2: y, stroke: "var(--band-line)", "stroke-width": 2 });
-  mk("line", { x1: x0, y1: y, x2: X(latest.n), y2: y, stroke: "var(--band-accent)", "stroke-width": 3, "stroke-linecap": "round" });
-  const labels = W < 420 ? [1, 10, 20, 30, 35] : [1, 5, 10, 15, 20, 25, 30, 35];
-  for (let n = 1; n <= TOTAL; n++) {
-    const passed = n <= latest.n, big = n === 1 || n % 5 === 0;
-    mk("line", { x1: X(n), y1: y - (big ? 6 : 3), x2: X(n), y2: y + (big ? 6 : 3), stroke: passed ? "var(--band-accent)" : "var(--band-line)", "stroke-width": big ? 2 : 1.5 });
-    if (labels.includes(n) && Math.abs(n - latest.n) > (W < 420 ? 2 : 1)) mk("text", { x: X(n), y: y + 24, "text-anchor": "middle", "font-size": 11, fill: passed ? "var(--band-fg)" : "var(--band-muted)", "font-family": "Inter, sans-serif" }, n);
-  }
-  mk("circle", { cx: X(latest.n), cy: y, r: 6, fill: "var(--band-fg)", stroke: "var(--band-accent)", "stroke-width": 3 });
-  mk("text", { x: X(latest.n), y: y + 25, "text-anchor": "middle", "font-size": 12, "font-weight": 700, fill: "var(--band-accent)", "font-family": "Space Grotesk, Inter, sans-serif" }, latest.n);
-  $("axis-n").textContent = latest.n;
-  svg.setAttribute("aria-label", `Пройдено ${latest.n} тем из ${TOTAL}`);
-}
 
 /* ---- buttons ---- */
 function go(hash) { location.hash = hash; }
@@ -377,50 +485,8 @@ function scoreBtn(t) {
 }
 
 /* ---- this week ---- */
-function renderWeek() {
-  const w = $("week"); w.replaceChildren(); w.dataset.n = latest.n;
-  const head = el("div");
-  head.append(el("div", "num", "TÉMA " + latest.n), el("h3", null, latest.name));
-  const btns = el("div", "btns");
-  if (latest.lekce) btns.append(linkBtn("btn", "lekce-" + latest.n, "Лекция", latest.lekce.pages + " стр."));
-  if (latest.du) btns.append(linkBtn("btn ghost", "du-" + latest.n, "Domácí úkol", latest.du.pages + " стр."));
-  if (latest.card) btns.append(linkBtn("btn soft", "formuly-" + latest.n, "Формулы"));
-  if (latest.quiz) {
-    const s = totals(latest);
-    btns.append(linkBtn("btn soft", "test-" + latest.n, s.right === null ? "Проверить ДЗ" : `Проверка ✓ ${s.right}/${s.total}`));
-  }
-  w.append(head, btns, el("p", "hint", "Решите ДЗ на бумаге, потом нажмите «Проверить ДЗ»: отметьте свои ответы и сразу увидите результат. Подробные решения — в конце листа."));
-}
 
 /* ---- all topics by month ---- */
-function renderList() {
-  const root = $("months"); root.replaceChildren();
-  MONTHS.forEach(([name, a, b]) => {
-    const items = DATA.filter((t) => t.n >= a && t.n <= b).reverse();
-    if (!items.length) return;
-    const sec = el("div", "month");
-    sec.append(el("div", "mname", name));
-    const ol = el("ol", "topics");
-    items.forEach((t) => {
-      const s = totals(t);
-      const li = el("li", s.right !== null ? "done" : "");
-      const tt = el("span", "tt", t.name);
-      if (t.n === latest.n) tt.append(el("span", "new", "НОВОЕ"));
-      const acts = el("span", "acts");
-      if (t.lekce) acts.append(linkBtn("chip", "lekce-" + t.n, "Лекция"));
-      if (t.du) acts.append(linkBtn("chip", "du-" + t.n, "ДЗ"));
-      if (t.card) acts.append(linkBtn("chip plain", "formuly-" + t.n, "Формулы"));
-      if (t.quiz) acts.append(scoreBtn(t));
-      li.append(el("span", "tn", t.n), tt, acts);
-      ol.append(li);
-    });
-    sec.append(ol);
-    root.prepend(sec);
-  });
-  const withQ = DATA.filter((t) => t.quiz);
-  const doneN = withQ.filter((t) => totals(t).right !== null).length;
-  $("mine").textContent = doneN ? `проверено ${doneN} из ${withQ.length} ДЗ` : "";
-}
 function refresh() { renderWeek(); renderList(); }
 
 function toast(msg) {
@@ -622,33 +688,6 @@ SREZ.forEach((s) => {
 });
 CTX.zkouska.st = loadState(CTX.zkouska.key);
 
-function renderExamCta() {
-  const c = $("examcta"); c.replaceChildren();
-  const blocks = [];
-  SREZ.slice().reverse().forEach((s) => {
-    const ctx = CTX["srez-" + s.n], st = ctx.st;
-    const last = st.hist[st.hist.length - 1];
-    blocks.push({ ctx, h: `Срезовый экзамен ${s.n}`, p: `${s.tasks.length} новых задач по темам ${s.from}–${s.to}, ${s.minutes} минут, одна попытка. Результат — преподавателю.`,
-      note: st.run && !st.run.done ? "Срез идёт — можно продолжить." : last ? `Сдано: ${last.right}/${s.tasks.length} · ${last.date}` : "",
-      btn: st.run && !st.run.done ? "Продолжить" : last ? "Разбор" : "Начать срез", main: !last });
-  });
-  if (CTX.zkouska.enabled()) {
-    const st = CTX.zkouska.st;
-    const best = st.hist.length ? Math.max(...st.hist.map((h) => h.right)) : null;
-    blocks.push({ ctx: CTX.zkouska, h: "Přijímačky nanečisto", p: `${EXAM_N} задач в формате вступительного теста из пройденных тем, ${EXAM_MIN} минут, без калькулятора. Каждый раз новый набор.`,
-      note: st.run && !st.run.done ? "Экзамен идёт — можно продолжить." : best !== null ? `Попыток: ${st.hist.length} · лучший результат: ${best}/${EXAM_N}` : "",
-      btn: st.run && !st.run.done ? "Продолжить" : "Начать" });
-  }
-  blocks.forEach((b, i) => {
-    const box = el("div", "examcta" + (i ? " alt" : ""));
-    const left = el("div");
-    left.append(el("h3", null, b.h), el("p", null, b.p));
-    if (b.note) left.append(el("div", "best", b.note));
-    box.append(left, linkBtn("btn", b.ctx.hash, b.btn));
-    c.append(box);
-  });
-  c.parentElement.hidden = !blocks.length;
-}
 
 function showTimed(ctx) {
   $("viewer").hidden = true; renderToken++;
@@ -844,19 +883,6 @@ function streak() {
   while (done.has(isoWeek(d))) { s++; d.setDate(d.getDate() - 7); }
   return s;
 }
-function renderWarmCta() {
-  const c = $("warmcta"); c.replaceChildren();
-  if (BANK.length < 5) { c.parentElement.hidden = true; return; }
-  const cur = currentWarm();
-  const answered = cur.ids.filter((id) => cur.a[id]).length;
-  const left = el("div");
-  left.append(el("h3", null, "Разминка недели"));
-  left.append(el("p", null, "5 задач из прошлых тем. Чаще попадаются те, в которых вы ошибались. 10 минут в неделю — и старые темы не забываются."));
-  const st = streak();
-  left.append(el("div", "best", (answered === 5 ? "Готово на этой неделе ✓" : `Решено ${answered} из 5`) + (st ? ` · серия: ${st} ${plural(st, "неделя", "недели", "недель")} подряд` : "")));
-  const b = linkBtn("btn", "razminka", answered === 5 ? "Ещё 5 задач" : answered ? "Продолжить" : "Начать");
-  c.append(left, b);
-}
 function showWarm() {
   $("viewer").hidden = true; renderToken++;
   const cur = currentWarm();
@@ -914,15 +940,6 @@ const GLOSS = (() => {
   return out;
 })();
 const plain = (h) => { const d = document.createElement("div"); d.innerHTML = h; return (d.textContent || "").toLowerCase(); };
-function renderToolsCta() {
-  const c = $("toolscta"); c.replaceChildren();
-  if (!GLOSS.length) { c.hidden = true; return; }
-  const box = el("div", "examcta alt");
-  const left = el("div");
-  left.append(el("h3", null, "Slovníček · чешско-русский"), el("p", null, `${GLOSS.length} ${plural(GLOSS.length, "термин", "термина", "терминов")} из пройденных тем: поиск и карточки для запоминания. Экзамен — на чешском, термины надо узнавать сразу.`));
-  box.append(left, linkBtn("btn", "slovnik", "Открыть"));
-  c.append(box);
-}
 function showGlossary() {
   $("viewer").hidden = true; renderToken++;
   openSheet("Slovníček", "Чешско-русский словарик");
@@ -989,6 +1006,215 @@ function showGlossary() {
     show();
   }
   list();
+}
+
+/* ---- hero (per line) ---- */
+const IS_CVUT = LINE === "ČVUT";
+const PLOTS = {
+  1: { t: "A ∪ B", c: ["Vennův diagram", "A ∩ B"], venn: true },
+  2: { t: "y = x² · y = √x", c: ["mocnina a odmocnina", "inverzní pár"], f: [(x) => x * x, (x) => (x >= 0 ? Math.sqrt(x) : NaN)], d: [-1.5, 3, -1, 4] },
+  3: { t: "y = x² − 2x − 3", c: ["kořeny −1 a 3", "D = 16"], f: [(x) => x * x - 2 * x - 3], d: [-3, 5, -5, 6], pts: [[-1, 0], [3, 0]] },
+  4: { t: "y = x² + p", c: ["parametr posouvá graf", "p = −2, 0, 2"], f: [(x) => x * x - 2, (x) => x * x, (x) => x * x + 2], d: [-3, 3, -3, 6] },
+  5: { t: "y = |x − 1| − 2", c: ["lom ve vrcholu", "[1; −2]"], f: [(x) => Math.abs(x - 1) - 2], d: [-4, 6, -3, 4], pts: [[1, -2]] },
+  6: { t: "y = (x − 1)/(x + 2)", c: ["nulový bod 1", "pól −2"], f: [(x) => (x - 1) / (x + 2)], d: [-6, 4, -4, 5], asym: { x: -2, y: 1 } },
+  7: { t: "|x − 1| < 2", c: ["vzdálenost od 1", "(−1; 3)"], f: [(x) => Math.abs(x - 1), () => 2], d: [-3, 5, -1, 5], pts: [[-1, 2], [3, 2]] },
+  8: { t: "y = √(x + 2)", c: ["D = ⟨−2; ∞)", "start [−2; 0]"], f: [(x) => Math.sqrt(x + 2)], d: [-3, 7, -1, 4], pts: [[-2, 0]] },
+  9: { t: "y = 1/x", c: ["hyperbola", "asymptoty x = 0, y = 0"], f: [(x) => 1 / x], d: [-5, 5, -4, 4], asym: { x: 0, y: 0 } },
+  10: { t: "y = 2ˣ", c: ["asymptota y = 0", "(½)ˣ · zrcadlo"], f: [(x) => Math.pow(2, x), (x) => Math.pow(0.5, x)], d: [-4, 4, -1, 7], pts: [[0, 1]], dash: [1] },
+  11: { t: "2ˣ = 4", c: ["průsečík [2; 4]", "x = 2"], f: [(x) => Math.pow(2, x), () => 4], d: [-3, 4, -1, 7], pts: [[2, 4]], dash: [1] },
+  12: { t: "y = log₂ x", c: ["inverze k 2ˣ", "[1; 0]"], f: [(x) => Math.log2(x), (x) => Math.pow(2, x), (x) => x], d: [-3, 6, -3, 6], pts: [[1, 0]], dash: [1, 2] },
+  13: { t: "y = ln x", c: ["D = (0; ∞)", "[1; 0]"], f: [(x) => Math.log(x)], d: [-1, 7, -3, 3], pts: [[1, 0]] },
+  14: { t: "y = sin x", c: ["perioda 2π", "cos x · posun"], f: [(x) => Math.sin(x), (x) => Math.cos(x)], d: [-7, 7, -2, 2], dash: [1] },
+  15: { t: "sin x = ½", c: ["π/6 + 2kπ", "5π/6 + 2kπ"], f: [(x) => Math.sin(x), () => 0.5], d: [-1, 7, -1.6, 1.6], dash: [1] },
+  16: { t: "z = a + bi", c: ["Gaussova rovina", "|z|"], par: (t) => [Math.cos(t) * 2, Math.sin(t) * 2], d: [-3, 3, -2.6, 2.6], pts: [[1.4, 1.43]] },
+  17: { t: "zⁿ = 1", c: ["Moivreova věta", "n = 6"], par: (t) => [Math.cos(t), Math.sin(t)], d: [-1.6, 1.6, -1.3, 1.3], pts: [0, 1, 2, 3, 4, 5].map((k) => [Math.cos(k * Math.PI / 3), Math.sin(k * Math.PI / 3)]) },
+  18: { t: "aₙ = 1/n", c: ["posloupnost", "limita 0"], d: [0, 10, -0.2, 1.2], pts: [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => [n, 1 / n]) },
+  19: { t: "aₙ = 1 + 2(n − 1)", c: ["aritmetická", "d = 2"], d: [0, 8, -1, 15], pts: [1, 2, 3, 4, 5, 6, 7].map((n) => [n, 2 * n - 1]) },
+  20: { t: "aₙ = 2ⁿ⁻¹", c: ["geometrická", "q = 2"], d: [0, 7, -2, 34], pts: [1, 2, 3, 4, 5, 6].map((n) => [n, Math.pow(2, n - 1)]) },
+  21: { t: "n!", c: ["faktoriál", "5! = 120"], d: [0, 6.5, -10, 130], pts: [1, 2, 3, 4, 5].map((n) => [n, [1, 2, 6, 24, 120][n - 1]]) },
+  22: { t: "C(6, k)", c: ["kombinace", "Σ = 64"], d: [-0.8, 6.8, -2, 22], bars: [1, 6, 15, 20, 15, 6, 1] },
+  23: { t: "(a + b)⁶", c: ["binomická věta", "Pascal"], d: [-0.8, 6.8, -2, 22], bars: [1, 6, 15, 20, 15, 6, 1] },
+  24: { t: "P(X = k)", c: ["binomické rozdělení", "n = 10, p = ½"], d: [-0.8, 10.8, -0.02, 0.27], bars: [1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1].map((v) => v / 1024) },
+  25: { t: "u + v", c: ["vektory", "rovnoběžník"], d: [-1, 5, -1, 4], vec: [[[0, 0], [3, 1]], [[0, 0], [1, 2.5]], [[0, 0], [4, 3.5]]] },
+  26: { t: "X = A + t·u", c: ["parametrická rovnice", "t ∈ ℝ"], f: [(x) => 0.5 * x + 1], d: [-4, 4, -2, 4], pts: [[0, 1], [2, 2]] },
+  27: { t: "2x − y + 1 = 0", c: ["obecná rovnice", "n = (2; −1)"], f: [(x) => 2 * x + 1], d: [-3, 3, -3, 5] },
+  28: { t: "p ∦ q", c: ["průsečík", "vzájemná poloha"], f: [(x) => x + 1, (x) => -0.5 * x + 2.5], d: [-3, 5, -2, 5], pts: [[1, 2]] },
+  29: { t: "y = kx + q", c: ["směrnice k", "úseky na osách"], f: [(x) => -0.75 * x + 3], d: [-1, 6, -1, 4], pts: [[4, 0], [0, 3]] },
+  30: { t: "x² + y² = 4", c: ["kružnice", "S = [0; 0], r = 2"], par: (t) => [2 * Math.cos(t), 2 * Math.sin(t)], d: [-3.5, 3.5, -2.6, 2.6] },
+  31: { t: "x²/9 + y²/4 = 1", c: ["elipsa", "a = 3, b = 2"], par: (t) => [3 * Math.cos(t), 2 * Math.sin(t)], d: [-4, 4, -2.6, 2.6] },
+  32: { t: "x²/4 − y²/1 = 1", c: ["hyperbola", "asymptoty y = ±x/2"], f: [(x) => (Math.abs(x) >= 2 ? Math.sqrt(x * x / 4 - 1) : NaN), (x) => (Math.abs(x) >= 2 ? -Math.sqrt(x * x / 4 - 1) : NaN), (x) => x / 2, (x) => -x / 2], d: [-6, 6, -3, 3], dash: [2, 3] },
+  33: { t: "y² = 4x", c: ["parabola", "ohnisko [1; 0]"], f: [(x) => (x >= 0 ? 2 * Math.sqrt(x) : NaN), (x) => (x >= 0 ? -2 * Math.sqrt(x) : NaN)], d: [-1, 6, -5, 5], pts: [[1, 0]] },
+  34: { t: "a² + b² = c²", c: ["planimetrie", "3 · 4 · 5"], d: [-0.5, 5, -0.5, 4], poly: [[0, 0], [4, 0], [0, 3]] },
+  35: { t: "V = a³", c: ["stereometrie", "krychle"], d: [-0.5, 5, -0.5, 4], poly: [[0, 0], [2.5, 0], [2.5, 2.5], [0, 2.5], [0, 0], [1.2, 0.9], [3.7, 0.9], [3.7, 3.4], [1.2, 3.4], [1.2, 0.9], [3.7, 0.9], [2.5, 0], [2.5, 2.5], [3.7, 3.4], [1.2, 3.4], [0, 2.5]] },
+};
+function drawPlot() {
+  const box = $("plot"); if (!box) return;
+  const P = PLOTS[latest.n] || PLOTS[10];
+  const W = 320, H = 200, NS = "http://www.w3.org/2000/svg";
+  const [x0, x1, y0, y1] = P.d || [-4, 4, -2, 6];
+  const X = (x) => ((x - x0) / (x1 - x0)) * W, Y = (y) => H - ((y - y0) / (y1 - y0)) * H;
+  const svg = document.createElementNS(NS, "svg"); svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("role", "img"); svg.setAttribute("aria-label", "График темы " + latest.n + ": " + P.t);
+  const mk = (t, a, txt) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; svg.append(e); return e; };
+  for (let i = 1; i < 4; i++) { mk("line", { x1: 0, y1: (H * i) / 4, x2: W, y2: (H * i) / 4, stroke: "#1D2B38" }); mk("line", { x1: (W * i) / 4, y1: 0, x2: (W * i) / 4, y2: H, stroke: "#1D2B38" }); }
+  if (y0 < 0 && y1 > 0) mk("line", { x1: 0, y1: Y(0), x2: W, y2: Y(0), stroke: "#4A5E72", "stroke-width": 1.2 });
+  if (x0 < 0 && x1 > 0) mk("line", { x1: X(0), y1: 0, x2: X(0), y2: H, stroke: "#4A5E72", "stroke-width": 1.2 });
+  const cyan = "#5CE1E6", amber = "#F2B84B";
+  if (P.asym) { mk("line", { x1: X(P.asym.x), y1: 0, x2: X(P.asym.x), y2: H, stroke: amber, "stroke-opacity": .5, "stroke-dasharray": "4 4" }); mk("line", { x1: 0, y1: Y(P.asym.y), x2: W, y2: Y(P.asym.y), stroke: amber, "stroke-opacity": .5, "stroke-dasharray": "4 4" }); }
+  (P.f || []).forEach((fn, k) => {
+    let d = "", pen = false, prevY = null;
+    for (let i = 0; i <= 400; i++) {
+      const x = x0 + ((x1 - x0) * i) / 400, y = fn(x);
+      const ok = isFinite(y) && y > y0 - (y1 - y0) && y < y1 + (y1 - y0) && !(prevY !== null && Math.abs(y - prevY) > (y1 - y0));
+      if (ok) { d += (pen ? "L" : "M") + X(x).toFixed(1) + "," + Y(y).toFixed(1); pen = true; } else pen = false;
+      prevY = isFinite(y) ? y : null;
+    }
+    const dashed = (P.dash || []).includes(k);
+    mk("path", { d, fill: "none", stroke: cyan, "stroke-width": dashed ? 1.4 : 2.2, "stroke-opacity": dashed ? .45 : 1, "stroke-dasharray": dashed ? "4 4" : "none", "stroke-linejoin": "round" });
+  });
+  if (P.par) { let d = ""; for (let i = 0; i <= 200; i++) { const [x, y] = P.par((2 * Math.PI * i) / 200); d += (i ? "L" : "M") + X(x).toFixed(1) + "," + Y(y).toFixed(1); } mk("path", { d, fill: "none", stroke: cyan, "stroke-width": 2.2 }); }
+  if (P.bars) { const bw = (X(1) - X(0)) * 0.6; P.bars.forEach((v, k) => mk("rect", { x: X(k) - bw / 2, y: Y(v), width: bw, height: Y(0) - Y(v), fill: cyan, "fill-opacity": .75 })); }
+  if (P.vec) P.vec.forEach(([[a, b], [c, e]], k) => mk("line", { x1: X(a), y1: Y(b), x2: X(c), y2: Y(e), stroke: k === 2 ? amber : cyan, "stroke-width": 2.2 }));
+  if (P.poly) { mk("path", { d: P.poly.map(([x, y], i) => (i ? "L" : "M") + X(x).toFixed(1) + "," + Y(y).toFixed(1)).join(""), fill: "none", stroke: cyan, "stroke-width": 2 }); }
+  if (P.venn) { mk("circle", { cx: 130, cy: 100, r: 62, fill: cyan, "fill-opacity": .12, stroke: cyan, "stroke-width": 2 }); mk("circle", { cx: 190, cy: 100, r: 62, fill: cyan, "fill-opacity": .12, stroke: cyan, "stroke-width": 2 }); mk("text", { x: 92, y: 104, fill: "#DCE7F2", "font-family": "IBM Plex Mono, monospace", "font-size": 14 }, "A"); mk("text", { x: 220, y: 104, fill: "#DCE7F2", "font-family": "IBM Plex Mono, monospace", "font-size": 14 }, "B"); }
+  (P.pts || []).forEach(([x, y]) => mk("circle", { cx: X(x), cy: Y(y), r: 4, fill: "#070B10", stroke: amber, "stroke-width": 2 }));
+  if (P.pts && P.pts.length && !P.bars && P.pts.length <= 2) { const [x, y] = P.pts[0]; mk("text", { x: Math.min(X(x) + 8, W - 60), y: Math.max(Y(y) - 8, 12), fill: amber, "font-family": "IBM Plex Mono, monospace", "font-size": 11 }, `[${x}; ${y}]`); }
+  box.replaceChildren();
+  const top = el("div", "lbl"); top.style.cssText = "display:flex;justify-content:space-between;gap:10px";
+  top.append(el("span", null, "Тема " + latest.n + " · сигнал"), Object.assign(el("span", null, P.t), { style: "color:var(--accent);text-transform:none;letter-spacing:.04em" }));
+  const cap = el("div", "cap"); cap.append(el("span", "lbl", P.c[0]), Object.assign(el("span", "lbl", P.c[1]), { style: "text-transform:none" }));
+  box.append(top, svg, cap);
+}
+function drawAxis() {
+  const n = latest.n;
+  if ($("axis-n")) $("axis-n").textContent = n;
+  if (IS_CVUT) {
+    const t = $("ticks"); if (!t) return;
+    t.replaceChildren();
+    for (let i = 1; i <= TOTAL; i++) { const b = el("i", (i === 1 || i % 5 === 0 ? "m " : "") + (i < n ? "on" : i === n ? "now" : "")); t.append(b); }
+    t.setAttribute("aria-label", `Пройдено ${n} тем из ${TOTAL}`);
+    if ($("hero-date")) $("hero-date").textContent = "téma " + String(n).padStart(2, "0") + "/35";
+    drawPlot();
+  } else {
+    const badge = $("hero-badge");
+    if (badge) { badge.replaceChildren(el("b", null, "НОВОЕ"), el("span", null, "Тема " + n + " · " + latest.name)); }
+    const cta = $("hero-cta");
+    if (cta) {
+      cta.replaceChildren();
+      if (latest.du) cta.append(linkBtn("btn", "du-" + n, "Домашнее задание · тема " + n));
+      if (CTX && CTX.zkouska && CTX.zkouska.enabled()) cta.append(linkBtn("btn ghost", "zkouska", "Пробный экзамен"));
+      else if (latest.lekce) cta.append(linkBtn("btn ghost", "lekce-" + n, "Лекция"));
+    }
+    const withQ = DATA.filter((t) => t.quiz && totals(t).right !== null);
+    if ($("st-self")) {
+      if (withQ.length) { let r = 0, tot = 0; withQ.forEach((t) => { const s = totals(t); r += s.right; tot += s.total; }); $("st-self").textContent = Math.round((100 * r) / tot) + "%"; }
+      else $("st-self").textContent = "—";
+    }
+    if ($("st-streak") && typeof streak === "function") $("st-streak").textContent = streak();
+  }
+}
+
+/* ---- week ---- */
+function renderWeek() {
+  const host = $("bento"); if (!host) return;
+  let w = $("week");
+  if (!w) { w = el("div"); w.id = "week"; host.prepend(w); }
+  w.className = "wk " + (IS_CVUT ? "hud" : "tile");
+  w.replaceChildren();
+  const big = el("div", "bignum", String(latest.n).padStart(2, "0")); big.setAttribute("aria-hidden", "true");
+  const body = el("div");
+  const month = (MONTHS.find(([, a, b]) => latest.n >= a && latest.n <= b) || [""])[0];
+  body.append(el("div", "lbl", `Тема ${latest.n} / 35 · ${month}`), el("h3", latest.name.length > 28 ? "long" : null, latest.name));
+  const btns = el("div", "btns");
+  if (latest.lekce) btns.append(linkBtn("btn", "lekce-" + latest.n, "Лекция", latest.lekce.pages + " стр."));
+  if (latest.du) btns.append(linkBtn("btn ghost", "du-" + latest.n, "Domácí úkol", latest.du.pages + " стр."));
+  if (latest.card) btns.append(linkBtn("btn soft", "formuly-" + latest.n, "Формулы"));
+  if (latest.quiz) { const s = totals(latest); btns.append(linkBtn("btn soft", "test-" + latest.n, s.right === null ? "Тест ДЗ" : `Тест ✓ ${s.right}/${s.total}`)); }
+  body.append(btns, el("p", "hint", "Решите ДЗ на бумаге, потом откройте «Тест ДЗ»: отметьте ответы и сразу увидите результат. Подробные решения — в конце листа."));
+  if (IS_CVUT) w.append(big, body); else w.append(big, body);
+}
+
+/* ---- modules: srez, warm-up, practice exam, glossary (+ ring for VŠE) ---- */
+function modCard(o) {
+  const c = el("div", "mod " + (IS_CVUT ? "hud" : "tile") + (o.cls ? " " + o.cls : ""));
+  const k = el("div", "mod-k"); const l = el("span", "lbl" + (o.hot ? " hot" : ""), o.k); k.append(l);
+  if (o.rd) { const r = el("span", "rd"); r.innerHTML = o.rd; k.append(r); }
+  c.append(k, el("h3", null, o.h));
+  if (o.vis) c.append(o.vis);
+  if (o.p) c.append(el("p", null, o.p));
+  if (o.note) { const n = el("div", "note"); n.innerHTML = o.note; c.append(n); }
+  if (o.btn) { const f = el("div", "foot btns"); f.append(linkBtn(o.btnCls || "btn", o.hash, o.btn)); c.append(f); }
+  return c;
+}
+function renderMods() {
+  const host = IS_CVUT ? $("mods") : $("bento"); if (!host) return;
+  host.querySelectorAll(".mod, .ringtile").forEach((x) => x.remove());
+  const out = [];
+  if (!IS_CVUT) {
+    const pct = latest.n / TOTAL, C = 2 * Math.PI * 70;
+    const t = el("div", "tile ringtile");
+    t.innerHTML = `<div class="lbl">Прогресс курса</div><svg class="ring" viewBox="0 0 168 168" role="img" aria-label="Пройдено ${latest.n} тем из ${TOTAL}"><circle class="bgc" cx="84" cy="84" r="70"/><circle class="fg" cx="84" cy="84" r="70" transform="rotate(-90 84 84)" stroke-dasharray="${C.toFixed(1)}" stroke-dashoffset="${C.toFixed(1)}"/><text class="big" x="84" y="90" text-anchor="middle">${Math.round(pct * 100)}%</text><text class="sub" x="84" y="112" text-anchor="middle">${latest.n} из ${TOTAL} тем</text></svg>`;
+    out.push(t);
+    requestAnimationFrame(() => requestAnimationFrame(() => { const fg = t.querySelector(".fg"); if (fg) fg.setAttribute("stroke-dashoffset", (C * (1 - pct)).toFixed(1)); }));
+  }
+  SREZ.slice().reverse().forEach((s) => {
+    const ctx = CTX["srez-" + s.n], st = ctx.st, last = st.hist[st.hist.length - 1], going = st.run && !st.run.done;
+    const clock = el("div", "clock"); clock.innerHTML = going ? "идёт" : `${s.minutes}<span>:</span>00`;
+    out.push(modCard({ cls: "alert", hot: true, k: "Контроль · срез " + s.n, rd: last ? `сдано <b>${last.right}/${s.tasks.length}</b>` : `${s.tasks.length} задач`, h: `Срез ${s.n} · темы ${s.from}–${s.to}`, vis: clock,
+      p: `${s.tasks.length} новых задач, одна попытка. Код результата — преподавателю.`, note: going ? "Срез идёт — можно продолжить." : last ? `Сдано ${last.date}` : "", btn: going ? "Продолжить" : last ? "Разбор" : "Начать срез", btnCls: "btn warn", hash: ctx.hash }));
+  });
+  if (BANK.length >= 5) {
+    const cur = currentWarm(), answered = cur.ids.filter((id) => cur.a[id]).length, stk = streak();
+    const dots = el("div", "dots5"); for (let i = 0; i < 5; i++) dots.append(el("i", i < answered ? "d" : ""));
+    const meter = el("div", "meter"); const mi = el("i"); mi.style.width = (answered * 20) + "%"; meter.append(mi);
+    const vis = el("div"); vis.style.display = "grid"; vis.style.gap = "8px"; vis.append(dots, meter);
+    out.push(modCard({ cls: "warm", k: "Повторение", rd: stk ? `<b>${stk}</b> ${plural(stk, "неделя", "недели", "недель")} подряд` : "неделя " + isoWeek().slice(-2), h: "Разминка недели", vis,
+      p: "5 задач из прошлых тем, чаще те, где были ошибки.", note: answered === 5 ? "Готово на этой неделе ✓" : `Решено <b>${answered} / 5</b>`, btn: answered === 5 ? "Ещё 5 задач" : answered ? "Продолжить" : "Начать", btnCls: IS_CVUT ? "btn ghost" : "btn", hash: "razminka" }));
+  }
+  if (CTX.zkouska.enabled()) {
+    const st = CTX.zkouska.st, best = st.hist.length ? Math.max(...st.hist.map((h) => h.right)) : null, going = st.run && !st.run.done;
+    const clock = el("div", "clock"); clock.innerHTML = `${EXAM_MIN}<span>:</span>00`;
+    out.push(modCard({ k: "Симуляция", rd: best !== null ? `лучший <b>${best}/${EXAM_N}</b>` : `${EXAM_N} задач`, h: "Přijímačky nanečisto", vis: clock,
+      p: `${EXAM_N} задач в формате теста, ${EXAM_MIN} минут, без калькулятора. Каждый раз новый набор.`, note: going ? "Экзамен идёт — можно продолжить." : "", btn: going ? "Продолжить" : "Запустить", btnCls: IS_CVUT ? "btn ghost" : "btn", hash: "zkouska" }));
+  }
+  if (GLOSS.length) {
+    const g = GLOSS[Math.floor((Date.now() / 86400000) % GLOSS.length)];
+    const fl = el("div", "flash"); fl.innerHTML = g.cz + "<small>" + g.ru + "</small>";
+    out.push(modCard({ k: "Язык экзамена", rd: `<b>${GLOSS.length}</b> ${plural(GLOSS.length, "термин", "термина", "терминов")}`, h: "Slovníček CZ–RU", vis: fl,
+      p: "Термины пройденных тем: поиск и карточки для запоминания.", btn: "Открыть", btnCls: IS_CVUT ? "btn soft" : "btn ghost", hash: "slovnik" }));
+  }
+  out.forEach((x) => host.append(x));
+  typeset(host);
+  const ms = $("sec-mods"); if (ms) ms.hidden = IS_CVUT ? !out.length : true;
+}
+function renderExamCta() { renderMods(); drawAxis(); }
+function renderWarmCta() { renderMods(); drawAxis(); }
+function renderToolsCta() { renderMods(); }
+
+/* ---- all topics ---- */
+function renderList() {
+  const root = $("months"); root.replaceChildren();
+  MONTHS.slice().reverse().forEach(([name, a, b]) => {
+    const items = DATA.filter((t) => t.n >= a && t.n <= b).reverse();
+    if (!items.length) return;
+    root.append(el("div", "tl-month", name));
+    items.forEach((t) => {
+      const s = totals(t);
+      const row = el("div", "tl-row" + (t.n === latest.n ? " cur" : "") + (s.right !== null ? " done" : ""));
+      const tt = el("div", "t", t.name);
+      const meta = [t.lekce ? "лекция " + t.lekce.pages + " стр." : "", t.du ? "ДЗ " + t.du.pages + " стр." : "", t.quiz ? t.quiz.reduce((q, p) => q + p.items.length, 0) + " задач с ключом" : ""].filter(Boolean).join(" · ");
+      tt.append(el("small", null, meta));
+      const acts = el("div", "acts");
+      if (t.lekce) acts.append(linkBtn("chip", "lekce-" + t.n, "Лекция"));
+      if (t.du) acts.append(linkBtn("chip", "du-" + t.n, "ДЗ"));
+      if (t.card) acts.append(linkBtn("chip plain", "formuly-" + t.n, "Формулы"));
+      if (t.quiz) acts.append(scoreBtn(t));
+      row.append(el("span", "n", String(t.n).padStart(2, "0")), tt, acts);
+      root.append(row);
+    });
+  });
+  const withQ = DATA.filter((t) => t.quiz);
+  const doneN = withQ.filter((t) => totals(t).right !== null).length;
+  $("mine").textContent = doneN ? `проверено ${doneN} из ${withQ.length} ДЗ` : "";
 }
 
 /* ---- pdf viewer ---- */
@@ -1095,6 +1321,7 @@ $("vsave").addEventListener("click", async () => {
 window.addEventListener("hashchange", route);
 window.addEventListener("resize", () => drawAxis());
 
-drawAxis(); refresh(); renderWarmCta(); renderExamCta(); renderToolsCta(); route();
+if (!IS_CVUT) { $("h-all").textContent = "Все темы."; }
+refresh(); renderMods(); drawAxis(); route();
 </script>
 </body></html>
