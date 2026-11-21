@@ -191,9 +191,8 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
 .pl-pt i { width: 9px; height: 9px; border-radius: 50% }
 .line-cvut .pl-in, .line-cvut .pl-wrap { border-radius: 0 }
 .gfab { bottom: calc(env(safe-area-inset-bottom, 0px) + 68px) }
-.line-cvut .sbody { padding-bottom: 130px }
+.sbody { padding-bottom: 130px }
 .line-cvut .vside-body { padding-bottom: 20px }
-.line-vse .calc-fab { display: none }
 
 /* split view: PDF + answers */
 .vmain { flex: 1; display: flex; min-height: 0 }
@@ -453,6 +452,23 @@ body.line-vse::before { content: ""; position: fixed; inset: 0 0 auto; height: e
   .line-vse .wk .bignum { font-size: 180px; bottom: -40px }
   .line-vse .sheet { border-radius: 0 }
 }
+
+/* calculator + graphs buttons in VŠE style */
+.line-vse .calc-fab { border-radius: 999px; border: 0; background: var(--fg); color: var(--bg); font: 700 14px/1 var(--f-body); letter-spacing: 0; text-transform: none; padding: 13px 18px; box-shadow: 0 12px 30px -12px rgba(15,15,18,.55) }
+.line-vse .calc-fab.on { background: var(--accent); color: #fff }
+.line-vse .calc { border-radius: 22px; overflow: hidden; border-color: var(--line); box-shadow: 0 30px 70px -24px rgba(15,15,18,.45) }
+.line-vse .calc::before, .line-vse .calc::after { display: none }
+.line-vse .calc-h b { font-family: var(--f-body); letter-spacing: .08em }
+.line-vse .calc-mode { border-radius: 999px; color: var(--accent) }
+.line-vse .calc-in, .line-vse .calc-out, .line-vse .calc-row, .line-vse .ck { font-family: var(--f-body) }
+.line-vse .calc-in { font-size: 22px; font-weight: 600 }
+.line-vse .calc-out { color: var(--accent); font-weight: 600 }
+.line-vse .calc-keys { gap: 6px; padding: 10px; background: var(--paper) }
+.line-vse .ck { border-radius: 12px; background: var(--bg); font-weight: 600; min-height: 42px }
+.line-vse .ck.num { background: var(--line) }
+.line-vse .ck.eq { background: var(--accent); color: #fff }
+.line-vse .ck.del { color: var(--accent) }
+@media (max-width: 600px) { .line-vse .calc { border-radius: 22px 22px 0 0 } }
 
 </style>
 
@@ -1343,7 +1359,7 @@ function renderList() {
 }
 
 /* ---- built-in calculator (ČVUT) ---- */
-const CALC_ON = IS_CVUT;
+const CALC_ON = true;
 const Calc = (() => {
   // tokenizer + recursive-descent parser (no eval)
   const FN = { sin: 1, cos: 1, tg: 1, tan: 1, cotg: 1, cot: 1, arcsin: 1, arccos: 1, arctg: 1, log: 1, ln: 1, sqrt: 1, abs: 1, exp: 1 };

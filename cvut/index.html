@@ -191,9 +191,8 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
 .pl-pt i { width: 9px; height: 9px; border-radius: 50% }
 .line-cvut .pl-in, .line-cvut .pl-wrap { border-radius: 0 }
 .gfab { bottom: calc(env(safe-area-inset-bottom, 0px) + 68px) }
-.line-cvut .sbody { padding-bottom: 130px }
+.sbody { padding-bottom: 130px }
 .line-cvut .vside-body { padding-bottom: 20px }
-.line-vse .calc-fab { display: none }
 
 /* split view: PDF + answers */
 .vmain { flex: 1; display: flex; min-height: 0 }
@@ -1395,7 +1394,7 @@ function renderList() {
 }
 
 /* ---- built-in calculator (ČVUT) ---- */
-const CALC_ON = IS_CVUT;
+const CALC_ON = true;
 const Calc = (() => {
   // tokenizer + recursive-descent parser (no eval)
   const FN = { sin: 1, cos: 1, tg: 1, tan: 1, cotg: 1, cot: 1, arcsin: 1, arccos: 1, arctg: 1, log: 1, ln: 1, sqrt: 1, abs: 1, exp: 1 };
