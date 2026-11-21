@@ -517,7 +517,7 @@ body.line-cvut {
   padding: 8px max(16px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
   background: color-mix(in srgb, var(--paper) 90%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-top: 1px solid var(--line) }
 .tooldock .calc-fab { position: static; inset: auto; box-shadow: none; flex: 0 1 220px; justify-content: center }
-.tooldock .calc-fab svg { width: 18px; height: 18px; flex: none }
+.tooldock .calc-fab svg { width: 22px; height: 22px; flex: none; margin: -3px 0 }
 body.has-dock { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)) }
 .tooldock.over { left: max(16px, env(safe-area-inset-left, 0px)); right: auto; bottom: calc(env(safe-area-inset-bottom, 0px) + 16px); padding: 0; background: none; border: 0; -webkit-backdrop-filter: none; backdrop-filter: none; gap: 6px }
 .tooldock.over .calc-fab { flex: none; box-shadow: 0 8px 24px -10px rgba(0,0,0,.6) }
@@ -1618,7 +1618,7 @@ function buildCalc() {
   const toggle = (open) => { pane.hidden = !open; fab.setAttribute("aria-expanded", String(open)); fab.classList.toggle("on", open); if (open) { drawHist(); paintMode(); if (!matchMedia("(pointer: coarse)").matches) inp.focus(); } };
   fab.addEventListener("click", () => toggle(pane.hidden));
   pane.querySelector(".calc-x").addEventListener("click", () => { toggle(false); fab.focus(); });
-  const gfab = el("button", "calc-fab gfab"); gfab.type = "button"; gfab.innerHTML = '<span aria-hidden="true">∿</span> <span class="lb">Графики</span>'; gfab.title = "Графики функций"; gfab.setAttribute("aria-label", "Графики функций");
+  const gfab = el("button", "calc-fab gfab"); gfab.type = "button"; gfab.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 12h21M4.5 2v20" stroke-width="1.3" opacity=".5"/><path d="M6 3.5Q14 27 22 3.5" stroke-width="2.2"/></svg> <span class="lb">Графики</span>'; gfab.title = "Графики функций"; gfab.setAttribute("aria-label", "Графики функций");
   gfab.addEventListener("click", () => { toggle(false); go("grafy"); });
   const dock = el("div", "tooldock"); dock.setAttribute("role", "toolbar"); dock.setAttribute("aria-label", "Инструменты");
   dock.append(gfab, fab);
