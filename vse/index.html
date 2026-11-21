@@ -1105,7 +1105,7 @@ function drawPlot() {
   const [x0, x1, y0, y1] = P.d || [-4, 4, -2, 6];
   const X = (x) => ((x - x0) / (x1 - x0)) * W, Y = (y) => H - ((y - y0) / (y1 - y0)) * H;
   const svg = document.createElementNS(NS, "svg"); svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("role", "img"); svg.setAttribute("aria-label", "График темы " + latest.n + ": " + P.t);
-  const mk = (t, a, txt) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; svg.append(e); return e; };
+  const mk = (t, a, txt) => { const e = document.createElementNS(NS, t); for (const k in a) if (a[k] != null) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; svg.append(e); return e; };
   for (let i = 1; i < 4; i++) { mk("line", { x1: 0, y1: (H * i) / 4, x2: W, y2: (H * i) / 4, stroke: "#1D2B38" }); mk("line", { x1: (W * i) / 4, y1: 0, x2: (W * i) / 4, y2: H, stroke: "#1D2B38" }); }
   if (y0 < 0 && y1 > 0) mk("line", { x1: 0, y1: Y(0), x2: W, y2: Y(0), stroke: "#4A5E72", "stroke-width": 1.2 });
   if (x0 < 0 && x1 > 0) mk("line", { x1: X(0), y1: 0, x2: X(0), y2: H, stroke: "#4A5E72", "stroke-width": 1.2 });
@@ -1120,14 +1120,15 @@ function drawPlot() {
       prevY = isFinite(y) ? y : null;
     }
     const dashed = (P.dash || []).includes(k);
-    mk("path", { d, fill: "none", stroke: cyan, "stroke-width": dashed ? 1.4 : 2.2, "stroke-opacity": dashed ? .45 : 1, "stroke-dasharray": dashed ? "4 4" : "none", "stroke-linejoin": "round" });
+    mk("path", { d, fill: "none", stroke: cyan, "stroke-width": dashed ? 1.4 : 2.2, "stroke-opacity": dashed ? .45 : 1, "stroke-dasharray": dashed ? "4 4" : "none", "stroke-linejoin": "round", pathLength: dashed ? null : 1, class: dashed ? "draw dash" : "draw" });
   });
-  if (P.par) { let d = ""; for (let i = 0; i <= 200; i++) { const [x, y] = P.par((2 * Math.PI * i) / 200); d += (i ? "L" : "M") + X(x).toFixed(1) + "," + Y(y).toFixed(1); } mk("path", { d, fill: "none", stroke: cyan, "stroke-width": 2.2 }); }
+  if (P.par) { let d = ""; for (let i = 0; i <= 200; i++) { const [x, y] = P.par((2 * Math.PI * i) / 200); d += (i ? "L" : "M") + X(x).toFixed(1) + "," + Y(y).toFixed(1); } mk("path", { d, fill: "none", stroke: cyan, "stroke-width": 2.2, pathLength: 1, class: "draw" }); }
   if (P.bars) { const bw = (X(1) - X(0)) * 0.6; P.bars.forEach((v, k) => mk("rect", { x: X(k) - bw / 2, y: Y(v), width: bw, height: Y(0) - Y(v), fill: cyan, "fill-opacity": .75 })); }
   if (P.vec) P.vec.forEach(([[a, b], [c, e]], k) => mk("line", { x1: X(a), y1: Y(b), x2: X(c), y2: Y(e), stroke: k === 2 ? amber : cyan, "stroke-width": 2.2 }));
-  if (P.poly) { mk("path", { d: P.poly.map(([x, y], i) => (i ? "L" : "M") + X(x).toFixed(1) + "," + Y(y).toFixed(1)).join(""), fill: "none", stroke: cyan, "stroke-width": 2 }); }
+  if (P.poly) { mk("path", { d: P.poly.map(([x, y], i) => (i ? "L" : "M") + X(x).toFixed(1) + "," + Y(y).toFixed(1)).join(""), fill: "none", stroke: cyan, "stroke-width": 2, pathLength: 1, class: "draw" }); }
   if (P.venn) { mk("circle", { cx: 130, cy: 100, r: 62, fill: cyan, "fill-opacity": .12, stroke: cyan, "stroke-width": 2 }); mk("circle", { cx: 190, cy: 100, r: 62, fill: cyan, "fill-opacity": .12, stroke: cyan, "stroke-width": 2 }); mk("text", { x: 92, y: 104, fill: "#DCE7F2", "font-family": "IBM Plex Mono, monospace", "font-size": 14 }, "A"); mk("text", { x: 220, y: 104, fill: "#DCE7F2", "font-family": "IBM Plex Mono, monospace", "font-size": 14 }, "B"); }
-  (P.pts || []).forEach(([x, y]) => mk("circle", { cx: X(x), cy: Y(y), r: 4, fill: "#070B10", stroke: amber, "stroke-width": 2 }));
+  (P.pts || []).forEach(([x, y]) => mk("circle", { cx: X(x), cy: Y(y), r: 4, fill: "#070B10", stroke: amber, "stroke-width": 2, class: "pt" }));
+  mk("line", { x1: 0, y1: 0, x2: 0, y2: H, stroke: "#5CE1E6", "stroke-opacity": .18, "stroke-width": 14, class: "scan" });
   if (P.pts && P.pts.length && !P.bars && P.pts.length <= 2) { const [x, y] = P.pts[0]; mk("text", { x: Math.min(X(x) + 8, W - 60), y: Math.max(Y(y) - 8, 12), fill: amber, "font-family": "IBM Plex Mono, monospace", "font-size": 11 }, `[${x}; ${y}]`); }
   box.replaceChildren();
   const top = el("div", "lbl"); top.style.cssText = "display:flex;justify-content:space-between;gap:10px";
@@ -1141,7 +1142,7 @@ function drawAxis() {
   if (IS_CVUT) {
     const t = $("ticks"); if (!t) return;
     t.replaceChildren();
-    for (let i = 1; i <= TOTAL; i++) { const b = el("i", (i === 1 || i % 5 === 0 ? "m " : "") + (i < n ? "on" : i === n ? "now" : "")); t.append(b); }
+    for (let i = 1; i <= TOTAL; i++) { const b = el("i", (i === 1 || i % 5 === 0 ? "m " : "") + (i < n ? "on" : i === n ? "now" : "")); b.style.setProperty("--i", i); t.append(b); }
     t.setAttribute("aria-label", `Пройдено ${n} тем из ${TOTAL}`);
     if ($("hero-date")) $("hero-date").textContent = "téma " + String(n).padStart(2, "0") + "/35";
     drawPlot();
