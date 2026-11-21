@@ -1,4 +1,4 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><title>Matematika VŠE · PEC</title>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/apple-180.png"><meta name="theme-color" content="#FF5A1F"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Матем. VŠE"><script>window.PEC_SITE=1;if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})</script><title>Matematika VŠE · PEC</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,6 +168,14 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
   .ck { min-height: 46px }
 }
 .viewer.split ~ .calc-fab { }
+
+/* install card */
+.card.appsteps { overflow: visible; line-height: 1.55 }
+.appsteps li + li { margin-top: 6px }
+.appicon { display: flex; align-items: center; gap: 14px; margin-top: 4px }
+.appicon img { width: 64px; height: 64px; border-radius: 15px; box-shadow: 0 10px 24px -12px rgba(0,0,0,.6) }
+.appicon span { font: 600 13px/1.2 var(--f-body); color: var(--muted) }
+.line-cvut .appicon img { border-radius: 14px; outline: 1px solid var(--line) }
 
 /* graph plotter */
 .pl-fns { display: grid; gap: 8px }
@@ -731,6 +739,7 @@ function hideViewer() {
   $("viewer").hidden = true; $("pages").replaceChildren();
   $("vside").hidden = true; $("vside").dataset.n = ""; setGraph(false); $("viewer").classList.remove("split");
 }
+
 
 function showCard(n) {
   const t = byN(n); if (!t || !t.card) return closeAll(false);
@@ -1418,6 +1427,11 @@ function renderMods() {
     out.push(modCard({ k: "Язык экзамена", rd: `<b>${GLOSS.length}</b> ${plural(GLOSS.length, "термин", "термина", "терминов")}`, h: "Slovníček CZ–RU", vis: fl,
       p: "Термины пройденных тем: поиск и карточки для запоминания.", btn: "Открыть", btnCls: IS_CVUT ? "btn soft" : "btn ghost", hash: "slovnik" }));
   }
+  if (App.canShow()) {
+    const ic = el("div", "appicon"); ic.innerHTML = '<img src="icons/icon-192.png" alt="" width="64" height="64"><span>' + (IS_CVUT ? "Матем. ČVUT" : "Матем. VŠE") + "</span>";
+    out.push(modCard({ k: "На телефон", rd: "без App Store", h: "Иконка на экране", vis: ic,
+      p: "Курс открывается как приложение: на весь экран, одним касанием. Открытые лекции и ДЗ доступны и без интернета.", btn: "Установить", btnCls: IS_CVUT ? "btn soft" : "btn ghost", hash: "app" }));
+  }
   host.querySelectorAll("#mods-start").forEach((x) => x.removeAttribute("id"));
   const firstMod = out.find((x) => x.classList.contains("mod"));
   if (firstMod) firstMod.id = "mods-start";
@@ -1795,6 +1809,33 @@ function setGraph(open) {
 }
 $("vgraph-btn").addEventListener("click", () => setGraph($("vgraph").hidden));
 
+/* ---- install as app (only on the standalone site) ---- */
+const App = (() => {
+  let prompt = null;
+  const standalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+  addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); prompt = e; renderMods(); });
+  addEventListener("appinstalled", () => { prompt = null; toast("Готово! Иконка курса на главном экране."); renderMods(); });
+  const ios = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  function open() {
+    hideViewer();
+    openSheet("На телефон", "Иконка курса на главном экране");
+    const body = $("sbody");
+    if (standalone()) { body.append(el("p", null, "Курс уже открыт как приложение — всё готово.")); return; }
+    body.append(el("p", "note", "Это не приложение из магазина: телефон просто добавляет иконку этой страницы. Ничего не нужно скачивать, регистрироваться тоже не нужно. Удаляется как обычная иконка."));
+    if (prompt) {
+      const b = el("button", "btn", "Установить"); b.type = "button";
+      b.addEventListener("click", async () => { const pr = prompt; prompt = null; pr.prompt(); try { await pr.userChoice; } catch (e) {} closeAll(); });
+      const bb = el("div", "btns"); bb.append(b); body.append(bb);
+    }
+    const steps = (title, list) => { const c = el("div", "card appsteps"); c.append(el("b", null, title)); const ol = el("ol"); ol.style.margin = "8px 0 0"; ol.style.paddingLeft = "20px"; list.forEach((t) => ol.append(el("li", null, t))); c.append(ol); return c; };
+    const iPhone = steps("iPhone и iPad (Safari или Chrome)", ["Нажмите «Поделиться» — квадрат со стрелкой вверх (в Safari внизу, в Chrome вверху справа).", "Пролистайте вниз и выберите «На экран „Домой“».", "Нажмите «Добавить» — иконка появится среди приложений."]);
+    const android = steps("Android (Chrome)", ["Нажмите ⋮ в правом верхнем углу.", "Выберите «Установить приложение» или «Добавить на главный экран».", "Подтвердите «Установить»."]);
+    if (ios()) body.append(iPhone, android); else body.append(android, iPhone);
+    body.append(el("p", "note", "Без интернета откроются темы, лекции и ДЗ, которые вы уже открывали хотя бы раз. Новые темы появятся сами, когда телефон снова будет в сети."));
+  }
+  return { open, canShow: () => !!window.PEC_SITE && !standalone() };
+})();
+
 /* ---- pdf viewer ---- */
 let downloads = null, current = null, renderToken = 0, keyPage = null;
 (async () => { try { downloads = await window.claude?.use?.("downloads"); } catch (e) { downloads = null; } if (current) $("vsave").hidden = !downloads; })();
@@ -1889,6 +1930,7 @@ function route() {
   if (tk === "razminka") { showWarm(); return; }
   if (tk === "slovnik") { showGlossary(); return; }
   if (tk === "grafy") { Plotter.open(); return; }
+  if (tk === "app" && window.PEC_SITE) { App.open(); return; }
   if (CTX[tk]) { if (CTX[tk].enabled()) showTimed(CTX[tk]); else closeAll(false); return; }
   const m = /^#(lekce|du|formuly|test)-(\d+)$/.exec(location.hash);
   if (!m) { if (!$("viewer").hidden || !$("sheetwrap").hidden) closeAll(false); return; }
