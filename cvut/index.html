@@ -1,4 +1,4 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><title>Matematika ČVUT · PEC</title>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/apple-180.png"><meta name="theme-color" content="#070B10"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Матем. ČVUT"><script>window.PEC_SITE=1;if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})</script><title>Matematika ČVUT · PEC</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -169,6 +169,14 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
 }
 .viewer.split ~ .calc-fab { }
 
+/* install card */
+.card.appsteps { overflow: visible; line-height: 1.55 }
+.appsteps li + li { margin-top: 6px }
+.appicon { display: flex; align-items: center; gap: 14px; margin-top: 4px }
+.appicon img { width: 64px; height: 64px; border-radius: 15px; box-shadow: 0 10px 24px -12px rgba(0,0,0,.6) }
+.appicon span { font: 600 13px/1.2 var(--f-body); color: var(--muted) }
+.line-cvut .appicon img { border-radius: 14px; outline: 1px solid var(--line) }
+
 /* graph plotter */
 .pl-fns { display: grid; gap: 8px }
 .pl-row { display: grid; grid-template-columns: 12px auto 1fr 34px; gap: 8px; align-items: center }
@@ -179,6 +187,9 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
 .pl-row .x { min-width: 34px; min-height: 34px; font-size: 18px }
 .pl-err { grid-column: 3 / 5; font-size: 12px; color: var(--bad) }
 .pl-err:empty { display: none }
+.vgraph .vside-body { gap: 12px; grid-auto-rows: max-content }
+#vgraph-btn { gap: 6px }
+.vgraph .pl-tools .chip { min-height: 32px }
 .pl-wrap { position: relative; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; touch-action: none }
 .pl-cv { display: block; width: 100%; cursor: grab }
 .pl-cv:active { cursor: grabbing }
@@ -519,6 +530,7 @@ body.line-cvut {
   background: color-mix(in srgb, var(--paper) 90%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-top: 1px solid var(--line) }
 .tooldock .calc-fab { position: static; inset: auto; box-shadow: none; flex: 0 1 220px; justify-content: center }
 .tooldock .calc-fab svg { width: 22px; height: 22px; flex: none; margin: -3px 0 }
+.vbtn .ico-graph { width: 18px; height: 18px; flex: none; vertical-align: -4px; margin-right: 2px }
 body.has-dock { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)) }
 .tooldock.over { left: max(16px, env(safe-area-inset-left, 0px)); right: auto; bottom: calc(env(safe-area-inset-bottom, 0px) + 16px); padding: 0; background: none; border: 0; -webkit-backdrop-filter: none; backdrop-filter: none; gap: 6px }
 .tooldock.over .calc-fab { flex: none; box-shadow: 0 8px 24px -10px rgba(0,0,0,.6) }
@@ -641,6 +653,7 @@ body.line-cvut { --faint: #7A8FA4 }
     <button class="x" id="vclose" aria-label="Закрыть">×</button>
     <div class="vtitle"><b id="vtitle-b"></b><span id="vpage"></span></div>
     <button class="vbtn key" id="vtest" hidden aria-expanded="false">Ввести ответы</button>
+    <button class="vbtn" id="vgraph-btn" aria-expanded="false" aria-controls="vgraph"><svg class="ico-graph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 12h21M4.5 2v20" stroke-width="1.3" opacity=".5"/><path d="M6 3.5Q14 27 22 3.5" stroke-width="2.2"/></svg> Графики</button>
     <button class="vbtn key" id="vkey" hidden>К решениям</button>
     <button class="vbtn primary" id="vsave" hidden>Скачать PDF</button>
     <a class="vbtn primary" id="vdl" hidden download>Скачать PDF</a>
@@ -652,6 +665,10 @@ body.line-cvut { --faint: #7A8FA4 }
       <div class="vside-h"><b>Ваши ответы</b><span>ДЗ остаётся открытым слева — листайте и отмечайте</span></div>
       <div class="vside-body" id="vsbody"></div>
       <div class="qbar" id="vqbar"></div>
+    </aside>
+    <aside class="vside vgraph" id="vgraph" hidden aria-label="Графики функций">
+      <div class="vside-h"><b>Графики функций</b><span>Лекция остаётся открытой слева — стройте графики по ходу</span></div>
+      <div class="vside-body" id="vgbody"></div>
     </aside>
   </div>
 </div>
@@ -745,7 +762,7 @@ function closeAll(setHash = true) {
   if (examTick) { clearInterval(examTick); examTick = null; }
   document.querySelector(".sheet").classList.remove("wide");
   $("sheetwrap").hidden = true; $("viewer").hidden = true; $("pages").replaceChildren();
-  $("vside").hidden = true; $("vside").dataset.n = ""; $("viewer").classList.remove("split");
+  $("vside").hidden = true; $("vside").dataset.n = ""; setGraph(false); $("viewer").classList.remove("split");
   document.body.style.overflow = "";
   if (setHash && location.hash) history.replaceState(null, "", location.pathname + location.search);
   refresh(); renderExamCta(); renderWarmCta();
@@ -756,8 +773,9 @@ function closeAll(setHash = true) {
 function hideViewer() {
   renderToken++; current = null; keyPage = null;
   $("viewer").hidden = true; $("pages").replaceChildren();
-  $("vside").hidden = true; $("vside").dataset.n = ""; $("viewer").classList.remove("split");
+  $("vside").hidden = true; $("vside").dataset.n = ""; setGraph(false); $("viewer").classList.remove("split");
 }
+
 
 function showCard(n) {
   const t = byN(n); if (!t || !t.card) return closeAll(false);
@@ -1445,6 +1463,14 @@ function renderMods() {
     out.push(modCard({ k: "Язык экзамена", rd: `<b>${GLOSS.length}</b> ${plural(GLOSS.length, "термин", "термина", "терминов")}`, h: "Slovníček CZ–RU", vis: fl,
       p: "Термины пройденных тем: поиск и карточки для запоминания.", btn: "Открыть", btnCls: IS_CVUT ? "btn soft" : "btn ghost", hash: "slovnik" }));
   }
+  if (App.canShow()) {
+    const ic = el("div", "appicon"); ic.innerHTML = '<img src="icons/icon-192.png" alt="" width="64" height="64"><span>' + (IS_CVUT ? "Матем. ČVUT" : "Матем. VŠE") + "</span>";
+    out.push(modCard({ k: "На телефон", rd: "без App Store", h: "Иконка на экране", vis: ic,
+      p: "Курс открывается как приложение: на весь экран, одним касанием. Открытые лекции и ДЗ доступны и без интернета.", btn: "Установить", btnCls: IS_CVUT ? "btn soft" : "btn ghost", hash: "app" }));
+  }
+  host.querySelectorAll("#mods-start").forEach((x) => x.removeAttribute("id"));
+  const firstMod = out.find((x) => x.classList.contains("mod"));
+  if (firstMod) firstMod.id = "mods-start";
   out.forEach((x) => host.append(x));
   if (out[0]) out[0].id = "mods-start";
   if (!IS_CVUT) {
@@ -1572,6 +1598,7 @@ const Calc = (() => {
   return { eval: (s, env) => parse(tokenize(s), env), fmt, frac };
 })();
 
+let dockGuard = () => {};
 function buildCalc() {
   if (!CALC_ON) return;
   const KEY = "pec-calc-" + LINE;
@@ -1631,15 +1658,18 @@ function buildCalc() {
   fab.addEventListener("click", () => toggle(pane.hidden));
   pane.querySelector(".calc-x").addEventListener("click", () => { toggle(false); fab.focus(); });
   const gfab = el("button", "calc-fab gfab"); gfab.type = "button"; gfab.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 12h21M4.5 2v20" stroke-width="1.3" opacity=".5"/><path d="M6 3.5Q14 27 22 3.5" stroke-width="2.2"/></svg> <span class="lb">Графики</span>'; gfab.title = "Графики функций"; gfab.setAttribute("aria-label", "Графики функций");
-  gfab.addEventListener("click", () => { toggle(false); go("grafy"); });
+  gfab.addEventListener("click", () => { toggle(false); if (!$("viewer").hidden && current) setGraph(true); else go("grafy"); });
   const dock = el("div", "tooldock"); dock.setAttribute("role", "toolbar"); dock.setAttribute("aria-label", "Инструменты");
   dock.append(gfab, fab);
   document.body.append(pane, dock);
   const syncOver = () => dock.classList.toggle("over", !$("viewer").hidden || !$("sheetwrap").hidden);
   const mo = new MutationObserver(syncOver); ["viewer", "sheetwrap"].forEach((id) => mo.observe($(id), { attributes: true, attributeFilter: ["hidden"] })); syncOver();
   // no calculator during timed tests (exams are without a calculator)
-  const guard = () => { const timed = Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash); fab.hidden = timed; gfab.hidden = timed || location.hash === "#grafy"; dock.hidden = fab.hidden && gfab.hidden; document.body.classList.toggle("has-dock", !dock.hidden); if (timed) toggle(false); };
-  window.addEventListener("hashchange", guard); setInterval(guard, 2000); guard();
+  const guard = () => { const timed = Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash);
+    // the ДЗ answer panel / sheet answer bar sits where the dock is — hide the dock over it
+    const bar = (!$("viewer").hidden && (!$("vside").hidden || !$("vgraph").hidden)) || (!$("sheetwrap").hidden && !$("qbar").hidden);
+    fab.hidden = timed || bar; gfab.hidden = timed || bar || location.hash === "#grafy"; dock.hidden = fab.hidden && gfab.hidden; document.body.classList.toggle("has-dock", !dock.hidden); if (timed || bar) toggle(false); };
+  window.addEventListener("hashchange", guard); setInterval(guard, 2000); guard(); dockGuard = guard;
 }
 
 /* ---- graph plotter (#grafy) ---- */
@@ -1649,7 +1679,7 @@ const Plotter = (() => {
   const KEY = "pec-plot-" + LINE;
   let st = null;
   const DEF = { 1: ["x", "-x"], 2: ["x^2", "sqrt(x)"], 3: ["x^2 - 2x - 3"], 4: ["x^2 - 2", "x^2", "x^2 + 2"], 5: ["abs(x - 1) - 2"], 6: ["(x - 1)/(x + 2)"], 7: ["abs(x - 1)", "2"], 8: ["sqrt(x + 2)", "x"], 9: ["2x + 1", "x^2 - 4", "1/x"], 10: ["2^x", "(1/2)^x"], 11: ["2^x", "4"], 12: ["ln(x)/ln(2)", "2^x"], 13: ["ln(x)", "1"], 14: ["sin(x)", "cos(x)"], 15: ["sin(x)", "1/2"] };
-  const defaults = () => ({ fns: (DEF[latest.n] || ["x^2 - 4", "2x + 1"]).slice(), view: { cx: 0, cy: 1.5, w: 12 } });
+  const defaults = (n = latest.n) => ({ fns: (DEF[n] || ["x^2 - 4", "2x + 1"]).slice(), view: { cx: 0, cy: 1.5, w: 12 } });
   try { st = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) { st = null; }
   if (!st || !Array.isArray(st.fns)) st = defaults();
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} };
@@ -1674,10 +1704,13 @@ const Plotter = (() => {
   const nice = (v) => { const r = Math.round(v * 1e6) / 1e6; const fr = Calc.frac(r); return (Number.isInteger(r) ? String(r) : (fr && fr.length < 8 ? fr : String(+r.toFixed(4)))).replace(".", ",").replace("-", "−"); };
 
   function open() {
-    $("viewer").hidden = true; renderToken++;
+    hideViewer();
     openSheet("Инструмент", "Графики функций");
     document.querySelector(".sheet").classList.add("wide");
-    const body = $("sbody");
+    mount($("sbody"), {});
+  }
+  // o.compact: narrow side panel next to a lecture; o.n: topic for «Пример темы»
+  function mount(body, o) {
     const light = !IS_CVUT && !matchMedia("(prefers-color-scheme: dark)").matches && document.documentElement.dataset.theme !== "dark";
     const COLORS = IS_CVUT ? PLOT_COLORS : (light ? PLOT_COLORS_LIGHT : PLOT_COLORS);
     const list = el("div", "pl-fns");
@@ -1688,11 +1721,13 @@ const Plotter = (() => {
     const tools = el("div", "pl-tools");
     const mkB = (t, a, fn) => { const b = el("button", "chip", t); b.type = "button"; b.setAttribute("aria-label", a); b.addEventListener("click", fn); tools.append(b); return b; };
     mkB("−", "Отдалить", () => zoom(1.4)); mkB("+", "Приблизить", () => zoom(1 / 1.4)); mkB("Сброс", "Вернуть вид", () => { st.view = { cx: 0, cy: 1.5, w: 12 }; save(); draw(); });
-    mkB("Пример темы", "Функции текущей темы", () => { st = defaults(); save(); renderFns(); draw(); });
+    mkB("Пример темы", "Функции текущей темы", () => { st = defaults(o.n); save(); renderFns(); draw(); });
     const info = el("div", "pl-info");
     const pts = el("div", "pl-pts");
-    body.append(el("p", "note", "Введите функции от x: например x^2 − 4, 2^x, sin x, sqrt(x+2), abs(x−1), 1/x. Перетаскивайте график, колесо или кнопки ± меняют масштаб. Точки пересечения с осью x и между графиками считаются сами."), list, el("div", "btns"), wrapC, tools, info, pts);
-    body.children[2].append(add);
+    body.append(el("p", "note", o.compact ? "Функции от x: x^2 − 4, 2^x, sin x, sqrt(x+2), 1/x. График можно двигать и масштабировать." : "Введите функции от x: например x^2 − 4, 2^x, sin x, sqrt(x+2), abs(x−1), 1/x. Перетаскивайте график, колесо или кнопки ± меняют масштаб. Точки пересечения с осью x и между графиками считаются сами."));
+    const addRow = el("div", "btns"); addRow.append(add);
+    // in the narrow panel next to a lecture the graph goes first, so it is visible without scrolling
+    if (o.compact) body.append(wrapC, tools, list, addRow, pts, info); else body.append(list, addRow, wrapC, tools, info, pts);
     let fns = [];
     function renderFns() {
       list.replaceChildren();
@@ -1721,7 +1756,7 @@ const Plotter = (() => {
     function step(span) { const raw = span / 8, p = Math.pow(10, Math.floor(Math.log10(raw))), m = raw / p; return (m < 1.5 ? 1 : m < 3.5 ? 2 : m < 7.5 ? 5 : 10) * p; }
     function draw() {
       const r = wrapC.getBoundingClientRect(); dpr = Math.min(window.devicePixelRatio || 1, 2);
-      W = Math.max(260, r.width || body.clientWidth - 40); H = W < 520 ? Math.round(Math.min(W * 1.05, window.innerHeight * 0.55)) : Math.max(300, Math.min(520, Math.round(W * 0.62)));
+      W = Math.max(240, r.width || body.clientWidth - 32); H = o.compact ? Math.round(Math.max(200, Math.min(W * 0.85, window.innerHeight * (window.innerWidth <= 760 ? 0.3 : 0.5)))) : W < 520 ? Math.round(Math.min(W * 1.05, window.innerHeight * 0.55)) : Math.max(300, Math.min(520, Math.round(W * 0.62)));
       cv.width = W * dpr; cv.height = H * dpr; cv.style.height = H + "px";
       const c = cv.getContext("2d"); c.setTransform(dpr, 0, 0, dpr, 0, 0);
       const { x0, x1, y0, y1 } = view();
@@ -1786,10 +1821,55 @@ const Plotter = (() => {
     cv.addEventListener("pointerleave", () => { tip.hidden = true; });
     cv.addEventListener("wheel", (e) => { e.preventDefault(); const r = cv.getBoundingClientRect(); zoom(e.deltaY > 0 ? 1.15 : 1 / 1.15, e.clientX - r.left, e.clientY - r.top); }, { passive: false });
     renderFns(); requestAnimationFrame(draw);
-    const onR = () => { if (!$("sheetwrap").hidden && body.contains(cv)) draw(); else window.removeEventListener("resize", onR); };
+    const onR = () => { if (cv.isConnected) { if (cv.offsetParent) draw(); } else window.removeEventListener("resize", onR); };
     window.addEventListener("resize", onR);
   }
-  return { open };
+  return { open, mount };
+})();
+
+/* ---- graphs next to a lecture (viewer side panel) ---- */
+function setGraph(open) {
+  const g = $("vgraph"), b = $("vgraph-btn");
+  if (open && current) {
+    if (!$("vside").hidden) setSide(false);
+    if (g.hidden) { g.hidden = false; Plotter.mount($("vgbody"), { compact: true, n: current.n }); }
+    $("viewer").classList.add("split");
+  } else {
+    g.hidden = true; $("vgbody").replaceChildren();
+    if ($("vside").hidden) $("viewer").classList.remove("split");
+  }
+  const on = !g.hidden;
+  b.replaceChildren(); b.innerHTML = '<svg class="ico-graph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 12h21M4.5 2v20" stroke-width="1.3" opacity=".5"/><path d="M6 3.5Q14 27 22 3.5" stroke-width="2.2"/></svg>'; b.append(on ? " Скрыть графики" : " Графики");
+  b.setAttribute("aria-expanded", String(on));
+  dockGuard();
+}
+$("vgraph-btn").addEventListener("click", () => setGraph($("vgraph").hidden));
+
+/* ---- install as app (only on the standalone site) ---- */
+const App = (() => {
+  let prompt = null;
+  const standalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+  addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); prompt = e; renderMods(); });
+  addEventListener("appinstalled", () => { prompt = null; toast("Готово! Иконка курса на главном экране."); renderMods(); });
+  const ios = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  function open() {
+    hideViewer();
+    openSheet("На телефон", "Иконка курса на главном экране");
+    const body = $("sbody");
+    if (standalone()) { body.append(el("p", null, "Курс уже открыт как приложение — всё готово.")); return; }
+    body.append(el("p", "note", "Это не приложение из магазина: телефон просто добавляет иконку этой страницы. Ничего не нужно скачивать, регистрироваться тоже не нужно. Удаляется как обычная иконка."));
+    if (prompt) {
+      const b = el("button", "btn", "Установить"); b.type = "button";
+      b.addEventListener("click", async () => { const pr = prompt; prompt = null; pr.prompt(); try { await pr.userChoice; } catch (e) {} closeAll(); });
+      const bb = el("div", "btns"); bb.append(b); body.append(bb);
+    }
+    const steps = (title, list) => { const c = el("div", "card appsteps"); c.append(el("b", null, title)); const ol = el("ol"); ol.style.margin = "8px 0 0"; ol.style.paddingLeft = "20px"; list.forEach((t) => ol.append(el("li", null, t))); c.append(ol); return c; };
+    const iPhone = steps("iPhone и iPad (Safari или Chrome)", ["Нажмите «Поделиться» — квадрат со стрелкой вверх (в Safari внизу, в Chrome вверху справа).", "Пролистайте вниз и выберите «На экран „Домой“».", "Нажмите «Добавить» — иконка появится среди приложений."]);
+    const android = steps("Android (Chrome)", ["Нажмите ⋮ в правом верхнем углу.", "Выберите «Установить приложение» или «Добавить на главный экран».", "Подтвердите «Установить»."]);
+    if (ios()) body.append(iPhone, android); else body.append(android, iPhone);
+    body.append(el("p", "note", "Без интернета откроются темы, лекции и ДЗ, которые вы уже открывали хотя бы раз. Новые темы появятся сами, когда телефон снова будет в сети."));
+  }
+  return { open, canShow: () => !!window.PEC_SITE && !standalone() };
 })();
 
 /* ---- pdf viewer ---- */
@@ -1867,13 +1947,15 @@ function setSide(open, nn) {
   const n = nn != null ? nn : current && current.n;
   const side = $("vside"), btn = $("vtest");
   if (open && n != null && byN(n) && byN(n).quiz) {
+    if (!$("vgraph").hidden) setGraph(false);
     if (side.hidden || side.dataset.n !== String(n)) { renderTest(n, $("vsbody"), $("vqbar"), true); side.dataset.n = n; }
     side.hidden = false; $("viewer").classList.add("split");
     btn.textContent = "Скрыть ответы"; btn.setAttribute("aria-expanded", "true");
   } else {
-    side.hidden = true; $("viewer").classList.remove("split");
+    side.hidden = true; if ($("vgraph").hidden) $("viewer").classList.remove("split");
     btn.textContent = "Ввести ответы"; btn.setAttribute("aria-expanded", "false");
   }
+  dockGuard();
 }
 
 /* ---- routing ---- */
@@ -1884,6 +1966,7 @@ function route() {
   if (tk === "razminka") { showWarm(); return; }
   if (tk === "slovnik") { showGlossary(); return; }
   if (tk === "grafy") { Plotter.open(); return; }
+  if (tk === "app" && window.PEC_SITE) { App.open(); return; }
   if (CTX[tk]) { if (CTX[tk].enabled()) showTimed(CTX[tk]); else closeAll(false); return; }
   const m = /^#(lekce|du|formuly|test)-(\d+)$/.exec(location.hash);
   if (!m) { if (!$("viewer").hidden || !$("sheetwrap").hidden) closeAll(false); return; }
@@ -1896,7 +1979,12 @@ $("vclose").addEventListener("click", () => closeAll());
 $("sclose").addEventListener("click", () => closeAll());
 $("sheetwrap").addEventListener("click", (e) => { if (e.target === $("sheetwrap")) closeAll(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && (!$("viewer").hidden || !$("sheetwrap").hidden)) closeAll(); });
-$("vtest").addEventListener("click", () => { if (!current) return; go(($("vside").hidden ? "test-" : "du-") + current.n); });
+$("vtest").addEventListener("click", () => {
+  if (!current) return;
+  const h = ($("vside").hidden ? "test-" : "du-") + current.n;
+  // same hash (answers were swapped out for graphs) fires no hashchange — toggle directly
+  if (location.hash === "#" + h) setSide($("vside").hidden); else go(h);
+});
 $("vkey").addEventListener("click", () => {
   const c = keyPage && pagesEl.querySelector(`canvas[data-p="${keyPage}"]`);
   if (c) c.scrollIntoView({ behavior: reduced() ? "auto" : "smooth", block: "start" });
