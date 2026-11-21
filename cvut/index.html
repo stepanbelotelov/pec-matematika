@@ -134,6 +134,41 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
 .verdict span { color: var(--fg); font-size: 14px }
 @media (max-width: 420px) { .opt { width: 34px; height: 36px } .qrow { grid-template-columns: 36px 1fr } .qrow .res { grid-column: 2; text-align: left; min-width: 0 } }
 
+/* calculator */
+.calc-fab { position: fixed; z-index: 70; right: max(16px, calc(env(safe-area-inset-right, 0px) + 12px)); bottom: calc(env(safe-area-inset-bottom, 0px) + 16px); display: inline-flex; gap: 8px; align-items: center; font: 600 13px/1 var(--f-mono, var(--f-body)); letter-spacing: .06em; text-transform: uppercase; padding: 12px 14px; min-height: 44px; border: 1px solid var(--accent); background: var(--paper); color: var(--accent); cursor: pointer; box-shadow: 0 8px 24px -10px rgba(0,0,0,.6) }
+.calc-fab span { font-size: 15px }
+.calc-fab.on { background: var(--accent); color: var(--bg) }
+.calc-fab:focus-visible, .ck:focus-visible, .calc-mode:focus-visible, .calc-row:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px }
+.calc { position: fixed; z-index: 69; right: max(16px, calc(env(safe-area-inset-right, 0px) + 12px)); bottom: calc(env(safe-area-inset-bottom, 0px) + 72px); width: 330px; max-width: calc(100vw - 32px); background: var(--paper); border: 1px solid var(--line-hi, var(--line)); box-shadow: 0 24px 60px -20px rgba(0,0,0,.75); display: grid; grid-template-rows: auto minmax(0, 1fr) auto auto; max-height: calc(100vh - 110px) }
+.calc::before, .calc::after { content: ""; position: absolute; width: 12px; height: 12px; border: solid var(--accent); pointer-events: none }
+.calc::before { top: -1px; left: -1px; border-width: 2px 0 0 2px } .calc::after { bottom: -1px; right: -1px; border-width: 0 2px 2px 0 }
+.calc-h { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-bottom: 1px solid var(--line) }
+.calc-h b { flex: 1; font: 600 12px/1 var(--f-mono, var(--f-body)); letter-spacing: .14em; text-transform: uppercase; color: var(--muted) }
+.calc-h .x { min-width: 32px; min-height: 32px; font-size: 18px }
+.calc-mode { appearance: none; border: 1px solid var(--line-hi, var(--line)); background: transparent; color: var(--gold); font: 600 11px/1 var(--f-mono, var(--f-body)); padding: 8px 9px; cursor: pointer; letter-spacing: .08em }
+.calc-hist { overflow: auto; max-height: 132px; display: grid; align-content: end }
+.calc-row { appearance: none; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--muted); text-align: right; padding: 6px 12px; font: 400 13px/1.35 var(--f-mono, var(--f-body)); cursor: pointer; display: grid; gap: 1px }
+.calc-row .a { color: var(--fg); font-weight: 600 }
+.calc-row:hover { background: var(--accent-bg) }
+.calc-scr { padding: 10px 12px 8px; border-bottom: 1px solid var(--line); background: var(--bg) }
+.calc-in { width: 100%; border: 0; background: transparent; color: var(--fg); font: 500 19px/1.3 var(--f-mono, var(--f-body)); text-align: right; outline: none; padding: 2px 0 }
+.calc-out { min-height: 20px; text-align: right; font: 500 14px/1.4 var(--f-mono, var(--f-body)); color: var(--accent) }
+.calc-out.err { color: var(--bad) }
+.calc-keys { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line) }
+.ck { appearance: none; border: 0; background: var(--paper); color: var(--fg); font: 500 15px/1 var(--f-mono, var(--f-body)); min-height: 44px; cursor: pointer }
+.ck:hover { background: var(--accent-bg) }
+.ck.num { background: var(--paper-2, var(--paper)); font-weight: 600 }
+.ck.eq { background: var(--accent); color: var(--bg); font-weight: 700 }
+.ck.del { color: var(--gold) }
+@media (max-width: 600px) {
+  .calc { left: 0; right: 0; bottom: 0; width: 100%; max-width: none; max-height: 70vh; padding-bottom: env(safe-area-inset-bottom, 0px) }
+  .calc-fab { bottom: calc(env(safe-area-inset-bottom, 0px) + 12px) }
+  .calc:not([hidden]) ~ .calc-fab { display: none }
+  .calc-hist { max-height: 84px }
+  .ck { min-height: 46px }
+}
+.viewer.split ~ .calc-fab { }
+
 /* split view: PDF + answers */
 .vmain { flex: 1; display: flex; min-height: 0 }
 .vmain .pages { flex: 1; min-width: 0 }
@@ -1322,6 +1357,147 @@ function renderList() {
   $("mine").textContent = doneN ? `проверено ${doneN} из ${withQ.length} ДЗ` : "";
 }
 
+/* ---- built-in calculator (ČVUT) ---- */
+const CALC_ON = IS_CVUT;
+const Calc = (() => {
+  // tokenizer + recursive-descent parser (no eval)
+  const FN = { sin: 1, cos: 1, tg: 1, tan: 1, cotg: 1, cot: 1, arcsin: 1, arccos: 1, arctg: 1, log: 1, ln: 1, sqrt: 1, abs: 1, exp: 1 };
+  function tokenize(s) {
+    s = s.replace(/×|·/g, "*").replace(/÷|:/g, "/").replace(/−/g, "-").replace(/√/g, "sqrt").replace(/π/g, "pi").replace(/,/g, ".").replace(/\s+/g, "");
+    const out = []; let i = 0;
+    while (i < s.length) {
+      const c = s[i];
+      if (/[0-9.]/.test(c)) { let j = i; while (j < s.length && /[0-9.]/.test(s[j])) j++; if (s[j] === "e" && /[0-9+-]/.test(s[j + 1] || "") && !/[a-z]/.test(s[j + 1])) { j++; if (/[+-]/.test(s[j])) j++; while (j < s.length && /[0-9]/.test(s[j])) j++; } out.push({ t: "n", v: parseFloat(s.slice(i, j)) }); i = j; continue; }
+      if (/[a-z]/i.test(c)) { let j = i; while (j < s.length && /[a-z]/i.test(s[j])) j++; const w = s.slice(i, j).toLowerCase(); out.push({ t: "w", v: w }); i = j; continue; }
+      if ("+-*/^()!%".includes(c)) { out.push({ t: c }); i++; continue; }
+      throw new Error("Неизвестный символ «" + c + "»");
+    }
+    return out;
+  }
+  function parse(tokens, env) {
+    let p = 0;
+    const peek = () => tokens[p], next = () => tokens[p++];
+    const expect = (t) => { if (!peek() || peek().t !== t) throw new Error("Ожидалась «" + t + "»"); p++; };
+    const rad = (x) => (env.deg ? (x * Math.PI) / 180 : x), unrad = (x) => (env.deg ? (x * 180) / Math.PI : x);
+    function expr() { let v = term(); while (peek() && (peek().t === "+" || peek().t === "-")) { const o = next().t; const r = term(); v = o === "+" ? v + r : v - r; } return v; }
+    function term() {
+      let v = unary();
+      while (peek() && (peek().t === "*" || peek().t === "/" || peek().t === "(" || peek().t === "n" || peek().t === "w")) {
+        if (peek().t === "*" || peek().t === "/") { const o = next().t; const r = unary(); v = o === "*" ? v * r : v / r; }
+        else v = v * unary(); // implicit multiplication: 2pi, 3(4), 2sqrt9
+      }
+      return v;
+    }
+    function unary() { if (peek() && peek().t === "-") { next(); return -unary(); } if (peek() && peek().t === "+") { next(); return unary(); } return power(); }
+    function power() { const b = postfix(); if (peek() && peek().t === "^") { next(); return Math.pow(b, unary()); } return b; }
+    function postfix() {
+      let v = atom();
+      while (peek() && (peek().t === "!" || peek().t === "%")) { const o = next().t; if (o === "%") v = v / 100; else { if (v < 0 || !Number.isInteger(v) || v > 170) throw new Error("n! — только для целых 0…170"); let f = 1; for (let k = 2; k <= v; k++) f *= k; v = f; } }
+      return v;
+    }
+    function atom() {
+      const tk = next();
+      if (!tk) throw new Error("Выражение не закончено");
+      if (tk.t === "n") return tk.v;
+      if (tk.t === "(") { const v = expr(); expect(")"); return v; }
+      if (tk.t === "w") {
+        const w = tk.v;
+        if (w === "pi") return Math.PI;
+        if (w === "e") return Math.E;
+        if (w === "ans") return env.ans;
+        if (FN[w]) {
+          let a;
+          if (peek() && peek().t === "(") { next(); a = expr(); expect(")"); } else a = power();
+          switch (w) {
+            case "sin": return Math.sin(rad(a)); case "cos": return Math.cos(rad(a));
+            case "tg": case "tan": return Math.tan(rad(a)); case "cotg": case "cot": return 1 / Math.tan(rad(a));
+            case "arcsin": return unrad(Math.asin(a)); case "arccos": return unrad(Math.acos(a)); case "arctg": return unrad(Math.atan(a));
+            case "log": return Math.log10(a); case "ln": return Math.log(a); case "sqrt": return Math.sqrt(a); case "abs": return Math.abs(a); case "exp": return Math.exp(a);
+          }
+        }
+        throw new Error("Неизвестная функция «" + w + "»");
+      }
+      throw new Error("Лишний символ «" + tk.t + "»");
+    }
+    const v = expr();
+    if (p < tokens.length) throw new Error("Лишний символ «" + (tokens[p].t === "n" ? tokens[p].v : tokens[p].v || tokens[p].t) + "»");
+    return v;
+  }
+  function frac(x) {
+    if (!isFinite(x) || Number.isInteger(x) || Math.abs(x) > 1e6) return null;
+    let h1 = 1, h0 = 0, k1 = 0, k0 = 1, b = x;
+    for (let i = 0; i < 20; i++) { const a = Math.floor(b); [h1, h0] = [a * h1 + h0, h1]; [k1, k0] = [a * k1 + k0, k1]; if (Math.abs(x - h1 / k1) < 1e-10) break; b = 1 / (b - a); if (!isFinite(b)) break; }
+    if (k1 > 1 && k1 <= 1000 && Math.abs(x - h1 / k1) < 1e-10) return h1 + "/" + k1;
+    return null;
+  }
+  const fmt = (v) => { if (!isFinite(v)) return isNaN(v) ? "не определено" : (v > 0 ? "∞" : "−∞"); const r = Number(v.toPrecision(12)); return String(r).replace("e+", "·10^").replace("e-", "·10^-").replace(".", ",").replace("-", "−"); };
+  return { eval: (s, env) => parse(tokenize(s), env), fmt, frac };
+})();
+
+function buildCalc() {
+  if (!CALC_ON) return;
+  const KEY = "pec-calc-" + LINE;
+  let st = { hist: [], deg: false, ans: 0 };
+  try { st = Object.assign(st, JSON.parse(localStorage.getItem(KEY) || "{}")); } catch (e) {}
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ hist: st.hist.slice(-20), deg: st.deg, ans: st.ans })); } catch (e) {} };
+  const fab = el("button", "calc-fab"); fab.type = "button"; fab.innerHTML = '<span aria-hidden="true">±×</span> Калькулятор'; fab.setAttribute("aria-expanded", "false");
+  const pane = el("div", "calc"); pane.hidden = true; pane.setAttribute("role", "dialog"); pane.setAttribute("aria-label", "Калькулятор");
+  pane.innerHTML = `<div class="calc-h"><b>Калькулятор</b><button type="button" class="calc-mode" aria-label="Единицы углов"></button><button type="button" class="x calc-x" aria-label="Закрыть калькулятор">×</button></div>
+    <div class="calc-hist" aria-live="polite"></div>
+    <div class="calc-scr"><input class="calc-in" id="calc-in" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" placeholder="например 2^10 − sqrt(81)" aria-label="Выражение"><div class="calc-out"></div></div>
+    <div class="calc-keys"></div>`;
+  const keys = [["sin", "cos", "tg", "π", "e"], ["ln", "log", "√", "^", "!"], ["(", ")", "abs", "Ans", "⌫"], ["7", "8", "9", "÷", "C"], ["4", "5", "6", "×", "x²"], ["1", "2", "3", "−", "1/x"], ["0", ",", "·10^", "+", "="]];
+  const kb = pane.querySelector(".calc-keys"), inp = pane.querySelector(".calc-in"), out = pane.querySelector(".calc-out"), hist = pane.querySelector(".calc-hist"), mode = pane.querySelector(".calc-mode");
+  keys.flat().forEach((k) => {
+    const b = el("button", "ck" + (/^[0-9,]$/.test(k) ? " num" : k === "=" ? " eq" : k === "C" || k === "⌫" ? " del" : ""), k); b.type = "button";
+    b.addEventListener("click", () => press(k)); kb.append(b);
+  });
+  const ins = (t) => { const a = inp.selectionStart ?? inp.value.length, z = inp.selectionEnd ?? inp.value.length; inp.value = inp.value.slice(0, a) + t + inp.value.slice(z); const pos = a + t.length; inp.setSelectionRange(pos, pos); preview(); };
+  function press(k) {
+    const fnk = { sin: "sin(", cos: "cos(", tg: "tg(", ln: "ln(", log: "log(", "√": "√(", abs: "abs(", Ans: "Ans", "x²": "^2", "1/x": "^(−1)", "·10^": "·10^" };
+    if (k === "=") return calc();
+    if (k === "C") { inp.value = ""; preview(); return inp.focus(); }
+    if (k === "⌫") { const a = inp.selectionStart ?? inp.value.length; if (a > 0) { inp.value = inp.value.slice(0, a - 1) + inp.value.slice(a); inp.setSelectionRange(a - 1, a - 1); } preview(); return; }
+    ins(fnk[k] || k);
+    if (!matchMedia("(pointer: coarse)").matches) inp.focus();
+  }
+  function show(v) { const f = Calc.frac(v); return Calc.fmt(v) + (f ? `  =  ${f.replace("-", "−")}` : ""); }
+  function preview() {
+    const s = inp.value.trim(); out.classList.remove("err");
+    if (!s) { out.textContent = ""; return; }
+    try { out.textContent = "= " + show(Calc.eval(s, st)); } catch (e) { out.textContent = ""; }
+  }
+  function calc() {
+    const s = inp.value.trim(); if (!s) return;
+    try {
+      const v = Calc.eval(s, st);
+      st.ans = v; st.hist.push([s, show(v)]); save(); drawHist();
+      inp.value = ""; out.textContent = "";
+    } catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function drawHist() {
+    hist.replaceChildren();
+    st.hist.slice(-6).forEach(([s, r]) => {
+      const row = el("button", "calc-row"); row.type = "button"; row.title = "Вставить результат";
+      row.append(el("span", "q", s), el("span", "a", r));
+      row.addEventListener("click", () => { ins("Ans"); });
+      hist.append(row);
+    });
+    hist.scrollTop = hist.scrollHeight;
+  }
+  const paintMode = () => { mode.textContent = st.deg ? "DEG" : "RAD"; mode.title = st.deg ? "Углы в градусах" : "Углы в радианах"; };
+  mode.addEventListener("click", () => { st.deg = !st.deg; save(); paintMode(); preview(); });
+  inp.addEventListener("input", preview);
+  inp.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); calc(); } if (e.key === "Escape") { e.stopPropagation(); toggle(false); } });
+  const toggle = (open) => { pane.hidden = !open; fab.setAttribute("aria-expanded", String(open)); fab.classList.toggle("on", open); if (open) { drawHist(); paintMode(); if (!matchMedia("(pointer: coarse)").matches) inp.focus(); } };
+  fab.addEventListener("click", () => toggle(pane.hidden));
+  pane.querySelector(".calc-x").addEventListener("click", () => { toggle(false); fab.focus(); });
+  document.body.append(pane, fab);
+  // no calculator during timed tests (exams are without a calculator)
+  const guard = () => { const timed = Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash); fab.hidden = timed; if (timed) toggle(false); };
+  window.addEventListener("hashchange", guard); setInterval(guard, 2000); guard();
+}
+
 /* ---- pdf viewer ---- */
 let downloads = null, current = null, renderToken = 0, keyPage = null;
 (async () => { try { downloads = await window.claude?.use?.("downloads"); } catch (e) { downloads = null; } if (current) $("vsave").hidden = !downloads; })();
@@ -1444,6 +1620,6 @@ window.addEventListener("hashchange", route);
 window.addEventListener("resize", () => drawAxis());
 
 if (!IS_CVUT) { $("h-all").textContent = "Все темы."; }
-refresh(); renderMods(); drawAxis(); route();
+refresh(); renderMods(); drawAxis(); buildCalc(); route();
 </script>
 </body></html>
