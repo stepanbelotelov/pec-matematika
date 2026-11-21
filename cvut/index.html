@@ -1300,7 +1300,9 @@ async function openDoc(kind, n, side = false) {
     if (token !== renderToken) return;
     current.total = pdf.numPages;
     st.remove();
-    const width = Math.min(pagesEl.clientWidth - 24, 860);
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    if (token !== renderToken) return;
+    const width = Math.max(320, Math.min((pagesEl.clientWidth || window.innerWidth) - 24, 860));
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     for (let i = 1; i <= pdf.numPages; i++) {
       const page = await pdf.getPage(i);
