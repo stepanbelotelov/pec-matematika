@@ -8,61 +8,122 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Bricolage+Grotesque:wght@800&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Condensed:wght@700&display=swap">
 <style>
 :root {
-  --bg: #1F2933; --fg: #FFFFFF; --muted: #AEB7C2; --line: #3A4552; --accent: #8DB8EC; --card: #26323E; --card-hover: #2D3B49;
+  --bg: #1F2933; --fg: #FFFFFF; --muted: #AEB7C2; --line: #3A4552; --accent: #8DB8EC;
   --f-display: "Space Grotesk", "Inter", system-ui, sans-serif; --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: dark;
 }
 * { box-sizing: border-box }
-html, body { height: 100% }
+html, body { min-height: 100% }
 body {
   margin: 0; font-family: var(--f-body); color: var(--fg); background: var(--bg);
   background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
   background-size: 24px 24px;
-  display: grid; place-items: center;
+  display: grid; place-items: center; min-height: 100vh;
   padding: max(32px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(32px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
 }
-main { width: 100%; max-width: 720px; display: grid; gap: 28px }
+main { width: 100%; max-width: 860px; display: grid; gap: 28px }
 .eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
 h1 { font-family: var(--f-display); font-size: clamp(36px, 9vw, 58px); line-height: 1; margin: 8px 0 12px; letter-spacing: -.015em }
 h1 span { color: var(--accent); font-weight: 500 }
 p { color: var(--muted); margin: 0; max-width: 52ch; line-height: 1.55 }
-.lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px }
-a.line { display: grid; gap: 6px; text-decoration: none; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px 22px 20px; position: relative; overflow: hidden; min-height: 150px; align-content: end }
-a.line:hover { background: var(--card-hover); border-color: var(--accent) }
-a.line:focus-visible { outline: 3px solid #E0C15A; outline-offset: 3px }
-a.line .tag { position: absolute; top: 16px; right: 18px; font-family: var(--f-display); font-weight: 700; font-size: 44px; color: rgba(141,184,236,.18); line-height: 1 }
-a.line b { font-family: var(--f-display); font-size: 26px }
-a.line small { color: var(--muted); font-size: 14px; line-height: 1.45 }
-a.line .go { color: var(--accent); font-weight: 600; font-size: 14px; margin-top: 6px }
-footer { font-size: 12px; color: var(--muted) }
-@media (prefers-reduced-motion: no-preference) { a.line { transition: background .15s, border-color .15s } }
+a:focus-visible { outline: 3px solid #E0C15A; outline-offset: 3px }
+
+.cont { display: flex; align-items: center; justify-content: space-between; gap: 16px; text-decoration: none; background: var(--accent); color: #0F1720; border-radius: 12px; padding: 14px 20px; min-height: 52px; font-weight: 600 }
+.cont small { display: block; font-weight: 500; font-size: 13px; opacity: .8; margin-top: 2px }
+.cont[hidden] { display: none }
+
+.lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px }
+.line { display: flex; flex-direction: column; gap: 10px; text-decoration: none; min-height: 250px; padding: 24px; position: relative }
+.line .name { line-height: 1 }
+.line .for { font-size: 14px; line-height: 1.45 }
+.line .prog { margin-top: auto; display: grid; gap: 8px }
+.line .bar { height: 6px; overflow: hidden }
+.line .bar i { display: block; height: 100%; width: 0 }
+.line .meta { font-size: 13px }
+.line .go { align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; font-size: 14px; font-weight: 600 }
+
+/* VŠE: светлая карточка, Bricolage, оранжевый */
+.vse { background: #FBFAF8; color: #0F0F12; border-radius: 20px }
+.vse .name { font: 800 40px/1 "Bricolage Grotesque", var(--f-body); letter-spacing: -.04em }
+.vse .name b { color: #D2451A }
+.vse .for { color: #3B3B44 }
+.vse .bar { background: #ECEAE6; border-radius: 3px }
+.vse .bar i { background: #D2451A; border-radius: 3px }
+.vse .meta { color: #6B6B75 }
+.vse .go { background: #D2451A; color: #FFFFFF; border-radius: 999px }
+.vse:hover { box-shadow: 0 18px 40px -18px rgba(0,0,0,.6) }
+
+/* ČVUT: тёмная HUD-карточка, Plex, циан */
+.cvut { background: #070B10; color: #DCE7F2; border: 1px solid #2B3F52 }
+.cvut::before, .cvut::after { content: ""; position: absolute; width: 14px; height: 14px; border: solid #5CE1E6; pointer-events: none }
+.cvut::before { top: -1px; left: -1px; border-width: 2px 0 0 2px }
+.cvut::after { bottom: -1px; right: -1px; border-width: 0 2px 2px 0 }
+.cvut .name { font: 700 40px/1 "IBM Plex Sans Condensed", var(--f-body); color: #5CE1E6; text-transform: uppercase }
+.cvut .for { color: #9FB2C4 }
+.cvut .bar { background: #1D2B38 }
+.cvut .bar i { background: #5CE1E6 }
+.cvut .meta { font-family: "IBM Plex Mono", ui-monospace, monospace; letter-spacing: .06em; text-transform: uppercase; color: #9FB2C4; font-size: 12px }
+.cvut .go { border: 1px solid #5CE1E6; color: #5CE1E6; font: 600 13px/1 "IBM Plex Mono", ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase }
+.cvut:hover { border-color: #5CE1E6 }
+
+footer { font-size: 13px; color: var(--muted); line-height: 1.5 }
+@media (prefers-reduced-motion: no-preference) { .line, .cvut { transition: box-shadow .2s, border-color .2s } .bar i { transition: width .8s cubic-bezier(.2,.8,.2,1) } }
 </style>
 </head>
 <body>
 <main>
   <header>
-    <div class="eyebrow">PEC Praha · přípravný kurz</div>
+    <div class="eyebrow">PEC Praha · подготовительный курс</div>
     <h1>Matematika <span>PEC</span></h1>
-    <p>Лекции, домашние задания, шпаргалки и самопроверка. Выберите свою группу.</p>
+    <p>Лекции, домашние задания, формулы и самопроверка. Куда вы поступаете?</p>
   </header>
+
+  <a class="cont" id="cont" href="#" hidden><span><span id="cont-t">Продолжить</span><small id="cont-s"></small></span><span aria-hidden="true">→</span></a>
+
   <div class="lines">
-    <a class="line" href="vse/">
-      <span class="tag">90′</span>
-      <b>Linie VŠE</b>
-      <small>Подготовка к přijímačkám VŠE и SCIO OSP · занятия по 90 минут</small>
-      <span class="go">Открыть →</span>
+    <a class="line vse" href="vse/" data-line="VŠE">
+      <span class="name">VŠE<b>.</b></span>
+      <span class="for">Přijímačky VŠE и SCIO OSP</span>
+      <span class="prog">
+        <span class="bar" hidden><i></i></span>
+        <span class="meta">Занятия по 90 минут</span>
+      </span>
+      <span class="go">Открыть VŠE</span>
     </a>
-    <a class="line" href="cvut/">
-      <span class="tag">135′</span>
-      <b>Linie ČVUT</b>
-      <small>Подготовка к přijímačkám ČVUT (FIT, FEL, FBMI…) · занятия по 135 минут</small>
-      <span class="go">Открыть →</span>
+    <a class="line cvut" href="cvut/" data-line="ČVUT">
+      <span class="name">ČVUT</span>
+      <span class="for">Přijímačky ČVUT: FIT, FEL, FBMI, FJFI</span>
+      <span class="prog">
+        <span class="bar" hidden><i></i></span>
+        <span class="meta">Занятия по 135 минут</span>
+      </span>
+      <span class="go">Открыть ČVUT</span>
     </a>
   </div>
-  <footer>Сохраните ссылку своей группы в закладки — новые темы появляются на ней сами.</footer>
+  <footer>Сайт запоминает вашу линию в этом браузере — в следующий раз здесь появится кнопка «Продолжить». Новые темы появляются на странице линии сами.</footer>
 </main>
+<script>
+(function () {
+  var get = function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } };
+  var mins = { "VŠE": 90, "ČVUT": 135 };
+  document.querySelectorAll(".line").forEach(function (a) {
+    var n = parseInt(get("pec-line-" + a.dataset.line), 10);
+    if (!n) return;
+    var bar = a.querySelector(".bar"); bar.hidden = false;
+    a.querySelector(".meta").textContent = "Тема " + n + " из 35 · " + mins[a.dataset.line] + " мин";
+    requestAnimationFrame(function () { bar.firstElementChild.style.width = Math.round(100 * n / 35) + "%"; });
+  });
+  var last = null; try { last = JSON.parse(get("pec-last-line") || "null"); } catch (e) {}
+  if (last && (last.href === "vse/" || last.href === "cvut/")) {
+    var c = document.getElementById("cont");
+    c.href = last.href; c.hidden = false;
+    document.getElementById("cont-t").textContent = "Продолжить: Linie " + last.line;
+    document.getElementById("cont-s").textContent = "Тема " + last.n + (last.name ? " · " + last.name : "");
+  }
+})();
+</script>
 </body>
 </html>
