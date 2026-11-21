@@ -169,6 +169,31 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
 }
 .viewer.split ~ .calc-fab { }
 
+/* graph plotter */
+.pl-fns { display: grid; gap: 8px }
+.pl-row { display: grid; grid-template-columns: 12px auto 1fr 34px; gap: 8px; align-items: center }
+.pl-sw { width: 12px; height: 12px; border-radius: 3px }
+.pl-y { font: 600 14px/1 var(--f-mono, var(--f-body)); color: var(--muted) }
+.pl-in { min-width: 0; font: 500 16px/1.2 var(--f-mono, var(--f-body)); padding: 9px 11px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); border-radius: 8px }
+.pl-in:focus-visible { outline: 3px solid var(--gold); outline-offset: 1px }
+.pl-row .x { min-width: 34px; min-height: 34px; font-size: 18px }
+.pl-err { grid-column: 3 / 5; font-size: 12px; color: var(--bad) }
+.pl-err:empty { display: none }
+.pl-wrap { position: relative; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; touch-action: none }
+.pl-cv { display: block; width: 100%; cursor: grab }
+.pl-cv:active { cursor: grabbing }
+.pl-tip { position: absolute; left: 8px; top: 8px; right: 8px; font: 500 12px/1.4 var(--f-mono, var(--f-body)); color: var(--fg); background: color-mix(in srgb, var(--bg) 85%, transparent); padding: 5px 8px; border-radius: 6px; pointer-events: none; overflow-wrap: anywhere }
+.pl-tools { display: flex; gap: 6px; flex-wrap: wrap }
+.pl-info { font: 500 12px/1.4 var(--f-mono, var(--f-body)); color: var(--muted) }
+.pl-pts { display: flex; flex-wrap: wrap; gap: 6px 14px; font: 500 13px/1.4 var(--f-mono, var(--f-body)); color: var(--fg) }
+.pl-pts b { flex-basis: 100%; font-family: var(--f-body); font-size: 13px; color: var(--muted); font-weight: 600 }
+.pl-pt { display: inline-flex; gap: 6px; align-items: center }
+.pl-pt i { width: 9px; height: 9px; border-radius: 50% }
+.line-cvut .pl-in, .line-cvut .pl-wrap { border-radius: 0 }
+.gfab { bottom: calc(env(safe-area-inset-bottom, 0px) + 68px) }
+.sbody { padding-bottom: 130px }
+.line-cvut .vside-body { padding-bottom: 20px }
+
 /* split view: PDF + answers */
 .vmain { flex: 1; display: flex; min-height: 0 }
 .vmain .pages { flex: 1; min-width: 0 }
@@ -1331,10 +1356,18 @@ function renderMods() {
     out.push(modCard({ k: "Язык экзамена", rd: `<b>${GLOSS.length}</b> ${plural(GLOSS.length, "термин", "термина", "терминов")}`, h: "Slovníček CZ–RU", vis: fl,
       p: "Термины пройденных тем: поиск и карточки для запоминания.", btn: "Открыть", btnCls: IS_CVUT ? "btn soft" : "btn ghost", hash: "slovnik" }));
   }
-  host.querySelectorAll("#mods-start").forEach((x) => x.removeAttribute("id"));
-  const firstMod = out.find((x) => x.classList.contains("mod"));
-  if (firstMod) firstMod.id = "mods-start";
+  {
+    const mini = el("div", "flash"); mini.innerHTML = "y = 2<sup>x</sup> · y = x² − 4<small>корни и пересечения — автоматически</small>";
+    out.push(modCard({ k: "Инструмент", rd: "до 4 функций", h: "Графики функций", vis: mini,
+      p: "Постройте любую функцию из ДЗ и проверьте себя: нули, пересечения, монотонность.", btn: "Открыть", btnCls: IS_CVUT ? "btn soft" : "btn ghost", hash: "grafy" }));
+  }
   out.forEach((x) => host.append(x));
+  if (!IS_CVUT) {
+    const mods = [...host.querySelectorAll(".mod")]; mods.forEach((m) => m.classList.remove("full", "half"));
+    const r = mods.length % 3;
+    if (r === 1) mods[mods.length - 1].classList.add("full");
+    if (r === 2) { mods[mods.length - 1].classList.add("half"); mods[mods.length - 2].classList.add("half"); }
+  }
   typeset(host);
   const ms = $("sec-mods"); if (ms) ms.hidden = IS_CVUT ? !out.length : true;
 }
@@ -1370,7 +1403,7 @@ function renderList() {
 }
 
 /* ---- built-in calculator (ČVUT) ---- */
-const CALC_ON = IS_CVUT;
+const CALC_ON = true;
 const Calc = (() => {
   // tokenizer + recursive-descent parser (no eval)
   // sin(180°), cos(90°)… come out as ~1e-16 in floating point — treat as exact 0 (and ±1)
@@ -1419,6 +1452,7 @@ const Calc = (() => {
         if (w === "pi") return Math.PI;
         if (w === "e") return Math.E;
         if (w === "ans") return env.ans;
+        if (w === "x" && env.x !== undefined) return env.x;
         if (FN[w]) {
           let a;
           if (peek() && peek().t === "(") { next(); a = expr(); expect(")"); } else a = power();
@@ -1507,17 +1541,163 @@ function buildCalc() {
   const toggle = (open) => { pane.hidden = !open; fab.setAttribute("aria-expanded", String(open)); fab.classList.toggle("on", open); if (open) { drawHist(); paintMode(); if (!matchMedia("(pointer: coarse)").matches) inp.focus(); } };
   fab.addEventListener("click", () => toggle(pane.hidden));
   pane.querySelector(".calc-x").addEventListener("click", () => { toggle(false); fab.focus(); });
-  document.body.append(pane, fab);
+  const gfab = el("button", "calc-fab gfab"); gfab.type = "button"; gfab.innerHTML = '<span aria-hidden="true">∿</span> Графики';
+  gfab.addEventListener("click", () => { toggle(false); go("grafy"); });
+  document.body.append(pane, fab, gfab);
   // no calculator during timed tests (exams are without a calculator)
-  const guard = () => {
-    const timed = Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash);
-    // the answer bar (ДЗ side panel or sheet bar) sits bottom-right — exactly where the button is
-    const bar = (!$("viewer").hidden && !$("vside").hidden) || (!$("sheetwrap").hidden && !$("qbar").hidden);
-    const off = timed || bar;
-    fab.hidden = off; if (off) toggle(false);
-  };
+  const guard = () => { const timed = Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash); fab.hidden = timed; gfab.hidden = timed || location.hash === "#grafy"; if (timed) toggle(false); };
   window.addEventListener("hashchange", guard); setInterval(guard, 2000); guard();
 }
+
+/* ---- graph plotter (#grafy) ---- */
+const PLOT_COLORS = ["#5CE1E6", "#F2B84B", "#FF7AA8", "#8DE37A"];
+const PLOT_COLORS_LIGHT = ["#FF5A1F", "#2563EB", "#0E9C68", "#A855F7"];
+const Plotter = (() => {
+  const KEY = "pec-plot-" + LINE;
+  let st = null;
+  const DEF = { 1: ["x", "-x"], 2: ["x^2", "sqrt(x)"], 3: ["x^2 - 2x - 3"], 4: ["x^2 - 2", "x^2", "x^2 + 2"], 5: ["abs(x - 1) - 2"], 6: ["(x - 1)/(x + 2)"], 7: ["abs(x - 1)", "2"], 8: ["sqrt(x + 2)", "x"], 9: ["2x + 1", "x^2 - 4", "1/x"], 10: ["2^x", "(1/2)^x"], 11: ["2^x", "4"], 12: ["ln(x)/ln(2)", "2^x"], 13: ["ln(x)", "1"], 14: ["sin(x)", "cos(x)"], 15: ["sin(x)", "1/2"] };
+  const defaults = () => ({ fns: (DEF[latest.n] || ["x^2 - 4", "2x + 1"]).slice(), view: { cx: 0, cy: 1.5, w: 12 } });
+  try { st = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) { st = null; }
+  if (!st || !Array.isArray(st.fns)) st = defaults();
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} };
+  const compile = (src) => { const s = src.trim(); if (!s) return null; const env = { x: 0, deg: false, ans: 0 }; Calc.eval(s.replace(/\bx\b/g, "(1)"), { ...env }); return (x) => { env.x = x; try { return Calc.eval(s, env); } catch (e) { return NaN; } }; };
+  function roots(f, a, b, n = 600) {
+    const out = []; let px = a, py = f(a);
+    for (let i = 1; i <= n; i++) {
+      const x = a + ((b - a) * i) / n, y = f(x);
+      if (isFinite(py) && isFinite(y)) {
+        if (py === 0) out.push(px);
+        else if (py * y < 0) {
+          let lo = px, hi = x, flo = py;
+          for (let k = 0; k < 50; k++) { const m = (lo + hi) / 2, fm = f(m); if (!isFinite(fm)) break; if (flo * fm <= 0) hi = m; else { lo = m; flo = fm; } }
+          const r = (lo + hi) / 2;
+          if (Math.abs(f(r)) < 1e-6 * (1 + Math.abs(py) + Math.abs(y))) out.push(r);
+        }
+      }
+      px = x; py = y;
+    }
+    return out.filter((r, i) => i === 0 || Math.abs(r - out[i - 1]) > (b - a) / 1000);
+  }
+  const nice = (v) => { const r = Math.round(v * 1e6) / 1e6; const fr = Calc.frac(r); return (Number.isInteger(r) ? String(r) : (fr && fr.length < 8 ? fr : String(+r.toFixed(4)))).replace(".", ",").replace("-", "−"); };
+
+  function open() {
+    $("viewer").hidden = true; renderToken++;
+    openSheet("Инструмент", "Графики функций");
+    document.querySelector(".sheet").classList.add("wide");
+    const body = $("sbody");
+    const light = !IS_CVUT && !matchMedia("(prefers-color-scheme: dark)").matches && document.documentElement.dataset.theme !== "dark";
+    const COLORS = IS_CVUT ? PLOT_COLORS : (light ? PLOT_COLORS_LIGHT : PLOT_COLORS);
+    const list = el("div", "pl-fns");
+    const add = el("button", "btn soft", "+ функция"); add.type = "button";
+    const cv = el("canvas", "pl-cv"); cv.setAttribute("role", "img"); cv.setAttribute("aria-label", "График функций");
+    const wrapC = el("div", "pl-wrap"); wrapC.append(cv);
+    const tip = el("div", "pl-tip"); wrapC.append(tip); tip.hidden = true;
+    const tools = el("div", "pl-tools");
+    const mkB = (t, a, fn) => { const b = el("button", "chip", t); b.type = "button"; b.setAttribute("aria-label", a); b.addEventListener("click", fn); tools.append(b); return b; };
+    mkB("−", "Отдалить", () => zoom(1.4)); mkB("+", "Приблизить", () => zoom(1 / 1.4)); mkB("Сброс", "Вернуть вид", () => { st.view = { cx: 0, cy: 1.5, w: 12 }; save(); draw(); });
+    mkB("Пример темы", "Функции текущей темы", () => { st = defaults(); save(); renderFns(); draw(); });
+    const info = el("div", "pl-info");
+    const pts = el("div", "pl-pts");
+    body.append(el("p", "note", "Введите функции от x: например x^2 − 4, 2^x, sin x, sqrt(x+2), abs(x−1), 1/x. Перетаскивайте график, колесо или кнопки ± меняют масштаб. Точки пересечения с осью x и между графиками считаются сами."), list, el("div", "btns"), wrapC, tools, info, pts);
+    body.children[2].append(add);
+    let fns = [];
+    function renderFns() {
+      list.replaceChildren();
+      st.fns.forEach((src, i) => {
+        const row = el("div", "pl-row");
+        const sw = el("span", "pl-sw"); sw.style.background = COLORS[i % COLORS.length];
+        const lab = el("label", "pl-y", "y ="); lab.htmlFor = "pl-f" + i;
+        const inp = el("input", "pl-in"); inp.id = "pl-f" + i; inp.value = src; inp.spellcheck = false; inp.autocomplete = "off"; inp.placeholder = "например x^2 − 4";
+        const err = el("span", "pl-err");
+        const rm = el("button", "x", "×"); rm.type = "button"; rm.setAttribute("aria-label", "Удалить функцию " + (i + 1));
+        inp.addEventListener("input", () => { st.fns[i] = inp.value; save(); compileAll(); draw(); });
+        rm.addEventListener("click", () => { st.fns.splice(i, 1); save(); renderFns(); draw(); });
+        row.append(sw, lab, inp, rm, err); list.append(row);
+      });
+      add.hidden = st.fns.length >= 4;
+      compileAll();
+    }
+    function compileAll() {
+      fns = st.fns.map((s, i) => { const errEl = list.children[i] && list.children[i].querySelector(".pl-err"); try { const f = compile(s); if (errEl) errEl.textContent = ""; return f; } catch (e) { if (errEl) errEl.textContent = e.message; return null; } });
+    }
+    add.addEventListener("click", () => { if (st.fns.length < 4) { st.fns.push(""); save(); renderFns(); const last = list.querySelector(".pl-row:last-child .pl-in"); if (last) last.focus(); } });
+
+    let W = 0, H = 0, dpr = 1;
+    const view = () => { const v = st.view; const h = v.w * (H / W); return { x0: v.cx - v.w / 2, x1: v.cx + v.w / 2, y0: v.cy - h / 2, y1: v.cy + h / 2 }; };
+    const css = (n) => getComputedStyle(document.body).getPropertyValue(n).trim();
+    function step(span) { const raw = span / 8, p = Math.pow(10, Math.floor(Math.log10(raw))), m = raw / p; return (m < 1.5 ? 1 : m < 3.5 ? 2 : m < 7.5 ? 5 : 10) * p; }
+    function draw() {
+      const r = wrapC.getBoundingClientRect(); dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = Math.max(260, r.width || body.clientWidth - 40); H = W < 520 ? Math.round(Math.min(W * 1.05, window.innerHeight * 0.55)) : Math.max(300, Math.min(520, Math.round(W * 0.62)));
+      cv.width = W * dpr; cv.height = H * dpr; cv.style.height = H + "px";
+      const c = cv.getContext("2d"); c.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const { x0, x1, y0, y1 } = view();
+      const X = (x) => ((x - x0) / (x1 - x0)) * W, Y = (y) => H - ((y - y0) / (y1 - y0)) * H;
+      c.fillStyle = css("--paper") || "#111"; c.fillRect(0, 0, W, H);
+      const sx = step(x1 - x0), sy = step(y1 - y0);
+      c.lineWidth = 1; c.strokeStyle = css("--line") || "#333"; c.beginPath();
+      for (let x = Math.ceil(x0 / sx) * sx; x <= x1; x += sx) { c.moveTo(Math.round(X(x)) + .5, 0); c.lineTo(Math.round(X(x)) + .5, H); }
+      for (let y = Math.ceil(y0 / sy) * sy; y <= y1; y += sy) { c.moveTo(0, Math.round(Y(y)) + .5); c.lineTo(W, Math.round(Y(y)) + .5); }
+      c.stroke();
+      const mut = css("--muted") || "#888";
+      c.strokeStyle = mut; c.lineWidth = 1.4; c.beginPath();
+      if (y0 < 0 && y1 > 0) { c.moveTo(0, Y(0)); c.lineTo(W, Y(0)); }
+      if (x0 < 0 && x1 > 0) { c.moveTo(X(0), 0); c.lineTo(X(0), H); }
+      c.stroke();
+      c.fillStyle = mut; c.font = "11px " + (css("--f-mono") || "monospace"); c.textAlign = "center"; c.textBaseline = "top";
+      const ay = Math.min(Math.max(Y(0) + 4, 2), H - 14);
+      for (let x = Math.ceil(x0 / sx) * sx; x <= x1; x += sx) if (Math.abs(x) > sx / 2) c.fillText(nice(x), X(x), ay);
+      c.textAlign = "left"; c.textBaseline = "middle";
+      const ax = Math.min(Math.max(X(0) + 5, 2), W - 30);
+      for (let y = Math.ceil(y0 / sy) * sy; y <= y1; y += sy) if (Math.abs(y) > sy / 2) c.fillText(nice(y), ax, Y(y));
+      fns.forEach((f, i) => {
+        if (!f) return;
+        c.strokeStyle = COLORS[i % COLORS.length]; c.lineWidth = 2.4; c.lineJoin = "round"; c.beginPath();
+        let pen = false, prev = null; const N = Math.round(W * 1.5);
+        for (let k = 0; k <= N; k++) {
+          const x = x0 + ((x1 - x0) * k) / N, y = f(x);
+          const ok = isFinite(y) && Math.abs(y) < 1e7;
+          const jump = prev !== null && ok && Math.abs(y - prev) > (y1 - y0) * 1.2;
+          if (ok && !jump) { const py = Math.max(-1e4, Math.min(1e4, Y(y))); pen ? c.lineTo(X(x), py) : c.moveTo(X(x), py); pen = true; } else { pen = ok; if (ok) c.moveTo(X(x), Y(y)); }
+          prev = ok ? y : null;
+        }
+        c.stroke();
+      });
+      // special points
+      const special = [];
+      fns.forEach((f, i) => { if (f) roots(f, x0, x1).forEach((r) => special.push({ x: r, y: 0, k: `y${i + 1} = 0`, c: COLORS[i % COLORS.length] })); });
+      for (let i = 0; i < fns.length; i++) for (let j = i + 1; j < fns.length; j++) { const f = fns[i], g = fns[j]; if (f && g) roots((x) => f(x) - g(x), x0, x1).forEach((r) => special.push({ x: r, y: f(r), k: `y${i + 1} = y${j + 1}`, c: css("--fg") || "#fff" })); }
+      special.forEach((p) => { if (p.y < y0 || p.y > y1) return; c.beginPath(); c.arc(X(p.x), Y(p.y), 4.5, 0, Math.PI * 2); c.fillStyle = css("--paper") || "#000"; c.fill(); c.lineWidth = 2; c.strokeStyle = p.c; c.stroke(); });
+      pts.replaceChildren();
+      if (special.length) {
+        pts.append(el("b", null, "Особые точки в видимой области"));
+        special.slice(0, 12).forEach((p) => { const s = el("span", "pl-pt"); const d = el("i"); d.style.background = p.c; s.append(d, `${p.k}: [${nice(p.x)}; ${nice(p.y)}]`); pts.append(s); });
+      }
+      info.textContent = `x ∈ [${nice(x0)}; ${nice(x1)}], y ∈ [${nice(y0)}; ${nice(y1)}]`;
+    }
+    function zoom(k, px, py) {
+      const v = st.view; const { x0, x1, y0, y1 } = view();
+      const fx = px != null ? x0 + (px / W) * (x1 - x0) : v.cx, fy = py != null ? y1 - (py / H) * (y1 - y0) : v.cy;
+      v.w = Math.min(2000, Math.max(0.01, v.w * k)); v.cx = fx + (v.cx - fx) * k; v.cy = fy + (v.cy - fy) * k; save(); draw();
+    }
+    let drag = null;
+    cv.addEventListener("pointerdown", (e) => { drag = { x: e.clientX, y: e.clientY, cx: st.view.cx, cy: st.view.cy }; cv.setPointerCapture(e.pointerId); });
+    cv.addEventListener("pointermove", (e) => {
+      const r = cv.getBoundingClientRect(); const { x0, x1, y0, y1 } = view();
+      if (drag) { st.view.cx = drag.cx - ((e.clientX - drag.x) / W) * (x1 - x0); st.view.cy = drag.cy + ((e.clientY - drag.y) / H) * (y1 - y0); draw(); return; }
+      const x = x0 + ((e.clientX - r.left) / W) * (x1 - x0);
+      const vals = fns.map((f, i) => (f ? `y${i + 1} = ${isFinite(f(x)) ? nice(f(x)) : "—"}` : null)).filter(Boolean);
+      tip.hidden = false; tip.textContent = `x = ${nice(x)}  ·  ` + vals.join("  ·  ");
+    });
+    cv.addEventListener("pointerup", () => { if (drag) { drag = null; save(); } });
+    cv.addEventListener("pointerleave", () => { tip.hidden = true; });
+    cv.addEventListener("wheel", (e) => { e.preventDefault(); const r = cv.getBoundingClientRect(); zoom(e.deltaY > 0 ? 1.15 : 1 / 1.15, e.clientX - r.left, e.clientY - r.top); }, { passive: false });
+    renderFns(); requestAnimationFrame(draw);
+    const onR = () => { if (!$("sheetwrap").hidden && body.contains(cv)) draw(); else window.removeEventListener("resize", onR); };
+    window.addEventListener("resize", onR);
+  }
+  return { open };
+})();
 
 /* ---- pdf viewer ---- */
 let downloads = null, current = null, renderToken = 0, keyPage = null;
@@ -1610,6 +1790,7 @@ function route() {
   markSeen(tk);
   if (tk === "razminka") { showWarm(); return; }
   if (tk === "slovnik") { showGlossary(); return; }
+  if (tk === "grafy") { Plotter.open(); return; }
   if (CTX[tk]) { if (CTX[tk].enabled()) showTimed(CTX[tk]); else closeAll(false); return; }
   const m = /^#(lekce|du|formuly|test)-(\d+)$/.exec(location.hash);
   if (!m) { if (!$("viewer").hidden || !$("sheetwrap").hidden) closeAll(false); return; }
