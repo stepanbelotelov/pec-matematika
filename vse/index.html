@@ -134,6 +134,30 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
 .verdict span { color: var(--fg); font-size: 14px }
 @media (max-width: 420px) { .opt { width: 34px; height: 36px } .qrow { grid-template-columns: 36px 1fr } .qrow .res { grid-column: 2; text-align: left; min-width: 0 } }
 
+/* split view: PDF + answers */
+.vmain { flex: 1; display: flex; min-height: 0 }
+.vmain .pages { flex: 1; min-width: 0 }
+.vside { width: min(420px, 44vw); flex: none; display: flex; flex-direction: column; border-left: 1px solid var(--line); background: var(--bg); min-height: 0 }
+.vside-h { padding: 12px 16px; border-bottom: 1px solid var(--line); background: var(--paper); display: grid; gap: 2px }
+.vside-h b { font-family: var(--f-display); font-size: 16px; color: var(--fg) }
+.vside-h span { font-size: 12px; color: var(--muted) }
+.vside-body { flex: 1; overflow: auto; padding: 14px 16px 20px; display: grid; gap: 14px; align-content: start }
+.vside .qbar { padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)) }
+.vside .qrow { grid-template-columns: 40px 1fr auto; padding: 6px 8px }
+.vside .opt { width: 34px; height: 34px }
+@media (max-width: 760px) {
+  .vmain { flex-direction: column }
+  .viewer.split .pages { flex: 1 1 52% }
+  .vside { width: 100%; flex: 0 0 48%; border-left: 0; border-top: 2px solid var(--accent) }
+  .vside-h span { display: none }
+  .vside .qbar { padding-top: 8px; padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px)) }
+  .vbar { gap: 6px; padding-bottom: 8px }
+  .vbar .vbtn { min-height: 34px; padding: 7px 10px; font-size: 13px }
+  .vtitle { flex-basis: calc(100% - 50px) }
+  .viewer.split #vopen, .viewer.split #vkey { display: none }
+  .vside-h { padding: 8px 16px }
+}
+
 /* result code */
 .codebox { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 10px }
 .codebox .lbl { font-size: 13px; color: var(--muted) }
@@ -421,13 +445,20 @@ body.line-vse::before { content: ""; position: fixed; inset: 0 0 auto; height: e
   <div class="vbar">
     <button class="x" id="vclose" aria-label="Закрыть">×</button>
     <div class="vtitle"><b id="vtitle-b"></b><span id="vpage"></span></div>
-    <button class="vbtn key" id="vtest" hidden>Проверка</button>
+    <button class="vbtn key" id="vtest" hidden aria-expanded="false">Ввести ответы</button>
     <button class="vbtn key" id="vkey" hidden>К решениям</button>
     <button class="vbtn primary" id="vsave" hidden>Скачать PDF</button>
     <a class="vbtn primary" id="vdl" hidden download>Скачать PDF</a>
     <a class="vbtn" id="vopen" target="_blank" rel="noopener">Открыть отдельно</a>
   </div>
-  <div class="pages" id="pages"></div>
+  <div class="vmain">
+    <div class="pages" id="pages"></div>
+    <aside class="vside" id="vside" hidden aria-label="Ответы к домашнему заданию">
+      <div class="vside-h"><b>Ваши ответы</b><span>ДЗ остаётся открытым слева — листайте и отмечайте</span></div>
+      <div class="vside-body" id="vsbody"></div>
+      <div class="qbar" id="vqbar"></div>
+    </aside>
+  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
@@ -520,6 +551,7 @@ function closeAll(setHash = true) {
   if (examTick) { clearInterval(examTick); examTick = null; }
   document.querySelector(".sheet").classList.remove("wide");
   $("sheetwrap").hidden = true; $("viewer").hidden = true; $("pages").replaceChildren();
+  $("vside").hidden = true; $("vside").dataset.n = ""; $("viewer").classList.remove("split");
   document.body.style.overflow = "";
   if (setHash && location.hash) history.replaceState(null, "", location.pathname + location.search);
   refresh(); renderExamCta(); renderWarmCta();
@@ -544,10 +576,18 @@ function showCard(n) {
 const PART = { A: "Část A · základ", B: "Část B · náročnější", D: "Část D · přijímačky" };
 function showTest(n) {
   const t = byN(n); if (!t || !t.quiz) return closeAll(false);
+  if (t.du) {
+    if (!$("viewer").hidden && current && current.kind === "du" && current.n === n) { setSide(true); return; }
+    openDoc("du", n, true); return;
+  }
   $("viewer").hidden = true; renderToken++;
   openSheet("Téma " + n + " · проверка ДЗ", t.name);
+  renderTest(n, $("sbody"), $("qbar"), false);
+}
+function renderTest(n, body, bar, inViewer) {
+  const t = byN(n);
   const r = rec(n);
-  const body = $("sbody");
+  body.replaceChildren(); bar.replaceChildren();
   const total = t.quiz.reduce((s, p) => s + p.items.length, 0);
   body.append(el("p", "note", `Отметьте ответы, которые получились у вас на бумаге (${total} ${plural(total, "задача", "задачи", "задач")} с вариантами), и нажмите «Проверить». Часть C и задачи без вариантов сверяйте с решениями в конце листа.`));
   const verdict = el("div"); verdict.setAttribute("role", "status"); body.append(verdict);
@@ -576,11 +616,11 @@ function showTest(n) {
     sec.append(h, list); body.append(sec);
   });
   const extra = el("div", "btns");
-  if (t.du) extra.append(linkBtn("btn ghost", "du-" + n, "Открыть ДЗ"));
+  if (t.du && !inViewer) extra.append(linkBtn("btn ghost", "du-" + n, "Открыть ДЗ"));
   if (t.card) extra.append(linkBtn("btn soft", "formuly-" + n, "Формулы"));
   body.append(extra);
 
-  const bar = $("qbar"); bar.hidden = false;
+  bar.hidden = false;
   const sum = el("span", "sum");
   const actions = el("div", "btns");
   const reset = el("button", "btn ghost", "Заново"); reset.type = "button";
@@ -590,7 +630,7 @@ function showTest(n) {
   check.addEventListener("click", () => {
     if (!Object.keys(r.a).length) { toast("Сначала отметьте хотя бы один ответ."); return; }
     r.checked = true; persist(); paint(); refresh();
-    $("sbody").scrollTo({ top: 0, behavior: reduced() ? "auto" : "smooth" });
+    body.scrollTo({ top: 0, behavior: reduced() ? "auto" : "smooth" });
   });
   reset.addEventListener("click", () => { r.a = {}; r.checked = false; persist(); paint(); refresh(); });
 
@@ -1241,8 +1281,9 @@ function updatePageLabel() {
 }
 pagesEl.addEventListener("scroll", () => requestAnimationFrame(updatePageLabel), { passive: true });
 
-async function openDoc(kind, n) {
+async function openDoc(kind, n, side = false) {
   const t = byN(n);
+  if (t && t[kind] && !$("viewer").hidden && current && current.kind === kind && current.n === n) { setSide(side); return; }
   if (!t || !t[kind]) { closeAll(false); return; }
   const doc = t[kind];
   $("sheetwrap").hidden = true;
@@ -1256,6 +1297,7 @@ async function openDoc(kind, n) {
   if (!window.claude) { $("vdl").href = doc.path; $("vdl").setAttribute("download", doc.file); $("vdl").hidden = false; }
   $("vkey").hidden = true;
   $("vtest").hidden = !(kind === "du" && t.quiz);
+  setSide(side && kind === "du" && !!t.quiz, n);
   $("viewer").hidden = false;
   document.body.style.overflow = "hidden";
   $("vclose").focus();
@@ -1294,6 +1336,19 @@ async function openDoc(kind, n) {
   }
 }
 
+function setSide(open, nn) {
+  const n = nn != null ? nn : current && current.n;
+  const side = $("vside"), btn = $("vtest");
+  if (open && n != null && byN(n) && byN(n).quiz) {
+    if (side.hidden || side.dataset.n !== String(n)) { renderTest(n, $("vsbody"), $("vqbar"), true); side.dataset.n = n; }
+    side.hidden = false; $("viewer").classList.add("split");
+    btn.textContent = "Скрыть ответы"; btn.setAttribute("aria-expanded", "true");
+  } else {
+    side.hidden = true; $("viewer").classList.remove("split");
+    btn.textContent = "Ввести ответы"; btn.setAttribute("aria-expanded", "false");
+  }
+}
+
 /* ---- routing ---- */
 function route() {
   const tk = location.hash.slice(1);
@@ -1312,7 +1367,7 @@ $("vclose").addEventListener("click", () => closeAll());
 $("sclose").addEventListener("click", () => closeAll());
 $("sheetwrap").addEventListener("click", (e) => { if (e.target === $("sheetwrap")) closeAll(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && (!$("viewer").hidden || !$("sheetwrap").hidden)) closeAll(); });
-$("vtest").addEventListener("click", () => { if (current) go("test-" + current.n); });
+$("vtest").addEventListener("click", () => { if (!current) return; go(($("vside").hidden ? "test-" : "du-") + current.n); });
 $("vkey").addEventListener("click", () => {
   const c = keyPage && pagesEl.querySelector(`canvas[data-p="${keyPage}"]`);
   if (c) c.scrollIntoView({ behavior: reduced() ? "auto" : "smooth", block: "start" });
