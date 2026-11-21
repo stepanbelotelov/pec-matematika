@@ -1326,6 +1326,9 @@ function renderMods() {
     out.push(modCard({ k: "Инструмент", rd: "до 4 функций", h: "Графики функций", vis: mini,
       p: "Постройте любую функцию из ДЗ и проверьте себя: нули, пересечения, монотонность.", btn: "Открыть", btnCls: IS_CVUT ? "btn soft" : "btn ghost", hash: "grafy" }));
   }
+  host.querySelectorAll("#mods-start").forEach((x) => x.removeAttribute("id"));
+  const firstMod = out.find((x) => x.classList.contains("mod"));
+  if (firstMod) firstMod.id = "mods-start";
   out.forEach((x) => host.append(x));
   if (!IS_CVUT) {
     const mods = [...host.querySelectorAll(".mod")]; mods.forEach((m) => m.classList.remove("full", "half"));
@@ -1510,7 +1513,13 @@ function buildCalc() {
   gfab.addEventListener("click", () => { toggle(false); go("grafy"); });
   document.body.append(pane, fab, gfab);
   // no calculator during timed tests (exams are without a calculator)
-  const guard = () => { const timed = Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash); fab.hidden = timed; gfab.hidden = timed || location.hash === "#grafy"; if (timed) toggle(false); };
+  const guard = () => {
+    const timed = Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash);
+    // the answer bar (ДЗ side panel or sheet bar) sits bottom-right — exactly where the buttons are
+    const bar = (!$("viewer").hidden && !$("vside").hidden) || (!$("sheetwrap").hidden && !$("qbar").hidden);
+    const off = timed || bar;
+    fab.hidden = off; gfab.hidden = off || location.hash === "#grafy"; if (off) toggle(false);
+  };
   window.addEventListener("hashchange", guard); setInterval(guard, 2000); guard();
 }
 
