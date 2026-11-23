@@ -1,5 +1,5 @@
 /* PEC · офлайн-режим и установка на телефон. Генерируется gen.py (версия ниже меняется при каждой сборке). */
-const LINE = "vse", VER = "20261121034653";
+const LINE = "vse", VER = "20261123112037";
 const CORE = "pec-" + LINE + "-core-" + VER, PDF = "pec-" + LINE + "-pdf", CDN = "pec-cdn";
 const SHELL = ["./", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
 const LIBS = ["https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js",
