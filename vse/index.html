@@ -111,8 +111,8 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
 .card br.gap { display: block; content: ""; margin-top: 10px }
 .note { font-size: 13px; color: var(--muted); margin: 0 }
 
-.qpart h4 { margin: 0 0 8px; font-family: var(--f-display); font-size: 15px; display: flex; justify-content: space-between; gap: 8px }
-.qpart h4 span { color: var(--muted); font-family: var(--f-body); font-weight: 500; font-size: 13px; font-variant-numeric: tabular-nums }
+.qpart h4, .qpart h3 { margin: 0 0 8px; font-family: var(--f-display); font-size: 15px; display: flex; justify-content: space-between; gap: 8px }
+.qpart h4 span, .qpart h3 span { color: var(--muted); font-family: var(--f-body); font-weight: 500; font-size: 13px; font-variant-numeric: tabular-nums }
 .qlist { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; overflow: hidden }
 .qrow { display: grid; grid-template-columns: 44px 1fr auto; gap: 10px; align-items: center; padding: 7px 10px; border-top: 1px solid var(--line) }
 .qrow:first-child { border-top: 0 }
@@ -486,7 +486,7 @@ body.line-vse::before { content: ""; position: fixed; inset: 0 0 auto; height: e
 
 /* panels */
 .line-vse .sheet { border-radius: 24px 0 0 24px; overflow: hidden }
-.line-vse .shead h3, .line-vse .etask .eh b, .line-vse .qpart h4, .line-vse .verdict b, .line-vse .timer { font-family: var(--f-display) }
+.line-vse .shead h3, .line-vse .etask .eh b, .line-vse .qpart h4, .line-vse .qpart h3, .line-vse .verdict b, .line-vse .timer { font-family: var(--f-display) }
 .line-vse .card, .line-vse .qlist, .line-vse .etask, .line-vse .glist, .line-vse .codebox { border-radius: 18px }
 .line-vse .opt, .line-vse .eopt { border-radius: 12px }
 
@@ -525,6 +525,44 @@ body.line-vse::before { content: ""; position: fixed; inset: 0 0 auto; height: e
 </style>
 
 <style>
+/* ===== Исправления по UX-аудиту ===== */
+/* карточки формул и условия задач не обрезаются снизу: строки сетки по содержимому, место под дроби */
+.sbody, .vside-body { grid-auto-rows: max-content }
+.etask .ebody { padding-bottom: 6px; margin-bottom: -6px }
+/* PDF и тело панели листаются с клавиатуры */
+.pages:focus, .sbody:focus { outline: none }
+.pages:focus-visible, .sbody:focus-visible, .ebody:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px }
+/* поверх окон на телефоне — две круглые иконки вместо широких кнопок */
+@media (max-width: 760px) {
+  .tooldock.over .calc-fab { width: 48px; height: 48px; min-height: 48px; padding: 0; flex: none }
+  .tooldock.over .lb { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap }
+}
+/* варианты ответа крупнее: это главное действие на телефоне */
+.opt { width: 44px; height: 44px }
+.vside .opt { width: 40px; height: 40px }
+@media (max-width: 420px) {
+  .opt { width: 40px; height: 42px }
+  .vside .qrow { grid-template-columns: 36px 1fr } .vside .qrow .res { grid-column: 2; text-align: left; min-width: 0 }
+}
+/* заголовок VŠE не обрезается на узких телефонах */
+@media (max-width: 380px) { .line-vse .hero h1 { font-size: 13.6vw } }
+/* контраст */
+.tl-row.locked { opacity: 1 }
+.line-vse .tl-row .n, .line-vse .tl-row.locked .n { color: var(--muted) }
+.line-vse .tl-row.cur .n { color: color-mix(in srgb, var(--accent) 82%, var(--fg)) }
+.line-vse .tl-row.done .n { color: var(--ok) }
+.line-vse .mod .note { color: color-mix(in srgb, var(--ok) 70%, var(--fg)) }
+.line-vse .mod.alert .rd { color: var(--tile-dark-muted) }
+.line-vse .mod.alert .rd b { color: var(--tile-dark-fg) }
+.line-cvut .tl-row.locked .n { color: var(--muted) }
+/* оранжевый акцент текстом на белом — 3,1:1; для текста берём более тёмный оттенок */
+.line-vse .card b, .line-vse .shead .k { color: color-mix(in srgb, var(--accent) 78%, var(--fg)) }
+.line-vse .btn small { opacity: 1 }
+/* заголовок раздела «Текущая тема» на VŠE скрыт только визуально — порядок заголовков сохраняется */
+.line-vse .sec-week .sec-h { display: block; position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; margin: 0 }
+/* мелкие моноширинные подписи ČVUT — 12px вместо 11px */
+.line-cvut .lbl, .line-cvut .tl-month, .line-cvut .newlg, .line-cvut .statusbar .wrap { font-size: 12px }
+
 /* ===== Доработки по аудиту дизайна: док инструментов, контраст, сетка модулей, строки тем ===== */
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap }
 
@@ -647,11 +685,11 @@ body.line-cvut { --faint: #7A8FA4 }
 <footer class="foot wrap">Лекция — то, что разбираем на занятии. Domácí úkol — решите до следующего занятия, потом проверьте себя «Тестом ДЗ». Ответы, разминка и словарик хранятся только в этом браузере.</footer>
 
 <div class="sheet-wrap" id="sheetwrap" hidden>
-  <aside class="sheet" role="dialog" aria-modal="true" aria-labelledby="stitle">
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="stitle">
     <div class="shead"><div><div class="k" id="skind"></div><h3 id="stitle"></h3></div><button class="x" id="sclose" aria-label="Закрыть">×</button></div>
-    <div class="sbody" id="sbody"></div>
+    <div class="sbody" id="sbody" tabindex="0"></div>
     <div class="qbar" id="qbar" hidden></div>
-  </aside>
+  </div>
 </div>
 
 <div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="vtitle-b">
@@ -666,7 +704,7 @@ body.line-cvut { --faint: #7A8FA4 }
     <a class="vbtn" id="vopen" target="_blank" rel="noopener">Открыть отдельно</a>
   </div>
   <div class="vmain">
-    <div class="pages" id="pages"></div>
+    <div class="pages" id="pages" tabindex="0" role="region" aria-label="Страницы документа — листаются стрелками, PageDown и пробелом"></div>
     <aside class="vside" id="vside" hidden aria-label="Ответы к домашнему заданию">
       <div class="vside-h"><b>Ваши ответы</b><span>ДЗ остаётся открытым слева — листайте и отмечайте</span></div>
       <div class="vside-body" id="vsbody"></div>
@@ -719,8 +757,8 @@ const rec = (n) => (store[n] = store[n] || { a: {}, checked: false });
 function totals(t) {
   const items = (t.quiz || []).flatMap((p) => p.items);
   const r = store[t.n];
-  if (!r || !r.checked) return { total: items.length, right: null };
-  return { total: items.length, right: items.filter((it) => r.a[it.q] === it.key).length };
+  if (!r || !r.checked) return { total: items.length, right: null, answered: 0 };
+  return { total: items.length, right: items.filter((it) => r.a[it.q] === it.key).length, answered: items.filter((it) => r.a[it.q]).length };
 }
 
 /* ---- math ---- */
@@ -732,14 +770,20 @@ function typeset(root) {
       katex.render(tex, s, { output: "mathml", throwOnError: false, macros: { "\\R": "\\mathbb{R}", "\\N": "\\mathbb{N}", "\\Z": "\\mathbb{Z}", "\\Q": "\\mathbb{Q}" } });
     } catch (e) { s.textContent = tex; }
   });
+  kbScroll(root); requestAnimationFrame(() => kbScroll(root)); // again after layout settles
 }
 
 /* ---- course axis 1…35 ---- */
 
 /* ---- buttons ---- */
-function go(hash) { location.hash = hash; }
+function go(hash) {
+  if (location.hash === "#" + hash) return;
+  const d = (history.state && history.state.pecDepth) || 0;
+  history.pushState({ pecDepth: d + 1 }, "", "#" + hash);
+  window.dispatchEvent(new HashChangeEvent("hashchange"));
+}
 function linkBtn(cls, hash, label, small) {
-  const b = el("button", cls, label); b.type = "button";
+  const b = el("button", cls, label); b.type = "button"; b.dataset.go = hash;
   if (small) { b.append(" "); b.append(el("small", null, small)); }
   if (typeof isNew === "function" && isNew(hash)) { b.classList.add("fresh"); b.setAttribute("aria-label", label + " (новое)"); }
   b.addEventListener("click", () => go(hash));
@@ -747,12 +791,12 @@ function linkBtn(cls, hash, label, small) {
 }
 function scoreBtn(t) {
   const s = totals(t);
-  const b = el("button", "score"); b.type = "button";
+  const b = el("button", "score"); b.type = "button"; b.dataset.go = "test-" + t.n;
   if (s.right === null) { b.textContent = "Тест"; b.setAttribute("aria-label", "Проверить ДЗ к теме " + t.n); }
   else {
-    b.textContent = `✓ ${s.right}/${s.total}`;
-    b.classList.add(s.right / s.total >= 0.8 ? "has" : "mid");
-    b.setAttribute("aria-label", `Самопроверка темы ${t.n}: ${s.right} из ${s.total}`);
+    b.textContent = "✓ " + scoreLabel(s);
+    if (s.answered === s.total) b.classList.add(s.right / s.total >= 0.8 ? "has" : "mid");
+    b.setAttribute("aria-label", s.answered < s.total ? `Самопроверка темы ${t.n}: верно ${s.right} из ${s.answered} отмеченных, не отмечено ${s.total - s.answered}` : `Самопроверка темы ${t.n}: ${s.right} из ${s.total}`);
   }
   b.addEventListener("click", () => go("test-" + t.n));
   return b;
@@ -772,24 +816,71 @@ function toast(msg) {
 /* ---- side sheet ---- */
 let lastFocus = null;
 function openSheet(kindLabel, title) {
-  lastFocus = lastFocus || document.activeElement;
+  rememberFocus();
   $("skind").textContent = kindLabel; $("stitle").textContent = title;
   $("sbody").replaceChildren(); $("qbar").replaceChildren(); $("qbar").hidden = true;
   $("sheetwrap").hidden = false; document.body.style.overflow = "hidden";
   $("sbody").scrollTop = 0; $("sclose").focus();
 }
 function closeAll(setHash = true) {
+  const wasRunning = !$("sheetwrap").hidden && !!document.querySelector("#qbar .timer");
   renderToken++; current = null;
   if (examTick) { clearInterval(examTick); examTick = null; }
   document.querySelector(".sheet").classList.remove("wide");
   $("sheetwrap").hidden = true; $("viewer").hidden = true; $("pages").replaceChildren();
   $("vside").hidden = true; $("vside").dataset.n = ""; setGraph(false); $("viewer").classList.remove("split");
   document.body.style.overflow = "";
-  if (setHash && location.hash) history.replaceState(null, "", location.pathname + location.search);
+  if (setHash && location.hash) {
+    const d = history.state && history.state.pecDepth;
+    if (d) history.go(-d); // back to the page the view was opened from: «Назад» then works as expected
+    else history.replaceState(null, "", location.pathname + location.search);
+  }
   refresh(); renderExamCta(); renderWarmCta();
-  if (lastFocus && lastFocus.focus && document.contains(lastFocus)) lastFocus.focus();
-  lastFocus = null;
+  restoreFocus();
+  if (wasRunning) toast("Экзамен идёт — время не останавливается. Вернуться: «Продолжить» на карточке.");
 }
+
+/* ---- history: closing a view goes back instead of leaving a dead entry ---- */
+const VIEW_RE = /^#(lekce|du|formuly|test)-\d+$|^#(razminka|slovnik|grafy|app|zkouska|srez-\d+)$/;
+let focusScope = "";
+function rememberFocus() {
+  if (lastFocus) return;
+  lastFocus = document.activeElement;
+  const s = lastFocus && lastFocus.closest && lastFocus.closest("[id]");
+  focusScope = s ? s.id : "";
+}
+function restoreFocus() {
+  let t = lastFocus && document.contains(lastFocus) ? lastFocus : null;
+  // the opener was re-rendered (lists refresh on close): find its twin by target
+  if (!t && lastFocus && lastFocus.dataset && lastFocus.dataset.go) {
+    const sel = `[data-go="${lastFocus.dataset.go}"]`;
+    t = (focusScope && document.querySelector("#" + CSS.escape(focusScope) + " " + sel)) || document.querySelector(sel);
+  }
+  if (t && t.focus && t !== document.body) t.focus();
+  lastFocus = null; focusScope = "";
+}
+const scoreLabel = (s) => (s.answered < s.total ? `${s.right}/${s.answered} · ещё ${s.total - s.answered}` : `${s.right}/${s.total}`);
+// keyboard users can scroll wide formulas in task cards
+function kbScroll(root) {
+  if (!root || !root.querySelectorAll) return;
+  root.querySelectorAll(".ebody, .esol, .card").forEach((e) => { if (e.scrollWidth > e.clientWidth + 1 && e.tabIndex < 0) { e.tabIndex = 0; e.setAttribute("role", "region"); e.setAttribute("aria-label", "Листается вбок"); } });
+}
+// a link to a topic or file that is not on the site yet
+function missingTopic(n, kind, exists) {
+  closeAll(true);
+  const x = typeof nextTopic === "function" ? nextTopic() : null;
+  let msg;
+  if (!exists && n > latest.n && n <= TOTAL) msg = `Тема ${n} ещё не открыта` + (x && x.n === n && x.state === "wait" ? ` — откроется ${nxWhen(x.at)}.` : ".");
+  else if (!exists) msg = `Темы ${n} нет на сайте этой группы.`;
+  else msg = { du: `У темы ${n} нет домашнего задания.`, lekce: `У темы ${n} нет лекции.`, formuly: `У темы ${n} пока нет карточки формул.`, test: `У темы ${n} нет теста ДЗ.` }[kind];
+  toast(msg);
+  const card = $("nextcard");
+  if (x && x.n === n && card) card.scrollIntoView({ block: "center", behavior: reduced() ? "auto" : "smooth" });
+}
+// remaining time on the exam / srez cards while a run is going
+const clockHTML = (end) => { const s = Math.max(0, Math.round((end - Date.now()) / 1000)); return `${String(Math.floor(s / 60)).padStart(2, "0")}<span>:</span>${String(s % 60).padStart(2, "0")}`; };
+setInterval(() => document.querySelectorAll(".clock[data-end]").forEach((c) => { c.innerHTML = clockHTML(+c.dataset.end); }), 1000);
+
 
 function hideViewer() {
   renderToken++; current = null; keyPage = null;
@@ -833,7 +924,7 @@ function renderTest(n, body, bar, inViewer) {
   const rows = [];
   t.quiz.forEach((p) => {
     const sec = el("section", "qpart");
-    const h = el("h4", null, PART[p.part] || "Část " + p.part); const hs = el("span"); h.append(hs);
+    const h = el(inViewer ? "h3" : "h4", null, PART[p.part] || "Část " + p.part); const hs = el("span"); h.append(hs);
     const list = el("div", "qlist");
     p.items.forEach((it) => {
       const row = el("div", "qrow");
@@ -864,10 +955,14 @@ function renderTest(n, body, bar, inViewer) {
   const actions = el("div", "btns");
   const reset = el("button", "btn ghost", "Заново"); reset.type = "button";
   const check = el("button", "btn", "Проверить"); check.type = "button";
+  let armed = false, armT = null;
   actions.append(reset, check); bar.append(sum, actions);
 
   check.addEventListener("click", () => {
     if (!Object.keys(r.a).length) { toast("Сначала отметьте хотя бы один ответ."); return; }
+    const missing = rows.filter(({ it }) => !r.a[it.q]).length;
+    if (missing && !armed) { armed = true; check.textContent = `Проверить? Пусто: ${missing}`; clearTimeout(armT); armT = setTimeout(() => { armed = false; check.textContent = "Проверить"; }, 4000); return; }
+    armed = false; clearTimeout(armT); check.textContent = "Проверить";
     r.checked = true; persist(); paint(); refresh();
     body.scrollTo({ top: 0, behavior: reduced() ? "auto" : "smooth" });
   });
@@ -891,13 +986,15 @@ function renderTest(n, body, bar, inViewer) {
     rows.forEach(({ hs, part }) => { hs.textContent = r.checked ? `${perPart[part.part].right} из ${part.items.length}` : `${part.items.length} ${plural(part.items.length, "задача", "задачи", "задач")}`; });
     sum.replaceChildren();
     if (r.checked) {
-      sum.append(el("b", null, `${right}/${total}`), " верно");
-      const pct = right / total;
+      const empty = total - answered;
+      sum.append(el("b", null, `${right}/${answered}`), " верно" + (empty ? ` · пусто ${empty}` : ""));
+      const pct = answered ? right / answered : 0;
       verdict.className = "verdict " + (pct >= 0.8 ? "good" : pct >= 0.5 ? "mid" : "low");
       verdict.replaceChildren(
-        el("b", null, `${right} из ${total} · ${Math.round(pct * 100)} %`),
-        el("span", null, pct >= 0.8 ? "Отлично, тема усвоена. Загляните в решения задач с ошибками." : pct >= 0.5 ? "Хорошая база. Разберите ошибки по решениям в конце листа и повторите формулы." : "Вернитесь к лекции и формулам, а потом решите задачи с ошибками ещё раз.")
+        el("b", null, (empty ? `${right} из ${answered} отмеченных` : `${right} из ${total}`) + ` · ${Math.round(pct * 100)} %`),
+        el("span", null, empty ? (pct >= 0.8 ? "Отмеченные задачи решены верно — но тема проверена не целиком." : pct >= 0.5 ? "Среди отмеченных есть ошибки — разберите их по решениям в конце листа." : "Среди отмеченных много ошибок — вернитесь к лекции и формулам.") : pct >= 0.8 ? "Отлично, тема усвоена. Загляните в решения задач с ошибками." : pct >= 0.5 ? "Хорошая база. Разберите ошибки по решениям в конце листа и повторите формулы." : "Вернитесь к лекции и формулам, а потом решите задачи с ошибками ещё раз.")
       );
+      if (empty) verdict.append(el("span", null, `Не отмечено ${empty} ${plural(empty, "задача", "задачи", "задач")} — они не засчитаны. Отметьте их и нажмите «Проверить» ещё раз.`));
       verdict.hidden = false;
     } else {
       sum.append(el("b", null, `${answered}/${total}`), " отмечено");
@@ -1232,6 +1329,7 @@ const GLOSS = (() => {
   DATA.forEach((t) => (t.gloss || []).forEach(([cz, ru]) => { const k = cz.toLowerCase(); if (!seenCz.has(k)) { seenCz.add(k); out.push({ cz, ru, n: t.n }); } }));
   return out;
 })();
+const fold = (s) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 const plain = (h) => { const d = document.createElement("div"); d.innerHTML = h; return (d.textContent || "").toLowerCase(); };
 function showGlossary() {
   hideViewer();
@@ -1252,11 +1350,11 @@ function showGlossary() {
     row.append(lab, inp); area.append(row);
     const tbl = el("div", "glist"); area.append(tbl);
     const draw = () => {
-      const q = inp.value.trim().toLowerCase();
+      const q = fold(inp.value.trim());
       tbl.replaceChildren();
       let lastN = null, shown = 0;
       GLOSS.slice().sort((a, b) => b.n - a.n).forEach((g) => {
-        if (q && !plain(g.cz).includes(q) && !plain(g.ru).includes(q)) return;
+        if (q && !fold(plain(g.cz)).includes(q) && !fold(plain(g.ru)).includes(q)) return;
         if (g.n !== lastN && !q) { tbl.append(el("div", "gtopic", "Téma " + g.n + " · " + byN(g.n).name)); lastN = g.n; }
         const r = el("div", "grow"); const a = el("span", "gcz"); a.innerHTML = g.cz; const b = el("span", "gru"); b.innerHTML = g.ru;
         r.append(a, b); tbl.append(r); shown++;
@@ -1401,7 +1499,7 @@ function drawAxis() {
     const withQ = DATA.filter((t) => t.quiz && totals(t).right !== null);
     if ($("st-self")) {
       const box = $("st-self").parentNode, cap = box.querySelector("span");
-      if (withQ.length) { let r = 0, tot = 0; withQ.forEach((t) => { const s = totals(t); r += s.right; tot += s.total; }); $("st-self").textContent = Math.round((100 * r) / tot) + "%"; cap.textContent = "самопроверка ДЗ"; box.classList.remove("empty"); }
+      if (withQ.length) { let r = 0, tot = 0; withQ.forEach((t) => { const s = totals(t); r += s.right; tot += s.answered; }); $("st-self").textContent = (tot ? Math.round((100 * r) / tot) : 0) + "%"; cap.textContent = "самопроверка ДЗ"; box.classList.remove("empty"); }
       else { $("st-self").textContent = "Пройдите первый тест ДЗ"; cap.textContent = "здесь появится средний балл"; box.classList.add("empty"); }
     }
     if ($("st-streak") && typeof streak === "function") {
@@ -1463,7 +1561,7 @@ function renderNext() {
   card.setAttribute("aria-label", nxSay(x));
   const lock = el("div", "nx-lock"); lock.innerHTML = lockSvg();
   const main = el("div", "nx-main");
-  main.append(el("span", "lbl", x.state === "opening" ? `Тема ${x.n} / ${TOTAL} · открывается` : `Следующая тема · ${x.n} / ${TOTAL}`), el("h3", null, x.name));
+  main.append(el("span", "lbl", x.state === "opening" ? `Тема ${x.n} / ${TOTAL} · открывается` : `Следующая тема · ${x.n}\u00a0/\u00a0${TOTAL}`), el("h3", null, x.name));
   main.append(el("div", "nx-when", x.state === "wait" ? "Откроется " + nxWhen(x.at) : x.state === "opening" ? "Обновите страницу через пару минут — лекция и ДЗ появятся здесь." : "Откроется на одном из ближайших занятий."));
   const parts = [lock, main];
   if (x.state === "wait") {
@@ -1511,7 +1609,7 @@ function renderWeek() {
   if (latest.lekce) btns.append(linkBtn("btn", "lekce-" + latest.n, "Лекция", latest.lekce.pages + " стр."));
   if (latest.du) btns.append(linkBtn("btn ghost", "du-" + latest.n, "Domácí úkol", latest.du.pages + " стр."));
   if (latest.card) btns.append(linkBtn("btn soft", "formuly-" + latest.n, "Формулы"));
-  if (latest.quiz) { const s = totals(latest); btns.append(linkBtn("btn soft", "test-" + latest.n, s.right === null ? "Тест ДЗ" : `Тест ✓ ${s.right}/${s.total}`)); }
+  if (latest.quiz) { const s = totals(latest); btns.append(linkBtn("btn soft", "test-" + latest.n, s.right === null ? "Тест ДЗ" : "Тест ✓ " + scoreLabel(s))); }
   body.append(btns);
   if (btns.querySelector(".fresh")) body.append(newLegend());
   body.append(el("p", "hint", "Решите ДЗ на бумаге, потом откройте «Тест ДЗ»: отметьте ответы и сразу увидите результат. Подробные решения — в конце листа."));
@@ -1543,7 +1641,7 @@ function renderMods() {
   }
   SREZ.slice().reverse().forEach((s) => {
     const ctx = CTX["srez-" + s.n], st = ctx.st, last = st.hist[st.hist.length - 1], going = st.run && !st.run.done;
-    const clock = el("div", "clock"); clock.innerHTML = going ? "идёт" : `${s.minutes}<span>:</span>00`;
+    const clock = el("div", "clock"); if (going) { clock.dataset.end = st.run.start + s.minutes * 60000; clock.innerHTML = clockHTML(+clock.dataset.end); } else clock.innerHTML = `${s.minutes}<span>:</span>00`;
     out.push(modCard({ cls: "alert", hot: true, k: "Контроль · срез " + s.n, rd: last ? `сдано <b>${last.right}/${s.tasks.length}</b>` : `${s.tasks.length} задач`, h: `Срез ${s.n} · темы ${s.from}–${s.to}`, vis: clock,
       p: `${s.tasks.length} новых задач, одна попытка. Код результата — преподавателю.`, note: going ? "Срез идёт — можно продолжить." : last ? `Сдано ${last.date}` : "", btn: going ? "Продолжить" : last ? "Разбор" : "Начать срез", btnCls: "btn warn", hash: ctx.hash }));
   });
@@ -1557,7 +1655,7 @@ function renderMods() {
   }
   if (CTX.zkouska.enabled()) {
     const st = CTX.zkouska.st, best = st.hist.length ? Math.max(...st.hist.map((h) => h.right)) : null, going = st.run && !st.run.done;
-    const clock = el("div", "clock"); clock.innerHTML = `${EXAM_MIN}<span>:</span>00`;
+    const clock = el("div", "clock"); if (going) { clock.dataset.end = st.run.start + EXAM_MIN * 60000; clock.innerHTML = clockHTML(+clock.dataset.end); } else clock.innerHTML = `${EXAM_MIN}<span>:</span>00`;
     out.push(modCard({ k: "Симуляция", rd: best !== null ? `лучший <b>${best}/${EXAM_N}</b>` : `${EXAM_N} задач`, h: "Přijímačky nanečisto", vis: clock,
       p: `${EXAM_N} задач в формате теста, ${EXAM_MIN} минут, без калькулятора. Каждый раз новый набор.`, note: going ? "Экзамен идёт — можно продолжить." : "", btn: going ? "Продолжить" : "Запустить", btnCls: IS_CVUT ? "btn ghost" : "btn", hash: "zkouska" }));
   }
@@ -1766,7 +1864,7 @@ function buildCalc() {
   pane.querySelector(".calc-x").addEventListener("click", () => { toggle(false); fab.focus(); });
   const gfab = el("button", "calc-fab gfab"); gfab.type = "button"; gfab.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 12h21M4.5 2v20" stroke-width="1.3" opacity=".5"/><path d="M6 3.5Q14 27 22 3.5" stroke-width="2.2"/></svg> <span class="lb">Графики</span>'; gfab.title = "Графики функций"; gfab.setAttribute("aria-label", "Графики функций");
   gfab.addEventListener("click", () => { toggle(false); if (!$("viewer").hidden && current) setGraph(true); else go("grafy"); });
-  const dock = el("div", "tooldock"); dock.setAttribute("role", "toolbar"); dock.setAttribute("aria-label", "Инструменты");
+  const dock = el("aside", "tooldock"); dock.setAttribute("aria-label", "Инструменты");
   dock.append(gfab, fab);
   document.body.append(pane, dock);
   const syncOver = () => dock.classList.toggle("over", !$("viewer").hidden || !$("sheetwrap").hidden);
@@ -2000,7 +2098,7 @@ async function openDoc(kind, n, side = false) {
   $("sheetwrap").hidden = true;
   current = { ...doc, kind, n, total: 0 };
   keyPage = null;
-  lastFocus = lastFocus || document.activeElement;
+  rememberFocus();
   $("vtitle-b").textContent = KIND[kind] + " · téma " + n + ": " + t.name;
   $("vpage").textContent = doc.pages + " " + plural(doc.pages, "страница", "страницы", "страниц");
   $("vopen").href = doc.path;
@@ -2011,7 +2109,7 @@ async function openDoc(kind, n, side = false) {
   setSide(side && kind === "du" && !!t.quiz, n);
   $("viewer").hidden = false;
   document.body.style.overflow = "hidden";
-  $("vclose").focus();
+  pagesEl.focus({ preventScroll: true }); // Space / PageDown scroll the document instead of pressing ×
   pagesEl.replaceChildren(); pagesEl.scrollTop = 0;
   const st = el("div", "status", "Загружаю…"); pagesEl.append(st);
   const token = ++renderToken;
@@ -2046,7 +2144,7 @@ async function openDoc(kind, n, side = false) {
     }
     updatePageLabel();
   } catch (e) {
-    if (token === renderToken) st.textContent = "Не получилось показать файл здесь. Нажмите «Открыть отдельно».";
+    if (token === renderToken) st.textContent = navigator.onLine === false ? "Нет интернета, а этот файл ещё не сохранён на устройстве. Откройте его, когда появится сеть, — после этого он будет доступен и без интернета." : "Не получилось показать файл здесь. Нажмите «Открыть отдельно».";
   }
 }
 
@@ -2077,7 +2175,8 @@ function route() {
   if (CTX[tk]) { if (CTX[tk].enabled()) showTimed(CTX[tk]); else closeAll(false); return; }
   const m = /^#(lekce|du|formuly|test)-(\d+)$/.exec(location.hash);
   if (!m) { if (!$("viewer").hidden || !$("sheetwrap").hidden) closeAll(false); return; }
-  const n = Number(m[2]);
+  const n = Number(m[2]), t = byN(n);
+  if (!t || !(m[1] === "formuly" ? t.card : m[1] === "test" ? t.quiz : t[m[1]])) { missingTopic(n, m[1], !!t); return; }
   if (m[1] === "formuly") showCard(n);
   else if (m[1] === "test") showTest(n);
   else openDoc(m[1], n);
@@ -2086,6 +2185,22 @@ $("vclose").addEventListener("click", () => closeAll());
 $("sclose").addEventListener("click", () => closeAll());
 $("sheetwrap").addEventListener("click", (e) => { if (e.target === $("sheetwrap")) closeAll(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && (!$("viewer").hidden || !$("sheetwrap").hidden)) closeAll(); });
+// focus stays inside the open window (plus the tool dock and calculator that float over it)
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Tab") return;
+  const dlg = !$("viewer").hidden ? $("viewer") : !$("sheetwrap").hidden ? document.querySelector(".sheet") : null;
+  if (!dlg) return;
+  const SEL = 'button:not([disabled]), a[href], input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])';
+  const shown = (x) => !x.closest("[hidden]") && x.getClientRects().length > 0 && getComputedStyle(x).visibility !== "hidden";
+  const extra = [...document.querySelectorAll(".calc:not([hidden]), .tooldock:not([hidden])")].flatMap((x) => [...x.querySelectorAll(SEL)]);
+  const list = [...dlg.querySelectorAll(SEL), ...extra].filter(shown);
+  if (!list.length) return;
+  const i = list.indexOf(document.activeElement);
+  e.preventDefault();
+  const j = i === -1 ? (e.shiftKey ? list.length - 1 : 0) : (i + (e.shiftKey ? -1 : 1) + list.length) % list.length;
+  list[j].focus();
+});
+
 $("vtest").addEventListener("click", () => {
   if (!current) return;
   const h = ($("vside").hidden ? "test-" : "du-") + current.n;
@@ -2113,6 +2228,8 @@ window.addEventListener("resize", () => drawAxis());
 
 if (!IS_CVUT) { $("h-all").textContent = "Все темы."; }
 try { localStorage.setItem("pec-last-line", JSON.stringify({ line: LINE, href: IS_CVUT ? "cvut/" : "vse/", n: latest.n, name: latest.name })); localStorage.setItem("pec-line-" + LINE, String(latest.n)); } catch (e) {}
+// opened straight on a view (link from the teacher): put the course page under it, so «Назад» and × return there
+if (VIEW_RE.test(location.hash) && !(history.state && history.state.pecDepth)) { const h = location.hash; history.replaceState(null, "", location.pathname + location.search); history.pushState({ pecDepth: 1 }, "", h); }
 refresh(); renderMods(); drawAxis(); buildCalc(); route();
 </script>
 </body></html>
