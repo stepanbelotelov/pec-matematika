@@ -643,6 +643,70 @@ body.line-cvut { --faint: #7A8FA4 }
 .line-cvut .acts .chip.main { border-color: var(--accent); color: var(--accent) }
 .line-cvut .newlg { font-family: var(--f-mono); font-size: 11px; letter-spacing: .04em; order: 4 }
 @media (prefers-reduced-motion: no-preference) { .line-cvut .plot .draw:not(.dash) { animation-delay: .05s; animation-duration: 1.1s } }
+
+/* ===== Телефоны: калькулятор, панель ответов и графиков, инструменты, шапка просмотрщика ===== */
+/* калькулятор: история сжимается, клавиши всегда помещаются */
+.calc { display: flex; flex-direction: column; max-height: calc(100vh - 110px); max-height: calc(100dvh - 110px) }
+.calc-h, .calc-scr, .calc-keys { flex: none }
+.calc-hist { flex: 0 1 auto; min-height: 0 }
+@media (max-width: 600px) { .calc { max-height: calc(100vh - 48px); max-height: calc(100dvh - 48px) } }
+@media (max-height: 700px) {
+  .ck, .line-vse .ck { min-height: 38px }
+  .line-vse .calc-keys { gap: 4px; padding: 8px }
+  .calc-hist { max-height: 64px }
+}
+/* поля ввода 16px — иначе iPhone увеличивает страницу при фокусе */
+.namerow input { font-size: 16px }
+/* просмотрщик на телефоне: «Открыть отдельно» не нужна — есть «Скачать PDF» */
+@media (max-width: 760px) { #vopen { display: none } }
+/* узкий телефон: «Скачать PDF» → «PDF ↓», чтобы кнопки шапки умещались в одну строку */
+@media (max-width: 420px) { #vsave, #vdl { font-size: 0 } #vsave::after, #vdl::after { content: "PDF ↓"; font-size: 13px } }
+@media (max-width: 360px) { .vbar { column-gap: 6px } .vbar .vbtn { padding: 7px 8px } }
+/* панель ответов уже ~350px (планшет вертикально, телефоны): результат под вариантами, а не справа */
+@media (max-width: 860px) { .vside .qrow { grid-template-columns: 34px 1fr } .vside .qrow .res { grid-column: 2; text-align: left; min-width: 0 } }
+/* телефон вертикально: панель ответов/графиков получает больше места, без заголовка */
+@media (max-width: 760px) and (orientation: portrait) {
+  .viewer.split .pages { flex: 1 1 40% }
+  .vside { flex: 0 0 60% }
+  .vside-h { display: none }
+  .vside .qbar { padding: 6px 12px calc(6px + env(safe-area-inset-bottom, 0px)) }
+  .vside .qbar .btn { min-height: 40px; padding: 9px 14px }
+}
+@media (max-width: 760px) and (orientation: portrait) and (max-height: 700px) {
+  .vside-body > .note:first-child { display: none }
+}
+/* иконки инструментов поверх окон — справа: кнопки в окнах выровнены по левому краю */
+@media (max-width: 760px), (max-height: 500px) {
+  .tooldock.over { left: auto; right: max(16px, env(safe-area-inset-right, 0px)) }
+  .tooldock.over .calc-fab { width: 48px; height: 48px; min-height: 48px; padding: 0; flex: none }
+  .tooldock.over .lb { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap }
+}
+/* телефон горизонтально: PDF и панель рядом, шапка в одну строку, инструменты — иконки справа, калькулятор в две колонки */
+@media (orientation: landscape) and (max-height: 500px) {
+  .vmain { flex-direction: row }
+  .viewer.split .pages { flex: 1 1 auto }
+  .vside { width: min(460px, 52vw); flex: none; border-top: 0; border-left: 1px solid var(--line) }
+  .vside .qrow { grid-template-columns: 34px 1fr; padding: 5px 8px } .vside .qrow .res { grid-column: 2; text-align: left; min-width: 0 }
+  .vside .opts { flex-wrap: nowrap }
+  .vside-h { display: none }
+  .vside-body > .note:first-child { display: none }
+  .vside .qbar { padding: 6px 12px calc(6px + env(safe-area-inset-bottom, 0px)) }
+  .vbar { flex-wrap: nowrap; padding-top: calc(env(safe-area-inset-top, 0px) + 6px); padding-bottom: 6px }
+  .vtitle { flex: 1 1 auto; flex-basis: auto; min-width: 0 }
+  .vbar .vbtn { white-space: nowrap }
+  #vopen { display: none }
+  .tooldock { left: auto; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(env(safe-area-inset-bottom, 0px) + 12px); padding: 0; gap: 6px; background: none; border: 0; -webkit-backdrop-filter: none; backdrop-filter: none }
+  .tooldock .calc-fab { width: 44px; height: 44px; min-height: 44px; padding: 0; flex: none; box-shadow: 0 8px 24px -10px rgba(0,0,0,.6) }
+  .tooldock .lb { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap }
+  body.has-dock { padding-bottom: 0 }
+  .calc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); grid-template-rows: auto auto minmax(0, 1fr); grid-template-areas: "h k" "s k" "y k";
+    left: auto; right: max(12px, env(safe-area-inset-right, 0px)); top: calc(env(safe-area-inset-top, 0px) + 8px); bottom: calc(env(safe-area-inset-bottom, 0px) + 8px);
+    width: min(620px, calc(100vw - 24px)); max-width: none; max-height: none; border-radius: 16px }
+  .calc-h { grid-area: h } .calc-scr { grid-area: s } .calc-hist { grid-area: y; max-height: none; align-content: start } .calc-keys { grid-area: k; grid-auto-rows: 1fr; border-left: 1px solid var(--line) }
+  .ck, .line-vse .ck { min-height: 0 }
+  .line-vse .calc-keys { gap: 4px; padding: 6px }
+  .calc:not([hidden]) ~ .tooldock { display: none }
+}
 </style>
 
 </head><body><!--BODY-->
@@ -699,8 +763,8 @@ body.line-cvut { --faint: #7A8FA4 }
     <button class="vbtn key" id="vtest" hidden aria-expanded="false">Ввести ответы</button>
     <button class="vbtn" id="vgraph-btn" aria-expanded="false" aria-controls="vgraph"><svg class="ico-graph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 12h21M4.5 2v20" stroke-width="1.3" opacity=".5"/><path d="M6 3.5Q14 27 22 3.5" stroke-width="2.2"/></svg> Графики</button>
     <button class="vbtn key" id="vkey" hidden>К решениям</button>
-    <button class="vbtn primary" id="vsave" hidden>Скачать PDF</button>
-    <a class="vbtn primary" id="vdl" hidden download>Скачать PDF</a>
+    <button class="vbtn primary" id="vsave" hidden aria-label="Скачать PDF">Скачать PDF</button>
+    <a class="vbtn primary" id="vdl" hidden download aria-label="Скачать PDF">Скачать PDF</a>
     <a class="vbtn" id="vopen" target="_blank" rel="noopener">Открыть отдельно</a>
   </div>
   <div class="vmain">
@@ -1088,6 +1152,7 @@ function showTimed(ctx) {
 function startRun(ctx) {
   ctx.st.run = { ids: ctx.ids(), a: {}, start: Date.now(), done: false };
   saveState(ctx); renderExamCta(); $("sbody").replaceChildren(); $("sbody").scrollTop = 0; timedRun(ctx, $("sbody"));
+  dockGuard();
 }
 function timedIntro(ctx, body) {
   const [p1, p2] = ctx.intro();
@@ -1156,7 +1221,7 @@ function timedRun(ctx, body) {
   function finish() {
     if (run.done) return;
     if (examTick) { clearInterval(examTick); examTick = null; }
-    run.done = true; run.end = Math.min(Date.now(), run.start + ctx.minutes * 60000);
+    run.done = true; run.end = Math.min(Date.now(), run.start + ctx.minutes * 60000); setTimeout(dockGuard);
     const right = tasks.filter((x) => run.a[x.id] === x.key).length;
     const d = new Date();
     ctx.st.hist.push({ date: d.toLocaleDateString("ru-RU") + " " + d.toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" }), right, total: tasks.length, min: Math.max(1, Math.round((run.end - run.start) / 60000)) });
@@ -2086,7 +2151,7 @@ function updatePageLabel() {
   const top = pagesEl.getBoundingClientRect().top;
   let idx = 1;
   for (const c of pagesEl.querySelectorAll("canvas")) { if (c.getBoundingClientRect().top - top < pagesEl.clientHeight / 2) idx = Number(c.dataset.p); }
-  $("vpage").textContent = `стр. ${idx} из ${current.total}`;
+  $("vpage").textContent = `${KIND[current.kind]} ${current.n} · стр. ${idx} из ${current.total}`;
 }
 pagesEl.addEventListener("scroll", () => requestAnimationFrame(updatePageLabel), { passive: true });
 
@@ -2099,8 +2164,8 @@ async function openDoc(kind, n, side = false) {
   current = { ...doc, kind, n, total: 0 };
   keyPage = null;
   rememberFocus();
-  $("vtitle-b").textContent = KIND[kind] + " · téma " + n + ": " + t.name;
-  $("vpage").textContent = doc.pages + " " + plural(doc.pages, "страница", "страницы", "страниц");
+  $("vtitle-b").textContent = t.name;
+  $("vpage").textContent = `${KIND[kind]} ${n} · ${doc.pages} ${plural(doc.pages, "страница", "страницы", "страниц")}`;
   $("vopen").href = doc.path;
   $("vsave").hidden = !downloads;
   if (!window.claude) { $("vdl").href = doc.path; $("vdl").setAttribute("download", doc.file); $("vdl").hidden = false; }
