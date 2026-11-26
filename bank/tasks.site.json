@@ -1,0 +1,1295 @@
+{
+ "1": [
+  {
+   "q": "P1",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01",
+   "body": "Jsou dány množiny <span class=\"m\" data-tex=\"A=\\{1,2,3,\\dots,1000\\}\"></span>, <span class=\"m\" data-tex=\"B=\\{x\\in A:\\ \\frac x6\\in\\mathbb{Z}\\}\"></span>, <span class=\"m\" data-tex=\"C=\\{x\\in A:\\ \\frac x8\\in\\mathbb{Z}\\}\"></span>, <span class=\"m\" data-tex=\"D=\\{x\\in A:\\ 237\\le x\\le356\\}\"></span>. Určete počet prvků množiny <span class=\"m\" data-tex=\"(B\\cap C)\\cup D\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"156\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"B\\cap C\"></span> = násobky <span class=\"m\" data-tex=\"24\"></span>: <span class=\"m\" data-tex=\"41\"></span> prvků; <span class=\"m\" data-tex=\"|D|=120\"></span>; v <span class=\"m\" data-tex=\"D\"></span> leží násobky <span class=\"m\" data-tex=\"24\"></span>: <span class=\"m\" data-tex=\"240,\\dots,336\"></span> — <span class=\"m\" data-tex=\"5\"></span>. <span class=\"m\" data-tex=\"41+120-5=156\"></span>.",
+   "id": "fel-vzor01-mnoziny",
+   "level": 2,
+   "topics": [
+    1
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 8, 7 bodů; přeformulováno)",
+   "body": "Jsou dány množiny <span class=\"m\" data-tex=\"A=\\{x^2-4x+5:\\ x\\in(1;4\\rangle\\}\"></span> (množina všech hodnot výrazu pro <span class=\"m\" data-tex=\"x\\in(1;4\\rangle\"></span>) a <span class=\"m\" data-tex=\"B=\\{x\\in\\mathbb{R}:\\ |x-4|\\le\\frac12\\}\"></span>. Sjednocení <span class=\"m\" data-tex=\"A\\cup B\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\left\\langle\\frac72;\\frac92\\right\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\left(\\frac92;5\\right\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\langle1;\\frac72\\right)\\cup\\left(\\frac92;5\\right\\rangle\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"\\left\\langle2;\\frac72\\right)\\cup\\left(\\frac92;5\\right\\rangle\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"x^2-4x+5=(x-2)^2+1\"></span> nabývá na <span class=\"m\" data-tex=\"(1;4\\rangle\"></span> hodnot <span class=\"m\" data-tex=\"\\langle1;5\\rangle\"></span>; <span class=\"m\" data-tex=\"B=\\left\\langle\\frac72;\\frac92\\right\\rangle\\subset A\"></span>.",
+   "id": "fit-2019-08",
+   "level": 2,
+   "topics": [
+    1,
+    7,
+    9
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 8, 7 bodů)",
+   "body": "Jsou dány množiny <span class=\"m\" data-tex=\"A=\\{x^2-4x+5\\mid x\\in(1,4)\\}\"></span> a <span class=\"m\" data-tex=\"B=\\{x\\mid |x-4|\\le\\frac12\\}\"></span>. Množina <span class=\"m\" data-tex=\"A\\cup B\"></span> je:",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\left(\\frac92,5\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"\\left(\\frac72,\\frac92\\right)\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"\\left\\langle1,\\frac72\\right\\rangle\\cup\\left\\langle\\frac92,5\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"\\left(2,\\frac72\\right\\rangle\\cup\\left\\langle\\frac92,5\\right)\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "C",
+   "sol": "<span class=\"m\" data-tex=\"(x-2)^2+1\"></span> na <span class=\"m\" data-tex=\"(1;4)\"></span> nabývá hodnot <span class=\"m\" data-tex=\"\\langle1;5)\"></span>; <span class=\"m\" data-tex=\"B=\\left\\langle\\frac72;\\frac92\\right\\rangle\\subset A\"></span>.",
+   "id": "fit-2026-08",
+   "level": 2,
+   "topics": [
+    1,
+    7,
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 4, 7 bodů)",
+   "body": "Ve třídě je <span class=\"m\" data-tex=\"30\"></span> žáků. Každý může maturovat z matematiky (M), fyziky (F) a/nebo angličtiny (A). Matematiku a zároveň fyziku si zvolila třetina žáků. Alespoň jeden z předmětů M, F si zvolilo <span class=\"m\" data-tex=\"24\"></span> žáků. Angličtinu si zvolilo <span class=\"m\" data-tex=\"22\"></span> žáků. Všechny tři předměty si vybralo <span class=\"m\" data-tex=\"8\"></span> žáků, jen matematiku <span class=\"m\" data-tex=\"3\"></span> žáci, matematiku a zároveň angličtinu <span class=\"m\" data-tex=\"15\"></span> žáků. <span class=\"m\" data-tex=\"2\"></span> žáci si nevybrali ani jeden z těchto předmětů. Které tvrzení platí?",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "Angličtinu nebo fyziku si vybralo více žáků než matematiku nebo fyziku.",
+    "Jen angličtinu si vybralo více žáků než matematiku a zároveň fyziku.",
+    "Neexistuje žák, který si zvolil jen fyziku.",
+    "Popsaná situace nemůže nastat."
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "Vennův diagram: jen M <span class=\"m\" data-tex=\"3\"></span>, MF bez A <span class=\"m\" data-tex=\"2\"></span>, MA bez F <span class=\"m\" data-tex=\"7\"></span>, MFA <span class=\"m\" data-tex=\"8\"></span>, FA bez M <span class=\"m\" data-tex=\"3\"></span>, jen F <span class=\"m\" data-tex=\"1\"></span>, jen A <span class=\"m\" data-tex=\"4\"></span>, nic <span class=\"m\" data-tex=\"2\"></span>. <span class=\"m\" data-tex=\"|A\\cup F|=30-2-3=25\"></span>.",
+   "id": "fit-2026-04",
+   "level": 3,
+   "topics": [
+    1
+   ],
+   "needs_original": false
+  }
+ ],
+ "2": [
+  {
+   "q": "P1",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01",
+   "body": "Zjednodušte výraz <span class=\"m\" data-tex=\"\\dfrac{6x^3b^3}{25y^4}\\cdot\\dfrac{15y}{b^2}\"></span> (pro <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"b\\ne0\"></span>).",
+   "answer": "<span class=\"m\" data-tex=\"\\dfrac{18bx^3}{5y^3}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{90}{25}=\\frac{18}{5}\"></span>, <span class=\"m\" data-tex=\"\\frac{b^3}{b^2}=b\"></span>, <span class=\"m\" data-tex=\"\\frac{y}{y^4}=\\frac1{y^3}\"></span>.",
+   "id": "fel-vzor01-mocniny",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2024 (příklad 3, 3 body)",
+   "body": "Určete, čemu se rovná druhá odmocnina podílu nenulového čísla <span class=\"m\" data-tex=\"x\"></span> a jeho převrácené hodnoty.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"|x|\"></span>",
+    "<span class=\"m\" data-tex=\"\\pm x\"></span>",
+    "<span class=\"m\" data-tex=\"x\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"1\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "A",
+   "sol": "<span class=\"m\" data-tex=\"\\sqrt{x:\\frac1x}=\\sqrt{x^2}=|x|\"></span>.",
+   "id": "fit-2024-03",
+   "level": 1,
+   "topics": [
+    2,
+    8
+   ],
+   "needs_original": false
+  }
+ ],
+ "3": [
+  {
+   "q": "P1",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21",
+   "body": "Řešením kvadratické rovnice <span class=\"m\" data-tex=\"2x^2+5x+2=0\"></span> jsou čísla:",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=-0{,}5\"></span>; <span class=\"m\" data-tex=\"x_2=-2\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-1\"></span>; <span class=\"m\" data-tex=\"x_2=-4\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=0{,}5\"></span>; <span class=\"m\" data-tex=\"x_2=2\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=1\"></span>; <span class=\"m\" data-tex=\"x_2=4\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"x=\\frac{-5\\pm3}{4}\"></span>.",
+   "id": "fbmi-2021-kvadr-koreny",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21",
+   "body": "Diskriminant kvadratické rovnice <span class=\"m\" data-tex=\"ax^2+bx+c=0\"></span> je roven:",
+   "opts": [
+    "<span class=\"m\" data-tex=\"D=\\sqrt{b^2+4ac}\"></span>",
+    "<span class=\"m\" data-tex=\"D=\\sqrt{b+4ac}\"></span>",
+    "<span class=\"m\" data-tex=\"D=\\sqrt{b^2-4ac}\"></span>",
+    "Ani jedna z nabízených možností není správná."
+   ],
+   "letters": "abcd",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"D=b^2-4ac\"></span> (bez odmocniny).",
+   "id": "fbmi-2021-diskriminant",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21",
+   "body": "Pokud má kvadratická rovnice <span class=\"m\" data-tex=\"ax^2+bx+c=0\"></span> v oboru reálných čísel jediné řešení, je rovno:",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=x_2=-\\dfrac{b}{2a}\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=x_2=\\dfrac{b}{2a}\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=x_2=-\\dfrac{b}{2}\"></span>",
+    "Ani jedna z nabízených možností není správná."
+   ],
+   "letters": "abcd",
+   "key": "a",
+   "sol": "Pro <span class=\"m\" data-tex=\"D=0\"></span> je <span class=\"m\" data-tex=\"x=\\frac{-b}{2a}\"></span>.",
+   "id": "fbmi-2021-dvojnasobny",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 6, 7 bodů)",
+   "body": "Řešte soustavu rovnic <span class=\"m\" data-tex=\"3(x+2)-4(y+x)=7\"></span>, <span class=\"m\" data-tex=\"2x-(x-4y)=-1\"></span>.",
+   "opts": [
+    "Soustava má jediné řešení.",
+    "Soustava má nekonečně mnoho řešení.",
+    "Žádná z ostatních možností není správná.",
+    "Soustava nemá reálná řešení.",
+    "Součin řešení <span class=\"m\" data-tex=\"x\"></span> a <span class=\"m\" data-tex=\"y\"></span> je <span class=\"m\" data-tex=\"1\"></span>."
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "Obě rovnice jsou ekvivalentní s <span class=\"m\" data-tex=\"x+4y=-1\"></span>.",
+   "id": "fit-2026-06",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 2, 3 body)",
+   "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definována předpisem <span class=\"m\" data-tex=\"a\\star b=\\dfrac{a+b}{a\\cdot b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star 3=3\"></span>.",
+   "opts": [
+    "Rovnice má jedno záporné řešení.",
+    "Rovnice má kladné řešení větší než <span class=\"m\" data-tex=\"2\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "Rovnice nemá řešení.",
+    "Rovnice má dvě řešení a jejich součin je <span class=\"m\" data-tex=\"4\"></span>."
+   ],
+   "letters": "ABCDE",
+   "key": "A",
+   "sol": "<span class=\"m\" data-tex=\"u=2\\star x\"></span>: <span class=\"m\" data-tex=\"\\frac{u+3}{3u}=3\\Rightarrow u=\\frac38\"></span>; <span class=\"m\" data-tex=\"\\frac{2+x}{2x}=\\frac38\\Rightarrow x=-8\"></span>.",
+   "id": "fit-2019-02",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 10, 7 bodů)",
+   "body": "Za nákup <span class=\"m\" data-tex=\"1{,}5\"></span> kg mandarinek a <span class=\"m\" data-tex=\"3{,}5\"></span> kg pomerančů jsme zaplatili celkem <span class=\"m\" data-tex=\"185\"></span> korun. Kilo pomerančů stojí o třetinu více než kilo mandarinek. Rozhodněte, které tvrzení je pravdivé.",
+   "opts": [
+    "Za kilo pomerančů a půl kila mandarinek bychom zaplatili 50 korun.",
+    "Za kilo mandarinek a půl kila pomerančů bychom zaplatili 50 korun.",
+    "Pomeranče stojí o 15 korun na kilo více než mandarinky.",
+    "Dvě kila mandarinek stojí stejně jako kilo a čtvrt pomerančů.",
+    "Žádná z ostatních možností není správná."
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "<span class=\"m\" data-tex=\"1{,}5m+3{,}5\\cdot\\frac43m=185\\Rightarrow\\frac{37}{6}m=185\"></span>, <span class=\"m\" data-tex=\"m=30\"></span>, <span class=\"m\" data-tex=\"p=40\"></span>; <span class=\"m\" data-tex=\"30+\\frac12\\cdot40=50\"></span>.",
+   "id": "fit-2019-10",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 1, 3 body)",
+   "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definována předpisem <span class=\"m\" data-tex=\"a\\star b=\\dfrac{a+b}{a-b}\"></span>. Řešte rovnici <span class=\"m\" data-tex=\"(2\\star x)\\star 3=-2\"></span>.",
+   "opts": [
+    "Rovnice má jedno záporné řešení.",
+    "Žádná z ostatních možností není správná.",
+    "Rovnice má kladné řešení větší než <span class=\"m\" data-tex=\"2\"></span>.",
+    "Rovnice má dvě řešení a jejich součin je <span class=\"m\" data-tex=\"4\"></span>.",
+    "Rovnice nemá řešení."
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "<span class=\"m\" data-tex=\"u=2\\star x\"></span>: <span class=\"m\" data-tex=\"\\frac{u+3}{u-3}=-2\\Rightarrow u=1\"></span>; <span class=\"m\" data-tex=\"\\frac{2+x}{2-x}=1\\Rightarrow x=0\"></span> (a <span class=\"m\" data-tex=\"2\\star0=1\"></span> je definováno).",
+   "id": "fit-2021-01",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 7, 7 bodů)",
+   "body": "Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno <span class=\"m\" data-tex=\"15\\,\\%\"></span> celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla <span class=\"m\" data-tex=\"51\"></span> kg, v druhé etapě <span class=\"m\" data-tex=\"55\"></span> kg a ve třetí etapě <span class=\"m\" data-tex=\"48\"></span> kg. Celková průměrná hmotnost pytle brambor v tomto skladu je <span class=\"m\" data-tex=\"50{,}55\"></span> kg. Určete, kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "Úloha má více než jedno řešení.",
+    "<span class=\"m\" data-tex=\"55\\,\\%\"></span>",
+    "<span class=\"m\" data-tex=\"30\\,\\%\"></span>",
+    "Úloha nemá řešení."
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"0{,}15\\cdot51+55p+48(0{,}85-p)=50{,}55\\Rightarrow7p=2{,}1\"></span>, <span class=\"m\" data-tex=\"p=0{,}3\"></span>.",
+   "id": "fit-2022-07",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 16, 7 bodů)",
+   "body": "Řešte rovnici <span class=\"m\" data-tex=\"(x^2-x+3)^2-8(x^2-x)=9\"></span>.",
+   "opts": [
+    "Rovnice nemá řešení.",
+    "Součin všech reálných řešení je <span class=\"m\" data-tex=\"-2\"></span>.",
+    "Všechna reálná řešení rovnice leží v intervalu <span class=\"m\" data-tex=\"\\langle-1,3\\rangle\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "Rovnice má pouze nezáporná řešení."
+   ],
+   "letters": "ABCDE",
+   "key": "C",
+   "sol": "<span class=\"m\" data-tex=\"t=x^2-x\"></span>: <span class=\"m\" data-tex=\"(t+3)^2-8t=9\\iff t^2-2t=0\"></span>, <span class=\"m\" data-tex=\"t\\in\\{0;2\\}\"></span>; <span class=\"m\" data-tex=\"x\\in\\{0;1\\}\\cup\\{-1;2\\}\"></span>.",
+   "id": "fit-2026-16",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  }
+ ],
+ "4": [
+  {
+   "q": "P1",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 14)",
+   "body": "Pro která <span class=\"m\" data-tex=\"p\"></span> nemá rovnice <span class=\"m\" data-tex=\"x^2-(p+1)x+4=0\"></span> s neznámou <span class=\"m\" data-tex=\"x\"></span> žádný reálný kořen?",
+   "answer": "<span class=\"m\" data-tex=\"p\\in(-5;3)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"D=(p+1)^2-16&lt;0\\iff|p+1|&lt;4\"></span>.",
+   "id": "fel-vzor01-14",
+   "level": 1,
+   "topics": [
+    4
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2023 (příklad 15, 7 bodů)",
+   "body": "Je dána rovnice <span class=\"m\" data-tex=\"3x^2-24x+p=0\"></span> s neznámou <span class=\"m\" data-tex=\"x\"></span> a parametrem <span class=\"m\" data-tex=\"p\"></span>. Určete <span class=\"m\" data-tex=\"p\"></span> tak, aby jeden kořen rovnice byl trojnásobkem druhého.",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "Takový parametr <span class=\"m\" data-tex=\"p\"></span> neexistuje.",
+    "<span class=\"m\" data-tex=\"p=12\"></span>.",
+    "<span class=\"m\" data-tex=\"p=108\"></span>.",
+    "Takových <span class=\"m\" data-tex=\"p\"></span> je nekonečně mnoho."
+   ],
+   "letters": "ABCDE",
+   "key": "A",
+   "sol": "<span class=\"m\" data-tex=\"x_1=3x_2\"></span>, <span class=\"m\" data-tex=\"x_1+x_2=8\\Rightarrow x_2=2\"></span>, <span class=\"m\" data-tex=\"x_1=6\"></span>; <span class=\"m\" data-tex=\"x_1x_2=\\frac p3=12\\Rightarrow p=36\"></span> — mezi variantami není.",
+   "id": "fit-2023-15",
+   "level": 2,
+   "topics": [
+    4,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2020 (příklad 13, 7 bodů)",
+   "body": "Určete hodnoty reálného parametru <span class=\"m\" data-tex=\"p\"></span> tak, aby rovnice <span class=\"m\" data-tex=\"p^2(2x-8)+p\\,(x^2-6x+8)+4x-x^2=0\"></span> měla právě jedno řešení, a rozhodněte, které tvrzení je pravdivé.",
+   "opts": [
+    "Existuje jen jedno takové <span class=\"m\" data-tex=\"p\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "Takových <span class=\"m\" data-tex=\"p\"></span> je nekonečně mnoho.",
+    "Existují dvě taková <span class=\"m\" data-tex=\"p\"></span>.",
+    "Takový parametr <span class=\"m\" data-tex=\"p\"></span> neexistuje."
+   ],
+   "letters": "ABCDE",
+   "key": "A",
+   "sol": "Rovnice je <span class=\"m\" data-tex=\"(p-1)(x-4)(x+2p)=0\"></span>. Pro <span class=\"m\" data-tex=\"p=1\"></span> je řešením každé <span class=\"m\" data-tex=\"x\"></span>; jinak <span class=\"m\" data-tex=\"x=4\"></span> nebo <span class=\"m\" data-tex=\"x=-2p\"></span>, jediné řešení právě pro <span class=\"m\" data-tex=\"-2p=4\"></span>, tj. <span class=\"m\" data-tex=\"p=-2\"></span>.",
+   "id": "fit-2020-13",
+   "level": 3,
+   "topics": [
+    4
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 15, 7 bodů)",
+   "body": "Určete všechny hodnoty reálného parametru <span class=\"m\" data-tex=\"p\"></span>, pro které má rovnice <span class=\"m\" data-tex=\"px^2-p(p+3)x+2p(p+1)=0\"></span> právě 2 různé reálné kořeny.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"p\\in\\mathbb{R}\\setminus\\{1\\}\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"p\\in\\mathbb{R}\"></span>.",
+    "<span class=\"m\" data-tex=\"p\\in(0;1)\\cup(1;\\infty)\"></span>.",
+    "Takové <span class=\"m\" data-tex=\"p\"></span> neexistuje."
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "Pro <span class=\"m\" data-tex=\"p=0\"></span> je řešením každé <span class=\"m\" data-tex=\"x\"></span>. Pro <span class=\"m\" data-tex=\"p\\ne0\"></span>: <span class=\"m\" data-tex=\"x^2-(p+3)x+2(p+1)=0\"></span>, <span class=\"m\" data-tex=\"D=(p-1)^2&gt;0\\iff p\\ne1\"></span>.",
+   "id": "fit-2021-15",
+   "level": 3,
+   "topics": [
+    4
+   ],
+   "needs_original": false
+  }
+ ],
+ "5": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 6, 7 bodů)",
+   "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"|2x-1|-|2-3x|=-x\"></span> a rozhodněte, které tvrzení je pravdivé.",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "Rovnice má právě <span class=\"m\" data-tex=\"2\"></span> různá řešení.",
+    "Rovnice má právě <span class=\"m\" data-tex=\"3\"></span> různá řešení.",
+    "Rovnice nemá řešení.",
+    "Rovnice má právě <span class=\"m\" data-tex=\"1\"></span> řešení."
+   ],
+   "letters": "ABCDE",
+   "key": "E",
+   "sol": "Nulové body <span class=\"m\" data-tex=\"\\frac12,\\frac23\"></span>. Na <span class=\"m\" data-tex=\"x&lt;\\frac12\"></span>: <span class=\"m\" data-tex=\"x-1=-x\"></span>, <span class=\"m\" data-tex=\"x=\\frac12\"></span> nevyhovuje; na <span class=\"m\" data-tex=\"\\left\\langle\\frac12;\\frac23\\right)\"></span>: <span class=\"m\" data-tex=\"5x-3=-x\"></span>, <span class=\"m\" data-tex=\"x=\\frac12\"></span> ✓; na <span class=\"m\" data-tex=\"x\\ge\\frac23\"></span>: <span class=\"m\" data-tex=\"1=0\"></span>.",
+   "id": "fit-2022-06",
+   "level": 2,
+   "topics": [
+    5
+   ],
+   "needs_original": false
+  }
+ ],
+ "6": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 3, 3 body; přeformulováno)",
+   "body": "O číslech <span class=\"m\" data-tex=\"a,b,c,d,e\"></span> víme: <span class=\"m\" data-tex=\"a=b\"></span>, <span class=\"m\" data-tex=\"a\\ge c\"></span>, <span class=\"m\" data-tex=\"d&gt;b\"></span>, <span class=\"m\" data-tex=\"e&lt;a\"></span>. Které tvrzení <i>nemůže</i> být pravdivé?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"c&lt;e\"></span>",
+    "Platí právě jeden z ostatních vztahů.",
+    "<span class=\"m\" data-tex=\"e=c\"></span>",
+    "<span class=\"m\" data-tex=\"c&gt;d\"></span>",
+    "<span class=\"m\" data-tex=\"e\\le d\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"c\\le a=b&lt;d\"></span>, tedy vždy <span class=\"m\" data-tex=\"c&lt;d\"></span>.",
+   "id": "fit-2022-03",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 1, 3 body; přeformulováno)",
+   "body": "O reálných číslech <span class=\"m\" data-tex=\"a,b,c,d,e\"></span> víme: <span class=\"m\" data-tex=\"a\\le b\"></span>, <span class=\"m\" data-tex=\"a&lt;c\"></span>, <span class=\"m\" data-tex=\"d\\le b\"></span>, <span class=\"m\" data-tex=\"e&lt;a\"></span>. Které tvrzení <i>nemůže</i> platit?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"e&gt;c\"></span>",
+    "<span class=\"m\" data-tex=\"e&lt;d\"></span>",
+    "<span class=\"m\" data-tex=\"a&lt;d\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"d&gt;c\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "A",
+   "sol": "<span class=\"m\" data-tex=\"e&lt;a&lt;c\"></span>, tedy vždy <span class=\"m\" data-tex=\"e&lt;c\"></span>.",
+   "id": "fit-2026-01",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 11, 7 bodů; přeformulováno)",
+   "body": "Kolik sudých celých čísel splňuje nerovnici <span class=\"m\" data-tex=\"x^2-53x+150\\le0\"></span>?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"24\"></span>",
+    "nekonečně mnoho",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"25\"></span>",
+    "<span class=\"m\" data-tex=\"48\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "A",
+   "sol": "Kořeny <span class=\"m\" data-tex=\"3\"></span> a <span class=\"m\" data-tex=\"50\"></span>, řešení <span class=\"m\" data-tex=\"\\langle3;50\\rangle\"></span>. Sudá čísla <span class=\"m\" data-tex=\"4,6,\\dots,50\"></span>: celkem <span class=\"m\" data-tex=\"24\"></span>.",
+   "id": "fit-2018-11",
+   "level": 2,
+   "topics": [
+    6
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2020 (příklad 5, 7 bodů; přeformulováno)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"y=2x^2+2x-12\"></span>. Určete všechna <span class=\"m\" data-tex=\"x\"></span>, pro která leží <span class=\"m\" data-tex=\"y\"></span> v intervalu <span class=\"m\" data-tex=\"\\langle0;12)\"></span>.",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"x\\in\\langle2;3)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty;-3\\rangle\\cup\\langle2;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle3;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle-4;3\\rangle\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "A",
+   "sol": "<span class=\"m\" data-tex=\"y\\ge0\\iff(x+3)(x-2)\\ge0\"></span>; <span class=\"m\" data-tex=\"y&lt;12\\iff(x+4)(x-3)&lt;0\"></span>. Průnik: <span class=\"m\" data-tex=\"(-4;-3\\rangle\\cup\\langle2;3)\"></span> — mezi variantami není.",
+   "id": "fit-2020-05",
+   "level": 3,
+   "topics": [
+    6,
+    9
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P5",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2024 (příklad 11, 7 bodů; přeformulováno)",
+   "body": "Najděte všechna reálná řešení nerovnice <span class=\"m\" data-tex=\"(x+1)^3\\le(x+1)^{-1}\"></span> a vyberte pravdivé tvrzení.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty;-2\\rangle\\cup\\langle0;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty;-1)\\cup(-1;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty;-2\\rangle\\cup(-1;0\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle-2;0\\rangle\"></span>",
+    "Žádná z ostatních možností není správná."
+   ],
+   "letters": "ABCDE",
+   "key": "C",
+   "sol": "<span class=\"m\" data-tex=\"t=x+1\\ne0\"></span>: <span class=\"m\" data-tex=\"\\frac{t^4-1}{t}\\le0\\iff\\frac{(t-1)(t+1)}{t}\\le0\\iff t\\le-1\\ \\vee\\ 0&lt;t\\le1\"></span>.",
+   "id": "fit-2024-11",
+   "level": 3,
+   "topics": [
+    6
+   ],
+   "needs_original": true
+  }
+ ],
+ "7": [
+  {
+   "q": "P1",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 1; přeformulováno)",
+   "body": "Najděte všechna reálná řešení nerovnice <span class=\"m\" data-tex=\"2|x+3|&lt;2\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"x\\in(-4;-2)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"|x+3|&lt;1\\iff-1&lt;x+3&lt;1\"></span>.",
+   "id": "fel-vzor01-1",
+   "level": 1,
+   "topics": [
+    7
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 11; přeformulováno)",
+   "body": "Najděte množinu všech reálných řešení nerovnice <span class=\"m\" data-tex=\"|x+5|\\ge4+|3-2x|\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"x\\in\\left\\langle\\frac23;4\\right\\rangle\"></span>",
+   "sol": "Nulové body <span class=\"m\" data-tex=\"-5,\\frac32\"></span>: pro <span class=\"m\" data-tex=\"x&lt;-5\"></span> nic; na <span class=\"m\" data-tex=\"\\left\\langle-5;\\frac32\\right\\rangle\"></span>: <span class=\"m\" data-tex=\"x\\ge\\frac23\"></span>; pro <span class=\"m\" data-tex=\"x&gt;\\frac32\"></span>: <span class=\"m\" data-tex=\"x\\le4\"></span>.",
+   "id": "fel-vzor01-11",
+   "level": 2,
+   "topics": [
+    7
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 11, 7 bodů; přeformulováno)",
+   "body": "Množina <span class=\"m\" data-tex=\"A\"></span> obsahuje všechna reálná <span class=\"m\" data-tex=\"x\"></span>, pro která <span class=\"m\" data-tex=\"x^2+4x-2&gt;0\"></span>, množina <span class=\"m\" data-tex=\"B\"></span> všechna reálná <span class=\"m\" data-tex=\"x\"></span>, pro která <span class=\"m\" data-tex=\"|x+1|\\le3\"></span>. Určete rozdíl <span class=\"m\" data-tex=\"A-B\"></span> (tj. <span class=\"m\" data-tex=\"A\\setminus B\"></span>).",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\left(-2+\\sqrt6;2\\right\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\langle-4;-2+\\sqrt6\\right)\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"\\left(-\\infty;-2-\\sqrt6\\right)\\cup(2;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"\\left(-2-\\sqrt6;4\\right\\rangle\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"A=\\left(-\\infty;-2-\\sqrt6\\right)\\cup\\left(-2+\\sqrt6;\\infty\\right)\"></span>, <span class=\"m\" data-tex=\"B=\\langle-4;2\\rangle\"></span>; <span class=\"m\" data-tex=\"-2-\\sqrt6\\approx-4{,}45&lt;-4\"></span>.",
+   "id": "fit-2021-11",
+   "level": 2,
+   "topics": [
+    7,
+    6,
+    1
+   ],
+   "needs_original": true
+  }
+ ],
+ "8": [
+  {
+   "q": "P1",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 10; přeformulováno)",
+   "body": "Graf funkce <span class=\"m\" data-tex=\"y=\\left(\\dfrac{1-\\sqrt x}{\\sqrt x-x}\\right)^2\"></span> je částí",
+   "answer": "<span class=\"m\" data-tex=\"y=\\frac1x\"></span> pro <span class=\"m\" data-tex=\"x&gt;0\"></span>, <span class=\"m\" data-tex=\"x\\ne1\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\sqrt x-x=\\sqrt x(1-\\sqrt x)\"></span>, takže <span class=\"m\" data-tex=\"y=\\frac1x\"></span> pro <span class=\"m\" data-tex=\"x&gt;0\"></span>, <span class=\"m\" data-tex=\"x\\ne1\"></span> — část hyperboly.",
+   "id": "fel-vzor01-10",
+   "level": 2,
+   "topics": [
+    8,
+    2,
+    9
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2020 (příklad 10, 7 bodů; přeformulováno)",
+   "body": "Určete maximální definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{x+2}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}\"></span>.",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"\\left\\langle-2;-\\frac12\\right)\\cup\\left(\\frac32;\\infty\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\langle-\\frac12;\\frac32\\right\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\left(-\\frac12;\\frac32\\right)\\cup\\langle2;\\infty)\"></span>",
+    "všechna kladná čísla"
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "<span class=\"m\" data-tex=\"x\\ge-2\"></span> a <span class=\"m\" data-tex=\"x^2-x-\\frac34=\\left(x-\\frac32\\right)\\left(x+\\frac12\\right)&gt;0\"></span>.",
+   "id": "fit-2020-10",
+   "level": 2,
+   "topics": [
+    8,
+    6
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 5, 7 bodů; přeformulováno)",
+   "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac{1}{x+2}}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}\"></span> je pravdivé?",
+   "opts": [
+    "Definičním oborem jsou všechna kladná čísla.",
+    "Definiční obor je <span class=\"m\" data-tex=\"\\left(-\\frac12;\\frac32\\right)\\cup\\langle2;\\infty)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"\\left\\langle-\\frac12;\\frac32\\right\\rangle\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "Definiční obor je <span class=\"m\" data-tex=\"\\left(-\\infty;-\\frac12\\right)\\cup\\left(\\frac32;2\\right\\rangle\"></span>."
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"x+2&gt;0\"></span> a <span class=\"m\" data-tex=\"\\left(x-\\frac32\\right)\\left(x+\\frac12\\right)&gt;0\"></span>; výsledek mezi variantami není.",
+   "id": "fit-2021-05",
+   "level": 2,
+   "topics": [
+    8,
+    6
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 5, 7 bodů; přeformulováno)",
+   "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac{x-2}{x^2-x-\\frac34}}\"></span> je pravdivé?",
+   "opts": [
+    "Definiční obor je <span class=\"m\" data-tex=\"\\left(-\\infty;-\\frac12\\right)\\cup\\left(\\frac32;2\\right\\rangle\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "Definiční obor je <span class=\"m\" data-tex=\"\\left(-\\frac12;\\frac32\\right)\\cup\\langle2;\\infty)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"\\left\\langle-\\frac12;\\frac32\\right\\rangle\"></span>.",
+    "Definičním oborem jsou všechna kladná čísla."
+   ],
+   "letters": "ABCDE",
+   "key": "C",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x-2}{\\left(x-\\frac32\\right)\\left(x+\\frac12\\right)}\\ge0\"></span> — metoda intervalů s body <span class=\"m\" data-tex=\"-\\frac12,\\frac32,2\"></span>.",
+   "id": "fit-2022-05",
+   "level": 2,
+   "topics": [
+    8,
+    6
+   ],
+   "needs_original": true
+  }
+ ],
+ "9": [
+  {
+   "q": "P1",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 28; přeformulováno)",
+   "body": "Graf funkce <span class=\"m\" data-tex=\"y=\\frac23x+\\frac16\"></span> prochází body",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\left[-1;\\frac16\\right]\"></span>, <span class=\"m\" data-tex=\"\\left[0;\\frac16\\right]\"></span>",
+    "<span class=\"m\" data-tex=\"\\left[0;\\frac16\\right]\"></span>, <span class=\"m\" data-tex=\"\\left[\\frac12;\\frac12\\right]\"></span>",
+    "<span class=\"m\" data-tex=\"\\left[-1;\\frac23\\right]\"></span>, <span class=\"m\" data-tex=\"\\left[0;\\frac16\\right]\"></span>",
+    "<span class=\"m\" data-tex=\"\\left[0;\\frac16\\right]\"></span>, <span class=\"m\" data-tex=\"\\left[\\frac12;\\frac23\\right]\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"y(0)=\\frac16\"></span>, <span class=\"m\" data-tex=\"y\\left(\\frac12\\right)=\\frac13+\\frac16=\\frac12\"></span>.",
+   "id": "fbmi-2021-28",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 29; přeformulováno)",
+   "body": "Graf funkce <span class=\"m\" data-tex=\"y=x^2+x+\\frac12\"></span> prochází body",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\left[-1;\\frac12\\right]\"></span>, <span class=\"m\" data-tex=\"\\left[0;\\frac12\\right]\"></span>",
+    "<span class=\"m\" data-tex=\"\\left[0;\\frac12\\right]\"></span>, <span class=\"m\" data-tex=\"\\left[1;\\frac32\\right]\"></span>",
+    "<span class=\"m\" data-tex=\"\\left[-1;\\frac23\\right]\"></span>, <span class=\"m\" data-tex=\"\\left[0;\\frac12\\right]\"></span>",
+    "<span class=\"m\" data-tex=\"\\left[0;\\frac12\\right]\"></span>, <span class=\"m\" data-tex=\"\\left[\\frac12;\\frac23\\right]\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"y(-1)=y(0)=\\frac12\"></span>, <span class=\"m\" data-tex=\"y(1)=\\frac52\"></span>.",
+   "id": "fbmi-2021-29",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 30; přeformulováno)",
+   "body": "Kvadratická funkce <span class=\"m\" data-tex=\"y=x^2+2x+\\frac12\"></span> má extrém:",
+   "opts": [
+    "max. v <span class=\"m\" data-tex=\"\\left[-1;-\\frac12\\right]\"></span>",
+    "min. v <span class=\"m\" data-tex=\"\\left[-1;-\\frac12\\right]\"></span>",
+    "max. v <span class=\"m\" data-tex=\"\\left[1;\\frac72\\right]\"></span>",
+    "min. v <span class=\"m\" data-tex=\"\\left[1;\\frac72\\right]\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"y=(x+1)^2-\\frac12\"></span>.",
+   "id": "fbmi-2021-30",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P4",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 31; přeformulováno)",
+   "body": "Kvadratická funkce <span class=\"m\" data-tex=\"y=x^2+2x+3\"></span> je klesající na intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-\\infty;1\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle1;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty;-1\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle-1;\\infty)\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "c",
+   "sol": "Vrchol <span class=\"m\" data-tex=\"x=-1\"></span>, parabola otevřená nahoru.",
+   "id": "fbmi-2021-31",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P5",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 32; přeformulováno)",
+   "body": "Kvadratická funkce <span class=\"m\" data-tex=\"y=-2x^2+4x+7\"></span> je klesající na intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-\\infty;1\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle1;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty;-1\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle-1;\\infty)\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "b",
+   "sol": "Vrchol <span class=\"m\" data-tex=\"x=1\"></span>, parabola otevřená dolů.",
+   "id": "fbmi-2021-32",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P6",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 33; přeformulováno)",
+   "body": "Lineární funkce, jejíž graf prochází body <span class=\"m\" data-tex=\"[2;3]\"></span> a <span class=\"m\" data-tex=\"[4;-1]\"></span>, je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"y=x+1\"></span>",
+    "<span class=\"m\" data-tex=\"y=-x+5\"></span>",
+    "<span class=\"m\" data-tex=\"y=2x-1\"></span>",
+    "<span class=\"m\" data-tex=\"y=-2x+7\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"k=\\frac{-1-3}{4-2}=-2\"></span>, <span class=\"m\" data-tex=\"q=3+4=7\"></span>.",
+   "id": "fbmi-2021-33",
+   "level": 1,
+   "topics": [
+    9,
+    27
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P7",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 3, 3 body; přeformulováno)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=2x^2-2\"></span>. Výraz <span class=\"m\" data-tex=\"2f(t+1)-f(t-1)\"></span> je roven",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"2t^2+4t\"></span>",
+    "<span class=\"m\" data-tex=\"2t^2+12t\"></span>",
+    "<span class=\"m\" data-tex=\"8t\"></span>",
+    "<span class=\"m\" data-tex=\"2t^2-4\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "C",
+   "sol": "<span class=\"m\" data-tex=\"2\\left(2(t+1)^2-2\\right)-\\left(2(t-1)^2-2\\right)=4t^2+8t-2t^2+4t=2t^2+12t\"></span>.",
+   "id": "fit-2018-03",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P8",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 8, 7 bodů; přeformulováno)",
+   "body": "Obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{2x+3}-1\"></span> je",
+   "answer": "<span class=\"m\" data-tex=\"\\langle-1;\\infty)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\sqrt{2x+3}\"></span> nabývá všech hodnot <span class=\"m\" data-tex=\"\\langle0;\\infty)\"></span>, po odečtení <span class=\"m\" data-tex=\"1\"></span> dostaneme <span class=\"m\" data-tex=\"\\langle-1;\\infty)\"></span>.",
+   "id": "fit-2018-08",
+   "level": 1,
+   "topics": [
+    9,
+    8
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P9",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 1, 3 body)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=x^2-2x+1\"></span>. Spočtěte hodnotu rozdílu <span class=\"m\" data-tex=\"f(t+1)-f(t-1)\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"2t^2-4t+4\"></span>",
+    "<span class=\"m\" data-tex=\"-4t+4\"></span>",
+    "<span class=\"m\" data-tex=\"4t-4\"></span>",
+    "<span class=\"m\" data-tex=\"2\"></span>",
+    "Žádná z ostatních možností není správná."
+   ],
+   "letters": "ABCDE",
+   "key": "C",
+   "sol": "<span class=\"m\" data-tex=\"f(x)=(x-1)^2\"></span>: <span class=\"m\" data-tex=\"t^2-(t-2)^2=4t-4\"></span>.",
+   "id": "fit-2022-01",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 11, 7 bodů; přeformulováno)",
+   "body": "Obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=2x^2-5x+3\"></span> je",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"\\left(\\frac54;\\infty\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"\\mathbb{R}\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\langle-\\frac{19}{2};\\infty\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\langle-\\frac18;\\infty\\right)\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "E",
+   "sol": "Vrchol <span class=\"m\" data-tex=\"x=\\frac54\"></span>, <span class=\"m\" data-tex=\"f\\left(\\frac54\\right)=-\\frac18\"></span>.",
+   "id": "fit-2022-11",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": true
+  }
+ ],
+ "10": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2016 (příklad 8, 5 bodů; přeformulováno)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"y=\\left(\\frac12\\right)^{3x-1}\"></span>. Pak <span class=\"m\" data-tex=\"y\\in\\left\\langle\\frac12;2\\right\\rangle\"></span> právě pro",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"x\\in\\left\\langle0;\\frac23\\right\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty;0\\rangle\\cup\\left\\langle\\frac23;\\infty\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\left\\langle\\frac23;2\\right\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\left\\langle\\frac23;\\frac{1+\\ln2}{3}\\right\\rangle\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "<span class=\"m\" data-tex=\"y=2^{1-3x}\"></span>, <span class=\"m\" data-tex=\"2^{-1}\\le2^{1-3x}\\le2^1\\iff-1\\le1-3x\\le1\\iff0\\le x\\le\\frac23\"></span>.",
+   "id": "fit-2016-08",
+   "level": 2,
+   "topics": [
+    10
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 12, 7 bodů; přeformulováno)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"y=2e^{3x-1}\"></span>. Pak <span class=\"m\" data-tex=\"y\\in\\left\\langle\\frac12;2\\right\\rangle\"></span> právě pro",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x\\in\\left\\langle\\frac{1-\\ln4}{3};\\frac13\\right\\rangle\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"x\\in\\langle-1;0\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\left\\langle-\\frac{e+1}{3};\\frac{e^2+1}{3}\\right\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\left\\langle\\frac13;\\infty\\right)\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "A",
+   "sol": "<span class=\"m\" data-tex=\"e^{3x-1}\\in\\left\\langle\\frac14;1\\right\\rangle\\iff-\\ln4\\le3x-1\\le0\"></span>.",
+   "id": "fit-2022-12",
+   "level": 2,
+   "topics": [
+    10
+   ],
+   "needs_original": true
+  }
+ ],
+ "11": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 7, 5 bodů; přeformulováno)",
+   "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"9^{x-\\frac12}+9^{\\frac12-x}=\\frac{10}{3}\"></span> je pravdivé.",
+   "opts": [
+    "Součet všech řešení je <span class=\"m\" data-tex=\"-1\"></span>.",
+    "Rovnice nemá řešení.",
+    "Žádná z ostatních možností není správná.",
+    "Rovnice má dvě nezáporná řešení.",
+    "Součin všech řešení je <span class=\"m\" data-tex=\"9\"></span>."
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"t=9^{x-\\frac12}&gt;0\"></span>: <span class=\"m\" data-tex=\"t+\\frac1t=\\frac{10}{3}\"></span>, tj. <span class=\"m\" data-tex=\"3t^2-10t+3=0\"></span>, <span class=\"m\" data-tex=\"t\\in\\{3;\\frac13\\}\"></span>. Odtud <span class=\"m\" data-tex=\"x=1\"></span> nebo <span class=\"m\" data-tex=\"x=0\"></span>.",
+   "id": "fit-2015-07",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 9, 7 bodů; přeformulováno)",
+   "body": "Řešte rovnici <span class=\"m\" data-tex=\"3^x+5\\cdot4^x=2\\cdot4^{x+1}-3^{x+1}\"></span>.",
+   "opts": [
+    "jedno záporné řešení",
+    "nemá řešení",
+    "jedno kladné řešení",
+    "jediné řešení <span class=\"m\" data-tex=\"x=0\"></span>",
+    "Žádná z ostatních možností není správná."
+   ],
+   "letters": "ABCDE",
+   "key": "C",
+   "sol": "<span class=\"m\" data-tex=\"3^x+3\\cdot3^x=8\\cdot4^x-5\\cdot4^x\\Rightarrow4\\cdot3^x=3\\cdot4^x\\Rightarrow\\left(\\frac34\\right)^x=\\frac34\"></span>, <span class=\"m\" data-tex=\"x=1\"></span>.",
+   "id": "fit-2022-09",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 3, 3 body; přeformulováno)",
+   "body": "Pro řešení nerovnice <span class=\"m\" data-tex=\"\\left(\\frac13\\right)^{x^2}\\le3^{-x-6}\"></span> platí:",
+   "opts": [
+    "Všechna řešení leží v <span class=\"m\" data-tex=\"(-\\infty;-2\\rangle\\cup\\langle3;\\infty)\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "Všechna řešení leží v intervalu <span class=\"m\" data-tex=\"\\langle-2;\\infty)\"></span>.",
+    "Neexistují záporná řešení.",
+    "Řešením jsou všechna reálná čísla."
+   ],
+   "letters": "ABCDE",
+   "key": "A",
+   "sol": "<span class=\"m\" data-tex=\"3^{-x^2}\\le3^{-x-6}\\iff-x^2\\le-x-6\\iff(x-3)(x+2)\\ge0\"></span>.",
+   "id": "fit-2026-03",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": true
+  }
+ ],
+ "12": [
+  {
+   "q": "P1",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 25; přeformulováno)",
+   "body": "Výraz <span class=\"m\" data-tex=\"\\log\\dfrac{a}{(b+c)^2}\"></span> (<span class=\"m\" data-tex=\"a,b,c&gt;0\"></span>) je roven",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\log a:2\\log(b+c)\"></span>",
+    "<span class=\"m\" data-tex=\"\\log a-2\\log(b+c)\"></span>",
+    "<span class=\"m\" data-tex=\"\\log a-2\\log b-2\\log c\"></span>",
+    "<span class=\"m\" data-tex=\"\\log a:(2\\log b+2\\log c)\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "b",
+   "sol": "Logaritmus podílu a mocniny.",
+   "id": "fbmi-2021-25",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 26; přeformulováno)",
+   "body": "Výraz <span class=\"m\" data-tex=\"\\log\\dfrac{a+b}{\\sqrt c}\"></span> (<span class=\"m\" data-tex=\"a,b,c&gt;0\"></span>) je roven",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\log(a+b):\\log\\sqrt c\"></span>",
+    "<span class=\"m\" data-tex=\"\\log a+\\log b-\\frac12\\log c\"></span>",
+    "<span class=\"m\" data-tex=\"\\log(a+b)-\\frac12\\log c\"></span>",
+    "<span class=\"m\" data-tex=\"(\\log a+\\log b):\\frac12\\log c\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\log(a+b)\"></span> se nerozkládá.",
+   "id": "fbmi-2021-26",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 27; přeformulováno)",
+   "body": "Výraz <span class=\"m\" data-tex=\"\\log\\dfrac{a+b}{c^2}\"></span> (<span class=\"m\" data-tex=\"a,b,c&gt;0\"></span>) je roven",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\log(a+b):2\\log c\"></span>",
+    "<span class=\"m\" data-tex=\"\\log a+\\log b-2\\log c\"></span>",
+    "<span class=\"m\" data-tex=\"\\log(a+b)-2\\log c\"></span>",
+    "<span class=\"m\" data-tex=\"(\\log a+\\log b):2\\log c\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\log(a+b)\"></span> se nerozkládá.",
+   "id": "fbmi-2021-27",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 9, 5 bodů; přeformulováno)",
+   "body": "Které tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\log_5 x+1}\"></span> je pravdivé?",
+   "opts": [
+    "Definiční obor je <span class=\"m\" data-tex=\"\\left(0;\\frac15\\right)\\cup\\left(\\frac15;\\infty\\right)\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "Definičním oborem jsou všechna kladná reálná čísla.",
+    "Definiční obor je <span class=\"m\" data-tex=\"\\left\\langle\\frac15;\\infty\\right)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"\\langle-5;\\infty)\"></span>."
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"x&gt;0\"></span> a <span class=\"m\" data-tex=\"\\log_5x\\ge-1=\\log_5\\frac15\"></span>; logaritmus o základu <span class=\"m\" data-tex=\"5\"></span> je rostoucí, tedy <span class=\"m\" data-tex=\"x\\ge\\frac15\"></span>.",
+   "id": "fit-2015-09",
+   "level": 2,
+   "topics": [
+    12
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P5",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 10, 5 bodů; přeformulováno)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"y=\\ln(2x+1)\"></span>. Pak <span class=\"m\" data-tex=\"y\\in\\langle-1;1\\rangle\"></span> právě pro",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"x\\in\\left\\langle-\\frac12;\\frac{e-1}{2}\\right\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\left(-\\frac{e^{-1}}{2};\\frac12\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\left\\langle\\frac{e^{-1}-1}{2};\\frac{e-1}{2}\\right\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\left\\langle-\\frac{e^{-1}}{2};\\frac{e-1}{2}\\right\\rangle\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"e^{-1}\\le2x+1\\le e\"></span>, odtud <span class=\"m\" data-tex=\"\\frac{e^{-1}-1}{2}\\le x\\le\\frac{e-1}{2}\"></span>.",
+   "id": "fit-2015-10",
+   "level": 2,
+   "topics": [
+    12
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P6",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2017 (příklad 10, 7 bodů; přeformulováno)",
+   "body": "Které tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2+8x+15)}{\\sqrt{2-x}}\"></span> je pravdivé?",
+   "opts": [
+    "Definiční obor je <span class=\"m\" data-tex=\"\\mathbb{R}\\setminus\\{2\\}\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(-\\infty;-5)\\cup(-3;2)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(2;\\infty)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(-\\infty;-5)\"></span>.",
+    "Žádná z ostatních možností není správná."
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "<span class=\"m\" data-tex=\"(x+3)(x+5)&gt;0\\Rightarrow x&lt;-5\\ \\vee\\ x&gt;-3\"></span>; <span class=\"m\" data-tex=\"2-x&gt;0\\Rightarrow x&lt;2\"></span>.",
+   "id": "fit-2017-10",
+   "level": 2,
+   "topics": [
+    12,
+    6
+   ],
+   "needs_original": true
+  }
+ ],
+ "19": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 10, 7 bodů)",
+   "body": "Určete první člen <span class=\"m\" data-tex=\"a_1\"></span> a diferenci <span class=\"m\" data-tex=\"d\"></span> reálné aritmetické posloupnosti, pokud víte, že součet čtvrtého a pátého členu je <span class=\"m\" data-tex=\"4\"></span> a součin čtvrtého a pátého členu je <span class=\"m\" data-tex=\"5\"></span>.",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "Úloha nemá řešení.",
+    "Součin všech možných diferencí je <span class=\"m\" data-tex=\"4\"></span>.",
+    "Součet všech možných prvních členů je <span class=\"m\" data-tex=\"24\"></span>.",
+    "<span class=\"m\" data-tex=\"d=2\"></span>, <span class=\"m\" data-tex=\"a_1=-5\"></span>."
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "<span class=\"m\" data-tex=\"a_4,a_5\"></span> jsou kořeny <span class=\"m\" data-tex=\"t^2-4t+5=0\"></span>, <span class=\"m\" data-tex=\"D=16-20&lt;0\"></span> — reálná řešení neexistují.",
+   "id": "fit-2022-10",
+   "level": 3,
+   "topics": [
+    19,
+    3
+   ],
+   "needs_original": false
+  }
+ ],
+ "20": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 6, 7 bodů; upraveno)",
+   "body": "Mezi kořeny rovnice <span class=\"m\" data-tex=\"x^2-30x+81=0\"></span> vložte čtyři čísla tak, aby spolu s oběma kořeny tvořila šest po sobě jdoucích členů geometrické posloupnosti s kvocientem <span class=\"m\" data-tex=\"q&gt;0\"></span>. Určete kvocient <span class=\"m\" data-tex=\"q\"></span> a čtvrtý člen posloupnosti.",
+   "answer": "<span class=\"m\" data-tex=\"q=\\sqrt[5]{9}\"></span>, <span class=\"m\" data-tex=\"a_4=9\\sqrt[5]{3}\"></span>",
+   "sol": "Kořeny <span class=\"m\" data-tex=\"3\"></span> a <span class=\"m\" data-tex=\"27\"></span>: <span class=\"m\" data-tex=\"a_1=3\"></span>, <span class=\"m\" data-tex=\"a_6=3q^5=27\"></span>, <span class=\"m\" data-tex=\"q^5=9\"></span>, <span class=\"m\" data-tex=\"q=3^{2/5}\"></span>, <span class=\"m\" data-tex=\"a_4=3q^3=3^{11/5}=9\\sqrt[5]{3}\"></span>.",
+   "id": "fit-2019-06",
+   "level": 3,
+   "topics": [
+    20,
+    3
+   ],
+   "needs_original": true
+  }
+ ],
+ "22": [
+  {
+   "q": "P1",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01",
+   "body": "Kolik různých znaků Morseovy abecedy lze vytvořit ze skupin teček a čárek o délce <span class=\"m\" data-tex=\"1\"></span> až <span class=\"m\" data-tex=\"5\"></span> (tj. skupin obsahujících <span class=\"m\" data-tex=\"1\"></span> až <span class=\"m\" data-tex=\"5\"></span> symbolů)?",
+   "answer": "<span class=\"m\" data-tex=\"62\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"2+2^2+2^3+2^4+2^5=62\"></span>.",
+   "id": "fel-vzor01-morse",
+   "level": 1,
+   "topics": [
+    22,
+    2
+   ],
+   "needs_original": false
+  }
+ ],
+ "28": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 19, 3 body; přeformulováno)",
+   "body": "Určete parametry <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span> tak, aby rovnice <span class=\"m\" data-tex=\"ax+4y+1=0\"></span> a <span class=\"m\" data-tex=\"3x+2y-b=0\"></span> popisovaly tutéž přímku.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"a=6\"></span>, <span class=\"m\" data-tex=\"b=-1\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"a=6\"></span>, <span class=\"m\" data-tex=\"b\\in\\mathbb{R}\"></span>",
+    "<span class=\"m\" data-tex=\"a=-\\frac83\"></span>, <span class=\"m\" data-tex=\"b=1\"></span>",
+    "<span class=\"m\" data-tex=\"a=6\"></span>, <span class=\"m\" data-tex=\"b=-\\frac12\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "E",
+   "sol": "Koeficienty musí být úměrné: <span class=\"m\" data-tex=\"\\frac a3=\\frac42=\\frac{1}{-b}\"></span>, tedy <span class=\"m\" data-tex=\"a=6\"></span>, <span class=\"m\" data-tex=\"b=-\\frac12\"></span>.",
+   "id": "fit-2015-19",
+   "level": 1,
+   "topics": [
+    28,
+    27
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2016 (příklad 19, 3 body; přeformulováno)",
+   "body": "Určete parametry <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span> tak, aby přímky <span class=\"m\" data-tex=\"p:\\ ax+4y+1=0\"></span> a <span class=\"m\" data-tex=\"q:\\ 3x+2y-b=0\"></span> byly navzájem kolmé.",
+   "opts": [
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"a=-\\frac83\"></span>, <span class=\"m\" data-tex=\"b\\in\\mathbb{R}\"></span>",
+    "<span class=\"m\" data-tex=\"a=6\"></span>, <span class=\"m\" data-tex=\"b=-\\frac12\"></span>",
+    "<span class=\"m\" data-tex=\"a=-\\frac83\"></span>, <span class=\"m\" data-tex=\"b=1\"></span>",
+    "<span class=\"m\" data-tex=\"a=6\"></span>, <span class=\"m\" data-tex=\"b\\in\\mathbb{R}\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "B",
+   "sol": "Normálové vektory <span class=\"m\" data-tex=\"(a;4)\"></span> a <span class=\"m\" data-tex=\"(3;2)\"></span> jsou kolmé: <span class=\"m\" data-tex=\"3a+8=0\"></span>, <span class=\"m\" data-tex=\"a=-\\frac83\"></span>; <span class=\"m\" data-tex=\"b\"></span> libovolné.",
+   "id": "fit-2016-19",
+   "level": 1,
+   "topics": [
+    28,
+    27
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2024 (příklad 13, 7 bodů; přeformulováno)",
+   "body": "Určete reálné parametry <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span> tak, aby přímky <span class=\"m\" data-tex=\"ax+4y+1=0\"></span> a <span class=\"m\" data-tex=\"3x+2y-b=0\"></span> měly právě jeden společný bod.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"a=-\\frac83\"></span>, <span class=\"m\" data-tex=\"b\\ne\\frac12\"></span>",
+    "<span class=\"m\" data-tex=\"a\\ne-\\frac83\"></span>, <span class=\"m\" data-tex=\"b\\in\\mathbb{R}\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"a\\ne6\"></span>, <span class=\"m\" data-tex=\"b\\in\\mathbb{R}\"></span>",
+    "<span class=\"m\" data-tex=\"a\\ne6\"></span>, <span class=\"m\" data-tex=\"b\\ne-1\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "Přímky nesmí být rovnoběžné: <span class=\"m\" data-tex=\"\\frac a3\\ne\\frac42\"></span>, tj. <span class=\"m\" data-tex=\"a\\ne6\"></span>.",
+   "id": "fit-2024-13",
+   "level": 1,
+   "topics": [
+    28
+   ],
+   "needs_original": true
+  }
+ ],
+ "29": [
+  {
+   "q": "P1",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 12; přeformulováno)",
+   "body": "Přímky procházejí bodem <span class=\"m\" data-tex=\"A[0;-5]\"></span> a mají od počátku souřadnic vzdálenost <span class=\"m\" data-tex=\"\\sqrt5\"></span>. Jejich směrnice jsou",
+   "answer": "<span class=\"m\" data-tex=\"k=\\pm2\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"y=kx-5\"></span>: <span class=\"m\" data-tex=\"\\frac{5}{\\sqrt{k^2+1}}=\\sqrt5\\Rightarrow k^2=4\"></span>.",
+   "id": "fel-vzor01-12",
+   "level": 2,
+   "topics": [
+    29,
+    9
+   ],
+   "needs_original": true
+  }
+ ],
+ "30": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 13, 7 bodů)",
+   "body": "Určete hodnotu parametru <span class=\"m\" data-tex=\"p\"></span> tak, aby přímka <span class=\"m\" data-tex=\"q:\\ px+y-1=0\"></span> neměla s kružnicí <span class=\"m\" data-tex=\"k:\\ x^2-4x+y^2-6y-3=0\"></span> žádný společný bod.",
+   "opts": [
+    "Takových <span class=\"m\" data-tex=\"p\"></span> je nekonečně mnoho.",
+    "<span class=\"m\" data-tex=\"p\\in(-\\infty;3)\\cup\\langle7;\\infty)\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"p=7\"></span>",
+    "Takové <span class=\"m\" data-tex=\"p\"></span> neexistuje."
+   ],
+   "letters": "ABCDE",
+   "key": "E",
+   "sol": "Přímka prochází bodem <span class=\"m\" data-tex=\"[0;1]\"></span>, který leží uvnitř kružnice <span class=\"m\" data-tex=\"(x-2)^2+(y-3)^2=16\"></span> (vzdálenost od středu <span class=\"m\" data-tex=\"\\sqrt8&lt;4\"></span>), proto ji vždy protne.",
+   "id": "fit-2021-13",
+   "level": 3,
+   "topics": [
+    30,
+    4
+   ],
+   "needs_original": false
+  }
+ ],
+ "ostatni": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 4, 7 bodů)",
+   "body": "Kladné číslo <span class=\"m\" data-tex=\"x\"></span> je o <span class=\"m\" data-tex=\"25\\,\\%\"></span> větší než kladné číslo <span class=\"m\" data-tex=\"y\"></span>. O kolik procent je číslo <span class=\"m\" data-tex=\"y\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>?",
+   "opts": [
+    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"15\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>.",
+    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"33\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"20\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>.",
+    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"25\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>."
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"y=\\frac{x}{1{,}25}=0{,}8x\"></span>.",
+   "id": "fit-2019-04",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 4, 7 bodů)",
+   "body": "Petr a Pavel mají stejně vysoký plat. Pavel platí o čtvrtinu vyšší nájem než Petr. Nájem bytu stojí Pavla <span class=\"m\" data-tex=\"25\\,\\%\"></span> jeho platu. Kolik procent svého platu platí za nájem Petr?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"22{,}5\\,\\%\"></span>",
+    "<span class=\"m\" data-tex=\"15\\,\\%\"></span>",
+    "<span class=\"m\" data-tex=\"18{,}75\\,\\%\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"20\\,\\%\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "E",
+   "sol": "<span class=\"m\" data-tex=\"1{,}25\\cdot n=0{,}25\\,S\\Rightarrow n=0{,}2\\,S\"></span>.",
+   "id": "fit-2022-04",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  }
+ ]
+}
