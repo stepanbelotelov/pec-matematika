@@ -434,6 +434,17 @@ footer { color: var(--muted); font-size: 13px; padding-bottom: 32px; display: gr
 .pb-about > .pb-intro { padding: 0 14px 14px }
 .pb-row > .pb-lb { font-size: 12px }
 .pb-row .chip { min-height: 40px }
+/* VŠE: активный фильтр — цвета основной кнопки (белый на оранжевом был 3,1:1), высота как у соседних кнопок фильтра */
+.line-vse .pb-row .chip { min-height: 40px }
+.line-vse .pb-row .chip[aria-pressed="true"] { background: var(--btn); border-color: var(--btn); color: var(--btn-fg) }
+.pb-row .chip[aria-pressed="true"] small { opacity: 1 }
+/* VŠE: «верно / неверно» в результатах — зелёный и красный темнее для текста (3,5:1 → ≥4,5:1) */
+.line-vse .etask.right .etag, .line-vse .qrow.right .res { color: color-mix(in srgb, var(--ok) 62%, var(--fg)) }
+.line-vse .etask.wrong .etag, .line-vse .qrow.wrong .res { color: color-mix(in srgb, var(--bad) 80%, var(--fg)) }
+.line-vse .sec-h span.mine { color: color-mix(in srgb, var(--ok) 62%, var(--fg)) }
+.line-vse .verdict.good, .line-vse .verdict.good b { color: color-mix(in srgb, var(--ok) 62%, var(--fg)) }
+.line-vse .verdict.mid, .line-vse .verdict.mid b { color: color-mix(in srgb, var(--gold) 55%, var(--fg)) }
+.line-vse .verdict.low, .line-vse .verdict.low b { color: color-mix(in srgb, var(--bad) 80%, var(--fg)) }
 .pb-res:focus { outline: none }
 .pb-res:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px }
 /* дроби в вариантах и решениях не обрезаются снизу */
@@ -717,7 +728,8 @@ body.line-vse { --muted: #6B6B75; --btn: #D2451A; --btn-fg: #FFFFFF }
 .line-vse .acts .seg > :last-child { border-radius: 0 999px 999px 0 }
 .line-vse .acts .seg > :only-child { border-radius: 999px }
 .line-vse .acts .seg .score.has, .line-vse .acts .seg .score.mid { border-color: var(--line) }
-@media (max-width: 900px) { .line-vse .bento > .mod:last-child:nth-child(even) { grid-column: 1 / -1 } }
+/* две колонки: последний модуль во всю ширину, только если модулей нечётное число (класс ставит renderMods) */
+@media (max-width: 900px) { .line-vse .bento > .mod.lone { grid-column: 1 / -1 } }
 @media (max-width: 600px) { .line-vse .acts .chip, .line-vse .acts .score { padding: 10px 11px } }
 
 /* ---- ČVUT ---- */
@@ -995,6 +1007,7 @@ function closeAll(setHash = true) {
     else history.replaceState(null, "", location.pathname + location.search);
   }
   refresh(); renderExamCta(); renderWarmCta();
+  syncInert(); // before restoring focus: an inert element cannot take focus
   restoreFocus();
   if (wasRunning) toast("Экзамен идёт — время не останавливается. Вернуться: «Продолжить» на карточке.");
 }
@@ -1007,6 +1020,11 @@ function rememberFocus() {
   lastFocus = document.activeElement;
   const s = lastFocus && lastFocus.closest && lastFocus.closest("[id]");
   focusScope = s ? s.id : "";
+}
+// while a window is open, the page behind it is inert: not reachable by Tab or a screen reader (complements aria-modal)
+function syncInert() {
+  const modal = !$("viewer").hidden || !$("sheetwrap").hidden;
+  for (const x of document.body.children) { if (x.matches("#viewer, #sheetwrap, .tooldock, .calc, .toast, script")) continue; x.inert = modal; }
 }
 function restoreFocus() {
   let t = lastFocus && document.contains(lastFocus) ? lastFocus : null;
@@ -2027,7 +2045,8 @@ function renderMods() {
   out.forEach((x) => host.append(x));
   if (out[0]) out[0].id = "mods-start";
   if (!IS_CVUT) {
-    const mods = [...host.querySelectorAll(".mod")]; mods.forEach((m) => m.classList.remove("full", "half"));
+    const mods = [...host.querySelectorAll(".mod")]; mods.forEach((m) => m.classList.remove("full", "half", "lone"));
+    if (mods.length % 2) mods[mods.length - 1].classList.add("lone");
     const r = mods.length % 3;
     if (r === 1) mods[mods.length - 1].classList.add("full");
     if (r === 2) { mods[mods.length - 1].classList.add("half"); mods[mods.length - 2].classList.add("half"); }
@@ -2589,7 +2608,9 @@ if (!IS_CVUT) { $("h-all").textContent = "Все темы."; }
 try { localStorage.setItem("pec-last-line", JSON.stringify({ line: LINE, href: IS_CVUT ? "cvut/" : "vse/", n: latest.n, name: latest.name })); localStorage.setItem("pec-line-" + LINE, String(latest.n)); } catch (e) {}
 // opened straight on a view (link from the teacher): put the course page under it, so «Назад» and × return there
 if (VIEW_RE.test(location.hash) && !(history.state && history.state.pecDepth)) { const h = location.hash; history.replaceState(null, "", location.pathname + location.search); history.pushState({ pecDepth: 1 }, "", h); }
-refresh(); renderMods(); drawAxis(); buildCalc(); route();
+refresh(); renderMods(); drawAxis(); buildCalc();
+["viewer", "sheetwrap"].forEach((id) => new MutationObserver(syncInert).observe($(id), { attributes: true, attributeFilter: ["hidden"] }));
+route(); syncInert();
 pbLoad();
 </script>
 </body></html>
