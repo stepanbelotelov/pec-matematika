@@ -2,7 +2,7 @@
 
 Файл собирается скриптом `bank/build.py` из `tasks.json` и `sources.json`; вручную не редактировать.
 
-Всего задач: **450** · базовый: 238 · стандартный: 183 · сложный: 29 · ČVUT FIT: 195 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FBMI: 40 · ČVUT FJFI: 24 · ČVUT FEL: 15 · VŠCHT VŠCHT: 7 · TUL FP: 5
+Всего задач: **648** · базовый: 397 · стандартный: 222 · сложный: 29 · VUT FSI: 198 · ČVUT FIT: 195 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FBMI: 40 · ČVUT FJFI: 24 · ČVUT FEL: 15 · VŠCHT VŠCHT: 7 · TUL FP: 5
 
 ⚠ **0** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.
 
@@ -11,41 +11,41 @@
 | № | Тема | Ур. 1 | Ур. 2 | Ур. 3 | Всего |
 |---|---|---|---|---|---|
 | 1 | Množina. Podmnožina |  | 2 | 7 | 9 |
-| 2 | Mocnina. Odmocnina | 17 | 1 |  | 18 |
-| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 23 | 25 | 5 | 53 |
-| 4 | Rovnice s parametrem | 1 | 5 | 2 | 8 |
-| 5 | Rovnice s absolutní hodnotou |  | 8 |  | 8 |
-| 6 | Nerovnice. Soustava nerovnic | 18 | 7 | 2 | 27 |
-| 7 | Nerovnice s absolutní hodnotou | 2 | 6 |  | 8 |
-| 8 | Iracionální rovnice. Iracionální nerovnice | 16 | 9 |  | 25 |
-| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 17 | 5 |  | 22 |
+| 2 | Mocnina. Odmocnina | 34 | 4 |  | 38 |
+| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 26 | 26 | 5 | 57 |
+| 4 | Rovnice s parametrem | 4 | 7 | 2 | 13 |
+| 5 | Rovnice s absolutní hodnotou | 2 | 8 |  | 10 |
+| 6 | Nerovnice. Soustava nerovnic | 20 | 8 | 2 | 30 |
+| 7 | Nerovnice s absolutní hodnotou | 9 | 6 |  | 15 |
+| 8 | Iracionální rovnice. Iracionální nerovnice | 19 | 11 |  | 30 |
+| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 19 | 5 |  | 24 |
 | 10 | Exponenciální funkce | 4 | 2 |  | 6 |
-| 11 | Exponenciální rovnice a nerovnice | 12 | 13 |  | 25 |
-| 12 | Logaritmická funkce | 9 | 10 |  | 19 |
-| 13 | Logaritmické rovnice a nerovnice | 5 | 5 | 1 | 11 |
-| 14 | Goniometrické funkce | 6 |  |  | 6 |
-| 15 | Goniometrické rovnice a nerovnice | 2 | 17 | 1 | 20 |
-| 16 | Komplexní čísla | 5 |  |  | 5 |
-| 17 | Goniometrický tvar komplexního čísla. Moivreova věta |  |  |  | — |
+| 11 | Exponenciální rovnice a nerovnice | 21 | 17 |  | 38 |
+| 12 | Logaritmická funkce | 16 | 10 |  | 26 |
+| 13 | Logaritmické rovnice a nerovnice | 7 | 16 | 1 | 24 |
+| 14 | Goniometrické funkce | 19 | 4 |  | 23 |
+| 15 | Goniometrické rovnice a nerovnice | 11 | 19 | 1 | 31 |
+| 16 | Komplexní čísla | 15 | 1 |  | 16 |
+| 17 | Goniometrický tvar komplexního čísla. Moivreova věta | 1 |  |  | 1 |
 | 18 | Posloupnosti |  | 1 |  | 1 |
-| 19 | Aritmetická posloupnost | 8 | 2 | 2 | 12 |
-| 20 | Geometrická posloupnost | 4 | 6 | 2 | 12 |
-| 21 | Kombinatorika. Faktoriál | 1 | 1 | 1 | 3 |
-| 22 | Variace. Permutace. Kombinace | 3 | 17 | 1 | 21 |
-| 23 | Kombinační číslo. Binomická věta |  |  |  | — |
+| 19 | Aritmetická posloupnost | 12 | 2 | 2 | 16 |
+| 20 | Geometrická posloupnost | 7 | 6 | 2 | 15 |
+| 21 | Kombinatorika. Faktoriál | 2 | 2 | 1 | 5 |
+| 22 | Variace. Permutace. Kombinace | 8 | 17 | 1 | 26 |
+| 23 | Kombinační číslo. Binomická věta | 3 | 1 |  | 4 |
 | 24 | Pravděpodobnost | 6 | 5 |  | 11 |
 | 25 | Analytická geometrie. Vektory |  | 1 |  | 1 |
 | 26 | Parametrická rovnice přímky | 2 |  |  | 2 |
-| 27 | Obecná rovnice přímky | 14 | 1 |  | 15 |
-| 28 | Vzájemná poloha přímek | 7 |  |  | 7 |
-| 29 | Směrnicový a úsekový tvar rovnice přímky |  | 1 |  | 1 |
-| 30 | Kuželosečky. Kružnice | 9 | 4 | 1 | 14 |
+| 27 | Obecná rovnice přímky | 15 | 1 |  | 16 |
+| 28 | Vzájemná poloha přímek | 10 |  |  | 10 |
+| 29 | Směrnicový a úsekový tvar rovnice přímky | 4 | 1 |  | 5 |
+| 30 | Kuželosečky. Kružnice | 13 | 4 | 1 | 18 |
 | 31 | Elipsa |  | 1 |  | 1 |
-| 32 | Hyperbola |  | 1 |  | 1 |
-| 33 | Parabola | 2 |  |  | 2 |
-| 34 | Planimetrie | 5 |  |  | 5 |
-| 35 | Stereometrie |  | 2 |  | 2 |
-| — | Ostatní | 40 | 25 | 4 | 69 |
+| 32 | Hyperbola | 2 | 1 |  | 3 |
+| 33 | Parabola | 6 |  |  | 6 |
+| 34 | Planimetrie | 16 | 1 |  | 17 |
+| 35 | Stereometrie | 8 | 3 |  | 11 |
+| — | Ostatní | 56 | 29 | 4 | 89 |
 
 Задача считается по основной (первой) теме; дополнительные темы указаны в карточке. «Ostatní» — задачи вне 35 тем плана.
 
@@ -348,6 +348,346 @@ Určete jakému výrazu se rovná druhá odmocnina podílu nenulového čísla $
 <details><summary>Ответ и решение</summary>
 
 **a** — $|x|$. $\sqrt{x:\frac1x}=\sqrt{x^2}=|x|$.
+
+</details>
+
+### `vut-fsi-2014-z2-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $a>0$, pak $\sqrt[6]{a^3}\cdot\sqrt[3]{a^{-2}}\cdot\sqrt a=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 2, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 2, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 1, 1 b)
+
+- **a)** $a\sqrt a$
+- **b)** $\sqrt[6]a$
+- **c)** $\sqrt[3]a$
+- **d)** $a^{\frac56}$
+- **e)** $\sqrt a$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\sqrt[3]a$. $a^{\frac12-\frac23+\frac12}=a^{\frac13}$.
+
+</details>
+
+### `vut-fsi-2014-z3-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte: $\dfrac{0{,}7t^{-n}}{2{,}1t^{-n-1}}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 1, 1 b)
+
+- **a)** $\dfrac t3$
+- **b)** $\dfrac3t$
+- **c)** $\dfrac{10}3t$
+- **d)** $\dfrac1{3t^n}$
+- **e)** $3t$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac t3$. $\frac{0{,}7}{2{,}1}t^{-n+n+1}=\frac t3$.
+
+</details>
+
+### `vut-fsi-2014-z4-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $a>0$, pak $\sqrt[5]{\left[\dfrac{a^{\frac12}\cdot a^{-1}}{\sqrt[3]a}\right]^{-3}}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 1, 1 b)
+
+- **a)** $a$
+- **b)** $\sqrt a$
+- **c)** $\dfrac1{\sqrt a}$
+- **d)** $\sqrt[3]a$
+- **e)** $\sqrt[5]a$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt a$. Závorka je $a^{\frac12-1-\frac13}=a^{-\frac56}$; $\left(a^{\frac52}\right)^{\frac15}=a^{\frac12}$.
+
+</details>
+
+### `vut-fsi-2014-z5-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Usměrněte zlomek $\dfrac{5\sqrt2+4\sqrt3}{5\sqrt2-4\sqrt3}$:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 1, 1 b)
+
+- **a)** $98-40\sqrt6$
+- **b)** $49-20\sqrt6$
+- **c)** $49+20\sqrt6$
+- **d)** $49\sqrt2-20\sqrt3$
+- **e)** $49\sqrt2+20\sqrt6$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $49+20\sqrt6$. $\frac{(5\sqrt2+4\sqrt3)^2}{50-48}=\frac{98+40\sqrt6}2$.
+
+</details>
+
+### `vut-fsi-2014-z7-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $x>0;\ y>0;\ x\neq y$, pak $\dfrac{\sqrt x+\sqrt y}{x-y}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 1, 1 b)
+
+- **a)** $\dfrac1{\sqrt{x-y}}$
+- **b)** $\dfrac1{\sqrt x+\sqrt y}$
+- **c)** $\dfrac1{\sqrt x-\sqrt y}$
+- **d)** $\dfrac1{\sqrt{x+y}}$
+- **e)** $\dfrac{x+y}{\sqrt{x-y}}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\dfrac1{\sqrt x-\sqrt y}$. $x-y=(\sqrt x-\sqrt y)(\sqrt x+\sqrt y)$.
+
+</details>
+
+### `vut-fsi-2014-z8-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $x>0;\ y>0$, pak $\left(x^{\frac12}+y^{\frac12}\right)^{-1}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 1, 1 b)
+
+- **a)** $\dfrac1{\sqrt x+\sqrt y}$
+- **b)** $\dfrac1{\sqrt x}+\dfrac1{\sqrt y}$
+- **c)** $\dfrac1{x^2}+\dfrac1{y^2}$
+- **d)** $\sqrt{-x}+\sqrt{-y}$
+- **e)** $x^{-\frac12}+y^{-\frac12}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac1{\sqrt x+\sqrt y}$
+
+</details>
+
+### `vut-fsi-2014-z9-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Pro $a\ge0$ platí $\left(a^{\frac12}+a^{\frac14}\right)\cdot\left(a^{\frac12}-a^{\frac14}\right)=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 1, 1 b)
+
+- **a)** $a^{\frac12}$
+- **b)** $a-a^{\frac12}$
+- **c)** $a^{\frac34}$
+- **d)** $1$
+- **e)** $\left(a^{\frac12}-a^{\frac14}\right)^2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $a-a^{\frac12}$. Rozdíl čtverců.
+
+</details>
+
+### `vut-fsi-2014-z10-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+$\dfrac{5^{-1}+3^{-1}}{15^{-1}+(-7)^{-1}}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 1, 1 b)
+
+- **a)** $-7$
+- **b)** $\dfrac7{15}$
+- **c)** $-\dfrac7{15}$
+- **d)** $-7{,}5$
+- **e)** $-\dfrac73$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-7$. $\frac{8/15}{-8/105}=-7$.
+
+</details>
+
+### `vut-fsi-2014-z1-02` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 2, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Výraz $\left(5\cdot25^x\right)^{-\frac1x}$ lze upravit na tvar
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 1, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 2, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 1, 1 b)
+
+- **a)** $125^{-1}$
+- **b)** $125^{x-\frac1x}$
+- **c)** $\left(25\cdot5^{\frac1x}\right)^{-1}$
+- **d)** $\left(5\cdot5^2\right)^{-1}$
+- **e)** $25\cdot5^{-x}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\left(25\cdot5^{\frac1x}\right)^{-1}$. $5^{-\frac{1+2x}x}=5^{-2}\cdot5^{-\frac1x}$.
+
+</details>
+
+### `vut-fsi-2014-z2-02` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 2, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $a>0;\ b>0;\ a\neq b$, pak $\left(a^{\frac12}-b^{\frac12}\right)^{-1}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 2, 1 b)
+
+- **a)** $\dfrac1{\sqrt a-\sqrt b}$
+- **b)** $\dfrac1{\sqrt a}-\dfrac1{\sqrt b}$
+- **c)** $\dfrac1a+\dfrac1b$
+- **d)** $\sqrt{-a}+\sqrt{-b}$
+- **e)** $a^{-\frac12}-b^{-\frac12}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac1{\sqrt a-\sqrt b}$
+
+</details>
+
+### `vut-fsi-2014-z3-02` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 2, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $a>0$, pak $\left(\dfrac{\sqrt[3]a}{\sqrt a\cdot a^{-1}}\right)^{\frac35}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 2, 1 b)
+
+- **a)** $\dfrac1{\sqrt a}$
+- **b)** $2\sqrt a$
+- **c)** $\sqrt a$
+- **d)** $a^{-1}$
+- **e)** $a^{\frac{-3}2}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\sqrt a$. $\left(a^{\frac13-\frac12+1}\right)^{\frac35}=a^{\frac56\cdot\frac35}=a^{\frac12}$.
+
+</details>
+
+### `vut-fsi-2014-z4-02` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 2, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+$\dfrac1{\sqrt3+\sqrt2}+\dfrac1{\sqrt3-\sqrt2}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 2, 1 b)
+
+- **a)** $3\sqrt2$
+- **b)** $2\sqrt3$
+- **c)** $\dfrac{2\sqrt3}5$
+- **d)** $\dfrac2{2\sqrt3}$
+- **e)** $\dfrac2{\sqrt3}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $2\sqrt3$. Usměrněním $(\sqrt3-\sqrt2)+(\sqrt3+\sqrt2)$.
+
+</details>
+
+### `vut-fsi-2014-z6-02` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 2, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $x>0$, pak $\sqrt[3]{x\cdot\sqrt[3]x}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 2, 1 b)
+
+- **a)** $\sqrt[6]{x^2}$
+- **b)** $\sqrt[3]{x^2}$
+- **c)** $\sqrt[6]x$
+- **d)** $\sqrt[9]{x^4}$
+- **e)** $\sqrt[9]{x^2}$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\sqrt[9]{x^4}$. $\left(x^{\frac43}\right)^{\frac13}$.
+
+</details>
+
+### `vut-fsi-2014-z7-02` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 2, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $a>0$, pak $\sqrt{\left[\dfrac{\sqrt a}{\sqrt[3]{a^2}}\right]^{-1}}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 2, 1 b)
+
+- **a)** $a$
+- **b)** $\sqrt[12]a$
+- **c)** $\dfrac1{\sqrt a}$
+- **d)** $\sqrt[3]a$
+- **e)** $\sqrt[4]a$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt[12]a$. $\left(a^{\frac16}\right)^{\frac12}$.
+
+</details>
+
+### `vut-fsi-2014-z9-02` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 2, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $x>0$, pak $\sqrt{x\cdot\sqrt[3]x}:\sqrt[3]{x\sqrt x}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 2, 1 b)
+
+- **a)** $x^6$
+- **b)** $\sqrt[6]x$
+- **c)** $x^{-6}$
+- **d)** $\sqrt[3]x$
+- **e)** $x^3$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt[6]x$. $x^{\frac23}:x^{\frac12}=x^{\frac16}$.
+
+</details>
+
+### `vut-fsi-2014-z10-02` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 2, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+$\sqrt[5]{\dfrac4{\sqrt[3]2}}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 2, 1 b)
+
+- **a)** $\sqrt[3]2$
+- **b)** $\sqrt2$
+- **c)** $\sqrt[5]2$
+- **d)** $\sqrt[5]{2^3}$
+- **e)** $\sqrt[15]2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\sqrt[3]2$. $\left(2^{2-\frac13}\right)^{\frac15}=2^{\frac13}$.
+
+</details>
+
+### `vut-fsi-2014-z6-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Výraz $\sqrt y\cdot\sqrt[3]{y^{-2}}\cdot\sqrt[6]{y^3}$ je pro $y>0$ roven
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 16, 2 b)
+
+- **a)** $\sqrt[6]y$
+- **b)** $\sqrt[3]y$
+- **c)** $y\sqrt y$
+- **d)** $\sqrt{y^{-1}}$
+- **e)** $-\sqrt[6]y$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt[3]y$. $y^{\frac12-\frac23+\frac12}$.
 
 </details>
 
@@ -762,6 +1102,66 @@ Nalezněte řešení soustavy rovnic $3(x+2)-4(y+x)=7$ a $2x-(x-4y)=-1$ a rozhod
 
 </details>
 
+### `vut-fsi-2014-z6-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Soustava rovnic $2x-3y+2=0;x=\dfrac32y$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 3, 1 b)
+
+- **a)** má jedno řešení
+- **b)** nemá řešení
+- **c)** má nekonečně mnoho řešení
+- **d)** má dvě řešení
+- **e)** má řešení $(0;0)$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — nemá řešení. Dosazením $2=0$ — spor.
+
+</details>
+
+### `vut-fsi-2014-z10-04` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 4, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Rovnice $(2x-10)\left(x+\dfrac12\right)=0$ má kořeny:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 4, 1 b)
+
+- **a)** $10;\ 1$
+- **b)** $10;\ 12$
+- **c)** $-10;\ \dfrac12$
+- **d)** $-5;\ \dfrac12$
+- **e)** $5;\ -\dfrac12$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $5;\ -\dfrac12$
+
+</details>
+
+### `vut-fsi-2014-z2-17` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 17, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Je-li $x^3-(2x)^2=0;x\neq0$, pak $8x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 17, 2 b)
+
+- **a)** $0{,}5$
+- **b)** $18$
+- **c)** $12$
+- **d)** $1$
+- **e)** $32$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $32$. $x^2(x-4)=0$, $x=4$.
+
+</details>
+
 ### `fel-vzor01-14` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 14, 2 body)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-vzor01.pdf)
 
 *Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 4, úloha 20 (upravená verze v lekci 3, úloha 20)
@@ -777,6 +1177,102 @@ Rovnice $x^2-(p+1)x+4=0$ (s neznámou $x$) nemá reálný kořen právě tehdy, 
 <details><summary>Ответ и решение</summary>
 
 **c** — $p\in(-5,3)$. $D=(p+1)^2-16=(p+5)(p-3)<0$.
+
+</details>
+
+### `vut-fsi-2014-z1-04` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 4, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2+ax+4=0$ má právě jedno řešení pro
+
+- **a)** $a=0$
+- **b)** $a=2$
+- **c)** $a=-2$
+- **d)** $a=4$
+- **e)** $a=\pm4$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $a=\pm4$. $D=a^2-16=0$.
+
+</details>
+
+### `vut-fsi-2014-z8-04` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 4, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2-mx-4=0$ má dva různé reálné kořeny pro
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 4, 1 b)
+
+- **a)** $m\ge0$
+- **b)** $m>4$
+- **c)** každé reálné $m$
+- **d)** $m=0$
+- **e)** $m<0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — každé reálné $m$. $D=m^2+16>0$.
+
+</details>
+
+### `vut-fsi-2017-z2-04` — [FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 4, 1 bod)](https://vut.cz/pomocne2018/f69785/d158882/p149140)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2+ax+4=0$ má dvojnásobný kořen pro
+
+- **a)** $a=0$
+- **b)** $a=2$
+- **c)** $a=-2$
+- **d)** $a=4$
+- **e)** $a=\pm4$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $a=\pm4$. $D=a^2-16=0$.
+
+</details>
+
+### `vut-fsi-2014-z1-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Je-li $x\neq0$, pak $\dfrac x{|x|}-\dfrac{|x|}x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 1, 1 b)
+
+- **a)** $1$
+- **b)** $0$
+- **c)** $-1$
+- **d)** $2x$
+- **e)** $-2x$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $0$. Oba zlomky jsou rovny $\operatorname{sgn}x$.
+
+</details>
+
+### `vut-fsi-2014-z7-17` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 17, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Všechna reálná řešení rovnice $|x^2-2x+3|=3$ jsou:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 17, 2 b)
+
+- **a)** $x=3$
+- **b)** $x=2$
+- **c)** $x\in\{0;2\}$
+- **d)** $x\in\{-1;0;\}$
+- **e)** rovnice nemá reálné řešení
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x\in\{0;2\}$. $x^2-2x+3>0$, tedy $x^2-2x=0$.
 
 </details>
 
@@ -1052,6 +1548,46 @@ Určete definiční obor funkce zadané předpisem $f:y=\sqrt{\dfrac{x-5}{x-1}}\
 
 </details>
 
+### `vut-fsi-2014-z4-04` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 4, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Řešením nerovnice $x^2-3x\le0$ je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 4, 1 b)
+
+- **a)** $x\in\mathbf R$
+- **b)** $x\le0$
+- **c)** $|x|\le3$
+- **d)** $x\in\langle0;3\rangle$
+- **e)** nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x\in\langle0;3\rangle$. $x(x-3)\le0$.
+
+</details>
+
+### `vut-fsi-2014-z6-17` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 17, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Výraz $\dfrac{2x-4}{9-3x}$ je kladný pro
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 17, 2 b)
+
+- **a)** všechna $x$
+- **b)** $x\in(-\infty;2)$
+- **c)** $x\in(2;3)$
+- **d)** $x>0$
+- **e)** není kladný pro žádné $x$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x\in(2;3)$. $\frac{2(x-2)}{3(3-x)}>0$.
+
+</details>
+
 ### `vut-fekt-2023-v1-05` — [FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 5, 2 body)](https://vut.cz/pomocne2018/f137459/d248394/p249980)
 
 *Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
@@ -1085,6 +1621,146 @@ Množina všech řešení nerovnice $|x-2|\le3$ je
 <details><summary>Ответ и решение</summary>
 
 **b** — $\langle-1,5\rangle$. $-3\le x-2\le3$.
+
+</details>
+
+### `vut-fsi-2014-z1-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Nerovnice $\sqrt{x^2}<1$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 3, 1 b)
+
+- **a)** $|x|<1$
+- **b)** $|x|>1$
+- **c)** $x<1$
+- **d)** $x>1$
+- **e)** $x>-1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $|x|<1$. $\sqrt{x^2}=|x|$.
+
+</details>
+
+### `vut-fsi-2014-z4-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Nerovnice $\sqrt{x^2}>1$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 3, 1 b)
+
+- **a)** $|x|<1$
+- **b)** $|x|>1$
+- **c)** $x<1$
+- **d)** $x>1$
+- **e)** $x>-1$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $|x|>1$. $\sqrt{x^2}=|x|$.
+
+</details>
+
+### `vut-fsi-2014-z7-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Nerovnice $|2x-6|+|x-2|>0$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 3, 1 b)
+
+- **a)** všechna $x\in\mathbf R$
+- **b)** $x\neq2$
+- **c)** $x\neq3$
+- **d)** $x\in(2;3)$
+- **e)** $x\in\langle2;3\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — všechna $x\in\mathbf R$. Součet by byl nulový jen pro $x=3$ a zároveň $x=2$.
+
+</details>
+
+### `vut-fsi-2014-z8-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Řešením nerovnice $|x-3|\ge0$ jsou právě všechna $x$ taková, že
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 3, 1 b)
+
+- **a)** $x>3$
+- **b)** $x\in\mathbf R$
+- **c)** $x<3$
+- **d)** $x\ge0$
+- **e)** $x\ge3$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x\in\mathbf R$
+
+</details>
+
+### `vut-fsi-2014-z9-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Řešením nerovnice $|x-3|\le0$ jsou právě všechna $x$ taková, že
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 3, 1 b)
+
+- **a)** $x>3$
+- **b)** $x\in\mathbf R$
+- **c)** $x<3$
+- **d)** $x\le0$
+- **e)** $x=3$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $x=3$
+
+</details>
+
+### `vut-fsi-2014-z10-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Nerovnice $\sqrt{x^2}-1<0$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 3, 1 b)
+
+- **a)** $|x|<1$
+- **b)** $|x|>1$
+- **c)** $x<1$
+- **d)** $x>1$
+- **e)** $x>-1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $|x|<1$
+
+</details>
+
+### `vut-fsi-2014-z10-17` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 17, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Řešeními nerovnice $|x^2-16|<0$ jsou právě všechna $x$, pro která je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 17, 2 b)
+
+- **a)** $x>4$
+- **b)** $x>0$
+- **c)** $x<4$
+- **d)** $x>-4$
+- **e)** nerovnice nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**e** — nerovnice nemá řešení
 
 </details>
 
@@ -1301,6 +1977,66 @@ Kolik řešení má v reálném oboru rovnice $\sqrt{x+6}=-x$?
 <details><summary>Ответ и решение</summary>
 
 **a** — $\{2\}$. $10-5x=(x-2)^2\Rightarrow x^2+x-6=0$, $x=2$ nebo $x=-3$; podmínka $x\ge2$ ponechá $x=2$.
+
+</details>
+
+### `vut-fsi-2014-z3-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Rovnice $\sqrt{x-2}=\sqrt x$ má řešení v intervalu
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 3, 1 b)
+
+- **a)** $\langle-2;\infty)$
+- **b)** $\langle\sqrt2;\infty)$
+- **c)** nemá řešení
+- **d)** $(2;1)$
+- **e)** $(-\infty;-2\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — nemá řešení. Umocněním $x-2=x$ — spor.
+
+</details>
+
+### `vut-fsi-2014-z5-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Rovnice $\sqrt{x+2}=\sqrt x$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 3, 1 b)
+
+- **a)** $x\in\langle-2;\infty)$
+- **b)** $x\in\langle\sqrt2;\infty)$
+- **c)** nemá řešení
+- **d)** $x\in(2;1)$
+- **e)** $x\in(-\infty;-2\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — nemá řešení. Umocněním $x+2=x$ — spor.
+
+</details>
+
+### `vut-fsi-2014-z2-04` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 4, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešeními nerovnice $\sqrt{x-1}<-1$ jsou všechna $x\in\mathbf R$, pro která platí:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 4, 1 b)
+
+- **a)** $x>1$
+- **b)** $x>0$
+- **c)** $x<-1$
+- **d)** $x>-1$
+- **e)** nerovnice nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**e** — nerovnice nemá řešení. Odmocnina je nezáporná.
 
 </details>
 
@@ -1600,6 +2336,46 @@ Určete definiční obor funkce zadané předpisem $f:y=\dfrac{1}{\sqrt{2x+3}}\,
 
 </details>
 
+### `vut-fsi-2014-z2-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу)
+
+Křivka o rovnici $y=(x-2)(x+3)$ protíná osu x v bodech
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 5, 1 b)
+
+- **a)** $x_1=-2;x_2=3$
+- **b)** $x_1=2;x_2=3$
+- **c)** $x_1=-2;x_2=-3$
+- **d)** $x_1=2;x_2=-3$
+- **e)** osu x neprotíná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x_1=2;x_2=-3$
+
+</details>
+
+### `vut-fsi-2014-z7-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 32. Hyperbola · *Текст:* текст оригинала (по курсу)
+
+Rovnice $y=\dfrac1{x-1}$ je rovnicí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 6, 1 b)
+
+- **a)** elipsy
+- **b)** paraboly
+- **c)** přímky
+- **d)** kružnice
+- **e)** hyperboly
+
+<details><summary>Ответ и решение</summary>
+
+**e** — hyperboly
+
+</details>
+
 ### `vut-fekt-2022-v1-06` — [FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 6, 3 body)](https://vut.cz/pomocne2018/f124247/d232373/p229505)
 
 *Темы:* 10. Exponenciální funkce, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу)
@@ -1828,6 +2604,186 @@ Množina všech řešení rovnice $\left(2^x\right)^2\cdot2^{-3x}=16$ je
 
 </details>
 
+### `vut-fsi-2014-z2-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\left(\dfrac32\right)^x=1$, pak $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 12, 1 b)
+
+- **a)** $1$
+- **b)** $-1$
+- **c)** $0$
+- **d)** $x=\pi$
+- **e)** neexistuje
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $0$
+
+</details>
+
+### `vut-fsi-2014-z3-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\left(\dfrac23\right)^x=1$, pak $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 12, 1 b)
+
+- **a)** $1$
+- **b)** $-1$
+- **c)** $0$
+- **d)** $x=\pi$
+- **e)** neexistuje
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $0$
+
+</details>
+
+### `vut-fsi-2014-z8-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\dfrac{5^x}{2^x}=\dfrac4{25}$, pak
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 12, 1 b)
+
+- **a)** $x=\dfrac52$
+- **b)** $x=-2$
+- **c)** $x=1{,}5$
+- **d)** $x=\dfrac25$
+- **e)** $x=1$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=-2$. $\left(\frac52\right)^x=\left(\frac52\right)^{-2}$.
+
+</details>
+
+### `vut-fsi-2014-z9-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\dfrac{5^x}{2^x}=\dfrac8{125}$, pak
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 12, 1 b)
+
+- **a)** $x=\dfrac52$
+- **b)** $x=-3$
+- **c)** $x=1{,}5$
+- **d)** $x=\dfrac25$
+- **e)** $x=3$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=-3$. $\left(\frac52\right)^x=\left(\frac25\right)^3$.
+
+</details>
+
+### `vut-fsi-2014-z1-13` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 13, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením nerovnice $2^x>1$ jsou právě všechna $x\in\mathbf R$, pro která platí:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 13, 1 b)
+
+- **a)** $x>2$
+- **b)** $x>3$
+- **c)** $x>\log_22$
+- **d)** $x>0$
+- **e)** $x<1$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x>0$
+
+</details>
+
+### `vut-fsi-2014-z4-13` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 13, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešeními nerovnice $3^{x-2}\le1$ jsou právě všechna $x\in\mathbf R$, pro která platí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 13, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 13, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 13, 1 b)
+
+- **a)** $x\ge0$
+- **b)** $x\ge2$
+- **c)** $x\le2$
+- **d)** $x\le-2$
+- **e)** $2\le x\le3$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x\le2$
+
+</details>
+
+### `vut-fsi-2014-z6-13` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 13, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $16\sqrt2=2^{x+1}$, pak $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 13, 1 b)
+
+- **a)** $1$
+- **b)** $3{,}5$
+- **c)** $3/5$
+- **d)** $0{,}5$
+- **e)** žádná odpověď není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $3{,}5$. $2^{4{,}5}=2^{x+1}$.
+
+</details>
+
+### `vut-fsi-2014-z10-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, Ostatní · *Текст:* текст оригинала (по курсу)
+
+Při průchodu skleněnou deskou ztrácí světelný paprsek pětinu energie. Při průchodu pěti těmito deskami mu zůstane
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 14, 1 b)
+
+- **a)** $\dfrac12$ energie
+- **b)** $\left(\dfrac15\right)^5$ energie
+- **c)** $\left(\dfrac54\right)^5$ energie
+- **d)** $\left(\dfrac45\right)^5$ energie
+- **e)** nezůstane žádná energie
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\left(\dfrac45\right)^5$ energie
+
+</details>
+
+### `vut-fsi-2014-z8-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\left(\dfrac34\right)^{x-1}=0$, pak $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 20, 2 b)
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $-1$
+- **d)** $\dfrac43$
+- **e)** rovnice nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**e** — rovnice nemá řešení. Exponenciála je kladná.
+
+</details>
+
 ### `vscht-01` — [VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 1, 1 bod)](https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf)
 
 *Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -2004,6 +2960,146 @@ Graf funkce $f(x)=\log(x+1)+3$ je oproti grafu funkce $y=\log x$ posunutý
 
 </details>
 
+### `vut-fsi-2014-z1-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 12. Logaritmická funkce, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу)
+
+Je-li $f(x)=[\log(3x-1)]^2$, pak $f\left(\dfrac13\right)=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 12, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 12, 1 b)
+
+- **a)** $0$
+- **b)** $1$
+- **c)** není definováno
+- **d)** $10$
+- **e)** $100$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — není definováno. $3\cdot\frac13-1=0$, $\log0$ neexistuje.
+
+</details>
+
+### `vut-fsi-2014-z5-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 12. Logaritmická funkce, 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+$\log_2\sqrt[5]{2^2}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 12, 1 b)
+
+- **a)** $0{,}4$
+- **b)** $0{,}2$
+- **c)** $-0{,}1$
+- **d)** $-0{,}4$
+- **e)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $0{,}4$. $\log_22^{\frac25}$.
+
+</details>
+
+### `vut-fsi-2014-z6-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Definičním oborem funkce $y=\dfrac12\log(3-x)$ je množina všech $x\in\mathbf R$, pro které platí:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 12, 1 b)
+
+- **a)** $x>0$
+- **b)** $x>\dfrac32$
+- **c)** $x<\dfrac32$
+- **d)** $x\le3$
+- **e)** $x<3$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $x<3$
+
+</details>
+
+### `vut-fsi-2014-z7-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+$\log\dfrac{\sqrt[3]5}{\sqrt[4]5}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 12, 1 b)
+
+- **a)** $\dfrac1{12}(1+\log2)$
+- **b)** $-\dfrac1{12}\log5$
+- **c)** $\dfrac1{12}\log5$
+- **d)** $\log\sqrt5$
+- **e)** $-\log\sqrt5$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\dfrac1{12}\log5$. $5^{\frac13-\frac14}=5^{\frac1{12}}$.
+
+</details>
+
+### `vut-fsi-2014-z2-13` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 13, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+$\log_3(\log_33)=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 13, 1 b)
+
+- **a)** $1$
+- **b)** $3$
+- **c)** $0$
+- **d)** $3^{-1}$
+- **e)** $-1$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $0$. $\log_31=0$.
+
+</details>
+
+### `vut-fsi-2014-z5-13` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 13, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Definičním oborem funkce $y=3\log(x+2)$ je množina všech $x\in\mathbf R$, pro která platí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 13, 1 b)
+
+- **a)** $x>0$
+- **b)** $x>\dfrac32$
+- **c)** $x>-\dfrac32$
+- **d)** $x>2$
+- **e)** $x>-2$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $x>-2$
+
+</details>
+
+### `vut-fsi-2014-z4-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+$\ln\dfrac{\sqrt2}{\sqrt[3]4}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 20, 2 b)
+
+- **a)** $\dfrac13\ln2$
+- **b)** $-\dfrac16\ln2$
+- **c)** $\sqrt2$
+- **d)** $\dfrac16\ln2$
+- **e)** $-\sqrt2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $-\dfrac16\ln2$. $2^{\frac12-\frac23}=2^{-\frac16}$.
+
+</details>
+
 ### `vsb-fbi-2015-pz25-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
 
 *Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -2067,6 +3163,46 @@ $x=1$ (podmínka $x>\frac34$). $4x-3=(2x-1)^2\Rightarrow(x-1)^2=0$.
 <details><summary>Ответ и решение</summary>
 
 **d** — $2$. Podmínky $1<x<3$; $\frac{4x-4}{3-x}=4\Rightarrow x=2$.
+
+</details>
+
+### `vut-fsi-2014-z7-13` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 13, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\log_3x<1$, pak
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 13, 1 b)
+
+- **a)** $x<1$
+- **b)** $x>1$
+- **c)** $x<3$
+- **d)** $x>0$
+- **e)** $0<x<3$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $0<x<3$
+
+</details>
+
+### `vut-fsi-2014-z5-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Rovnice $\log x^3+1=\log x-1$ má řešení $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 20, 2 b)
+
+- **a)** $10$
+- **b)** $10^{-1}$
+- **c)** $10^0$
+- **d)** $10^{-2}$
+- **e)** $10^{-3}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $10^{-1}$. $2\log x=-2$.
 
 </details>
 
@@ -2164,6 +3300,266 @@ Nalezněte obor hodnot funkce $f(x)=2\sin\left(3x-\dfrac{\pi}{2}\right)-4\,.$
 
 </details>
 
+### `vut-fsi-2014-z3-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Je-li $\sin x=\dfrac35;x\in\left\langle0;\dfrac\pi2\right\rangle$, pak $\cos x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 8, 1 b)
+
+- **a)** $\dfrac25$
+- **b)** $\dfrac45$
+- **c)** $\dfrac7{12}$
+- **d)** $\dfrac{16}{25}$
+- **e)** $-\dfrac45$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\dfrac45$. $\cos x=\sqrt{1-\frac9{25}}$, v prvním kvadrantu kladný.
+
+</details>
+
+### `vut-fsi-2014-z4-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+$(\cos x-\sin x)^2=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 8, 1 b)
+
+- **a)** $1-\sin2x$
+- **b)** $1$
+- **c)** $\cos^2x-\sin^2x$
+- **d)** $1-\cos2x$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1-\sin2x$
+
+</details>
+
+### `vut-fsi-2014-z5-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Je-li $\sin\alpha=0{,}5$, pak $\cos2\alpha=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 8, 1 b)
+
+- **a)** $1$
+- **b)** $2$
+- **c)** $0{,}5$
+- **d)** $-0{,}5$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $0{,}5$. $1-2\sin^2\alpha$.
+
+</details>
+
+### `vut-fsi-2014-z9-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Je-li $\operatorname{tg}\alpha=1$, pak $\operatorname{cotg}2\alpha=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 8, 1 b)
+
+- **a)** $1$
+- **b)** $2$
+- **c)** $0$
+- **d)** $-1$
+- **e)** neexistuje
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $0$. $2\alpha=\frac\pi2+2k\pi$.
+
+</details>
+
+### `vut-fsi-2014-z1-09` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 9, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+$(\sin x-\cos x)^2=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 9, 1 b)
+
+- **a)** $1-\sin2x$
+- **b)** $1$
+- **c)** $\cos^2x-\sin^2x$
+- **d)** $1-\cos2x$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1-\sin2x$. $\sin^2x+\cos^2x-2\sin x\cos x$.
+
+</details>
+
+### `vut-fsi-2014-z3-09` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 9, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Je-li $\sin x=1$, pak $\sin2x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 9, 1 b)
+
+- **a)** $1$
+- **b)** $0{,}5$
+- **c)** $2$
+- **d)** $-1$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $0$. $\cos x=0$, $\sin2x=2\sin x\cos x=0$.
+
+</details>
+
+### `vut-fsi-2014-z4-09` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 9, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+$\sin^2\alpha-\cos^2\alpha=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 9, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 9, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 9, 1 b)
+
+- **a)** $1$
+- **b)** $-1$
+- **c)** $\sin2\alpha$
+- **d)** $-\cos2\alpha$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $-\cos2\alpha$
+
+</details>
+
+### `vut-fsi-2014-z6-09` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 9, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Pro všechny přípustné hodnoty platí $1+\operatorname{cotg}^2\alpha=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 9, 1 b)
+
+- **a)** $\dfrac1{\sin^2\alpha}$
+- **b)** $\dfrac1{\cos^2\alpha}$
+- **c)** $\dfrac1{\cos\alpha}$
+- **d)** $\dfrac1{\sin\alpha}$
+- **e)** $\operatorname{tg}\alpha$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac1{\sin^2\alpha}$
+
+</details>
+
+### `vut-fsi-2014-z9-09` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 9, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Pro všechny přípustné hodnoty platí $1+\operatorname{tg}^2\alpha=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 9, 1 b)
+
+- **a)** $\dfrac1{\sin^2\alpha}$
+- **b)** $\dfrac1{\cos^2\alpha}$
+- **c)** $\dfrac1{\cos\alpha}$
+- **d)** $\dfrac1{\sin\alpha}$
+- **e)** $\operatorname{cotg}\alpha$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\dfrac1{\cos^2\alpha}$
+
+</details>
+
+### `vut-fsi-2014-z6-19` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 19, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Výraz $1-\cos2x$ lze upravit na tvar
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 19, 2 b)
+
+- **a)** $0$
+- **b)** $2\sin x$
+- **c)** $2\sin2x$
+- **d)** $\sin^2x$
+- **e)** $2\sin^2x$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $2\sin^2x$
+
+</details>
+
+### `vut-fsi-2014-z7-19` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 19, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Výraz $1-\sin2x$ lze upravit na tvar
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 19, 2 b)
+
+- **a)** $0$
+- **b)** $2\cos x$
+- **c)** $2\sin2x$
+- **d)** $(\sin x+\cos x)^2$
+- **e)** $(\sin x-\cos x)^2$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $(\sin x-\cos x)^2$
+
+</details>
+
+### `vut-fsi-2014-z8-19` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 19, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Nejmenší perioda funkce $y=\operatorname{cotg}2x$ je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 19, 2 b)
+
+- **a)** $3\pi$
+- **b)** $2\pi$
+- **c)** $\pi$
+- **d)** $\dfrac\pi2$
+- **e)** $\dfrac\pi4$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac\pi2$
+
+</details>
+
+### `vut-fsi-2014-z9-19` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 19, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Nejmenší perioda funkce $y=\operatorname{tg}2x$ je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 19, 2 b)
+
+- **a)** $3\pi$
+- **b)** $2\pi$
+- **c)** $\pi$
+- **d)** $\dfrac\pi2$
+- **e)** $\dfrac\pi4$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac\pi2$
+
+</details>
+
 ### `vscht-04` — [VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 4, 1 bod)](https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf)
 
 *Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
@@ -2214,6 +3610,186 @@ Množina všech řešení rovnice $2\cos^2x=1$, která leží v intervalu $\lang
 <details><summary>Ответ и решение</summary>
 
 **b** — $\{\pi/4,3\pi/4,5\pi/4,7\pi/4\}$. $\cos x=\pm\frac{\sqrt2}2$.
+
+</details>
+
+### `vut-fsi-2014-z1-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\sin2x=\dfrac{\sqrt3}2$, $x\in\left\langle0;\dfrac\pi4\right\rangle$, pak $\operatorname{tg}x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 8, 1 b)
+
+- **a)** $-\sqrt3$
+- **b)** $1$
+- **c)** neexistuje
+- **d)** $\dfrac{\sqrt3}3$
+- **e)** $\sqrt3$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac{\sqrt3}3$. $2x=\frac\pi3$, $x=\frac\pi6$.
+
+</details>
+
+### `vut-fsi-2014-z2-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\sin2x=\dfrac\pi2$, pak
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 8, 1 b)
+
+- **a)** $x=1$
+- **b)** $x=\dfrac12$
+- **c)** $x=\dfrac{\sqrt2}2$
+- **d)** $x=45^\circ$
+- **e)** $x$ neexistuje
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $x$ neexistuje. $\frac\pi2>1$.
+
+</details>
+
+### `vut-fsi-2014-z6-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\cos2x=\dfrac\pi2$, pak
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 8, 1 b)
+
+- **a)** $x=1$
+- **b)** $x=\dfrac12$
+- **c)** $x=\dfrac{\sqrt2}2$
+- **d)** $x=45^\circ$
+- **e)** $x$ neexistuje
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $x$ neexistuje. $\frac\pi2>1$.
+
+</details>
+
+### `vut-fsi-2014-z7-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením rovnice $\sin x+\sin(-x)=0$ jsou právě všechna $x\in\mathbf R$, pro která platí ($k$ je celé číslo)
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 8, 1 b)
+
+- **a)** $x\neq\pi+2k\pi$
+- **b)** $x\neq\dfrac\pi2+k\pi$
+- **c)** $x\in\mathbf R$
+- **d)** rovnice nemá řešení
+- **e)** $x\neq360^\circ$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x\in\mathbf R$. Sinus je lichý, rovnost platí vždy.
+
+</details>
+
+### `vut-fsi-2014-z8-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Rovnice $\cos^2x-\sin^2x=2$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 8, 1 b)
+
+- **a)** $x=1$
+- **b)** $x=\dfrac\pi2$
+- **c)** $x=-1$
+- **d)** nemá řešení
+- **e)** $x=\pi$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — nemá řešení. Levá strana je $\cos2x\le1$.
+
+</details>
+
+### `vut-fsi-2014-z7-09` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 9, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\sin x=\cos x$, $x\in\langle0;\pi\rangle$, potom
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 9, 1 b)
+
+- **a)** $x=0$
+- **b)** $x=\dfrac\pi4$
+- **c)** $x=\dfrac\pi2$
+- **d)** $x=\dfrac{3\pi}4$
+- **e)** $x=\pi$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=\dfrac\pi4$. $\operatorname{tg}x=1$.
+
+</details>
+
+### `vut-fsi-2014-z10-09` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 9, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\sin3x=\dfrac\pi3$, pak
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 9, 1 b)
+
+- **a)** $x=1$
+- **b)** $x=\dfrac13$
+- **c)** $x=\dfrac{\sqrt2}3$
+- **d)** $x=45^\circ$
+- **e)** $x$ neexistuje
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $x$ neexistuje. $\frac\pi3>1$.
+
+</details>
+
+### `vut-fsi-2014-z1-19` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 19, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením rovnice $\dfrac1{\cos x}=0$ jsou právě všechna $x$, pro která je ($k$ je celé číslo):
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 19, 2 b)
+
+- **a)** $x=2k\pi$
+- **b)** $x=k\pi$
+- **c)** $x=\dfrac\pi2+k\pi$
+- **d)** $x=\dfrac\pi2+2k\pi$
+- **e)** rovnice nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**e** — rovnice nemá řešení. Zlomek s čitatelem $1$ nulový být nemůže.
+
+</details>
+
+### `vut-fsi-2014-z3-19` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 19, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením rovnice $\dfrac1{\sin x}=0$ jsou právě všechna $x$, pro která je ($k$ je celé číslo):
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 19, 2 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 19, 2 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 19, 2 b)
+
+- **a)** $x=2k\pi$
+- **b)** $x=k\pi$
+- **c)** $x=\dfrac\pi2+k\pi$
+- **d)** $x=\dfrac\pi2+2k\pi$
+- **e)** rovnice nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**e** — rovnice nemá řešení. Zlomek s čitatelem $1$ nulový být nemůže.
 
 </details>
 
@@ -2304,6 +3880,222 @@ Zapište v algebraickém tvaru číslo $z=(3+2i)^2\,.$
 <details><summary>Ответ и решение</summary>
 
 **a** — $z=5+12i$. $9+12i+4i^2=5+12i$.
+
+</details>
+
+### `vut-fsi-2014-z3-04` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 4, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Rovnice $3x^2+5x+20=0$ má kořeny
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 4, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 4, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 4, 1 b)
+
+- **a)** dva reálné různé
+- **b)** jeden reálný
+- **c)** jeden komplexní
+- **d)** dva komplexně sdružené
+- **e)** nemá kořeny
+
+<details><summary>Ответ и решение</summary>
+
+**d** — dva komplexně sdružené. $D=25-240<0$.
+
+</details>
+
+### `vut-fsi-2014-z6-04` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 4, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Rovnice $3x^2+5x+30=0$ má kořeny
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 4, 1 b)
+
+- **a)** dva reálné různé
+- **b)** jeden reálný
+- **c)** jeden komplexní
+- **d)** dva komplexně sdružené
+- **e)** nemá kořeny
+
+<details><summary>Ответ и решение</summary>
+
+**d** — dva komplexně sdružené. $D=25-360<0$.
+
+</details>
+
+### `vut-fsi-2014-z1-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Komplexní číslo $\dfrac{1-i}{1+i}$ je rovno
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 11, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 11, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 11, 1 b)
+
+- **a)** $1$
+- **b)** $i$
+- **c)** $-i$
+- **d)** $0$
+- **e)** $-1$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $-i$. $\frac{(1-i)^2}{2}=\frac{-2i}2$.
+
+</details>
+
+### `vut-fsi-2014-z3-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Dělením komplexních čísel $\dfrac{1+i}i$ obdržíme
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 11, 1 b)
+
+- **a)** $1-i$
+- **b)** $1+i$
+- **c)** $-1+i$
+- **d)** $-1-i$
+- **e)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1-i$. $\frac{(1+i)(-i)}{1}=1-i$.
+
+</details>
+
+### `vut-fsi-2014-z5-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Je-li $z=3-4i$ komplexní číslo, pak jeho absolutní hodnota $|z|=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 11, 1 b)
+
+- **a)** $4i$
+- **b)** $-4i$
+- **c)** $3$
+- **d)** $4$
+- **e)** $5$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $5$. $\sqrt{9+16}$.
+
+</details>
+
+### `vut-fsi-2014-z6-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Komplexní číslo $\dfrac{1+i}{1-i}$ je rovno
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 11, 1 b)
+
+- **a)** $1$
+- **b)** $i$
+- **c)** $-i$
+- **d)** $0$
+- **e)** $-1$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $i$. $\frac{(1+i)^2}2=i$.
+
+</details>
+
+### `vut-fsi-2014-z7-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+$i^{2014}=$
+
+- **a)** $1$
+- **b)** $i$
+- **c)** $-1$
+- **d)** $-i$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $-1$. $2014=4\cdot503+2$.
+
+</details>
+
+### `vut-fsi-2014-z8-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Číslo komplexně sdružené k $z=3-4i$ je $\overline z=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 11, 1 b)
+
+- **a)** $-3-4i$
+- **b)** $-3+4i$
+- **c)** $3+4i$
+- **d)** $-4+3i$
+- **e)** $4+3i$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $3+4i$
+
+</details>
+
+### `vut-fsi-2014-z9-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+$i+i^3+i^5+i^7+i^9=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 11, 1 b)
+
+- **a)** $i$
+- **b)** $-i$
+- **c)** $1$
+- **d)** $-1$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $i$. $i-i+i-i+i$.
+
+</details>
+
+### `vut-fsi-2017-z2-11` — [FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 11, 1 bod)](https://vut.cz/pomocne2018/f69785/d158882/p149140)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+$i^{2017}=$
+
+- **a)** $1$
+- **b)** $i$
+- **c)** $-1$
+- **d)** $-i$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $i$. $2017=4\cdot504+1$.
+
+</details>
+
+### `vut-fsi-2014-z2-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 17. Goniometrický tvar komplexního čísla. Moivreova věta, 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Komplexní číslo $\cos\pi+i\cdot\sin\pi$ je rovno
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 11, 1 b)
+
+- **a)** $1$
+- **b)** $i$
+- **c)** $-1$
+- **d)** $-i$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $-1$
 
 </details>
 
@@ -2431,6 +4223,86 @@ V aritmetické posloupnosti je dáno $a_1=0$, diference $d=3$ a $s_n=165$. Urče
 
 </details>
 
+### `vut-fsi-2014-z1-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+Součet všech lichých čísel od 1 do 99 je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 14, 1 b)
+
+- **a)** $1250$
+- **b)** $3200$
+- **c)** $5050$
+- **d)** $2500$
+- **e)** $1800$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $2500$. $50$ členů, $\frac{50(1+99)}2=2500$.
+
+</details>
+
+### `vut-fsi-2014-z2-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+Aritmetická posloupnost, která má $a_1=3;d=\dfrac12$; má jedenáctý člen roven
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 14, 1 b)
+
+- **a)** $a_{11}=\dfrac{17}2$
+- **b)** $a_{11}=19$
+- **c)** $a_{11}=17$
+- **d)** $a_{11}=8$
+- **e)** $a_{11}=9$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $a_{11}=8$. $3+10\cdot\frac12$.
+
+</details>
+
+### `vut-fsi-2014-z3-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+Mezi čísla 15 a 27 je vloženo pět čísel tak, že těchto sedm čísel tvoří aritmetickou posloupnost. Prvním vloženým číslem je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 14, 1 b)
+
+- **a)** $16$
+- **b)** $17$
+- **c)** $18$
+- **d)** $20$
+- **e)** $22$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $17$. $6d=12$, $d=2$.
+
+</details>
+
+### `vut-fsi-2014-z9-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+Součet všech sudých čísel od 2 do 100 je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 14, 1 b)
+
+- **a)** $1250$
+- **b)** $2550$
+- **c)** $5050$
+- **d)** $2500$
+- **e)** $1800$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $2550$. $\frac{50(2+100)}2$.
+
+</details>
+
 ### `vscht-03` — [VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 3, 1 bod)](https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf)
 
 *Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
@@ -2518,6 +4390,66 @@ Geometrická posloupnost má první člen $a_1=2$, druhý člen je kladný a sou
 
 </details>
 
+### `vut-fsi-2014-z4-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
+
+$n$-tý člen geometrické posloupnosti $a_1=4;q=3$ je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 14, 1 b)
+
+- **a)** $a_n=\left(\dfrac43\right)^n$
+- **b)** $a_n=4\cdot3^{n-1}$
+- **c)** $a_n=3\cdot4^{n-1}$
+- **d)** $a_n=3\cdot4^{n+1}$
+- **e)** $a_n=3\cdot4^n$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $a_n=4\cdot3^{n-1}$
+
+</details>
+
+### `vut-fsi-2014-z6-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
+
+Geometrická posloupnost, která má $a_1=2$ a kvocient $q=-1$ má dvacátý člen
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 14, 1 b)
+
+- **a)** $12$
+- **b)** $-2$
+- **c)** $-24$
+- **d)** $24$
+- **e)** $2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $-2$. $2\cdot(-1)^{19}$.
+
+</details>
+
+### `vut-fsi-2014-z8-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
+
+$n$-tý člen geometrické posloupnosti $a_1=3;q=4$ je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 14, 1 b)
+
+- **a)** $a_n=\left(\dfrac43\right)^n$
+- **b)** $a_n=4\cdot3^{n-1}$
+- **c)** $a_n=3\cdot4^{n-1}$
+- **d)** $a_n=3\cdot4^{n+1}$
+- **e)** $a_n=3\cdot4^n$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $a_n=3\cdot4^{n-1}$
+
+</details>
+
 ### `fit-2026-11` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 11, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
 
 *Темы:* 21. Kombinatorika. Faktoriál · *Текст:* текст оригинала (по курсу)
@@ -2535,6 +4467,26 @@ Kolika způsoby je možné vybrat čtyřciferné číslo tak, aby bylo děliteln
 <details><summary>Ответ и решение</summary>
 
 **e** — $1800$. Každé páté z $9000$ čtyřciferných čísel.
+
+</details>
+
+### `vut-fsi-2014-z4-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 21. Kombinatorika. Faktoriál · *Текст:* текст оригинала (по курсу)
+
+$\dfrac{2!+4!}{6!}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 10, 1 b)
+
+- **a)** $1$
+- **b)** $3$
+- **c)** $\dfrac13$
+- **d)** $\dfrac{13}{360}$
+- **e)** $\dfrac{360}{13}$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac{13}{360}$. $\frac{26}{720}$.
 
 </details>
 
@@ -2589,6 +4541,166 @@ Kolik znaků Morseovy abecedy lze vytvořit, sestavují-li se tečky a čárky v
 <details><summary>Ответ и решение</summary>
 
 **a** — $62$. $2+4+8+16+32=62$.
+
+</details>
+
+### `vut-fsi-2014-z2-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 22. Variace. Permutace. Kombinace, 21. Kombinatorika. Faktoriál · *Текст:* текст оригинала (по курсу)
+
+Kolika způsoby lze rozmíchat balíček 32 karet?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 10, 1 b)
+
+- **a)** $32^2$
+- **b)** $2^{32}$
+- **c)** $32!$
+- **d)** $16!$
+- **e)** nelze určit
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $32!$. Permutace 32 prvků.
+
+</details>
+
+### `vut-fsi-2014-z3-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Kolik pěticiferných čísel sestavíme z cifer 1, 2, 3, 4, 5, nemá-li se žádná opakovat?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 10, 1 b)
+
+- **a)** $50$
+- **b)** $100$
+- **c)** $120$
+- **d)** $500$
+- **e)** $1\,200$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $120$. $5!=120$.
+
+</details>
+
+### `vut-fsi-2014-z5-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Kolika způsoby lze rozesadit 22 studentů na 22 míst v učebně?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 10, 1 b)
+
+- **a)** $2^{22}$
+- **b)** $22^2$
+- **c)** $21!$
+- **d)** $22!$
+- **e)** nelze určit
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $22!$
+
+</details>
+
+### `vut-fsi-2014-z10-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Kolik různých trojúhelníků je možné sestrojit, vybíráme-li jejich vrcholy z pěti různých bodů, z nichž žádné tři neleží na jedné přímce?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 10, 1 b)
+
+- **a)** $5$
+- **b)** $6$
+- **c)** $8$
+- **d)** $10$
+- **e)** $12$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $10$. $\binom53$.
+
+</details>
+
+### `vut-fsi-2014-z10-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Deset šachistů má hrát každý s každým jednu partii. Kolik partií bude na turnaji celkem sehráno?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 15, 1 b)
+
+- **a)** $10$
+- **b)** $45$
+- **c)** $90$
+- **d)** $99$
+- **e)** $100$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $45$. $\binom{10}2$.
+
+</details>
+
+### `vut-fsi-2014-z1-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 23. Kombinační číslo. Binomická věta · *Текст:* текст оригинала (по курсу)
+
+$\dbinom73-\dbinom63=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 10, 1 b)
+
+- **a)** $\dbinom60$
+- **b)** $\dbinom10$
+- **c)** $\dbinom62$
+- **d)** $1$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\dbinom62$. $35-20=15=\binom62$.
+
+</details>
+
+### `vut-fsi-2014-z8-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 23. Kombinační číslo. Binomická věta · *Текст:* текст оригинала (по курсу)
+
+$\dbinom{10}8+\dbinom{10}9=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 10, 1 b)
+
+- **a)** $\dbinom{11}2$
+- **b)** $\dbinom{11}8$
+- **c)** $\dbinom{20}{17}$
+- **d)** $\dbinom{10}{17}$
+- **e)** $110$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dbinom{11}2$. $\binom{11}9=\binom{11}2$.
+
+</details>
+
+### `vut-fsi-2014-z9-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 23. Kombinační číslo. Binomická věta · *Текст:* текст оригинала (по курсу)
+
+$\dbinom{15}{14}\cdot\dbinom{14}{14}\cdot\dbinom{14}{13}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 10, 1 b)
+
+- **a)** $2730$
+- **b)** $0$
+- **c)** $200$
+- **d)** $1650$
+- **e)** $210$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $210$. $15\cdot1\cdot14$.
 
 </details>
 
@@ -2906,6 +5018,24 @@ Rovnice přímky procházející body $A=[1,3]$ a $B=[-1,4]$ je
 
 </details>
 
+### `vut-fsi-2014-z8-06` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 6, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Rovnice přímky procházející bodem $A=[-2;3]$ a počátkem souřadné soustavy je
+
+- **a)** $x+y-1=0$
+- **b)** $3x+2y=0$
+- **c)** $2x+3y=0$
+- **d)** $3x-2y=0$
+- **e)** $x+2y-3=0$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $3x+2y=0$. Směr $(-2,3)$, normála $(3,2)$.
+
+</details>
+
 ### `vscht-07` — [VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 7, 2 body)](https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf)
 
 *Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
@@ -3027,6 +5157,66 @@ Určete hodnoty parametrů $a$, $b$ tak, aby přímky $p:ax+4y+1=0$ a $q:3x+2y-b
 
 </details>
 
+### `vut-fsi-2014-z6-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Přímky o rovnicích $2x-3y+13=0;\ 3x+2y-12=0$ jsou
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 5, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 5, 1 b)
+
+- **a)** rovnoběžné různé
+- **b)** rovnoběžné
+- **c)** kolmé
+- **d)** totožné
+- **e)** mimoběžné
+
+<details><summary>Ответ и решение</summary>
+
+**c** — kolmé. Normály $(2,-3)\cdot(3,2)=0$.
+
+</details>
+
+### `vut-fsi-2014-z5-06` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 6, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 28. Vzájemná poloha přímek, 26. Parametrická rovnice přímky, 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Přímky v rovině o rovnicích $p:2x-5y+13=0$ a $q:x=1+5t,y=3+2t,t\in\mathbf R$ jsou
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 5, 1 b)
+
+- **a)** rovnoběžné různé
+- **b)** splývající
+- **c)** kolmé
+- **d)** mimoběžné
+- **e)** nelze určit
+
+<details><summary>Ответ и решение</summary>
+
+**b** — splývající. Směr $q$ $(5,2)$ je kolmý k normále $p$ a bod $[1,3]$ leží na $p$.
+
+</details>
+
+### `vut-fsi-2014-z7-06` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 6, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Přímky o rovnicích $p:2x-5y+13=0$; $q:2x+5y+13=0$ mají společné právě:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 5, 1 b)
+
+- **a)** dva body
+- **b)** jeden bod
+- **c)** žádný bod
+- **d)** všechny body
+- **e)** nelze rozhodnout
+
+<details><summary>Ответ и решение</summary>
+
+**b** — jeden bod. Normály nejsou rovnoběžné.
+
+</details>
+
 ### `vscht-02` — [VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 2, 1 bod)](https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf)
 
 *Темы:* 28. Vzájemná poloha přímek, 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
@@ -3041,6 +5231,82 @@ Přímky $p\colon x-2=0$ a $q\colon y-2=0$ se protínají v bodě
 <details><summary>Ответ и решение</summary>
 
 **c** — $[2,2]$
+
+</details>
+
+### `vut-fsi-2014-z4-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Přímka, která na ose $x$ vytíná úsek $p=2$ a na ose $y$ úsek $q=3$ má rovnici
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 5, 1 b)
+
+- **a)** $x=2$
+- **b)** $y=3$
+- **c)** $y=2x+3$
+- **d)** $3x+2y-6=0$
+- **e)** $2x+3y=1$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $3x+2y-6=0$. $\frac x2+\frac y3=1$.
+
+</details>
+
+### `vut-fsi-2014-z1-06` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 6, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Rovnice přímky, která svírá s kladným směrem osy $x$ úhel $45^\circ$ a na ose $y$ vytíná úsek $-3$, je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 5, 1 b)
+
+- **a)** $x-y-3=0$
+- **b)** $x-y+3=0$
+- **c)** $x+y+3=0$
+- **d)** $y=-3x$
+- **e)** $x-3y=0$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x-y-3=0$. $y=x-3$.
+
+</details>
+
+### `vut-fsi-2014-z2-06` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 6, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Přímka o rovnici $bx+cy-m=0$ má směrnici
+
+- **a)** $-\dfrac cb$
+- **b)** $-\dfrac bc$
+- **c)** $-\dfrac mc$
+- **d)** $\dfrac mc$
+- **e)** $\dfrac mb$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $-\dfrac bc$. $y=-\frac bcx+\frac mc$.
+
+</details>
+
+### `vut-fsi-2017-z4-05` — [FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 5, 1 bod)](https://vut.cz/pomocne2018/f69785/d158882/p149140)
+
+*Темы:* 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Přímka o rovnici $bx+cy-m=0$; $b;c;m\neq0$; má směrnici
+
+- **a)** $-\dfrac cb$
+- **b)** $-\dfrac bc$
+- **c)** $-\dfrac mc$
+- **d)** $\dfrac mc$
+- **e)** $\dfrac mb$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $-\dfrac bc$. $y=-\frac bcx+\frac mc$.
 
 </details>
 
@@ -3206,6 +5472,126 @@ Poloměr kružnice zadané rovnicí $2x^2+2y^2+16x-12y+20=0$ splňuje:
 
 </details>
 
+### `vut-fsi-2014-z1-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 30. Kuželosečky. Kružnice, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Přímka $p:2x-5y=0$ a křivka $y^2+x^2=1$ mají společné právě:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 5, 1 b)
+
+- **a)** tři body
+- **b)** dva body
+- **c)** jeden bod
+- **d)** žádný bod
+- **e)** všechny body
+
+<details><summary>Ответ и решение</summary>
+
+**b** — dva body. Přímka prochází středem kružnice.
+
+</details>
+
+### `vut-fsi-2014-z3-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 30. Kuželosečky. Kružnice, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Přímka $p:5x-2y=0$ a křivka $y^2+x^2=1$ mají společné právě:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 5, 1 b)
+
+- **a)** tři body
+- **b)** dva body
+- **c)** jeden bod
+- **d)** žádný bod
+- **e)** všechny body
+
+<details><summary>Ответ и решение</summary>
+
+**b** — dva body. Přímka prochází středem kružnice.
+
+</details>
+
+### `vut-fsi-2014-z3-06` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 6, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2+y^2+2x=3$ je rovnicí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 6, 1 b)
+
+- **a)** přímky
+- **b)** dvojice přímek
+- **c)** paraboly
+- **d)** kružnice
+- **e)** hyperboly
+
+<details><summary>Ответ и решение</summary>
+
+**d** — kružnice. $(x+1)^2+y^2=4$.
+
+</details>
+
+### `vut-fsi-2014-z10-06` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 6, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2+y^2-2x=3$ je rovnicí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 6, 1 b)
+
+- **a)** přímky
+- **b)** dvojice přímek
+- **c)** paraboly
+- **d)** kružnice
+- **e)** hyperboly
+
+<details><summary>Ответ и решение</summary>
+
+**d** — kružnice. $(x-1)^2+y^2=4$.
+
+</details>
+
+### `vut-fsi-2014-z10-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 32. Hyperbola · *Текст:* текст оригинала (по курсу)
+
+Rovnice $y^2-x^2-1=0$ je rovnicí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 6, 1 b)
+
+- **a)** hyperboly
+- **b)** paraboly
+- **c)** elipsy
+- **d)** kružnice
+- **e)** přímky
+
+<details><summary>Ответ и решение</summary>
+
+**a** — hyperboly
+
+</details>
+
+### `vut-fsi-2014-z4-06` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 6, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 32. Hyperbola · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2-y^2-2x=3$ je rovnicí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 6, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 6, 1 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 6, 1 b)
+
+- **a)** přímky
+- **b)** dvojice přímek
+- **c)** paraboly
+- **d)** kružnice
+- **e)** hyperboly
+
+<details><summary>Ответ и решение</summary>
+
+**e** — hyperboly. $(x-1)^2-y^2=4$.
+
+</details>
+
 ### `vut-fekt-2023-v1-03` — [FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 3, 2 body)](https://vut.cz/pomocne2018/f137459/d248394/p249980)
 
 *Темы:* 33. Parabola · *Текст:* текст оригинала (по курсу)
@@ -3239,6 +5625,84 @@ Z následujících rovnic vyberte tu, která popisuje parabolu s vrcholem v bod�
 <details><summary>Ответ и решение</summary>
 
 **a** — $y-(x+1)^2=2$. $y=(x+1)^2+2$ má vrchol $[-1,2]$.
+
+</details>
+
+### `vut-fsi-2014-z5-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 33. Parabola · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2+2x+y+1=0$ je rovnicí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 6, 1 b)
+
+- **a)** elipsy
+- **b)** hyperboly
+- **c)** kružnice
+- **d)** úsečky
+- **e)** paraboly
+
+<details><summary>Ответ и решение</summary>
+
+**e** — paraboly. $y=-(x+1)^2$.
+
+</details>
+
+### `vut-fsi-2014-z9-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 33. Parabola · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2-2x-y+1=0$
+
+- **a)** elipsy
+- **b)** hyperboly
+- **c)** kružnice
+- **d)** úsečky
+- **e)** paraboly
+
+<details><summary>Ответ и решение</summary>
+
+**e** — paraboly. $y=(x-1)^2$.
+
+</details>
+
+### `vut-fsi-2014-z6-06` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 6, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 33. Parabola · *Текст:* текст оригинала (по курсу)
+
+Rovnice $y^2-x-1=0$ je rovnicí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 5, 1 b); FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 6, 1 b)
+
+- **a)** hyperboly
+- **b)** paraboly
+- **c)** elipsy
+- **d)** kružnice
+- **e)** přímky
+
+<details><summary>Ответ и решение</summary>
+
+**b** — paraboly. $x=y^2-1$.
+
+</details>
+
+### `vut-fsi-2017-z1-06` — [FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 6, 1 bod)](https://vut.cz/pomocne2018/f69785/d158882/p149140)
+
+*Темы:* 33. Parabola · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2-2x-y+1=0$ je rovnicí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 6, 1 b)
+
+- **a)** elipsy
+- **b)** hyperboly
+- **c)** kružnice
+- **d)** úsečky
+- **e)** paraboly
+
+<details><summary>Ответ и решение</summary>
+
+**e** — paraboly. $y=(x-1)^2$.
 
 </details>
 
@@ -3326,6 +5790,382 @@ V pravoúhlém trojúhelníku je úhel $\alpha=60^\circ$ a délka přepony je $c
 <details><summary>Ответ и решение</summary>
 
 **a** — $8\sqrt3$. Odvěsny $4\sqrt3$ a $4$; obsah $\frac{4\sqrt3\cdot4}2=8\sqrt3$.
+
+</details>
+
+### `vut-fsi-2014-z1-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Střed kružnice trojúhelníku opsané leží v průsečíku
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 7, 1 b)
+
+- **a)** os stran
+- **b)** výšek
+- **c)** os vnitřních úhlů
+- **d)** os vnějších úhlů
+- **e)** těžnic
+
+<details><summary>Ответ и решение</summary>
+
+**a** — os stran
+
+</details>
+
+### `vut-fsi-2014-z3-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Střed kružnice trojúhelníku vepsané leží v průsečíku
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 7, 1 b)
+
+- **a)** os stran
+- **b)** výšek
+- **c)** os vnitřních úhlů
+- **d)** os vnějších úhlů
+- **e)** těžnic
+
+<details><summary>Ответ и решение</summary>
+
+**c** — os vnitřních úhlů
+
+</details>
+
+### `vut-fsi-2014-z4-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Čtyřúhelník, jehož úhlopříčky se půlí a jsou na sebe kolmé, je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 7, 1 b)
+
+- **a)** obdélník
+- **b)** kosočtverec
+- **c)** deltoid
+- **d)** lichoběžník
+- **e)** neexistuje
+
+<details><summary>Ответ и решение</summary>
+
+**b** — kosočtverec
+
+</details>
+
+### `vut-fsi-2014-z5-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Je-li obsah trojúhelníka 20 cm$^2$, pak obsah trojúhelníka sestrojeného z jeho středních příček je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 7, 1 b)
+
+- **a)** $15$ cm$^2$
+- **b)** $10$ cm$^2$
+- **c)** $5$ cm$^2$
+- **d)** $4$ cm$^2$
+- **e)** $20$ cm$^2$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $5$ cm$^2$. Podobnost s koeficientem $\frac12$, obsah čtvrtinový.
+
+</details>
+
+### `vut-fsi-2014-z6-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie, 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Trojúhelník o stranách $a=2;\ b=3$ a úhlu $\gamma=\dfrac\pi3$ má stranu $c=$
+
+- **a)** $7$
+- **b)** $\sqrt7$
+- **c)** $1$
+- **d)** $3$
+- **e)** $\sqrt{13}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt7$. Kosinová věta: $c^2=4+9-12\cdot\frac12=7$.
+
+</details>
+
+### `vut-fsi-2014-z8-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Kruh, čtverec a rovnostranný trojúhelník mají stejný obsah. Nejmenší obvod má:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 7, 1 b)
+
+- **a)** kruh
+- **b)** čtverec
+- **c)** trojúhelník
+- **d)** čtverec a trojúhelník
+- **e)** všechny stejný
+
+<details><summary>Ответ и решение</summary>
+
+**a** — kruh
+
+</details>
+
+### `vut-fsi-2014-z9-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie, 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Je-li $\omega$ úhel sevřený stranami $p;q$ trojúhelníka, pak pro zbývající stranu $r$ platí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 7, 1 b)
+
+- **a)** $r=p+q-2pq\cos\omega$
+- **b)** $r=p+q-2pq\sin\omega$
+- **c)** $r^2=p^2+q^2-2pq\sin\omega$
+- **d)** $r^2=p^2+q^2-2pq\cos\omega$
+- **e)** $r^2=p^2-q^2$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $r^2=p^2+q^2-2pq\cos\omega$. Kosinová věta.
+
+</details>
+
+### `vut-fsi-2014-z5-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Čtverec má plošný obsah $2m^2$. Čtverec, jehož strana je úhlopříčka prvního čtverce, má obsah:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 18, 2 b)
+
+- **a)** $2\sqrt2m^2$
+- **b)** $4m^2$
+- **c)** $2\sqrt3m^2$
+- **d)** $4\sqrt3m^2$
+- **e)** $\sqrt3m^2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $4m^2$. Úhlopříčka $\sqrt2\cdot\sqrt2=2$.
+
+</details>
+
+### `vut-fsi-2014-z6-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Součet všech vnitřních úhlů pětiúhelníka je roven
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 18, 2 b)
+
+- **a)** $180^\circ$
+- **b)** $270^\circ$
+- **c)** $360^\circ$
+- **d)** $540^\circ$
+- **e)** $720^\circ$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $540^\circ$. $3\cdot180^\circ$.
+
+</details>
+
+### `vut-fsi-2014-z7-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Poměr obsahu kruhu o poloměru $r$ k délce jeho hraniční kružnice je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 18, 2 b)
+
+- **a)** $\pi:r$
+- **b)** $r:\pi$
+- **c)** $2:r$
+- **d)** $r:2$
+- **e)** $2\pi:r$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $r:2$. $\pi r^2:2\pi r$.
+
+</details>
+
+### `vut-fsi-2017-z10-07` — [FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 7, 1 bod)](https://vut.cz/pomocne2018/f69785/d158882/p149140)
+
+*Темы:* 34. Planimetrie, 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Trojúhelník o stranách $a=2;\ b=3$, které svírají úhel $\gamma=\dfrac\pi3$, má stranu $c=$
+
+- **a)** $7$
+- **b)** $\sqrt7$
+- **c)** $1$
+- **d)** $3$
+- **e)** $\sqrt{13}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt7$. Kosinová věta: $c^2=4+9-12\cdot\frac12=7$.
+
+</details>
+
+### `vut-fsi-2014-z2-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Model konstrukce je v měřítku 1:10. Kolikrát těžší bude skutečná konstrukce z téhož materiálu?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 7, 1 b)
+
+- **a)** $\sqrt2$
+- **b)** $3$
+- **c)** $10$
+- **d)** $100$
+- **e)** $1000$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $1000$. Objem roste s třetí mocninou měřítka.
+
+</details>
+
+### `vut-fsi-2014-z7-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Množina všech bodů v prostoru stejně vzdálených od dvou různých pevných bodů je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 7, 1 b)
+
+- **a)** osa souměrnosti
+- **b)** rovina souměrnosti
+- **c)** neexistuje
+- **d)** koule
+- **e)** kružnice
+
+<details><summary>Ответ и решение</summary>
+
+**b** — rovina souměrnosti
+
+</details>
+
+### `vut-fsi-2014-z10-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Rovina je jednoznačně určena
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 7, 1 b)
+
+- **a)** dvěma různými body
+- **b)** dvěma mimoběžkami
+- **c)** dvěma totožnými přímkami
+- **d)** jedinou přímkou
+- **e)** dvěma různoběžkami
+
+<details><summary>Ответ и решение</summary>
+
+**e** — dvěma různoběžkami
+
+</details>
+
+### `vut-fsi-2014-z1-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Kvádr má hrany $a=3\ cm$, $b=4\ cm$, $c=12\ cm$. Jeho tělesová úhlopříčka má velikost:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 18, 2 b)
+
+- **a)** $19\ cm$
+- **b)** $5\ cm$
+- **c)** $4\sqrt{10}\ cm$
+- **d)** $13\ cm$
+- **e)** $169\ cm$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $13\ cm$. $\sqrt{9+16+144}=13$.
+
+</details>
+
+### `vut-fsi-2014-z3-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Objem poloviny koule o průměru $1m$ je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 18, 2 b)
+
+- **a)** $\dfrac\pi{12}m^3$
+- **b)** $\dfrac\pi8m^3$
+- **c)** $\dfrac{2\pi}3m^3$
+- **d)** $\dfrac{4\pi}3m^3$
+- **e)** $\dfrac\pi6m^3$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac\pi{12}m^3$. $\frac12\cdot\frac43\pi\left(\frac12\right)^3$.
+
+</details>
+
+### `vut-fsi-2014-z4-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Krychlová nádoba o objemu 1 litr je vrchovatě zaplněna vodou. Kolik vody přeteče, jestliže do ní zcela ponoříme kouli o průměru $1dm$?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 18, 2 b)
+
+- **a)** $\dfrac1\pi$ litrů
+- **b)** $\dfrac\pi3$ litrů
+- **c)** $\dfrac\pi4$ litrů
+- **d)** $\dfrac\pi6$ litrů
+- **e)** $\dfrac2\pi$ litrů
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac\pi6$ litrů. $\frac43\pi\left(\frac12\right)^3=\frac\pi6$ dm$^3$.
+
+</details>
+
+### `vut-fsi-2014-z8-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Podstava čtyřbokého jehlanu má obsah $64\ cm^2$. Obsah řezu rovinou rovnoběžnou s podstavou v polovině výšky je roven
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 18, 2 b)
+
+- **a)** nelze určit
+- **b)** $64v/3\ cm^2$
+- **c)** $32\ cm^2$
+- **d)** $64/3\ cm^2$
+- **e)** $16\ cm^2$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $16\ cm^2$. Podobnost s koeficientem $\frac12$.
+
+</details>
+
+### `vut-fsi-2014-z9-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Povrch větší krychle je čtyřnásobkem povrchu krychle menší. Její objem je větší
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 18, 2 b)
+
+- **a)** dvakrát
+- **b)** čtyřikrát
+- **c)** šestkrát
+- **d)** osmkrát
+- **e)** devětkrát
+
+<details><summary>Ответ и решение</summary>
+
+**d** — osmkrát. Hrana dvojnásobná.
 
 </details>
 
@@ -4054,6 +6894,322 @@ Zjednodušte výraz a zapište podmínky pro jeho platnost $\dfrac{a^2-25}{a^2-3
 
 </details>
 
+### `vut-fsi-2014-z2-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Je-li $\dfrac xy=\dfrac{z-1}t$, pak
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 3, 1 b)
+
+- **a)** $t=\dfrac x{(z-1)y}$
+- **b)** $t=\dfrac{(z-1)y}x$
+- **c)** $t=\dfrac{(z-1)x}y$
+- **d)** $t=\dfrac{x(z-1)}y$
+- **e)** $t=\dfrac yx$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $t=\dfrac{(z-1)y}x$. $xt=y(z-1)$.
+
+</details>
+
+### `vut-fsi-2014-z7-04` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 4, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Pro celá kladná čísla $x;y$ platí $x-y=7$. Nejmenší možná hodnota jejich součtu je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 4, 1 b)
+
+- **a)** $12$
+- **b)** $15$
+- **c)** $9$
+- **d)** $8$
+- **e)** $10$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $9$. $y=1$, $x=8$.
+
+</details>
+
+### `vut-fsi-2014-z5-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Na konci roku připisuje banka 10% z uložené částky jako úrok. Z tisícikoruny získáme po dvou letech na úrocích
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 14, 1 b)
+
+- **a)** 100 Kč
+- **b)** 200 Kč
+- **c)** 121 Kč
+- **d)** 210 Kč
+- **e)** 400 Kč
+
+<details><summary>Ответ и решение</summary>
+
+**d** — 210 Kč. $1000\cdot1{,}1^2=1210$.
+
+</details>
+
+### `vut-fsi-2014-z1-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Autobus A jezdí po 24 minutách, B po 18 min, C po 10 min. Intervaly mezi společnými odjezdy všech tří linek jsou
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 15, 1 b)
+
+- **a)** $180$ min
+- **b)** $240$ min
+- **c)** $360$ min
+- **d)** $432$ min
+- **e)** $510$ min
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $360$ min. $\mathrm{NSN}(24,18,10)=360$.
+
+</details>
+
+### `vut-fsi-2014-z2-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Kolik vody je třeba přidat do 4 litrů 25% roztoku kyseliny, abychom získali roztok desetiprocentní?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 15, 1 b)
+
+- **a)** $2$
+- **b)** $3$
+- **c)** $4$
+- **d)** $5$
+- **e)** $6$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $6$. Kyseliny je $1$ l, roztok musí mít $10$ l.
+
+</details>
+
+### `vut-fsi-2014-z3-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Vlak ujel 70 km za 2 hod. 15 min. Jak dlouho pojede 280 km, předpokládáme-li stejnou rychlost?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 15, 1 b)
+
+- **a)** 540 min
+- **b)** 4 hod. 5 min
+- **c)** 4 hod. 20 min.
+- **d)** 8 hod. 20 min.
+- **e)** 5 hod. 10 min.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — 540 min. Čtyřnásobek $135$ min.
+
+</details>
+
+### `vut-fsi-2014-z4-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+V desetilitrové nádobě je 8 litrů vody. Kolik procent objemu nádoby bude tvořit její prázdná část, jestliže z ní vylejeme 6 litrů?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 15, 1 b)
+
+- **a)** $80$
+- **b)** $25$
+- **c)** $20$
+- **d)** $75$
+- **e)** $50$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $80$. Zůstanou $2$ l, prázdných je $8$ l z $10$.
+
+</details>
+
+### `vut-fsi-2014-z5-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Kniha má 126 stran po 40 řádcích. Kolik stran bude mít v novém vydání, bude-li na stránce 36 stejně dlouhých řádků?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 15, 1 b)
+
+- **a)** $120$
+- **b)** $136$
+- **c)** $140$
+- **d)** $160$
+- **e)** $180$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $140$. $\frac{126\cdot40}{36}=140$.
+
+</details>
+
+### `vut-fsi-2014-z6-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Veslař jede po proudu rychlostí $12\ kmh^{-1}$, proti proudu rychlostí $6\ kmh^{-1}$. Jaká je rychlost proudu, předpokládáme-li konstantní výkon veslaře?
+
+- **a)** $1\ kmh^{-1}$
+- **b)** $2\ kmh^{-1}$
+- **c)** $3\ kmh^{-1}$
+- **d)** $6\ kmh^{-1}$
+- **e)** $9\ kmh^{-1}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $3\ kmh^{-1}$. $v+u=12$, $v-u=6$.
+
+</details>
+
+### `vut-fsi-2014-z2-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+$\dfrac{xy}{x^2-y^2}\cdot\left(\dfrac xy-\dfrac yx\right)=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 16, 2 b)
+
+- **a)** $\dfrac{xy}{x-y}$
+- **b)** $\dfrac{x-y}{xy}$
+- **c)** $1$
+- **d)** $\dfrac xy$
+- **e)** $\dfrac yx$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $1$
+
+</details>
+
+### `vut-fsi-2014-z3-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Je-li $x\neq\pm1$, pak $\left(1+\dfrac1{x-1}\right):\left(1-\dfrac1{x+1}\right)=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 16, 2 b)
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $\dfrac{x+1}{x-1}$
+- **d)** $\dfrac{x-1}{x+1}$
+- **e)** $\dfrac{1-x}{x+1}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\dfrac{x+1}{x-1}$. $\frac x{x-1}\cdot\frac{x+1}x$.
+
+</details>
+
+### `vut-fsi-2014-z4-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+$\left(1-\dfrac x{x+1}\right):\dfrac{x+1}{x-1}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 16, 2 b)
+
+- **a)** $\dfrac1{x+1}$
+- **b)** $\dfrac1{1-x}$
+- **c)** $\dfrac{x-1}{x+1}$
+- **d)** $\dfrac{x-1}{(x+1)^2}$
+- **e)** $-\dfrac1{x+1}$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac{x-1}{(x+1)^2}$. $\frac1{x+1}\cdot\frac{x-1}{x+1}$.
+
+</details>
+
+### `vut-fsi-2014-z5-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+$\dfrac{a^2-b^2}{(a+b)^2}\cdot\dfrac{3a+3b}{4a-4b}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 16, 2 b)
+
+- **a)** $\dfrac{a+b}{a-b}$
+- **b)** $\dfrac{a-b}{a+b}$
+- **c)** $1$
+- **d)** $0$
+- **e)** $\dfrac34$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $\dfrac34$
+
+</details>
+
+### `vut-fsi-2014-z8-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Pro $x\neq\pm y$ je $\dfrac{(x-y)^2}{y^2-x^2}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 16, 2 b)
+
+- **a)** $1$
+- **b)** $0$
+- **c)** $\dfrac{x-y}{x+y}$
+- **d)** $\dfrac{y-x}{y+x}$
+- **e)** $\dfrac{y+x}{y-x}$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac{y-x}{y+x}$. $\frac{(y-x)^2}{(y-x)(y+x)}$.
+
+</details>
+
+### `vut-fsi-2014-z9-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+$\dfrac{a^2-b^2}{a^3-b^3}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 16, 2 b)
+
+- **a)** $\dfrac1{a-b}$
+- **b)** $\dfrac{a+b}{a^2+b^2}$
+- **c)** $\dfrac{a-b}{a^2-b^2}$
+- **d)** $\dfrac{a+b}{a^2+ab+b^2}$
+- **e)** $\dfrac{a-b}{a^2-ab+b^2}$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac{a+b}{a^2+ab+b^2}$
+
+</details>
+
+### `vut-fsi-2017-z5-15` — [FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 15, 1 bod)](https://vut.cz/pomocne2018/f69785/d158882/p149140)
+
+*Темы:* Ostatní, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Veslař jede po proudu rychlostí $12\ kmh^{-1}$, proti proudu rychlostí $6\ kmh^{-1}$ (vzhledem k břehu). Jaká je rychlost proudu, předpokládáme-li konstantní výkon veslaře?
+
+- **a)** $1\ kmh^{-1}$
+- **b)** $2\ kmh^{-1}$
+- **c)** $3\ kmh^{-1}$
+- **d)** $6\ kmh^{-1}$
+- **e)** $9\ kmh^{-1}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $3\ kmh^{-1}$. $v+u=12$, $v-u=6$.
+
+</details>
+
 ## Уровень 2 — стандартный
 
 ### `fel-vzor01-mnoziny` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 13, 2 body)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-vzor01.pdf)
@@ -4103,6 +7259,66 @@ Uvažujte výraz $\left(\left(2^{4(\log_216)^2}\right)^{\left(2^{-2}-2^{-3}\righ
 <details><summary>Ответ и решение</summary>
 
 $2^{16}$. $\log_216=4$, exponent $4\cdot16=64$; $\left(\frac14-\frac18\right)^{-1}=8$; $\frac{64\cdot8}{32}=16$.
+
+</details>
+
+### `vut-fsi-2014-z8-02` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 2, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Usměrněte zlomek $\dfrac{4\sqrt5+5\sqrt4}{4\sqrt5-5\sqrt4}$:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 2, 1 b)
+
+- **a)** $9-4\sqrt5$
+- **b)** $-9+4\sqrt5$
+- **c)** $-9-4\sqrt5$
+- **d)** $-9-16\sqrt5$
+- **e)** $18-4\sqrt5$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $-9-4\sqrt5$. $\frac{(4\sqrt5+10)^2}{80-100}=\frac{180+80\sqrt5}{-20}$.
+
+</details>
+
+### `vut-fsi-2014-z1-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina, Ostatní · *Текст:* текст оригинала (по курсу)
+
+$\dfrac{\sqrt{\frac ab+\frac ba+2}}{\sqrt{\frac ab+\frac ba-2}}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 16, 2 b)
+
+- **a)** $\dfrac{a+b}{a-b}$
+- **b)** $\left|\dfrac{a+b}{a-b}\right|$
+- **c)** $\dfrac{a-b}{a+b}$
+- **d)** $\dfrac{ab}{a^2-b^2}$
+- **e)** $\left|\dfrac{ab}{a^2-b^2}\right|$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\left|\dfrac{a+b}{a-b}\right|$. $\frac ab+\frac ba\pm2=\frac{(a\pm b)^2}{ab}$.
+
+</details>
+
+### `vut-fsi-2014-z10-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+$\sqrt[3]{\dfrac a{\sqrt{b^3}}}\sqrt{\dfrac b{\sqrt[3]a}}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 16, 2 b)
+
+- **a)** $a^6$
+- **b)** $\sqrt[6]a$
+- **c)** $a^{-6}$
+- **d)** $\sqrt[6]b$
+- **e)** $b^6$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt[6]a$. $a^{\frac13}b^{-\frac12}\cdot b^{\frac12}a^{-\frac16}=a^{\frac16}$.
 
 </details>
 
@@ -4566,6 +7782,26 @@ Vyřešte v $\mathbb{R}$ rovnici $\dfrac{\frac x4-\frac1{2x}}{\frac{2x+1}2-\frac
 
 </details>
 
+### `vut-fsi-2014-z4-17` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 17, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic), Ostatní · *Текст:* текст оригинала (по курсу)
+
+Všechna řešení rovnice $\dfrac{x+\sqrt3}x-\dfrac{2x}{x+\sqrt3}=2$ lze zapsat ve tvaru
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 17, 2 b)
+
+- **a)** $x\in\{0;\sqrt3\}$
+- **b)** $x\in(0;\sqrt3)$
+- **c)** $x\in(-1;1)$
+- **d)** $x\in\{-1;1\}$
+- **e)** $x=1$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x\in\{-1;1\}$. $(x+\sqrt3)^2-2x^2=2x(x+\sqrt3)\Rightarrow3x^2=3$.
+
+</details>
+
 ### `fit-2014-1-19` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 19, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-1.pdf)
 
 *Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу)
@@ -4655,6 +7891,46 @@ Určete hodnoty reálného parametru $p$ tak, aby v rovnici $3x^2-24x+p=0$ byl j
 <details><summary>Ответ и решение</summary>
 
 **a** — Žádná z ostatních možností není správná.. $x_1=3x_2$, $x_1+x_2=8$: kořeny $6$ a $2$, $\frac p3=12$, $p=36$.
+
+</details>
+
+### `vut-fsi-2014-z1-17` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 17, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2+3\sqrt n\,x+n+1=0$ má jeden dvojnásobný kořen pro
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 17, 2 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 17, 2 b); FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 17, 2 b)
+
+- **a)** $n=1$
+- **b)** $n=0$
+- **c)** $n=0{,}8$
+- **d)** $n=-1$
+- **e)** $n\ge0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $n=0{,}8$. $D=9n-4(n+1)=5n-4=0$.
+
+</details>
+
+### `vut-fsi-2014-z9-17` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 17, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу)
+
+Rovnice $(m+1)x^2-2mx+(m-1)=0$ s neznámou $x$ má dvojnásobný kořen pro
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 17, 2 b)
+
+- **a)** $m=0$
+- **b)** $m=1$
+- **c)** $m=-1$
+- **d)** $m=\pm1$
+- **e)** nemá dvojnásobný kořen
+
+<details><summary>Ответ и решение</summary>
+
+**e** — nemá dvojnásobný kořen. $D=4m^2-4(m^2-1)=4>0$; pro $m=-1$ je rovnice lineární.
 
 </details>
 
@@ -4911,6 +8187,26 @@ Určete počet všech sudých čísel, která vyhovují nerovnici $\dfrac12x^2-5
 <details><summary>Ответ и решение</summary>
 
 **e** — Žádná z ostatních možností není správná.. $x^2-106x+300\le0$, kořeny $53\pm\sqrt{2509}\approx2{,}9$ a $103{,}1$; sudá čísla $4,6,\dots,102$ — celkem $50$.
+
+</details>
+
+### `vut-fsi-2014-z8-17` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 17, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Nerovnice $\dfrac1{2x}-\dfrac13>\dfrac16+\dfrac1x$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 17, 2 b)
+
+- **a)** $x<1$
+- **b)** $x<-1$
+- **c)** $x>-1$
+- **d)** $x\in(-1;0)$
+- **e)** $x\in(0;1)$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x\in(-1;0)$. $-\frac1{2x}>\frac12\iff\frac1x<-1$.
 
 </details>
 
@@ -5194,6 +8490,46 @@ Které z následujících tvrzení o definičním oboru funkce $f(x)=\sqrt{\dfra
 <details><summary>Ответ и решение</summary>
 
 **c** — Definiční obor je $\left(-\frac12,\frac32\right)\cup\langle2,+\infty)$.. $\frac{x-2}{\left(x-\frac32\right)\left(x+\frac12\right)}\ge0$ — metoda intervalů s body $-\frac12,\frac32,2$.
+
+</details>
+
+### `vut-fsi-2014-z5-04` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 4, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešeními rovnice $-x+\sqrt{-x}=2$ jsou všechna $x\in\mathbf R$, pro která platí:
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 4, 1 b)
+
+- **a)** $x=0$
+- **b)** $x=1$
+- **c)** $x=-1$
+- **d)** $x>1$
+- **e)** rovnice nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x=-1$. $t=\sqrt{-x}\ge0$: $t^2+t-2=0$, $t=1$.
+
+</details>
+
+### `vut-fsi-2014-z5-17` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 17, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Nerovnice $\sqrt{x^2+x-12}<x+4$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 17, 2 b)
+
+- **a)** všechna $x$
+- **b)** žádná $x$
+- **c)** $x<3$
+- **d)** $x\ge3$
+- **e)** $x>-4$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x\ge3$. Definiční obor $x\le-4\vee x\ge3$, pravá strana kladná pro $x>-4$; umocněním $x>-4$.
 
 </details>
 
@@ -5535,6 +8871,82 @@ Pro řešení nerovnice $\left(\dfrac13\right)^{x^2}\le3^{-x-6}$ platí
 
 </details>
 
+### `vut-fsi-2014-z7-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, Ostatní · *Текст:* текст оригинала (по курсу)
+
+Ve vzorku radioaktivní látky se každých dvacet minut rozpadne třetina jader radia. Z původního počtu jader radia zůstane za jednu hodinu
+
+- **a)** $\dfrac13$ jader
+- **b)** $\dfrac23$ jader
+- **c)** $\dfrac1{18}$ jader
+- **d)** $\dfrac8{27}$ jader
+- **e)** nezůstanou žádná jádra
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac8{27}$ jader. Třikrát zůstanou $\frac23$: $\left(\frac23\right)^3$.
+
+</details>
+
+### `vut-fsi-2014-z3-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $3^3\cdot27^{2x-3}=81^{3x-3}$, pak $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 20, 2 b)
+
+- **a)** $\dfrac43$
+- **b)** $1$
+- **c)** $\pm1$
+- **d)** $-1$
+- **e)** $\dfrac34$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $1$. $3^{6x-6}=3^{12x-12}$.
+
+</details>
+
+### `vut-fsi-2014-z10-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $4^{\sqrt{x+1}}=64\cdot2^{\sqrt{x+1}}$, pak $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 20, 2 b)
+
+- **a)** $15$
+- **b)** $-35$
+- **c)** $35$
+- **d)** $24$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $35$. $t=2^{\sqrt{x+1}}$: $t^2=64t$, $t=64$, $\sqrt{x+1}=6$.
+
+</details>
+
+### `vut-fsi-2017-z10-14` — [FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 14, 1 bod)](https://vut.cz/pomocne2018/f69785/d158882/p149140)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, Ostatní · *Текст:* текст оригинала (по курсу)
+
+Ve vzorku radioaktivní látky se každých dvacet minut rozpadne třetina jader radia. Z původního počtu jader radia zůstane za jednu hodinu
+
+- **a)** $\dfrac13$ jader
+- **b)** $\dfrac29$ jader
+- **c)** $\dfrac{19}{27}$ jader
+- **d)** $\dfrac8{27}$ jader
+- **e)** nezůstanou žádná jádra
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac8{27}$ jader. Třikrát zůstanou $\frac23$: $\left(\frac23\right)^3$.
+
+</details>
+
 ### `vsb-fbi-2017-pz2-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
 
 *Темы:* 12. Logaritmická funkce, 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -5803,6 +9215,302 @@ Pro řešení rovnice $\dfrac{\log_3^2(9x)}{\log_3(81x^2)}=\dfrac32$ platí:
 
 </details>
 
+### `vut-fsi-2014-z4-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice, 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Nerovnice $3^{\log_3y^3}<1$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 12, 1 b)
+
+- **a)** $y>1$
+- **b)** $0<y<1$
+- **c)** $y<-1$
+- **d)** $|y|>1$
+- **e)** $|y|<1$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $0<y<1$. Pro $y>0$ je levá strana $y^3$.
+
+</details>
+
+### `vut-fsi-2014-z10-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Nerovnice $\log(x+3)>\log(2x-4)$ má řešení
+
+- **a)** $x\in(2;7)$
+- **b)** $x<7$
+- **c)** $x\in(0;7)$
+- **d)** $x\in(-7;7)$
+- **e)** $x>7$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x\in(2;7)$. Podmínka $x>2$; $x+3>2x-4$.
+
+</details>
+
+### `vut-fsi-2014-z3-13` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 13, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením nerovnice $\log(1-2x)\ge0$ jsou všechna $x\in\mathbf R$, pro která platí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 13, 1 b)
+
+- **a)** $x\in(-\infty;\infty)$
+- **b)** $x>0$
+- **c)** $x\le0$
+- **d)** $x\in(0;1\rangle$
+- **e)** $x\ge1$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x\le0$. $1-2x\ge1$.
+
+</details>
+
+### `vut-fsi-2014-z9-13` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 13, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením nerovnice $\log(1-2x)<0$ jsou všechna $x\in\mathbf R$, pro která platí
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 13, 1 b)
+
+- **a)** $x\in(-\infty;\infty)$
+- **b)** $x>0$
+- **c)** $x\in(0;0.5)$
+- **d)** $x\in(0;1\rangle$
+- **e)** $x\ge1$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x\in(0;0.5)$. $0<1-2x<1$.
+
+</details>
+
+### `vut-fsi-2014-z10-13` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 13, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\log\left(x^{\log x}\right)=0$, pak
+
+- **a)** $x=0$
+- **b)** $x=1$
+- **c)** $x\in\{-1;1\}$
+- **d)** $x\in\{1;0.1\}$
+- **e)** $x\in\{-1;0\}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=1$. $(\log x)^2=0$.
+
+</details>
+
+### `vut-fsi-2014-z1-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením rovnice $\log(x-1)-1=\log x$ je $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 20, 2 b)
+
+- **a)** $\dfrac19$
+- **b)** $-\dfrac19$
+- **c)** $9$
+- **d)** $-9$
+- **e)** neexistuje
+
+<details><summary>Ответ и решение</summary>
+
+**e** — neexistuje. $\frac{x-1}x=10\Rightarrow x=-\frac19$, ale podmínka je $x>1$.
+
+</details>
+
+### `vut-fsi-2014-z2-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $2\log(x-2)=\log(14-x)$, pak $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 20, 2 b)
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $\pm1$
+- **d)** $5$
+- **e)** $\pm5$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $5$. $(x-2)^2=14-x\Rightarrow x=5$ nebo $x=-2$; podmínka $x>2$.
+
+</details>
+
+### `vut-fsi-2014-z6-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\log x+\dfrac1{\log x}=2$, pak $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 20, 2 b)
+
+- **a)** $\pm0.1$
+- **b)** $1$
+- **c)** $10$
+- **d)** $\pm10$
+- **e)** $\dfrac1{10}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $10$. $t+\frac1t=2\Rightarrow t=1$.
+
+</details>
+
+### `vut-fsi-2014-z7-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $x^{\log\sqrt x}=100$, pak $x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 20, 2 b)
+
+- **a)** $x=-100$
+- **b)** $x=-10$
+- **c)** $x=10$
+- **d)** $x=100$
+- **e)** $x=\pm100$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x=100$. Logaritmováním $\frac12\log^2x=2$, $\log x=\pm2$.
+
+*Примечание:* Rovnici splňuje i $x=\frac1{100}$, mezi možnostmi ale není.
+
+</details>
+
+### `vut-fsi-2014-z9-20` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 20, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Rovnice $\dfrac{\log(x^2-9)}{\log(x+1)}=2$ má řešení
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 20, 2 b)
+
+- **a)** $x=-5$
+- **b)** $x=5$
+- **c)** $x=\pm5$
+- **d)** $x\in\mathbf R$
+- **e)** nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**e** — nemá řešení. $x^2-9=(x+1)^2\Rightarrow x=-5$, ale musí být $x+1>0$.
+
+</details>
+
+### `vut-fsi-2017-z4-13` — [FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 13, 1 bod)](https://vut.cz/pomocne2018/f69785/d158882/p149140)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Množina všech řešení rovnice $\log\left(x^{\log x}\right)=1$ je
+
+- **a)** $\{10\}$
+- **b)** $\{-1\}$
+- **c)** $\{-1;1\}$
+- **d)** $\{1;0.1\}$
+- **e)** $\{10;0.1\}$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $\{10;0.1\}$. $(\log x)^2=1$, $\log x=\pm1$.
+
+</details>
+
+### `vut-fsi-2014-z2-09` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 9, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+$-1+\operatorname{tg}^2x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 9, 1 b)
+
+- **a)** $\operatorname{cotg}^2x$
+- **b)** $\sin^2x-\cos^2x$
+- **c)** $-\dfrac{\cos2x}{\cos^2x}$
+- **d)** $\dfrac{\sin2x}{\cos^2x}$
+- **e)** $-\sin^2x-\cos^2x$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $-\dfrac{\cos2x}{\cos^2x}$. $\frac{\sin^2x-\cos^2x}{\cos^2x}$.
+
+</details>
+
+### `vut-fsi-2014-z8-09` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 9, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+$1-\operatorname{tg}^2x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 9, 1 b)
+
+- **a)** $\operatorname{cotg}^2\alpha$
+- **b)** $\sin^2x-\cos^2x$
+- **c)** $\dfrac{\cos2x}{\cos^2x}$
+- **d)** $\dfrac{\sin2x}{\cos^2x}$
+- **e)** $-\sin^2x-\cos^2x$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\dfrac{\cos2x}{\cos^2x}$. $\frac{\cos^2x-\sin^2x}{\cos^2x}$.
+
+</details>
+
+### `vut-fsi-2014-z2-19` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 19, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Je-li $\cos x=0{,}1$, potom $\sin x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 9 (úloha 19, 2 b)
+
+- **a)** $0{,}9$
+- **b)** $\pm0{,}9$
+- **c)** $\pm0{,}3\sqrt{11}$
+- **d)** $|0{,}9|$
+- **e)** $0{,}3\sqrt{11}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\pm0{,}3\sqrt{11}$. $\sin^2x=0{,}99$, znaménko neurčeno.
+
+</details>
+
+### `vut-fsi-2014-z4-19` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 19, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Je-li $\sin x=0{,}1$, potom $\cos x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 19, 2 b)
+
+- **a)** $0{,}9$
+- **b)** $\pm0{,}9$
+- **c)** $\pm0{,}3\sqrt{11}$
+- **d)** $|0{,}9|$
+- **e)** $0{,}3\sqrt{11}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\pm0{,}3\sqrt{11}$. $\cos^2x=0{,}99$.
+
+</details>
+
 ### `vsb-fbi-2013-pz3-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -6013,6 +9721,46 @@ Jestliže $\sin\alpha\cdot\cos\alpha=\frac12$ a $\alpha\in(\pi,2\pi)$, pak $\ope
 
 </details>
 
+### `vut-fsi-2014-z10-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Je-li $\cos2x=0{,}5;x\in\langle0;\pi\rangle$, pak $\operatorname{tg}x=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 8, 1 b)
+
+- **a)** $-\sqrt3$
+- **b)** $1$
+- **c)** neexistuje
+- **d)** $\pm\dfrac{\sqrt3}3$
+- **e)** $\sqrt3$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\pm\dfrac{\sqrt3}3$. $x=\frac\pi6$ nebo $x=\frac{5\pi}6$.
+
+</details>
+
+### `vut-fsi-2014-z5-19` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 5 (úloha 19, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením rovnice $\sin2x=\sin x$ v intervalu $\left\langle0;\dfrac\pi2\right\rangle$ je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 19, 2 b)
+
+- **a)** $x\in\left\{0;\dfrac\pi2\right\}$
+- **b)** $x\in\left\{0;\dfrac\pi3\right\}$
+- **c)** $x=\pm\dfrac\pi3$
+- **d)** $x\in\left\{\dfrac\pi3;\dfrac\pi2\right\}$
+- **e)** rovnice nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x\in\left\{0;\dfrac\pi3\right\}$. $\sin x(2\cos x-1)=0$.
+
+</details>
+
 ### `vscht-05` — [VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 5, 2 body)](https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -6027,6 +9775,26 @@ Počet všech $x$ z intervalu $(\pi,2\pi)$, pro která platí $1-\cos^2x-\sin x=
 <details><summary>Ответ и решение</summary>
 
 **a** — $0$. $\sin^2x-\sin x=0$, tj. $\sin x=0$ nebo $\sin x=1$; na $(\pi,2\pi)$ je $\sin x<0$, řešení tam není.
+
+</details>
+
+### `vut-fsi-2014-z4-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^4+1=0$ má v oboru komplexních čísel právě
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 4 (úloha 11, 1 b)
+
+- **a)** čtyři kořeny
+- **b)** tři kořeny
+- **c)** dva kořeny
+- **d)** jeden kořen
+- **e)** žádný kořen
+
+<details><summary>Ответ и решение</summary>
+
+**a** — čtyři kořeny. Rovnice čtvrtého stupně má v $\mathbb C$ čtyři kořeny (zde různé).
 
 </details>
 
@@ -6211,6 +9979,26 @@ Kolika způsoby je možné vybrat čtyřciferné číslo tak, aby bylo děliteln
 <details><summary>Ответ и решение</summary>
 
 **b** — $2250$. Čtyřciferných čísel je $9000$, každé čtvrté je dělitelné čtyřmi.
+
+</details>
+
+### `vut-fsi-2014-z6-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 21. Kombinatorika. Faktoriál, 23. Kombinační číslo. Binomická věta · *Текст:* текст оригинала (по курсу)
+
+Je-li $\dfrac{(n-1)!}{(n-3)!}=2\dbinom97$, pak $n=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 5 (úloha 10, 1 b)
+
+- **a)** $7$
+- **b)** $8$
+- **c)** $9$
+- **d)** $10$
+- **e)** $11$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $10$. $(n-1)(n-2)=72$.
 
 </details>
 
@@ -6522,6 +10310,28 @@ Kolika různými způsoby lze ze 7 mužů a 3 žen vybrat trojici tak, aby v ní
 
 </details>
 
+### `vut-fsi-2014-z7-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 23. Kombinační číslo. Binomická věta · *Текст:* текст оригинала (по курсу)
+
+$\dbinom73-\dbinom37=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 7 (úloha 10, 1 b)
+
+- **a)** $\dbinom70$
+- **b)** $\dbinom10$
+- **c)** $\dbinom74$
+- **d)** $0$
+- **e)** není definováno
+
+<details><summary>Ответ и решение</summary>
+
+**e** — není definováno. $\binom nk$ je na střední škole definováno jen pro $0\le k\le n$, $\binom37$ tedy neexistuje.
+
+*Примечание:* Tatáž úloha je v testu FSI 2017 (zadání č. 7, úloha 10), kde je jako správná vyznačena možnost e). Při rozšířené definici $\binom37=0$ by vyšlo $35=\binom74$.
+
+</details>
+
 ### `fit-2015-20` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 20, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
 
 *Темы:* 24. Pravděpodobnost, 21. Kombinatorika. Faktoriál · *Текст:* текст оригинала (по курсу)
@@ -6772,6 +10582,26 @@ Pro délky poloos hyperboly zadané rovnicí $4x^2-9y^2-24x-36y-36=0$ platí
 
 </details>
 
+### `vut-fsi-2014-z10-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Je-li $n$ libovolné kladné celé číslo, pak trojúhelník o stranách $n;n+1;n+2$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 3 (úloha 18, 2 b)
+
+- **a)** existuje vždy
+- **b)** neexistuje nikdy
+- **c)** existuje jen pro lichá $n$
+- **d)** v jednom případě neexistuje
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — v jednom případě neexistuje. Trojúhelníková nerovnost $n+(n+1)>n+2$ platí pro $n>1$; pro $n=1$ trojúhelník neexistuje.
+
+</details>
+
 ### `vut-fekt-2022-v1-15` — [FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 15, 5 bodů)](https://vut.cz/pomocne2018/f124247/d232373/p229505)
 
 *Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
@@ -6805,6 +10635,26 @@ Určete objem kvádru, jestliže strana $a=1$ cm, strana $c$ je o 1 cm delší n
 <details><summary>Ответ и решение</summary>
 
 **b** — $12$ cm$^3$. $2(b+b(b+1)+(b+1))=38\Rightarrow b^2+3b-18=0$, $b=3$, $c=4$, $V=12$.
+
+</details>
+
+### `vut-fsi-2014-z2-18` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 18, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Objem krychle vepsané do koule o průměru $d$ je
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 6 (úloha 18, 2 b)
+
+- **a)** $\dfrac43\pi d^3$
+- **b)** $4\pi d^2$
+- **c)** $d^3$
+- **d)** $3^{\frac32}d^3$
+- **e)** $3^{-\frac32}d^3$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $3^{-\frac32}d^3$. Tělesová úhlopříčka $a\sqrt3=d$.
 
 </details>
 
@@ -7183,6 +11033,86 @@ Dětský tábor má kapacitu 80 dětí. Vytvoří-li děti trojice, nikdo nezbud
 <details><summary>Ответ и решение</summary>
 
 **c** — $3$. Liché násobky $21$ do $80$: $21$, $63$; zbytek $3$ po dělení čtyřmi má jen $63$, a $63=6\cdot10+3$.
+
+</details>
+
+### `vut-fsi-2014-z7-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Cyklista ujel 48 km. Polovinu trati jel průměrnou rychlostí 12 kmh$^{-1}$, druhou polovinu průměrnou rychlostí 24 kmh$^{-1}$. Průměrná rychlost na celé trati byla
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 1 (úloha 15, 1 b)
+
+- **a)** 14 kmh$^{-1}$
+- **b)** 16 kmh$^{-1}$
+- **c)** 18 kmh$^{-1}$
+- **d)** 20 kmh$^{-1}$
+- **e)** žádná odpověď není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — 16 kmh$^{-1}$. $2+1=3$ h na $48$ km.
+
+</details>
+
+### `vut-fsi-2014-z8-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní, 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+36 rour stejného průměru bude uloženo na sebe. Kolik kusů nejméně musí mít zakládající řada?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 8 (úloha 15, 1 b)
+
+- **a)** $10$
+- **b)** $9$
+- **c)** $8$
+- **d)** $7$
+- **e)** $6$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $8$. Řady po $n,n-1,\dots,1$: $\frac{n(n+1)}2=36$.
+
+</details>
+
+### `vut-fsi-2014-z9-15` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 9 (úloha 15, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Náměstí tvaru obdélníka o rozměrech $a=75m$, $b=60m$ má být po obvodu osazeno stejně vzdálenými pouličními lampami. Kolik lamp nejméně bude ještě potřeba, jestliže ve třech rozích již lampy jsou?
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 15, 1 b)
+
+- **a)** $10$
+- **b)** $13$
+- **c)** $14$
+- **d)** $15$
+- **e)** $18$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $15$. Lampy jsou v rozích, rozestup dělí $75$ i $60$: největší $15$ m, tedy $\frac{270}{15}=18$ lamp, chybí $15$.
+
+</details>
+
+### `vut-fsi-2014-z7-16` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 16, 2 body)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+$\dfrac{x^2-xy}{x^4-x^2y^2}:\dfrac{xy}{x^2y+xy^2}=$
+
+*Встречается также:* FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 2 (úloha 16, 2 b)
+
+- **a)** $x-y$
+- **b)** $y-x$
+- **c)** $\dfrac1{x+1}$
+- **d)** $\dfrac1{x+y}$
+- **e)** $\dfrac1x$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $\dfrac1x$. $\frac1{x(x+y)}\cdot(x+y)$.
 
 </details>
 
