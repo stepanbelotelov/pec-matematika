@@ -785,6 +785,7 @@ body.line-cvut { --faint: #7A8FA4 }
 .pb-esol b { display: block; font-family: var(--f-display); font-size: 13px; color: var(--muted); margin-bottom: 2px }
 .pb-empty { display: grid; gap: 10px; justify-items: start; padding: 18px; border: 1px dashed var(--line); border-radius: 10px }
 .pb-ahead { font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; line-height: 1.4 }
+.pb-also { flex-basis: 100%; line-height: 1.4 }
 
 /* модуль на главной линии: во всю ширину, три колонки */
 .mod.bankmod { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) auto; grid-template-areas: "k v f" "h v f" "p v f" "n v f"; column-gap: 28px; row-gap: 8px; align-items: start }
@@ -1672,6 +1673,7 @@ function pbCard(t, onChange) {
   const card = el("article", "etask pb-task"); card.id = "pb-" + t.id;
   const eh = el("div", "eh"); eh.append(el("b", null, t.n ? `Téma ${t.n}` : "Ostatní")); const src = el("span"); src.textContent = t.src; eh.append(src);
   const meta = el("div", "pb-meta"); meta.append(pbPips(t.level)); if (pbAhead(t)) meta.append(el("span", "pb-ahead", "тема ещё впереди"));
+  if (t.also_in && t.also_in.length) meta.append(el("span", "pb-also", "Также: " + t.also_in.join("; ")));
   const bd = el("div", "ebody"); bd.innerHTML = t.body;
   const res = el("div", "pb-res");
   const focusRes = () => { res.tabIndex = -1; res.focus(); }; // keyboard / screen reader land on the verdict and solution
