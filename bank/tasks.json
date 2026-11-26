@@ -1,0 +1,1822 @@
+[
+ {
+  "id": "fit-2015-07",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2015",
+  "year": 2015,
+  "num": 7,
+  "points": 5,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   11
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 11, úloha 18",
+  "body": "Rozhodněte, které tvrzení o řešeních rovnice $9^{x-\\frac12}+9^{\\frac12-x}=\\frac{10}{3}$ je pravdivé.",
+  "opts": [
+   "Součet všech řešení je $-1$.",
+   "Rovnice nemá řešení.",
+   "Žádná z ostatních možností není správná.",
+   "Rovnice má dvě nezáporná řešení.",
+   "Součin všech řešení je $9$."
+  ],
+  "key": "D",
+  "answer": "$x\\in\\{0;1\\}$",
+  "sol": "$t=9^{x-\\frac12}>0$: $t+\\frac1t=\\frac{10}{3}$, tj. $3t^2-10t+3=0$, $t\\in\\{3;\\frac13\\}$. Odtud $x=1$ nebo $x=0$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2015-09",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2015",
+  "year": 2015,
+  "num": 9,
+  "points": 5,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   12
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 12, úloha 17",
+  "body": "Které tvrzení o definičním oboru funkce $f(x)=\\sqrt{\\log_5 x+1}$ je pravdivé?",
+  "opts": [
+   "Definiční obor je $\\left(0;\\frac15\\right)\\cup\\left(\\frac15;\\infty\\right)$.",
+   "Žádná z ostatních možností není správná.",
+   "Definičním oborem jsou všechna kladná reálná čísla.",
+   "Definiční obor je $\\left\\langle\\frac15;\\infty\\right)$.",
+   "Definiční obor je $\\langle-5;\\infty)$."
+  ],
+  "key": "D",
+  "answer": "$D(f)=\\left\\langle\\frac15;\\infty\\right)$",
+  "sol": "$x>0$ a $\\log_5x\\ge-1=\\log_5\\frac15$; logaritmus o základu $5$ je rostoucí, tedy $x\\ge\\frac15$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2015-10",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2015",
+  "year": 2015,
+  "num": 10,
+  "points": 5,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   12
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 12, úloha 18",
+  "body": "Je dána funkce $y=\\ln(2x+1)$. Pak $y\\in\\langle-1;1\\rangle$ právě pro",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "$x\\in\\left\\langle-\\frac12;\\frac{e-1}{2}\\right\\rangle$",
+   "$x\\in\\left(-\\frac{e^{-1}}{2};\\frac12\\right)$",
+   "$x\\in\\left\\langle\\frac{e^{-1}-1}{2};\\frac{e-1}{2}\\right\\rangle$",
+   "$x\\in\\left\\langle-\\frac{e^{-1}}{2};\\frac{e-1}{2}\\right\\rangle$"
+  ],
+  "key": "D",
+  "answer": "$x\\in\\left\\langle\\frac{e^{-1}-1}{2};\\frac{e-1}{2}\\right\\rangle$",
+  "sol": "$e^{-1}\\le2x+1\\le e$, odtud $\\frac{e^{-1}-1}{2}\\le x\\le\\frac{e-1}{2}$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2015-19",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2015",
+  "year": 2015,
+  "num": 19,
+  "points": 3,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   28,
+   27
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 9, D2 (pool přijímaček)",
+  "body": "Určete parametry $a$, $b$ tak, aby rovnice $ax+4y+1=0$ a $3x+2y-b=0$ popisovaly tutéž přímku.",
+  "opts": [
+   "$a=6$, $b=-1$",
+   "Žádná z ostatních možností není správná.",
+   "$a=6$, $b\\in\\mathbb{R}$",
+   "$a=-\\frac83$, $b=1$",
+   "$a=6$, $b=-\\frac12$"
+  ],
+  "key": "E",
+  "answer": "$a=6$, $b=-\\frac12$",
+  "sol": "Koeficienty musí být úměrné: $\\frac a3=\\frac42=\\frac{1}{-b}$, tedy $a=6$, $b=-\\frac12$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2016-08",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2016",
+  "year": 2016,
+  "num": 8,
+  "points": 5,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   10
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 10, úloha 17",
+  "body": "Je dána funkce $y=\\left(\\frac12\\right)^{3x-1}$. Pak $y\\in\\left\\langle\\frac12;2\\right\\rangle$ právě pro",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "$x\\in\\left\\langle0;\\frac23\\right\\rangle$",
+   "$x\\in(-\\infty;0\\rangle\\cup\\left\\langle\\frac23;\\infty\\right)$",
+   "$x\\in\\left\\langle\\frac23;2\\right\\rangle$",
+   "$x\\in\\left\\langle\\frac23;\\frac{1+\\ln2}{3}\\right\\rangle$"
+  ],
+  "key": "B",
+  "answer": "$x\\in\\left\\langle0;\\frac23\\right\\rangle$",
+  "sol": "$y=2^{1-3x}$, $2^{-1}\\le2^{1-3x}\\le2^1\\iff-1\\le1-3x\\le1\\iff0\\le x\\le\\frac23$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2016-19",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2016",
+  "year": 2016,
+  "num": 19,
+  "points": 3,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   28,
+   27
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 9, D1 (pool přijímaček)",
+  "body": "Určete parametry $a$, $b$ tak, aby přímky $p:\\ ax+4y+1=0$ a $q:\\ 3x+2y-b=0$ byly navzájem kolmé.",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "$a=-\\frac83$, $b\\in\\mathbb{R}$",
+   "$a=6$, $b=-\\frac12$",
+   "$a=-\\frac83$, $b=1$",
+   "$a=6$, $b\\in\\mathbb{R}$"
+  ],
+  "key": "B",
+  "answer": "$a=-\\frac83$, $b\\in\\mathbb{R}$",
+  "sol": "Normálové vektory $(a;4)$ a $(3;2)$ jsou kolmé: $3a+8=0$, $a=-\\frac83$; $b$ libovolné.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2017-10",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2017",
+  "year": 2017,
+  "num": 10,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   12,
+   6
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 12, úloha 19",
+  "body": "Které tvrzení o definičním oboru funkce $f(x)=\\dfrac{\\ln(x^2+8x+15)}{\\sqrt{2-x}}$ je pravdivé?",
+  "opts": [
+   "Definiční obor je $\\mathbb{R}\\setminus\\{2\\}$.",
+   "Definiční obor je $(-\\infty;-5)\\cup(-3;2)$.",
+   "Definiční obor je $(2;\\infty)$.",
+   "Definiční obor je $(-\\infty;-5)$.",
+   "Žádná z ostatních možností není správná."
+  ],
+  "key": "B",
+  "answer": "$(-\\infty;-5)\\cup(-3;2)$",
+  "sol": "$(x+3)(x+5)>0\\Rightarrow x<-5\\ \\vee\\ x>-3$; $2-x>0\\Rightarrow x<2$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2018-03",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2018",
+  "year": 2018,
+  "num": 3,
+  "points": 3,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   9
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 9, úloha 17",
+  "body": "Je dána funkce $f(x)=2x^2-2$. Výraz $2f(t+1)-f(t-1)$ je roven",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "$2t^2+4t$",
+   "$2t^2+12t$",
+   "$8t$",
+   "$2t^2-4$"
+  ],
+  "key": "C",
+  "answer": "$2t^2+12t$",
+  "sol": "$2\\left(2(t+1)^2-2\\right)-\\left(2(t-1)^2-2\\right)=4t^2+8t-2t^2+4t=2t^2+12t$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2018-08",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2018",
+  "year": 2018,
+  "num": 8,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   9,
+   8
+  ],
+  "fidelity": "options_added",
+  "in_course": "ČVUT DÚ 9, D4 (pool přijímaček)",
+  "body": "Obor hodnot funkce $f(x)=\\sqrt{2x+3}-1$ je",
+  "opts": [
+   "$\\left\\langle-\\frac32;\\infty\\right)$",
+   "$\\mathbb{R}$",
+   "$\\langle-1;\\infty)$",
+   "Žádná z ostatních možností není správná.",
+   "$\\langle1;\\infty)$"
+  ],
+  "key": "C",
+  "answer": "$\\langle-1;\\infty)$",
+  "note": "Varianty odpovědí doplněny v kurzu (původní nabídka není k dispozici).",
+  "sol": "$\\sqrt{2x+3}$ nabývá všech hodnot $\\langle0;\\infty)$, po odečtení $1$ dostaneme $\\langle-1;\\infty)$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2018-11",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2018",
+  "year": 2018,
+  "num": 11,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   6
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 9, D3 (pool přijímaček)",
+  "body": "Kolik sudých celých čísel splňuje nerovnici $x^2-53x+150\\le0$?",
+  "opts": [
+   "$24$",
+   "nekonečně mnoho",
+   "Žádná z ostatních možností není správná.",
+   "$25$",
+   "$48$"
+  ],
+  "key": "A",
+  "answer": "$24$",
+  "sol": "Kořeny $3$ a $50$, řešení $\\langle3;50\\rangle$. Sudá čísla $4,6,\\dots,50$: celkem $24$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2019-02",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2019",
+  "year": 2019,
+  "num": 2,
+  "points": 3,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D7",
+  "body": "Binární operace $\\star$ je definována předpisem $a\\star b=\\dfrac{a+b}{a\\cdot b}$. Určete hodnotu neznámé $x$ tak, aby $(2\\star x)\\star 3=3$.",
+  "opts": [
+   "Rovnice má jedno záporné řešení.",
+   "Rovnice má kladné řešení větší než $2$.",
+   "Žádná z ostatních možností není správná.",
+   "Rovnice nemá řešení.",
+   "Rovnice má dvě řešení a jejich součin je $4$."
+  ],
+  "key": "A",
+  "answer": "$x=-8$",
+  "sol": "$u=2\\star x$: $\\frac{u+3}{3u}=3\\Rightarrow u=\\frac38$; $\\frac{2+x}{2x}=\\frac38\\Rightarrow x=-8$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2019-04",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2019",
+  "year": 2019,
+  "num": 4,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D9",
+  "body": "Kladné číslo $x$ je o $25\\,\\%$ větší než kladné číslo $y$. O kolik procent je číslo $y$ menší než číslo $x$?",
+  "opts": [
+   "Číslo $y$ je o $15\\,\\%$ menší než číslo $x$.",
+   "Číslo $y$ je o $33\\,\\%$ menší než číslo $x$.",
+   "Žádná z ostatních možností není správná.",
+   "Číslo $y$ je o $20\\,\\%$ menší než číslo $x$.",
+   "Číslo $y$ je o $25\\,\\%$ menší než číslo $x$."
+  ],
+  "key": "D",
+  "answer": "o $20\\,\\%$",
+  "sol": "$y=\\frac{x}{1{,}25}=0{,}8x$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2019-06",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2019",
+  "year": 2019,
+  "num": 6,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 3,
+  "topics": [
+   20,
+   3
+  ],
+  "fidelity": "adapted",
+  "type": "open",
+  "in_course": "ČVUT DÚ 2, D13",
+  "body": "Mezi kořeny rovnice $x^2-30x+81=0$ vložte čtyři čísla tak, aby spolu s oběma kořeny tvořila šest po sobě jdoucích členů geometrické posloupnosti s kvocientem $q>0$. Určete kvocient $q$ a čtvrtý člen posloupnosti.",
+  "answer": "$q=\\sqrt[5]{9}$, $a_4=9\\sqrt[5]{3}$",
+  "note": "V originále výběr pravdivého tvrzení z pěti možností; v kurzu upraveno na otevřenou úlohu.",
+  "sol": "Kořeny $3$ a $27$: $a_1=3$, $a_6=3q^5=27$, $q^5=9$, $q=3^{2/5}$, $a_4=3q^3=3^{11/5}=9\\sqrt[5]{3}$.",
+  "letters": ""
+ },
+ {
+  "id": "fit-2019-08",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2019",
+  "year": 2019,
+  "num": 8,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   1,
+   7,
+   9
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 7, D2 (pool přijímaček)",
+  "body": "Jsou dány množiny $A=\\{x^2-4x+5:\\ x\\in(1;4\\rangle\\}$ (množina všech hodnot výrazu pro $x\\in(1;4\\rangle$) a $B=\\{x\\in\\mathbb{R}:\\ |x-4|\\le\\frac12\\}$. Sjednocení $A\\cup B$ je",
+  "opts": [
+   "$\\left\\langle\\frac72;\\frac92\\right\\rangle$",
+   "$\\left(\\frac92;5\\right\\rangle$",
+   "$\\left\\langle1;\\frac72\\right)\\cup\\left(\\frac92;5\\right\\rangle$",
+   "Žádná z ostatních možností není správná.",
+   "$\\left\\langle2;\\frac72\\right)\\cup\\left(\\frac92;5\\right\\rangle$"
+  ],
+  "key": "D",
+  "answer": "$A\\cup B=\\langle1;5\\rangle$",
+  "sol": "$x^2-4x+5=(x-2)^2+1$ nabývá na $(1;4\\rangle$ hodnot $\\langle1;5\\rangle$; $B=\\left\\langle\\frac72;\\frac92\\right\\rangle\\subset A$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2019-10",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2019",
+  "year": 2019,
+  "num": 10,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D10",
+  "body": "Za nákup $1{,}5$ kg mandarinek a $3{,}5$ kg pomerančů jsme zaplatili celkem $185$ korun. Kilo pomerančů stojí o třetinu více než kilo mandarinek. Rozhodněte, které tvrzení je pravdivé.",
+  "opts": [
+   "Za kilo pomerančů a půl kila mandarinek bychom zaplatili 50 korun.",
+   "Za kilo mandarinek a půl kila pomerančů bychom zaplatili 50 korun.",
+   "Pomeranče stojí o 15 korun na kilo více než mandarinky.",
+   "Dvě kila mandarinek stojí stejně jako kilo a čtvrt pomerančů.",
+   "Žádná z ostatních možností není správná."
+  ],
+  "key": "B",
+  "answer": "mandarinky 30 Kč/kg, pomeranče 40 Kč/kg",
+  "sol": "$1{,}5m+3{,}5\\cdot\\frac43m=185\\Rightarrow\\frac{37}{6}m=185$, $m=30$, $p=40$; $30+\\frac12\\cdot40=50$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2020-05",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2020",
+  "year": 2020,
+  "num": 5,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 3,
+  "topics": [
+   6,
+   9
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 6, úloha 18",
+  "body": "Je dána funkce $y=2x^2+2x-12$. Určete všechna $x$, pro která leží $y$ v intervalu $\\langle0;12)$.",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "$x\\in\\langle2;3)$",
+   "$x\\in(-\\infty;-3\\rangle\\cup\\langle2;\\infty)$",
+   "$x\\in\\langle3;\\infty)$",
+   "$x\\in\\langle-4;3\\rangle$"
+  ],
+  "key": "A",
+  "answer": "$x\\in(-4;-3\\rangle\\cup\\langle2;3)$",
+  "sol": "$y\\ge0\\iff(x+3)(x-2)\\ge0$; $y<12\\iff(x+4)(x-3)<0$. Průnik: $(-4;-3\\rangle\\cup\\langle2;3)$ — mezi variantami není.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2020-10",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2020",
+  "year": 2020,
+  "num": 10,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   8,
+   6
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 6, úloha 19",
+  "body": "Určete maximální definiční obor funkce $f(x)=\\sqrt{x+2}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}$.",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "$\\left\\langle-2;-\\frac12\\right)\\cup\\left(\\frac32;\\infty\\right)$",
+   "$\\left\\langle-\\frac12;\\frac32\\right\\rangle$",
+   "$\\left(-\\frac12;\\frac32\\right)\\cup\\langle2;\\infty)$",
+   "všechna kladná čísla"
+  ],
+  "key": "B",
+  "answer": "$\\left\\langle-2;-\\frac12\\right)\\cup\\left(\\frac32;\\infty\\right)$",
+  "sol": "$x\\ge-2$ a $x^2-x-\\frac34=\\left(x-\\frac32\\right)\\left(x+\\frac12\\right)>0$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2020-13",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2020",
+  "year": 2020,
+  "num": 13,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 3,
+  "topics": [
+   4
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 4, úloha 17",
+  "body": "Určete hodnoty reálného parametru $p$ tak, aby rovnice $p^2(2x-8)+p\\,(x^2-6x+8)+4x-x^2=0$ měla právě jedno řešení, a rozhodněte, které tvrzení je pravdivé.",
+  "opts": [
+   "Existuje jen jedno takové $p$.",
+   "Žádná z ostatních možností není správná.",
+   "Takových $p$ je nekonečně mnoho.",
+   "Existují dvě taková $p$.",
+   "Takový parametr $p$ neexistuje."
+  ],
+  "key": "A",
+  "answer": "$p=-2$",
+  "sol": "Rovnice je $(p-1)(x-4)(x+2p)=0$. Pro $p=1$ je řešením každé $x$; jinak $x=4$ nebo $x=-2p$, jediné řešení právě pro $-2p=4$, tj. $p=-2$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2021-01",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2021",
+  "year": 2021,
+  "num": 1,
+  "points": 3,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D8",
+  "body": "Binární operace $\\star$ je definována předpisem $a\\star b=\\dfrac{a+b}{a-b}$. Řešte rovnici $(2\\star x)\\star 3=-2$.",
+  "opts": [
+   "Rovnice má jedno záporné řešení.",
+   "Žádná z ostatních možností není správná.",
+   "Rovnice má kladné řešení větší než $2$.",
+   "Rovnice má dvě řešení a jejich součin je $4$.",
+   "Rovnice nemá řešení."
+  ],
+  "key": "B",
+  "answer": "$x=0$",
+  "sol": "$u=2\\star x$: $\\frac{u+3}{u-3}=-2\\Rightarrow u=1$; $\\frac{2+x}{2-x}=1\\Rightarrow x=0$ (a $2\\star0=1$ je definováno).",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2021-05",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2021",
+  "year": 2021,
+  "num": 5,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   8,
+   6
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 8, D1",
+  "body": "Které z následujících tvrzení o definičním oboru funkce $f(x)=\\sqrt{\\dfrac{1}{x+2}}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}$ je pravdivé?",
+  "opts": [
+   "Definičním oborem jsou všechna kladná čísla.",
+   "Definiční obor je $\\left(-\\frac12;\\frac32\\right)\\cup\\langle2;\\infty)$.",
+   "Definiční obor je $\\left\\langle-\\frac12;\\frac32\\right\\rangle$.",
+   "Žádná z ostatních možností není správná.",
+   "Definiční obor je $\\left(-\\infty;-\\frac12\\right)\\cup\\left(\\frac32;2\\right\\rangle$."
+  ],
+  "key": "D",
+  "answer": "$\\left(-2;-\\frac12\\right)\\cup\\left(\\frac32;\\infty\\right)$",
+  "note": "Podle kurzu se tatáž úloha objevuje i ve vzoru 2019 (př. 5).",
+  "sol": "$x+2>0$ a $\\left(x-\\frac32\\right)\\left(x+\\frac12\\right)>0$; výsledek mezi variantami není.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2021-11",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2021",
+  "year": 2021,
+  "num": 11,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   7,
+   6,
+   1
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 7, úloha 17",
+  "body": "Množina $A$ obsahuje všechna reálná $x$, pro která $x^2+4x-2>0$, množina $B$ všechna reálná $x$, pro která $|x+1|\\le3$. Určete rozdíl $A-B$ (tj. $A\\setminus B$).",
+  "opts": [
+   "$\\left(-2+\\sqrt6;2\\right\\rangle$",
+   "$\\left\\langle-4;-2+\\sqrt6\\right)$",
+   "Žádná z ostatních možností není správná.",
+   "$\\left(-\\infty;-2-\\sqrt6\\right)\\cup(2;\\infty)$",
+   "$\\left(-2-\\sqrt6;4\\right\\rangle$"
+  ],
+  "key": "D",
+  "answer": "$\\left(-\\infty;-2-\\sqrt6\\right)\\cup(2;\\infty)$",
+  "sol": "$A=\\left(-\\infty;-2-\\sqrt6\\right)\\cup\\left(-2+\\sqrt6;\\infty\\right)$, $B=\\langle-4;2\\rangle$; $-2-\\sqrt6\\approx-4{,}45<-4$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2021-13",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2021",
+  "year": 2021,
+  "num": 13,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 3,
+  "topics": [
+   30,
+   4
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 4, úloha 19",
+  "body": "Určete hodnotu parametru $p$ tak, aby přímka $q:\\ px+y-1=0$ neměla s kružnicí $k:\\ x^2-4x+y^2-6y-3=0$ žádný společný bod.",
+  "opts": [
+   "Takových $p$ je nekonečně mnoho.",
+   "$p\\in(-\\infty;3)\\cup\\langle7;\\infty)$",
+   "Žádná z ostatních možností není správná.",
+   "$p=7$",
+   "Takové $p$ neexistuje."
+  ],
+  "key": "E",
+  "answer": "takové $p$ neexistuje",
+  "note": "Podle kurzu tatáž úloha i ve vzoru 2019.",
+  "sol": "Přímka prochází bodem $[0;1]$, který leží uvnitř kružnice $(x-2)^2+(y-3)^2=16$ (vzdálenost od středu $\\sqrt8<4$), proto ji vždy protne.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2021-15",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2021",
+  "year": 2021,
+  "num": 15,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 3,
+  "topics": [
+   4
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 4, úloha 18",
+  "body": "Určete všechny hodnoty reálného parametru $p$, pro které má rovnice $px^2-p(p+3)x+2p(p+1)=0$ právě 2 různé reálné kořeny.",
+  "opts": [
+   "$p\\in\\mathbb{R}\\setminus\\{1\\}$.",
+   "Žádná z ostatních možností není správná.",
+   "$p\\in\\mathbb{R}$.",
+   "$p\\in(0;1)\\cup(1;\\infty)$.",
+   "Takové $p$ neexistuje."
+  ],
+  "key": "B",
+  "answer": "$p\\in\\mathbb{R}\\setminus\\{0;1\\}$",
+  "sol": "Pro $p=0$ je řešením každé $x$. Pro $p\\ne0$: $x^2-(p+3)x+2(p+1)=0$, $D=(p-1)^2>0\\iff p\\ne1$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-01",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 1,
+  "points": 3,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   9
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 2, D10",
+  "body": "Je dána funkce $f(x)=x^2-2x+1$. Spočtěte hodnotu rozdílu $f(t+1)-f(t-1)$.",
+  "opts": [
+   "$2t^2-4t+4$",
+   "$-4t+4$",
+   "$4t-4$",
+   "$2$",
+   "Žádná z ostatních možností není správná."
+  ],
+  "key": "C",
+  "answer": "$4t-4$",
+  "sol": "$f(x)=(x-1)^2$: $t^2-(t-2)^2=4t-4$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-03",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 3,
+  "points": 3,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   6
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 6, D2 (pool přijímaček)",
+  "body": "O číslech $a,b,c,d,e$ víme: $a=b$, $a\\ge c$, $d>b$, $e<a$. Které tvrzení <i>nemůže</i> být pravdivé?",
+  "opts": [
+   "$c<e$",
+   "Platí právě jeden z ostatních vztahů.",
+   "$e=c$",
+   "$c>d$",
+   "$e\\le d$"
+  ],
+  "key": "D",
+  "answer": "$c>d$",
+  "sol": "$c\\le a=b<d$, tedy vždy $c<d$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-04",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 4,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D11",
+  "body": "Petr a Pavel mají stejně vysoký plat. Pavel platí o čtvrtinu vyšší nájem než Petr. Nájem bytu stojí Pavla $25\\,\\%$ jeho platu. Kolik procent svého platu platí za nájem Petr?",
+  "opts": [
+   "$22{,}5\\,\\%$",
+   "$15\\,\\%$",
+   "$18{,}75\\,\\%$",
+   "Žádná z ostatních možností není správná.",
+   "$20\\,\\%$"
+  ],
+  "key": "E",
+  "answer": "$20\\,\\%$",
+  "sol": "$1{,}25\\cdot n=0{,}25\\,S\\Rightarrow n=0{,}2\\,S$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-05",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 5,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   8,
+   6
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 8, úloha 17",
+  "body": "Které z následujících tvrzení o definičním oboru funkce $f(x)=\\sqrt{\\dfrac{x-2}{x^2-x-\\frac34}}$ je pravdivé?",
+  "opts": [
+   "Definiční obor je $\\left(-\\infty;-\\frac12\\right)\\cup\\left(\\frac32;2\\right\\rangle$.",
+   "Žádná z ostatních možností není správná.",
+   "Definiční obor je $\\left(-\\frac12;\\frac32\\right)\\cup\\langle2;\\infty)$.",
+   "Definiční obor je $\\left\\langle-\\frac12;\\frac32\\right\\rangle$.",
+   "Definičním oborem jsou všechna kladná čísla."
+  ],
+  "key": "C",
+  "answer": "$\\left(-\\frac12;\\frac32\\right)\\cup\\langle2;\\infty)$",
+  "sol": "$\\frac{x-2}{\\left(x-\\frac32\\right)\\left(x+\\frac12\\right)}\\ge0$ — metoda intervalů s body $-\\frac12,\\frac32,2$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-06",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 6,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   5
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 5, úloha 17",
+  "body": "Nalezněte řešení rovnice $|2x-1|-|2-3x|=-x$ a rozhodněte, které tvrzení je pravdivé.",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "Rovnice má právě $2$ různá řešení.",
+   "Rovnice má právě $3$ různá řešení.",
+   "Rovnice nemá řešení.",
+   "Rovnice má právě $1$ řešení."
+  ],
+  "key": "E",
+  "answer": "$x=\\frac12$",
+  "sol": "Nulové body $\\frac12,\\frac23$. Na $x<\\frac12$: $x-1=-x$, $x=\\frac12$ nevyhovuje; na $\\left\\langle\\frac12;\\frac23\\right)$: $5x-3=-x$, $x=\\frac12$ ✓; na $x\\ge\\frac23$: $1=0$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-07",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 7,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D12",
+  "body": "Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno $15\\,\\%$ celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla $51$ kg, v druhé etapě $55$ kg a ve třetí etapě $48$ kg. Celková průměrná hmotnost pytle brambor v tomto skladu je $50{,}55$ kg. Určete, kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "Úloha má více než jedno řešení.",
+   "$55\\,\\%$",
+   "$30\\,\\%$",
+   "Úloha nemá řešení."
+  ],
+  "key": "D",
+  "answer": "$30\\,\\%$",
+  "sol": "$0{,}15\\cdot51+55p+48(0{,}85-p)=50{,}55\\Rightarrow7p=2{,}1$, $p=0{,}3$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-09",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 9,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   11
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 2, D11",
+  "body": "Řešte rovnici $3^x+5\\cdot4^x=2\\cdot4^{x+1}-3^{x+1}$.",
+  "opts": [
+   "jedno záporné řešení",
+   "nemá řešení",
+   "jedno kladné řešení",
+   "jediné řešení $x=0$",
+   "Žádná z ostatních možností není správná."
+  ],
+  "key": "C",
+  "answer": "$x=1$",
+  "note": "Nabízené odpovědi v kurzu přeformulovány.",
+  "sol": "$3^x+3\\cdot3^x=8\\cdot4^x-5\\cdot4^x\\Rightarrow4\\cdot3^x=3\\cdot4^x\\Rightarrow\\left(\\frac34\\right)^x=\\frac34$, $x=1$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-10",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 10,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 3,
+  "topics": [
+   19,
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D13",
+  "body": "Určete první člen $a_1$ a diferenci $d$ reálné aritmetické posloupnosti, pokud víte, že součet čtvrtého a pátého členu je $4$ a součin čtvrtého a pátého členu je $5$.",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "Úloha nemá řešení.",
+   "Součin všech možných diferencí je $4$.",
+   "Součet všech možných prvních členů je $24$.",
+   "$d=2$, $a_1=-5$."
+  ],
+  "key": "B",
+  "answer": "úloha nemá řešení",
+  "sol": "$a_4,a_5$ jsou kořeny $t^2-4t+5=0$, $D=16-20<0$ — reálná řešení neexistují.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-11",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 11,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   9
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 9, úloha 18",
+  "body": "Obor hodnot funkce $f(x)=2x^2-5x+3$ je",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "$\\left(\\frac54;\\infty\\right)$",
+   "$\\mathbb{R}$",
+   "$\\left\\langle-\\frac{19}{2};\\infty\\right)$",
+   "$\\left\\langle-\\frac18;\\infty\\right)$"
+  ],
+  "key": "E",
+  "answer": "$\\left\\langle-\\frac18;\\infty\\right)$",
+  "sol": "Vrchol $x=\\frac54$, $f\\left(\\frac54\\right)=-\\frac18$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2022-12",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2022",
+  "year": 2022,
+  "num": 12,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   10
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 10, úloha 18",
+  "body": "Je dána funkce $y=2e^{3x-1}$. Pak $y\\in\\left\\langle\\frac12;2\\right\\rangle$ právě pro",
+  "opts": [
+   "$x\\in\\left\\langle\\frac{1-\\ln4}{3};\\frac13\\right\\rangle$",
+   "Žádná z ostatních možností není správná.",
+   "$x\\in\\langle-1;0\\rangle$",
+   "$x\\in\\left\\langle-\\frac{e+1}{3};\\frac{e^2+1}{3}\\right\\rangle$",
+   "$x\\in\\left\\langle\\frac13;\\infty\\right)$"
+  ],
+  "key": "A",
+  "answer": "$x\\in\\left\\langle\\frac{1-\\ln4}{3};\\frac13\\right\\rangle$",
+  "sol": "$e^{3x-1}\\in\\left\\langle\\frac14;1\\right\\rangle\\iff-\\ln4\\le3x-1\\le0$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2023-15",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2023",
+  "year": 2023,
+  "num": 15,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 2,
+  "topics": [
+   4,
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 3, úloha 19",
+  "body": "Je dána rovnice $3x^2-24x+p=0$ s neznámou $x$ a parametrem $p$. Určete $p$ tak, aby jeden kořen rovnice byl trojnásobkem druhého.",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "Takový parametr $p$ neexistuje.",
+   "$p=12$.",
+   "$p=108$.",
+   "Takových $p$ je nekonečně mnoho."
+  ],
+  "key": "A",
+  "answer": "$p=36$",
+  "sol": "$x_1=3x_2$, $x_1+x_2=8\\Rightarrow x_2=2$, $x_1=6$; $x_1x_2=\\frac p3=12\\Rightarrow p=36$ — mezi variantami není.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2024-03",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2024",
+  "year": 2024,
+  "num": 3,
+  "points": 3,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   2,
+   8
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 2, úloha 20; DÚ 8, D2",
+  "body": "Určete, čemu se rovná druhá odmocnina podílu nenulového čísla $x$ a jeho převrácené hodnoty.",
+  "opts": [
+   "$|x|$",
+   "$\\pm x$",
+   "$x$",
+   "Žádná z ostatních možností není správná.",
+   "$1$"
+  ],
+  "key": "A",
+  "answer": "$|x|$",
+  "note": "Podle kurzu podobně i ve vzoru 2020 (př. 3).",
+  "sol": "$\\sqrt{x:\\frac1x}=\\sqrt{x^2}=|x|$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2024-11",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2024",
+  "year": 2024,
+  "num": 11,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 3,
+  "topics": [
+   6
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 6, D1 (pool přijímaček)",
+  "body": "Najděte všechna reálná řešení nerovnice $(x+1)^3\\le(x+1)^{-1}$ a vyberte pravdivé tvrzení.",
+  "opts": [
+   "$x\\in(-\\infty;-2\\rangle\\cup\\langle0;\\infty)$",
+   "$x\\in(-\\infty;-1)\\cup(-1;\\infty)$",
+   "$x\\in(-\\infty;-2\\rangle\\cup(-1;0\\rangle$",
+   "$x\\in\\langle-2;0\\rangle$",
+   "Žádná z ostatních možností není správná."
+  ],
+  "key": "C",
+  "answer": "$(-\\infty;-2\\rangle\\cup(-1;0\\rangle$",
+  "sol": "$t=x+1\\ne0$: $\\frac{t^4-1}{t}\\le0\\iff\\frac{(t-1)(t+1)}{t}\\le0\\iff t\\le-1\\ \\vee\\ 0<t\\le1$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2024-13",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2024",
+  "year": 2024,
+  "num": 13,
+  "points": 7,
+  "source": "fit-bc",
+  "level": 1,
+  "topics": [
+   28
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 9, úloha 19",
+  "body": "Určete reálné parametry $a$, $b$ tak, aby přímky $ax+4y+1=0$ a $3x+2y-b=0$ měly právě jeden společný bod.",
+  "opts": [
+   "$a=-\\frac83$, $b\\ne\\frac12$",
+   "$a\\ne-\\frac83$, $b\\in\\mathbb{R}$",
+   "Žádná z ostatních možností není správná.",
+   "$a\\ne6$, $b\\in\\mathbb{R}$",
+   "$a\\ne6$, $b\\ne-1$"
+  ],
+  "key": "D",
+  "answer": "$a\\ne6$, $b\\in\\mathbb{R}$",
+  "sol": "Přímky nesmí být rovnoběžné: $\\frac a3\\ne\\frac42$, tj. $a\\ne6$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2026-01",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2026",
+  "year": 2026,
+  "num": 1,
+  "points": 3,
+  "source": "fit-bc-2026",
+  "level": 1,
+  "topics": [
+   6
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 6, úloha 17",
+  "body": "O reálných číslech $a,b,c,d,e$ víme: $a\\le b$, $a<c$, $d\\le b$, $e<a$. Které tvrzení <i>nemůže</i> platit?",
+  "opts": [
+   "$e>c$",
+   "$e<d$",
+   "$a<d$",
+   "Žádná z ostatních možností není správná.",
+   "$d>c$"
+  ],
+  "key": "A",
+  "answer": "$e>c$",
+  "sol": "$e<a<c$, tedy vždy $e<c$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2026-03",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2026",
+  "year": 2026,
+  "num": 3,
+  "points": 3,
+  "source": "fit-bc-2026",
+  "level": 2,
+  "topics": [
+   11
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 11, úloha 17",
+  "body": "Pro řešení nerovnice $\\left(\\frac13\\right)^{x^2}\\le3^{-x-6}$ platí:",
+  "opts": [
+   "Všechna řešení leží v $(-\\infty;-2\\rangle\\cup\\langle3;\\infty)$.",
+   "Žádná z ostatních možností není správná.",
+   "Všechna řešení leží v intervalu $\\langle-2;\\infty)$.",
+   "Neexistují záporná řešení.",
+   "Řešením jsou všechna reálná čísla."
+  ],
+  "key": "A",
+  "answer": "$x\\in(-\\infty;-2\\rangle\\cup\\langle3;\\infty)$",
+  "note": "Tatáž úloha i ve vzoru 2021 (př. 10, 7 bodů).",
+  "sol": "$3^{-x^2}\\le3^{-x-6}\\iff-x^2\\le-x-6\\iff(x-3)(x+2)\\ge0$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2026-04",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2026",
+  "year": 2026,
+  "num": 4,
+  "points": 7,
+  "source": "fit-bc-2026",
+  "level": 3,
+  "topics": [
+   1
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 1, úloha 16",
+  "body": "Ve třídě je $30$ žáků. Každý může maturovat z matematiky (M), fyziky (F) a/nebo angličtiny (A). Matematiku a zároveň fyziku si zvolila třetina žáků. Alespoň jeden z předmětů M, F si zvolilo $24$ žáků. Angličtinu si zvolilo $22$ žáků. Všechny tři předměty si vybralo $8$ žáků, jen matematiku $3$ žáci, matematiku a zároveň angličtinu $15$ žáků. $2$ žáci si nevybrali ani jeden z těchto předmětů. Které tvrzení platí?",
+  "opts": [
+   "Žádná z ostatních možností není správná.",
+   "Angličtinu nebo fyziku si vybralo více žáků než matematiku nebo fyziku.",
+   "Jen angličtinu si vybralo více žáků než matematiku a zároveň fyziku.",
+   "Neexistuje žák, který si zvolil jen fyziku.",
+   "Popsaná situace nemůže nastat."
+  ],
+  "key": "B",
+  "answer": "$|A\\cup F|=25>|M\\cup F|=24$",
+  "sol": "Vennův diagram: jen M $3$, MF bez A $2$, MA bez F $7$, MFA $8$, FA bez M $3$, jen F $1$, jen A $4$, nic $2$. $|A\\cup F|=30-2-3=25$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2026-06",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2026",
+  "year": 2026,
+  "num": 6,
+  "points": 7,
+  "source": "fit-bc-2026",
+  "level": 1,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 3, úloha 17",
+  "body": "Řešte soustavu rovnic $3(x+2)-4(y+x)=7$, $2x-(x-4y)=-1$.",
+  "opts": [
+   "Soustava má jediné řešení.",
+   "Soustava má nekonečně mnoho řešení.",
+   "Žádná z ostatních možností není správná.",
+   "Soustava nemá reálná řešení.",
+   "Součin řešení $x$ a $y$ je $1$."
+  ],
+  "key": "B",
+  "answer": "$x=-1-4y$, $y\\in\\mathbb{R}$",
+  "sol": "Obě rovnice jsou ekvivalentní s $x+4y=-1$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2026-08",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2026",
+  "year": 2026,
+  "num": 8,
+  "points": 7,
+  "source": "fit-bc-2026",
+  "level": 2,
+  "topics": [
+   1,
+   7,
+   9
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 1, úloha 17",
+  "body": "Jsou dány množiny $A=\\{x^2-4x+5\\mid x\\in(1,4)\\}$ a $B=\\{x\\mid |x-4|\\le\\frac12\\}$. Množina $A\\cup B$ je:",
+  "opts": [
+   "$\\left(\\frac92,5\\right)$",
+   "$\\left(\\frac72,\\frac92\\right)$",
+   "Žádná z ostatních možností není správná.",
+   "$\\left\\langle1,\\frac72\\right\\rangle\\cup\\left\\langle\\frac92,5\\right)$",
+   "$\\left(2,\\frac72\\right\\rangle\\cup\\left\\langle\\frac92,5\\right)$"
+  ],
+  "key": "C",
+  "answer": "$A\\cup B=\\langle1;5)$",
+  "note": "Varianta úlohy 2019/8 s otevřeným intervalem.",
+  "sol": "$(x-2)^2+1$ na $(1;4)$ nabývá hodnot $\\langle1;5)$; $B=\\left\\langle\\frac72;\\frac92\\right\\rangle\\subset A$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fit-2026-16",
+  "uni": "ČVUT",
+  "faculty": "FIT",
+  "exam": "Vzorová přijímací zkouška z matematiky 2026",
+  "year": 2026,
+  "num": 16,
+  "points": 7,
+  "source": "fit-bc-2026",
+  "level": 2,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 3, úloha 18; DÚ 2, D12",
+  "body": "Řešte rovnici $(x^2-x+3)^2-8(x^2-x)=9$.",
+  "opts": [
+   "Rovnice nemá řešení.",
+   "Součin všech reálných řešení je $-2$.",
+   "Všechna reálná řešení rovnice leží v intervalu $\\langle-1,3\\rangle$.",
+   "Žádná z ostatních možností není správná.",
+   "Rovnice má pouze nezáporná řešení."
+  ],
+  "key": "C",
+  "answer": "$x\\in\\{-1;0;1;2\\}$",
+  "sol": "$t=x^2-x$: $(t+3)^2-8t=9\\iff t^2-2t=0$, $t\\in\\{0;2\\}$; $x\\in\\{0;1\\}\\cup\\{-1;2\\}$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fel-vzor01-1",
+  "uni": "ČVUT",
+  "faculty": "FEL",
+  "exam": "Vzorový test přijímacích zkoušek VZOR01 (řešení)",
+  "year": null,
+  "num": 1,
+  "points": null,
+  "source": "fel-vzor01",
+  "level": 1,
+  "topics": [
+   7
+  ],
+  "type": "open",
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 7, D1",
+  "body": "Najděte všechna reálná řešení nerovnice $2|x+3|<2$.",
+  "answer": "$x\\in(-4;-2)$",
+  "sol": "$|x+3|<1\\iff-1<x+3<1$.",
+  "letters": ""
+ },
+ {
+  "id": "fel-vzor01-10",
+  "uni": "ČVUT",
+  "faculty": "FEL",
+  "exam": "Vzorový test přijímacích zkoušek VZOR01 (řešení)",
+  "year": null,
+  "num": 10,
+  "points": null,
+  "source": "fel-vzor01",
+  "level": 2,
+  "topics": [
+   8,
+   2,
+   9
+  ],
+  "fidelity": "options_added",
+  "in_course": "ČVUT lekce 8, úloha 18",
+  "body": "Graf funkce $y=\\left(\\dfrac{1-\\sqrt x}{\\sqrt x-x}\\right)^2$ je částí",
+  "opts": [
+   "paraboly.",
+   "hyperboly.",
+   "přímky.",
+   "kružnice.",
+   "Žádná z ostatních možností není správná."
+  ],
+  "key": "B",
+  "answer": "$y=\\frac1x$ pro $x>0$, $x\\ne1$",
+  "note": "Ve vzoru FEL nejsou nabídnuté odpovědi zveřejněny; varianty doplněny v kurzu.",
+  "sol": "$\\sqrt x-x=\\sqrt x(1-\\sqrt x)$, takže $y=\\frac1x$ pro $x>0$, $x\\ne1$ — část hyperboly.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fel-vzor01-11",
+  "uni": "ČVUT",
+  "faculty": "FEL",
+  "exam": "Vzorový test přijímacích zkoušek VZOR01 (řešení)",
+  "year": null,
+  "num": 11,
+  "points": null,
+  "source": "fel-vzor01",
+  "level": 2,
+  "topics": [
+   7
+  ],
+  "type": "open",
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 7, úloha 18",
+  "body": "Najděte množinu všech reálných řešení nerovnice $|x+5|\\ge4+|3-2x|$.",
+  "answer": "$x\\in\\left\\langle\\frac23;4\\right\\rangle$",
+  "sol": "Nulové body $-5,\\frac32$: pro $x<-5$ nic; na $\\left\\langle-5;\\frac32\\right\\rangle$: $x\\ge\\frac23$; pro $x>\\frac32$: $x\\le4$.",
+  "letters": ""
+ },
+ {
+  "id": "fel-vzor01-12",
+  "uni": "ČVUT",
+  "faculty": "FEL",
+  "exam": "Vzorový test přijímacích zkoušek VZOR01 (řešení)",
+  "year": null,
+  "num": 12,
+  "points": null,
+  "source": "fel-vzor01",
+  "level": 2,
+  "topics": [
+   29,
+   9
+  ],
+  "fidelity": "options_added",
+  "in_course": "ČVUT lekce 9, úloha 20",
+  "body": "Přímky procházejí bodem $A[0;-5]$ a mají od počátku souřadnic vzdálenost $\\sqrt5$. Jejich směrnice jsou",
+  "opts": [
+   "$2$ a $-2$",
+   "$\\frac12$ a $-\\frac12$",
+   "pouze $2$",
+   "$\\sqrt5$ a $-\\sqrt5$",
+   "Žádná z ostatních možností není správná."
+  ],
+  "key": "A",
+  "answer": "$k=\\pm2$",
+  "note": "Varianty doplněny v kurzu.",
+  "sol": "$y=kx-5$: $\\frac{5}{\\sqrt{k^2+1}}=\\sqrt5\\Rightarrow k^2=4$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fel-vzor01-14",
+  "uni": "ČVUT",
+  "faculty": "FEL",
+  "exam": "Vzorový test přijímacích zkoušek VZOR01 (řešení)",
+  "year": null,
+  "num": 14,
+  "points": null,
+  "source": "fel-vzor01",
+  "level": 1,
+  "topics": [
+   4
+  ],
+  "type": "open",
+  "fidelity": "original",
+  "in_course": "ČVUT lekce 4, úloha 20 (upravená verze v lekci 3, úloha 20)",
+  "body": "Pro která $p$ nemá rovnice $x^2-(p+1)x+4=0$ s neznámou $x$ žádný reálný kořen?",
+  "answer": "$p\\in(-5;3)$",
+  "sol": "$D=(p+1)^2-16<0\\iff|p+1|<4$.",
+  "letters": ""
+ },
+ {
+  "id": "fel-vzor01-mnoziny",
+  "uni": "ČVUT",
+  "faculty": "FEL",
+  "exam": "Vzorový test přijímacích zkoušek VZOR01 (řešení)",
+  "year": null,
+  "num": null,
+  "points": null,
+  "source": "fel-vzor01",
+  "level": 2,
+  "topics": [
+   1
+  ],
+  "fidelity": "options_added",
+  "in_course": "ČVUT lekce 1, úloha 15",
+  "body": "Jsou dány množiny $A=\\{1,2,3,\\dots,1000\\}$, $B=\\{x\\in A:\\ \\frac x6\\in\\mathbb{Z}\\}$, $C=\\{x\\in A:\\ \\frac x8\\in\\mathbb{Z}\\}$, $D=\\{x\\in A:\\ 237\\le x\\le356\\}$. Určete počet prvků množiny $(B\\cap C)\\cup D$.",
+  "opts": [
+   "$161$",
+   "$156$",
+   "$151$",
+   "$155$",
+   "$120$"
+  ],
+  "key": "B",
+  "answer": "$156$",
+  "note": "Číslo úlohy ve vzoru neuvedeno; varianty doplněny v kurzu.",
+  "sol": "$B\\cap C$ = násobky $24$: $41$ prvků; $|D|=120$; v $D$ leží násobky $24$: $240,\\dots,336$ — $5$. $41+120-5=156$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fel-vzor01-mocniny",
+  "uni": "ČVUT",
+  "faculty": "FEL",
+  "exam": "Vzorový test přijímacích zkoušek VZOR01 (řešení)",
+  "year": null,
+  "num": null,
+  "points": null,
+  "source": "fel-vzor01",
+  "level": 1,
+  "topics": [
+   2
+  ],
+  "fidelity": "options_added",
+  "in_course": "ČVUT lekce 2, úloha 18",
+  "body": "Zjednodušte výraz $\\dfrac{6x^3b^3}{25y^4}\\cdot\\dfrac{15y}{b^2}$ (pro $y\\ne0$, $b\\ne0$).",
+  "opts": [
+   "$\\dfrac{18bx^3}{5y^4}$",
+   "$\\dfrac{2bx^3}{5y^3}$",
+   "$\\dfrac{18bx^3}{5y^3}$",
+   "$\\dfrac{18b^5x^3}{5y^3}$",
+   "$\\dfrac{18bx^3y^3}{5}$"
+  ],
+  "key": "C",
+  "answer": "$\\dfrac{18bx^3}{5y^3}$",
+  "note": "Číslo úlohy ve vzoru neuvedeno; varianty doplněny v kurzu.",
+  "sol": "$\\frac{90}{25}=\\frac{18}{5}$, $\\frac{b^3}{b^2}=b$, $\\frac{y}{y^4}=\\frac1{y^3}$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fel-vzor01-morse",
+  "uni": "ČVUT",
+  "faculty": "FEL",
+  "exam": "Vzorový test přijímacích zkoušek VZOR01 (řešení)",
+  "year": null,
+  "num": null,
+  "points": null,
+  "source": "fel-vzor01",
+  "level": 1,
+  "topics": [
+   22,
+   2
+  ],
+  "fidelity": "options_added",
+  "in_course": "ČVUT lekce 2, úloha 21",
+  "body": "Kolik různých znaků Morseovy abecedy lze vytvořit ze skupin teček a čárek o délce $1$ až $5$ (tj. skupin obsahujících $1$ až $5$ symbolů)?",
+  "opts": [
+   "$32$",
+   "$31$",
+   "$62$",
+   "$63$",
+   "$120$"
+  ],
+  "key": "C",
+  "answer": "$62$",
+  "note": "Číslo úlohy ve vzoru neuvedeno; varianty doplněny v kurzu.",
+  "sol": "$2+2^2+2^3+2^4+2^5=62$.",
+  "letters": "ABCDE",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-kvadr-koreny",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": null,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D1",
+  "body": "Řešením kvadratické rovnice $2x^2+5x+2=0$ jsou čísla:",
+  "opts": [
+   "$x_1=-0{,}5$; $x_2=-2$",
+   "$x_1=-1$; $x_2=-4$",
+   "$x_1=0{,}5$; $x_2=2$",
+   "$x_1=1$; $x_2=4$"
+  ],
+  "key": "a",
+  "answer": "$-\\frac12$; $-2$",
+  "sol": "$x=\\frac{-5\\pm3}{4}$.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-diskriminant",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": null,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D5",
+  "body": "Diskriminant kvadratické rovnice $ax^2+bx+c=0$ je roven:",
+  "opts": [
+   "$D=\\sqrt{b^2+4ac}$",
+   "$D=\\sqrt{b+4ac}$",
+   "$D=\\sqrt{b^2-4ac}$",
+   "Ani jedna z nabízených možností není správná."
+  ],
+  "key": "d",
+  "answer": "$D=b^2-4ac$",
+  "sol": "$D=b^2-4ac$ (bez odmocniny).",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-dvojnasobny",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": null,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   3
+  ],
+  "fidelity": "original",
+  "in_course": "ČVUT DÚ 3, D6",
+  "body": "Pokud má kvadratická rovnice $ax^2+bx+c=0$ v oboru reálných čísel jediné řešení, je rovno:",
+  "opts": [
+   "$x_1=x_2=-\\dfrac{b}{2a}$",
+   "$x_1=x_2=\\dfrac{b}{2a}$",
+   "$x_1=x_2=-\\dfrac{b}{2}$",
+   "Ani jedna z nabízených možností není správná."
+  ],
+  "key": "a",
+  "answer": "$-\\frac{b}{2a}$",
+  "sol": "Pro $D=0$ je $x=\\frac{-b}{2a}$.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-25",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": 25,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   12
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT lekce 12, úloha 20",
+  "body": "Výraz $\\log\\dfrac{a}{(b+c)^2}$ ($a,b,c>0$) je roven",
+  "opts": [
+   "$\\log a:2\\log(b+c)$",
+   "$\\log a-2\\log(b+c)$",
+   "$\\log a-2\\log b-2\\log c$",
+   "$\\log a:(2\\log b+2\\log c)$"
+  ],
+  "key": "b",
+  "answer": "$\\log a-2\\log(b+c)$",
+  "sol": "Logaritmus podílu a mocniny.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-26",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": 26,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   12
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 12, D1",
+  "body": "Výraz $\\log\\dfrac{a+b}{\\sqrt c}$ ($a,b,c>0$) je roven",
+  "opts": [
+   "$\\log(a+b):\\log\\sqrt c$",
+   "$\\log a+\\log b-\\frac12\\log c$",
+   "$\\log(a+b)-\\frac12\\log c$",
+   "$(\\log a+\\log b):\\frac12\\log c$"
+  ],
+  "key": "c",
+  "answer": "$\\log(a+b)-\\frac12\\log c$",
+  "sol": "$\\log(a+b)$ se nerozkládá.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-27",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": 27,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   12
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 12, D2",
+  "body": "Výraz $\\log\\dfrac{a+b}{c^2}$ ($a,b,c>0$) je roven",
+  "opts": [
+   "$\\log(a+b):2\\log c$",
+   "$\\log a+\\log b-2\\log c$",
+   "$\\log(a+b)-2\\log c$",
+   "$(\\log a+\\log b):2\\log c$"
+  ],
+  "key": "c",
+  "answer": "$\\log(a+b)-2\\log c$",
+  "sol": "$\\log(a+b)$ se nerozkládá.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-28",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": 28,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   9
+  ],
+  "fidelity": "reworded",
+  "in_course": "VŠE DÚ 9, D1",
+  "body": "Graf funkce $y=\\frac23x+\\frac16$ prochází body",
+  "opts": [
+   "$\\left[-1;\\frac16\\right]$, $\\left[0;\\frac16\\right]$",
+   "$\\left[0;\\frac16\\right]$, $\\left[\\frac12;\\frac12\\right]$",
+   "$\\left[-1;\\frac23\\right]$, $\\left[0;\\frac16\\right]$",
+   "$\\left[0;\\frac16\\right]$, $\\left[\\frac12;\\frac23\\right]$"
+  ],
+  "key": "b",
+  "answer": "$\\left[0;\\frac16\\right]$, $\\left[\\frac12;\\frac12\\right]$",
+  "sol": "$y(0)=\\frac16$, $y\\left(\\frac12\\right)=\\frac13+\\frac16=\\frac12$.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-29",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": 29,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   9
+  ],
+  "fidelity": "reworded",
+  "in_course": "VŠE DÚ 9, D2",
+  "body": "Graf funkce $y=x^2+x+\\frac12$ prochází body",
+  "opts": [
+   "$\\left[-1;\\frac12\\right]$, $\\left[0;\\frac12\\right]$",
+   "$\\left[0;\\frac12\\right]$, $\\left[1;\\frac32\\right]$",
+   "$\\left[-1;\\frac23\\right]$, $\\left[0;\\frac12\\right]$",
+   "$\\left[0;\\frac12\\right]$, $\\left[\\frac12;\\frac23\\right]$"
+  ],
+  "key": "a",
+  "answer": "$\\left[-1;\\frac12\\right]$, $\\left[0;\\frac12\\right]$",
+  "sol": "$y(-1)=y(0)=\\frac12$, $y(1)=\\frac52$.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-30",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": 30,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   9
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 9, D6",
+  "body": "Kvadratická funkce $y=x^2+2x+\\frac12$ má extrém:",
+  "opts": [
+   "max. v $\\left[-1;-\\frac12\\right]$",
+   "min. v $\\left[-1;-\\frac12\\right]$",
+   "max. v $\\left[1;\\frac72\\right]$",
+   "min. v $\\left[1;\\frac72\\right]$"
+  ],
+  "key": "b",
+  "answer": "minimum v $\\left[-1;-\\frac12\\right]$",
+  "sol": "$y=(x+1)^2-\\frac12$.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-31",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": 31,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   9
+  ],
+  "fidelity": "reworded",
+  "in_course": "VŠE DÚ 9, D3",
+  "body": "Kvadratická funkce $y=x^2+2x+3$ je klesající na intervalu",
+  "opts": [
+   "$(-\\infty;1\\rangle$",
+   "$\\langle1;\\infty)$",
+   "$(-\\infty;-1\\rangle$",
+   "$\\langle-1;\\infty)$"
+  ],
+  "key": "c",
+  "answer": "$(-\\infty;-1\\rangle$",
+  "sol": "Vrchol $x=-1$, parabola otevřená nahoru.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-32",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": 32,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   9
+  ],
+  "fidelity": "reworded",
+  "in_course": "ČVUT DÚ 9, D5",
+  "body": "Kvadratická funkce $y=-2x^2+4x+7$ je klesající na intervalu",
+  "opts": [
+   "$(-\\infty;1\\rangle$",
+   "$\\langle1;\\infty)$",
+   "$(-\\infty;-1\\rangle$",
+   "$\\langle-1;\\infty)$"
+  ],
+  "key": "b",
+  "answer": "$\\langle1;\\infty)$",
+  "sol": "Vrchol $x=1$, parabola otevřená dolů.",
+  "type": "mc"
+ },
+ {
+  "id": "fbmi-2021-33",
+  "uni": "ČVUT",
+  "faculty": "FBMI",
+  "exam": "Tematické okruhy a vzorové testové příklady pro přijímací zkoušku z matematiky, Bc. 2020/21",
+  "year": 2020,
+  "num": 33,
+  "points": null,
+  "source": "fbmi-bc-2021",
+  "letters": "abcd",
+  "level": 1,
+  "topics": [
+   9,
+   27
+  ],
+  "fidelity": "reworded",
+  "in_course": "VŠE DÚ 9, D4",
+  "body": "Lineární funkce, jejíž graf prochází body $[2;3]$ a $[4;-1]$, je",
+  "opts": [
+   "$y=x+1$",
+   "$y=-x+5$",
+   "$y=2x-1$",
+   "$y=-2x+7$"
+  ],
+  "key": "d",
+  "answer": "$y=-2x+7$",
+  "sol": "$k=\\frac{-1-3}{4-2}=-2$, $q=3+4=7$.",
+  "type": "mc"
+ }
+]
