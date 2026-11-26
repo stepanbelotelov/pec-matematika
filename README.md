@@ -5,3 +5,5 @@
 Сайт: https://stepanbelotelov.github.io/pec-matematika/
 
 Файлы генерируются автоматически из папки курса (`_Web/gen.py`); вручную их не редактировать.
+
+Исключения, которые правятся вручную: `assets/` (статистика и кнопки «Ошибка?», см. [assets/README.md](assets/README.md)), `bank/`, `404.html`, `sitemap.xml`, картинки превью `og.png`.
