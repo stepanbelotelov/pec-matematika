@@ -95,9 +95,8 @@
 | **ČVUT FIT** | [Vzorové přijímací zkoušky (Bc.)](https://fit.cvut.cz/cs/fakulta/informacni-deska), ежегодно 2015–2026; [2026 s řešením](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf) | A–E, 3 и 7 баллов (раньше 3/5) | есть |
 | **ČVUT FEL** | [Vzorový test VZOR01](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-vzor01.pdf) и [řešení](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf) | 15 задач a)–e) | решения |
 | **ČVUT FJFI** | [Přijímací zkouška z matematiky (vzor)](https://edu.fjfi.cvut.cz/edu/Prijimaci_rizeni/Prijimaci_zkouska_BS.pdf), [okruhy](https://edu.fjfi.cvut.cz/edu/Prijimaci_rizeni/Okruhy_prijimaci_zkousky_Matematika.pdf) | 2 варианты × 12 задач по 2 балла, a)–e) | в PDF |
-| **ČVUT FBMI** | [Vzorové testové příklady Bc 2020/21](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf), [2021/22 IKZ](https://www.fbmi.cvut.cz/sites/default/files/2020-11/Bc_Matematika_22_21_IKZ.pdf) | a)–d) | отмечены в PDF |
+| **ČVUT FBMI** | [Vzorové testové příklady Bc 2020/21](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf), [2021/22 IKZ](https://www.fbmi.cvut.cz/sites/default/files/2020-11/Bc_Matematika_22_21_IKZ.pdf) (те же 40 задач) | a)–d) | отмечены в PDF |
 | **ČVUT FSv** | [online-экзамен](https://mat.fsv.cvut.cz/eng/entrance/online), [PZ nanečisto](https://www.fsv.cvut.cz/prijimaci-zkouska-nanecisto/) | 15 задач, 5 вариантов | — |
-| **ČVUT FD** | [Informace o písemných PZ 2021/22](https://www.fd.cvut.cz/storage/prijimaci-rizeni/pr2021-2022/priloha-3-2021-PL.pdf) | ? | ? |
 | **VUT FEKT** | MATEMATIKA [2022](https://vut.cz/pomocne2018/f124247/d232373/p229505), [2023](https://vut.cz/pomocne2018/f137459/d248394/p249980), [2024](https://vut.cz/pomocne2018/f151468/d267522/p273733) — verze 01 и 02 | 15 задач a)–e) по 2/3/5 баллов | 2022 — в PDF |
 | **VUT FSI** | [zadání přijímacích zkoušek 2014](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179), [2017](https://vut.cz/pomocne2018/f69785/d158882/p149140) | 10 вариантов по 20 задач a)–e) | 2017 — зелёным |
 | **VUT FAST** | [тест по математике и физике](https://www.fce.vutbr.cz/api/cs/dokument/9815) | 10 вопросов, смешанный | ? |
@@ -117,6 +116,7 @@
 | Lumos (lms.dreval.net) | курс третьей стороны — задачи берём из оригиналов FJFI |
 | Подготовительные материалы FS ČVUT | упражнения, а не экзаменационные задачи (оставлены только в каталоге) |
 | VŠST Liberec 1989 (копия на euroekonom.sk) | пока не берём: это копия на стороннем сайте, условия использования неизвестны |
+| ČVUT FD, [Informace o písemných PZ 2021/22](https://www.fd.cvut.cz/storage/prijimaci-rizeni/pr2021-2022/priloha-3-2021-PL.pdf) | только магистратура (авиация и т. п.), математики для бакалавриата нет |
 
 Публичных образцов не нашлось у **ZČU** (FAV, FEL, FST), **Univerzita Pardubice** (FEI, DFJP), **UTB** (FAI), **ČZU TF** и **VŠB** FEI/FS/FAST. Многие из этих факультетов принимают без экзамена — по оценкам из школы.
 

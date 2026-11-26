@@ -59,7 +59,7 @@
   "answers": "ano, vyznačeno červeně",
   "url": "https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf",
   "status": "v bance (všech 40 úloh, správné odpovědi vyznačeny v originále)",
-  "note": "Dokument Bc_Matematika_22_21_IKZ.pdf (2021/22) obsahuje tytéž úlohy: https://www.fbmi.cvut.cz/sites/default/files/2020-11/Bc_Matematika_22_21_IKZ.pdf",
+  "note": "Dokument Bc_Matematika_22_21_IKZ.pdf (2021/22) obsahuje tytéž úlohy: https://www.fbmi.cvut.cz/sites/default/files/2020-11/Bc_Matematika_22_21_IKZ.pdf Dokument 2021/22 IKZ (https://www.fbmi.cvut.cz/sites/default/files/2020-11/Bc_Matematika_22_21_IKZ.pdf) obsahuje týchž 40 příkladů.",
   "include": true,
   "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
@@ -103,8 +103,8 @@
   "format": "neověřeno",
   "answers": "neověřeno",
   "url": "https://www.fd.cvut.cz/storage/prijimaci-rizeni/pr2021-2022/priloha-3-2021-PL.pdf",
-  "status": "nestaženo (síť)",
-  "include": true,
+  "status": "není pro Bc.: dokument obsahuje jen zkoušky navazujícího magisterského studia (letecká doprava apod.), matematika pro bakalářské studium v něm není",
+  "include": false,
   "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
