@@ -130,5 +130,27 @@
   "status": "jen katalog",
   "include": false,
   "copyright": "vlastní cvičné testy třetí strany, ne zadání VŠE"
+ },
+ {
+  "id": "klufa-2011",
+  "uni": "VŠE",
+  "faculty": "—",
+  "kind": "placená kniha",
+  "title": "Jindřich Klůfa: Matematika k přijímacím zkouškám na VŠE — úplný soubor variant použitých v roce 2011",
+  "years": "2011",
+  "include": false,
+  "copyright": "vydaná kniha; obsahuje reálné varianty 2011, ale bez svolení nakladatele/autora je nepřebíráme",
+  "status": "do banky nebereme"
+ },
+ {
+  "id": "sbirka-vse",
+  "uni": "VŠE",
+  "faculty": "—",
+  "kind": "sbírka (kniha)",
+  "title": "Sbírka příkladů z matematiky k přijímacím zkouškám na VŠE",
+  "years": "?",
+  "include": false,
+  "copyright": "vydaná sbírka; svolení k přebírání nemáme",
+  "status": "do banky nebereme"
  }
 ]

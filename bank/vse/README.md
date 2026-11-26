@@ -58,6 +58,7 @@
 |---|---|
 | Scio: [OSP 2022](https://nf.vse.cz/wp-content/uploads/OSP_2022.pdf), [Matematika](https://download.scio.cz/testy-pro-skoly-nove/test-MAT-pro-skoly.pdf), тесты NSZ | © Scio, тесты предназначены «для индивидуальной подготовки» |
 | Kaňka, Kaňková, *Přijímací zkoušky z matematiky na VŠE* (2007); Kaňka, *Přijímací zkoušky z matematiky na VŠ* (2010) | платные книги |
+| Klůfa, *Matematika k přijímacím zkouškám na VŠE* (2011, полный набор вариантов 2011 года); *Sbírka příkladů z matematiky k přijímacím zkouškám na VŠE* | изданные книги, разрешения на перенос задач нет |
 | [zkousky-nanecisto.cz](https://www.zkousky-nanecisto.cz/files/vse/vse-stare-vzor-reseni.pdf) | коммерческие курсы, условия неизвестны. Старый образец VŠE стоит искать в оригинале на vse.cz |
 | [open-exam-prep.com](https://open-exam-prep.com/practice/cz-prijimacky-vse-matematika) | собственные тренировочные тесты третьей стороны |
 
