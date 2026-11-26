@@ -58,9 +58,10 @@ def src_line(t):
     if t["faculty"] == "FBMI":
         parts = ([f"úloha {t['num']}"] if t["num"] else []) + ([fid] if fid else [])
         return "FBMI ČVUT, vzorové testové příklady Bc 2020/21" + (f" ({'; '.join(parts)})" if parts else "")
-    if t["uni"] == "VŠE":
+    if t["uni"] == "VŠE" or t.get("exam_short"):
+        who = "VŠE" if t["uni"] == "VŠE" else t["faculty"] if t["faculty"] == t["uni"] else f"{t['faculty']} {t['uni']}"
         parts = ([f"{t.get('num_word', 'úloha')} {t['num']}{pts}"] if t["num"] else []) + ([fid] if fid else [])
-        return f"VŠE, {t['exam_short']}" + (f" ({'; '.join(parts)})" if parts else "")
+        return f"{who}, {t['exam_short']}" + (f" ({'; '.join(parts)})" if parts else "")
     num = f", úloha {t['num']}" if t.get("num") else ""
     return f"{t['faculty']} {t['uni']}, {t['exam']}{num}" + (f" ({fid})" if fid else "")
 

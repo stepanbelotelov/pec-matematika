@@ -328,6 +328,140 @@
   },
   {
    "q": "P9",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 4, 2 body)",
+   "body": "Jak lze přepsat výraz <span class=\"m\" data-tex=\"a^{1/3}b^{-4}\"></span>?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt[4]b}{a^3}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt[3]a}{\\sqrt[4]b}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{b^4}{a^3}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\sqrt[3]a\\sqrt[4]b\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt[3]a}{b^4}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "id": "vut-fekt-2022-v1-04",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 4, 2 body)",
+   "body": "Jak lze přepsat výraz <span class=\"m\" data-tex=\"a^{-2}(b^3+1)^{1/3}\"></span>?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt[3]{b^3+1}}{a^2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{b+1}{a^2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{a^2}{\\sqrt[3]{b^3+1}}\"></span>",
+    "<span class=\"m\" data-tex=\"(b+1)\\sqrt a\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{a^2}{(b^3+1)^3}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "id": "vut-fekt-2022-v2-04",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 1, 2 body)",
+   "body": "Jak lze přepsat výraz <span class=\"m\" data-tex=\"x^{\\frac13}(x+1)^{-2}\"></span>?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-\\sqrt[3]x\\cdot(x+1)^2\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{(x+1)^2}{x^3}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\sqrt{x+1}\\cdot\\sqrt[3]x\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt[3]x}{(x+1)^2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt{x+1}}{x^3}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "id": "vut-fekt-2023-v1-01",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P12",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 1, 2 body)",
+   "body": "Jak lze přepsat výraz <span class=\"m\" data-tex=\"x^{-2}(x-1)^{\\frac13}\"></span> ?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt[3]{x-1}}{x^2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt x}{(x-1)^3}\"></span>",
+    "<span class=\"m\" data-tex=\"-x^2\\cdot\\sqrt[3]{x-1}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt x}{(x-1)^3}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\sqrt x\\cdot\\sqrt[3]{x-1}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "id": "vut-fekt-2023-v2-01",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P13",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 1, 2 body)",
+   "body": "Zjednodušte výraz <span class=\"m\" data-tex=\"\\sqrt[7]{x^3\\cdot\\sqrt x}\"></span>, kde <span class=\"m\" data-tex=\"x&gt;0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x^{1/2}\"></span>",
+    "<span class=\"m\" data-tex=\"x^{-1/2}\"></span>",
+    "<span class=\"m\" data-tex=\"x^{4/7}\"></span>",
+    "<span class=\"m\" data-tex=\"x^{-4/7}\"></span>",
+    "<span class=\"m\" data-tex=\"x^{-7/4}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\left(x^{7/2}\\right)^{1/7}=x^{1/2}\"></span>.",
+   "id": "vut-fekt-2024-v1-01",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P14",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 1, 2 body)",
+   "body": "Zjednodušte výraz <span class=\"m\" data-tex=\"\\sqrt[5]{x^2\\cdot\\sqrt x}\"></span>, kde <span class=\"m\" data-tex=\"x&gt;0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x^{1/2}\"></span>",
+    "<span class=\"m\" data-tex=\"x^{-1/2}\"></span>",
+    "<span class=\"m\" data-tex=\"x^{3/5}\"></span>",
+    "<span class=\"m\" data-tex=\"x^{-3/5}\"></span>",
+    "<span class=\"m\" data-tex=\"x^{-5/3}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\left(x^{5/2}\\right)^{1/5}=x^{1/2}\"></span>.",
+   "id": "vut-fekt-2024-v2-01",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P15",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 9, 1 bod)",
    "body": "Výraz <span class=\"m\" data-tex=\"\\dfrac{6x^3b^3}{25y^4}\\cdot\\dfrac{15y}{b^2}\"></span> je roven",
    "opts": [
@@ -350,7 +484,7 @@
    "needs_original": false
   },
   {
-   "q": "P10",
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 3, 3 body)",
    "body": "Určete jakému výrazu se rovná druhá odmocnina podílu čísla <span class=\"m\" data-tex=\"x\"></span> a jeho převrácené hodnoty.",
    "opts": [
@@ -377,7 +511,7 @@
    ]
   },
   {
-   "q": "P11",
+   "q": "P17",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 3, 3 body)",
    "body": "Určete jakému výrazu se rovná druhá odmocnina podílu nenulového čísla <span class=\"m\" data-tex=\"x\"></span> a jeho převrácené hodnoty.",
    "opts": [
@@ -397,6 +531,22 @@
    "topics": [
     2,
     8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P18",
+   "src": "FP TUL, přijímací test z matematiky 2021/22 (Matematika, Bc.) (úloha 5, 20 bodů)",
+   "body": "Uvažujte výraz <span class=\"m\" data-tex=\"\\left(\\left(2^{4(\\log_216)^2}\\right)^{\\left(2^{-2}-2^{-3}\\right)^{-1}}\\right)^{\\frac1{2^5}}\"></span>, kde <span class=\"m\" data-tex=\"\\log_2x\"></span> označuje logaritmus <span class=\"m\" data-tex=\"x\"></span> o základu 2. Zadaný výraz upravte do tvaru <span class=\"m\" data-tex=\"2^a\"></span>, kde <span class=\"m\" data-tex=\"a\"></span> je konkrétní reálné číslo (neobsahuje funkci logaritmus, mocninu ani žádnou aritmetickou operaci).",
+   "answer": "<span class=\"m\" data-tex=\"2^{16}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\log_216=4\"></span>, exponent <span class=\"m\" data-tex=\"4\\cdot16=64\"></span>; <span class=\"m\" data-tex=\"\\left(\\frac14-\\frac18\\right)^{-1}=8\"></span>; <span class=\"m\" data-tex=\"\\frac{64\\cdot8}{32}=16\"></span>.",
+   "id": "tul-2021-05",
+   "uni": "TUL",
+   "fac": "FP",
+   "level": 2,
+   "topics": [
+    2,
+    12
    ],
    "needs_original": false
   }
@@ -514,6 +664,190 @@
   },
   {
    "q": "P6",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 2, 2 body)",
+   "body": "Množina všech reálných řešení rovnice <span class=\"m\" data-tex=\"(x+4)(x-3)=-6\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{-3,2\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-2,3\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-4,3\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-3,4\\}\"></span>",
+    "prázdná"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"x^2+x-6=0\"></span>, <span class=\"m\" data-tex=\"(x+3)(x-2)=0\"></span>.",
+   "id": "vut-fekt-2023-v1-02",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 2, 2 body)",
+   "body": "Množina všech reálných řešení rovnice <span class=\"m\" data-tex=\"(x+6)(x-4)=-9\"></span> je",
+   "opts": [
+    "prázdná",
+    "<span class=\"m\" data-tex=\"\\{-6,4\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-5,3\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-4,6\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-3,5\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"x^2+2x-15=0\"></span>, <span class=\"m\" data-tex=\"(x+5)(x-3)=0\"></span>.",
+   "id": "vut-fekt-2023-v2-02",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 4, 2 body)",
+   "body": "Řešením soustavy rovnic <span class=\"m\" data-tex=\"3x+y=-2,x-y=5\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{[-3/4,11/4]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[3/4,17/4]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[3/4,-17/4]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[4/3,-11/3]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[4/3,11/3]\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Sečtením <span class=\"m\" data-tex=\"4x=3\"></span>; <span class=\"m\" data-tex=\"y=x-5=-\\frac{17}4\"></span>.",
+   "id": "vut-fekt-2023-v1-04",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 4, 2 body)",
+   "body": "Řešením soustavy rovnic <span class=\"m\" data-tex=\"2x-y=3,x+y=4\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{[7/3,-5/3]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[7/3,5/3]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[3/7,25/7]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[3/7,-15/7]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[17/5,3/5]\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Sečtením <span class=\"m\" data-tex=\"3x=7\"></span>; <span class=\"m\" data-tex=\"y=4-x=\\frac53\"></span>.",
+   "id": "vut-fekt-2023-v2-04",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 2, 2 body)",
+   "body": "Je-li <span class=\"m\" data-tex=\"x_1\"></span> menší a <span class=\"m\" data-tex=\"x_2\"></span> větší kořen rovnice <span class=\"m\" data-tex=\"x^2+x-11=0\"></span>, pak",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1\\in(-2,-1),x_2\\in(3,4)\"></span>",
+    "<span class=\"m\" data-tex=\"x_1\\in(-3,-2),x_2\\in(3,4)\"></span>",
+    "<span class=\"m\" data-tex=\"x_1\\in(-3,-2),x_2\\in(2,3)\"></span>",
+    "<span class=\"m\" data-tex=\"x_1\\in(-4,-3),x_2\\in(3,4)\"></span>",
+    "<span class=\"m\" data-tex=\"x_1\\in(-4,-3),x_2\\in(2,3)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"x_{1,2}=\\frac{-1\\pm\\sqrt{45}}2\"></span>, <span class=\"m\" data-tex=\"\\sqrt{45}\\approx6{,}7\"></span>: <span class=\"m\" data-tex=\"x_1\\approx-3{,}85\"></span>, <span class=\"m\" data-tex=\"x_2\\approx2{,}85\"></span>.",
+   "id": "vut-fekt-2024-v1-02",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 2, 2 body)",
+   "body": "Je-li <span class=\"m\" data-tex=\"x_1\"></span> menší a <span class=\"m\" data-tex=\"x_2\"></span> větší kořen rovnice <span class=\"m\" data-tex=\"x^2-2x-7=0\"></span>, pak",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1\\in(-2,-1),x_2\\in(3,4)\"></span>",
+    "<span class=\"m\" data-tex=\"x_1\\in(-2,-1),x_2\\in(4,5)\"></span>",
+    "<span class=\"m\" data-tex=\"x_1\\in(-3,-2),x_2\\in(3,4)\"></span>",
+    "<span class=\"m\" data-tex=\"x_1\\in(-3,-2),x_2\\in(4,5)\"></span>",
+    "<span class=\"m\" data-tex=\"x_1\\in(-4,-3),x_2\\in(4,5)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"x_{1,2}=1\\pm\\sqrt8\"></span>, <span class=\"m\" data-tex=\"\\sqrt8\\approx2{,}83\"></span>: <span class=\"m\" data-tex=\"x_1\\approx-1{,}83\"></span>, <span class=\"m\" data-tex=\"x_2\\approx3{,}83\"></span>.",
+   "id": "vut-fekt-2024-v2-02",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P12",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 4, 2 body)",
+   "body": "Řešením soustavy rovnic <span class=\"m\" data-tex=\"-2x+y=3,x+3y=5\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{[5/4,1/2]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[4/5,7/5]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[7/5,-13/5]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[-4/7,13/7]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[20/7,5/7]\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"y=3+2x\"></span>: <span class=\"m\" data-tex=\"7x+9=5\"></span>, <span class=\"m\" data-tex=\"x=-\\frac47\"></span>, <span class=\"m\" data-tex=\"y=\\frac{13}7\"></span>.",
+   "id": "vut-fekt-2024-v1-04",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P13",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 4, 2 body)",
+   "body": "Řešením soustavy rovnic <span class=\"m\" data-tex=\"2x+y=3,x+3y=5\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{[5/4,1/2]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[4/5,7/5]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[7/5,-13/5]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[-4/7,13/7]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[20/7,5/7]\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"y=3-2x\"></span>: <span class=\"m\" data-tex=\"-5x+9=5\"></span>, <span class=\"m\" data-tex=\"x=\\frac45\"></span>, <span class=\"m\" data-tex=\"y=\\frac75\"></span>.",
+   "id": "vut-fekt-2024-v2-04",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P14",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 10, 5 bodů)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=a-b+2a\"></span>. Určete neznámou <span class=\"m\" data-tex=\"x\"></span>, platí-li <span class=\"m\" data-tex=\"(3\\star x)\\star2=0\\,.\"></span>",
    "opts": [
@@ -536,7 +870,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P15",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 5, 7 bodů)",
    "body": "Nalezněte řešení soustavy rovnic <span class=\"m\" data-tex=\"2x-y=7\"></span> a <span class=\"m\" data-tex=\"2(y+2x)=2-y\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -559,7 +893,7 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 13, 5 bodů)",
    "body": "Kolik litrů vody o teplotě <span class=\"m\" data-tex=\"60\\ ^\\circ\"></span>C je třeba přidat do 30 litrů vody o teplotě <span class=\"m\" data-tex=\"30\\ ^\\circ\"></span>C, chceme-li, aby výsledná teplota vody byla <span class=\"m\" data-tex=\"40\\ ^\\circ\"></span>C?",
    "opts": [
@@ -582,7 +916,7 @@
    "needs_original": false
   },
   {
-   "q": "P9",
+   "q": "P17",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 16, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=a-b-2b\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(3\\star x)\\star2=1\\,.\"></span>",
    "opts": [
@@ -605,7 +939,7 @@
    "needs_original": false
   },
   {
-   "q": "P10",
+   "q": "P18",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 6, 7 bodů)",
    "body": "Nalezněte řešení soustavy rovnic <span class=\"m\" data-tex=\"3(x+2)-4(y+x)=7\"></span> a <span class=\"m\" data-tex=\"2x-(x-4y)=-1\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -631,7 +965,54 @@
    ]
   },
   {
-   "q": "P11",
+   "q": "P19",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 10, 2 body)",
+   "body": "Řešte pro <span class=\"m\" data-tex=\"x,y\\in\\mathbb{R}\"></span> soustavu rovnic <span class=\"m\" data-tex=\"\\begin{array}{c}2x-y=0\\,,\\\\y-x^2=1\\,.\\end{array}\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{[1;2]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[-1;-2]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\{\\left[1+\\sqrt2;2+2\\sqrt2\\right],\\left[1-\\sqrt2;2-2\\sqrt2\\right]\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{[2;5],[1;2]\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\{\\left[1-\\sqrt2;2-2\\sqrt2\\right]\\right\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"y=2x\"></span>: <span class=\"m\" data-tex=\"x^2-2x+1=0\"></span>, tedy <span class=\"m\" data-tex=\"x=1\"></span>, <span class=\"m\" data-tex=\"y=2\"></span>.",
+   "id": "fjfi-v1-10",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P20",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 10, 2 body)",
+   "body": "Řešte pro <span class=\"m\" data-tex=\"x,y\\in\\mathbb{R}\"></span> soustavu rovnic <span class=\"m\" data-tex=\"\\begin{array}{c}x^2+y^2=4\\,,\\\\x+2y=0\\,.\\end{array}\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\left\\{\\left[-\\frac23\\sqrt6;\\frac13\\sqrt6\\right],\\left[\\frac23\\sqrt6;-\\frac13\\sqrt6\\right]\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\{\\left[\\frac13\\sqrt6;\\frac23\\sqrt6\\right],\\left[-\\frac13\\sqrt6;\\frac23\\sqrt6\\right]\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\{\\left[-\\frac45\\sqrt5;\\frac25\\sqrt5\\right],\\left[\\frac45\\sqrt5;-\\frac25\\sqrt5\\right]\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\{\\left[\\frac23\\sqrt3;-\\frac43\\sqrt3\\right],\\left[-\\frac23\\sqrt3;\\frac43\\sqrt3\\right]\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\left\\{\\left[\\frac45\\sqrt5;-\\frac25\\sqrt5\\right],\\left[\\frac45\\sqrt5;\\frac25\\sqrt5\\right]\\right\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"x=-2y\"></span>: <span class=\"m\" data-tex=\"5y^2=4\"></span>, <span class=\"m\" data-tex=\"y=\\pm\\frac25\\sqrt5\"></span>, <span class=\"m\" data-tex=\"x=\\mp\\frac45\\sqrt5\"></span>.",
+   "id": "fjfi-v2-10",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    3,
+    30
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P21",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 19)",
    "body": "V oboru reálných čísel řešte rovnici: <span class=\"m\" data-tex=\"\\dfrac{x+2}{x+3}-\\dfrac{2-x}{3-x}=\\dfrac{6}{x^2-9}\"></span>",
    "opts": [
@@ -653,7 +1034,7 @@
    "needs_original": false
   },
   {
-   "q": "P12",
+   "q": "P22",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 20)",
    "body": "V oboru reálných čísel řešte rovnici: <span class=\"m\" data-tex=\"2+\\dfrac{x+6}{x+3}=3+\\dfrac{3}{x+3}\"></span>",
    "opts": [
@@ -675,7 +1056,55 @@
    "needs_original": false
   },
   {
-   "q": "P13",
+   "q": "P23",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 5, 2 body)",
+   "body": "Rovnost <span class=\"m\" data-tex=\"\\frac{2}{1-x}=2-\\frac2x\"></span> platí právě pro",
+   "opts": [
+    "každé <span class=\"m\" data-tex=\"x\\in\\mathbb{R}\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\mathbb{R},x\\notin\\{0,1\\}\"></span>",
+    "<span class=\"m\" data-tex=\"x&gt;0\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\{0,1\\}\"></span>",
+    "neplatí pro žádné <span class=\"m\" data-tex=\"x\\in\\mathbb{R}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "Pravá strana je <span class=\"m\" data-tex=\"\\frac{2(x-1)}x\"></span>; <span class=\"m\" data-tex=\"\\frac2{1-x}=\\frac{2(x-1)}x\\Rightarrow x=-(x-1)^2\\Rightarrow x^2-x+1=0\"></span>, <span class=\"m\" data-tex=\"D&lt;0\"></span>.",
+   "id": "vut-fekt-2022-v1-05",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    3,
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P24",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 5, 2 body)",
+   "body": "Rovnost <span class=\"m\" data-tex=\"\\frac{3}{x+1}=\\frac3x+3\"></span> platí právě pro",
+   "opts": [
+    "každé <span class=\"m\" data-tex=\"x\\in\\mathbb{R}\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\mathbb{R},x\\notin\\{-1,0\\}\"></span>",
+    "<span class=\"m\" data-tex=\"x&gt;0\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\{-1,0\\}\"></span>",
+    "neplatí pro žádné <span class=\"m\" data-tex=\"x\\in\\mathbb{R}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"3x=3(x+1)+3x(x+1)\\Rightarrow x^2+x+1=0\"></span>, <span class=\"m\" data-tex=\"D&lt;0\"></span>.",
+   "id": "vut-fekt-2022-v2-05",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    3,
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P25",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 5, 3 body)",
    "body": "Pro zlomek v základním tvaru platí následující. Jmenovatel zlomku je dvojnásobek čitatele zmenšený o jedna. Hodnota zlomku se nezmění, pokud k čitateli přičteme dvě a k jmenovateli přičteme tři. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -698,7 +1127,7 @@
    "needs_original": false
   },
   {
-   "q": "P14",
+   "q": "P26",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 8, 5 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2x^8+6x^5-36x^2=0\"></span> platí",
    "opts": [
@@ -721,7 +1150,7 @@
    "needs_original": false
   },
   {
-   "q": "P15",
+   "q": "P27",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 16, 3 body)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"8x^4+4x^3+2x^2+x=0\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -744,7 +1173,7 @@
    "needs_original": false
   },
   {
-   "q": "P16",
+   "q": "P28",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 2, 7 bodů)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=\\frac{a+b}{b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star3=-1\\,.\"></span>",
    "opts": [
@@ -767,7 +1196,7 @@
    "needs_original": false
   },
   {
-   "q": "P17",
+   "q": "P29",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 12, 5 bodů)",
    "body": "Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno <span class=\"m\" data-tex=\"15\\%\"></span> celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla 51 kg. Průměrná hmotnost pytle v druhé etapě byla 55 kg a ve třetí etapě 48 kg. Celková průměrná hmotnost pytle brambor v tomto skladu je <span class=\"m\" data-tex=\"50{,}55\"></span> kg. Určete kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.",
    "opts": [
@@ -790,7 +1219,7 @@
    "needs_original": false
   },
   {
-   "q": "P18",
+   "q": "P30",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 15, 5 bodů)",
    "body": "Určete hodnotu parametrů <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span> tak, aby rovnost <span class=\"m\" data-tex=\"(2a-3x)(bx+3)=9x^2+2cx+2\"></span> platila pro každé reálné číslo <span class=\"m\" data-tex=\"x\"></span>, a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -813,7 +1242,7 @@
    "needs_original": false
   },
   {
-   "q": "P19",
+   "q": "P31",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 20, 3 body)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"2x^5-x^3+2x^2=1\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -836,7 +1265,7 @@
    "needs_original": false
   },
   {
-   "q": "P20",
+   "q": "P32",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 5, 7 bodů)",
    "body": "Na dvoře jsou psi a slepice. Dohromady mají 50 hlav. Kdyby byla psů třetina a slepic bylo o 3 více, měli by dohromady 86 nohou. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -859,7 +1288,7 @@
    "needs_original": false
   },
   {
-   "q": "P21",
+   "q": "P33",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 2, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=\\frac{a+b}{a-b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star3=3\\,.\"></span>",
    "opts": [
@@ -885,7 +1314,7 @@
    ]
   },
   {
-   "q": "P22",
+   "q": "P34",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 10, 7 bodů)",
    "body": "Za nákup <span class=\"m\" data-tex=\"1{,}5\"></span> kg mandarinek a <span class=\"m\" data-tex=\"3{,}5\"></span> kg pomerančů jsme zaplatili celkem 185 korun. Kilo pomerančů stojí o třetinu více než kilo mandarinek. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -911,7 +1340,7 @@
    ]
   },
   {
-   "q": "P23",
+   "q": "P35",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 1, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=\\frac{a+b}{a-b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star3=-2\\,.\"></span>",
    "opts": [
@@ -937,7 +1366,7 @@
    ]
   },
   {
-   "q": "P24",
+   "q": "P36",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 14, 7 bodů)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"2x^5-x^3+2x^2=1\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -960,7 +1389,7 @@
    "needs_original": false
   },
   {
-   "q": "P25",
+   "q": "P37",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 7, 7 bodů)",
    "body": "Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno <span class=\"m\" data-tex=\"15\\%\"></span> celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla 51 kg. Průměrná hmotnost pytle v druhé etapě byla 55 kg a ve třetí etapě 48 kg. Celková průměrná hmotnost pytle brambor v tomto skladu je <span class=\"m\" data-tex=\"50{,}55\"></span> kg. Určete, kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.",
    "opts": [
@@ -983,7 +1412,7 @@
    "needs_original": false
   },
   {
-   "q": "P26",
+   "q": "P38",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 8, 7 bodů)",
    "body": "Student měl spočítat 70 úloh. Kdyby denně vyřešil o 2 úlohy více, skončil by o 4 dny dříve. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1009,7 +1438,7 @@
    ]
   },
   {
-   "q": "P27",
+   "q": "P39",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 16, 7 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"(x^2-x+3)^2-8(x^2-x)=9\"></span> je pravdivé.",
    "opts": [
@@ -1036,7 +1465,54 @@
    ]
   },
   {
-   "q": "P28",
+   "q": "P40",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 3, 2 body)",
+   "body": "Vyřešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\dfrac{4x-1}{x-2}+2=1-\\dfrac{5x-3}{2-x}\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=0\"></span>",
+    "<span class=\"m\" data-tex=\"x=1\"></span>",
+    "<span class=\"m\" data-tex=\"x=2\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\mathbb{R}\\setminus\\{2\\}\"></span>",
+    "Nemá řešení"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Levá strana je <span class=\"m\" data-tex=\"\\frac{6x-5}{x-2}\"></span>, pravá <span class=\"m\" data-tex=\"1+\\frac{5x-3}{x-2}=\\frac{6x-5}{x-2}\"></span> — rovnost platí pro každé <span class=\"m\" data-tex=\"x\\ne2\"></span>.",
+   "id": "fjfi-v1-03",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P41",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 3, 2 body)",
+   "body": "Vyřešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\dfrac{\\frac x4-\\frac1{2x}}{\\frac{2x+1}2-\\frac1x}=\\dfrac14\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=1\"></span>",
+    "<span class=\"m\" data-tex=\"x=-1\"></span>",
+    "<span class=\"m\" data-tex=\"x=2\"></span>",
+    "<span class=\"m\" data-tex=\"x=-2\"></span>",
+    "Nemá řešení"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Zlomek je <span class=\"m\" data-tex=\"\\frac{x^2-2}{2(2x^2+x-2)}\"></span>; <span class=\"m\" data-tex=\"4(x^2-2)=2(2x^2+x-2)\\Rightarrow x=-2\"></span> (jmenovatelé jsou nenulové).",
+   "id": "fjfi-v2-03",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 2,
+   "topics": [
+    3,
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P42",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 20, 7 bodů)",
    "body": "Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?",
    "opts": [
@@ -1059,7 +1535,7 @@
    "needs_original": false
   },
   {
-   "q": "P29",
+   "q": "P43",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 4, 7 bodů)",
    "body": "Tři kladná čísla splňují následující podmínky. Dělíme-li součet prvního a druhého čísla číslem třetím, vyjde jedna a zbytek dva. Dělíme-li součet prvního a třetího čísla číslem druhým, vyjde dva a zbytek nula. Při dělení součtu druhého a třetího čísla číslem prvním je podíl tři a zbytek dva. Rozhodněte, které tvrzení platí.",
    "opts": [
@@ -1218,6 +1694,52 @@
  "5": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 5, 2 body)",
+   "body": "Pro která <span class=\"m\" data-tex=\"x\"></span> platí <span class=\"m\" data-tex=\"|2-x|=2-|x|\"></span>?",
+   "opts": [
+    "pro všechna <span class=\"m\" data-tex=\"x\\in\\mathbf{R}\"></span>",
+    "pro žádné <span class=\"m\" data-tex=\"x\\in\\mathbf{R}\"></span>",
+    "pro <span class=\"m\" data-tex=\"x\\in(-\\infty,0\\rangle\"></span>",
+    "pro <span class=\"m\" data-tex=\"x\\in\\langle0,2\\rangle\"></span>",
+    "pro <span class=\"m\" data-tex=\"x\\in\\langle2,\\infty)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"|2-x|+|x|=2\"></span> platí, právě když <span class=\"m\" data-tex=\"x\"></span> leží mezi <span class=\"m\" data-tex=\"0\"></span> a <span class=\"m\" data-tex=\"2\"></span>.",
+   "id": "vut-fekt-2024-v1-05",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    5
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 5, 2 body)",
+   "body": "Pro která <span class=\"m\" data-tex=\"x\"></span> platí <span class=\"m\" data-tex=\"|x-3|=|x|-3\"></span>?",
+   "opts": [
+    "pro všechna <span class=\"m\" data-tex=\"x\\in\\mathbf{R}\"></span>",
+    "pro žádné <span class=\"m\" data-tex=\"x\\in\\mathbf{R}\"></span>",
+    "pro <span class=\"m\" data-tex=\"x\\in(-\\infty,0\\rangle\"></span>",
+    "pro <span class=\"m\" data-tex=\"x\\in\\langle0,3\\rangle\"></span>",
+    "pro <span class=\"m\" data-tex=\"x\\in\\langle3,\\infty)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"|x|=|x-3|+3\"></span> platí, právě když <span class=\"m\" data-tex=\"x\\ge3\"></span>.",
+   "id": "vut-fekt-2024-v2-05",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    5
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 3, 3 body)",
    "body": "Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. <span class=\"m\" data-tex=\"|2x+1|-|3-x|=x\"></span>",
    "opts": [
@@ -1240,7 +1762,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P4",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 6, 7 bodů)",
    "body": "Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. <span class=\"m\" data-tex=\"|2x-1|-|2-3x|=-x\"></span>",
    "opts": [
@@ -1263,7 +1785,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 11, 7 bodů)",
    "body": "Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. <span class=\"m\" data-tex=\"|2x-1|-|2-3x|=5\"></span>",
    "opts": [
@@ -1293,6 +1815,52 @@
  "6": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 3, 2 body)",
+   "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"(x-3)^2\\le4\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-\\infty,-5\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty,5\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty,7\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle1,5\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle-1,7\\rangle\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"|x-3|\\le2\"></span>.",
+   "id": "vut-fekt-2022-v1-03",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 3, 2 body)",
+   "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"(x+3)^2&lt;4\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-7,1)\"></span>",
+    "<span class=\"m\" data-tex=\"(-5,-1)\"></span>",
+    "<span class=\"m\" data-tex=\"(-1,5)\"></span>",
+    "<span class=\"m\" data-tex=\"(-1,7)\"></span>",
+    "<span class=\"m\" data-tex=\"(1,5)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"|x+3|&lt;2\"></span>.",
+   "id": "vut-fekt-2022-v2-03",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 6, 5 bodů)",
    "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy: <span class=\"m\" data-tex=\"a&gt;d\"></span>, <span class=\"m\" data-tex=\"b&gt;d\"></span>, <span class=\"m\" data-tex=\"a&lt;c\"></span>, <span class=\"m\" data-tex=\"e&lt;a\"></span>. Který z následujících výroků nemůže být pravdivý?",
    "opts": [
@@ -1315,7 +1883,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P4",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 3, 3 body)",
    "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy. Číslo <span class=\"m\" data-tex=\"a\"></span> je rovno <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"a\"></span> je větší nebo rovno <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d&gt;b\"></span> a <span class=\"m\" data-tex=\"e&lt;a\"></span>. Který z následujících výroků nemůže být pravdivý?",
    "opts": [
@@ -1338,7 +1906,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 1, 3 body)",
    "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy. Číslo <span class=\"m\" data-tex=\"a\"></span> není větší než <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"a&lt;c\"></span>, <span class=\"m\" data-tex=\"d\"></span> není větší než <span class=\"m\" data-tex=\"b\"></span> a <span class=\"m\" data-tex=\"e&lt;a\"></span>. Který z následujících výroků nemůže být pravdivý?",
    "opts": [
@@ -1366,7 +1934,31 @@
    ]
   },
   {
-   "q": "P4",
+   "q": "P6",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 9, 2 body)",
+   "body": "Určete definiční obor funkce zadané předpisem <span class=\"m\" data-tex=\"f:y=\\sqrt{\\dfrac{x-5}{x-1}}\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(1,+\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle1,+\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty,1)\\cup\\langle5,+\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty,1\\rangle\\cup\\langle5,+\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle5,+\\infty)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x-5}{x-1}\\ge0\"></span> a <span class=\"m\" data-tex=\"x\\ne1\"></span>: <span class=\"m\" data-tex=\"x&lt;1\"></span> nebo <span class=\"m\" data-tex=\"x\\ge5\"></span>.",
+   "id": "fjfi-v1-09",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    6,
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 4, 3 body)",
    "body": "Určete počet všech lichých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"x^2-53x+150\\ge0\\,.\"></span>",
    "opts": [
@@ -1389,7 +1981,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 11, 7 bodů)",
    "body": "Určete počet všech sudých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"x^2-53x+150\\le0\\,.\"></span>",
    "opts": [
@@ -1412,7 +2004,7 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 3, 3 body)",
    "body": "Určete počet všech sudých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"\\dfrac12x^2-53x+150\\le0\\,.\"></span>",
    "opts": [
@@ -1438,7 +2030,30 @@
    ]
   },
   {
-   "q": "P7",
+   "q": "P10",
+   "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 6, 2 body)",
+   "body": "Množina všech reálných čísel, pro která platí <span class=\"m\" data-tex=\"(x^2-3x)\\cdot\\log(x^2+9)&lt;0\"></span>, je rovna množině",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-\\infty,3)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty,9)\"></span>",
+    "<span class=\"m\" data-tex=\"(0,3)\"></span>",
+    "<span class=\"m\" data-tex=\"(-3,9)\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\log(x^2+9)\\ge\\log9&gt;0\"></span>, stačí <span class=\"m\" data-tex=\"x^2-3x&lt;0\"></span>.",
+   "id": "vscht-06",
+   "uni": "VŠCHT",
+   "fac": "VŠCHT",
+   "level": 2,
+   "topics": [
+    6,
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 5, 7 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=2x^2+2x-12\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle0,12\\rangle\"></span> právě pro",
    "opts": [
@@ -1468,7 +2083,7 @@
    ]
   },
   {
-   "q": "P8",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 11, 7 bodů)",
    "body": "Najděte všechna reálná řešení nerovnice <span class=\"m\" data-tex=\"(x+1)^3\\le(x+1)^{-1}\\,.\"></span>",
    "opts": [
@@ -1499,6 +2114,52 @@
  "7": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 5, 2 body)",
+   "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x-3|&gt;2\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-1,5)\"></span>",
+    "<span class=\"m\" data-tex=\"(1,5)\"></span>",
+    "<span class=\"m\" data-tex=\"(5,\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty,-1)\\cup(5,\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty,1)\\cup(5,\\infty)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"x-3&gt;2\"></span> nebo <span class=\"m\" data-tex=\"x-3&lt;-2\"></span>.",
+   "id": "vut-fekt-2023-v1-05",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    7
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 5, 2 body)",
+   "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"|x-2|\\le3\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-\\infty,5\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle-1,5\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle1,5\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle-1,\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle1,\\infty)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"-3\\le x-2\\le3\"></span>.",
+   "id": "vut-fekt-2023-v2-05",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    7
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 11, 2 body)",
    "body": "Množinou všech řešení nerovnice <span class=\"m\" data-tex=\"|x+5|\\geqq4+|3-2x|\"></span> s neznámou <span class=\"m\" data-tex=\"x\\in\\mathbb{R}\"></span> je",
    "opts": [
@@ -1521,7 +2182,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P4",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 11, 5 bodů)",
    "body": "Jsou dány dvě množiny <span class=\"m\" data-tex=\"A=\\{x\\mid x^2+4x-2&gt;0\\}\"></span> a <span class=\"m\" data-tex=\"B=\\{x\\mid |x+1|\\le3\\}\"></span>. Sjednocením množin <span class=\"m\" data-tex=\"A\"></span> a <span class=\"m\" data-tex=\"B\"></span> je",
    "opts": [
@@ -1546,7 +2207,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 11, 7 bodů)",
    "body": "Jsou dány dvě množiny <span class=\"m\" data-tex=\"A=\\{x\\mid x^2+4x-2&gt;0\\}\"></span> a <span class=\"m\" data-tex=\"B=\\{x\\mid |x+1|\\le3\\}\"></span>. Rozdílem množin <span class=\"m\" data-tex=\"A\"></span> mínus <span class=\"m\" data-tex=\"B\"></span> je",
    "opts": [
@@ -1576,11 +2237,165 @@
     "FIT ČVUT, vzorová přijímací zkouška pro rok 2025, příklad 6 (7 b)",
     "FIT ČVUT, vzorová přijímací zkouška pro rok 2027, příklad 5 (7 b)"
    ]
+  },
+  {
+   "q": "P6",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 4, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> nerovnici: <span class=\"m\" data-tex=\"|x|-|x-5|\\ge4(x-3)\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty,0)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty,\\frac72\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle0,\\frac72\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle\\frac72,+\\infty)\"></span>",
+    "Nemá řešení"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Pro <span class=\"m\" data-tex=\"x&lt;0\"></span>: <span class=\"m\" data-tex=\"-5\\ge4x-12\"></span> platí. Na <span class=\"m\" data-tex=\"\\langle0,5)\"></span>: <span class=\"m\" data-tex=\"2x-5\\ge4x-12\\iff x\\le\\frac72\"></span>. Pro <span class=\"m\" data-tex=\"x\\ge5\"></span>: <span class=\"m\" data-tex=\"5\\ge4x-12\\iff x\\le\\frac{17}4\"></span> — nic.",
+   "id": "fjfi-v1-04",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 2,
+   "topics": [
+    7
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 4, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> nerovnici: <span class=\"m\" data-tex=\"|x|+|x-1|\\ge2\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty,0)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty,-\\frac12)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle\\frac32,+\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in(-\\infty,-\\frac12\\rangle\\cup\\langle\\frac32,+\\infty)\"></span>",
+    "Nemá řešení"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Pro <span class=\"m\" data-tex=\"x&lt;0\"></span>: <span class=\"m\" data-tex=\"1-2x\\ge2\\iff x\\le-\\frac12\"></span>; na <span class=\"m\" data-tex=\"\\langle0,1)\"></span>: <span class=\"m\" data-tex=\"1\\ge2\"></span> — nic; pro <span class=\"m\" data-tex=\"x\\ge1\"></span>: <span class=\"m\" data-tex=\"2x-1\\ge2\\iff x\\ge\\frac32\"></span>.",
+   "id": "fjfi-v2-04",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 2,
+   "topics": [
+    7
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FP TUL, přijímací test z matematiky 2021/22 (Matematika, Bc.) (úloha 2, 20 bodů)",
+   "body": "Uvažujte reálné funkce <span class=\"m\" data-tex=\"f(x)=\\bigl||3-2x|-2\\bigr|\"></span> a <span class=\"m\" data-tex=\"g(x)=1{,}5\"></span>. a) Nakreslete (do jednoho obrázku) grafy obou funkcí pro <span class=\"m\" data-tex=\"-1\\le x\\le4\"></span>. Obrázek musí být dostatečně velký (alespoň <span class=\"m\" data-tex=\"10\\times10\"></span> cm), přehledný a popsaný (průsečíky s osami, resp. grafů apod.). b) Vyřešte nerovnici <span class=\"m\" data-tex=\"1{,}5&lt;\\bigl||3-2x|-2\\bigr|\"></span>. Řešení nerovnice zapište ve tvaru sjednocení disjunktních intervalů.",
+   "answer": "b) <span class=\"m\" data-tex=\"x\\in(-\\infty;-0{,}25)\\cup(1{,}25;1{,}75)\\cup(3{,}25;+\\infty)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"|3-2x|-2&gt;1{,}5\"></span> nebo <span class=\"m\" data-tex=\"|3-2x|-2&lt;-1{,}5\"></span>, tj. <span class=\"m\" data-tex=\"|3-2x|&gt;3{,}5\"></span> nebo <span class=\"m\" data-tex=\"|3-2x|&lt;0{,}5\"></span>. Graf v části a) je lomená čára s vrcholy v bodech <span class=\"m\" data-tex=\"[0{,}5;0]\"></span>, <span class=\"m\" data-tex=\"[1{,}5;2]\"></span>, <span class=\"m\" data-tex=\"[2{,}5;0]\"></span>.",
+   "id": "tul-2021-02",
+   "uni": "TUL",
+   "fac": "FP",
+   "level": 2,
+   "topics": [
+    7,
+    9
+   ],
+   "needs_original": false
   }
  ],
  "8": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 1, 2 body)",
+   "body": "Kolik řešení má v reálném oboru rovnice <span class=\"m\" data-tex=\"\\sqrt{6-x}=x\"></span>?",
+   "opts": [
+    "nemá žádné řešení",
+    "jedno řešení, a to kladné",
+    "jedno řešení, a to záporné",
+    "dvě řešení, obě kladná",
+    "dvě řešení, jedno kladné a jedno záporné"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"x\\ge0\"></span> a <span class=\"m\" data-tex=\"6-x=x^2\"></span>: <span class=\"m\" data-tex=\"x=2\"></span> (<span class=\"m\" data-tex=\"x=-3\"></span> podmínku nesplní).",
+   "id": "vut-fekt-2022-v1-01",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 1, 2 body)",
+   "body": "Kolik řešení má v reálném oboru rovnice <span class=\"m\" data-tex=\"\\sqrt{x+6}=-x\"></span>?",
+   "opts": [
+    "nemá žádné řešení",
+    "jedno řešení, a to kladné",
+    "jedno řešení, a to záporné",
+    "dvě řešení, obě kladná",
+    "dvě řešení, jedno kladné a jedno záporné"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"x\\le0\"></span> a <span class=\"m\" data-tex=\"x+6=x^2\"></span>: <span class=\"m\" data-tex=\"x=-2\"></span> (<span class=\"m\" data-tex=\"x=3\"></span> podmínku nesplní).",
+   "id": "vut-fekt-2022-v2-01",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 7, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"3\\sqrt{x+5}=x+5\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{4\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-\\sqrt5,\\sqrt5\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{\\sqrt3+5\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-5,4\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\emptyset\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"t=\\sqrt{x+5}\\ge0\"></span>: <span class=\"m\" data-tex=\"3t=t^2\"></span>, tedy <span class=\"m\" data-tex=\"t=0\"></span> nebo <span class=\"m\" data-tex=\"t=3\"></span>, <span class=\"m\" data-tex=\"x=-5\"></span> nebo <span class=\"m\" data-tex=\"x=4\"></span>.",
+   "id": "fjfi-v1-07",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 7, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\sqrt{10-5x}+2=x\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{2\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-3,2\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-2,2\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{2,3\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\emptyset\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"10-5x=(x-2)^2\\Rightarrow x^2+x-6=0\"></span>, <span class=\"m\" data-tex=\"x=2\"></span> nebo <span class=\"m\" data-tex=\"x=-3\"></span>; podmínka <span class=\"m\" data-tex=\"x\\ge2\"></span> ponechá <span class=\"m\" data-tex=\"x=2\"></span>.",
+   "id": "fjfi-v2-07",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 10, 1 bod)",
    "body": "Graf funkce <span class=\"m\" data-tex=\"y=\\left(\\dfrac{1-\\sqrt x}{\\sqrt x-x}\\right)^2\"></span> je částí",
    "opts": [
@@ -1604,7 +2419,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 16, 7 bodů)",
    "body": "Pro definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{x+4}+\\sqrt{\\dfrac{1}{7-6x-x^2}}\"></span> platí",
    "opts": [
@@ -1628,7 +2443,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 10, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{x+2}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}\"></span> je pravdivé?",
    "opts": [
@@ -1658,7 +2473,7 @@
    ]
   },
   {
-   "q": "P4",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 5, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac{1}{x+2}}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}\"></span> je pravdivé?",
    "opts": [
@@ -1685,7 +2500,7 @@
    ]
   },
   {
-   "q": "P5",
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 5, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac{x-2}{x^2-x-\\frac34}}\"></span> je pravdivé?",
    "opts": [
@@ -1848,6 +2663,100 @@
   },
   {
    "q": "P7",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 14, 5 bodů)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=x^3-6\"></span>. Rovnost <span class=\"m\" data-tex=\"2f(t)=f(2t)\"></span> platí právě pro",
+   "opts": [
+    "<span class=\"m\" data-tex=\"t=1\"></span>",
+    "<span class=\"m\" data-tex=\"t=0\"></span>",
+    "<span class=\"m\" data-tex=\"t=-1\"></span>",
+    "každé reálné <span class=\"m\" data-tex=\"t\"></span>",
+    "neplatí pro žádné reálné <span class=\"m\" data-tex=\"t\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"2t^3-12=8t^3-6\\Rightarrow t^3=-1\"></span>.",
+   "id": "vut-fekt-2022-v1-14",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    9,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 14, 5 bodů)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=x^2-1\"></span>. Rovnost <span class=\"m\" data-tex=\"2f(t)=f(2t)\"></span> platí právě pro",
+   "opts": [
+    "<span class=\"m\" data-tex=\"t=-\\sqrt6/2\"></span>",
+    "<span class=\"m\" data-tex=\"t=\\sqrt6/2\"></span>",
+    "<span class=\"m\" data-tex=\"t=0\"></span>",
+    "každé reálné <span class=\"m\" data-tex=\"t\"></span>",
+    "neplatí pro žádné reálné <span class=\"m\" data-tex=\"t\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"2t^2-2=4t^2-1\\Rightarrow t^2=-\\frac12\"></span>.",
+   "id": "vut-fekt-2022-v2-14",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    9,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 13, 5 bodů)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=3x-2\"></span>. Rovnost <span class=\"m\" data-tex=\"f(2t+1)=0\"></span> platí pro",
+   "opts": [
+    "<span class=\"m\" data-tex=\"t=2/3\"></span>",
+    "<span class=\"m\" data-tex=\"t=-2/3\"></span>",
+    "<span class=\"m\" data-tex=\"t=1/6\"></span>",
+    "<span class=\"m\" data-tex=\"t=-1/6\"></span>",
+    "neplatí pro žádné <span class=\"m\" data-tex=\"t\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"3(2t+1)-2=6t+1=0\"></span>.",
+   "id": "vut-fekt-2023-v1-13",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 13, 5 bodů)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=2x+1\"></span>. Rovnost <span class=\"m\" data-tex=\"f(3t-2)=0\"></span> platí pro",
+   "opts": [
+    "<span class=\"m\" data-tex=\"t=1/2\"></span>",
+    "<span class=\"m\" data-tex=\"t=-1/2\"></span>",
+    "<span class=\"m\" data-tex=\"t=1/6\"></span>",
+    "<span class=\"m\" data-tex=\"t=-1/6\"></span>",
+    "neplatí pro žádné <span class=\"m\" data-tex=\"t\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"2(3t-2)+1=6t-3=0\"></span>.",
+   "id": "vut-fekt-2023-v2-13",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 4, 7 bodů)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=2x+1+x^2\"></span>. Spočtěte hodnotu rozdílu <span class=\"m\" data-tex=\"2f(t+1)-f(t-1)\"></span>.",
    "opts": [
@@ -1870,7 +2779,7 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 3, 3 body)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=2x^2-2\"></span>. Spočtěte hodnotu rozdílu <span class=\"m\" data-tex=\"2f(t+1)-f(t-1)\"></span>.",
    "opts": [
@@ -1893,7 +2802,7 @@
    "needs_original": false
   },
   {
-   "q": "P9",
+   "q": "P13",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 8, 7 bodů)",
    "body": "Nalezněte obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{2x+3}-1\\,.\"></span>",
    "opts": [
@@ -1920,7 +2829,7 @@
    ]
   },
   {
-   "q": "P10",
+   "q": "P14",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 1, 3 body)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=x^2-2x+1\"></span>. Spočtěte hodnotu rozdílu <span class=\"m\" data-tex=\"f(t+1)-f(t-1)\"></span>.",
    "opts": [
@@ -1943,7 +2852,7 @@
    "needs_original": false
   },
   {
-   "q": "P11",
+   "q": "P15",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 11, 7 bodů)",
    "body": "Nalezněte obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=2x^2-5x+3\\,.\"></span>",
    "opts": [
@@ -1964,11 +2873,174 @@
     9
    ],
    "needs_original": false
+  },
+  {
+   "q": "P16",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 9, 2 body)",
+   "body": "Určete definiční obor funkce zadané předpisem <span class=\"m\" data-tex=\"f:y=\\dfrac{1}{\\sqrt{2x+3}}\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\left(-\\frac32,+\\infty\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"\\left(-\\frac23,+\\infty\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"\\left(-\\frac12,3\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"\\left(-\\infty,-\\frac32\\right)\\cup\\left(-\\frac23,+\\infty\\right)\"></span>",
+    "<span class=\"m\" data-tex=\"\\left(-\\infty,-\\frac23\\right)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"2x+3&gt;0\"></span>.",
+   "id": "fjfi-v2-09",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P17",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 14, 5 bodů)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=1-x\"></span>. Rovnice <span class=\"m\" data-tex=\"\\frac{1}{f(x)}=f\\left(\\frac1x\\right)\"></span> v reálném oboru",
+   "opts": [
+    "má nekonečně mnoho řešení",
+    "má právě 1 řešení",
+    "má právě 2 řešení",
+    "má právě 4 řešení",
+    "nemá řešení"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"\\frac1{1-x}=\\frac{x-1}x\\Rightarrow x=-(x-1)^2\\Rightarrow x^2-x+1=0\"></span>, <span class=\"m\" data-tex=\"D&lt;0\"></span>.",
+   "id": "vut-fekt-2024-v1-14",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    9,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P18",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 14, 5 bodů)",
+   "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=x-1\"></span>. Rovnice <span class=\"m\" data-tex=\"\\frac{1}{f(x)}=f\\left(\\frac1x\\right)\"></span> v reálném oboru",
+   "opts": [
+    "má právě 1 řešení",
+    "má právě 2 řešení",
+    "má právě 4 řešení",
+    "nemá řešení",
+    "má nekonečně mnoho řešení"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"\\frac1{x-1}=\\frac{1-x}x\\Rightarrow x=-(x-1)^2\\Rightarrow x^2-x+1=0\"></span>, <span class=\"m\" data-tex=\"D&lt;0\"></span>.",
+   "id": "vut-fekt-2024-v2-14",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    9,
+    3
+   ],
+   "needs_original": false
   }
  ],
  "10": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 6, 3 body)",
+   "body": "Graf funkce <span class=\"m\" data-tex=\"f(x)=2^{x-3}+1\"></span> je oproti grafu funkce <span class=\"m\" data-tex=\"y=2^x\"></span> posunutý",
+   "opts": [
+    "o 3 nahoru a o 1 doleva",
+    "o 3 dolů a o 1 doprava",
+    "o 3 doleva a o 1 nahoru",
+    "o 3 doleva a o 1 dolů",
+    "o 3 doprava a o 1 nahoru"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "id": "vut-fekt-2022-v1-06",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    10,
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 6, 3 body)",
+   "body": "Graf funkce <span class=\"m\" data-tex=\"f(x)=2^{x+1}+3\"></span> je oproti grafu funkce <span class=\"m\" data-tex=\"y=2^x\"></span> posunutý",
+   "opts": [
+    "o 1 nahoru a o 3 doleva",
+    "o 1 dolů a o 3 doprava",
+    "o 1 doleva a o 3 nahoru",
+    "o 1 doprava a o 3 dolů",
+    "o 1 doprava a o 3 nahoru"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "id": "vut-fekt-2022-v2-06",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    10,
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 8, 3 body)",
+   "body": "Ze zadaných funkcí vyberte tu, jejíž graf vznikne z grafu funkce <span class=\"m\" data-tex=\"y=3^x\"></span> posunutím o 1 nahoru a o 2 doleva.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"y=3^{x-2}+1\"></span>",
+    "<span class=\"m\" data-tex=\"y=3^{x-1}+2\"></span>",
+    "<span class=\"m\" data-tex=\"y=3^{x+2}+1\"></span>",
+    "<span class=\"m\" data-tex=\"y=3^{x+2}-1\"></span>",
+    "<span class=\"m\" data-tex=\"y=3^{x-2}-1\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "id": "vut-fekt-2023-v1-08",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    10,
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 8, 3 body)",
+   "body": "Ze zadaných funkcí vyberte tu, jejíž graf vznikne z grafu funkce <span class=\"m\" data-tex=\"y=2^x\"></span> posunutím o 2 doprava a o 3 dolů.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"y=2^{x-2}-3\"></span>",
+    "<span class=\"m\" data-tex=\"y=2^{x-3}-2\"></span>",
+    "<span class=\"m\" data-tex=\"y=2^{x+2}-3\"></span>",
+    "<span class=\"m\" data-tex=\"y=2^{x-3}+2\"></span>",
+    "<span class=\"m\" data-tex=\"y=2^{x+2}+3\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "id": "vut-fekt-2023-v2-08",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    10,
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 8, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\left(\\frac12\\right)^{3x-1}\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\left\\langle\\frac12,2\\right\\rangle\"></span> právě pro",
    "opts": [
@@ -1991,7 +3063,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 12, 7 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=2e^{3x-1}\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\left\\langle\\frac12,2\\right\\rangle\"></span> právě pro",
    "opts": [
@@ -2017,6 +3089,120 @@
  "11": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 8, 3 body)",
+   "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\left(3^x\\right)^2\\cdot3^{-2x}=27\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{-1\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-1,3\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{1\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-3,1\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{\\ \\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "Levá strana je <span class=\"m\" data-tex=\"3^{2x-2x}=1\\ne27\"></span>.",
+   "id": "vut-fekt-2024-v1-08",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 8, 3 body)",
+   "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\left(2^x\\right)^2\\cdot2^{-3x}=16\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{-4\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-4,1\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{4\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-1,4\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{-1\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"2^{-x}=2^4\"></span>, <span class=\"m\" data-tex=\"x=-4\"></span>.",
+   "id": "vut-fekt-2024-v2-08",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 6, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> <span class=\"m\" data-tex=\"2^{2x-1}=8\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"2\"></span>",
+    "<span class=\"m\" data-tex=\"4\"></span>",
+    "<span class=\"m\" data-tex=\"6\"></span>",
+    "<span class=\"m\" data-tex=\"0\"></span>",
+    "<span class=\"m\" data-tex=\"1\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"2x-1=3\"></span>, <span class=\"m\" data-tex=\"x=2\"></span>.",
+   "id": "fjfi-v1-06",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 6, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> <span class=\"m\" data-tex=\"\\left(\\dfrac49\\right)^{x+2}=\\left(\\dfrac32\\right)^{3-x}\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"7\"></span>",
+    "<span class=\"m\" data-tex=\"0\"></span>",
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"-7\"></span>",
+    "<span class=\"m\" data-tex=\"9\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"\\left(\\frac23\\right)^{2x+4}=\\left(\\frac23\\right)^{x-3}\\Rightarrow2x+4=x-3\"></span>, <span class=\"m\" data-tex=\"x=-7\"></span>.",
+   "id": "fjfi-v2-06",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 1, 1 bod)",
+   "body": "Množina všech reálných čísel, pro která platí <span class=\"m\" data-tex=\"\\left(\\frac45\\right)^x&gt;\\frac{25}{16}\"></span>, je rovna množině",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-\\infty,-2)\"></span>",
+    "<span class=\"m\" data-tex=\"(2,\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-2,2)\"></span>",
+    "<span class=\"m\" data-tex=\"(-2,\\infty)\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{25}{16}=\\left(\\frac45\\right)^{-2}\"></span> a základ je menší než <span class=\"m\" data-tex=\"1\"></span>, proto <span class=\"m\" data-tex=\"x&lt;-2\"></span>.",
+   "id": "vscht-01",
+   "uni": "VŠCHT",
+   "fac": "VŠCHT",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 1, 1 bod)",
    "body": "Množinou všech řešení nerovnice <span class=\"m\" data-tex=\"2^{|x+3|}&lt;2\"></span> s neznámou <span class=\"m\" data-tex=\"x\\in\\mathbb{R}\"></span> je",
    "opts": [
@@ -2040,7 +3226,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 11, 5 bodů)",
    "body": "Za jaký minimální počet let klesne hodnota předmětu na méně než desetinu původní ceny, pokud ročně odepisujeme <span class=\"m\" data-tex=\"18\\%\"></span> ceny předmětu z předchozího roku?",
    "opts": [
@@ -2063,7 +3249,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 18, 7 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2^{x-2}+4^{x-\\frac12}=9\"></span> platí",
    "opts": [
@@ -2086,7 +3272,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 7, 5 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"9^{x-\\frac12}+9^{\\frac12-x}=\\dfrac{10}{3}\"></span> je pravdivé.",
    "opts": [
@@ -2109,7 +3295,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P10",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 9, 7 bodů)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"3^x+5\\cdot4^x=2\\cdot4^{x+1}-3^{x+1}\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -2132,7 +3318,7 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 3, 3 body)",
    "body": "Pro řešení nerovnice <span class=\"m\" data-tex=\"\\left(\\dfrac13\\right)^{x^2}\\le3^{-x-6}\"></span> platí",
    "opts": [
@@ -2227,6 +3413,144 @@
   },
   {
    "q": "P4",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 7, 3 body)",
+   "body": "Výraz <span class=\"m\" data-tex=\"2\\log_3x-1\"></span> se dá přepsat jako",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\log_3(2x-1)\"></span>",
+    "<span class=\"m\" data-tex=\"\\log_3(x^2-1)\"></span>",
+    "<span class=\"m\" data-tex=\"\\log_3(2x-3)\"></span>",
+    "<span class=\"m\" data-tex=\"\\log_3\\frac{x^2}3\"></span>",
+    "<span class=\"m\" data-tex=\"\\log_3(3x^2)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"2\\log_3x-\\log_33=\\log_3\\frac{x^2}3\"></span>.",
+   "id": "vut-fekt-2022-v1-07",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 7, 3 body)",
+   "body": "Výraz <span class=\"m\" data-tex=\"4-\\log_2x\"></span> se dá přepsat jako",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\log_2(4-x)\"></span>",
+    "<span class=\"m\" data-tex=\"\\log_2(16-x)\"></span>",
+    "<span class=\"m\" data-tex=\"\\log_2(16x)\"></span>",
+    "<span class=\"m\" data-tex=\"\\log_2\\frac2x\"></span>",
+    "<span class=\"m\" data-tex=\"\\log_2\\frac{16}x\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"\\log_216-\\log_2x=\\log_2\\frac{16}x\"></span>.",
+   "id": "vut-fekt-2022-v2-07",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 9, 3 body)",
+   "body": "Jestliže <span class=\"m\" data-tex=\"5^x=3\"></span>, pak",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=\\log_35\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\log_53\"></span>",
+    "<span class=\"m\" data-tex=\"x=3^{1/5}\"></span>",
+    "<span class=\"m\" data-tex=\"x=5^{1/3}\"></span>",
+    "<span class=\"m\" data-tex=\"x\"></span> neexistuje"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "id": "vut-fekt-2023-v1-09",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 9, 3 body)",
+   "body": "Jestliže <span class=\"m\" data-tex=\"3^x=2\"></span>, pak",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=\\log_23\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\log_32\"></span>",
+    "<span class=\"m\" data-tex=\"x=2^{1/3}\"></span>",
+    "<span class=\"m\" data-tex=\"x=3^{1/2}\"></span>",
+    "<span class=\"m\" data-tex=\"x\"></span> neexistuje"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "id": "vut-fekt-2023-v2-09",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 9, 3 body)",
+   "body": "Graf funkce <span class=\"m\" data-tex=\"f(x)=\\log(x+1)-2\"></span> je oproti grafu funkce <span class=\"m\" data-tex=\"y=\\log x\"></span> posunutý",
+   "opts": [
+    "o 1 nahoru a o 2 doleva",
+    "o 1 dolů a o 2 doprava",
+    "o 1 doleva a o 2 nahoru",
+    "o 1 doleva a o 2 dolů",
+    "o 1 doprava a o 2 nahoru"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"x+1\"></span> — o 1 doleva, <span class=\"m\" data-tex=\"-2\"></span> — o 2 dolů.",
+   "id": "vut-fekt-2024-v1-09",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    12,
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 9, 3 body)",
+   "body": "Graf funkce <span class=\"m\" data-tex=\"f(x)=\\log(x+1)+3\"></span> je oproti grafu funkce <span class=\"m\" data-tex=\"y=\\log x\"></span> posunutý",
+   "opts": [
+    "o 1 nahoru a o 3 doleva",
+    "o 1 dolů a o 3 doprava",
+    "o 1 doleva a o 3 nahoru",
+    "o 1 doprava a o 3 dolů",
+    "o 1 doprava a o 3 nahoru"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"x+1\"></span> — o 1 doleva, <span class=\"m\" data-tex=\"+3\"></span> — o 3 nahoru.",
+   "id": "vut-fekt-2024-v2-09",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    12,
+    9
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 6, 1 bod)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\log_2y=3\\log_2\\dfrac{x-2}{2}-2\\log_2\\dfrac{x^2-4}{2}\"></span>, pak číslo <span class=\"m\" data-tex=\"y\"></span> je rovno",
    "opts": [
@@ -2249,7 +3573,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 15, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\log_{\\frac12}x\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-2,2\\rangle\"></span> právě pro",
    "opts": [
@@ -2272,7 +3596,7 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 9, 5 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\log_5x+1}\"></span> je pravdivé?",
    "opts": [
@@ -2295,7 +3619,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P13",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 10, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\ln(2x+1)\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-1,1\\rangle\"></span> právě pro",
    "opts": [
@@ -2318,7 +3642,7 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P14",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 10, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2+8x+15)}{\\sqrt{2-x}}\"></span> je pravdivé?",
    "opts": [
@@ -2342,7 +3666,7 @@
    "needs_original": false
   },
   {
-   "q": "P9",
+   "q": "P15",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 12, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2+8x+16)}{\\sqrt{x+5}}\"></span> je pravdivé?",
    "opts": [
@@ -2368,6 +3692,29 @@
  "13": [
   {
    "q": "P1",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 5, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> <span class=\"m\" data-tex=\"\\log_2(4x-4)-\\log_2(3-x)=2\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"4\"></span>",
+    "<span class=\"m\" data-tex=\"0\"></span>",
+    "<span class=\"m\" data-tex=\"2\"></span>",
+    "<span class=\"m\" data-tex=\"3\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Podmínky <span class=\"m\" data-tex=\"1&lt;x&lt;3\"></span>; <span class=\"m\" data-tex=\"\\frac{4x-4}{3-x}=4\\Rightarrow x=2\"></span>.",
+   "id": "fjfi-v1-05",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    13
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 12, 7 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"\\dfrac{\\log_3(5x+4)}{\\log_3(x-4)}=2\"></span> je pravdivé.",
    "opts": [
@@ -2390,7 +3737,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P3",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 7, 7 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"\\dfrac{\\log_3(6x-2)}{\\log_3(x-3)}=2\"></span> je pravdivé.",
    "opts": [
@@ -2417,7 +3764,7 @@
    ]
   },
   {
-   "q": "P3",
+   "q": "P4",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 8, 7 bodů)",
    "body": "Najděte všechna reálná řešení nerovnice <span class=\"m\" data-tex=\"\\log_{\\frac12}(x^2)-\\log_{\\frac12}(x-1)&lt;0\\,.\"></span>",
    "opts": [
@@ -2440,7 +3787,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 7, 7 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"\\dfrac{\\log_3^2(9x)}{\\log_3(81x^2)}=\\dfrac32\"></span> platí:",
    "opts": [
@@ -2469,7 +3816,30 @@
    ]
   },
   {
-   "q": "P5",
+   "q": "P6",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 5, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> <span class=\"m\" data-tex=\"\\log(2x+9)-2\\log x+\\log(x-4)=2-\\log50\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"36\"></span>",
+    "<span class=\"m\" data-tex=\"42\"></span>",
+    "<span class=\"m\" data-tex=\"18\"></span>",
+    "<span class=\"m\" data-tex=\"20\"></span>",
+    "<span class=\"m\" data-tex=\"10\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "Podmínka <span class=\"m\" data-tex=\"x&gt;4\"></span>; <span class=\"m\" data-tex=\"\\frac{(2x+9)(x-4)}{x^2}=\\frac{100}{50}=2\\Rightarrow 2x^2+x-36=2x^2\"></span>, <span class=\"m\" data-tex=\"x=36\"></span>.",
+   "id": "fjfi-v2-05",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 2,
+   "topics": [
+    13
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 14, 5 bodů)",
    "body": "Najděte všechna reálná řešení nerovnice <span class=\"m\" data-tex=\"\\log_{\\frac13}(x+1)-\\log_{\\frac13}(x-1)\\ge\\log_{\\frac13}x\\,.\"></span>",
    "opts": [
@@ -2495,6 +3865,52 @@
  "14": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 9, 3 body)",
+   "body": "Pro libovolná dvě čísla <span class=\"m\" data-tex=\"x,y\"></span> splňující podmínku <span class=\"m\" data-tex=\"y=\\pi-x\"></span> platí",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sin x=\\sin y\"></span>",
+    "<span class=\"m\" data-tex=\"\\sin x=\\cos y\"></span>",
+    "<span class=\"m\" data-tex=\"\\cos x=\\cos y\"></span>",
+    "<span class=\"m\" data-tex=\"\\cos x=\\sin y\"></span>",
+    "<span class=\"m\" data-tex=\"\\sin x=-\\cos y\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\sin(\\pi-x)=\\sin x\"></span>.",
+   "id": "vut-fekt-2022-v1-09",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 9, 3 body)",
+   "body": "Pro libovolná dvě čísla <span class=\"m\" data-tex=\"x,y\"></span> splňující podmínku <span class=\"m\" data-tex=\"y=\\pi-x\"></span> platí",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\cos x=\\cos y\"></span>",
+    "<span class=\"m\" data-tex=\"\\cos x=-\\cos y\"></span>",
+    "<span class=\"m\" data-tex=\"\\sin x=-\\sin y\"></span>",
+    "<span class=\"m\" data-tex=\"\\sin x=\\cos y\"></span>",
+    "<span class=\"m\" data-tex=\"\\sin y=\\cos x\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\cos(\\pi-x)=-\\cos x\"></span>.",
+   "id": "vut-fekt-2022-v2-09",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 2, 1 bod)",
    "body": "Maximální definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{x}{\\sin x}\"></span> je",
    "opts": [
@@ -2517,7 +3933,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P4",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 5, 7 bodů)",
    "body": "Nalezněte obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=2-3\\operatorname{cotg}(x-1)\\,.\"></span>",
    "opts": [
@@ -2543,7 +3959,7 @@
    ]
   },
   {
-   "q": "P3",
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 10, 7 bodů)",
    "body": "Nalezněte obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=2\\sin\\left(3x-\\dfrac{\\pi}{2}\\right)-4\\,.\"></span>",
    "opts": [
@@ -2569,11 +3985,79 @@
     "FIT ČVUT, vzorová přijímací zkouška pro rok 2018, příklad 12 (7 b)",
     "FIT ČVUT, vzorová přijímací zkouška pro rok 2021, příklad 9 (7 b)"
    ]
+  },
+  {
+   "q": "P6",
+   "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 4, 1 bod)",
+   "body": "Je-li <span class=\"m\" data-tex=\"\\cos\\alpha=1\"></span>, pak <span class=\"m\" data-tex=\"\\cos2\\alpha\"></span> se rovná",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-1\"></span>",
+    "<span class=\"m\" data-tex=\"1/2\"></span>",
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"2\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\cos2\\alpha=2\\cos^2\\alpha-1=1\"></span>.",
+   "id": "vscht-04",
+   "uni": "VŠCHT",
+   "fac": "VŠCHT",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
   }
  ],
  "15": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 11, 5 bodů)",
+   "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"4\\sin^2x=1\"></span>, která leží v intervalu <span class=\"m\" data-tex=\"\\langle0,2\\pi\\rangle\"></span>, je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{\\pi/6,5\\pi/6\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{\\pi/6,5\\pi/6,7\\pi/6,11\\pi/6\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{\\pi/3,2\\pi/3\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{\\pi/3,2\\pi/3,4\\pi/3,5\\pi/3\\}\"></span>",
+    "prázdná"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\sin x=\\pm\\frac12\"></span>.",
+   "id": "vut-fekt-2024-v1-11",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 11, 5 bodů)",
+   "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"2\\cos^2x=1\"></span>, která leží v intervalu <span class=\"m\" data-tex=\"\\langle0,2\\pi\\rangle\"></span>, je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\{\\pi/4,3\\pi/4\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{\\pi/4,3\\pi/4,5\\pi/4,7\\pi/4\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{\\pi/3,2\\pi/3\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\{\\pi/3,2\\pi/3,4\\pi/3,5\\pi/3\\}\"></span>",
+    "prázdná"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\cos x=\\pm\\frac{\\sqrt2}2\"></span>.",
+   "id": "vut-fekt-2024-v2-11",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 3, 1 bod)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\sin\\alpha\\cdot\\cos\\alpha=\\frac12\"></span> a <span class=\"m\" data-tex=\"\\alpha\\in(\\pi,2\\pi)\"></span>, pak <span class=\"m\" data-tex=\"\\operatorname{tg}(\\pi-\\alpha)\"></span>",
    "opts": [
@@ -2597,7 +4081,75 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P4",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 8, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\sin^2x+\\sin^22x=1\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac12\\pi+k\\pi,\\frac16\\pi+k\\pi,\\frac56\\pi+k\\pi\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac12\\pi+2k\\pi,\\frac56\\pi+2k\\pi,\\frac{11}6\\pi+2k\\pi\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac12\\pi+k\\pi\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac16\\pi+2k\\pi,\\frac{11}6\\pi+2k\\pi\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac12\\pi+k\\pi,\\frac76\\pi+2k\\pi,\\frac{11}6\\pi+2k\\pi\\right\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\sin^22x=1-\\sin^2x=\\cos^2x\"></span>, tj. <span class=\"m\" data-tex=\"4\\sin^2x\\cos^2x=\\cos^2x\"></span>: <span class=\"m\" data-tex=\"\\cos x=0\"></span> nebo <span class=\"m\" data-tex=\"\\sin^2x=\\frac14\"></span>.",
+   "id": "fjfi-v1-08",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 8, 2 body)",
+   "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\sin x-\\cos2x=0\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac32\\pi+2k\\pi,\\frac{11}6\\pi+2k\\pi,\\frac16\\pi+2k\\pi\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac16\\pi+2k\\pi,\\frac56\\pi+2k\\pi,\\frac32\\pi+2k\\pi\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac16\\pi+2k\\pi,\\frac{11}6\\pi+2k\\pi\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac56\\pi+2k\\pi,\\frac32\\pi+k\\pi\\right\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\cup_{k\\in\\mathbb{Z}}\\left\\{\\frac16\\pi+2k\\pi,\\frac56\\pi+2k\\pi,\\frac{11}6\\pi+2k\\pi\\right\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\cos2x=1-2\\sin^2x\"></span>: <span class=\"m\" data-tex=\"2\\sin^2x+\\sin x-1=0\"></span>, <span class=\"m\" data-tex=\"\\sin x=\\frac12\"></span> nebo <span class=\"m\" data-tex=\"\\sin x=-1\"></span>.",
+   "id": "fjfi-v2-08",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 5, 2 body)",
+   "body": "Počet všech <span class=\"m\" data-tex=\"x\"></span> z intervalu <span class=\"m\" data-tex=\"(\\pi,2\\pi)\"></span>, pro která platí <span class=\"m\" data-tex=\"1-\\cos^2x-\\sin x=0\"></span>, je roven číslu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"0\"></span>",
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"2\"></span>",
+    "<span class=\"m\" data-tex=\"4\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\sin^2x-\\sin x=0\"></span>, tj. <span class=\"m\" data-tex=\"\\sin x=0\"></span> nebo <span class=\"m\" data-tex=\"\\sin x=1\"></span>; na <span class=\"m\" data-tex=\"(\\pi,2\\pi)\"></span> je <span class=\"m\" data-tex=\"\\sin x&lt;0\"></span>, řešení tam není.",
+   "id": "vscht-05",
+   "uni": "VŠCHT",
+   "fac": "VŠCHT",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 4, 1 bod)",
    "body": "V intervalu <span class=\"m\" data-tex=\"\\langle0,2\\pi\\rangle\"></span> má rovnice <span class=\"m\" data-tex=\"\\sin x=\\cos x-1\"></span>",
    "opts": [
@@ -2623,6 +4175,52 @@
  "16": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 15, 5 bodů)",
+   "body": "Součin komplexních čísel <span class=\"m\" data-tex=\"(3+2i)(1-4i)\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"2-4i\"></span>",
+    "<span class=\"m\" data-tex=\"4-2i\"></span>",
+    "<span class=\"m\" data-tex=\"3-10i\"></span>",
+    "<span class=\"m\" data-tex=\"-5-10i\"></span>",
+    "<span class=\"m\" data-tex=\"11-10i\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"3-12i+2i-8i^2=11-10i\"></span>.",
+   "id": "vut-fekt-2024-v1-15",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    16
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 15, 5 bodů)",
+   "body": "Součin komplexních čísel <span class=\"m\" data-tex=\"(2+3i)(4-i)\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"2+6i\"></span>",
+    "<span class=\"m\" data-tex=\"5+10i\"></span>",
+    "<span class=\"m\" data-tex=\"6+2i\"></span>",
+    "<span class=\"m\" data-tex=\"10+11i\"></span>",
+    "<span class=\"m\" data-tex=\"11+10i\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"8-2i+12i-3i^2=11+10i\"></span>.",
+   "id": "vut-fekt-2024-v2-15",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    16
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 5, 1 bod)",
    "body": "Algebraický tvar komplexního čísla <span class=\"m\" data-tex=\"z=\\dfrac{1+\\mathrm i}{1+2\\mathrm i}\"></span> je",
    "opts": [
@@ -2638,6 +4236,52 @@
    "id": "fel-vzor01-5",
    "uni": "ČVUT",
    "fac": "FEL",
+   "level": 1,
+   "topics": [
+    16
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 12, 2 body)",
+   "body": "Zapište v algebraickém tvaru číslo <span class=\"m\" data-tex=\"z=(1-2i)^2-(1+2i)^2\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"z=0\"></span>",
+    "<span class=\"m\" data-tex=\"z=-8\"></span>",
+    "<span class=\"m\" data-tex=\"z=-8i\"></span>",
+    "<span class=\"m\" data-tex=\"z=-8-8i\"></span>",
+    "<span class=\"m\" data-tex=\"z=8i\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"(-3-4i)-(-3+4i)=-8i\"></span>.",
+   "id": "fjfi-v1-12",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    16
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 12, 2 body)",
+   "body": "Zapište v algebraickém tvaru číslo <span class=\"m\" data-tex=\"z=(3+2i)^2\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"z=5+12i\"></span>",
+    "<span class=\"m\" data-tex=\"z=5+6i\"></span>",
+    "<span class=\"m\" data-tex=\"z=5-6i\"></span>",
+    "<span class=\"m\" data-tex=\"z=13+12i\"></span>",
+    "<span class=\"m\" data-tex=\"z=13-12i\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"9+12i+4i^2=5+12i\"></span>.",
+   "id": "fjfi-v2-12",
+   "uni": "ČVUT",
+   "fac": "FJFI",
    "level": 1,
    "topics": [
     16
@@ -2718,6 +4362,75 @@
   },
   {
    "q": "P3",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 10, 3 body)",
+   "body": "Vypočtěte druhý člen aritmetické posloupnosti <span class=\"m\" data-tex=\"\\{a_n\\}_{n=1}^\\infty\"></span>, pro kterou platí <span class=\"m\" data-tex=\"a_3+a_5=14,a_4+a_6=24\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"a_2=-3\"></span>",
+    "<span class=\"m\" data-tex=\"a_2=-4\"></span>",
+    "<span class=\"m\" data-tex=\"a_2=-5\"></span>",
+    "<span class=\"m\" data-tex=\"a_2=-7\"></span>",
+    "<span class=\"m\" data-tex=\"a_2=-8\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"2a_4=14\"></span>, <span class=\"m\" data-tex=\"2a_5=24\"></span>: <span class=\"m\" data-tex=\"a_4=7\"></span>, <span class=\"m\" data-tex=\"d=5\"></span>, <span class=\"m\" data-tex=\"a_2=7-10=-3\"></span>.",
+   "id": "vut-fekt-2022-v1-10",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    19
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 10, 3 body)",
+   "body": "Vypočtěte čtvrtý člen aritmetické posloupnosti <span class=\"m\" data-tex=\"\\{a_n\\}_{n=1}^\\infty\"></span>, pro kterou platí <span class=\"m\" data-tex=\"a_2+a_6=22,a_3+a_7=30\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"a_4=7\"></span>",
+    "<span class=\"m\" data-tex=\"a_4=8\"></span>",
+    "<span class=\"m\" data-tex=\"a_4=9\"></span>",
+    "<span class=\"m\" data-tex=\"a_4=10\"></span>",
+    "<span class=\"m\" data-tex=\"a_4=11\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"a_2+a_6=2a_4=22\"></span>.",
+   "id": "vut-fekt-2022-v2-10",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    19
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 12, 5 bodů)",
+   "body": "Vypočtěte pátý člen aritmetické posloupnosti <span class=\"m\" data-tex=\"\\{a_n\\}_{n=1}^\\infty\"></span>, pro kterou platí <span class=\"m\" data-tex=\"a_4+a_6=20,a_1+a_3=2\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"a_5=8\"></span>",
+    "<span class=\"m\" data-tex=\"a_5=10\"></span>",
+    "<span class=\"m\" data-tex=\"a_5=12\"></span>",
+    "<span class=\"m\" data-tex=\"a_5=14\"></span>",
+    "<span class=\"m\" data-tex=\"a_5=16\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"a_4+a_6=2a_5=20\"></span>.",
+   "id": "vut-fekt-2024-v1-12",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    19
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 8, 1 bod)",
    "body": "Mezi čísla 7 a 22 jsou vložena čtyři čísla tak, že spolu s danými čísly tvoří prvních šest po sobě jdoucích členů aritmetické posloupnosti. Součet prvních osmi členů této posloupnosti je",
    "opts": [
@@ -2740,7 +4453,75 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P7",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 11, 2 body)",
+   "body": "V aritmetické posloupnosti je dáno <span class=\"m\" data-tex=\"a_1=0\"></span>, diference <span class=\"m\" data-tex=\"d=3\"></span> a <span class=\"m\" data-tex=\"s_n=165\"></span>. Určete počet členů součtu <span class=\"m\" data-tex=\"n\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"n=10\"></span>",
+    "<span class=\"m\" data-tex=\"n=11\"></span>",
+    "<span class=\"m\" data-tex=\"n=12\"></span>",
+    "<span class=\"m\" data-tex=\"n=13\"></span>",
+    "<span class=\"m\" data-tex=\"n=14\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"s_n=\\frac n2\\bigl(0+3(n-1)\\bigr)=165\\Rightarrow n(n-1)=110\"></span>, <span class=\"m\" data-tex=\"n=11\"></span>.",
+   "id": "fjfi-v1-11",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    19
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 3, 1 bod)",
+   "body": "V aritmetické posloupnosti je součet třetího a čtvrtého členu roven 16 a součet pátého a šestého členu je roven 24. První člen je roven",
+   "opts": [
+    "<span class=\"m\" data-tex=\"2\"></span>",
+    "<span class=\"m\" data-tex=\"3\"></span>",
+    "<span class=\"m\" data-tex=\"4\"></span>",
+    "<span class=\"m\" data-tex=\"6\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"2a_1+5d=16\"></span>, <span class=\"m\" data-tex=\"2a_1+9d=24\"></span>: <span class=\"m\" data-tex=\"d=2\"></span>, <span class=\"m\" data-tex=\"a_1=3\"></span>.",
+   "id": "vscht-03",
+   "uni": "VŠCHT",
+   "fac": "VŠCHT",
+   "level": 1,
+   "topics": [
+    19
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 12, 5 bodů)",
+   "body": "Jestliže pro aritmetickou posloupnost s prvním členem <span class=\"m\" data-tex=\"a_1\"></span> a diferencí <span class=\"m\" data-tex=\"d\"></span> platí <span class=\"m\" data-tex=\"a_5/a_1=6\"></span>, čemu je rovno <span class=\"m\" data-tex=\"d/a_1\"></span>?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"3/2\"></span>",
+    "<span class=\"m\" data-tex=\"5/4\"></span>",
+    "<span class=\"m\" data-tex=\"7/6\"></span>",
+    "posloupnost neexistuje"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{a_1+4d}{a_1}=1+4\\frac d{a_1}=6\"></span>, tedy <span class=\"m\" data-tex=\"\\frac d{a_1}=\\frac54\"></span>.",
+   "id": "vut-fekt-2024-v2-12",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    19
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 3, 7 bodů)",
    "body": "Mezi kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-30x+81=0\"></span> vložte čtyři čísla tak, aby spolu s vypočtenými kořeny tvořili šest po sobě jdoucích členů aritmetické posloupnosti. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -2767,7 +4548,7 @@
    ]
   },
   {
-   "q": "P5",
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 10, 7 bodů)",
    "body": "Určete první člen <span class=\"m\" data-tex=\"a_1\"></span> a diferenci <span class=\"m\" data-tex=\"d\"></span> reálné aritmetické posloupnosti, pokud víte, že součet čtvrtého a pátého členu je 4 a součin čtvrtého a pátého členu je 5.",
    "opts": [
@@ -2792,6 +4573,21 @@
    "also_in": [
     "FIT ČVUT, vzorová přijímací zkouška pro rok 2017, příklad 11 (5 b)"
    ]
+  },
+  {
+   "q": "P12",
+   "src": "FP TUL, přijímací test z matematiky 2021/22 (Matematika, Bc.) (úloha 3, 20 bodů)",
+   "body": "Určete, kolik existuje aritmetických posloupností, které vyhovují následujícím podmínkám – každý člen posloupnosti je nezáporný a součet prvních šesti členů je roven 135. Dále určete jejich parametry.",
+   "answer": "nekonečně mnoho: <span class=\"m\" data-tex=\"\\left\\{\\left(a;d=9-\\frac25a\\right)\\,\\middle|\\,a\\in\\left\\langle0;22\\tfrac12\\right\\rangle\\right\\}\"></span>",
+   "sol": "Řešení z PDF: <span class=\"m\" data-tex=\"6a+15d=135\"></span>, tj. <span class=\"m\" data-tex=\"2a+5d=45\"></span>. Všechny členy jsou nezáporné, právě když <span class=\"m\" data-tex=\"a\\ge0\"></span> a <span class=\"m\" data-tex=\"d\\ge0\"></span>, tedy <span class=\"m\" data-tex=\"d\\in\\langle0;9\\rangle\"></span>, <span class=\"m\" data-tex=\"a=22\\frac12-\\frac52d\"></span>.",
+   "id": "tul-2021-03",
+   "uni": "TUL",
+   "fac": "FP",
+   "level": 3,
+   "topics": [
+    19
+   ],
+   "needs_original": false
   }
  ],
  "20": [
@@ -2841,6 +4637,52 @@
   },
   {
    "q": "P3",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 11, 5 bodů)",
+   "body": "Geometrická posloupnost má první člen <span class=\"m\" data-tex=\"a_1=3\"></span>, druhý člen je záporný a součet prvních tří členů je roven 21. Jaký je kvocient této posloupnosti?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"3\"></span>",
+    "<span class=\"m\" data-tex=\"2\"></span>",
+    "<span class=\"m\" data-tex=\"0\"></span>",
+    "<span class=\"m\" data-tex=\"-2\"></span>",
+    "<span class=\"m\" data-tex=\"-3\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"3(1+q+q^2)=21\\Rightarrow q^2+q-6=0\"></span>, <span class=\"m\" data-tex=\"q=2\"></span> nebo <span class=\"m\" data-tex=\"q=-3\"></span>; <span class=\"m\" data-tex=\"a_2&lt;0\"></span> dává <span class=\"m\" data-tex=\"q=-3\"></span>.",
+   "id": "vut-fekt-2023-v1-11",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    20
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 11, 5 bodů)",
+   "body": "Geometrická posloupnost má první člen <span class=\"m\" data-tex=\"a_1=2\"></span>, druhý člen je kladný a součet prvních tří členů je roven 26. Jaký je kvocient této posloupnosti?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-4\"></span>",
+    "<span class=\"m\" data-tex=\"-3\"></span>",
+    "<span class=\"m\" data-tex=\"0\"></span>",
+    "<span class=\"m\" data-tex=\"3\"></span>",
+    "<span class=\"m\" data-tex=\"4\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"2(1+q+q^2)=26\\Rightarrow q^2+q-12=0\"></span>, <span class=\"m\" data-tex=\"q=3\"></span> nebo <span class=\"m\" data-tex=\"q=-4\"></span>; <span class=\"m\" data-tex=\"a_2&gt;0\"></span> dává <span class=\"m\" data-tex=\"q=3\"></span>.",
+   "id": "vut-fekt-2023-v2-11",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    20
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 6, 5 bodů)",
    "body": "Nekonečná spirála se skládá z půlkružnic. Poloměr první půlkružnice je 6 cm a poloměr každé další je třikrát menší než poloměr předcházející polokružnice. Vypočtěte délku <span class=\"m\" data-tex=\"l\"></span> spirály.",
    "opts": [
@@ -2863,7 +4705,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 11, 7 bodů)",
    "body": "Nekonečná spirála se skládá z půlkružnic. Poloměr první půlkružnice je 3 cm a poloměr každé další je třikrát menší než poloměr předcházející půlkružnice. Vypočtěte délku <span class=\"m\" data-tex=\"l\"></span> spirály.",
    "opts": [
@@ -2886,7 +4728,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 6, 7 bodů)",
    "body": "Mezi kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-30x+81=0\"></span> vložte čtyři čísla tak, aby spolu s vypočtenými kořeny tvořila šest po sobě jdoucích členů geometrické posloupnosti. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -2913,7 +4755,7 @@
    ]
   },
   {
-   "q": "P6",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 8, 7 bodů)",
    "body": "Nekonečná spirála se skládá z půlkružnic. Poloměr první půlkružnice je 6 cm a poloměr každé další půlkružnice je o <span class=\"m\" data-tex=\"25\\ \\%\"></span> menší než poloměr půlkružnice předcházející. Vypočítejte délku <span class=\"m\" data-tex=\"l\"></span> spirály.",
    "opts": [
@@ -2936,7 +4778,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 9, 7 bodů)",
    "body": "Mezi kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-30x+81=0\"></span> vložte čtyři čísla tak, aby spolu s vypočtenými kořeny tvořila šest po sobě jdoucích členů rostoucí geometrické posloupnosti. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -2960,7 +4802,30 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P10",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 11, 2 body)",
+   "body": "V geometrické posloupnosti je dáno <span class=\"m\" data-tex=\"a_4=9a_2\"></span> a <span class=\"m\" data-tex=\"s_4=80\"></span>. Určete kvocient <span class=\"m\" data-tex=\"q\"></span> a člen <span class=\"m\" data-tex=\"a_1\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"q=3\\wedge a_1=2\"></span>",
+    "<span class=\"m\" data-tex=\"\\{q=3\\wedge a_1=2\\}\\vee\\{q=3\\wedge a_1=-2\\}\"></span>",
+    "<span class=\"m\" data-tex=\"q=-3\\wedge a_1=-4\"></span>",
+    "<span class=\"m\" data-tex=\"\\{q=3\\wedge a_1=2\\}\\vee\\{q=-3\\wedge a_1=-4\\}\"></span>",
+    "<span class=\"m\" data-tex=\"q=3\\wedge a_1=1\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"q^2=9\"></span>. Pro <span class=\"m\" data-tex=\"q=3\"></span>: <span class=\"m\" data-tex=\"s_4=40a_1=80\"></span>, <span class=\"m\" data-tex=\"a_1=2\"></span>; pro <span class=\"m\" data-tex=\"q=-3\"></span>: <span class=\"m\" data-tex=\"s_4=-20a_1=80\"></span>, <span class=\"m\" data-tex=\"a_1=-4\"></span>.",
+   "id": "fjfi-v2-11",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 2,
+   "topics": [
+    20
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 6, 7 bodů)",
    "body": "Délky hran kvádru tvoří tři po sobě jdoucí členy geometrické posloupnosti. Povrch kvádru je <span class=\"m\" data-tex=\"63\\ \\mathrm{cm}^2\"></span>, součet délek všech hran kvádru je 42. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -2984,7 +4849,7 @@
    "needs_original": false
   },
   {
-   "q": "P9",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 5, 7 bodů)",
    "body": "Délky hran kvádru tvoří tři po sobě jdoucí členy geometrické posloupnosti. Povrch kvádru je <span class=\"m\" data-tex=\"63\\ \\mathrm{cm}^2\"></span>, součet délek všech hran kvádru je <span class=\"m\" data-tex=\"42\"></span> cm. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3088,6 +4953,53 @@
  "22": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 12, 5 bodů)",
+   "body": "Ve třídě je 18 chlapců a 4 dívky. Kolika způsoby z nich můžeme vybrat trojici složenou z jednoho chlapce a dvou dívek? (Na pořadí výběru nezáleží.)",
+   "opts": [
+    "<span class=\"m\" data-tex=\"24\"></span>",
+    "<span class=\"m\" data-tex=\"108\"></span>",
+    "<span class=\"m\" data-tex=\"144\"></span>",
+    "<span class=\"m\" data-tex=\"216\"></span>",
+    "<span class=\"m\" data-tex=\"288\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"18\\cdot\\binom42=108\"></span>.",
+   "id": "vut-fekt-2023-v1-12",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    22
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 12, 5 bodů)",
+   "body": "Ve třídě je 16 chlapců a 8 dívek. Kolika způsoby z nich můžeme vybrat trojici složenou z jednoho chlapce a dvou dívek? (Na pořadí výběru nezáleží.)",
+   "opts": [
+    "<span class=\"m\" data-tex=\"16\\cdot8^2\"></span>",
+    "<span class=\"m\" data-tex=\"16\\cdot8\\cdot7\"></span>",
+    "<span class=\"m\" data-tex=\"\\binom{16}1+\\binom82\"></span>",
+    "<span class=\"m\" data-tex=\"16\\cdot\\binom82\"></span>",
+    "<span class=\"m\" data-tex=\"\\binom{24}3\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Chlapce <span class=\"m\" data-tex=\"16\"></span> způsoby, dvojici dívek <span class=\"m\" data-tex=\"\\binom82\"></span> způsoby.",
+   "id": "vut-fekt-2023-v2-12",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    22,
+    23
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 15, 2 body)",
    "body": "Kolik znaků Morseovy abecedy lze vytvořit, sestavují-li se tečky a čárky ve skupiny po jedné až pěti?",
    "opts": [
@@ -3110,7 +5022,101 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P4",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 12, 5 bodů)",
+   "body": "Závodu se účastnilo 6 soutěžících z týmu A a 4 soutěžící z týmu B. Kolika způsoby mohla být obsazena první tři místa, jestliže víme, že závod vyhrál člen týmu A?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"6\\cdot\\binom92\"></span>",
+    "<span class=\"m\" data-tex=\"6+\\binom92\"></span>",
+    "<span class=\"m\" data-tex=\"288\"></span>",
+    "<span class=\"m\" data-tex=\"432\"></span>",
+    "<span class=\"m\" data-tex=\"486\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Vítěz <span class=\"m\" data-tex=\"6\"></span> způsoby, 2. a 3. místo <span class=\"m\" data-tex=\"9\\cdot8\"></span>: <span class=\"m\" data-tex=\"432\"></span>.",
+   "id": "vut-fekt-2022-v1-12",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    22
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 12, 5 bodů)",
+   "body": "Závodu se účastnilo 6 soutěžících z týmu A a 4 soutěžící z týmu B. Kolika způsoby mohla být obsazena první tři místa, jestliže víme, že závod vyhrál člen týmu B?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"4\\cdot\\binom92\"></span>",
+    "<span class=\"m\" data-tex=\"4+\\binom92\"></span>",
+    "<span class=\"m\" data-tex=\"288\"></span>",
+    "<span class=\"m\" data-tex=\"324\"></span>",
+    "<span class=\"m\" data-tex=\"432\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Vítěz <span class=\"m\" data-tex=\"4\"></span> způsoby, 2. a 3. místo <span class=\"m\" data-tex=\"9\\cdot8\"></span>: <span class=\"m\" data-tex=\"288\"></span>.",
+   "id": "vut-fekt-2022-v2-12",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    22
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 13, 5 bodů)",
+   "body": "Kolika způsoby lze sestavit čtyřmístný kód, jestliže na první a druhé pozici mohou být písmena A, B, C, D, na třetí a na čtvrté pozici mohou být sudé číslice a písmena ani číslice se nesmí opakovat?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"16\"></span>",
+    "<span class=\"m\" data-tex=\"60\"></span>",
+    "<span class=\"m\" data-tex=\"240\"></span>",
+    "<span class=\"m\" data-tex=\"400\"></span>",
+    "<span class=\"m\" data-tex=\"640\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Písmena <span class=\"m\" data-tex=\"4\\cdot3\"></span>, sudé číslice <span class=\"m\" data-tex=\"0,2,4,6,8\"></span>: <span class=\"m\" data-tex=\"5\\cdot4\"></span>; celkem <span class=\"m\" data-tex=\"12\\cdot20=240\"></span>.",
+   "id": "vut-fekt-2024-v1-13",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    22,
+    21
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 13, 5 bodů)",
+   "body": "Kolika způsoby lze sestavit třímístný kód, který se skládá z číslic 0, 1, 2, 3, 4, přičemž číslice se nesmí opakovat a kód nesmí začínat nulou?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"24\"></span>",
+    "<span class=\"m\" data-tex=\"48\"></span>",
+    "<span class=\"m\" data-tex=\"60\"></span>",
+    "<span class=\"m\" data-tex=\"64\"></span>",
+    "<span class=\"m\" data-tex=\"125\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"4\\cdot4\\cdot3=48\"></span>.",
+   "id": "vut-fekt-2024-v2-13",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    22,
+    21
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 9, 5 bodů)",
    "body": "Kolika způsoby lze 10 dětí rozdělit na 3 skupiny, aby v první skupině bylo 5 dětí, ve druhé 3 děti a ve třetí 2 děti?",
    "opts": [
@@ -3133,7 +5139,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 17, 7 bodů)",
    "body": "Mezi 20 výrobky jsou právě 3 vadné výrobky. Kolika způsoby je možné vybrat 5 výrobků, aby mezi nimi byl maximálně jeden vadný výrobek?",
    "opts": [
@@ -3156,7 +5162,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P10",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 15, 3 body)",
    "body": "Kolika různými způsoby můžeme vybrat 5 bonbónů z 20 čokoládových, 10 oříškových a 6 vanilkových?",
    "opts": [
@@ -3179,7 +5185,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 13, 5 bodů)",
    "body": "Kolika různými způsoby lze ze 7 mužů a 3 žen vybrat trojici tak, aby v ní byli alespoň jedna žena a alespoň jeden muž?",
    "opts": [
@@ -3202,7 +5208,7 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 15, 7 bodů)",
    "body": "Ve skupině je 10 dětí z nich každé má jiné jméno než ostatní. Jsou mezi nimi i Hana a Jana. Kolika způsoby lze vybrat 5 dětí tak, aby mezi nimi byla alespoň jedna z dívek (Hana a Jana)?",
    "opts": [
@@ -3225,7 +5231,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P13",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 13, 7 bodů)",
    "body": "Kolika způsoby lze 12 hráčů rozdělit na dvě šestičlenná družstva?",
    "opts": [
@@ -3248,7 +5254,7 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P14",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 8, 7 bodů)",
    "body": "Kolika různými způsoby lze ze 7 mužů a 3 žen vybrat trojici tak, aby v ní byla nejvýše jedna žena?",
    "opts": [
@@ -3274,6 +5280,22 @@
     "FIT ČVUT, vzorová přijímací zkouška pro rok 2021, příklad 11 (7 b)",
     "FIT ČVUT, vzorová přijímací zkouška pro rok 2022, příklad 12 (7 b)"
    ]
+  },
+  {
+   "q": "P15",
+   "src": "FP TUL, přijímací test z matematiky 2021/22 (Matematika, Bc.) (úloha 1, 20 bodů)",
+   "body": "Uvažujte pravidelný dvanáctiúhelník. Určete počet trojúhelníků tvořených vrcholy uvažovaného dvanáctiúhelníku, které mají vlastnost, že žádná jeho strana nesplývá se stranou uvažovaného dvanáctiúhelníku.",
+   "answer": "<span class=\"m\" data-tex=\"112\"></span>",
+   "sol": "Řešení z PDF: <span class=\"m\" data-tex=\"\\binom{12}3-12(12-4)-12=220-96-12=112\"></span> (všechny trojúhelníky, minus ty s právě jednou a s dvěma společnými stranami).",
+   "id": "tul-2021-01",
+   "uni": "TUL",
+   "fac": "FP",
+   "level": 3,
+   "topics": [
+    22,
+    34
+   ],
+   "needs_original": false
   }
  ],
  "24": [
@@ -3471,9 +5493,198 @@
    ]
   }
  ],
+ "25": [
+  {
+   "q": "P1",
+   "src": "FP TUL, přijímací test z matematiky 2021/22 (Matematika, Bc.) (úloha 4, 20 bodů)",
+   "body": "V rovině jsou dány body <span class=\"m\" data-tex=\"A[3;9],B[7;3],C[14;12]\"></span>. Spočtěte obvod a plochu trojúhelníka <span class=\"m\" data-tex=\"\\Delta ABC\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"O=2\\sqrt{13}+2\\sqrt{130}\\approx30{,}0146\"></span>, <span class=\"m\" data-tex=\"S=39\"></span>",
+   "sol": "Řešení z PDF: <span class=\"m\" data-tex=\"|AB|=2\\sqrt{13}\"></span>, <span class=\"m\" data-tex=\"|BC|=|CA|=\\sqrt{130}\"></span> — trojúhelník je rovnoramenný; výška na <span class=\"m\" data-tex=\"AB\"></span> je <span class=\"m\" data-tex=\"3\\sqrt{13}\"></span>, <span class=\"m\" data-tex=\"S=\\frac{2\\sqrt{13}\\cdot3\\sqrt{13}}2=39\"></span>.",
+   "id": "tul-2021-04",
+   "uni": "TUL",
+   "fac": "FP",
+   "level": 2,
+   "topics": [
+    25,
+    34
+   ],
+   "needs_original": false
+  }
+ ],
+ "26": [
+  {
+   "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 11, 5 bodů)",
+   "body": "Který bod leží na přímce dané body <span class=\"m\" data-tex=\"A=[2,-1],B=[1,3]\"></span>?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"[0,5]\"></span>",
+    "<span class=\"m\" data-tex=\"[0,7]\"></span>",
+    "<span class=\"m\" data-tex=\"[3,0]\"></span>",
+    "<span class=\"m\" data-tex=\"[9,0]\"></span>",
+    "žádný z předcházejících bodů"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"x=2-t\"></span>, <span class=\"m\" data-tex=\"y=-1+4t\"></span>; pro <span class=\"m\" data-tex=\"t=2\"></span> je bod <span class=\"m\" data-tex=\"[0,7]\"></span>.",
+   "id": "vut-fekt-2022-v1-11",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    26,
+    27
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 11, 5 bodů)",
+   "body": "Který bod leží na přímce dané body <span class=\"m\" data-tex=\"A=[-1,2],B=[3,1]\"></span>?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"[0,6]\"></span>",
+    "<span class=\"m\" data-tex=\"[0,2]\"></span>",
+    "<span class=\"m\" data-tex=\"[7,0]\"></span>",
+    "<span class=\"m\" data-tex=\"[5,0]\"></span>",
+    "žádný z předcházejících bodů"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"x=-1+4t\"></span>, <span class=\"m\" data-tex=\"y=2-t\"></span>; pro <span class=\"m\" data-tex=\"t=2\"></span> je bod <span class=\"m\" data-tex=\"[7,0]\"></span>.",
+   "id": "vut-fekt-2022-v2-11",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    26,
+    27
+   ],
+   "needs_original": false
+  }
+ ],
+ "27": [
+  {
+   "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 7, 3 body)",
+   "body": "Rovnice přímky procházející body <span class=\"m\" data-tex=\"A=[2,3]\"></span> a <span class=\"m\" data-tex=\"B=[-1,4]\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-x+3y-7=0\"></span>",
+    "<span class=\"m\" data-tex=\"x+3y-11=0\"></span>",
+    "<span class=\"m\" data-tex=\"x-3y+13=0\"></span>",
+    "<span class=\"m\" data-tex=\"3x-y-3=0\"></span>",
+    "<span class=\"m\" data-tex=\"3x+y-9=0\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Dosazením obou bodů: <span class=\"m\" data-tex=\"2+9-11=0\"></span>, <span class=\"m\" data-tex=\"-1+12-11=0\"></span>.",
+   "id": "vut-fekt-2023-v1-07",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    27
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 7, 3 body)",
+   "body": "Rovnice přímky procházející body <span class=\"m\" data-tex=\"A=[1,3]\"></span> a <span class=\"m\" data-tex=\"B=[-1,4]\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x+2y-7=0\"></span>",
+    "<span class=\"m\" data-tex=\"x+2y+7=0\"></span>",
+    "<span class=\"m\" data-tex=\"-x+2y-5=0\"></span>",
+    "<span class=\"m\" data-tex=\"-2x+y-1=0\"></span>",
+    "<span class=\"m\" data-tex=\"2x-y+6=0\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "Dosazením obou bodů: <span class=\"m\" data-tex=\"1+6-7=0\"></span>, <span class=\"m\" data-tex=\"-1+8-7=0\"></span>.",
+   "id": "vut-fekt-2023-v2-07",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    27
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 7, 2 body)",
+   "body": "Rovnici přímky v rovině, která prochází bodem <span class=\"m\" data-tex=\"A=[0,2]\"></span> a je kolmá na přímku <span class=\"m\" data-tex=\"p\\colon2x-y+1=0\"></span> lze zapsat ve tvaru",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x-2y-4=0\"></span>",
+    "<span class=\"m\" data-tex=\"2x+y-2=0\"></span>",
+    "<span class=\"m\" data-tex=\"2x-y+4=0\"></span>",
+    "<span class=\"m\" data-tex=\"x+2y-4=0\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "d",
+   "sol": "Normála <span class=\"m\" data-tex=\"p\"></span> <span class=\"m\" data-tex=\"(2,-1)\"></span> je směrem hledané přímky, její normála je <span class=\"m\" data-tex=\"(1,2)\"></span>: <span class=\"m\" data-tex=\"x+2y+c=0\"></span>, z bodu <span class=\"m\" data-tex=\"A\"></span>: <span class=\"m\" data-tex=\"c=-4\"></span>.",
+   "id": "vscht-07",
+   "uni": "VŠCHT",
+   "fac": "VŠCHT",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  }
+ ],
  "28": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 7, 3 body)",
+   "body": "Určete vzájemnou polohu přímek <span class=\"m\" data-tex=\"p\"></span> a <span class=\"m\" data-tex=\"q\"></span>, kde <span class=\"m\" data-tex=\"p\\colon2x+3y-7=0\"></span>, <span class=\"m\" data-tex=\"q\\colon x=2+3t,y=4-2t,t\\in\\mathbf{R}\"></span>.",
+   "opts": [
+    "kolmé",
+    "různoběžné, ne kolmé",
+    "mimoběžné",
+    "rovnoběžné různé",
+    "totožné"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Směr <span class=\"m\" data-tex=\"q\"></span> je <span class=\"m\" data-tex=\"(3,-2)\"></span>, normála <span class=\"m\" data-tex=\"p\"></span> je <span class=\"m\" data-tex=\"(2,3)\"></span>, jejich součin je <span class=\"m\" data-tex=\"0\"></span> — přímky jsou rovnoběžné. Bod <span class=\"m\" data-tex=\"[2,4]\\in q\"></span> na <span class=\"m\" data-tex=\"p\"></span> neleží (<span class=\"m\" data-tex=\"4+12-7\\ne0\"></span>).",
+   "id": "vut-fekt-2024-v1-07",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    28,
+    26,
+    27
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 7, 3 body)",
+   "body": "Určete vzájemnou polohu přímek <span class=\"m\" data-tex=\"p\"></span> a <span class=\"m\" data-tex=\"q\"></span>, kde <span class=\"m\" data-tex=\"p\\colon2x-3y+5=0\"></span>, <span class=\"m\" data-tex=\"q\\colon x=-1+3t,y=1+2t,t\\in\\mathbf{R}\"></span>.",
+   "opts": [
+    "kolmé",
+    "různoběžné, ne kolmé",
+    "mimoběžné",
+    "rovnoběžné různé",
+    "totožné"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "Směr <span class=\"m\" data-tex=\"q\"></span> je <span class=\"m\" data-tex=\"(3,2)\"></span>, normála <span class=\"m\" data-tex=\"p\"></span> je <span class=\"m\" data-tex=\"(2,-3)\"></span>, součin <span class=\"m\" data-tex=\"0\"></span>; bod <span class=\"m\" data-tex=\"[-1,1]\\in q\"></span> leží i na <span class=\"m\" data-tex=\"p\"></span>: <span class=\"m\" data-tex=\"-2-3+5=0\"></span>.",
+   "id": "vut-fekt-2024-v2-07",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    28,
+    26,
+    27
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 19, 3 body)",
    "body": "Určete hodnoty parametrů <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span> tak, aby přímky <span class=\"m\" data-tex=\"p:ax+4y+1=0\"></span> a <span class=\"m\" data-tex=\"q:3x+2y-b=0\"></span> byly totožné.",
    "opts": [
@@ -3497,7 +5708,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P4",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 19, 3 body)",
    "body": "Určete hodnoty parametrů <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span> tak, aby přímky <span class=\"m\" data-tex=\"p:ax+4y+1=0\"></span> a <span class=\"m\" data-tex=\"q:3x+2y-b=0\"></span> byly navzájem kolmé.",
    "opts": [
@@ -3520,7 +5731,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 13, 7 bodů)",
    "body": "Určete hodnoty parametrů <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span> tak, aby přímky <span class=\"m\" data-tex=\"p:ax+4y+1=0\"></span> a <span class=\"m\" data-tex=\"q:3x+2y-b=0\"></span> měly právě jeden společný bod.",
    "opts": [
@@ -3545,6 +5756,28 @@
     "FIT ČVUT, vzorová přijímací zkouška pro rok 2025, příklad 9 (7 b)",
     "FIT ČVUT, vzorová přijímací zkouška pro rok 2027, příklad 13 (7 b)"
    ]
+  },
+  {
+   "q": "P6",
+   "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 2, 1 bod)",
+   "body": "Přímky <span class=\"m\" data-tex=\"p\\colon x-2=0\"></span> a <span class=\"m\" data-tex=\"q\\colon y-2=0\"></span> se protínají v bodě",
+   "opts": [
+    "<span class=\"m\" data-tex=\"[-2,-2]\"></span>",
+    "<span class=\"m\" data-tex=\"[0,0]\"></span>",
+    "<span class=\"m\" data-tex=\"[2,2]\"></span>",
+    "<span class=\"m\" data-tex=\"[2,-2]\"></span>"
+   ],
+   "letters": "abcd",
+   "key": "c",
+   "id": "vscht-02",
+   "uni": "VŠCHT",
+   "fac": "VŠCHT",
+   "level": 1,
+   "topics": [
+    28,
+    27
+   ],
+   "needs_original": false
   }
  ],
  "29": [
@@ -3575,6 +5808,96 @@
  "30": [
   {
    "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 2, 2 body)",
+   "body": "Rovnice kružnice se středem v bodě <span class=\"m\" data-tex=\"[2,-3]\"></span> a poloměrem <span class=\"m\" data-tex=\"r=3\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(x-2)^2+(y+3)^2=9\"></span>",
+    "<span class=\"m\" data-tex=\"(x-2)^2+(y+3)^2=3\"></span>",
+    "<span class=\"m\" data-tex=\"(x+2)^2+(y-3)^2=9\"></span>",
+    "<span class=\"m\" data-tex=\"(x+2)^2+(y-3)^2=3\"></span>",
+    "žádná z předchozích možností není správná"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "id": "vut-fekt-2022-v1-02",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    30
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 2, 2 body)",
+   "body": "Rovnice kružnice se středem v bodě <span class=\"m\" data-tex=\"[-1,2]\"></span> a poloměrem <span class=\"m\" data-tex=\"r=2\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(x-1)^2+(y+2)^2=2\"></span>",
+    "<span class=\"m\" data-tex=\"(x-1)^2+(y+2)^2=4\"></span>",
+    "<span class=\"m\" data-tex=\"(x+1)^2+(y-2)^2=2\"></span>",
+    "<span class=\"m\" data-tex=\"(x+1)^2+(y-2)^2=4\"></span>",
+    "žádná z předchozích možností není správná"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "id": "vut-fekt-2022-v2-02",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    30
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 3, 2 body)",
+   "body": "Najděte všechny průsečíky kružnice se středem <span class=\"m\" data-tex=\"S[3,0]\"></span> a poloměrem <span class=\"m\" data-tex=\"r=5\"></span> s osou <span class=\"m\" data-tex=\"x\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"[-4,0],[4,0]\"></span>",
+    "<span class=\"m\" data-tex=\"[0,-4],[0,4]\"></span>",
+    "<span class=\"m\" data-tex=\"[-2,0],[8,0]\"></span>",
+    "<span class=\"m\" data-tex=\"[0,-2],[0,8]\"></span>",
+    "průsečíky neexistují"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Na ose <span class=\"m\" data-tex=\"x\"></span> je <span class=\"m\" data-tex=\"y=0\"></span>: <span class=\"m\" data-tex=\"|x-3|=5\"></span>.",
+   "id": "vut-fekt-2024-v1-03",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    30
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 3, 2 body)",
+   "body": "Najděte všechny průsečíky kružnice se středem <span class=\"m\" data-tex=\"S[3,0]\"></span> a poloměrem <span class=\"m\" data-tex=\"r=5\"></span> s osou <span class=\"m\" data-tex=\"y\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"[-4,0],[4,0]\"></span>",
+    "<span class=\"m\" data-tex=\"[0,-4],[0,4]\"></span>",
+    "<span class=\"m\" data-tex=\"[-2,0],[8,0]\"></span>",
+    "<span class=\"m\" data-tex=\"[0,-2],[0,8]\"></span>",
+    "průsečíky neexistují"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Na ose <span class=\"m\" data-tex=\"y\"></span> je <span class=\"m\" data-tex=\"x=0\"></span>: <span class=\"m\" data-tex=\"9+y^2=25\"></span>, <span class=\"m\" data-tex=\"y=\\pm4\"></span>.",
+   "id": "vut-fekt-2024-v2-03",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    30
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 2, 3 body)",
    "body": "Poloměr kružnice zadané rovnicí <span class=\"m\" data-tex=\"x^2+y^2-16x+12y+51=0\"></span> je",
    "opts": [
@@ -3597,7 +5920,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 16, 7 bodů)",
    "body": "Poloměr kružnice zadané rovnicí <span class=\"m\" data-tex=\"2x^2+2y^2+16x-12y+20=0\"></span> splňuje:",
    "opts": [
@@ -3620,7 +5943,55 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P7",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 14, 5 bodů)",
+   "body": "Určete obsah oblasti dané nerovnicemi <span class=\"m\" data-tex=\"x^2+(y+1)^2\\le2,\\quad y\\le x-1\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac\\pi2\"></span>",
+    "<span class=\"m\" data-tex=\"\\pi\"></span>",
+    "<span class=\"m\" data-tex=\"2\\pi\"></span>",
+    "<span class=\"m\" data-tex=\"4\\pi\"></span>",
+    "<span class=\"m\" data-tex=\"8\\pi\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Kruh se středem <span class=\"m\" data-tex=\"[0,-1]\"></span> a <span class=\"m\" data-tex=\"r^2=2\"></span>; přímka <span class=\"m\" data-tex=\"y=x-1\"></span> prochází středem, oblast je polovina kruhu: <span class=\"m\" data-tex=\"\\frac{2\\pi}2=\\pi\"></span>.",
+   "id": "vut-fekt-2023-v1-14",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    30,
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 14, 5 bodů)",
+   "body": "Určete obsah oblasti dané nerovnicemi <span class=\"m\" data-tex=\"(x-1)^2+y^2\\le4,\\quad y\\ge x-1\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac\\pi2\"></span>",
+    "<span class=\"m\" data-tex=\"\\pi\"></span>",
+    "<span class=\"m\" data-tex=\"2\\pi\"></span>",
+    "<span class=\"m\" data-tex=\"4\\pi\"></span>",
+    "<span class=\"m\" data-tex=\"8\\pi\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Kruh se středem <span class=\"m\" data-tex=\"[1,0]\"></span> a <span class=\"m\" data-tex=\"r=2\"></span>; přímka <span class=\"m\" data-tex=\"y=x-1\"></span> prochází středem, oblast je polovina kruhu: <span class=\"m\" data-tex=\"\\frac{4\\pi}2=2\\pi\"></span>.",
+   "id": "vut-fekt-2023-v2-14",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    30,
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 18, 3 body)",
    "body": "Poloměr kružnice zadané rovnicí <span class=\"m\" data-tex=\"2x^2+2y^2-16x+12y+20=0\"></span> je",
    "opts": [
@@ -3643,7 +6014,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P10",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 12, 7 bodů)",
    "body": "Kuželosečku danou rovnicí <span class=\"m\" data-tex=\"x^2-4x+y^2-6y+9=0\"></span> posuňte rovnoběžně s osou <span class=\"m\" data-tex=\"y\"></span> tak, aby se dotýkala osy <span class=\"m\" data-tex=\"x\"></span>. Bodem dotyku je bod",
    "opts": [
@@ -3671,7 +6042,7 @@
    ]
   },
   {
-   "q": "P5",
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 13, 7 bodů)",
    "body": "Určete hodnotu parametru <span class=\"m\" data-tex=\"p\"></span> tak, aby přímka <span class=\"m\" data-tex=\"q\"></span> neměla s kružnicí <span class=\"m\" data-tex=\"k\"></span> žádný společný bod. <span class=\"m\" data-tex=\"q:px+y-1=0\"></span> a <span class=\"m\" data-tex=\"k:x^2-4x+y^2-6y-3=0\"></span>",
    "opts": [
@@ -3751,6 +6122,54 @@
    "needs_original": false
   }
  ],
+ "33": [
+  {
+   "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 3, 2 body)",
+   "body": "Z následujících rovnic vyberte tu, která popisuje parabolu s vrcholem v bodě <span class=\"m\" data-tex=\"[-2,1]\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"y^2-(x+2)^2=1\"></span>",
+    "<span class=\"m\" data-tex=\"y^2-(x-2)^2=1\"></span>",
+    "<span class=\"m\" data-tex=\"y^2+(x-2)^2=1\"></span>",
+    "<span class=\"m\" data-tex=\"y-(x+2)^2=1\"></span>",
+    "<span class=\"m\" data-tex=\"y-(x-2)^2=1\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"y=(x+2)^2+1\"></span> má vrchol <span class=\"m\" data-tex=\"[-2,1]\"></span>.",
+   "id": "vut-fekt-2023-v1-03",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    33
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 3, 2 body)",
+   "body": "Z následujících rovnic vyberte tu, která popisuje parabolu s vrcholem v bodě <span class=\"m\" data-tex=\"[-1,2]\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"y-(x+1)^2=2\"></span>",
+    "<span class=\"m\" data-tex=\"y-(x-1)^2=2\"></span>",
+    "<span class=\"m\" data-tex=\"(x-1)^2+y^2=2\"></span>",
+    "<span class=\"m\" data-tex=\"(x+1)^2+y^2=2\"></span>",
+    "<span class=\"m\" data-tex=\"x^2-1+y=2\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"y=(x+1)^2+2\"></span> má vrchol <span class=\"m\" data-tex=\"[-1,2]\"></span>.",
+   "id": "vut-fekt-2023-v2-03",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    33
+   ],
+   "needs_original": false
+  }
+ ],
  "34": [
   {
    "q": "P1",
@@ -3815,6 +6234,103 @@
    "level": 1,
    "topics": [
     34
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 8, 3 body)",
+   "body": "V pravoúhlém trojúhelníku je úhel <span class=\"m\" data-tex=\"\\beta=60^\\circ\"></span> a délka přepony je <span class=\"m\" data-tex=\"c=8\"></span>. Jaký je obvod tohoto trojúhelníka?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"8\\sqrt3\"></span>",
+    "<span class=\"m\" data-tex=\"16\\sqrt3\"></span>",
+    "<span class=\"m\" data-tex=\"16\"></span>",
+    "<span class=\"m\" data-tex=\"4(3+\\sqrt3)\"></span>",
+    "<span class=\"m\" data-tex=\"8(1+\\sqrt2)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Odvěsny <span class=\"m\" data-tex=\"8\\cos60^\\circ=4\"></span> a <span class=\"m\" data-tex=\"8\\sin60^\\circ=4\\sqrt3\"></span>; obvod <span class=\"m\" data-tex=\"12+4\\sqrt3\"></span>.",
+   "id": "vut-fekt-2022-v1-08",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    34,
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 8, 3 body)",
+   "body": "V pravoúhlém trojúhelníku je úhel <span class=\"m\" data-tex=\"\\alpha=60^\\circ\"></span> a délka přepony je <span class=\"m\" data-tex=\"c=8\"></span>. Jaký je obsah tohoto trojúhelníka?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"8\\sqrt3\"></span>",
+    "<span class=\"m\" data-tex=\"16\\sqrt3\"></span>",
+    "<span class=\"m\" data-tex=\"16\"></span>",
+    "<span class=\"m\" data-tex=\"4(3+\\sqrt3)\"></span>",
+    "<span class=\"m\" data-tex=\"8(1+\\sqrt2)\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "Odvěsny <span class=\"m\" data-tex=\"4\\sqrt3\"></span> a <span class=\"m\" data-tex=\"4\"></span>; obsah <span class=\"m\" data-tex=\"\\frac{4\\sqrt3\\cdot4}2=8\\sqrt3\"></span>.",
+   "id": "vut-fekt-2022-v2-08",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    34,
+    14
+   ],
+   "needs_original": false
+  }
+ ],
+ "35": [
+  {
+   "q": "P1",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 15, 5 bodů)",
+   "body": "Určete objem kvádru, jestliže obsahy jeho stěn jsou 15, 24 a 40 cm<span class=\"m\" data-tex=\"^2\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"90\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>",
+    "<span class=\"m\" data-tex=\"108\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>",
+    "<span class=\"m\" data-tex=\"120\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>",
+    "<span class=\"m\" data-tex=\"144\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>",
+    "<span class=\"m\" data-tex=\"150\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"(abc)^2=ab\\cdot bc\\cdot ca=15\\cdot24\\cdot40=14400\"></span>.",
+   "id": "vut-fekt-2022-v1-15",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    35
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 15, 5 bodů)",
+   "body": "Určete objem kvádru, jestliže strana <span class=\"m\" data-tex=\"a=1\"></span> cm, strana <span class=\"m\" data-tex=\"c\"></span> je o 1 cm delší než strana <span class=\"m\" data-tex=\"b\"></span> a povrch kvádru je 38 cm<span class=\"m\" data-tex=\"^2\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"6\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>",
+    "<span class=\"m\" data-tex=\"12\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>",
+    "<span class=\"m\" data-tex=\"20\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>",
+    "<span class=\"m\" data-tex=\"30\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>",
+    "<span class=\"m\" data-tex=\"42\"></span> cm<span class=\"m\" data-tex=\"^3\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"2(b+b(b+1)+(b+1))=38\\Rightarrow b^2+3b-18=0\"></span>, <span class=\"m\" data-tex=\"b=3\"></span>, <span class=\"m\" data-tex=\"c=4\"></span>, <span class=\"m\" data-tex=\"V=12\"></span>.",
+   "id": "vut-fekt-2022-v2-15",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    35,
+    3
    ],
    "needs_original": false
   }
@@ -4020,6 +6536,29 @@
   },
   {
    "q": "P10",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 13, 5 bodů)",
+   "body": "Kolik litrů vody je třeba přidat do 5 litrů 20% roztoku kyseliny, abychom získali roztok desetiprocentní?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"2\"></span>",
+    "<span class=\"m\" data-tex=\"3\"></span>",
+    "<span class=\"m\" data-tex=\"4\"></span>",
+    "<span class=\"m\" data-tex=\"5\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "Kyseliny je <span class=\"m\" data-tex=\"1\"></span> l, desetiprocentní roztok tedy musí mít <span class=\"m\" data-tex=\"10\"></span> l.",
+   "id": "vut-fekt-2022-v1-13",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 1, 3 body)",
    "body": "V lednu byla zaměstnancům zvýšena mzda o <span class=\"m\" data-tex=\"10\\ \\%\"></span> prosincové mzdy. Následně v červnu jim byla mzda snížena o <span class=\"m\" data-tex=\"10\\ \\%\"></span> březnové mzdy. Jaká je nyní jejich mzda?",
    "opts": [
@@ -4042,7 +6581,7 @@
    "needs_original": false
   },
   {
-   "q": "P11",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 7, 5 bodů)",
    "body": "Mějme dvě čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"3402_5\"></span> a <span class=\"m\" data-tex=\"2413_5\"></span>. Vyjádřete jejich rozdíl také v pětkové soustavě.",
    "opts": [
@@ -4065,7 +6604,7 @@
    "needs_original": false
   },
   {
-   "q": "P12",
+   "q": "P13",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 1, 7 bodů)",
    "body": "Z původní ceny byl výrobek zlevněn o <span class=\"m\" data-tex=\"10\\ \\%\"></span> a potom ještě o <span class=\"m\" data-tex=\"8\\ \\%\"></span> nové ceny. O kolik procent původní ceny byl zlevněn celkem?",
    "opts": [
@@ -4088,7 +6627,7 @@
    "needs_original": false
   },
   {
-   "q": "P13",
+   "q": "P14",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 2, 7 bodů)",
    "body": "Mějme tři čísla zapsaná v sedmičkové soustavě: <span class=\"m\" data-tex=\"2456_7\"></span>, <span class=\"m\" data-tex=\"1126_7\"></span> a <span class=\"m\" data-tex=\"3245_7\"></span>. Vyjádřete jejich součet také v sedmičkové soustavě.",
    "opts": [
@@ -4111,7 +6650,7 @@
    "needs_original": false
   },
   {
-   "q": "P14",
+   "q": "P15",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 3, 7 bodů)",
    "body": "Pokud ráno zaspím, koupím si v pekárně koblihu. Pokud ráno nezaspím, nasnídám se doma. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -4134,7 +6673,7 @@
    "needs_original": false
   },
   {
-   "q": "P15",
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 1, 7 bodů)",
    "body": "Původní cena knihy byla 350 Kč. Pak byla zdražena o <span class=\"m\" data-tex=\"15\\ \\%\"></span>. Jelikož nešla na odbyt, byla později zlevněna o <span class=\"m\" data-tex=\"14\\ \\%\"></span> (z ceny po zdražení) a to je její současná cena. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -4157,7 +6696,7 @@
    "needs_original": false
   },
   {
-   "q": "P16",
+   "q": "P17",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 3, 7 bodů)",
    "body": "Na setkání několika firem jsme si všimli následujících věcí. Každý, kdo má modrou košili, má i černé boty. Všichni zaměstnanci 1. firmy mají modrou košili. Rozhodněte, které z následujících tvrzení je pravdivé.",
    "opts": [
@@ -4180,7 +6719,7 @@
    "needs_original": false
   },
   {
-   "q": "P17",
+   "q": "P18",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 4, 7 bodů)",
    "body": "Mějme dvě čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"4402_5\"></span> a <span class=\"m\" data-tex=\"2313_5\"></span>. Vyjádřete jejich rozdíl také v pětkové soustavě.",
    "opts": [
@@ -4203,7 +6742,7 @@
    "needs_original": false
   },
   {
-   "q": "P18",
+   "q": "P19",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 3, 3 body)",
    "body": "Pokud bude o víkendu hezky, budeme večer grilovat. Pokud o víkendu nebude hezky, půjdeme do muzea. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -4226,7 +6765,7 @@
    "needs_original": false
   },
   {
-   "q": "P19",
+   "q": "P20",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 3, 3 body)",
    "body": "Mějme tři čísla zapsaná v sedmičkové soustavě: <span class=\"m\" data-tex=\"4266_7\"></span>, <span class=\"m\" data-tex=\"2526_7\"></span> a <span class=\"m\" data-tex=\"445_7\"></span>. Vyjádřete jejich součet také v sedmičkové soustavě.",
    "opts": [
@@ -4249,7 +6788,7 @@
    "needs_original": false
   },
   {
-   "q": "P20",
+   "q": "P21",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 4, 7 bodů)",
    "body": "Kladné číslo <span class=\"m\" data-tex=\"x\"></span> je o <span class=\"m\" data-tex=\"25\\ \\%\"></span> větší než kladné číslo <span class=\"m\" data-tex=\"y\"></span>. O kolik procent je číslo <span class=\"m\" data-tex=\"y\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>?",
    "opts": [
@@ -4275,7 +6814,7 @@
    ]
   },
   {
-   "q": "P21",
+   "q": "P22",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 2, 3 body)",
    "body": "Při koupi dvou párů bot dostaneme slevu <span class=\"m\" data-tex=\"30\\%\"></span> na druhý pár. Chceme koupit boty za 1800 a 1500 korun. Jaká je nejmenší cena za kterou můžeme oba páry získat?",
    "opts": [
@@ -4301,7 +6840,7 @@
    ]
   },
   {
-   "q": "P22",
+   "q": "P23",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 3, 3 body)",
    "body": "Mějme dvě čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"4112_5\"></span> a <span class=\"m\" data-tex=\"2443_5\"></span>. Vyjádřete jejich rozdíl také v pětkové soustavě.",
    "opts": [
@@ -4328,7 +6867,7 @@
    ]
   },
   {
-   "q": "P23",
+   "q": "P24",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 4, 7 bodů)",
    "body": "Původní cena knihy byla 350 Kč. Pak byla zdražena o <span class=\"m\" data-tex=\"20\\ \\%\"></span>. Jelikož nešla na odbyt, byla zlevněna o <span class=\"m\" data-tex=\"15\\ \\%\"></span> (z ceny po zdražení) a to je její současná cena. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -4354,7 +6893,7 @@
    ]
   },
   {
-   "q": "P24",
+   "q": "P25",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 2, 3 body)",
    "body": "Mějme tři čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"3431_5\"></span>, <span class=\"m\" data-tex=\"122_5\"></span> a <span class=\"m\" data-tex=\"2040_5\"></span>. Vyjádřete jejich součet také v pětkové soustavě.",
    "opts": [
@@ -4377,7 +6916,7 @@
    "needs_original": false
   },
   {
-   "q": "P25",
+   "q": "P26",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 4, 7 bodů)",
    "body": "Petr a Pavel mají stejně vysoký plat. Pavel platí o čtvrtinu vyšší nájem než Petr. Nájem bytu stojí Pavla <span class=\"m\" data-tex=\"25\\%\"></span> jeho platu. Kolik procent svého platu platí za nájem Petr?",
    "opts": [
@@ -4400,7 +6939,7 @@
    "needs_original": false
   },
   {
-   "q": "P26",
+   "q": "P27",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 1, 3 body)",
    "body": "Z původní ceny byl výrobek zlevněn o <span class=\"m\" data-tex=\"12\\ \\%\"></span> a potom ještě o <span class=\"m\" data-tex=\"15\\ \\%\"></span> nové ceny. O kolik procent původní ceny byl zlevněn celkem?",
    "opts": [
@@ -4423,7 +6962,7 @@
    "needs_original": false
   },
   {
-   "q": "P27",
+   "q": "P28",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 14, 7 bodů)",
    "body": "Pokud bude v sobotu pršet, půjdeme hrát badminton. Pokud budeme hrát badminton, navštívíme saunu. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -4446,7 +6985,7 @@
    "needs_original": false
   },
   {
-   "q": "P28",
+   "q": "P29",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 2, 3 body)",
    "body": "Kladné číslo <span class=\"m\" data-tex=\"x\"></span> je o <span class=\"m\" data-tex=\"20\\ \\%\"></span> menší než kladné číslo <span class=\"m\" data-tex=\"y\"></span>. O kolik procent je číslo <span class=\"m\" data-tex=\"y\"></span> větší než číslo <span class=\"m\" data-tex=\"x\"></span>?",
    "opts": [
@@ -4472,7 +7011,7 @@
    ]
   },
   {
-   "q": "P29",
+   "q": "P30",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 1, 3 body)",
    "body": "Mějme tři čísla zapsaná v sedmičkové soustavě: <span class=\"m\" data-tex=\"1456_7\"></span>, <span class=\"m\" data-tex=\"1526_7\"></span> a <span class=\"m\" data-tex=\"4345_7\"></span>. Vyjádřete jejich součet také v sedmičkové soustavě.",
    "opts": [
@@ -4500,7 +7039,260 @@
    ]
   },
   {
-   "q": "P30",
+   "q": "P31",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 1, 2 body)",
+   "body": "Zjednodušte výraz <span class=\"m\" data-tex=\"F(x)=(2x^2+x+5)^2-(4x^2-x+5)^2+4x(x-1)(3x^2+5)\"></span> a ověřte dosazením <span class=\"m\" data-tex=\"x=1\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-x^2\"></span>",
+    "<span class=\"m\" data-tex=\"2x\"></span>",
+    "<span class=\"m\" data-tex=\"0\"></span>",
+    "<span class=\"m\" data-tex=\"5\"></span>",
+    "<span class=\"m\" data-tex=\"x^2+1\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Rozdíl čtverců: <span class=\"m\" data-tex=\"(-2x^2+2x)(6x^2+10)=-4x(x-1)(3x^2+5)\"></span>, s posledním členem se odečte na <span class=\"m\" data-tex=\"0\"></span>; pro <span class=\"m\" data-tex=\"x=1\"></span>: <span class=\"m\" data-tex=\"64-64+0=0\"></span>.",
+   "id": "fjfi-v1-01",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P32",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 1, 2 body)",
+   "body": "Zjednodušte výraz <span class=\"m\" data-tex=\"F(x)=(8x^2-1)^2+(6x^2-7)(6x^2+7)-3x^2(x+4)(3x-9)\"></span> a ověřte dosazením <span class=\"m\" data-tex=\"x=1\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"91x^4-9x^3+92x^2-48\"></span>",
+    "<span class=\"m\" data-tex=\"-91x^4+9x^3-92x^2+48\"></span>",
+    "<span class=\"m\" data-tex=\"91x^4+9x^3+92x^2-48\"></span>",
+    "<span class=\"m\" data-tex=\"-91x^4-9x^3+92x^2-48\"></span>",
+    "<span class=\"m\" data-tex=\"-91x^4-9x^3-92x^2-48\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"64x^4-16x^2+1+36x^4-49-(9x^4+9x^3-108x^2)=91x^4-9x^3+92x^2-48\"></span>; pro <span class=\"m\" data-tex=\"x=1\"></span>: <span class=\"m\" data-tex=\"49-13+90=126\"></span>.",
+   "id": "fjfi-v2-01",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P33",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 2, 2 body)",
+   "body": "Zjednodušte výraz a zapište podmínky pro jeho platnost <span class=\"m\" data-tex=\"\\dfrac{c+d}{c-d}:\\dfrac{c^2+cd}{c^2-d^2}\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{c}{c-d},\\quad c,d\\in\\mathbb{R}\\wedge c\\neq-d\\wedge c\\neq0\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{c-d}{c},\\quad c,d\\in\\mathbb{R}\\wedge c\\neq d\\wedge c\\neq0\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{c^2+d^2}{c},\\quad c,d\\in\\mathbb{R}\\wedge c\\neq d\\wedge c\\neq-d\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{c-d}{c+d},\\quad c,d\\in\\mathbb{R}\\wedge c\\neq d\\wedge c\\neq-d\\wedge c\\neq0\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{c+d}{c},\\quad c,d\\in\\mathbb{R}\\wedge c\\neq d\\wedge c\\neq-d\\wedge c\\neq0\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{c+d}{c-d}\\cdot\\frac{(c-d)(c+d)}{c(c+d)}=\\frac{c+d}{c}\"></span>; jmenovatele a dělitel nesmí být nulové: <span class=\"m\" data-tex=\"c\\ne\\pm d\"></span>, <span class=\"m\" data-tex=\"c\\ne0\"></span>.",
+   "id": "fjfi-v1-02",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P34",
+   "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 2, 2 body)",
+   "body": "Zjednodušte výraz a zapište podmínky pro jeho platnost <span class=\"m\" data-tex=\"\\dfrac{a^2-25}{a^2-3a}:\\dfrac{a^2+10a+25}{a-3}\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{a+5}{a-5},\\quad a\\in\\mathbb{R}\\setminus\\{-5,0,5\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{a-5}{a(a+5)},\\quad a\\in\\mathbb{R}\\setminus\\{-5,0,3\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{a-3}{a-5},\\quad a\\in\\mathbb{R}\\setminus\\{0,3,5\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{a}{a-5},\\quad a\\in\\mathbb{R}\\setminus\\{-5,0,1,5\\}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{a(a+5)}{a-5},\\quad a\\in\\mathbb{R}\\setminus\\{0,5\\}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{(a-5)(a+5)}{a(a-3)}\\cdot\\frac{a-3}{(a+5)^2}=\\frac{a-5}{a(a+5)}\"></span>; podmínky <span class=\"m\" data-tex=\"a\\ne0\"></span>, <span class=\"m\" data-tex=\"a\\ne3\"></span>, <span class=\"m\" data-tex=\"a\\ne-5\"></span>.",
+   "id": "fjfi-v2-02",
+   "uni": "ČVUT",
+   "fac": "FJFI",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P35",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 13, 5 bodů)",
+   "body": "Kolik litrů kyseliny je třeba přidat do 5 litrů 20% roztoku kyseliny, abychom získali roztok padesátiprocentní?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"2\"></span>",
+    "<span class=\"m\" data-tex=\"3\"></span>",
+    "<span class=\"m\" data-tex=\"4\"></span>",
+    "<span class=\"m\" data-tex=\"5\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{1+x}{5+x}=\\frac12\\Rightarrow x=3\"></span>.",
+   "id": "vut-fekt-2022-v2-13",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P36",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 6, 3 body)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{x-1}{x^2+2x}-\\dfrac{x-4}{x^2-4}\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{2x-5}{2x^2+2x-4}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{3}{2x+4}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{-3}{x^2+2x}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{1}{x^2-2x}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{1}{x^2+2x}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{(x-1)(x-2)-x(x-4)}{x(x+2)(x-2)}=\\frac{x+2}{x(x+2)(x-2)}=\\frac1{x^2-2x}\"></span>.",
+   "id": "vut-fekt-2023-v1-06",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P37",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 6, 3 body)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{x+5}{x^2-9}-\\dfrac{x+1}{x^2-3x}\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{2x+6}{2x^2-3x-9}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{4}{3x-9}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{x}{x^2-9}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{1}{x^2-3x}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{1}{x^2+3x}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x(x+5)-(x+1)(x+3)}{x(x-3)(x+3)}=\\frac{x-3}{x(x-3)(x+3)}=\\frac1{x^2+3x}\"></span>.",
+   "id": "vut-fekt-2023-v2-06",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P38",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 15, 5 bodů)",
+   "body": "Počty chlapců ve třídách 1.A a 1.B jsou v poměru <span class=\"m\" data-tex=\"4:3\"></span>, počty dívek jsou v poměru <span class=\"m\" data-tex=\"1:2\"></span>. Z celkového počtu žáků v 1.A tvoří dívky <span class=\"m\" data-tex=\"1/3\"></span>. Jakou část všech žáků 1.B tvoří dívky?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"2/3\"></span>",
+    "<span class=\"m\" data-tex=\"3/5\"></span>",
+    "<span class=\"m\" data-tex=\"4/7\"></span>",
+    "<span class=\"m\" data-tex=\"5/9\"></span>",
+    "Úlohu nelze jednoznačně vyřešit."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Chlapci <span class=\"m\" data-tex=\"4k\"></span> a <span class=\"m\" data-tex=\"3k\"></span>, dívky <span class=\"m\" data-tex=\"m\"></span> a <span class=\"m\" data-tex=\"2m\"></span>. V 1.A: <span class=\"m\" data-tex=\"\\frac m{4k+m}=\\frac13\\Rightarrow m=2k\"></span>. V 1.B: <span class=\"m\" data-tex=\"\\frac{4k}{3k+4k}=\\frac47\"></span>.",
+   "id": "vut-fekt-2023-v1-15",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P39",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 15, 5 bodů)",
+   "body": "Počty chlapců ve třídách 1.A a 1.B jsou v poměru <span class=\"m\" data-tex=\"5:3\"></span>, počty dívek jsou v poměru <span class=\"m\" data-tex=\"1:2\"></span>. Z celkového počtu žáků v 1.A tvoří dívky <span class=\"m\" data-tex=\"2/5\"></span>. Jakou část všech žáků 1.B tvoří dívky?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"4/5\"></span>",
+    "<span class=\"m\" data-tex=\"9/13\"></span>",
+    "<span class=\"m\" data-tex=\"16/21\"></span>",
+    "<span class=\"m\" data-tex=\"20/29\"></span>",
+    "Úlohu nelze jednoznačně vyřešit."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Chlapci <span class=\"m\" data-tex=\"5k\"></span> a <span class=\"m\" data-tex=\"3k\"></span>, dívky <span class=\"m\" data-tex=\"m\"></span> a <span class=\"m\" data-tex=\"2m\"></span>. V 1.A: <span class=\"m\" data-tex=\"\\frac m{5k+m}=\\frac25\\Rightarrow m=\\frac{10k}3\"></span>. V 1.B: <span class=\"m\" data-tex=\"\\frac{20k/3}{3k+20k/3}=\\frac{20}{29}\"></span>.",
+   "id": "vut-fekt-2023-v2-15",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P40",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 6, 3 body)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{1-3x}{x^3-x}+\\dfrac1{x-1}\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{x}{(x-1)(x+1)}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{x+1}{x(x-1)}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{x-1}{x(x+1)}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{x(x+1)}{x-1}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{x(x-1)}{x+1}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{1-3x+x(x+1)}{x(x-1)(x+1)}=\\frac{(x-1)^2}{x(x-1)(x+1)}=\\frac{x-1}{x(x+1)}\"></span>.",
+   "id": "vut-fekt-2024-v1-06",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P41",
+   "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 6, 3 body)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{3x+1}{x^3-x}+\\dfrac1{x+1}\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{x}{(x-1)(x+1)}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{x+1}{x(x-1)}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{x-1}{x(x+1)}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{x(x+1)}{x-1}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{x(x-1)}{x+1}\"></span>"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{3x+1+x(x-1)}{x(x-1)(x+1)}=\\frac{(x+1)^2}{x(x-1)(x+1)}=\\frac{x+1}{x(x-1)}\"></span>.",
+   "id": "vut-fekt-2024-v2-06",
+   "uni": "VUT",
+   "fac": "FEKT",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P42",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 14, 5 bodů)",
    "body": "Z jakého nejmenšího počtu shodných krychlí, s velikostí hrany v centimetrech vyjádřenou přirozeným číslem, můžeme sestavit kvádr o rozměrech 9, 12 a 21 cm?",
    "opts": [
@@ -4523,7 +7315,7 @@
    "needs_original": false
   },
   {
-   "q": "P31",
+   "q": "P43",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 6, 7 bodů)",
    "body": "Plavecký bazén si vede měsíční statistiky. Jedna čtvrtina návštěvníků chodí do bazénu alespoň dvakrát týdně a jedna pětina z nich dokonce denně. Jedna pětina všech návštěvníků chodí jedenkrát týdně. Ostatní návštěvníci chodí několikrát do měsíce, ale nepravidelně. Každý desátý návštěvník se po první návštěvě víckrát nevrátí. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -4549,7 +7341,7 @@
    ]
   },
   {
-   "q": "P32",
+   "q": "P44",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 15, 7 bodů)",
    "body": "Převodovka se skládá ze tří ozubených kol spojených řetězy. Nejmenší kolo je spojené s prostředním kolem a prostřední kolo je spojené s největším kolem. Kola mají postupně 27, 54 a 99 zubů. Po jakém minimálním počtu otoček největšího kola budou všechna tři kola ve stejné pozici jako na začátku pohybu?",
    "opts": [
@@ -4575,7 +7367,7 @@
    ]
   },
   {
-   "q": "P33",
+   "q": "P45",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 16, 7 bodů)",
    "body": "Z jakého nejmenšího počtu shodných krychlí, s velikostí hrany v centimetrech vyjádřenou přirozeným číslem, můžeme sestavit kvádr o rozměrech 8, 12 a 28 cm?",
    "opts": [
@@ -4598,7 +7390,7 @@
    "needs_original": false
   },
   {
-   "q": "P34",
+   "q": "P46",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 13, 7 bodů)",
    "body": "Dětský tábor má kapacitu 80 dětí. Vytvoří-li děti trojice, nikdo nezbude; vytvoří-li dvojice, zbude jedno dítě. Vytvoří-li sedmice, nikdo nezbude; vytvoří-li čtveřice, zbudou tři děti. Kolik zbude dětí, vytvoří-li šestice?",
    "opts": [
@@ -4624,7 +7416,7 @@
    ]
   },
   {
-   "q": "P35",
+   "q": "P47",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 13, 5 bodů)",
    "body": "Z kolika obdélníkových dlaždic o rozměrech 15 cm a 20 cm se dá sestavit čtverec, máme-li k dispozici 120 dlaždic? Všechny dlaždice pokládáme se stejnou orientací.",
    "opts": [
