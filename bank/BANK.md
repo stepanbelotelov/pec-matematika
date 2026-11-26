@@ -2,7 +2,7 @@
 
 Файл собирается скриптом `bank/build.py` из `tasks.json` и `sources.json`; вручную не редактировать.
 
-Всего задач: **314** · базовый: 175 · стандартный: 119 · сложный: 20 · ČVUT FIT: 137 · VUT FEKT: 86 · ČVUT FBMI: 40 · ČVUT FJFI: 24 · ČVUT FEL: 15 · VŠCHT VŠCHT: 7 · TUL FP: 5
+Всего задач: **392** · базовый: 220 · стандартный: 152 · сложный: 20 · ČVUT FIT: 137 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FBMI: 40 · ČVUT FJFI: 24 · ČVUT FEL: 15 · VŠCHT VŠCHT: 7 · TUL FP: 5
 
 ⚠ **0** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.
 
@@ -15,16 +15,16 @@
 | 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 20 | 21 | 2 | 43 |
 | 4 | Rovnice s parametrem | 1 | 2 | 2 | 5 |
 | 5 | Rovnice s absolutní hodnotou |  | 5 |  | 5 |
-| 6 | Nerovnice. Soustava nerovnic | 6 | 4 | 2 | 12 |
+| 6 | Nerovnice. Soustava nerovnic | 15 | 4 | 2 | 21 |
 | 7 | Nerovnice s absolutní hodnotou | 2 | 6 |  | 8 |
-| 8 | Iracionální rovnice. Iracionální nerovnice | 4 | 5 |  | 9 |
-| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 16 | 2 |  | 18 |
+| 8 | Iracionální rovnice. Iracionální nerovnice | 16 | 6 |  | 22 |
+| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 17 | 5 |  | 22 |
 | 10 | Exponenciální funkce | 4 | 2 |  | 6 |
-| 11 | Exponenciální rovnice a nerovnice | 5 | 6 |  | 11 |
-| 12 | Logaritmická funkce | 9 | 6 |  | 15 |
-| 13 | Logaritmické rovnice a nerovnice | 1 | 5 | 1 | 7 |
+| 11 | Exponenciální rovnice a nerovnice | 12 | 7 |  | 19 |
+| 12 | Logaritmická funkce | 9 | 7 |  | 16 |
+| 13 | Logaritmické rovnice a nerovnice | 5 | 5 | 1 | 11 |
 | 14 | Goniometrické funkce | 6 |  |  | 6 |
-| 15 | Goniometrické rovnice a nerovnice | 2 | 4 | 1 | 7 |
+| 15 | Goniometrické rovnice a nerovnice | 2 | 17 | 1 | 20 |
 | 16 | Komplexní čísla | 5 |  |  | 5 |
 | 17 | Goniometrický tvar komplexního čísla. Moivreova věta |  |  |  | — |
 | 18 | Posloupnosti |  | 1 |  | 1 |
@@ -36,8 +36,8 @@
 | 24 | Pravděpodobnost | 3 | 5 |  | 8 |
 | 25 | Analytická geometrie. Vektory |  | 1 |  | 1 |
 | 26 | Parametrická rovnice přímky | 2 |  |  | 2 |
-| 27 | Obecná rovnice přímky | 3 |  |  | 3 |
-| 28 | Vzájemná poloha přímek | 6 |  |  | 6 |
+| 27 | Obecná rovnice přímky | 14 | 1 |  | 15 |
+| 28 | Vzájemná poloha přímek | 7 |  |  | 7 |
 | 29 | Směrnicový a úsekový tvar rovnice přímky |  | 1 |  | 1 |
 | 30 | Kuželosečky. Kružnice | 6 | 4 | 1 | 11 |
 | 31 | Elipsa |  | 1 |  | 1 |
@@ -45,7 +45,7 @@
 | 33 | Parabola | 2 |  |  | 2 |
 | 34 | Planimetrie | 5 |  |  | 5 |
 | 35 | Stereometrie |  | 2 |  | 2 |
-| — | Ostatní | 34 | 12 | 1 | 47 |
+| — | Ostatní | 34 | 25 | 1 | 60 |
 
 Задача считается по основной (первой) теме; дополнительные темы указаны в карточке. «Ostatní» — задачи вне 35 тем плана.
 
@@ -726,6 +726,114 @@ Rovnice $x^2-(p+1)x+4=0$ (s neznámou $x$) nemá reálný kořen právě tehdy, 
 
 </details>
 
+### `vsb-fbi-2013-pz3-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna řešení nerovnice $\dfrac{5-2x}{x-7}\ge3.$
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\left\langle\frac{26}5;7\right)$. $\frac{5-2x-3(x-7)}{x-7}=\frac{26-5x}{x-7}\ge0$.
+
+</details>
+
+### `vsb-fbi-2013-pz4-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Stanovte definiční obor funkce $y=\dfrac1{\sqrt x}+\sqrt{x-2}+\dfrac1{\log(x-3)}.$
+
+<details><summary>Ответ и решение</summary>
+
+$D=(3;4)\cup(4;\infty)$. $x>0$, $x\ge2$, $x>3$ a $\log(x-3)\ne0$, tj. $x\ne4$.
+
+</details>
+
+### `vsb-fbi-2013-pz11-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna řešení nerovnice $x^2-4x-5<0.$
+
+<details><summary>Ответ и решение</summary>
+
+$x\in(-1;5)$. $(x-5)(x+1)<0$.
+
+</details>
+
+### `vsb-fbi-2015-pz25-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna řešení nerovnice $x^2-2x-3\ge0.$
+
+<details><summary>Ответ и решение</summary>
+
+$x\in(-\infty;-1\rangle\cup\langle3;\infty)$. $(x-3)(x+1)\ge0$.
+
+</details>
+
+### `vsb-fbi-2015-pz31-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna řešení nerovnice $\dfrac{4-2x}{x-7}\ge3.$
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\langle5;7)$. $\frac{25-5x}{x-7}\ge0$.
+
+</details>
+
+### `vsb-fbi-2015-pz32-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna řešení nerovnice $\dfrac{3x-1}{x+2}<2.$
+
+<details><summary>Ответ и решение</summary>
+
+$x\in(-2;5)$. $\frac{x-5}{x+2}<0$.
+
+</details>
+
+### `vsb-fbi-2017-pz1-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna řešení nerovnice $\dfrac{1-3x}{x+3}\ge-1.$
+
+<details><summary>Ответ и решение</summary>
+
+$x\in(-3;2\rangle$. $\frac{4-2x}{x+3}\ge0$.
+
+</details>
+
+### `vsb-fbi-2017-pz14-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna řešení nerovnice $\dfrac{3x-8}{6-x}\ge1.$
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\left\langle\frac72;6\right)$. $\frac{4x-14}{6-x}\ge0$.
+
+</details>
+
+### `vsb-fbi-2017-pz15-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna řešení nerovnice $\dfrac{x+2}{1-x}\le-2.$
+
+<details><summary>Ответ и решение</summary>
+
+$x\in(1;4\rangle$. $\frac{4-x}{1-x}\le0$.
+
+</details>
+
 ### `vut-fekt-2022-v1-03` — [FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 3, 2 body)](https://vut.cz/pomocne2018/f124247/d232373/p229505)
 
 *Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
@@ -872,6 +980,150 @@ Množina všech řešení nerovnice $|x-2|\le3$ je
 
 </details>
 
+### `vsb-fbi-2013-pz3-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\sqrt{5x+6}=x+2$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=2$, $x=-1$. Umocněním $x^2-x-2=0$; zkouška vyhovuje u obou kořenů.
+
+</details>
+
+### `vsb-fbi-2013-pz4-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\sqrt{5-x}=x-3$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=4$. Umocněním $x^2-5x+4=0$, $x=1$ nebo $x=4$; zkoušce vyhoví jen $x=4$.
+
+</details>
+
+### `vsb-fbi-2013-pz11-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $x-5=\sqrt{13-x^2}$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+nemá řešení. Umocněním $x^2-5x+6=0$, $x=2$ nebo $x=3$; levá strana je pak záporná, zkoušce nevyhoví ani jeden.
+
+</details>
+
+### `vsb-fbi-2015-pz23-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $x-3=\sqrt{13-9x}$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+nemá řešení. Umocněním $x^2+3x-4=0$, $x=1$ nebo $x=-4$; levá strana je pak záporná.
+
+</details>
+
+### `vsb-fbi-2015-pz24-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\sqrt{23-7x}=x-5$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+nemá řešení. Umocněním $x^2-3x+2=0$, $x=1$ nebo $x=2$; pravá strana je pak záporná.
+
+</details>
+
+### `vsb-fbi-2015-pz25-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $x+2=\sqrt{x+8}$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=1$. Umocněním $x^2+3x-4=0$, $x=1$ nebo $x=-4$; zkoušce vyhoví $x=1$.
+
+</details>
+
+### `vsb-fbi-2015-pz31-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $x+1=\sqrt{3x+3}$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-1$, $x=2$. Umocněním $x^2-x-2=0$; zkouška vyhovuje u obou kořenů.
+
+</details>
+
+### `vsb-fbi-2017-pz1-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $1-x=\sqrt{3-x}$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-1$. Umocněním $x^2-x-2=0$, $x=2$ nebo $x=-1$; zkoušce vyhoví $x=-1$.
+
+</details>
+
+### `vsb-fbi-2017-pz2-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\sqrt{7x-5}=x+1$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=2$, $x=3$. Umocněním $x^2-5x+6=0$; zkouška vyhovuje u obou kořenů.
+
+</details>
+
+### `vsb-fbi-2017-pz6-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\sqrt{3-11x}=x-3$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+nemá řešení. Umocněním $x^2+5x+6=0$, $x=-2$ nebo $x=-3$; pravá strana je pak záporná.
+
+</details>
+
+### `vsb-fbi-2017-pz14-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $1-x=\sqrt{3x-3}$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=1$. Umocněním $x^2-5x+4=0$, $x=1$ nebo $x=4$; zkoušce vyhoví $x=1$.
+
+</details>
+
+### `vsb-fbi-2017-pz15-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $x+1=\sqrt{-1-x}$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-1$. Umocněním $x^2+3x+2=0$, $x=-1$ nebo $x=-2$; zkoušce vyhoví $x=-1$.
+
+</details>
+
 ### `vut-fekt-2022-v1-01` — [FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 1, 2 body)](https://vut.cz/pomocne2018/f124247/d232373/p229505)
 
 *Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
@@ -941,6 +1193,18 @@ Kolik řešení má v reálném oboru rovnice $\sqrt{x+6}=-x$?
 <details><summary>Ответ и решение</summary>
 
 **a** — $\{2\}$. $10-5x=(x-2)^2\Rightarrow x^2+x-6=0$, $x=2$ nebo $x=-3$; podmínka $x\ge2$ ponechá $x=2$.
+
+</details>
+
+### `vsb-fbi-2017-pz6-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Stanovte definiční obor funkce $y=\sqrt{x^2+2x-3}$.
+
+<details><summary>Ответ и решение</summary>
+
+$D=(-\infty;-3\rangle\cup\langle1;\infty)$. $(x+3)(x-1)\ge0$.
 
 </details>
 
@@ -1300,6 +1564,90 @@ Ze zadaných funkcí vyberte tu, jejíž graf vznikne z grafu funkce $y=2^x$ pos
 
 </details>
 
+### `vsb-fbi-2013-pz3-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $2\cdot\ln(x)=\ln(12)-\ln(3)+\ln(1)$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=2$. $\ln x^2=\ln4$, $x>0$.
+
+</details>
+
+### `vsb-fbi-2013-pz4-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $2+3^{x-3}=3^{x-2}$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=3$. $3^{x-2}-3^{x-3}=2\cdot3^{x-3}=2$, tedy $3^{x-3}=1$.
+
+</details>
+
+### `vsb-fbi-2013-pz11-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\log(3-x)=2\cdot\log(x-1)$ a stanovte podmínky její řešitelnosti.
+
+<details><summary>Ответ и решение</summary>
+
+$x=2$ (podmínky $1<x<3$). $3-x=(x-1)^2\Rightarrow x^2-x-2=0$, $x=2$ nebo $x=-1$; podmínkám vyhoví $x=2$.
+
+</details>
+
+### `vsb-fbi-2015-pz23-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\left(\dfrac49\right)^x=\left(\dfrac32\right)^8$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-4$. $\left(\frac23\right)^{2x}=\left(\frac23\right)^{-8}$.
+
+</details>
+
+### `vsb-fbi-2015-pz24-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $4^{x-7}=\dfrac1{64}$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=4$. $4^{x-7}=4^{-3}$.
+
+</details>
+
+### `vsb-fbi-2017-pz1-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $2^{x+2}-2^x=24$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=3$. $3\cdot2^x=24$.
+
+</details>
+
+### `vsb-fbi-2017-pz6-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\dfrac{5^{2-3x}}5=1$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=\frac13$. $5^{1-3x}=5^0$.
+
+</details>
+
 ### `vut-fekt-2024-v1-08` — [FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 8, 3 body)](https://vut.cz/pomocne2018/f151468/d267522/p273733)
 
 *Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -1545,6 +1893,54 @@ Graf funkce $f(x)=\log(x+1)+3$ je oproti grafu funkce $y=\log x$ posunutý
 <details><summary>Ответ и решение</summary>
 
 **c** — o 1 doleva a o 3 nahoru. $x+1$ — o 1 doleva, $+3$ — o 3 nahoru.
+
+</details>
+
+### `vsb-fbi-2015-pz25-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $2\ln x-\ln1=\ln18-\ln2$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=3$. $\ln x^2=\ln9$, $x>0$.
+
+</details>
+
+### `vsb-fbi-2015-pz31-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\dfrac23\log x=2\log2$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=8$. $\log x=3\log2=\log8$.
+
+</details>
+
+### `vsb-fbi-2015-pz32-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\dfrac13\log x=1-\log5$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=8$. $1-\log5=\log2$, tedy $\log x=3\log2$.
+
+</details>
+
+### `vsb-fbi-2017-pz15-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\log(4x-3)=2\log(2x-1)$ a stanovte podmínky její řešitelnosti.
+
+<details><summary>Ответ и решение</summary>
+
+$x=1$ (podmínka $x>\frac34$). $4x-3=(2x-1)^2\Rightarrow(x-1)^2=0$.
 
 </details>
 
@@ -2180,6 +2576,138 @@ Který bod leží na přímce dané body $A=[-1,2],B=[3,1]$?
 
 </details>
 
+### `vsb-fbi-2013-pz3-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Je dána přímka $p$ body $A=[1,-1],B=[3,2]$. Určete obecnou rovnici přímky $q$, která prochází bodem $C=[1,2]$ a je kolmá na přímku $p$.
+
+<details><summary>Ответ и решение</summary>
+
+$q\colon2x+3y-8=0$. Směr $p$ je $(2,3)$ — to je normála $q$; dosazením $C$.
+
+</details>
+
+### `vsb-fbi-2013-pz4-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Nalezněte obecnou rovnici přímky $r$ procházející středem úsečky $AB,\ A=[-1,-2],\ B=[2,1]$ rovnoběžně s přímkou $p\colon-x+4y-10=0.$
+
+<details><summary>Ответ и решение</summary>
+
+$r\colon2x-8y-5=0$. Střed $S=\left[\frac12,-\frac12\right]$; $-x+4y+c=0$, z bodu $S$: $c=\frac52$.
+
+</details>
+
+### `vsb-fbi-2013-pz11-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Zjistěte výpočtem, zda na přímce $p$ určené body $A=[-4,4]$ a $B=[2,1]$ leží bod $C=[1,2]$.
+
+<details><summary>Ответ и решение</summary>
+
+neleží ($p\colon x+2y-4=0$). Pro $C$: $1+4-4=1\ne0$.
+
+</details>
+
+### `vsb-fbi-2015-pz23-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Přímka $p$ je dána body $A=[1,1],B=[-4,-2]$. Určete obecnou rovnici přímky $q$, která je kolmá k přímce $p$ a prochází bodem $C=[1,-2]$.
+
+<details><summary>Ответ и решение</summary>
+
+$q\colon5x+3y+1=0$. Směr $p$ je $(5,3)$ — to je normála $q$.
+
+</details>
+
+### `vsb-fbi-2015-pz24-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Nalezněte obecnou rovnici přímky $r$, která prochází středem úsečky $AB,A=[3,0],B=[1,-4]$, a je rovnoběžná s přímkou $p\colon x-4y-1=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$r\colon x-4y-10=0$. Střed $S=[2,-2]$; $x-4y+c=0$, z bodu $S$: $c=-10$.
+
+</details>
+
+### `vsb-fbi-2015-pz25-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Přímka $p$ je dána body $A=[-3,1],\ B=[2,2]$. Určete obecnou rovnici přímky $q$, která je kolmá k přímce $p$ a prochází bodem $C=[-1,-1]$.
+
+<details><summary>Ответ и решение</summary>
+
+$q\colon5x+y+6=0$. Směr $p$ je $(5,1)$ — to je normála $q$.
+
+</details>
+
+### `vsb-fbi-2015-pz32-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Určete obecnou rovnici osy úsečky $AB$, tj. přímky kolmé k přímce dané body $A,B$, procházející středem úsečky $AB$. $A=[1,-6],\ B=[3,-2]$.
+
+<details><summary>Ответ и решение</summary>
+
+$x+2y+6=0$. Střed $S=[2,-4]$, normála osy je $\overrightarrow{AB}=(2,4)$.
+
+</details>
+
+### `vsb-fbi-2017-pz1-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Určete obecnou rovnici osy úsečky $AB$, tj. přímky kolmé k přímce dané body $A,B$, procházející středem úsečky $AB$. $A=[-1,2],B=[2,1]$.
+
+<details><summary>Ответ и решение</summary>
+
+$3x-y=0$. Střed $S=\left[\frac12,\frac32\right]$, normála osy je $\overrightarrow{AB}=(3,-1)$.
+
+</details>
+
+### `vsb-fbi-2017-pz2-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Přímka $p$ je dána body $A=[-2,2],B=[2,1]$. Nalezněte obecnou rovnici přímky $q$ rovnoběžné s přímkou $p$, procházející bodem $C=[0,0]$.
+
+<details><summary>Ответ и решение</summary>
+
+$q\colon x+4y=0$. Směr $p$ je $(4,-1)$, normála $(1,4)$.
+
+</details>
+
+### `vsb-fbi-2017-pz6-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Zjistěte výpočtem, zda na přímce $p$ určené body $A=[3,-2]$ a $B=[-4,1]$ leží bod $C=[-2,0]$.
+
+<details><summary>Ответ и решение</summary>
+
+neleží ($p\colon3x+7y+5=0$). Pro $C$: $-6+0+5=-1\ne0$.
+
+</details>
+
+### `vsb-fbi-2017-pz15-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Zjistěte výpočtem, zda na přímce $p$ určené body $A=[1,-2]$ a $B=[-2,0]$ leží bod $C=\left[0,-\dfrac43\right]$.
+
+<details><summary>Ответ и решение</summary>
+
+leží ($p\colon2x+3y+4=0$). Pro $C$: $0-4+4=0$.
+
+</details>
+
 ### `vut-fekt-2023-v1-07` — [FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 7, 3 body)](https://vut.cz/pomocne2018/f137459/d248394/p249980)
 
 *Темы:* 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
@@ -2230,6 +2758,18 @@ Rovnici přímky v rovině, která prochází bodem $A=[0,2]$ a je kolmá na př
 <details><summary>Ответ и решение</summary>
 
 **d** — $x+2y-4=0$. Normála $p$ $(2,-1)$ je směrem hledané přímky, její normála je $(1,2)$: $x+2y+c=0$, z bodu $A$: $c=-4$.
+
+</details>
+
+### `vsb-fbi-2017-pz14-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 28. Vzájemná poloha přímek, 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Určete číslo $a$ tak, aby přímka $p\colon ax-y-8=0$ procházela průsečíkem přímek $r\colon-x+5y-2=0$ a $s\colon-2x-y+7=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$a=3$. Průsečík $r$ a $s$ je $[3,1]$; $3a-1-8=0$.
 
 </details>
 
@@ -3935,6 +4475,18 @@ b) $x\in(-\infty;-0{,}25)\cup(1{,}25;1{,}75)\cup(3{,}25;+\infty)$. $|3-2x|-2>1{,
 
 </details>
 
+### `vsb-fbi-2015-pz32-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\sqrt{3x^2-2}=2-x$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-3$, $x=1$. Umocněním $x^2+2x-3=0$; zkouška vyhovuje u obou kořenů.
+
+</details>
+
 ### `fel-vzor01-10` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 10, 1 bod)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-vzor01.pdf)
 
 *Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 8, úloha 18
@@ -4031,6 +4583,42 @@ Které z následujících tvrzení o definičním oboru funkce $f(x)=\sqrt{\dfra
 
 </details>
 
+### `vsb-fbi-2015-pz23-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Stanovte definiční obor funkce $y=\sqrt{\dfrac{x-1}{x+2}}+\log(2x-3)$.
+
+<details><summary>Ответ и решение</summary>
+
+$D=\left(\frac32;\infty\right)$. $\frac{x-1}{x+2}\ge0$ dává $x<-2$ nebo $x\ge1$, spolu s $x>\frac32$.
+
+</details>
+
+### `vsb-fbi-2015-pz24-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Stanovte definiční obor funkce $y=\mathrm e^{5x}+\sqrt{\dfrac{x-2}{x+2}}$.
+
+<details><summary>Ответ и решение</summary>
+
+$D=(-\infty;-2)\cup\langle2;\infty)$. $\frac{x-2}{x+2}\ge0$, $x\ne-2$.
+
+</details>
+
+### `vsb-fbi-2017-pz2-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Stanovte definiční obor funkce $y=\dfrac1{x^2-9}+2\sqrt{2x+6}+\log(2x-5)$.
+
+<details><summary>Ответ и решение</summary>
+
+$D=\left(\frac52;3\right)\cup(3;\infty)$. $x\ne\pm3$, $x\ge-3$, $x>\frac52$.
+
+</details>
+
 ### `vut-fekt-2024-v1-14` — [FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 14, 5 bodů)](https://vut.cz/pomocne2018/f151468/d267522/p273733)
 
 *Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
@@ -4100,6 +4688,18 @@ Jestliže $y=2e^{3x-1}$, pak $y\in\left\langle\frac12,2\right\rangle$ právě pr
 <details><summary>Ответ и решение</summary>
 
 **a** — $x\in\left\langle\frac{1-\ln4}{3},\frac13\right\rangle$. $e^{3x-1}\in\langle\frac14,1\rangle\iff-\ln4\le3x-1\le0$.
+
+</details>
+
+### `vsb-fbi-2017-pz14-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $2^x+2^{1-x}-3=0$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$x=0$, $x=1$. $t=2^x$: $t^2-3t+2=0$, $t=1$ nebo $t=2$.
 
 </details>
 
@@ -4210,6 +4810,18 @@ Pro řešení nerovnice $\left(\dfrac13\right)^{x^2}\le3^{-x-6}$ platí
 <details><summary>Ответ и решение</summary>
 
 **a** — Všechna řešení leží v intervalu $(-\infty,-2\rangle\cup\langle3,+\infty)$.. $3^{-x^2}\le3^{-x-6}\iff x^2-x-6\ge0\iff(x-3)(x+2)\ge0$.
+
+</details>
+
+### `vsb-fbi-2017-pz2-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 12. Logaritmická funkce, 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Vyřešte rovnici $\log_a\dfrac14=-\dfrac23$ a proveďte zkoušku.
+
+<details><summary>Ответ и решение</summary>
+
+$a=8$. $a^{-2/3}=\frac14$, tedy $a^{2/3}=4$, $a=4^{3/2}=8$.
 
 </details>
 
@@ -4412,6 +5024,162 @@ Pro řešení rovnice $\dfrac{\log_3^2(9x)}{\log_3(81x^2)}=\dfrac32$ platí:
 <details><summary>Ответ и решение</summary>
 
 **a** — $36$. Podmínka $x>4$; $\frac{(2x+9)(x-4)}{x^2}=\frac{100}{50}=2\Rightarrow 2x^2+x-36=2x^2$, $x=36$.
+
+</details>
+
+### `vsb-fbi-2013-pz3-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $2\cdot\cos\left(\dfrac{3x-2\pi}3\right)-\sqrt3=0.$
+
+<details><summary>Ответ и решение</summary>
+
+$x=\frac\pi2+2k\pi$, $x=\frac{5\pi}6+2k\pi$, $k\in\mathbb{Z}$. $\cos\frac{3x-2\pi}3=\frac{\sqrt3}2$: $\frac{3x-2\pi}3=\pm\frac\pi6+2k\pi$.
+
+</details>
+
+### `vsb-fbi-2013-pz4-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $1-2\cos(2x-\frac\pi3)=0.$
+
+<details><summary>Ответ и решение</summary>
+
+$x=k\pi$, $x=\frac\pi3+k\pi$, $k\in\mathbb{Z}$. $\cos(2x-\frac\pi3)=\frac12$: $2x-\frac\pi3=\pm\frac\pi3+2k\pi$.
+
+</details>
+
+### `vsb-fbi-2013-pz11-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $\operatorname{tg}\left(\frac{2x-\pi}4\right)+\sqrt3=0.$
+
+<details><summary>Ответ и решение</summary>
+
+$x=-\frac\pi6+2k\pi$, $k\in\mathbb{Z}$. $\frac{2x-\pi}4=-\frac\pi3+k\pi$.
+
+</details>
+
+### `vsb-fbi-2015-pz23-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $\sin x\,(1-2\sin x)=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\left\{k\pi,\frac\pi6+2k\pi,\frac{5\pi}6+2k\pi\right\}$. $\sin x=0$ nebo $\sin x=\frac12$.
+
+</details>
+
+### `vsb-fbi-2015-pz24-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $\cos x\,(1-2\sin x)=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\left\{\frac\pi2+k\pi,\frac\pi6+2k\pi,\frac{5\pi}6+2k\pi\right\}$. $\cos x=0$ nebo $\sin x=\frac12$.
+
+</details>
+
+### `vsb-fbi-2015-pz25-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $\operatorname{tg}x\,(1+2\sin x)=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\left\{k\pi,\frac{7\pi}6+2k\pi,\frac{11\pi}6+2k\pi\right\}$. $\operatorname{tg}x=0$ nebo $\sin x=-\frac12$.
+
+</details>
+
+### `vsb-fbi-2015-pz31-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $\cos x\,(1+2\sin x)=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\left\{\frac\pi2+k\pi,\frac{7\pi}6+2k\pi,\frac{11\pi}6+2k\pi\right\}$. $\cos x=0$ nebo $\sin x=-\frac12$.
+
+</details>
+
+### `vsb-fbi-2015-pz32-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $\cos x\,(1+2\cos x)=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\left\{\frac\pi2+k\pi,\frac{2\pi}3+2k\pi,\frac{4\pi}3+2k\pi\right\}$. $\cos x=0$ nebo $\cos x=-\frac12$.
+
+</details>
+
+### `vsb-fbi-2017-pz1-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $2-4\sin\left(x+\dfrac\pi3\right)=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\left\{-\frac\pi6+2k\pi,\frac\pi2+2k\pi\right\}$. $\sin\left(x+\frac\pi3\right)=\frac12$: $x+\frac\pi3=\frac\pi6+2k\pi$ nebo $\frac{5\pi}6+2k\pi$.
+
+</details>
+
+### `vsb-fbi-2017-pz2-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $1+2\sin\left(x-\dfrac\pi6\right)=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\left\{\frac{4\pi}3+2k\pi,2k\pi\right\}$. $\sin\left(x-\frac\pi6\right)=-\frac12$: $x-\frac\pi6=\frac{7\pi}6+2k\pi$ nebo $\frac{11\pi}6+2k\pi$.
+
+</details>
+
+### `vsb-fbi-2017-pz6-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $3\operatorname{tg}\left(\dfrac{2x-3\pi}6\right)+\sqrt3=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\{\pi+3k\pi\}$. $\operatorname{tg}\frac{2x-3\pi}6=-\frac{\sqrt3}3$: $\frac{2x-3\pi}6=-\frac\pi6+k\pi$.
+
+</details>
+
+### `vsb-fbi-2017-pz14-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $3\operatorname{tg}\left(\dfrac{3x-\pi}6\right)-\sqrt3=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\left\{\frac{2\pi}3+2k\pi\right\}$. $\operatorname{tg}\frac{3x-\pi}6=\frac{\sqrt3}3$: $\frac{3x-\pi}6=\frac\pi6+k\pi$.
+
+</details>
+
+### `vsb-fbi-2017-pz15-04` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 4, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešte goniometrickou rovnici $\operatorname{tg}\left(\dfrac{4x-2\pi}3\right)+\sqrt3=0$ a zapište množinu všech řešení.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb{Z}}\left\{\frac\pi4+\frac{3k\pi}4\right\}$. $\frac{4x-2\pi}3=-\frac\pi3+k\pi$.
 
 </details>
 
@@ -4976,6 +5744,18 @@ $O=2\sqrt{13}+2\sqrt{130}\approx30{,}0146$, $S=39$. Řešení z PDF: $|AB|=2\sqr
 
 </details>
 
+### `vsb-fbi-2015-pz31-06` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 6, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Nalezněte obecnou rovnici přímky $r$ procházející středem úsečky $AB,A=[3,3],B=[7,-1]$ kolmo na přímku $p\colon5x+8y-19=0.$
+
+<details><summary>Ответ и решение</summary>
+
+$r\colon8x-5y-35=0$. Střed $S=[5,1]$; normála $p$ $(5,8)$ je směrem $r$, normála $r$ je $(8,-5)$.
+
+</details>
+
 ### `fel-vzor01-12` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 12, 2 body)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-vzor01.pdf)
 
 *Темы:* 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 9, úloha 20
@@ -5141,6 +5921,162 @@ Určete objem kvádru, jestliže strana $a=1$ cm, strana $c$ je o 1 cm delší n
 <details><summary>Ответ и решение</summary>
 
 **b** — $12$ cm$^3$. $2(b+b(b+1)+(b+1))=38\Rightarrow b^2+3b-18=0$, $b=3$, $c=4$, $V=12$.
+
+</details>
+
+### `vsb-fbi-2013-pz3-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\dfrac{ax-x^2}{a^2+2ax+x^2}\cdot\dfrac{a^2+ax}{a^2-2ax+x^2}$ a stanovte podmínky, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac{ax}{a^2-x^2}$, podmínka $a\ne\pm x$. $\frac{x(a-x)}{(a+x)^2}\cdot\frac{a(a+x)}{(a-x)^2}=\frac{ax}{(a+x)(a-x)}$.
+
+</details>
+
+### `vsb-fbi-2013-pz4-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\left[\left(\dfrac xy\right)^2-\dfrac x{y^2}\right]:\left(\dfrac y{x-1}\right)^{-2}$ a stanovte podmínky, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac x{x-1}$, podmínky $y\ne0$, $x\ne1$. $\frac{x(x-1)}{y^2}\cdot\frac{y^2}{(x-1)^2}=\frac x{x-1}$.
+
+</details>
+
+### `vsb-fbi-2013-pz11-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\left[\left(\dfrac xy-\dfrac yx\right):\left(\dfrac xy-2+\dfrac yx\right)\right]:\left(1+\dfrac yx\right)$ a stanovte, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac x{x-y}$, podmínky $x\ne0$, $y\ne0$, $x\ne\pm y$. $\frac{(x-y)(x+y)}{xy}\cdot\frac{xy}{(x-y)^2}\cdot\frac x{x+y}=\frac x{x-y}$.
+
+</details>
+
+### `vsb-fbi-2015-pz23-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\left(\dfrac4{x-2}+1\right)\cdot\left(\dfrac4{x+2}-1\right)$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=-1$, podmínka $x\ne\pm2$. $\frac{x+2}{x-2}\cdot\frac{2-x}{x+2}=-1$.
+
+</details>
+
+### `vsb-fbi-2015-pz24-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\left(\dfrac1y+\dfrac15\right)^{-1}\cdot\left(\dfrac1y-\dfrac y{25}\right)$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac{5-y}5$, podmínky $y\ne0$, $y\ne-5$. $\frac{5y}{y+5}\cdot\frac{(5-y)(5+y)}{25y}=\frac{5-y}5$.
+
+</details>
+
+### `vsb-fbi-2015-pz25-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\left(\dfrac{x-2}{x-3}\right)^{-1}+\dfrac{5x}{x^2-4}-\left(\dfrac{x+2}x\right)^{-1}$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac{6(x-1)}{x^2-4}$, podmínky $x\ne0$, $x\ne3$, $x\ne\pm2$. $\frac{x-3}{x-2}+\frac{5x}{x^2-4}-\frac x{x+2}=\frac{(x-3)(x+2)+5x-x(x-2)}{x^2-4}=\frac{6x-6}{x^2-4}$.
+
+</details>
+
+### `vsb-fbi-2015-pz31-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\dfrac{x^2-y^2}{3x^2y^2}:\left(\dfrac{1+2x}x-\dfrac{2y-1}y\right)$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac{x-y}{3xy}$, podmínky $x\ne0$, $y\ne0$, $x\ne-y$. Závorka je $\frac{x+y}{xy}$; $\frac{(x-y)(x+y)}{3x^2y^2}\cdot\frac{xy}{x+y}=\frac{x-y}{3xy}$.
+
+</details>
+
+### `vsb-fbi-2015-pz32-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\left(\dfrac1{1-a}-1\right):\left(\dfrac{2a^2}{1-a}-a\right)$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac1{3a-1}$, podmínky $a\ne0$, $a\ne1$, $a\ne\frac13$. $\frac a{1-a}:\frac{3a^2-a}{1-a}=\frac a{a(3a-1)}$.
+
+</details>
+
+### `vsb-fbi-2017-pz1-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\left(\dfrac a{b^2+ab}-\dfrac2{a+b}+\dfrac b{a^2+ab}\right):\left(\dfrac ba-2+\dfrac ab\right)$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac1{a+b}$, podmínky $a\ne\pm b$, $a\ne0$, $b\ne0$. Řešení z PDF: první závorka je $\frac{a^2-2ab+b^2}{ab(a+b)}$, druhá $\frac{b^2-2ab+a^2}{ab}$.
+
+</details>
+
+### `vsb-fbi-2017-pz2-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=1-t+\dfrac t{1-\frac t{t+1}}$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=t^2+1$, podmínka $t\ne-1$. Řešení z PDF: $1-\frac t{t+1}=\frac1{t+1}$, tedy $V=1-t+t(t+1)$.
+
+</details>
+
+### `vsb-fbi-2017-pz6-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\left[\left(\dfrac xy-\dfrac yx\right):\left(\dfrac xy-2+\dfrac yx\right)\right]:\left(1+\dfrac yx\right)$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac x{x-y}$, podmínky $x\ne0$, $y\ne0$, $x\ne\pm y$. Řešení z PDF: $\frac{x^2-y^2}{xy}:\frac{x^2-2xy+y^2}{xy}:\frac{x+y}x=\frac x{x-y}$.
+
+</details>
+
+### `vsb-fbi-2017-pz14-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\left(\dfrac u{u+v}+\dfrac v{u-v}\right):\left(1-\dfrac{2uv}{u^2+v^2}\right)^{-1}$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac{u-v}{u+v}$, podmínka $u\ne\pm v$. Řešení z PDF: $\frac{u^2+v^2}{(u+v)(u-v)}\cdot\frac{(u-v)^2}{u^2+v^2}=\frac{u-v}{u+v}$.
+
+</details>
+
+### `vsb-fbi-2017-pz15-01` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 1, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Upravte výraz $V=\dfrac{\frac x4-1+\frac1x}{\frac{x+2}x\cdot\frac{x-2}4}$ a určete, kdy je reálný.
+
+<details><summary>Ответ и решение</summary>
+
+$V=\dfrac{x-2}{x+2}$, podmínky $x\ne0$, $x\ne\pm2$. Řešení z PDF: $\frac{x^2-4x+4}{4x}\cdot\frac{4x}{(x+2)(x-2)}=\frac{x-2}{x+2}$.
 
 </details>
 

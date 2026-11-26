@@ -1815,6 +1815,141 @@
  "6": [
   {
    "q": "P1",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 2, 10 bodů)",
+   "body": "Určete všechna řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{5-2x}{x-7}\\ge3.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x\\in\\left\\langle\\frac{26}5;7\\right)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{5-2x-3(x-7)}{x-7}=\\frac{26-5x}{x-7}\\ge0\"></span>.",
+   "id": "vsb-fbi-2013-pz3-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 2, 10 bodů)",
+   "body": "Stanovte definiční obor funkce <span class=\"m\" data-tex=\"y=\\dfrac1{\\sqrt x}+\\sqrt{x-2}+\\dfrac1{\\log(x-3)}.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"D=(3;4)\\cup(4;\\infty)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"x&gt;0\"></span>, <span class=\"m\" data-tex=\"x\\ge2\"></span>, <span class=\"m\" data-tex=\"x&gt;3\"></span> a <span class=\"m\" data-tex=\"\\log(x-3)\\ne0\"></span>, tj. <span class=\"m\" data-tex=\"x\\ne4\"></span>.",
+   "id": "vsb-fbi-2013-pz4-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 2, 10 bodů)",
+   "body": "Určete všechna řešení nerovnice <span class=\"m\" data-tex=\"x^2-4x-5&lt;0.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x\\in(-1;5)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"(x-5)(x+1)&lt;0\"></span>.",
+   "id": "vsb-fbi-2013-pz11-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 2, 10 bodů)",
+   "body": "Určete všechna řešení nerovnice <span class=\"m\" data-tex=\"x^2-2x-3\\ge0.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x\\in(-\\infty;-1\\rangle\\cup\\langle3;\\infty)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"(x-3)(x+1)\\ge0\"></span>.",
+   "id": "vsb-fbi-2015-pz25-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 2, 10 bodů)",
+   "body": "Určete všechna řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{4-2x}{x-7}\\ge3.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x\\in\\langle5;7)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{25-5x}{x-7}\\ge0\"></span>.",
+   "id": "vsb-fbi-2015-pz31-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 2, 10 bodů)",
+   "body": "Určete všechna řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{3x-1}{x+2}&lt;2.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x\\in(-2;5)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x-5}{x+2}&lt;0\"></span>.",
+   "id": "vsb-fbi-2015-pz32-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 2, 10 bodů)",
+   "body": "Určete všechna řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{1-3x}{x+3}\\ge-1.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x\\in(-3;2\\rangle\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{4-2x}{x+3}\\ge0\"></span>.",
+   "id": "vsb-fbi-2017-pz1-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 2, 10 bodů)",
+   "body": "Určete všechna řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{3x-8}{6-x}\\ge1.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x\\in\\left\\langle\\frac72;6\\right)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{4x-14}{6-x}\\ge0\"></span>.",
+   "id": "vsb-fbi-2017-pz14-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 2, 10 bodů)",
+   "body": "Určete všechna řešení nerovnice <span class=\"m\" data-tex=\"\\dfrac{x+2}{1-x}\\le-2.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x\\in(1;4\\rangle\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{4-x}{1-x}\\le0\"></span>.",
+   "id": "vsb-fbi-2017-pz15-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 3, 2 body)",
    "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"(x-3)^2\\le4\"></span> je",
    "opts": [
@@ -1837,7 +1972,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P11",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 3, 2 body)",
    "body": "Množina všech řešení nerovnice <span class=\"m\" data-tex=\"(x+3)^2&lt;4\"></span> je",
    "opts": [
@@ -1860,7 +1995,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 6, 5 bodů)",
    "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy: <span class=\"m\" data-tex=\"a&gt;d\"></span>, <span class=\"m\" data-tex=\"b&gt;d\"></span>, <span class=\"m\" data-tex=\"a&lt;c\"></span>, <span class=\"m\" data-tex=\"e&lt;a\"></span>. Který z následujících výroků nemůže být pravdivý?",
    "opts": [
@@ -1883,7 +2018,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P13",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 3, 3 body)",
    "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy. Číslo <span class=\"m\" data-tex=\"a\"></span> je rovno <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"a\"></span> je větší nebo rovno <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d&gt;b\"></span> a <span class=\"m\" data-tex=\"e&lt;a\"></span>. Který z následujících výroků nemůže být pravdivý?",
    "opts": [
@@ -1906,7 +2041,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P14",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 1, 3 body)",
    "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy. Číslo <span class=\"m\" data-tex=\"a\"></span> není větší než <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"a&lt;c\"></span>, <span class=\"m\" data-tex=\"d\"></span> není větší než <span class=\"m\" data-tex=\"b\"></span> a <span class=\"m\" data-tex=\"e&lt;a\"></span>. Který z následujících výroků nemůže být pravdivý?",
    "opts": [
@@ -1934,7 +2069,7 @@
    ]
   },
   {
-   "q": "P6",
+   "q": "P15",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 9, 2 body)",
    "body": "Určete definiční obor funkce zadané předpisem <span class=\"m\" data-tex=\"f:y=\\sqrt{\\dfrac{x-5}{x-1}}\\,.\"></span>",
    "opts": [
@@ -1958,7 +2093,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 4, 3 body)",
    "body": "Určete počet všech lichých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"x^2-53x+150\\ge0\\,.\"></span>",
    "opts": [
@@ -1981,7 +2116,7 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P17",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 11, 7 bodů)",
    "body": "Určete počet všech sudých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"x^2-53x+150\\le0\\,.\"></span>",
    "opts": [
@@ -2004,7 +2139,7 @@
    "needs_original": false
   },
   {
-   "q": "P9",
+   "q": "P18",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 3, 3 body)",
    "body": "Určete počet všech sudých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"\\dfrac12x^2-53x+150\\le0\\,.\"></span>",
    "opts": [
@@ -2030,7 +2165,7 @@
    ]
   },
   {
-   "q": "P10",
+   "q": "P19",
    "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 6, 2 body)",
    "body": "Množina všech reálných čísel, pro která platí <span class=\"m\" data-tex=\"(x^2-3x)\\cdot\\log(x^2+9)&lt;0\"></span>, je rovna množině",
    "opts": [
@@ -2053,7 +2188,7 @@
    "needs_original": false
   },
   {
-   "q": "P11",
+   "q": "P20",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 5, 7 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=2x^2+2x-12\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle0,12\\rangle\"></span> právě pro",
    "opts": [
@@ -2083,7 +2218,7 @@
    ]
   },
   {
-   "q": "P12",
+   "q": "P21",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 11, 7 bodů)",
    "body": "Najděte všechna reálná řešení nerovnice <span class=\"m\" data-tex=\"(x+1)^3\\le(x+1)^{-1}\\,.\"></span>",
    "opts": [
@@ -2304,6 +2439,186 @@
  "8": [
   {
    "q": "P1",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\sqrt{5x+6}=x+2\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=2\"></span>, <span class=\"m\" data-tex=\"x=-1\"></span>",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2-x-2=0\"></span>; zkouška vyhovuje u obou kořenů.",
+   "id": "vsb-fbi-2013-pz3-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\sqrt{5-x}=x-3\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=4\"></span>",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2-5x+4=0\"></span>, <span class=\"m\" data-tex=\"x=1\"></span> nebo <span class=\"m\" data-tex=\"x=4\"></span>; zkoušce vyhoví jen <span class=\"m\" data-tex=\"x=4\"></span>.",
+   "id": "vsb-fbi-2013-pz4-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"x-5=\\sqrt{13-x^2}\"></span> a proveďte zkoušku.",
+   "answer": "nemá řešení",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2-5x+6=0\"></span>, <span class=\"m\" data-tex=\"x=2\"></span> nebo <span class=\"m\" data-tex=\"x=3\"></span>; levá strana je pak záporná, zkoušce nevyhoví ani jeden.",
+   "id": "vsb-fbi-2013-pz11-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"x-3=\\sqrt{13-9x}\"></span> a proveďte zkoušku.",
+   "answer": "nemá řešení",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2+3x-4=0\"></span>, <span class=\"m\" data-tex=\"x=1\"></span> nebo <span class=\"m\" data-tex=\"x=-4\"></span>; levá strana je pak záporná.",
+   "id": "vsb-fbi-2015-pz23-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\sqrt{23-7x}=x-5\"></span> a proveďte zkoušku.",
+   "answer": "nemá řešení",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2-3x+2=0\"></span>, <span class=\"m\" data-tex=\"x=1\"></span> nebo <span class=\"m\" data-tex=\"x=2\"></span>; pravá strana je pak záporná.",
+   "id": "vsb-fbi-2015-pz24-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"x+2=\\sqrt{x+8}\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=1\"></span>",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2+3x-4=0\"></span>, <span class=\"m\" data-tex=\"x=1\"></span> nebo <span class=\"m\" data-tex=\"x=-4\"></span>; zkoušce vyhoví <span class=\"m\" data-tex=\"x=1\"></span>.",
+   "id": "vsb-fbi-2015-pz25-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"x+1=\\sqrt{3x+3}\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=-1\"></span>, <span class=\"m\" data-tex=\"x=2\"></span>",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2-x-2=0\"></span>; zkouška vyhovuje u obou kořenů.",
+   "id": "vsb-fbi-2015-pz31-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"1-x=\\sqrt{3-x}\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=-1\"></span>",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2-x-2=0\"></span>, <span class=\"m\" data-tex=\"x=2\"></span> nebo <span class=\"m\" data-tex=\"x=-1\"></span>; zkoušce vyhoví <span class=\"m\" data-tex=\"x=-1\"></span>.",
+   "id": "vsb-fbi-2017-pz1-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\sqrt{7x-5}=x+1\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=2\"></span>, <span class=\"m\" data-tex=\"x=3\"></span>",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2-5x+6=0\"></span>; zkouška vyhovuje u obou kořenů.",
+   "id": "vsb-fbi-2017-pz2-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\sqrt{3-11x}=x-3\"></span> a proveďte zkoušku.",
+   "answer": "nemá řešení",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2+5x+6=0\"></span>, <span class=\"m\" data-tex=\"x=-2\"></span> nebo <span class=\"m\" data-tex=\"x=-3\"></span>; pravá strana je pak záporná.",
+   "id": "vsb-fbi-2017-pz6-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"1-x=\\sqrt{3x-3}\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=1\"></span>",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2-5x+4=0\"></span>, <span class=\"m\" data-tex=\"x=1\"></span> nebo <span class=\"m\" data-tex=\"x=4\"></span>; zkoušce vyhoví <span class=\"m\" data-tex=\"x=1\"></span>.",
+   "id": "vsb-fbi-2017-pz14-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P12",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"x+1=\\sqrt{-1-x}\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=-1\"></span>",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2+3x+2=0\"></span>, <span class=\"m\" data-tex=\"x=-1\"></span> nebo <span class=\"m\" data-tex=\"x=-2\"></span>; zkoušce vyhoví <span class=\"m\" data-tex=\"x=-1\"></span>.",
+   "id": "vsb-fbi-2017-pz15-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P13",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 1, 2 body)",
    "body": "Kolik řešení má v reálném oboru rovnice <span class=\"m\" data-tex=\"\\sqrt{6-x}=x\"></span>?",
    "opts": [
@@ -2326,7 +2641,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P14",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 1, 2 body)",
    "body": "Kolik řešení má v reálném oboru rovnice <span class=\"m\" data-tex=\"\\sqrt{x+6}=-x\"></span>?",
    "opts": [
@@ -2349,7 +2664,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P15",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 7, 2 body)",
    "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"3\\sqrt{x+5}=x+5\\,.\"></span>",
    "opts": [
@@ -2372,7 +2687,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P16",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 7, 2 body)",
    "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\sqrt{10-5x}+2=x\\,.\"></span>",
    "opts": [
@@ -2395,7 +2710,22 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P17",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 3, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\sqrt{3x^2-2}=2-x\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=-3\"></span>, <span class=\"m\" data-tex=\"x=1\"></span>",
+   "sol": "Umocněním <span class=\"m\" data-tex=\"x^2+2x-3=0\"></span>; zkouška vyhovuje u obou kořenů.",
+   "id": "vsb-fbi-2015-pz32-03",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    8
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P18",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 10, 1 bod)",
    "body": "Graf funkce <span class=\"m\" data-tex=\"y=\\left(\\dfrac{1-\\sqrt x}{\\sqrt x-x}\\right)^2\"></span> je částí",
    "opts": [
@@ -2419,7 +2749,7 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P19",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 16, 7 bodů)",
    "body": "Pro definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{x+4}+\\sqrt{\\dfrac{1}{7-6x-x^2}}\"></span> platí",
    "opts": [
@@ -2443,7 +2773,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P20",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 10, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{x+2}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}\"></span> je pravdivé?",
    "opts": [
@@ -2473,7 +2803,7 @@
    ]
   },
   {
-   "q": "P8",
+   "q": "P21",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 5, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac{1}{x+2}}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}\"></span> je pravdivé?",
    "opts": [
@@ -2500,7 +2830,7 @@
    ]
   },
   {
-   "q": "P9",
+   "q": "P22",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 5, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac{x-2}{x^2-x-\\frac34}}\"></span> je pravdivé?",
    "opts": [
@@ -2530,6 +2860,22 @@
  "9": [
   {
    "q": "P1",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 2, 10 bodů)",
+   "body": "Stanovte definiční obor funkce <span class=\"m\" data-tex=\"y=\\sqrt{x^2+2x-3}\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"D=(-\\infty;-3\\rangle\\cup\\langle1;\\infty)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"(x+3)(x-1)\\ge0\"></span>.",
+   "id": "vsb-fbi-2017-pz6-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    9,
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 28)",
    "body": "Graf lineární funkce s předpisem <span class=\"m\" data-tex=\"y=\\frac23x+\\frac16\"></span> prochází body:",
    "opts": [
@@ -2551,7 +2897,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P3",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 29)",
    "body": "Graf kvadratické funkce s předpisem <span class=\"m\" data-tex=\"y=x^2+x+\\frac12\"></span> prochází body:",
    "opts": [
@@ -2573,7 +2919,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P4",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 30)",
    "body": "Kvadratická funkce s předpisem <span class=\"m\" data-tex=\"y=x^2+2x+\\frac12\"></span> má extrém:",
    "opts": [
@@ -2595,7 +2941,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P5",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 31)",
    "body": "Kvadratická funkce s předpisem <span class=\"m\" data-tex=\"y=x^2+2x+3\"></span> je klesající na intervalu:",
    "opts": [
@@ -2617,7 +2963,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P6",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 32)",
    "body": "Kvadratická funkce s předpisem <span class=\"m\" data-tex=\"y=-2x^2+4x+7\"></span> je klesající na intervalu:",
    "opts": [
@@ -2639,7 +2985,7 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P7",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 33)",
    "body": "Jsou dány body <span class=\"m\" data-tex=\"[2;3]\"></span>; <span class=\"m\" data-tex=\"[4;-1]\"></span>. Předpis lineární funkce, jejíž graf těmito body prochází, je:",
    "opts": [
@@ -2662,7 +3008,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P8",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 14, 5 bodů)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=x^3-6\"></span>. Rovnost <span class=\"m\" data-tex=\"2f(t)=f(2t)\"></span> platí právě pro",
    "opts": [
@@ -2686,7 +3032,7 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P9",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 14, 5 bodů)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=x^2-1\"></span>. Rovnost <span class=\"m\" data-tex=\"2f(t)=f(2t)\"></span> platí právě pro",
    "opts": [
@@ -2710,7 +3056,7 @@
    "needs_original": false
   },
   {
-   "q": "P9",
+   "q": "P10",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 13, 5 bodů)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=3x-2\"></span>. Rovnost <span class=\"m\" data-tex=\"f(2t+1)=0\"></span> platí pro",
    "opts": [
@@ -2733,7 +3079,7 @@
    "needs_original": false
   },
   {
-   "q": "P10",
+   "q": "P11",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 13, 5 bodů)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=2x+1\"></span>. Rovnost <span class=\"m\" data-tex=\"f(3t-2)=0\"></span> platí pro",
    "opts": [
@@ -2756,7 +3102,7 @@
    "needs_original": false
   },
   {
-   "q": "P11",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 4, 7 bodů)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=2x+1+x^2\"></span>. Spočtěte hodnotu rozdílu <span class=\"m\" data-tex=\"2f(t+1)-f(t-1)\"></span>.",
    "opts": [
@@ -2779,7 +3125,7 @@
    "needs_original": false
   },
   {
-   "q": "P12",
+   "q": "P13",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 3, 3 body)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=2x^2-2\"></span>. Spočtěte hodnotu rozdílu <span class=\"m\" data-tex=\"2f(t+1)-f(t-1)\"></span>.",
    "opts": [
@@ -2802,7 +3148,7 @@
    "needs_original": false
   },
   {
-   "q": "P13",
+   "q": "P14",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 8, 7 bodů)",
    "body": "Nalezněte obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{2x+3}-1\\,.\"></span>",
    "opts": [
@@ -2829,7 +3175,7 @@
    ]
   },
   {
-   "q": "P14",
+   "q": "P15",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 1, 3 body)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=x^2-2x+1\"></span>. Spočtěte hodnotu rozdílu <span class=\"m\" data-tex=\"f(t+1)-f(t-1)\"></span>.",
    "opts": [
@@ -2852,7 +3198,7 @@
    "needs_original": false
   },
   {
-   "q": "P15",
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 11, 7 bodů)",
    "body": "Nalezněte obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=2x^2-5x+3\\,.\"></span>",
    "opts": [
@@ -2875,7 +3221,7 @@
    "needs_original": false
   },
   {
-   "q": "P16",
+   "q": "P17",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 9, 2 body)",
    "body": "Určete definiční obor funkce zadané předpisem <span class=\"m\" data-tex=\"f:y=\\dfrac{1}{\\sqrt{2x+3}}\\,.\"></span>",
    "opts": [
@@ -2898,7 +3244,55 @@
    "needs_original": false
   },
   {
-   "q": "P17",
+   "q": "P18",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 2, 10 bodů)",
+   "body": "Stanovte definiční obor funkce <span class=\"m\" data-tex=\"y=\\sqrt{\\dfrac{x-1}{x+2}}+\\log(2x-3)\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"D=\\left(\\frac32;\\infty\\right)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x-1}{x+2}\\ge0\"></span> dává <span class=\"m\" data-tex=\"x&lt;-2\"></span> nebo <span class=\"m\" data-tex=\"x\\ge1\"></span>, spolu s <span class=\"m\" data-tex=\"x&gt;\\frac32\"></span>.",
+   "id": "vsb-fbi-2015-pz23-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    9,
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P19",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 2, 10 bodů)",
+   "body": "Stanovte definiční obor funkce <span class=\"m\" data-tex=\"y=\\mathrm e^{5x}+\\sqrt{\\dfrac{x-2}{x+2}}\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"D=(-\\infty;-2)\\cup\\langle2;\\infty)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x-2}{x+2}\\ge0\"></span>, <span class=\"m\" data-tex=\"x\\ne-2\"></span>.",
+   "id": "vsb-fbi-2015-pz24-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    9,
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P20",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 2, 10 bodů)",
+   "body": "Stanovte definiční obor funkce <span class=\"m\" data-tex=\"y=\\dfrac1{x^2-9}+2\\sqrt{2x+6}+\\log(2x-5)\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"D=\\left(\\frac52;3\\right)\\cup(3;\\infty)\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"x\\ne\\pm3\"></span>, <span class=\"m\" data-tex=\"x\\ge-3\"></span>, <span class=\"m\" data-tex=\"x&gt;\\frac52\"></span>.",
+   "id": "vsb-fbi-2017-pz2-02",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    9,
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P21",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 14, 5 bodů)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=1-x\"></span>. Rovnice <span class=\"m\" data-tex=\"\\frac{1}{f(x)}=f\\left(\\frac1x\\right)\"></span> v reálném oboru",
    "opts": [
@@ -2922,7 +3316,7 @@
    "needs_original": false
   },
   {
-   "q": "P18",
+   "q": "P22",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 14, 5 bodů)",
    "body": "Je dána funkce <span class=\"m\" data-tex=\"f(x)=x-1\"></span>. Rovnice <span class=\"m\" data-tex=\"\\frac{1}{f(x)}=f\\left(\\frac1x\\right)\"></span> v reálném oboru",
    "opts": [
@@ -3089,6 +3483,111 @@
  "11": [
   {
    "q": "P1",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"2\\cdot\\ln(x)=\\ln(12)-\\ln(3)+\\ln(1)\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=2\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\ln x^2=\\ln4\"></span>, <span class=\"m\" data-tex=\"x&gt;0\"></span>.",
+   "id": "vsb-fbi-2013-pz3-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"2+3^{x-3}=3^{x-2}\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=3\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"3^{x-2}-3^{x-3}=2\\cdot3^{x-3}=2\"></span>, tedy <span class=\"m\" data-tex=\"3^{x-3}=1\"></span>.",
+   "id": "vsb-fbi-2013-pz4-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\log(3-x)=2\\cdot\\log(x-1)\"></span> a stanovte podmínky její řešitelnosti.",
+   "answer": "<span class=\"m\" data-tex=\"x=2\"></span> (podmínky <span class=\"m\" data-tex=\"1&lt;x&lt;3\"></span>)",
+   "sol": "<span class=\"m\" data-tex=\"3-x=(x-1)^2\\Rightarrow x^2-x-2=0\"></span>, <span class=\"m\" data-tex=\"x=2\"></span> nebo <span class=\"m\" data-tex=\"x=-1\"></span>; podmínkám vyhoví <span class=\"m\" data-tex=\"x=2\"></span>.",
+   "id": "vsb-fbi-2013-pz11-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\left(\\dfrac49\\right)^x=\\left(\\dfrac32\\right)^8\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=-4\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\left(\\frac23\\right)^{2x}=\\left(\\frac23\\right)^{-8}\"></span>.",
+   "id": "vsb-fbi-2015-pz23-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"4^{x-7}=\\dfrac1{64}\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=4\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"4^{x-7}=4^{-3}\"></span>.",
+   "id": "vsb-fbi-2015-pz24-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"2^{x+2}-2^x=24\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=3\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"3\\cdot2^x=24\"></span>.",
+   "id": "vsb-fbi-2017-pz1-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\dfrac{5^{2-3x}}5=1\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=\\frac13\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"5^{1-3x}=5^0\"></span>.",
+   "id": "vsb-fbi-2017-pz6-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 8, 3 body)",
    "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\left(3^x\\right)^2\\cdot3^{-2x}=27\"></span> je",
    "opts": [
@@ -3111,7 +3610,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P9",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 8, 3 body)",
    "body": "Množina všech řešení rovnice <span class=\"m\" data-tex=\"\\left(2^x\\right)^2\\cdot2^{-3x}=16\"></span> je",
    "opts": [
@@ -3134,7 +3633,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P10",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 6, 2 body)",
    "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> <span class=\"m\" data-tex=\"2^{2x-1}=8\"></span>",
    "opts": [
@@ -3157,7 +3656,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P11",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 6, 2 body)",
    "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> <span class=\"m\" data-tex=\"\\left(\\dfrac49\\right)^{x+2}=\\left(\\dfrac32\\right)^{3-x}\"></span>",
    "opts": [
@@ -3180,7 +3679,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P12",
    "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 1, 1 bod)",
    "body": "Množina všech reálných čísel, pro která platí <span class=\"m\" data-tex=\"\\left(\\frac45\\right)^x&gt;\\frac{25}{16}\"></span>, je rovna množině",
    "opts": [
@@ -3202,7 +3701,22 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P13",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"2^x+2^{1-x}-3=0\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=0\"></span>, <span class=\"m\" data-tex=\"x=1\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"t=2^x\"></span>: <span class=\"m\" data-tex=\"t^2-3t+2=0\"></span>, <span class=\"m\" data-tex=\"t=1\"></span> nebo <span class=\"m\" data-tex=\"t=2\"></span>.",
+   "id": "vsb-fbi-2017-pz14-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P14",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 1, 1 bod)",
    "body": "Množinou všech řešení nerovnice <span class=\"m\" data-tex=\"2^{|x+3|}&lt;2\"></span> s neznámou <span class=\"m\" data-tex=\"x\\in\\mathbb{R}\"></span> je",
    "opts": [
@@ -3226,7 +3740,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P15",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 11, 5 bodů)",
    "body": "Za jaký minimální počet let klesne hodnota předmětu na méně než desetinu původní ceny, pokud ročně odepisujeme <span class=\"m\" data-tex=\"18\\%\"></span> ceny předmětu z předchozího roku?",
    "opts": [
@@ -3249,7 +3763,7 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 18, 7 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2^{x-2}+4^{x-\\frac12}=9\"></span> platí",
    "opts": [
@@ -3272,7 +3786,7 @@
    "needs_original": false
   },
   {
-   "q": "P9",
+   "q": "P17",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 7, 5 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"9^{x-\\frac12}+9^{\\frac12-x}=\\dfrac{10}{3}\"></span> je pravdivé.",
    "opts": [
@@ -3295,7 +3809,7 @@
    "needs_original": false
   },
   {
-   "q": "P10",
+   "q": "P18",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 9, 7 bodů)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"3^x+5\\cdot4^x=2\\cdot4^{x+1}-3^{x+1}\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3318,7 +3832,7 @@
    "needs_original": false
   },
   {
-   "q": "P11",
+   "q": "P19",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 3, 3 body)",
    "body": "Pro řešení nerovnice <span class=\"m\" data-tex=\"\\left(\\dfrac13\\right)^{x^2}\\le3^{-x-6}\"></span> platí",
    "opts": [
@@ -3551,6 +4065,22 @@
   },
   {
    "q": "P10",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\log_a\\dfrac14=-\\dfrac23\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"a=8\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"a^{-2/3}=\\frac14\"></span>, tedy <span class=\"m\" data-tex=\"a^{2/3}=4\"></span>, <span class=\"m\" data-tex=\"a=4^{3/2}=8\"></span>.",
+   "id": "vsb-fbi-2017-pz2-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    12,
+    13
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 6, 1 bod)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\log_2y=3\\log_2\\dfrac{x-2}{2}-2\\log_2\\dfrac{x^2-4}{2}\"></span>, pak číslo <span class=\"m\" data-tex=\"y\"></span> je rovno",
    "opts": [
@@ -3573,7 +4103,7 @@
    "needs_original": false
   },
   {
-   "q": "P11",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 15, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\log_{\\frac12}x\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-2,2\\rangle\"></span> právě pro",
    "opts": [
@@ -3596,7 +4126,7 @@
    "needs_original": false
   },
   {
-   "q": "P12",
+   "q": "P13",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 9, 5 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\log_5x+1}\"></span> je pravdivé?",
    "opts": [
@@ -3619,7 +4149,7 @@
    "needs_original": false
   },
   {
-   "q": "P13",
+   "q": "P14",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 10, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\ln(2x+1)\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-1,1\\rangle\"></span> právě pro",
    "opts": [
@@ -3642,7 +4172,7 @@
    "needs_original": false
   },
   {
-   "q": "P14",
+   "q": "P15",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 10, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2+8x+15)}{\\sqrt{2-x}}\"></span> je pravdivé?",
    "opts": [
@@ -3666,7 +4196,7 @@
    "needs_original": false
   },
   {
-   "q": "P15",
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 12, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2+8x+16)}{\\sqrt{x+5}}\"></span> je pravdivé?",
    "opts": [
@@ -3692,6 +4222,66 @@
  "13": [
   {
    "q": "P1",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"2\\ln x-\\ln1=\\ln18-\\ln2\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=3\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\ln x^2=\\ln9\"></span>, <span class=\"m\" data-tex=\"x&gt;0\"></span>.",
+   "id": "vsb-fbi-2015-pz25-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    13
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\dfrac23\\log x=2\\log2\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=8\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\log x=3\\log2=\\log8\"></span>.",
+   "id": "vsb-fbi-2015-pz31-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    13
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\dfrac13\\log x=1-\\log5\"></span> a proveďte zkoušku.",
+   "answer": "<span class=\"m\" data-tex=\"x=8\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"1-\\log5=\\log2\"></span>, tedy <span class=\"m\" data-tex=\"\\log x=3\\log2\"></span>.",
+   "id": "vsb-fbi-2015-pz32-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    13
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 5, 10 bodů)",
+   "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\log(4x-3)=2\\log(2x-1)\"></span> a stanovte podmínky její řešitelnosti.",
+   "answer": "<span class=\"m\" data-tex=\"x=1\"></span> (podmínka <span class=\"m\" data-tex=\"x&gt;\\frac34\"></span>)",
+   "sol": "<span class=\"m\" data-tex=\"4x-3=(2x-1)^2\\Rightarrow(x-1)^2=0\"></span>.",
+   "id": "vsb-fbi-2017-pz15-05",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    13
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 5, 2 body)",
    "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> <span class=\"m\" data-tex=\"\\log_2(4x-4)-\\log_2(3-x)=2\"></span>",
    "opts": [
@@ -3714,7 +4304,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 12, 7 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"\\dfrac{\\log_3(5x+4)}{\\log_3(x-4)}=2\"></span> je pravdivé.",
    "opts": [
@@ -3737,7 +4327,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 7, 7 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"\\dfrac{\\log_3(6x-2)}{\\log_3(x-3)}=2\"></span> je pravdivé.",
    "opts": [
@@ -3764,7 +4354,7 @@
    ]
   },
   {
-   "q": "P4",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 8, 7 bodů)",
    "body": "Najděte všechna reálná řešení nerovnice <span class=\"m\" data-tex=\"\\log_{\\frac12}(x^2)-\\log_{\\frac12}(x-1)&lt;0\\,.\"></span>",
    "opts": [
@@ -3787,7 +4377,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 7, 7 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"\\dfrac{\\log_3^2(9x)}{\\log_3(81x^2)}=\\dfrac32\"></span> platí:",
    "opts": [
@@ -3816,7 +4406,7 @@
    ]
   },
   {
-   "q": "P6",
+   "q": "P10",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 5, 2 body)",
    "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> <span class=\"m\" data-tex=\"\\log(2x+9)-2\\log x+\\log(x-4)=2-\\log50\"></span>",
    "opts": [
@@ -3839,7 +4429,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 14, 5 bodů)",
    "body": "Najděte všechna reálná řešení nerovnice <span class=\"m\" data-tex=\"\\log_{\\frac13}(x+1)-\\log_{\\frac13}(x-1)\\ge\\log_{\\frac13}x\\,.\"></span>",
    "opts": [
@@ -4058,6 +4648,201 @@
   },
   {
    "q": "P3",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"2\\cdot\\cos\\left(\\dfrac{3x-2\\pi}3\\right)-\\sqrt3=0.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x=\\frac\\pi2+2k\\pi\"></span>, <span class=\"m\" data-tex=\"x=\\frac{5\\pi}6+2k\\pi\"></span>, <span class=\"m\" data-tex=\"k\\in\\mathbb{Z}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\cos\\frac{3x-2\\pi}3=\\frac{\\sqrt3}2\"></span>: <span class=\"m\" data-tex=\"\\frac{3x-2\\pi}3=\\pm\\frac\\pi6+2k\\pi\"></span>.",
+   "id": "vsb-fbi-2013-pz3-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"1-2\\cos(2x-\\frac\\pi3)=0.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x=k\\pi\"></span>, <span class=\"m\" data-tex=\"x=\\frac\\pi3+k\\pi\"></span>, <span class=\"m\" data-tex=\"k\\in\\mathbb{Z}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\cos(2x-\\frac\\pi3)=\\frac12\"></span>: <span class=\"m\" data-tex=\"2x-\\frac\\pi3=\\pm\\frac\\pi3+2k\\pi\"></span>.",
+   "id": "vsb-fbi-2013-pz4-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"\\operatorname{tg}\\left(\\frac{2x-\\pi}4\\right)+\\sqrt3=0.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"x=-\\frac\\pi6+2k\\pi\"></span>, <span class=\"m\" data-tex=\"k\\in\\mathbb{Z}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{2x-\\pi}4=-\\frac\\pi3+k\\pi\"></span>.",
+   "id": "vsb-fbi-2013-pz11-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"\\sin x\\,(1-2\\sin x)=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\left\\{k\\pi,\\frac\\pi6+2k\\pi,\\frac{5\\pi}6+2k\\pi\\right\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\sin x=0\"></span> nebo <span class=\"m\" data-tex=\"\\sin x=\\frac12\"></span>.",
+   "id": "vsb-fbi-2015-pz23-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"\\cos x\\,(1-2\\sin x)=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\left\\{\\frac\\pi2+k\\pi,\\frac\\pi6+2k\\pi,\\frac{5\\pi}6+2k\\pi\\right\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\cos x=0\"></span> nebo <span class=\"m\" data-tex=\"\\sin x=\\frac12\"></span>.",
+   "id": "vsb-fbi-2015-pz24-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"\\operatorname{tg}x\\,(1+2\\sin x)=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\left\\{k\\pi,\\frac{7\\pi}6+2k\\pi,\\frac{11\\pi}6+2k\\pi\\right\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\operatorname{tg}x=0\"></span> nebo <span class=\"m\" data-tex=\"\\sin x=-\\frac12\"></span>.",
+   "id": "vsb-fbi-2015-pz25-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"\\cos x\\,(1+2\\sin x)=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\left\\{\\frac\\pi2+k\\pi,\\frac{7\\pi}6+2k\\pi,\\frac{11\\pi}6+2k\\pi\\right\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\cos x=0\"></span> nebo <span class=\"m\" data-tex=\"\\sin x=-\\frac12\"></span>.",
+   "id": "vsb-fbi-2015-pz31-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"\\cos x\\,(1+2\\cos x)=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\left\\{\\frac\\pi2+k\\pi,\\frac{2\\pi}3+2k\\pi,\\frac{4\\pi}3+2k\\pi\\right\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\cos x=0\"></span> nebo <span class=\"m\" data-tex=\"\\cos x=-\\frac12\"></span>.",
+   "id": "vsb-fbi-2015-pz32-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"2-4\\sin\\left(x+\\dfrac\\pi3\\right)=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\left\\{-\\frac\\pi6+2k\\pi,\\frac\\pi2+2k\\pi\\right\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\sin\\left(x+\\frac\\pi3\\right)=\\frac12\"></span>: <span class=\"m\" data-tex=\"x+\\frac\\pi3=\\frac\\pi6+2k\\pi\"></span> nebo <span class=\"m\" data-tex=\"\\frac{5\\pi}6+2k\\pi\"></span>.",
+   "id": "vsb-fbi-2017-pz1-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P12",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"1+2\\sin\\left(x-\\dfrac\\pi6\\right)=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\left\\{\\frac{4\\pi}3+2k\\pi,2k\\pi\\right\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\sin\\left(x-\\frac\\pi6\\right)=-\\frac12\"></span>: <span class=\"m\" data-tex=\"x-\\frac\\pi6=\\frac{7\\pi}6+2k\\pi\"></span> nebo <span class=\"m\" data-tex=\"\\frac{11\\pi}6+2k\\pi\"></span>.",
+   "id": "vsb-fbi-2017-pz2-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P13",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"3\\operatorname{tg}\\left(\\dfrac{2x-3\\pi}6\\right)+\\sqrt3=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\{\\pi+3k\\pi\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\operatorname{tg}\\frac{2x-3\\pi}6=-\\frac{\\sqrt3}3\"></span>: <span class=\"m\" data-tex=\"\\frac{2x-3\\pi}6=-\\frac\\pi6+k\\pi\"></span>.",
+   "id": "vsb-fbi-2017-pz6-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P14",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"3\\operatorname{tg}\\left(\\dfrac{3x-\\pi}6\\right)-\\sqrt3=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\left\\{\\frac{2\\pi}3+2k\\pi\\right\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\operatorname{tg}\\frac{3x-\\pi}6=\\frac{\\sqrt3}3\"></span>: <span class=\"m\" data-tex=\"\\frac{3x-\\pi}6=\\frac\\pi6+k\\pi\"></span>.",
+   "id": "vsb-fbi-2017-pz14-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P15",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 4, 10 bodů)",
+   "body": "Řešte goniometrickou rovnici <span class=\"m\" data-tex=\"\\operatorname{tg}\\left(\\dfrac{4x-2\\pi}3\\right)+\\sqrt3=0\"></span> a zapište množinu všech řešení.",
+   "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb{Z}}\\left\\{\\frac\\pi4+\\frac{3k\\pi}4\\right\\}\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{4x-2\\pi}3=-\\frac\\pi3+k\\pi\"></span>.",
+   "id": "vsb-fbi-2017-pz15-04",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    15
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P16",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 3, 1 bod)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\sin\\alpha\\cdot\\cos\\alpha=\\frac12\"></span> a <span class=\"m\" data-tex=\"\\alpha\\in(\\pi,2\\pi)\"></span>, pak <span class=\"m\" data-tex=\"\\operatorname{tg}(\\pi-\\alpha)\"></span>",
    "opts": [
@@ -4081,7 +4866,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P17",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 8, 2 body)",
    "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\sin^2x+\\sin^22x=1\\,.\"></span>",
    "opts": [
@@ -4104,7 +4889,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P18",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 8, 2 body)",
    "body": "Řešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\sin x-\\cos2x=0\\,.\"></span>",
    "opts": [
@@ -4127,7 +4912,7 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P19",
    "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 5, 2 body)",
    "body": "Počet všech <span class=\"m\" data-tex=\"x\"></span> z intervalu <span class=\"m\" data-tex=\"(\\pi,2\\pi)\"></span>, pro která platí <span class=\"m\" data-tex=\"1-\\cos^2x-\\sin x=0\"></span>, je roven číslu",
    "opts": [
@@ -4149,7 +4934,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P20",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 4, 1 bod)",
    "body": "V intervalu <span class=\"m\" data-tex=\"\\langle0,2\\pi\\rangle\"></span> má rovnice <span class=\"m\" data-tex=\"\\sin x=\\cos x-1\"></span>",
    "opts": [
@@ -5564,6 +6349,182 @@
  "27": [
   {
    "q": "P1",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 6, 10 bodů)",
+   "body": "Je dána přímka <span class=\"m\" data-tex=\"p\"></span> body <span class=\"m\" data-tex=\"A=[1,-1],B=[3,2]\"></span>. Určete obecnou rovnici přímky <span class=\"m\" data-tex=\"q\"></span>, která prochází bodem <span class=\"m\" data-tex=\"C=[1,2]\"></span> a je kolmá na přímku <span class=\"m\" data-tex=\"p\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"q\\colon2x+3y-8=0\"></span>",
+   "sol": "Směr <span class=\"m\" data-tex=\"p\"></span> je <span class=\"m\" data-tex=\"(2,3)\"></span> — to je normála <span class=\"m\" data-tex=\"q\"></span>; dosazením <span class=\"m\" data-tex=\"C\"></span>.",
+   "id": "vsb-fbi-2013-pz3-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 6, 10 bodů)",
+   "body": "Nalezněte obecnou rovnici přímky <span class=\"m\" data-tex=\"r\"></span> procházející středem úsečky <span class=\"m\" data-tex=\"AB,\\ A=[-1,-2],\\ B=[2,1]\"></span> rovnoběžně s přímkou <span class=\"m\" data-tex=\"p\\colon-x+4y-10=0.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"r\\colon2x-8y-5=0\"></span>",
+   "sol": "Střed <span class=\"m\" data-tex=\"S=\\left[\\frac12,-\\frac12\\right]\"></span>; <span class=\"m\" data-tex=\"-x+4y+c=0\"></span>, z bodu <span class=\"m\" data-tex=\"S\"></span>: <span class=\"m\" data-tex=\"c=\\frac52\"></span>.",
+   "id": "vsb-fbi-2013-pz4-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 6, 10 bodů)",
+   "body": "Zjistěte výpočtem, zda na přímce <span class=\"m\" data-tex=\"p\"></span> určené body <span class=\"m\" data-tex=\"A=[-4,4]\"></span> a <span class=\"m\" data-tex=\"B=[2,1]\"></span> leží bod <span class=\"m\" data-tex=\"C=[1,2]\"></span>.",
+   "answer": "neleží (<span class=\"m\" data-tex=\"p\\colon x+2y-4=0\"></span>)",
+   "sol": "Pro <span class=\"m\" data-tex=\"C\"></span>: <span class=\"m\" data-tex=\"1+4-4=1\\ne0\"></span>.",
+   "id": "vsb-fbi-2013-pz11-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 6, 10 bodů)",
+   "body": "Přímka <span class=\"m\" data-tex=\"p\"></span> je dána body <span class=\"m\" data-tex=\"A=[1,1],B=[-4,-2]\"></span>. Určete obecnou rovnici přímky <span class=\"m\" data-tex=\"q\"></span>, která je kolmá k přímce <span class=\"m\" data-tex=\"p\"></span> a prochází bodem <span class=\"m\" data-tex=\"C=[1,-2]\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"q\\colon5x+3y+1=0\"></span>",
+   "sol": "Směr <span class=\"m\" data-tex=\"p\"></span> je <span class=\"m\" data-tex=\"(5,3)\"></span> — to je normála <span class=\"m\" data-tex=\"q\"></span>.",
+   "id": "vsb-fbi-2015-pz23-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 6, 10 bodů)",
+   "body": "Nalezněte obecnou rovnici přímky <span class=\"m\" data-tex=\"r\"></span>, která prochází středem úsečky <span class=\"m\" data-tex=\"AB,A=[3,0],B=[1,-4]\"></span>, a je rovnoběžná s přímkou <span class=\"m\" data-tex=\"p\\colon x-4y-1=0\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"r\\colon x-4y-10=0\"></span>",
+   "sol": "Střed <span class=\"m\" data-tex=\"S=[2,-2]\"></span>; <span class=\"m\" data-tex=\"x-4y+c=0\"></span>, z bodu <span class=\"m\" data-tex=\"S\"></span>: <span class=\"m\" data-tex=\"c=-10\"></span>.",
+   "id": "vsb-fbi-2015-pz24-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 6, 10 bodů)",
+   "body": "Přímka <span class=\"m\" data-tex=\"p\"></span> je dána body <span class=\"m\" data-tex=\"A=[-3,1],\\ B=[2,2]\"></span>. Určete obecnou rovnici přímky <span class=\"m\" data-tex=\"q\"></span>, která je kolmá k přímce <span class=\"m\" data-tex=\"p\"></span> a prochází bodem <span class=\"m\" data-tex=\"C=[-1,-1]\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"q\\colon5x+y+6=0\"></span>",
+   "sol": "Směr <span class=\"m\" data-tex=\"p\"></span> je <span class=\"m\" data-tex=\"(5,1)\"></span> — to je normála <span class=\"m\" data-tex=\"q\"></span>.",
+   "id": "vsb-fbi-2015-pz25-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 6, 10 bodů)",
+   "body": "Určete obecnou rovnici osy úsečky <span class=\"m\" data-tex=\"AB\"></span>, tj. přímky kolmé k přímce dané body <span class=\"m\" data-tex=\"A,B\"></span>, procházející středem úsečky <span class=\"m\" data-tex=\"AB\"></span>. <span class=\"m\" data-tex=\"A=[1,-6],\\ B=[3,-2]\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"x+2y+6=0\"></span>",
+   "sol": "Střed <span class=\"m\" data-tex=\"S=[2,-4]\"></span>, normála osy je <span class=\"m\" data-tex=\"\\overrightarrow{AB}=(2,4)\"></span>.",
+   "id": "vsb-fbi-2015-pz32-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 6, 10 bodů)",
+   "body": "Určete obecnou rovnici osy úsečky <span class=\"m\" data-tex=\"AB\"></span>, tj. přímky kolmé k přímce dané body <span class=\"m\" data-tex=\"A,B\"></span>, procházející středem úsečky <span class=\"m\" data-tex=\"AB\"></span>. <span class=\"m\" data-tex=\"A=[-1,2],B=[2,1]\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"3x-y=0\"></span>",
+   "sol": "Střed <span class=\"m\" data-tex=\"S=\\left[\\frac12,\\frac32\\right]\"></span>, normála osy je <span class=\"m\" data-tex=\"\\overrightarrow{AB}=(3,-1)\"></span>.",
+   "id": "vsb-fbi-2017-pz1-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 6, 10 bodů)",
+   "body": "Přímka <span class=\"m\" data-tex=\"p\"></span> je dána body <span class=\"m\" data-tex=\"A=[-2,2],B=[2,1]\"></span>. Nalezněte obecnou rovnici přímky <span class=\"m\" data-tex=\"q\"></span> rovnoběžné s přímkou <span class=\"m\" data-tex=\"p\"></span>, procházející bodem <span class=\"m\" data-tex=\"C=[0,0]\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"q\\colon x+4y=0\"></span>",
+   "sol": "Směr <span class=\"m\" data-tex=\"p\"></span> je <span class=\"m\" data-tex=\"(4,-1)\"></span>, normála <span class=\"m\" data-tex=\"(1,4)\"></span>.",
+   "id": "vsb-fbi-2017-pz2-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 6, 10 bodů)",
+   "body": "Zjistěte výpočtem, zda na přímce <span class=\"m\" data-tex=\"p\"></span> určené body <span class=\"m\" data-tex=\"A=[3,-2]\"></span> a <span class=\"m\" data-tex=\"B=[-4,1]\"></span> leží bod <span class=\"m\" data-tex=\"C=[-2,0]\"></span>.",
+   "answer": "neleží (<span class=\"m\" data-tex=\"p\\colon3x+7y+5=0\"></span>)",
+   "sol": "Pro <span class=\"m\" data-tex=\"C\"></span>: <span class=\"m\" data-tex=\"-6+0+5=-1\\ne0\"></span>.",
+   "id": "vsb-fbi-2017-pz6-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 6, 10 bodů)",
+   "body": "Zjistěte výpočtem, zda na přímce <span class=\"m\" data-tex=\"p\"></span> určené body <span class=\"m\" data-tex=\"A=[1,-2]\"></span> a <span class=\"m\" data-tex=\"B=[-2,0]\"></span> leží bod <span class=\"m\" data-tex=\"C=\\left[0,-\\dfrac43\\right]\"></span>.",
+   "answer": "leží (<span class=\"m\" data-tex=\"p\\colon2x+3y+4=0\"></span>)",
+   "sol": "Pro <span class=\"m\" data-tex=\"C\"></span>: <span class=\"m\" data-tex=\"0-4+4=0\"></span>.",
+   "id": "vsb-fbi-2017-pz15-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P12",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 7, 3 body)",
    "body": "Rovnice přímky procházející body <span class=\"m\" data-tex=\"A=[2,3]\"></span> a <span class=\"m\" data-tex=\"B=[-1,4]\"></span> je",
    "opts": [
@@ -5586,7 +6547,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P13",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 7, 3 body)",
    "body": "Rovnice přímky procházející body <span class=\"m\" data-tex=\"A=[1,3]\"></span> a <span class=\"m\" data-tex=\"B=[-1,4]\"></span> je",
    "opts": [
@@ -5609,7 +6570,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P14",
    "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 7, 2 body)",
    "body": "Rovnici přímky v rovině, která prochází bodem <span class=\"m\" data-tex=\"A=[0,2]\"></span> a je kolmá na přímku <span class=\"m\" data-tex=\"p\\colon2x-y+1=0\"></span> lze zapsat ve tvaru",
    "opts": [
@@ -5630,11 +6591,43 @@
     28
    ],
    "needs_original": false
+  },
+  {
+   "q": "P15",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 6, 10 bodů)",
+   "body": "Nalezněte obecnou rovnici přímky <span class=\"m\" data-tex=\"r\"></span> procházející středem úsečky <span class=\"m\" data-tex=\"AB,A=[3,3],B=[7,-1]\"></span> kolmo na přímku <span class=\"m\" data-tex=\"p\\colon5x+8y-19=0.\"></span>",
+   "answer": "<span class=\"m\" data-tex=\"r\\colon8x-5y-35=0\"></span>",
+   "sol": "Střed <span class=\"m\" data-tex=\"S=[5,1]\"></span>; normála <span class=\"m\" data-tex=\"p\"></span> <span class=\"m\" data-tex=\"(5,8)\"></span> je směrem <span class=\"m\" data-tex=\"r\"></span>, normála <span class=\"m\" data-tex=\"r\"></span> je <span class=\"m\" data-tex=\"(8,-5)\"></span>.",
+   "id": "vsb-fbi-2015-pz31-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    27,
+    28
+   ],
+   "needs_original": false
   }
  ],
  "28": [
   {
    "q": "P1",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 6, 10 bodů)",
+   "body": "Určete číslo <span class=\"m\" data-tex=\"a\"></span> tak, aby přímka <span class=\"m\" data-tex=\"p\\colon ax-y-8=0\"></span> procházela průsečíkem přímek <span class=\"m\" data-tex=\"r\\colon-x+5y-2=0\"></span> a <span class=\"m\" data-tex=\"s\\colon-2x-y+7=0\"></span>.",
+   "answer": "<span class=\"m\" data-tex=\"a=3\"></span>",
+   "sol": "Průsečík <span class=\"m\" data-tex=\"r\"></span> a <span class=\"m\" data-tex=\"s\"></span> je <span class=\"m\" data-tex=\"[3,1]\"></span>; <span class=\"m\" data-tex=\"3a-1-8=0\"></span>.",
+   "id": "vsb-fbi-2017-pz14-06",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 1,
+   "topics": [
+    28,
+    27
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 7, 3 body)",
    "body": "Určete vzájemnou polohu přímek <span class=\"m\" data-tex=\"p\"></span> a <span class=\"m\" data-tex=\"q\"></span>, kde <span class=\"m\" data-tex=\"p\\colon2x+3y-7=0\"></span>, <span class=\"m\" data-tex=\"q\\colon x=2+3t,y=4-2t,t\\in\\mathbf{R}\"></span>.",
    "opts": [
@@ -5659,7 +6652,7 @@
    "needs_original": false
   },
   {
-   "q": "P2",
+   "q": "P3",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 7, 3 body)",
    "body": "Určete vzájemnou polohu přímek <span class=\"m\" data-tex=\"p\"></span> a <span class=\"m\" data-tex=\"q\"></span>, kde <span class=\"m\" data-tex=\"p\\colon2x-3y+5=0\"></span>, <span class=\"m\" data-tex=\"q\\colon x=-1+3t,y=1+2t,t\\in\\mathbf{R}\"></span>.",
    "opts": [
@@ -5684,7 +6677,7 @@
    "needs_original": false
   },
   {
-   "q": "P3",
+   "q": "P4",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 19, 3 body)",
    "body": "Určete hodnoty parametrů <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span> tak, aby přímky <span class=\"m\" data-tex=\"p:ax+4y+1=0\"></span> a <span class=\"m\" data-tex=\"q:3x+2y-b=0\"></span> byly totožné.",
    "opts": [
@@ -5708,7 +6701,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 19, 3 body)",
    "body": "Určete hodnoty parametrů <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span> tak, aby přímky <span class=\"m\" data-tex=\"p:ax+4y+1=0\"></span> a <span class=\"m\" data-tex=\"q:3x+2y-b=0\"></span> byly navzájem kolmé.",
    "opts": [
@@ -5731,7 +6724,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 13, 7 bodů)",
    "body": "Určete hodnoty parametrů <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span> tak, aby přímky <span class=\"m\" data-tex=\"p:ax+4y+1=0\"></span> a <span class=\"m\" data-tex=\"q:3x+2y-b=0\"></span> měly právě jeden společný bod.",
    "opts": [
@@ -5758,7 +6751,7 @@
    ]
   },
   {
-   "q": "P6",
+   "q": "P7",
    "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 2, 1 bod)",
    "body": "Přímky <span class=\"m\" data-tex=\"p\\colon x-2=0\"></span> a <span class=\"m\" data-tex=\"q\\colon y-2=0\"></span> se protínají v bodě",
    "opts": [
@@ -7132,6 +8125,201 @@
   },
   {
    "q": "P35",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\dfrac{ax-x^2}{a^2+2ax+x^2}\\cdot\\dfrac{a^2+ax}{a^2-2ax+x^2}\"></span> a stanovte podmínky, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{ax}{a^2-x^2}\"></span>, podmínka <span class=\"m\" data-tex=\"a\\ne\\pm x\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x(a-x)}{(a+x)^2}\\cdot\\frac{a(a+x)}{(a-x)^2}=\\frac{ax}{(a+x)(a-x)}\"></span>.",
+   "id": "vsb-fbi-2013-pz3-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P36",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left[\\left(\\dfrac xy\\right)^2-\\dfrac x{y^2}\\right]:\\left(\\dfrac y{x-1}\\right)^{-2}\"></span> a stanovte podmínky, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac x{x-1}\"></span>, podmínky <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne1\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x(x-1)}{y^2}\\cdot\\frac{y^2}{(x-1)^2}=\\frac x{x-1}\"></span>.",
+   "id": "vsb-fbi-2013-pz4-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P37",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left[\\left(\\dfrac xy-\\dfrac yx\\right):\\left(\\dfrac xy-2+\\dfrac yx\\right)\\right]:\\left(1+\\dfrac yx\\right)\"></span> a stanovte, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac x{x-y}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne\\pm y\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{(x-y)(x+y)}{xy}\\cdot\\frac{xy}{(x-y)^2}\\cdot\\frac x{x+y}=\\frac x{x-y}\"></span>.",
+   "id": "vsb-fbi-2013-pz11-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P38",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac4{x-2}+1\\right)\\cdot\\left(\\dfrac4{x+2}-1\\right)\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=-1\"></span>, podmínka <span class=\"m\" data-tex=\"x\\ne\\pm2\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x+2}{x-2}\\cdot\\frac{2-x}{x+2}=-1\"></span>.",
+   "id": "vsb-fbi-2015-pz23-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P39",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac1y+\\dfrac15\\right)^{-1}\\cdot\\left(\\dfrac1y-\\dfrac y{25}\\right)\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{5-y}5\"></span>, podmínky <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"y\\ne-5\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{5y}{y+5}\\cdot\\frac{(5-y)(5+y)}{25y}=\\frac{5-y}5\"></span>.",
+   "id": "vsb-fbi-2015-pz24-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P40",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac{x-2}{x-3}\\right)^{-1}+\\dfrac{5x}{x^2-4}-\\left(\\dfrac{x+2}x\\right)^{-1}\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{6(x-1)}{x^2-4}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne3\"></span>, <span class=\"m\" data-tex=\"x\\ne\\pm2\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x-3}{x-2}+\\frac{5x}{x^2-4}-\\frac x{x+2}=\\frac{(x-3)(x+2)+5x-x(x-2)}{x^2-4}=\\frac{6x-6}{x^2-4}\"></span>.",
+   "id": "vsb-fbi-2015-pz25-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P41",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\dfrac{x^2-y^2}{3x^2y^2}:\\left(\\dfrac{1+2x}x-\\dfrac{2y-1}y\\right)\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{x-y}{3xy}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne-y\"></span>",
+   "sol": "Závorka je <span class=\"m\" data-tex=\"\\frac{x+y}{xy}\"></span>; <span class=\"m\" data-tex=\"\\frac{(x-y)(x+y)}{3x^2y^2}\\cdot\\frac{xy}{x+y}=\\frac{x-y}{3xy}\"></span>.",
+   "id": "vsb-fbi-2015-pz31-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P42",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac1{1-a}-1\\right):\\left(\\dfrac{2a^2}{1-a}-a\\right)\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac1{3a-1}\"></span>, podmínky <span class=\"m\" data-tex=\"a\\ne0\"></span>, <span class=\"m\" data-tex=\"a\\ne1\"></span>, <span class=\"m\" data-tex=\"a\\ne\\frac13\"></span>",
+   "sol": "<span class=\"m\" data-tex=\"\\frac a{1-a}:\\frac{3a^2-a}{1-a}=\\frac a{a(3a-1)}\"></span>.",
+   "id": "vsb-fbi-2015-pz32-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P43",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac a{b^2+ab}-\\dfrac2{a+b}+\\dfrac b{a^2+ab}\\right):\\left(\\dfrac ba-2+\\dfrac ab\\right)\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac1{a+b}\"></span>, podmínky <span class=\"m\" data-tex=\"a\\ne\\pm b\"></span>, <span class=\"m\" data-tex=\"a\\ne0\"></span>, <span class=\"m\" data-tex=\"b\\ne0\"></span>",
+   "sol": "Řešení z PDF: první závorka je <span class=\"m\" data-tex=\"\\frac{a^2-2ab+b^2}{ab(a+b)}\"></span>, druhá <span class=\"m\" data-tex=\"\\frac{b^2-2ab+a^2}{ab}\"></span>.",
+   "id": "vsb-fbi-2017-pz1-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P44",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=1-t+\\dfrac t{1-\\frac t{t+1}}\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=t^2+1\"></span>, podmínka <span class=\"m\" data-tex=\"t\\ne-1\"></span>",
+   "sol": "Řešení z PDF: <span class=\"m\" data-tex=\"1-\\frac t{t+1}=\\frac1{t+1}\"></span>, tedy <span class=\"m\" data-tex=\"V=1-t+t(t+1)\"></span>.",
+   "id": "vsb-fbi-2017-pz2-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P45",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left[\\left(\\dfrac xy-\\dfrac yx\\right):\\left(\\dfrac xy-2+\\dfrac yx\\right)\\right]:\\left(1+\\dfrac yx\\right)\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac x{x-y}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne\\pm y\"></span>",
+   "sol": "Řešení z PDF: <span class=\"m\" data-tex=\"\\frac{x^2-y^2}{xy}:\\frac{x^2-2xy+y^2}{xy}:\\frac{x+y}x=\\frac x{x-y}\"></span>.",
+   "id": "vsb-fbi-2017-pz6-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P46",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac u{u+v}+\\dfrac v{u-v}\\right):\\left(1-\\dfrac{2uv}{u^2+v^2}\\right)^{-1}\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{u-v}{u+v}\"></span>, podmínka <span class=\"m\" data-tex=\"u\\ne\\pm v\"></span>",
+   "sol": "Řešení z PDF: <span class=\"m\" data-tex=\"\\frac{u^2+v^2}{(u+v)(u-v)}\\cdot\\frac{(u-v)^2}{u^2+v^2}=\\frac{u-v}{u+v}\"></span>.",
+   "id": "vsb-fbi-2017-pz14-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P47",
+   "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 1, 10 bodů)",
+   "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\dfrac{\\frac x4-1+\\frac1x}{\\frac{x+2}x\\cdot\\frac{x-2}4}\"></span> a určete, kdy je reálný.",
+   "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{x-2}{x+2}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne\\pm2\"></span>",
+   "sol": "Řešení z PDF: <span class=\"m\" data-tex=\"\\frac{x^2-4x+4}{4x}\\cdot\\frac{4x}{(x+2)(x-2)}=\\frac{x-2}{x+2}\"></span>.",
+   "id": "vsb-fbi-2017-pz15-01",
+   "uni": "VŠB",
+   "fac": "FBI",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P48",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 13, 5 bodů)",
    "body": "Kolik litrů kyseliny je třeba přidat do 5 litrů 20% roztoku kyseliny, abychom získali roztok padesátiprocentní?",
    "opts": [
@@ -7154,7 +8342,7 @@
    "needs_original": false
   },
   {
-   "q": "P36",
+   "q": "P49",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 6, 3 body)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{x-1}{x^2+2x}-\\dfrac{x-4}{x^2-4}\"></span>.",
    "opts": [
@@ -7177,7 +8365,7 @@
    "needs_original": false
   },
   {
-   "q": "P37",
+   "q": "P50",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 6, 3 body)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{x+5}{x^2-9}-\\dfrac{x+1}{x^2-3x}\"></span>.",
    "opts": [
@@ -7200,7 +8388,7 @@
    "needs_original": false
   },
   {
-   "q": "P38",
+   "q": "P51",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 15, 5 bodů)",
    "body": "Počty chlapců ve třídách 1.A a 1.B jsou v poměru <span class=\"m\" data-tex=\"4:3\"></span>, počty dívek jsou v poměru <span class=\"m\" data-tex=\"1:2\"></span>. Z celkového počtu žáků v 1.A tvoří dívky <span class=\"m\" data-tex=\"1/3\"></span>. Jakou část všech žáků 1.B tvoří dívky?",
    "opts": [
@@ -7223,7 +8411,7 @@
    "needs_original": false
   },
   {
-   "q": "P39",
+   "q": "P52",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 15, 5 bodů)",
    "body": "Počty chlapců ve třídách 1.A a 1.B jsou v poměru <span class=\"m\" data-tex=\"5:3\"></span>, počty dívek jsou v poměru <span class=\"m\" data-tex=\"1:2\"></span>. Z celkového počtu žáků v 1.A tvoří dívky <span class=\"m\" data-tex=\"2/5\"></span>. Jakou část všech žáků 1.B tvoří dívky?",
    "opts": [
@@ -7246,7 +8434,7 @@
    "needs_original": false
   },
   {
-   "q": "P40",
+   "q": "P53",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 6, 3 body)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{1-3x}{x^3-x}+\\dfrac1{x-1}\"></span>.",
    "opts": [
@@ -7269,7 +8457,7 @@
    "needs_original": false
   },
   {
-   "q": "P41",
+   "q": "P54",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 6, 3 body)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{3x+1}{x^3-x}+\\dfrac1{x+1}\"></span>.",
    "opts": [
@@ -7292,7 +8480,7 @@
    "needs_original": false
   },
   {
-   "q": "P42",
+   "q": "P55",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 14, 5 bodů)",
    "body": "Z jakého nejmenšího počtu shodných krychlí, s velikostí hrany v centimetrech vyjádřenou přirozeným číslem, můžeme sestavit kvádr o rozměrech 9, 12 a 21 cm?",
    "opts": [
@@ -7315,7 +8503,7 @@
    "needs_original": false
   },
   {
-   "q": "P43",
+   "q": "P56",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 6, 7 bodů)",
    "body": "Plavecký bazén si vede měsíční statistiky. Jedna čtvrtina návštěvníků chodí do bazénu alespoň dvakrát týdně a jedna pětina z nich dokonce denně. Jedna pětina všech návštěvníků chodí jedenkrát týdně. Ostatní návštěvníci chodí několikrát do měsíce, ale nepravidelně. Každý desátý návštěvník se po první návštěvě víckrát nevrátí. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -7341,7 +8529,7 @@
    ]
   },
   {
-   "q": "P44",
+   "q": "P57",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 15, 7 bodů)",
    "body": "Převodovka se skládá ze tří ozubených kol spojených řetězy. Nejmenší kolo je spojené s prostředním kolem a prostřední kolo je spojené s největším kolem. Kola mají postupně 27, 54 a 99 zubů. Po jakém minimálním počtu otoček největšího kola budou všechna tři kola ve stejné pozici jako na začátku pohybu?",
    "opts": [
@@ -7367,7 +8555,7 @@
    ]
   },
   {
-   "q": "P45",
+   "q": "P58",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 16, 7 bodů)",
    "body": "Z jakého nejmenšího počtu shodných krychlí, s velikostí hrany v centimetrech vyjádřenou přirozeným číslem, můžeme sestavit kvádr o rozměrech 8, 12 a 28 cm?",
    "opts": [
@@ -7390,7 +8578,7 @@
    "needs_original": false
   },
   {
-   "q": "P46",
+   "q": "P59",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 13, 7 bodů)",
    "body": "Dětský tábor má kapacitu 80 dětí. Vytvoří-li děti trojice, nikdo nezbude; vytvoří-li dvojice, zbude jedno dítě. Vytvoří-li sedmice, nikdo nezbude; vytvoří-li čtveřice, zbudou tři děti. Kolik zbude dětí, vytvoří-li šestice?",
    "opts": [
@@ -7416,7 +8604,7 @@
    ]
   },
   {
-   "q": "P47",
+   "q": "P60",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 13, 5 bodů)",
    "body": "Z kolika obdélníkových dlaždic o rozměrech 15 cm a 20 cm se dá sestavit čtverec, máme-li k dispozici 120 dlaždic? Všechny dlaždice pokládáme se stejnou orientací.",
    "opts": [

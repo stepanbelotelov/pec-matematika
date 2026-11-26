@@ -13,7 +13,7 @@
 
 ## Что внутри сейчас
 
-**314 задач** из открыто опубликованных образцов и реальных тестов технических вузов, **все переписаны дословно из оригинальных PDF** с сайтов вузов. Обзор с ответами по уровням — в [BANK.md](BANK.md).
+**392 задачи** из открыто опубликованных образцов и реальных тестов технических вузов, **все переписаны дословно из оригинальных PDF** с сайтов вузов. Обзор с ответами по уровням — в [BANK.md](BANK.md).
 
 | Источник | Задач в банке | Что взято | Ключ |
 |---|---|---|---|
@@ -22,13 +22,14 @@
 | ČVUT FJFI, přijímací zkouška z matematiky (vzor) | 24 | обе варианты по 12 příkladů | в PDF |
 | ČVUT FEL, vzorový přijímací test VZOR01 | 15 | все 15 příkladů | из řešení FEL |
 | VUT FEKT, MATEMATIKA 2022, 2023, 2024 (verze 01 и 02) | 86 | все úlohy, кроме úlohy 10 с графиком в 2023 и 2024 | 2022 — в PDF, 2023–2024 посчитано нами |
+| VŠB-TUO FBI, přijímací zkouška z matematiky AR 2013/14, 2015/16, 2017/18 | 78 | 13 вариантов (PZ) по 6 открытых задач | řešení в PDF |
 | VŠCHT, ukázka vzorového testu (Bc., ekonomické programy) | 7 | все úlohy | посчитано нами |
 | TUL FP, přijímací test z matematiky 2021/22 (Matematika, Bc.) | 5 | все úlohy (открытые, по 20 баллов) | řešení в PDF |
 
 - **Повторы.** FIT из года в год повторяет задачи (иногда меняя только числа — такие считаются разными задачами). Одинаковые задачи хранятся один раз, остальные места указаны в поле `also_in` («Встречается также»). Всего в 49 задачах 83 таких повтора.
 - **Ответы.** Где вуз опубликовал ключ или решение, ответ взят оттуда и пересчитан; у остальных посчитан нами. Все ответы проверены заново (вручную и в sympy).
 - **Подписи FIT.** Имя файла на сайте FIT, подпись «pro rok X» и год, напечатанный в самом PDF, не совпадают: файл `…-2014-1.pdf` подписан «pro rok 2015», а в PDF стоит 2013. В банке `year` — это подпись «pro rok» на сайте FIT, номер файла и напечатанный год лежат в полях `file` и `printed`.
-- **Уровни:** 175 базовых, 119 стандартных, 20 сложных. Покрыты все темы плана, кроме 17 (Moivreova věta) и 23 (binomická věta). Задач вне плана («Ostatní») — 47: в основном lomené výrazy и rozklad na součin, číselné soustavy, slovní úlohy na směsi a poměry.
+- **Уровни:** 220 базовых, 152 стандартных, 20 сложных. Покрыты все темы плана, кроме 17 (Moivreova věta) и 23 (binomická věta). Задач вне плана («Ostatní») — 60: в основном lomené výrazy и rozklad na součin, číselné soustavy, slovní úlohy na směsi a poměry.
 - **Пропущены задачи с рисунком** (выбор функции по графику): сайт пока не показывает картинки.
 - **Задачи, которые есть в курсе**, — 62, место в курсе указано в поле `in_course`.
 
@@ -99,7 +100,7 @@
 | **VUT FEKT** | MATEMATIKA [2022](https://vut.cz/pomocne2018/f124247/d232373/p229505), [2023](https://vut.cz/pomocne2018/f137459/d248394/p249980), [2024](https://vut.cz/pomocne2018/f151468/d267522/p273733) — verze 01 и 02 | 15 задач a)–e) по 2/3/5 баллов | 2022 — в PDF |
 | **VUT FSI** | [zadání přijímacích zkoušek 2014](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179), [2017](https://vut.cz/pomocne2018/f69785/d158882/p149140) | выбор варианта | результаты |
 | **VUT FAST** | [тест по математике и физике](https://www.fce.vutbr.cz/api/cs/dokument/9815) | 10 вопросов, смешанный | ? |
-| **VŠB-TUO FBI** | реальные задачи 2013/14, 2015/16, [2017/18 с решениями](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf) | открытые задачи | 2017/18 |
+| **VŠB-TUO FBI** | реальные задачи 2013/14, 2015/16, [2017/18 с решениями](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf) | 6 открытых задач в варианте, по 10 баллов | řešení во всех трёх |
 | **VŠCHT** | [vzorový test (экономические программы)](https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf) | 7 задач a)–d) | нет |
 | **TUL** | [Přijímací test z matematiky 2021/22](https://www.fp.tul.cz/images/fakulta/ukazky_testu/2021/KAP_Ma_Bc_jednoobor_2021.pdf) (FP, Matematika Bc.), [требования FM](https://new.fm.tul.cz/document/612) | 5 открытых задач | řešení в PDF |
 
