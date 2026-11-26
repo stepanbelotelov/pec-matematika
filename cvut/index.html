@@ -775,7 +775,8 @@ body.line-cvut { --faint: #7A8FA4 }
 .pb-pips { display: inline-flex; gap: 3px }
 .pb-pips i { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid currentColor; box-sizing: border-box }
 .pb-pips i.on { background: currentColor }
-.pb-l1 { color: var(--ok) } .pb-l2 { color: var(--accent) } .pb-l3 { color: var(--gold) }
+.pb-l1, .pb-l2, .pb-l3 { color: var(--accent) }
+.pb-lvl { color: var(--fg) } .pb-lvl .pb-pips { color: var(--accent) }
 .pb-res { display: grid; gap: 10px }
 .pb-res .btns { align-items: center }
 .pb-open-a { font-size: 15px; line-height: 1.6 }
@@ -793,7 +794,7 @@ body.line-cvut { --faint: #7A8FA4 }
 @media (max-width: 820px) { .mod.appmod { grid-template-columns: minmax(0, 1fr); grid-template-areas: "k" "h" "v" "p" "f" } .appmod > .foot { justify-self: start } }
 .pb-lv { display: grid; gap: 10px; font-size: 13px }
 .pb-lv-r { display: grid; grid-template-columns: 34px 100px minmax(60px, 1fr) 52px; gap: 10px; align-items: center }
-.pb-lv-r .pb-meter { height: 4px }
+.pb-lv-r .pb-meter { height: 6px; background: color-mix(in srgb, var(--muted) 28%, transparent) }
 .pb-lv-r .pb-meter i { background: var(--accent) }
 .pb-lv-r > b { text-align: right; font-variant-numeric: tabular-nums; color: var(--fg); font-weight: 600 }
 .pb-lv-r > span:nth-child(2) { color: var(--muted) }
@@ -1531,6 +1532,8 @@ function pbLoad() {
 }
 // открыты все задачи банка — по всем темам, в том числе ещё не пройденным (в карточке они помечены)
 const pbOpen = () => PB.all || [];
+// пройденные темы от текущей вниз, затем темы впереди по порядку, Ostatní в конце
+const pbRank = (t) => (!t.n ? 1000 : t.n <= latest.n ? latest.n - t.n : 100 + t.n);
 const pbAhead = (t) => t.n > latest.n;
 const PB_FAC_ORDER = ["FIT", "FEL", "FJFI", "FBMI", "FSv", "FS", "FD", "FEKT", "FSI", "FAST", "FMV/FFÚ/FPH", "KMAT", "FIS"];
 const pbFacName = (f) => { const t = (PB.all || []).find((x) => x.fac === f); return f + " " + (t ? t.uni : LINE); };
@@ -1566,7 +1569,7 @@ function bankModCard() {
   }
   const open = pbOpen(), done = open.filter(pbDone).length, ok = open.filter(pbOk).length, facs = LINE === "ČVUT" ? pbFacs(open).join(", ") : LINE;
   return modCard({ cls: "bankmod", k: "Тренировка", rd: `<b>${open.length}</b> ${plural(open.length, "задача", "задачи", "задач")} · ${facs}`, h: "Банк задач",
-    vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов по всем темам курса, в том числе ещё не пройденным. Фильтр по уровню и теме, к каждой — короткое решение.",
+    vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов по всем темам курса. Фильтр по уровню и теме, к каждой — короткое решение.",
     note: done ? `Решено <b>${done} / ${open.length}</b> · верно <b>${ok}</b>` : `Все задачи открыты — начните с уровня 1`,
     btn: done ? "Продолжить" : "Открыть банк", btnCls: "btn ghost", hash: "banka" });
 }
@@ -1581,7 +1584,7 @@ function showBank() {
     if (PB.err) { const b = el("button", "btn ghost", "Повторить"); b.type = "button"; b.addEventListener("click", () => { pbLoad(); showBank(); }); box.append(b); }
     body.append(box); pbLoad(); return;
   }
-  const open = pbOpen().slice().sort((a, b) => (b.n || -1) - (a.n || -1) || a.level - b.level);
+  const open = pbOpen().slice().sort((a, b) => pbRank(a) - pbRank(b) || a.level - b.level);
   // on phones the intro and the filters fold into one line each, so the first task is visible right away
   const BIG = matchMedia("(min-width: 761px) and (min-height: 501px)").matches;
   const about = el("details", "pb-fold pb-about"); about.open = BIG; const aSum = el("summary"); aSum.append(el("b", null, "Как устроен банк"));
