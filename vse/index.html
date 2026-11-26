@@ -683,6 +683,11 @@ body.line-cvut { --faint: #7A8FA4 }
 }
 /* телефон горизонтально: PDF и панель рядом, шапка в одну строку, инструменты — иконки справа, калькулятор в две колонки */
 @media (orientation: landscape) and (max-height: 500px) {
+  /* окна: компактная шапка — на экране 340px она занимала треть высоты */
+  .shead { padding-top: calc(env(safe-area-inset-top, 0px) + 8px); padding-bottom: 8px }
+  .shead h3, .line-cvut .shead h3, .line-vse .shead h3 { font-size: 18px; line-height: 1.15 }
+  .sbody { gap: 10px; padding-top: 10px }
+  .pb-stat { padding: 8px 12px; gap: 6px }
   .vmain { flex-direction: row }
   .viewer.split .pages { flex: 1 1 auto }
   .vside { width: min(460px, 52vw); flex: none; border-top: 0; border-left: 1px solid var(--line) }
@@ -1935,7 +1940,7 @@ function buildCalc() {
   const syncOver = () => dock.classList.toggle("over", !$("viewer").hidden || !$("sheetwrap").hidden);
   const mo = new MutationObserver(syncOver); ["viewer", "sheetwrap"].forEach((id) => mo.observe($(id), { attributes: true, attributeFilter: ["hidden"] })); syncOver();
   // no calculator during timed tests (exams are without a calculator)
-  const guard = () => { const timed = Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash);
+  const guard = () => { const timed = (Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash)) || location.hash === "#banka";
     // the ДЗ answer panel / sheet answer bar sits where the dock is — hide the dock over it
     const bar = (!$("viewer").hidden && (!$("vside").hidden || !$("vgraph").hidden)) || (!$("sheetwrap").hidden && !$("qbar").hidden);
     fab.hidden = timed || bar; gfab.hidden = timed || bar || location.hash === "#grafy"; dock.hidden = fab.hidden && gfab.hidden; document.body.classList.toggle("has-dock", !dock.hidden); if (timed || bar) toggle(false); };
@@ -2236,6 +2241,7 @@ function route() {
   if (tk === "razminka") { showWarm(); return; }
   if (tk === "slovnik") { showGlossary(); return; }
   if (tk === "grafy") { Plotter.open(); return; }
+  if (tk === "banka" && !IS_CVUT) { closeAll(true); toast("Банк задач přijímaček пока есть только на сайте линии ČVUT."); return; }
   if (tk === "app" && window.PEC_SITE) { App.open(); return; }
   if (CTX[tk]) { if (CTX[tk].enabled()) showTimed(CTX[tk]); else closeAll(false); return; }
   const m = /^#(lekce|du|formuly|test)-(\d+)$/.exec(location.hash);
@@ -2260,9 +2266,16 @@ document.addEventListener("keydown", (e) => {
   const extra = [...document.querySelectorAll(".calc:not([hidden]), .tooldock:not([hidden])")].flatMap((x) => [...x.querySelectorAll(SEL)]);
   const list = [...dlg.querySelectorAll(SEL), ...extra].filter(shown);
   if (!list.length) return;
-  const i = list.indexOf(document.activeElement);
+  const a = document.activeElement, i = list.indexOf(a);
   e.preventDefault();
-  const j = i === -1 ? (e.shiftKey ? list.length - 1 : 0) : (i + (e.shiftKey ? -1 : 1) + list.length) % list.length;
+  let j;
+  if (i !== -1) j = (i + (e.shiftKey ? -1 : 1) + list.length) % list.length;
+  else if (a && a !== document.body && dlg.contains(a)) {
+    // focus sits on a non-tabbable element inside the window (a result block, the document): continue from its place
+    const after = list.findIndex((x) => a.compareDocumentPosition(x) & Node.DOCUMENT_POSITION_FOLLOWING && !a.contains(x)), inside = list.findIndex((x) => a.contains(x));
+    if (e.shiftKey) { const before = list.map((x, k) => [x, k]).filter(([x]) => a.compareDocumentPosition(x) & Node.DOCUMENT_POSITION_PRECEDING).pop(); j = before ? before[1] : list.length - 1; }
+    else j = inside !== -1 ? inside : after !== -1 ? after : 0;
+  } else j = e.shiftKey ? list.length - 1 : 0;
   list[j].focus();
 });
 
