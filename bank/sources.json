@@ -73,10 +73,10 @@
   "format": "15 úloh, výběr z 5 možností, vždy jedna správná",
   "answers": "—",
   "url": "https://mat.fsv.cvut.cz/eng/entrance/online",
-  "status": "nestaženo (síť)",
+  "status": "nebereme: online testy generuje databáze, která podle katedry není totožná s databází reálných zkoušek; ukázkový test je jen obrázek (anglicky, https://mat.fsv.cvut.cz/entrance/eng/example); web nese © FSv ČVUT",
   "note": "PZ nanečisto: https://www.fsv.cvut.cz/prijimaci-zkouska-nanecisto/ ; prominutí: https://www.fsv.cvut.cz/podminky-pro-prominuti-prijimaci-zkousky-z-matematiky-do-bakalarskeho-studia/",
-  "include": true,
-  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
+  "include": false,
+  "copyright": "© 2017–2026 FCE CTU in Prague (patička webu)"
  },
  {
   "id": "fs-kurz",
@@ -212,15 +212,15 @@
  },
  {
   "id": "vut-fast",
-  "uni": "VUT Brno",
+  "uni": "VUT",
   "faculty": "FAST",
   "kind": "vzorový test",
-  "title": "Test z matematiky a fyziky pro BSP, GK, ME, SI",
+  "title": "Kombinovaný test z matematiky a fyziky pro přijímací zkoušky ke studiu BSP GK, ME a SI (přehled otázek)",
   "years": "neuvedeno",
-  "format": "10 otázek v testu, kombinace matematiky a fyziky, výběr z možností",
-  "answers": "neověřeno",
+  "format": "v každém testu 10 otázek z matematiky a 10 z fyziky, 4 možnosti; dokument shrnuje 100 otázek z matematiky (č. 101–200)",
+  "answers": "správné odpovědi označeny „+“",
   "url": "https://www.fce.vutbr.cz/api/cs/dokument/9815",
-  "status": "nestaženo (síť)",
+  "status": "v bance 99 otázek z matematiky (101–200 kromě 110, kde je chybný klíč); otázky z fyziky (1–100) nebereme",
   "include": true,
   "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },

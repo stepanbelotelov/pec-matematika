@@ -2,7 +2,7 @@
 
 Файл собирается скриптом `bank/build.py` из `tasks.json` и `sources.json`; вручную не редактировать.
 
-Всего задач: **648** · базовый: 397 · стандартный: 222 · сложный: 29 · VUT FSI: 198 · ČVUT FIT: 195 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FBMI: 40 · ČVUT FJFI: 24 · ČVUT FEL: 15 · VŠCHT VŠCHT: 7 · TUL FP: 5
+Всего задач: **747** · базовый: 470 · стандартный: 248 · сложный: 29 · VUT FSI: 198 · ČVUT FIT: 195 · VUT FAST: 99 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FBMI: 40 · ČVUT FJFI: 24 · ČVUT FEL: 15 · VŠCHT VŠCHT: 7 · TUL FP: 5
 
 ⚠ **0** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.
 
@@ -11,45 +11,130 @@
 | № | Тема | Ур. 1 | Ур. 2 | Ур. 3 | Всего |
 |---|---|---|---|---|---|
 | 1 | Množina. Podmnožina |  | 2 | 7 | 9 |
-| 2 | Mocnina. Odmocnina | 34 | 4 |  | 38 |
-| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 26 | 26 | 5 | 57 |
+| 2 | Mocnina. Odmocnina | 39 | 4 |  | 43 |
+| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 31 | 26 | 5 | 62 |
 | 4 | Rovnice s parametrem | 4 | 7 | 2 | 13 |
-| 5 | Rovnice s absolutní hodnotou | 2 | 8 |  | 10 |
-| 6 | Nerovnice. Soustava nerovnic | 20 | 8 | 2 | 30 |
-| 7 | Nerovnice s absolutní hodnotou | 9 | 6 |  | 15 |
-| 8 | Iracionální rovnice. Iracionální nerovnice | 19 | 11 |  | 30 |
+| 5 | Rovnice s absolutní hodnotou | 2 | 11 |  | 13 |
+| 6 | Nerovnice. Soustava nerovnic | 23 | 8 | 2 | 33 |
+| 7 | Nerovnice s absolutní hodnotou | 9 | 9 |  | 18 |
+| 8 | Iracionální rovnice. Iracionální nerovnice | 23 | 11 |  | 34 |
 | 9 | Funkce (lineární, kvadratická, lomená). Grafy | 19 | 5 |  | 24 |
 | 10 | Exponenciální funkce | 4 | 2 |  | 6 |
-| 11 | Exponenciální rovnice a nerovnice | 21 | 17 |  | 38 |
-| 12 | Logaritmická funkce | 16 | 10 |  | 26 |
-| 13 | Logaritmické rovnice a nerovnice | 7 | 16 | 1 | 24 |
-| 14 | Goniometrické funkce | 19 | 4 |  | 23 |
-| 15 | Goniometrické rovnice a nerovnice | 11 | 19 | 1 | 31 |
-| 16 | Komplexní čísla | 15 | 1 |  | 16 |
+| 11 | Exponenciální rovnice a nerovnice | 24 | 18 |  | 42 |
+| 12 | Logaritmická funkce | 19 | 10 |  | 29 |
+| 13 | Logaritmické rovnice a nerovnice | 7 | 18 | 1 | 26 |
+| 14 | Goniometrické funkce | 22 | 15 |  | 37 |
+| 15 | Goniometrické rovnice a nerovnice | 14 | 19 | 1 | 34 |
+| 16 | Komplexní čísla | 20 | 2 |  | 22 |
 | 17 | Goniometrický tvar komplexního čísla. Moivreova věta | 1 |  |  | 1 |
 | 18 | Posloupnosti |  | 1 |  | 1 |
-| 19 | Aritmetická posloupnost | 12 | 2 | 2 | 16 |
-| 20 | Geometrická posloupnost | 7 | 6 | 2 | 15 |
-| 21 | Kombinatorika. Faktoriál | 2 | 2 | 1 | 5 |
+| 19 | Aritmetická posloupnost | 16 | 2 | 2 | 20 |
+| 20 | Geometrická posloupnost | 10 | 7 | 2 | 19 |
+| 21 | Kombinatorika. Faktoriál | 4 | 2 | 1 | 7 |
 | 22 | Variace. Permutace. Kombinace | 8 | 17 | 1 | 26 |
 | 23 | Kombinační číslo. Binomická věta | 3 | 1 |  | 4 |
 | 24 | Pravděpodobnost | 6 | 5 |  | 11 |
 | 25 | Analytická geometrie. Vektory |  | 1 |  | 1 |
-| 26 | Parametrická rovnice přímky | 2 |  |  | 2 |
-| 27 | Obecná rovnice přímky | 15 | 1 |  | 16 |
+| 26 | Parametrická rovnice přímky | 3 |  |  | 3 |
+| 27 | Obecná rovnice přímky | 19 | 1 |  | 20 |
 | 28 | Vzájemná poloha přímek | 10 |  |  | 10 |
 | 29 | Směrnicový a úsekový tvar rovnice přímky | 4 | 1 |  | 5 |
-| 30 | Kuželosečky. Kružnice | 13 | 4 | 1 | 18 |
-| 31 | Elipsa |  | 1 |  | 1 |
+| 30 | Kuželosečky. Kružnice | 14 | 4 | 1 | 19 |
+| 31 | Elipsa | 2 | 3 |  | 5 |
 | 32 | Hyperbola | 2 | 1 |  | 3 |
 | 33 | Parabola | 6 |  |  | 6 |
-| 34 | Planimetrie | 16 | 1 |  | 17 |
-| 35 | Stereometrie | 8 | 3 |  | 11 |
-| — | Ostatní | 56 | 29 | 4 | 89 |
+| 34 | Planimetrie | 25 | 2 |  | 27 |
+| 35 | Stereometrie | 18 | 3 |  | 21 |
+| — | Ostatní | 59 | 30 | 4 | 93 |
 
 Задача считается по основной (первой) теме; дополнительные темы указаны в карточке. «Ostatní» — задачи вне 35 тем плана.
 
 ## Уровень 1 — базовый
+
+### `vut-fast-102` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 102)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Pro přípustné hodnoty zjednodušte $\left(\dfrac{\sqrt[3]a}{\sqrt a\cdot a^{-1}}\right)^{\frac35}=$
+
+- **a)** $\dfrac1{\sqrt a}$
+- **b)** $2\sqrt a$
+- **c)** $\sqrt a$
+- **d)** $a$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\sqrt a$. $\left(a^{\frac56}\right)^{\frac35}=a^{\frac12}$.
+
+</details>
+
+### `vut-fast-105` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 105)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Pro přípustné hodnoty zjednodušte $\left(a^{\frac12}\cdot a^{-\frac23}\cdot a^{\frac7{12}}\right):a^{\frac13}=$
+
+- **a)** $a^{\frac1{12}}$
+- **b)** $a^{\frac{12}{17}}$
+- **c)** $0$
+- **d)** $a$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a^{\frac1{12}}$. $\frac12-\frac23+\frac7{12}-\frac13=\frac1{12}$.
+
+</details>
+
+### `vut-fast-106` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 106)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Pro přípustné hodnoty zjednodušte $\left[a^{-\frac32}\cdot a^{-\frac12}\cdot\left(a^{-1}\right)^{\frac23}\right]^3=$
+
+- **a)** $a$
+- **b)** $0$
+- **c)** $1$
+- **d)** $a^{-8}$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $a^{-8}$. $3\left(-2-\frac23\right)=-8$.
+
+</details>
+
+### `vut-fast-107` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 107)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Pro přípustné hodnoty zjednodušte $\left[b^{\frac13}\cdot b^{-1}\cdot\left(b^{-1}\right)^{-\frac12}\right]^3=$
+
+- **a)** $\dfrac1{\sqrt b}$
+- **b)** $0$
+- **c)** $2$
+- **d)** $b$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac1{\sqrt b}$. $3\left(\frac13-1+\frac12\right)=-\frac12$.
+
+</details>
+
+### `vut-fast-108` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 108)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Pro přípustné hodnoty zjednodušte $\left[\left(\dfrac{a^{\frac12}\cdot a^{-1}}{\sqrt[3]a}\right)^{-3}\right]^{\frac15}=$
+
+- **a)** $a^{1/2}$
+- **b)** $a$
+- **c)** $0$
+- **d)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a^{1/2}$. Závorka je $a^{-\frac56}$, celkem $a^{\frac56\cdot3\cdot\frac15}$.
+
+</details>
 
 ### `fbmi-2021-01` — [FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 1)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
@@ -691,6 +776,91 @@ Výraz $\sqrt y\cdot\sqrt[3]{y^{-2}}\cdot\sqrt[6]{y^3}$ je pro $y>0$ roven
 
 </details>
 
+### `vut-fast-117` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 117)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Určete řešení soustavy rovnic $x+2y=1,\ 2x-y=2$
+
+- **a)** $x=1,\ y=0$
+- **b)** $x=1,\ y=10$
+- **c)** $x=10,\ y=0$
+- **d)** $x=1,\ y=2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=1,\ y=0$. Dosazením $x=1$, $y=0$ do obou rovnic.
+
+</details>
+
+### `vut-fast-118` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 118)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Určete řešení soustavy rovnic $2x+y=2,\ x-2y=1$
+
+- **a)** $x=0,\ y=0$
+- **b)** $x=1,\ y=10$
+- **c)** $x=10,\ y=0$
+- **d)** $x=1,\ y=0$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x=1,\ y=0$. Dosazením $x=1$, $y=0$ do obou rovnic.
+
+</details>
+
+### `vut-fast-119` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 119)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Určete řešení soustavy rovnic $x+3y=1,\ 3x-y=3$
+
+- **a)** $x=1,\ y=10$
+- **b)** $x=10,\ y=10$
+- **c)** $x=1,\ y=0$
+- **d)** $x=0,\ y=0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x=1,\ y=0$. Dosazením $x=1$, $y=0$ do obou rovnic.
+
+</details>
+
+### `vut-fast-120` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 120)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Určete řešení soustavy rovnic $3x+y=3,\ x-3y=1$
+
+- **a)** $x=1,\ y=10$
+- **b)** $x=10,\ y=0$
+- **c)** $x=0,\ y=0$
+- **d)** $x=1,\ y=0$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x=1,\ y=0$. Dosazením $x=1$, $y=0$ do obou rovnic.
+
+</details>
+
+### `vut-fast-126` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 126)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Je-li $16x^2-1=0;\ x>0$, pak $8x=$
+
+- **a)** $0$
+- **b)** $2$
+- **c)** $1/2$
+- **d)** $-2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $2$. $x=\frac14$.
+
+</details>
+
 ### `fbmi-2021-18` — [FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 18)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
 *Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
@@ -1276,6 +1446,57 @@ Všechna reálná řešení rovnice $|x^2-2x+3|=3$ jsou:
 
 </details>
 
+### `vut-fast-121` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 121)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna reálná řešení nerovnice $x^2-5x+6<0$
+
+- **a)** $(-\infty;-2)\cup(1;\infty)$
+- **b)** $(2;3)$
+- **c)** $(1;\infty)$
+- **d)** $(0;1/2)$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $(2;3)$. $(x-2)(x-3)<0$.
+
+</details>
+
+### `vut-fast-122` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 122)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna reálná řešení nerovnice $x^2+6x\ge0$
+
+- **a)** $0$
+- **b)** $x<0$
+- **c)** $(-\infty;-6\rangle\cup\langle0;\infty)$
+- **d)** nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $(-\infty;-6\rangle\cup\langle0;\infty)$. $x(x+6)\ge0$.
+
+</details>
+
+### `vut-fast-123` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 123)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete všechna reálná řešení nerovnice $x^2-2x-8>0$
+
+- **a)** $(-\infty;-2)\cup(4;\infty)$
+- **b)** nemá řešení
+- **c)** $(-\infty;-2)$
+- **d)** $\langle1{,}5;2\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(-\infty;-2)\cup(4;\infty)$. $(x-4)(x+2)>0$.
+
+</details>
+
 ### `vsb-fbi-2013-pz3-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
 
 *Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
@@ -1761,6 +1982,74 @@ Nerovnice $\sqrt{x^2}-1<0$ má řešení
 <details><summary>Ответ и решение</summary>
 
 **e** — nerovnice nemá řešení
+
+</details>
+
+### `vut-fast-157` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 157)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $\sqrt{-x}=2+x$
+
+- **a)** $2$
+- **b)** $x$
+- **c)** $-1$
+- **d)** nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $-1$. Umocněním $x^2+5x+4=0$; zkoušce vyhoví $x=-1$.
+
+</details>
+
+### `vut-fast-158` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 158)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $\sqrt{x^2-5}=x-5$
+
+- **a)** nemá řešení
+- **b)** $5$
+- **c)** $0$
+- **d)** $3$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — nemá řešení. Umocněním $x=3$, ale pravá strana je pak záporná.
+
+</details>
+
+### `vut-fast-159` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 159)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $\sqrt{x^2-12}=2-x$
+
+- **a)** $0$
+- **b)** nemá řešení
+- **c)** $4$
+- **d)** $12$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — nemá řešení. Umocněním $x=4$, ale pravá strana je pak záporná.
+
+</details>
+
+### `vut-fast-160` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 160)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $\sqrt{x+10}=x-2$
+
+- **a)** $6$
+- **b)** $0$
+- **c)** nemá řešení
+- **d)** $2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $6$. Umocněním $x^2-5x-6=0$; zkoušce vyhoví $x=6$.
 
 </details>
 
@@ -2448,6 +2737,57 @@ Ze zadaných funkcí vyberte tu, jejíž graf vznikne z grafu funkce $y=2^x$ pos
 
 </details>
 
+### `vut-fast-153` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 153)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $2^x+2^{x+1}=24$
+
+- **a)** $2$
+- **b)** $5$
+- **c)** $3$
+- **d)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $3$. $3\cdot2^x=24$.
+
+</details>
+
+### `vut-fast-155` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 155)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $5^{-x}+5^{1-x}=30$
+
+- **a)** $3$
+- **b)** $5$
+- **c)** nemá řešení
+- **d)** $-1$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $-1$. $6\cdot5^{-x}=30$.
+
+</details>
+
+### `vut-fast-156` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 156)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $2^{1-x}\left(1/8\right)^x=1$
+
+- **a)** $1$
+- **b)** $1/4$
+- **c)** $0$
+- **d)** $2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $1/4$. $2^{1-4x}=2^0$.
+
+</details>
+
 ### `vsb-fbi-2013-pz3-05` — [FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 5, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf)
 
 *Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -2798,6 +3138,57 @@ Množina všech reálných čísel, pro která platí $\left(\frac45\right)^x>\f
 <details><summary>Ответ и решение</summary>
 
 **a** — $(-\infty,-2)$. $\frac{25}{16}=\left(\frac45\right)^{-2}$ a základ je menší než $1$, proto $x<-2$.
+
+</details>
+
+### `vut-fast-133` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 133)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor funkce $f:\ y=\log[(10x-5)/(2-x)]$
+
+- **a)** $(-5;-2)$
+- **b)** $(-6;-5)$
+- **c)** $(1/2;2)$
+- **d)** $(20;25)$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $(1/2;2)$. $\frac{10x-5}{2-x}>0$.
+
+</details>
+
+### `vut-fast-134` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 134)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor funkce $f:\ y=\log[(x+3)(2-x)]$
+
+- **a)** $(-3;2)$
+- **b)** $(-9;-4)$
+- **c)** $(-2;3)$
+- **d)** $(5;6)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(-3;2)$. $(x+3)(2-x)>0$.
+
+</details>
+
+### `vut-fast-135` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 135)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor funkce $f:\ y=\log[(x-3)(x+2)]$
+
+- **a)** $(-2;-1)$
+- **b)** $(-2;0)$
+- **c)** $(-1;2)$
+- **d)** $(-\infty;-2)\cup(3;\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $(-\infty;-2)\cup(3;\infty)$. $(x-3)(x+2)>0$.
 
 </details>
 
@@ -3206,6 +3597,57 @@ Rovnice $\log x^3+1=\log x-1$ má řešení $x=$
 
 </details>
 
+### `vut-fast-139` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 139)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Určete hodnotu $\cos x$, je-li $\sin x=-4/5$ a $x$ patří do intervalu $(\pi;3\pi/2)$
+
+- **a)** $2$
+- **b)** $-2$
+- **c)** $1$
+- **d)** $-3/5$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $-3/5$. Ve třetím kvadrantu je kosinus záporný.
+
+</details>
+
+### `vut-fast-140` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 140)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Určete hodnotu $\sin x$, je-li $\cos x=-1/5$ a $x$ patří do intervalu $(\pi/2;\pi)$.
+
+- **a)** $\dfrac{2\sqrt6}5$
+- **b)** $1$
+- **c)** $-3$
+- **d)** $2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac{2\sqrt6}5$. $\sin x=\sqrt{1-\frac1{25}}$, ve druhém kvadrantu kladný.
+
+</details>
+
+### `vut-fast-143` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 143)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte pro přípustná $x$ daný výraz $\dfrac{\sin(30^\circ+x)}{\cos(60^\circ-x)}=$
+
+- **a)** $1$
+- **b)** $\pi$
+- **c)** $\pi/4$
+- **d)** $-2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1$. Úhly $30^\circ+x$ a $60^\circ-x$ jsou doplňkové.
+
+</details>
+
 ### `vut-fekt-2022-v1-09` — [FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 9, 3 body)](https://vut.cz/pomocne2018/f124247/d232373/p229505)
 
 *Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
@@ -3577,6 +4019,57 @@ Je-li $\cos\alpha=1$, pak $\cos2\alpha$ se rovná
 
 </details>
 
+### `vut-fast-145` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 145)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Na intervalu $\langle0;\pi/2\rangle$ vypočtěte kořeny rovnice $2\cdot\sin x\cdot\cos x=1$
+
+- **a)** $\pi/4$
+- **b)** $\pi/2$
+- **c)** $\pi/6$
+- **d)** $\pi$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\pi/4$. $\sin2x=1$.
+
+</details>
+
+### `vut-fast-146` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 146)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Na intervalu $\langle0;\pi/2\rangle$ vypočtěte kořeny rovnice $2\cdot\cos2x-1=0$
+
+- **a)** $\pi$
+- **b)** $\pi/6$
+- **c)** $\pi/4$
+- **d)** $-\pi$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\pi/6$. $2x=\frac\pi3$.
+
+</details>
+
+### `vut-fast-147` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 147)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Na intervalu $\langle0;\pi/4\rangle$ vypočtěte kořeny rovnice $2\cdot\sin2x-1=0$
+
+- **a)** $\pi$
+- **b)** $\pi/3$
+- **c)** $\pi/12$
+- **d)** $\pi/4$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\pi/12$. $2x=\frac\pi6$.
+
+</details>
+
 ### `vut-fekt-2024-v1-11` — [FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 11, 5 bodů)](https://vut.cz/pomocne2018/f151468/d267522/p273733)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -3790,6 +4283,91 @@ Je-li $\sin3x=\dfrac\pi3$, pak
 <details><summary>Ответ и решение</summary>
 
 **e** — rovnice nemá řešení. Zlomek s čitatelem $1$ nulový být nemůže.
+
+</details>
+
+### `vut-fast-124` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 124)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Najděte řešení kvadratické rovnice $2x^2+6x+5=0$
+
+- **a)** nemá řešení
+- **b)** $2+i$
+- **c)** $2-i$
+- **d)** $-\dfrac32\pm\dfrac i2$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $-\dfrac32\pm\dfrac i2$. $x=\frac{-6\pm\sqrt{-4}}4$.
+
+</details>
+
+### `vut-fast-125` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 125)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Najděte řešení kvadratické rovnice $x^2-2x+5=0$
+
+- **a)** $1+2i;\ 1-2i$
+- **b)** nemá řešení
+- **c)** $5i$
+- **d)** $5$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1+2i;\ 1-2i$. $x=\frac{2\pm\sqrt{-16}}2$.
+
+</details>
+
+### `vut-fast-127` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 127)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $1+i^4+i^5+i^9=$, kde $i$ je imaginární jednotka
+
+- **a)** $2i$
+- **b)** $i$
+- **c)** $3$
+- **d)** $2+2i$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $2+2i$. $1+1+i+i$.
+
+</details>
+
+### `vut-fast-129` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 129)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Určete velikost (absolutní hodnotu) komplexního čísla $\dfrac{(1-i)(1+i)}{1-i\sqrt3}$
+
+- **a)** $5$
+- **b)** $3$
+- **c)** $i$
+- **d)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $1$. $\frac22=1$.
+
+</details>
+
+### `vut-fast-130` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 130)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Určete velikost (absolutní hodnotu) komplexního čísla $\dfrac{\sqrt3+i}{1+i\sqrt3}$
+
+- **a)** $1$
+- **b)** $5$
+- **c)** $i$
+- **d)** $-2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1$. Čitatel i jmenovatel mají absolutní hodnotu $2$.
 
 </details>
 
@@ -4099,6 +4677,74 @@ Komplexní číslo $\cos\pi+i\cdot\sin\pi$ je rovno
 
 </details>
 
+### `vut-fast-161` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 161)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V aritmetické posloupnosti platí $a_1=7,\ a_5=19$. Vypočtěte $s_5$.
+
+- **a)** $65$
+- **b)** $64$
+- **c)** $67$
+- **d)** $60$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $65$. $\frac{5(7+19)}2$.
+
+</details>
+
+### `vut-fast-162` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 162)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V aritmetické posloupnosti platí $a_1=7,\ s_5=19$. Vypočtěte $a_5$.
+
+- **a)** $3$
+- **b)** $5$
+- **c)** $1$
+- **d)** $3/5$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $3/5$. $\frac{5(7+a_5)}2=19$.
+
+</details>
+
+### `vut-fast-163` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 163)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V aritmetické posloupnosti platí $a_1=4,\ a_5=16$. Vypočtěte $d$.
+
+- **a)** $1$
+- **b)** $2$
+- **c)** $3$
+- **d)** $4$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $3$. $4d=12$.
+
+</details>
+
+### `vut-fast-164` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 164)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V aritmetické posloupnosti platí $a_4=4,\ d=3$. Vypočtěte $a_8$.
+
+- **a)** $16$
+- **b)** $2$
+- **c)** $0$
+- **d)** $5$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $16$. $4+4\cdot3$.
+
+</details>
+
 ### `fbmi-2021-34` — [FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 34)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
 *Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
@@ -4320,6 +4966,57 @@ V aritmetické posloupnosti je součet třetího a čtvrtého členu roven 16 a 
 
 </details>
 
+### `vut-fast-165` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 165)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V geometrické posloupnosti platí $a_2=6,\ a_4=24$. Vypočtěte $q$.
+
+- **a)** $5$
+- **b)** $6$
+- **c)** $7$
+- **d)** $\pm2$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\pm2$. $q^2=4$.
+
+</details>
+
+### `vut-fast-166` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 166)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V geometrické posloupnosti platí $a_2=9,\ a_4=81$. Vypočtěte $q$.
+
+- **a)** $\pm3$
+- **b)** $4$
+- **c)** $5$
+- **d)** neexistuje
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\pm3$. $q^2=9$.
+
+</details>
+
+### `vut-fast-168` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 168)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V geometrické posloupnosti platí $a_4+2a_2=48,\ q=2$. Vypočtěte $a_1$.
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $2$
+- **d)** $4$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $4$. $8a_1+4a_1=48$.
+
+</details>
+
 ### `fbmi-2021-36` — [FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 36)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
 *Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
@@ -4447,6 +5144,40 @@ $n$-tý člen geometrické posloupnosti $a_1=3;q=4$ je
 <details><summary>Ответ и решение</summary>
 
 **c** — $a_n=3\cdot4^{n-1}$
+
+</details>
+
+### `vut-fast-169` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 169)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 21. Kombinatorika. Faktoriál · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $\dfrac{4!+6!+7!}{6!}-3!$
+
+- **a)** $61$
+- **b)** $30$
+- **c)** $61/30$
+- **d)** $60$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $61/30$. $\frac1{30}+1+7-6$.
+
+</details>
+
+### `vut-fast-170` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 170)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 21. Kombinatorika. Faktoriál · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $\dfrac{4!-5!+7!}{6!}-3!$
+
+- **a)** $15$
+- **b)** $13$
+- **c)** $1$
+- **d)** $13/15$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $13/15$. $\frac1{30}-\frac16+7-6$.
 
 </details>
 
@@ -4814,6 +5545,23 @@ Jaká je pravděpodobnost, že při dvou hodech stejnou šestibokou kostkou bude
 
 </details>
 
+### `vut-fast-199` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 199)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 26. Parametrická rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Určete parametrické rovnice přímky, která prochází průsečíkem přímek $p:\ x+y+1=0;\ q:\ x=0$ a bodem $A=[1;1]$.
+
+- **a)** $x=1+t;\ y=1+2t$
+- **b)** $x=-1;\ y=-4t$
+- **c)** $x=t;\ y=t$
+- **d)** $x=2t;\ y=0$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=1+t;\ y=1+2t$. Průsečík $[0;-1]$, směr $(1;2)$.
+
+</details>
+
 ### `vut-fekt-2022-v1-11` — [FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 11, 5 bodů)](https://vut.cz/pomocne2018/f124247/d232373/p229505)
 
 *Темы:* 26. Parametrická rovnice přímky, 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
@@ -4847,6 +5595,74 @@ Který bod leží na přímce dané body $A=[-1,2],B=[3,1]$?
 <details><summary>Ответ и решение</summary>
 
 **c** — $[7,0]$. $x=-1+4t$, $y=2-t$; pro $t=2$ je bod $[7,0]$.
+
+</details>
+
+### `vut-fast-194` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 194)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Určete vzdálenost $v$ průsečíku přímek $p:\ x+3y=1;\ q:\ y=0$ od přímky $a:\ x+y-1=0$.
+
+- **a)** $v=3{,}5$
+- **b)** $v=5$
+- **c)** $v=1$
+- **d)** $v=0$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $v=0$. Průsečík $[1;0]$ leží na přímce $a$.
+
+</details>
+
+### `vut-fast-197` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 197)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Určete rovnici přímky $b$, která je rovnoběžná s přímkou $a:\ 3x+4y=12$ a prochází bodem $A=[1;0]$.
+
+- **a)** $3x-3=0$
+- **b)** $3x+4y=0$
+- **c)** $4y-3=0$
+- **d)** $3x+4y-3=0$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $3x+4y-3=0$
+
+</details>
+
+### `vut-fast-198` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 198)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 27. Obecná rovnice přímky, 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Najděte rovnici přímky spojující střed kružnice $x^2+y^2=3$ s bodem $A=[-1;-1]$.
+
+- **a)** $y=x$
+- **b)** $y=-x$
+- **c)** $y+1=-x$
+- **d)** $x+9=0$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $y=x$. Střed je počátek.
+
+</details>
+
+### `vut-fast-200` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 200)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Určete obecnou rovnici přímky, která prochází středem úsečky $AB$ a počátkem souřadného systému. $A=[-2;3],\ B=[4;1]$.
+
+- **a)** $x=0$
+- **b)** $y=0$
+- **c)** $x+y=0$
+- **d)** $y=2x$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $y=2x$. Střed $[1;2]$.
 
 </details>
 
@@ -5310,6 +6126,23 @@ Přímka o rovnici $bx+cy-m=0$; $b;c;m\neq0$; má směrnici
 
 </details>
 
+### `vut-fast-195` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 195)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Najděte středovou rovnici kružnice se středem v průsečíku přímek $p:\ x+y=0$ a $q:\ y=1$, poloměr kružnice je $r=3$.
+
+- **a)** $(x-1)^2+(y-1)^2=9$
+- **b)** $(x+1)^2+(y-1)^2=9$
+- **c)** $(x+2)^2+(y-1)^2=9$
+- **d)** $(x+1)^2+(y-2)^2=9$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $(x+1)^2+(y-1)^2=9$. Střed $[-1;1]$.
+
+</details>
+
 ### `vut-fekt-2022-v1-02` — [FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 2, 2 body)](https://vut.cz/pomocne2018/f124247/d232373/p229505)
 
 *Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
@@ -5552,6 +6385,40 @@ Rovnice $x^2+y^2-2x=3$ je rovnicí
 
 </details>
 
+### `vut-fast-192` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 192)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
+
+Určete průsečíky elipsy $2x^2+3y^2+x+y=0$ s osou $x$.
+
+- **a)** $[-1;2],[-1;-2]$
+- **b)** $[-1;2],[1;2]$
+- **c)** $[0;0],[-1/2;0]$
+- **d)** $[0;2],[0;-2]$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $[0;0],[-1/2;0]$. $y=0$: $2x^2+x=0$.
+
+</details>
+
+### `vut-fast-193` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 193)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
+
+Určete průsečíky elipsy $2x^2+3y^2+x+y=0$ s osou $y$.
+
+- **a)** $[0;0],[0;-1/3]$
+- **b)** $[-1;2],[1;2]$
+- **c)** $[-1;1],[1;2]$
+- **d)** $[-4;3]$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $[0;0],[0;-1/3]$. $x=0$: $3y^2+y=0$.
+
+</details>
+
 ### `vut-fsi-2014-z10-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 32. Hyperbola · *Текст:* текст оригинала (по курсу)
@@ -5703,6 +6570,159 @@ Rovnice $x^2-2x-y+1=0$ je rovnicí
 <details><summary>Ответ и решение</summary>
 
 **e** — paraboly. $y=(x-1)^2$.
+
+</details>
+
+### `vut-fast-171` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 171)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Obsah trojúhelníka $ABC$ je $20\ cm^2$. Jaký je obsah trojúhelníka tvořeného střední příčkou daného trojúhelníka rovnoběžnou se stranou $AB$ a vrcholem $C$?
+
+- **a)** $0$
+- **b)** $4$
+- **c)** $5$
+- **d)** $20$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $5$. Podobnost s koeficientem $\frac12$.
+
+</details>
+
+### `vut-fast-173` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 173)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+V pravoúhlém trojúhelníku mají úseky na přeponě $c$ rozdělené výškou na tuto přeponu délky $c_a=5,\ c_b=7$. Určete výšku $v_c$ na přeponu.
+
+- **a)** $35$
+- **b)** $30$
+- **c)** $5$
+- **d)** $\sqrt{35}$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\sqrt{35}$. $v_c^2=c_ac_b$.
+
+</details>
+
+### `vut-fast-174` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 174)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Určete poměr délky $l_1$ kružnice vepsané do čtverce o straně $a=1$ k obvodu $l_2$ tohoto čtverce. $l_1:l_2=$
+
+- **a)** $\pi$
+- **b)** $\pi:4$
+- **c)** $\pi:2$
+- **d)** $1:2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\pi:4$. $\pi:4$.
+
+</details>
+
+### `vut-fast-175` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 175)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Určete délku kružnice opsané čtverci o straně $a=2$.
+
+- **a)** $\pi$
+- **b)** $2\pi$
+- **c)** $2\pi\sqrt2$
+- **d)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $2\pi\sqrt2$. Poloměr je polovina úhlopříčky, $\sqrt2$.
+
+</details>
+
+### `vut-fast-176` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 176)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+V kosočtverci o straně $a=4$ je úhel sevřený dvěma stranami $\alpha=120^\circ$. Vypočtěte délku kratší úhlopříčky.
+
+- **a)** $4$
+- **b)** $2$
+- **c)** $0$
+- **d)** $30$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $4$. Kratší úhlopříčka s dvěma stranami tvoří rovnostranný trojúhelník.
+
+</details>
+
+### `vut-fast-177` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 177)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte délku úhlopříčky čtverce opsaného kružnici o poloměru $r=3$.
+
+- **a)** $6$
+- **b)** $6\sqrt2$
+- **c)** $3$
+- **d)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $6\sqrt2$. Strana čtverce je $6$.
+
+</details>
+
+### `vut-fast-178` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 178)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte úhel $\beta$ při vrcholu $B$ trojúhelníka $ABC$, je-li $a=b=6$, $\alpha=30^\circ$.
+
+- **a)** $30^\circ$
+- **b)** $60^\circ$
+- **c)** $12^\circ$
+- **d)** $0^\circ$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $30^\circ$. Trojúhelník je rovnoramenný.
+
+</details>
+
+### `vut-fast-179` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 179)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte úhel $\alpha$ při vrcholu $A$ trojúhelníka $ABC$, je-li $a=7$, $\beta=60^\circ$, $b=7$.
+
+- **a)** $60^\circ$
+- **b)** $30^\circ$
+- **c)** $0^\circ$
+- **d)** $10^\circ$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $60^\circ$. $a=b$, tedy $\alpha=\beta$.
+
+</details>
+
+### `vut-fast-180` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 180)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Určete druhou mocninu vzdálenosti vrcholu čtverce o délce strany $a=4$ od středu protější strany.
+
+- **a)** $9$
+- **b)** $20$
+- **c)** $3$
+- **d)** $9/2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $20$. $4^2+2^2$.
 
 </details>
 
@@ -6009,6 +7029,176 @@ Trojúhelník o stranách $a=2;\ b=3$, které svírají úhel $\gamma=\dfrac\pi3
 
 </details>
 
+### `vut-fast-181` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 181)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Určete poměr objemu $V_1$ koule vepsané do krychle o hraně $a=6$ k objemu $V_2$ této krychle. $V_1:V_2=$
+
+- **a)** $\pi:6$
+- **b)** $\pi:3$
+- **c)** $\pi:2$
+- **d)** $\pi:1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\pi:6$. $36\pi:216$.
+
+</details>
+
+### `vut-fast-182` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 182)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Určete poměr povrchu $S_1$ koule vepsané do krychle o hraně $a=6$ k povrchu $S_2$ této krychle. $S_1:S_2=$
+
+- **a)** $\pi:1$
+- **b)** $\pi:6$
+- **c)** $\pi:3$
+- **d)** $\pi:2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\pi:6$. $36\pi:216$.
+
+</details>
+
+### `vut-fast-183` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 183)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Objem kvádru je $36\ j^3$, délka hrany $a=2$, $b=3a$. Určete délku hrany $c$.
+
+- **a)** $1$
+- **b)** $3$
+- **c)** $0$
+- **d)** $5$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $3$. $2\cdot6\cdot c=36$.
+
+</details>
+
+### `vut-fast-184` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 184)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Určete délku tělesové úhlopříčky krychle o hraně $a$.
+
+- **a)** $a$
+- **b)** $0$
+- **c)** $3a$
+- **d)** $a\sqrt3$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $a\sqrt3$
+
+</details>
+
+### `vut-fast-185` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 185)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte objem krychle, která má tělesovou úhlopříčku $u=3$.
+
+- **a)** $3\sqrt3$
+- **b)** $3$
+- **c)** $6$
+- **d)** $9$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $3\sqrt3$. Hrana $\sqrt3$.
+
+</details>
+
+### `vut-fast-186` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 186)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte poloměr rotačního kužele, je-li dán obsah osového řezu $P=16\ cm^2$ a výška kužele je $v=8$ cm. (Osový řez je řez rovinou procházející osou kužele.)
+
+- **a)** $20$
+- **b)** $4$
+- **c)** $6$
+- **d)** $2$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $2$. Osový řez je trojúhelník o obsahu $rv$.
+
+</details>
+
+### `vut-fast-187` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 187)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Určete délku úhlopříčky osového řezu rovnostranného rotačního válce o poloměru $r=2$ cm. (Osový řez je řez rovinou procházející osou válce, rovnostranný válec má průměr podstavy rovný výšce.)
+
+- **a)** $2$
+- **b)** $16$
+- **c)** $4\sqrt2$
+- **d)** $4$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $4\sqrt2$. Osový řez je čtverec $4\times4$.
+
+</details>
+
+### `vut-fast-188` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 188)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte objem koule vepsané do krychle o hraně $a=1$.
+
+- **a)** $9$
+- **b)** $\pi$
+- **c)** $\pi/6$
+- **d)** $9\pi$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\pi/6$. $r=\frac12$.
+
+</details>
+
+### `vut-fast-189` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 189)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Objem pravidelného čtyřbokého jehlanu je $V=120\ cm^3$, výška jehlanu je $2{,}5$ cm, plocha podstavy jehlanu $P=$
+
+- **a)** $5$
+- **b)** $144$
+- **c)** $120$
+- **d)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $144$. $V=\frac13Pv$.
+
+</details>
+
+### `vut-fast-190` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 190)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte poloměr podstavy rotačního kužele o objemu $V=250\ cm^3$ a výšce $v=30/\pi$ cm.
+
+- **a)** $30$
+- **b)** $5$
+- **c)** $30/\pi$
+- **d)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $5$. $\frac13\pi r^2\cdot\frac{30}\pi=10r^2=250$.
+
+</details>
+
 ### `vut-fsi-2014-z2-07` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 7, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
@@ -6166,6 +7356,57 @@ Povrch větší krychle je čtyřnásobkem povrchu krychle menší. Její objem 
 <details><summary>Ответ и решение</summary>
 
 **d** — osmkrát. Hrana dvojnásobná.
+
+</details>
+
+### `vut-fast-101` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 101)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Jaký mnohočlen vznikne dělením $(2x^5-2x^3+2):(x^3-1)$ ?
+
+- **a)** $(2x^2+2)$
+- **b)** $(2x^2-2)$
+- **c)** $(2x^2)$
+- **d)** $(2x^3-2)$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $(2x^2-2)$. Podíl $2x^2-2$, zbytek $2x^2$.
+
+</details>
+
+### `vut-fast-104` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 104)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Jaký mnohočlen vznikne dělením $(3x^7-x^5+3x):(x^5-x)$ ?
+
+- **a)** $(3x^2-1)$
+- **b)** $(2x^2-2)$
+- **c)** $(3x^2-2)$
+- **d)** $(2x^2)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(3x^2-1)$. Podíl $3x^2-1$, zbytek $3x^3+2x$.
+
+</details>
+
+### `vut-fast-109` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 109)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Jaký mnohočlen vznikne dělením $(6x^6+3x^5+2x^4-4):(3x^4+x^2)$ ?
+
+- **a)** $2x^2+x$
+- **b)** $x^2-6$
+- **c)** $x^2+2$
+- **d)** $x^5$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $2x^2+x$. Podíl $2x^2+x$, zbytek $-x^3-4$.
 
 </details>
 
@@ -7934,6 +9175,57 @@ Rovnice $(m+1)x^2-2mx+(m-1)=0$ s neznámou $x$ má dvojnásobný kořen pro
 
 </details>
 
+### `vut-fast-111` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 111)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Určete všechna reálná řešení rovnice $1+|x-3|=x-2$
+
+- **a)** $x=3$
+- **b)** $(-\infty;3)$
+- **c)** $\langle3;\infty)$
+- **d)** $x=0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\langle3;\infty)$. Pro $x\ge3$ je rovnost $-2=-2$ splněna vždy; pro $x<3$ vyjde $x=3$ — spor.
+
+</details>
+
+### `vut-fast-112` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 112)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Určete všechna reálná řešení rovnice $3|x-2|=7x-11$
+
+- **a)** $x=2$
+- **b)** $x=17/10$
+- **c)** $x=-2$
+- **d)** nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=17/10$. Pro $x\ge2$: $x=\frac54$ — nevyhovuje; pro $x<2$: $6-3x=7x-11$, $x=\frac{17}{10}$.
+
+</details>
+
+### `vut-fast-116` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 116)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Určete všechna reálná řešení rovnice $3+|x-4|=x+4$
+
+- **a)** $x=0$
+- **b)** $x=3$
+- **c)** $x=5$
+- **d)** $x=3/2$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x=3/2$. Pro $x\ge4$: $-1=4$ — spor; pro $x<4$: $7-x=x+4$.
+
+</details>
+
 ### `vut-fekt-2024-v1-05` — [FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 5, 2 body)](https://vut.cz/pomocne2018/f151468/d267522/p273733)
 
 *Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
@@ -8224,6 +9516,59 @@ Množina všech reálných čísel, pro která platí $(x^2-3x)\cdot\log(x^2+9)<
 <details><summary>Ответ и решение</summary>
 
 **c** — $(0,3)$. $\log(x^2+9)\ge\log9>0$, stačí $x^2-3x<0$.
+
+</details>
+
+### `vut-fast-113` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 113)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Určete všechna reálná řešení nerovnice $3+|x-5|<x+2$
+
+- **a)** $x>3/2$
+- **b)** $x>3$
+- **c)** $x=-3/2$
+- **d)** nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x>3$. Pro $x\ge5$ platí vždy; pro $x<5$: $8-x<x+2$, $x>3$.
+
+</details>
+
+### `vut-fast-114` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 114)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Určete všechna reálná řešení nerovnice $|x-2|\le3x+2$
+
+- **a)** $(-\infty;-1/15)$
+- **b)** $\langle0;\infty)$
+- **c)** $x=-2$
+- **d)** nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\langle0;\infty)$. Pro $x\ge2$ platí vždy; pro $x<2$: $2-x\le3x+2$, $x\ge0$.
+
+</details>
+
+### `vut-fast-115` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 115)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Určete všechna reálná řešení nerovnice $|1-6x|\ge2+7x$
+
+- **a)** nemá řešení
+- **b)** $(-\infty;-1/13)$
+- **c)** $(-10;-2)$
+- **d)** $x=0$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $(-\infty;-1/13)$. Pro $x\le\frac16$: $1-6x\ge2+7x$, $x\le-\frac1{13}$; pro $x>\frac16$ řešení není.
+
+*Примечание:* Bod $-\frac1{13}$ nerovnici splňuje (nastává rovnost), přesně je tedy řešení $\left(-\infty;-\frac1{13}\right\rangle$; v klíči FAST je vyznačena tato možnost.
 
 </details>
 
@@ -8638,6 +9983,23 @@ Jestliže $y=2e^{3x-1}$, pak $y\in\left\langle\frac12,2\right\rangle$ právě pr
 <details><summary>Ответ и решение</summary>
 
 **a** — $x\in\left\langle\frac{1-\ln4}{3},\frac13\right\rangle$. $e^{3x-1}\in\langle\frac14,1\rangle\iff-\ln4\le3x-1\le0$.
+
+</details>
+
+### `vut-fast-154` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 154)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $2^{\log x}\cdot3^{\log x}=6$
+
+- **a)** nemá řešení
+- **b)** $1$
+- **c)** $10$
+- **d)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $10$. $6^{\log x}=6$, $\log x=1$.
 
 </details>
 
@@ -9121,6 +10483,40 @@ Které z následujících tvrzení o definičním oboru funkce $f(x)=\dfrac{\ln(
 
 </details>
 
+### `vut-fast-151` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 151)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $\log(2x-3)-\log(x+1)=-\log3$
+
+- **a)** $2$
+- **b)** $100$
+- **c)** $1$
+- **d)** $-10$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $2$. $3(2x-3)=x+1$; podmínka $x>\frac32$.
+
+</details>
+
+### `vut-fast-152` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 152)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru reálných čísel řešte rovnici $\log(3x^2+1)-\log(x+3)=\log(3x-2)$
+
+- **a)** $2$
+- **b)** $3$
+- **c)** $10$
+- **d)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $1$. $3x^2+1=(3x-2)(x+3)\Rightarrow x=1$.
+
+</details>
+
 ### `fit-2019-12` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 12, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2019.pdf)
 
 *Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -9428,6 +10824,193 @@ Množina všech řešení rovnice $\log\left(x^{\log x}\right)=1$ je
 <details><summary>Ответ и решение</summary>
 
 **e** — $\{10;0.1\}$. $(\log x)^2=1$, $\log x=\pm1$.
+
+</details>
+
+### `vut-fast-131` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 131)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Pro celá čísla $k$ určete definiční obor funkce $f:\ y=\sqrt{\cos x}$
+
+- **a)** $\left\langle-\dfrac\pi2+2k\pi;\dfrac\pi2+2k\pi\right\rangle$
+- **b)** $\left\langle\dfrac\pi2+2k\pi;\dfrac{3\pi}2+2k\pi\right\rangle$
+- **c)** $\left\langle\dfrac\pi2+k\pi;\dfrac{3\pi}2+k\pi\right\rangle$
+- **d)** $\langle2k\pi;(2k+1)\pi\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\left\langle-\dfrac\pi2+2k\pi;\dfrac\pi2+2k\pi\right\rangle$. $\cos x\ge0$.
+
+</details>
+
+### `vut-fast-132` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 132)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Pro celá čísla $k$ určete definiční obor funkce $f:\ y=\sqrt{\operatorname{tg}x}$
+
+- **a)** $\left\langle\dfrac\pi2+k\pi;\dfrac{3\pi}2+k\pi\right\rangle$
+- **b)** $\left\langle0+k\pi;\dfrac\pi2+k\pi\right)$
+- **c)** $\left\langle0+k\dfrac\pi2;\dfrac\pi2+k\dfrac\pi2\right\rangle$
+- **d)** $\left(-\dfrac\pi4;0\right)$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\left\langle0+k\pi;\dfrac\pi2+k\pi\right)$. $\operatorname{tg}x\ge0$.
+
+</details>
+
+### `vut-fast-136` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 136)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу)
+
+Kolik průsečíků má graf funkce $f:\ y=3\operatorname{tg}x$ s přímkou $y=2$ na intervalu $(0;\pi)$ ?
+
+- **a)** $5$
+- **b)** $1$
+- **c)** $2$
+- **d)** žádný
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $1$. $\operatorname{tg}x=\frac23$ má na $(0;\pi)$ jediné řešení.
+
+</details>
+
+### `vut-fast-137` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 137)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу)
+
+Kolik průsečíků má graf funkce $f:\ y=\cos x$ s přímkou $y=-x$?
+
+- **a)** $1$
+- **b)** $2$
+- **c)** $3$
+- **d)** $4$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1$. Pro $|x|>1$ se grafy protnout nemohou; na $\langle-1;1\rangle$ je jediný průsečík.
+
+</details>
+
+### `vut-fast-138` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 138)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу)
+
+Kolik průsečíků má graf funkce $f:\ y=\sin(x/2)$ s přímkou $y=-x$?
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $2$
+- **d)** $3$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $1$. Jediný průsečík je počátek.
+
+</details>
+
+### `vut-fast-141` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 141)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte pro přípustná $x$ daný výraz $\cos2x+\sin2x\cdot\operatorname{tg}2x=$
+
+- **a)** $1/\cos2x$
+- **b)** $\cos x$
+- **c)** $\sin x$
+- **d)** $2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1/\cos2x$. $\frac{\cos^22x+\sin^22x}{\cos2x}$.
+
+</details>
+
+### `vut-fast-142` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 142)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte pro přípustná $x$ daný výraz $\dfrac{\cos x\cdot\sin2x}{1+\cos2x}=$
+
+- **a)** $\cos x$
+- **b)** $\sin x$
+- **c)** $1$
+- **d)** nelze zjednodušit
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sin x$. $\frac{2\sin x\cos^2x}{2\cos^2x}$.
+
+</details>
+
+### `vut-fast-144` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 144)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte pro přípustná $x$ daný výraz $\dfrac{1+\cos2x}{1-\cos2x}=$
+
+- **a)** $\operatorname{cotg}x$
+- **b)** $1$
+- **c)** $5$
+- **d)** $\operatorname{cotg}^2x$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\operatorname{cotg}^2x$. $\frac{2\cos^2x}{2\sin^2x}$.
+
+</details>
+
+### `vut-fast-148` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 148)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte $\operatorname{tg}(45^\circ+180^\circ)\cdot[\cos(30^\circ-x)-\cos(30^\circ+x)]=$
+
+- **a)** $\pi$
+- **b)** $-\pi$
+- **c)** $\pi/2$
+- **d)** $\sin x$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\sin x$. $\operatorname{tg}225^\circ=1$, závorka je $2\sin30^\circ\sin x$.
+
+</details>
+
+### `vut-fast-149` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 149)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte: $\operatorname{tg}(45^\circ-180^\circ)\cdot[\sin(60^\circ-x)-\sin(60^\circ+x)]=$
+
+- **a)** $1$
+- **b)** $2$
+- **c)** $-\sin x$
+- **d)** $\cos x$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $-\sin x$. $\operatorname{tg}(-135^\circ)=1$, závorka je $-2\cos60^\circ\sin x$.
+
+</details>
+
+### `vut-fast-150` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 150)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte: $\cos(45^\circ+x)+\cos(45^\circ-x)=$
+
+- **a)** $\sqrt2\cos x$
+- **b)** $\cos x$
+- **c)** $2$
+- **d)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\sqrt2\cos x$. $2\cos45^\circ\cos x$.
 
 </details>
 
@@ -9778,6 +11361,23 @@ Počet všech $x$ z intervalu $(\pi,2\pi)$, pro která platí $1-\cos^2x-\sin x=
 
 </details>
 
+### `vut-fast-128` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 128)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Určete velikost (absolutní hodnotu) komplexního čísla $\dfrac{1-2i}{1+i}\cdot(-i)$
+
+- **a)** $1$
+- **b)** $0$
+- **c)** $5$
+- **d)** $\dfrac{\sqrt{10}}2$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\dfrac{\sqrt{10}}2$. $\frac{\sqrt5}{\sqrt2}\cdot1$.
+
+</details>
+
 ### `vut-fsi-2014-z4-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
@@ -9851,6 +11451,23 @@ Mezi kořeny kvadratické rovnice $x^2-30x+81=0$ vložte čtyři čísla tak, ab
 <details><summary>Ответ и решение</summary>
 
 **d** — Čtvrtý člen vzniklé posloupnosti je $\frac{87}{5}$.. Kořeny $3$ a $27$: $d=\frac{24}{5}$, $a_4=3+3\cdot\frac{24}{5}=\frac{87}{5}$.
+
+</details>
+
+### `vut-fast-167` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 167)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V geometrické posloupnosti platí $a_2-a_1=15,\ a_3-a_2=60$. Vypočtěte $a_1$.
+
+- **a)** $-2$
+- **b)** $5$
+- **c)** $0$
+- **d)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $5$. Podílem $q=4$, pak $3a_1=15$.
 
 </details>
 
@@ -10544,6 +12161,40 @@ Kuželosečku danou rovnicí $x^2-4x+y^2-6y+9=0$ posuňte rovnoběžně s osou $
 
 </details>
 
+### `vut-fast-191` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 191)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
+
+Určete délku hlavní poloosy elipsy $4x^2+9y^2+16x-18y-11=0$.
+
+- **a)** $3$
+- **b)** $2$
+- **c)** $5$
+- **d)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $3$. $\frac{(x+2)^2}9+\frac{(y-1)^2}4=1$.
+
+</details>
+
+### `vut-fast-196` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 196)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
+
+Určete souřadnice středu elipsy $4x^2+9y^2+16x-18y-11=0$.
+
+- **a)** $[-1;2]$
+- **b)** $[-1;-2]$
+- **c)** $[-2;1]$
+- **d)** $[2;-1]$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $[-2;1]$. $4(x+2)^2+9(y-1)^2=36$.
+
+</details>
+
 ### `fit-2026-14` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 14, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
 
 *Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
@@ -10579,6 +12230,23 @@ Pro délky poloos hyperboly zadané rovnicí $4x^2-9y^2-24x-36y-36=0$ platí
 <details><summary>Ответ и решение</summary>
 
 **d** — Součin jejich druhých mocnin je 36.. $\frac{(x-3)^2}{9}-\frac{(y+2)^2}{4}=1$: $a^2b^2=36$.
+
+</details>
+
+### `vut-fast-172` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 172)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+V pravoúhlém trojúhelníku $ABC$ (pravý úhel je při vrcholu $C$) je délka odvěsny $CB=4$ cm a úsek $c_a$ na přeponě přilehlý k odvěsně $CB$ má délku $16/5$ cm. Určete délku přepony.
+
+- **a)** $36$
+- **b)** $5$
+- **c)** $0$
+- **d)** $16/5$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $5$. Eukleidova věta: $a^2=c\cdot c_a$, $16=\frac{16}5c$.
 
 </details>
 
@@ -10655,6 +12323,23 @@ Objem krychle vepsané do koule o průměru $d$ je
 <details><summary>Ответ и решение</summary>
 
 **e** — $3^{-\frac32}d^3$. Tělesová úhlopříčka $a\sqrt3=d$.
+
+</details>
+
+### `vut-fast-103` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 103)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Pro přípustné hodnoty zjednodušte $\left(1+t-\dfrac1{1-t}\right):t=$
+
+- **a)** $t$
+- **b)** $\dfrac t{t-1}$
+- **c)** $1$
+- **d)** $\dfrac1{t+1}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\dfrac t{t-1}$. Závorka je $\frac{-t^2}{1-t}$, po dělení $t$: $\frac t{t-1}$.
 
 </details>
 
