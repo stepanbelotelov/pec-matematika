@@ -75,6 +75,75 @@
   },
   {
    "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 14, 5 bodů)",
+   "body": "V testu byly tři příklady. Osm studentů vyřešilo všechny tři příklady, dva studenti ani jeden. První příklad vyřešilo celkem 25 studentů, druhý celkem 21 studentů a třetí 19 studentů. První a zároveň druhý příklad vyřešilo 15 studentů, první a zároveň třetí příklad vyřešilo také 15 studentů a druhý a zároveň třetí příklad 10 studentů. Rozhodněte, které tvrzení je pravdivé.",
+   "opts": [
+    "Popsaná situace nemůže nastat.",
+    "Neexistuje student, který by vyřešil pouze první příklad.",
+    "První nebo druhý příklad vyřešilo více studentů než druhý nebo třetí příklad.",
+    "Test psalo 32 studentů.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"|1\\cup2|=25+21-15=31&gt;|2\\cup3|=21+19-10=30\"></span>; test psalo <span class=\"m\" data-tex=\"35\"></span> studentů.",
+   "id": "fit-2014-2-14",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 3,
+   "topics": [
+    1
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 14, 5 bodů)",
+   "body": "V testu byly tři příklady. Devět studentů vyřešilo všechny tři příklady, dva studenti ani jeden. První příklad vyřešilo celkem 22 studentů, druhý celkem 20 studentů a třetí 24 studentů. První a zároveň druhý příklad vyřešilo 14 studentů, první a zároveň třetí příklad vyřešilo 17 studentů a druhý a zároveň třetí příklad 12 studentů. Rozhodněte, které tvrzení je pravdivé.",
+   "opts": [
+    "Popsaná situace nemůže nastat.",
+    "Neexistuje student, který by vyřešil pouze první příklad.",
+    "První nebo druhý příklad vyřešilo více studentů než druhý nebo třetí příklad.",
+    "Test psalo 32 studentů.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Pouze první: <span class=\"m\" data-tex=\"22-14-17+9=0\"></span>.",
+   "id": "fit-2014-3-14",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 3,
+   "topics": [
+    1
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 14, 5 bodů)",
+   "body": "V testu byly tři příklady. Pět studentů vyřešilo všechny tři příklady, dva studenti ani jeden. První příklad vyřešilo celkem 20 studentů, druhý celkem 19 studentů a třetí 17 studentů. První a zároveň druhý příklad vyřešilo 12 studentů, první a zároveň třetí příklad vyřešilo také 12 studentů a druhý a zároveň třetí příklad 7 studentů. Rozhodněte, které tvrzení je pravdivé.",
+   "opts": [
+    "Popsaná situace nemůže nastat.",
+    "Neexistuje student, který by vyřešil pouze první příklad.",
+    "První nebo druhý příklad vyřešilo méně studentů než druhý nebo třetí příklad.",
+    "Test psalo 30 studentů.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"|1\\cup2|=27&lt;|2\\cup3|=29\"></span>; test psalo <span class=\"m\" data-tex=\"32\"></span> studentů.",
+   "id": "fit-2014-4-14",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 3,
+   "topics": [
+    1
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 6, 5 bodů)",
    "body": "Jsou dány dvě množiny <span class=\"m\" data-tex=\"A=\\{x^2-4x+5\\mid x\\in(1,4\\rangle\\}\"></span> a <span class=\"m\" data-tex=\"B=\\{x\\mid |x-4|&gt;\\frac12\\}\"></span>. Průnikem množin <span class=\"m\" data-tex=\"A\"></span> a <span class=\"m\" data-tex=\"B\"></span> je",
    "opts": [
@@ -99,7 +168,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 7, 7 bodů)",
    "body": "Jsou dány dvě množiny <span class=\"m\" data-tex=\"A=\\{2\\sin(x-\\pi)\\mid x\\in\\langle0,\\pi\\rangle\\}\"></span> a <span class=\"m\" data-tex=\"B=\\{x\\mid |x-1|\\ge1\\}\"></span>. Průnikem množin <span class=\"m\" data-tex=\"A\"></span> a <span class=\"m\" data-tex=\"B\"></span> je",
    "opts": [
@@ -123,7 +192,7 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 4, 7 bodů)",
    "body": "Ve třídě je 30 žáků. Jedna třetina z nich si k maturitě zvolila matematiku a fyziku zároveň. Alespoň jeden z těchto předmětů si zvolilo 24 žáků. Maturovat z angličtiny se rozhodlo 22 žáků. Všechny tři předměty si vybralo 8 žáků a jen matematiku 3 žáci. Matematiku a zároveň angličtinu si vybralo 15 žáků. Dva žáci si nevybrali ani jeden z těchto tří předmětů. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -871,6 +940,75 @@
   },
   {
    "q": "P15",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 10, 5 bodů)",
+   "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=a-b+2a\"></span>. Určete neznámou <span class=\"m\" data-tex=\"x\"></span>, platí-li <span class=\"m\" data-tex=\"(2\\star x)\\star3=3\\,.\"></span>",
+   "opts": [
+    "Rovnice nemá řešení.",
+    "Rovnice má jedno kladné řešení.",
+    "Rovnice má dvě řešení a jejich součet je 10.",
+    "Rovnice má více než dvě řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"a\\star b=3a-b\"></span>: <span class=\"m\" data-tex=\"3(6-x)-3=3\\Rightarrow x=4\"></span>.",
+   "id": "fit-2014-2-10",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P16",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 10, 5 bodů)",
+   "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=a-b+2a\"></span>. Určete neznámou <span class=\"m\" data-tex=\"x\"></span>, platí-li <span class=\"m\" data-tex=\"(3\\star x)\\star2=6\\,.\"></span>",
+   "opts": [
+    "Rovnice nemá řešení.",
+    "Rovnice má více než dvě řešení.",
+    "Rovnice má jedno kladné řešení.",
+    "Rovnice má dvě řešení a jejich součet je 10.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"3(9-x)-2=6\\Rightarrow x=\\frac{19}3\"></span>.",
+   "id": "fit-2014-3-10",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P17",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 10, 5 bodů)",
+   "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=a-b+2a\"></span>. Určete neznámou, <span class=\"m\" data-tex=\"x\"></span> platí-li <span class=\"m\" data-tex=\"(2\\star x)\\star3=0\\,.\"></span>",
+   "opts": [
+    "Rovnice nemá řešení.",
+    "Rovnice má více než dvě řešení.",
+    "Rovnice má dvě řešení a jejich součet je 10.",
+    "Rovnice má jedno kladné řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"3(6-x)-3=0\\Rightarrow x=5\"></span>.",
+   "id": "fit-2014-4-10",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P18",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 5, 7 bodů)",
    "body": "Nalezněte řešení soustavy rovnic <span class=\"m\" data-tex=\"2x-y=7\"></span> a <span class=\"m\" data-tex=\"2(y+2x)=2-y\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -893,7 +1031,7 @@
    "needs_original": false
   },
   {
-   "q": "P16",
+   "q": "P19",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 13, 5 bodů)",
    "body": "Kolik litrů vody o teplotě <span class=\"m\" data-tex=\"60\\ ^\\circ\"></span>C je třeba přidat do 30 litrů vody o teplotě <span class=\"m\" data-tex=\"30\\ ^\\circ\"></span>C, chceme-li, aby výsledná teplota vody byla <span class=\"m\" data-tex=\"40\\ ^\\circ\"></span>C?",
    "opts": [
@@ -916,7 +1054,7 @@
    "needs_original": false
   },
   {
-   "q": "P17",
+   "q": "P20",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 16, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=a-b-2b\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(3\\star x)\\star2=1\\,.\"></span>",
    "opts": [
@@ -939,7 +1077,7 @@
    "needs_original": false
   },
   {
-   "q": "P18",
+   "q": "P21",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 6, 7 bodů)",
    "body": "Nalezněte řešení soustavy rovnic <span class=\"m\" data-tex=\"3(x+2)-4(y+x)=7\"></span> a <span class=\"m\" data-tex=\"2x-(x-4y)=-1\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -965,7 +1103,7 @@
    ]
   },
   {
-   "q": "P19",
+   "q": "P22",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 10, 2 body)",
    "body": "Řešte pro <span class=\"m\" data-tex=\"x,y\\in\\mathbb{R}\"></span> soustavu rovnic <span class=\"m\" data-tex=\"\\begin{array}{c}2x-y=0\\,,\\\\y-x^2=1\\,.\\end{array}\"></span>",
    "opts": [
@@ -988,7 +1126,7 @@
    "needs_original": false
   },
   {
-   "q": "P20",
+   "q": "P23",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 10, 2 body)",
    "body": "Řešte pro <span class=\"m\" data-tex=\"x,y\\in\\mathbb{R}\"></span> soustavu rovnic <span class=\"m\" data-tex=\"\\begin{array}{c}x^2+y^2=4\\,,\\\\x+2y=0\\,.\\end{array}\"></span>",
    "opts": [
@@ -1012,7 +1150,7 @@
    "needs_original": false
   },
   {
-   "q": "P21",
+   "q": "P24",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 19)",
    "body": "V oboru reálných čísel řešte rovnici: <span class=\"m\" data-tex=\"\\dfrac{x+2}{x+3}-\\dfrac{2-x}{3-x}=\\dfrac{6}{x^2-9}\"></span>",
    "opts": [
@@ -1034,7 +1172,7 @@
    "needs_original": false
   },
   {
-   "q": "P22",
+   "q": "P25",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 20)",
    "body": "V oboru reálných čísel řešte rovnici: <span class=\"m\" data-tex=\"2+\\dfrac{x+6}{x+3}=3+\\dfrac{3}{x+3}\"></span>",
    "opts": [
@@ -1056,7 +1194,7 @@
    "needs_original": false
   },
   {
-   "q": "P23",
+   "q": "P26",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 5, 2 body)",
    "body": "Rovnost <span class=\"m\" data-tex=\"\\frac{2}{1-x}=2-\\frac2x\"></span> platí právě pro",
    "opts": [
@@ -1080,7 +1218,7 @@
    "needs_original": false
   },
   {
-   "q": "P24",
+   "q": "P27",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 5, 2 body)",
    "body": "Rovnost <span class=\"m\" data-tex=\"\\frac{3}{x+1}=\\frac3x+3\"></span> platí právě pro",
    "opts": [
@@ -1104,7 +1242,7 @@
    "needs_original": false
   },
   {
-   "q": "P25",
+   "q": "P28",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 5, 3 body)",
    "body": "Pro zlomek v základním tvaru platí následující. Jmenovatel zlomku je dvojnásobek čitatele zmenšený o jedna. Hodnota zlomku se nezmění, pokud k čitateli přičteme dvě a k jmenovateli přičteme tři. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1124,10 +1262,37 @@
    "topics": [
     3
    ],
+   "needs_original": false,
+   "also_in": [
+    "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3, příklad 5, 3 b",
+    "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4, příklad 5, 3 b"
+   ]
+  },
+  {
+   "q": "P29",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 5, 3 body)",
+   "body": "Pro zlomek v základním tvaru platí následující. Jmenovatel zlomku je dvojnásobek čitatele zmenšený o jedna. Hodnota zlomku se nezmění, pokud k čitateli přičteme dvě a k jmenovateli přičteme tři. Rozhodněte, které tvrzení je pravdivé.",
+   "opts": [
+    "Takový zlomek neexistuje.",
+    "Součin čitatele a jmenovatele je 24.",
+    "Existují dva různé zlomky vyhovující podmínkám.",
+    "Součet čitatele a jmenovatele je 6.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"b=2a-1\"></span>, <span class=\"m\" data-tex=\"2b=3a\"></span>: zlomek <span class=\"m\" data-tex=\"\\frac23\"></span>, součin <span class=\"m\" data-tex=\"6\"></span>, součet <span class=\"m\" data-tex=\"5\"></span>.",
+   "id": "fit-2014-2-05",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    3
+   ],
    "needs_original": false
   },
   {
-   "q": "P26",
+   "q": "P30",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 8, 5 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2x^8+6x^5-36x^2=0\"></span> platí",
    "opts": [
@@ -1150,7 +1315,76 @@
    "needs_original": false
   },
   {
-   "q": "P27",
+   "q": "P31",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 8, 5 bodů)",
+   "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2x^8-10x^5+12x^2=0\"></span> platí",
+   "opts": [
+    "Rovnice má pouze záporná řešení.",
+    "Součin všech řešení je <span class=\"m\" data-tex=\"6\"></span>.",
+    "Všechna reálná řešení rovnice leží v intervalu <span class=\"m\" data-tex=\"\\langle-2,2\\rangle\"></span>.",
+    "Rovnice nemá řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"2x^2(x^3-2)(x^3-3)=0\"></span>: <span class=\"m\" data-tex=\"x\\in\\{0,\\sqrt[3]2,\\sqrt[3]3\\}\"></span>.",
+   "id": "fit-2014-2-08",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P32",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 8, 5 bodů)",
+   "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"3x^9+12x^6-63x^3=0\"></span> platí",
+   "opts": [
+    "Rovnice má pouze nezáporná řešení.",
+    "Součin všech řešení je <span class=\"m\" data-tex=\"-21\"></span>.",
+    "Rovnice nemá řešení.",
+    "Všechna reálná řešení rovnice leží v intervalu <span class=\"m\" data-tex=\"\\langle-3,4\\rangle\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"3x^3(x^3+7)(x^3-3)=0\"></span>: <span class=\"m\" data-tex=\"x\\in\\{0,-\\sqrt[3]7,\\sqrt[3]3\\}\"></span>.",
+   "id": "fit-2014-3-08",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P33",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 8, 5 bodů)",
+   "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2x^7+4x^4-16x=0\"></span> platí",
+   "opts": [
+    "Rovnice má pouze nezáporná řešení.",
+    "Součet všech řešení je <span class=\"m\" data-tex=\"3\"></span>.",
+    "Rovnice nemá řešení.",
+    "Všechna reálná řešení rovnice leží v intervalu <span class=\"m\" data-tex=\"\\langle-2,3\\rangle\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"2x(x^3+4)(x^3-2)=0\"></span>: <span class=\"m\" data-tex=\"x\\in\\{0,-\\sqrt[3]4,\\sqrt[3]2\\}\"></span>.",
+   "id": "fit-2014-4-08",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P34",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 16, 3 body)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"8x^4+4x^3+2x^2+x=0\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1173,7 +1407,7 @@
    "needs_original": false
   },
   {
-   "q": "P28",
+   "q": "P35",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 2, 7 bodů)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=\\frac{a+b}{b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star3=-1\\,.\"></span>",
    "opts": [
@@ -1196,7 +1430,7 @@
    "needs_original": false
   },
   {
-   "q": "P29",
+   "q": "P36",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 12, 5 bodů)",
    "body": "Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno <span class=\"m\" data-tex=\"15\\%\"></span> celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla 51 kg. Průměrná hmotnost pytle v druhé etapě byla 55 kg a ve třetí etapě 48 kg. Celková průměrná hmotnost pytle brambor v tomto skladu je <span class=\"m\" data-tex=\"50{,}55\"></span> kg. Určete kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.",
    "opts": [
@@ -1219,7 +1453,7 @@
    "needs_original": false
   },
   {
-   "q": "P30",
+   "q": "P37",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 15, 5 bodů)",
    "body": "Určete hodnotu parametrů <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span> tak, aby rovnost <span class=\"m\" data-tex=\"(2a-3x)(bx+3)=9x^2+2cx+2\"></span> platila pro každé reálné číslo <span class=\"m\" data-tex=\"x\"></span>, a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1242,7 +1476,7 @@
    "needs_original": false
   },
   {
-   "q": "P31",
+   "q": "P38",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 20, 3 body)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"2x^5-x^3+2x^2=1\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1265,7 +1499,7 @@
    "needs_original": false
   },
   {
-   "q": "P32",
+   "q": "P39",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 5, 7 bodů)",
    "body": "Na dvoře jsou psi a slepice. Dohromady mají 50 hlav. Kdyby byla psů třetina a slepic bylo o 3 více, měli by dohromady 86 nohou. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1288,7 +1522,7 @@
    "needs_original": false
   },
   {
-   "q": "P33",
+   "q": "P40",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 2, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=\\frac{a+b}{a-b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star3=3\\,.\"></span>",
    "opts": [
@@ -1314,7 +1548,7 @@
    ]
   },
   {
-   "q": "P34",
+   "q": "P41",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 10, 7 bodů)",
    "body": "Za nákup <span class=\"m\" data-tex=\"1{,}5\"></span> kg mandarinek a <span class=\"m\" data-tex=\"3{,}5\"></span> kg pomerančů jsme zaplatili celkem 185 korun. Kilo pomerančů stojí o třetinu více než kilo mandarinek. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1340,7 +1574,7 @@
    ]
   },
   {
-   "q": "P35",
+   "q": "P42",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 1, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=\\frac{a+b}{a-b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star3=-2\\,.\"></span>",
    "opts": [
@@ -1366,7 +1600,7 @@
    ]
   },
   {
-   "q": "P36",
+   "q": "P43",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 14, 7 bodů)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"2x^5-x^3+2x^2=1\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1389,7 +1623,7 @@
    "needs_original": false
   },
   {
-   "q": "P37",
+   "q": "P44",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 7, 7 bodů)",
    "body": "Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno <span class=\"m\" data-tex=\"15\\%\"></span> celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla 51 kg. Průměrná hmotnost pytle v druhé etapě byla 55 kg a ve třetí etapě 48 kg. Celková průměrná hmotnost pytle brambor v tomto skladu je <span class=\"m\" data-tex=\"50{,}55\"></span> kg. Určete, kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.",
    "opts": [
@@ -1412,7 +1646,7 @@
    "needs_original": false
   },
   {
-   "q": "P38",
+   "q": "P45",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 8, 7 bodů)",
    "body": "Student měl spočítat 70 úloh. Kdyby denně vyřešil o 2 úlohy více, skončil by o 4 dny dříve. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1438,7 +1672,7 @@
    ]
   },
   {
-   "q": "P39",
+   "q": "P46",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 16, 7 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"(x^2-x+3)^2-8(x^2-x)=9\"></span> je pravdivé.",
    "opts": [
@@ -1465,7 +1699,7 @@
    ]
   },
   {
-   "q": "P40",
+   "q": "P47",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 3, 2 body)",
    "body": "Vyřešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\dfrac{4x-1}{x-2}+2=1-\\dfrac{5x-3}{2-x}\"></span>",
    "opts": [
@@ -1488,7 +1722,7 @@
    "needs_original": false
   },
   {
-   "q": "P41",
+   "q": "P48",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 3, 2 body)",
    "body": "Vyřešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\dfrac{\\frac x4-\\frac1{2x}}{\\frac{2x+1}2-\\frac1x}=\\dfrac14\"></span>",
    "opts": [
@@ -1512,7 +1746,7 @@
    "needs_original": false
   },
   {
-   "q": "P42",
+   "q": "P49",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 20, 7 bodů)",
    "body": "Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?",
    "opts": [
@@ -1535,7 +1769,76 @@
    "needs_original": false
   },
   {
-   "q": "P43",
+   "q": "P50",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 20, 7 bodů)",
+   "body": "Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?",
+   "opts": [
+    "Bazén se nikdy nenaplní.",
+    "Bazén se naplní za 12 hodin a zbytečně vyteče objem vody odpovídající <span class=\"m\" data-tex=\"\\frac32\"></span> objemu bazénu.",
+    "Bazén se naplní za <span class=\"m\" data-tex=\"\\frac{48}{7}\"></span> hodiny a zbytečně vyteče objem vody odpovídající <span class=\"m\" data-tex=\"\\frac37\"></span> objemu bazénu.",
+    "Bazén se naplní za 8 hodin a zbytečně vyteče objem vody odpovídající <span class=\"m\" data-tex=\"\\frac47\"></span> objemu bazénu.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\frac18+\\frac1{12}-\\frac1{16}=\\frac7{48}\"></span>; doba <span class=\"m\" data-tex=\"\\frac{48}7\"></span> h, výpustí vyteče <span class=\"m\" data-tex=\"\\frac37\"></span>.",
+   "id": "fit-2014-2-20",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 3,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P51",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 20, 7 bodů)",
+   "body": "Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?",
+   "opts": [
+    "Bazén se naplní za 10 hodin a zbytečně vyteče objem vody odpovídající <span class=\"m\" data-tex=\"\\frac43\"></span> objemu bazénu.",
+    "Bazén se naplní za <span class=\"m\" data-tex=\"\\frac{48}{7}\"></span> hodiny a zbytečně vyteče objem vody odpovídající <span class=\"m\" data-tex=\"\\frac37\"></span> objemu bazénu.",
+    "Bazén se naplní za 8 hodin a zbytečně vyteče objem vody odpovídající <span class=\"m\" data-tex=\"\\frac37\"></span> objemu bazénu.",
+    "Bazén se nikdy nenaplní.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\frac18+\\frac1{12}-\\frac1{16}=\\frac7{48}\"></span>; doba <span class=\"m\" data-tex=\"\\frac{48}7\"></span> h, výpustí vyteče <span class=\"m\" data-tex=\"\\frac37\"></span>.",
+   "id": "fit-2014-3-20",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 3,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P52",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 20, 7 bodů)",
+   "body": "Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?",
+   "opts": [
+    "Bazén se naplní za 6 hodin a zbytečně vyteče objem vody odpovídající <span class=\"m\" data-tex=\"\\frac37\"></span> objemu bazénu.",
+    "Bazén se naplní za 8 hodin a zbytečně vyteče objem vody odpovídající <span class=\"m\" data-tex=\"\\frac12\"></span> objemu bazénu.",
+    "Bazén se nikdy nenaplní.",
+    "Bazén se naplní za <span class=\"m\" data-tex=\"\\frac{48}{7}\"></span> hodiny a zbytečně vyteče objem vody odpovídající <span class=\"m\" data-tex=\"\\frac47\"></span> objemu bazénu.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "Doba <span class=\"m\" data-tex=\"\\frac{48}7\"></span> h, výpustí vyteče <span class=\"m\" data-tex=\"\\frac37\"></span> objemu, ne <span class=\"m\" data-tex=\"\\frac47\"></span>.",
+   "id": "fit-2014-4-20",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 3,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P53",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 4, 7 bodů)",
    "body": "Tři kladná čísla splňují následující podmínky. Dělíme-li součet prvního a druhého čísla číslem třetím, vyjde jedna a zbytek dva. Dělíme-li součet prvního a třetího čísla číslem druhým, vyjde dva a zbytek nula. Při dělení součtu druhého a třetího čísla číslem prvním je podíl tři a zbytek dva. Rozhodněte, které tvrzení platí.",
    "opts": [
@@ -1610,6 +1913,75 @@
   },
   {
    "q": "P3",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 19, 7 bodů)",
+   "body": "Určete všechny hodnoty reálného parametru <span class=\"m\" data-tex=\"p\"></span>, pro které rovnice nemá reálné kořeny. <span class=\"m\" data-tex=\"x(x+p)+p=-3(3+2x)\"></span>",
+   "opts": [
+    "Takové <span class=\"m\" data-tex=\"p\"></span> neexistuje.",
+    "<span class=\"m\" data-tex=\"p\\in(-8,0)\"></span>.",
+    "<span class=\"m\" data-tex=\"p&gt;8\"></span>.",
+    "<span class=\"m\" data-tex=\"p&lt;0\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"x^2+(p+6)x+p+9=0\"></span>, <span class=\"m\" data-tex=\"D=p^2+8p&lt;0\"></span>.",
+   "id": "fit-2014-2-19",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    4
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 19, 7 bodů)",
+   "body": "Určete všechny hodnoty reálného parametru <span class=\"m\" data-tex=\"p\"></span>, pro které má rovnice 1 reálný kořen. <span class=\"m\" data-tex=\"x(x+p)+p=-3(3+2x)\"></span>",
+   "opts": [
+    "Existují dvě taková <span class=\"m\" data-tex=\"p\"></span> a jejich součet je <span class=\"m\" data-tex=\"-8\"></span>.",
+    "<span class=\"m\" data-tex=\"p&lt;0\"></span>.",
+    "<span class=\"m\" data-tex=\"p=8\"></span>.",
+    "Všechna reálná čísla.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"D=p^2+8p=0\"></span> pro <span class=\"m\" data-tex=\"p=0\"></span> a <span class=\"m\" data-tex=\"p=-8\"></span>.",
+   "id": "fit-2014-3-19",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    4
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 19, 7 bodů)",
+   "body": "Určete všechny hodnoty reálného parametru <span class=\"m\" data-tex=\"p\"></span>, pro které má rovnice alespoň jeden reálný kořen. <span class=\"m\" data-tex=\"x(x+p)+p=-3(3+2x)\"></span>",
+   "opts": [
+    "Takové <span class=\"m\" data-tex=\"p\"></span> neexistuje.",
+    "<span class=\"m\" data-tex=\"p\\le0\"></span>.",
+    "<span class=\"m\" data-tex=\"p&gt;8\"></span>.",
+    "<span class=\"m\" data-tex=\"p\\in\\langle0,8\\rangle\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"D=p^2+8p\\ge0\\iff p\\le-8\\vee p\\ge0\"></span>.",
+   "id": "fit-2014-4-19",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    4
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 15, 7 bodů)",
    "body": "Určete hodnoty reálného parametru <span class=\"m\" data-tex=\"p\"></span> tak, aby v rovnici <span class=\"m\" data-tex=\"3x^2-24x+p=0\"></span> byl jeden kořen trojnásobkem druhého kořene, a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1636,7 +2008,7 @@
    ]
   },
   {
-   "q": "P4",
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 13, 7 bodů)",
    "body": "Určete hodnoty reálného parametru <span class=\"m\" data-tex=\"p\"></span> tak, aby rovnice <span class=\"m\" data-tex=\"p^2(2x-8)+p(x^2-6x+8)+4x-x^2=0\"></span> měla jediné řešení, a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -1664,7 +2036,7 @@
    ]
   },
   {
-   "q": "P5",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 15, 7 bodů)",
    "body": "Určete všechny hodnoty reálného parametru <span class=\"m\" data-tex=\"p\"></span>, pro které má následující rovnice právě 2 různé reálné kořeny. <span class=\"m\" data-tex=\"px^2-p(p+3)x+2p(p+1)=0\"></span>",
    "opts": [
@@ -1763,6 +2135,75 @@
   },
   {
    "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 3, 3 body)",
+   "body": "Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. <span class=\"m\" data-tex=\"|x-3|-|1-2x|=x\"></span>",
+   "opts": [
+    "Rovnice má 3 různá řešení.",
+    "Rovnice má 2 různá řešení.",
+    "Rovnice má jediné řešení.",
+    "Rovnice nemá řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Pro <span class=\"m\" data-tex=\"x&lt;\\frac12\"></span>: <span class=\"m\" data-tex=\"2+x=x\"></span> — nic; na <span class=\"m\" data-tex=\"\\langle\\frac12,3)\"></span>: <span class=\"m\" data-tex=\"4-3x=x\"></span>, <span class=\"m\" data-tex=\"x=1\"></span>; pro <span class=\"m\" data-tex=\"x\\ge3\"></span>: <span class=\"m\" data-tex=\"-x-2=x\"></span> — nic.",
+   "id": "fit-2014-2-03",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    5
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 3, 3 body)",
+   "body": "Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. <span class=\"m\" data-tex=\"|2x+1|-|3-x|=2x\"></span>",
+   "opts": [
+    "Rovnice má 3 různá řešení.",
+    "Rovnice má 2 různá řešení.",
+    "Rovnice má jediné řešení.",
+    "Rovnice nemá řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "Kořeny <span class=\"m\" data-tex=\"-\\frac43\"></span>, <span class=\"m\" data-tex=\"2\"></span> a <span class=\"m\" data-tex=\"4\"></span> — v každém intervalu jeden.",
+   "id": "fit-2014-3-03",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    5
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P6",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 3, 3 body)",
+   "body": "Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. <span class=\"m\" data-tex=\"|2x+1|-|3-x|=3x\"></span>",
+   "opts": [
+    "Rovnice má 3 různá řešení.",
+    "Rovnice má 2 různá řešení.",
+    "Rovnice nemá řešení.",
+    "Rovnice má jediné řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Pro <span class=\"m\" data-tex=\"x&lt;-\\frac12\"></span>: <span class=\"m\" data-tex=\"-x-4=3x\"></span>, <span class=\"m\" data-tex=\"x=-1\"></span>; jinde řešení není.",
+   "id": "fit-2014-4-03",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    5
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 6, 7 bodů)",
    "body": "Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. <span class=\"m\" data-tex=\"|2x-1|-|2-3x|=-x\"></span>",
    "opts": [
@@ -1785,7 +2226,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 11, 7 bodů)",
    "body": "Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. <span class=\"m\" data-tex=\"|2x-1|-|2-3x|=5\"></span>",
    "opts": [
@@ -2019,6 +2460,75 @@
   },
   {
    "q": "P13",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 6, 5 bodů)",
+   "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy: <span class=\"m\" data-tex=\"b&gt;e\"></span>, <span class=\"m\" data-tex=\"c&gt;e\"></span>, <span class=\"m\" data-tex=\"b&lt;d\"></span>, <span class=\"m\" data-tex=\"a&lt;b\"></span>. Který z následujících výroků nemůže být pravdivý?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"a&lt;c\"></span>.",
+    "<span class=\"m\" data-tex=\"a&gt;d\"></span>.",
+    "<span class=\"m\" data-tex=\"c&gt;d\"></span>.",
+    "<span class=\"m\" data-tex=\"b&lt;c\"></span>.",
+    "Platí právě jeden z předchozích vztahů."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"a&lt;b&lt;d\"></span>, tedy <span class=\"m\" data-tex=\"a&gt;d\"></span> nastat nemůže.",
+   "id": "fit-2014-2-06",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P14",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 6, 5 bodů)",
+   "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy: <span class=\"m\" data-tex=\"e&gt;c\"></span>, <span class=\"m\" data-tex=\"a&gt;c\"></span>, <span class=\"m\" data-tex=\"e&lt;b\"></span>, <span class=\"m\" data-tex=\"d&lt;e\"></span>. Který z následujících výroků nemůže být pravdivý?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"d&lt;a\"></span>.",
+    "<span class=\"m\" data-tex=\"a&gt;b\"></span>.",
+    "<span class=\"m\" data-tex=\"d&gt;b\"></span>.",
+    "<span class=\"m\" data-tex=\"e&lt;a\"></span>.",
+    "Platí právě jeden z předchozích vztahů."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"d&lt;e&lt;b\"></span>, tedy <span class=\"m\" data-tex=\"d&gt;b\"></span> nastat nemůže.",
+   "id": "fit-2014-3-06",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P15",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 6, 5 bodů)",
+   "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy: <span class=\"m\" data-tex=\"c&gt;a\"></span>, <span class=\"m\" data-tex=\"d&gt;a\"></span>, <span class=\"m\" data-tex=\"c&lt;e\"></span>, <span class=\"m\" data-tex=\"b&lt;c\"></span>. Který z následujících výroků nemůže být pravdivý?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"b&lt;d\"></span>.",
+    "<span class=\"m\" data-tex=\"d&gt;e\"></span>.",
+    "<span class=\"m\" data-tex=\"c&lt;d\"></span>.",
+    "<span class=\"m\" data-tex=\"b&gt;e\"></span>.",
+    "Platí právě jeden z předchozích vztahů."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"b&lt;c&lt;e\"></span>, tedy <span class=\"m\" data-tex=\"b&gt;e\"></span> nastat nemůže.",
+   "id": "fit-2014-4-06",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 3, 3 body)",
    "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy. Číslo <span class=\"m\" data-tex=\"a\"></span> je rovno <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"a\"></span> je větší nebo rovno <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d&gt;b\"></span> a <span class=\"m\" data-tex=\"e&lt;a\"></span>. Který z následujících výroků nemůže být pravdivý?",
    "opts": [
@@ -2041,7 +2551,7 @@
    "needs_original": false
   },
   {
-   "q": "P14",
+   "q": "P17",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 1, 3 body)",
    "body": "Mezi čísly <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span>, <span class=\"m\" data-tex=\"d\"></span>, <span class=\"m\" data-tex=\"e\"></span> platí následující vztahy. Číslo <span class=\"m\" data-tex=\"a\"></span> není větší než <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"a&lt;c\"></span>, <span class=\"m\" data-tex=\"d\"></span> není větší než <span class=\"m\" data-tex=\"b\"></span> a <span class=\"m\" data-tex=\"e&lt;a\"></span>. Který z následujících výroků nemůže být pravdivý?",
    "opts": [
@@ -2069,7 +2579,7 @@
    ]
   },
   {
-   "q": "P15",
+   "q": "P18",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 9, 2 body)",
    "body": "Určete definiční obor funkce zadané předpisem <span class=\"m\" data-tex=\"f:y=\\sqrt{\\dfrac{x-5}{x-1}}\\,.\"></span>",
    "opts": [
@@ -2093,7 +2603,7 @@
    "needs_original": false
   },
   {
-   "q": "P16",
+   "q": "P19",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 4, 3 body)",
    "body": "Určete počet všech lichých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"x^2-53x+150\\ge0\\,.\"></span>",
    "opts": [
@@ -2116,7 +2626,76 @@
    "needs_original": false
   },
   {
-   "q": "P17",
+   "q": "P20",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 4, 3 body)",
+   "body": "Určete počet všech lichých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"x^2-87x+230\\ge0\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"72\"></span>",
+    "<span class=\"m\" data-tex=\"73\"></span>",
+    "Nekonečně mnoho.",
+    "Žádné.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Řešením je <span class=\"m\" data-tex=\"(-\\infty,x_1\\rangle\\cup\\langle x_2,\\infty)\"></span> — lichých čísel nekonečně mnoho.",
+   "id": "fit-2014-2-04",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P21",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 4, 3 body)",
+   "body": "Určete počet všech lichých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"x^2-27x+320\\ge0\\,.\"></span>",
+   "opts": [
+    "Nekonečně mnoho.",
+    "Žádné.",
+    "<span class=\"m\" data-tex=\"48\"></span>",
+    "<span class=\"m\" data-tex=\"47\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"D&lt;0\"></span>, nerovnost platí pro všechna <span class=\"m\" data-tex=\"x\"></span>.",
+   "id": "fit-2014-3-04",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P22",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 4, 3 body)",
+   "body": "Určete počet všech lichých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"x^2-35x+510\\ge0\\,.\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"58\"></span>",
+    "<span class=\"m\" data-tex=\"59\"></span>",
+    "Žádné.",
+    "Nekonečně mnoho.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"D&lt;0\"></span>, nerovnost platí pro všechna <span class=\"m\" data-tex=\"x\"></span>.",
+   "id": "fit-2014-4-04",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P23",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 11, 7 bodů)",
    "body": "Určete počet všech sudých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"x^2-53x+150\\le0\\,.\"></span>",
    "opts": [
@@ -2139,7 +2718,7 @@
    "needs_original": false
   },
   {
-   "q": "P18",
+   "q": "P24",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 3, 3 body)",
    "body": "Určete počet všech sudých čísel, která vyhovují nerovnici <span class=\"m\" data-tex=\"\\dfrac12x^2-53x+150\\le0\\,.\"></span>",
    "opts": [
@@ -2165,7 +2744,7 @@
    ]
   },
   {
-   "q": "P19",
+   "q": "P25",
    "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 6, 2 body)",
    "body": "Množina všech reálných čísel, pro která platí <span class=\"m\" data-tex=\"(x^2-3x)\\cdot\\log(x^2+9)&lt;0\"></span>, je rovna množině",
    "opts": [
@@ -2188,7 +2767,7 @@
    "needs_original": false
   },
   {
-   "q": "P20",
+   "q": "P26",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 5, 7 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=2x^2+2x-12\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle0,12\\rangle\"></span> právě pro",
    "opts": [
@@ -2218,7 +2797,7 @@
    ]
   },
   {
-   "q": "P21",
+   "q": "P27",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 11, 7 bodů)",
    "body": "Najděte všechna reálná řešení nerovnice <span class=\"m\" data-tex=\"(x+1)^3\\le(x+1)^{-1}\\,.\"></span>",
    "opts": [
@@ -2774,6 +3353,78 @@
   },
   {
    "q": "P20",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 16, 7 bodů)",
+   "body": "Pro definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac1{x+4}}+\\sqrt{7-6x-x^2}\"></span> platí",
+   "opts": [
+    "Definičním oborem jsou všechna kladná čísla větší než 1.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(-\\infty,-7\\rangle\\cup(-4,+\\infty)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"\\langle-4,1\\rangle\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(-\\infty,-7\\rangle\\cup(-4,1\\rangle\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"x&gt;-4\"></span> a <span class=\"m\" data-tex=\"x^2+6x-7\\le0\"></span>: <span class=\"m\" data-tex=\"(-4,1\\rangle\"></span>.",
+   "id": "fit-2014-2-16",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    8,
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P21",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 16, 7 bodů)",
+   "body": "Pro definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac1{x+4}}+\\sqrt{\\dfrac1{7-6x-x^2}}\"></span> platí",
+   "opts": [
+    "Definičním oborem jsou všechna kladná čísla větší než 1.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(-\\infty,-7)\\cup(-4,+\\infty)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(-\\infty,-7\\rangle\\cup(-4,1)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(-4,1)\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"x&gt;-4\"></span> a <span class=\"m\" data-tex=\"7-6x-x^2&gt;0\"></span>: <span class=\"m\" data-tex=\"(-4,1)\"></span>.",
+   "id": "fit-2014-3-16",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    8,
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P22",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 16, 7 bodů)",
+   "body": "Pro definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac{x+4}{7-6x-x^2}}\"></span> platí",
+   "opts": [
+    "Definičním oborem jsou všechna kladná čísla větší než 1.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(-\\infty,-7\\rangle\\cup\\langle-4,+\\infty)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"\\langle-4,1)\"></span>.",
+    "Definiční obor je <span class=\"m\" data-tex=\"(-\\infty,-7)\\cup\\langle-4,1)\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x+4}{(1-x)(x+7)}\\ge0\"></span>: <span class=\"m\" data-tex=\"(-\\infty,-7)\\cup\\langle-4,1)\"></span>.",
+   "id": "fit-2014-4-16",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    8,
+    6
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P23",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 10, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{x+2}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}\"></span> je pravdivé?",
    "opts": [
@@ -2803,7 +3454,7 @@
    ]
   },
   {
-   "q": "P21",
+   "q": "P24",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 5, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac{1}{x+2}}+\\sqrt{\\dfrac{1}{x^2-x-\\frac34}}\"></span> je pravdivé?",
    "opts": [
@@ -2830,7 +3481,7 @@
    ]
   },
   {
-   "q": "P22",
+   "q": "P25",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 5, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\dfrac{x-2}{x^2-x-\\frac34}}\"></span> je pravdivé?",
    "opts": [
@@ -3764,6 +4415,75 @@
   },
   {
    "q": "P16",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 11, 5 bodů)",
+   "body": "Za jaký minimální počet let klesne hodnota předmětu na méně než pětinu původní ceny, pokud ročně odepisujeme <span class=\"m\" data-tex=\"22\\%\"></span> ceny předmětu z předchozího roku?",
+   "opts": [
+    "Za 5 let.",
+    "Za 7 let.",
+    "Za 11 let.",
+    "Za 12 let.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"0{,}78^n&lt;0{,}2\\iff n&gt;\\frac{\\ln0{,}2}{\\ln0{,}78}\\approx6{,}5\"></span>.",
+   "id": "fit-2014-2-11",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P17",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 11, 5 bodů)",
+   "body": "Za jaký minimální počet let klesne hodnota předmětu na méně než desetinu původní ceny, pokud ročně odepisujeme <span class=\"m\" data-tex=\"15\\%\"></span> ceny předmětu z předchozího roku?",
+   "opts": [
+    "Za 11 let.",
+    "Za 12 let.",
+    "Za 15 let.",
+    "Za 14 let.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"0{,}85^n&lt;0{,}1\\iff n&gt;\\frac{\\ln0{,}1}{\\ln0{,}85}\\approx14{,}2\"></span>.",
+   "id": "fit-2014-3-11",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P18",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 11, 5 bodů)",
+   "body": "Za jaký minimální počet let klesne hodnota předmětu na méně než dvacetinu původní ceny, pokud ročně odepisujeme <span class=\"m\" data-tex=\"20\\ \\%\"></span> ceny předmětu z předchozího roku?",
+   "opts": [
+    "Za 13 let.",
+    "Za 12 let.",
+    "Za 8 let.",
+    "Za 5 let.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"0{,}8^n&lt;0{,}05\\iff n&gt;\\frac{\\ln0{,}05}{\\ln0{,}8}\\approx13{,}4\"></span> — za 14 let.",
+   "id": "fit-2014-4-11",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P19",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 18, 7 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2^{x-2}+4^{x-\\frac12}=9\"></span> platí",
    "opts": [
@@ -3786,7 +4506,76 @@
    "needs_original": false
   },
   {
-   "q": "P17",
+   "q": "P20",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 18, 7 bodů)",
+   "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"3^{2x+1}-2\\cdot3^{x+2}=36+5\\cdot3^x\"></span> platí",
+   "opts": [
+    "Rovnice má dvě řešení.",
+    "Rovnice má nekonečně mnoho řešení.",
+    "Rovnice má jedno kladné řešení.",
+    "Rovnice nemá řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"t=3^x\"></span>: <span class=\"m\" data-tex=\"3t^2-23t-36=0\"></span>, <span class=\"m\" data-tex=\"t=9\"></span> (<span class=\"m\" data-tex=\"t=-\\frac43\"></span> nevyhovuje), <span class=\"m\" data-tex=\"x=2\"></span>.",
+   "id": "fit-2014-2-18",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P21",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 18, 7 bodů)",
+   "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2^{x-2}+4^{x-\\frac12}=9\"></span> platí",
+   "opts": [
+    "Součet všech řešení je <span class=\"m\" data-tex=\"-\\frac12\"></span>.",
+    "Rovnice má nekonečně mnoho řešení.",
+    "Rovnice má dvě řešení.",
+    "Rovnice má jedno kladné řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"t=2^x\"></span>: <span class=\"m\" data-tex=\"2t^2+t-36=0\"></span>, <span class=\"m\" data-tex=\"t=4\"></span>, <span class=\"m\" data-tex=\"x=2\"></span>.",
+   "id": "fit-2014-3-18",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P22",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 18, 7 bodů)",
+   "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"3^{2x+1}-2\\cdot3^{x+2}=36+5\\cdot3^x\"></span> platí",
+   "opts": [
+    "Rovnice má dvě řešení.",
+    "Rovnice má jedno kladné řešení řešení.",
+    "Součin všech řešení je <span class=\"m\" data-tex=\"-12\"></span>.",
+    "Rovnice nemá řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"t=3^x\"></span>: <span class=\"m\" data-tex=\"3t^2-23t-36=0\"></span>, <span class=\"m\" data-tex=\"t=9\"></span>, jediné řešení <span class=\"m\" data-tex=\"x=2\"></span>.",
+   "id": "fit-2014-4-18",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P23",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 7, 5 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"9^{x-\\frac12}+9^{\\frac12-x}=\\dfrac{10}{3}\"></span> je pravdivé.",
    "opts": [
@@ -3809,7 +4598,7 @@
    "needs_original": false
   },
   {
-   "q": "P18",
+   "q": "P24",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 9, 7 bodů)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"3^x+5\\cdot4^x=2\\cdot4^{x+1}-3^{x+1}\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3832,7 +4621,7 @@
    "needs_original": false
   },
   {
-   "q": "P19",
+   "q": "P25",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 3, 3 body)",
    "body": "Pro řešení nerovnice <span class=\"m\" data-tex=\"\\left(\\dfrac13\\right)^{x^2}\\le3^{-x-6}\"></span> platí",
    "opts": [
@@ -4127,6 +4916,75 @@
   },
   {
    "q": "P13",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 15, 5 bodů)",
+   "body": "Jestliže <span class=\"m\" data-tex=\"y=\\log_{\\frac13}x\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-2,2\\rangle\"></span> právě pro",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x\\in\\langle-\\frac19,9\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle-9,-\\frac19\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle\\frac16,6\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle-6,\\frac16\\rangle\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "Správně <span class=\"m\" data-tex=\"x\\in\\langle\\frac19,9\\rangle\"></span>.",
+   "id": "fit-2014-2-15",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P14",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 15, 5 bodů)",
+   "body": "Jestliže <span class=\"m\" data-tex=\"y=\\log_{\\frac12}x\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-3,0\\rangle\"></span> právě pro",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x\\in\\langle-\\frac18,0\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle-8,0\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle\\frac18,1\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle1,8\\rangle\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Funkce je klesající: <span class=\"m\" data-tex=\"\\left(\\frac12\\right)^0\\le x\\le\\left(\\frac12\\right)^{-3}\"></span>.",
+   "id": "fit-2014-3-15",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P15",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 15, 5 bodů)",
+   "body": "Jestliže <span class=\"m\" data-tex=\"y=\\log_{\\frac12}x\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-2,1\\rangle\"></span> právě pro",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x\\in\\langle-\\frac14,\\frac12\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle0,\\frac14\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle1,4\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"x\\in\\langle-4,0\\rangle\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "Správně <span class=\"m\" data-tex=\"x\\in\\langle\\frac12,4\\rangle\"></span>.",
+   "id": "fit-2014-4-15",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 9, 5 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\log_5x+1}\"></span> je pravdivé?",
    "opts": [
@@ -4149,7 +5007,7 @@
    "needs_original": false
   },
   {
-   "q": "P14",
+   "q": "P17",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 10, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\ln(2x+1)\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-1,1\\rangle\"></span> právě pro",
    "opts": [
@@ -4172,7 +5030,7 @@
    "needs_original": false
   },
   {
-   "q": "P15",
+   "q": "P18",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 10, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2+8x+15)}{\\sqrt{2-x}}\"></span> je pravdivé?",
    "opts": [
@@ -4196,7 +5054,7 @@
    "needs_original": false
   },
   {
-   "q": "P16",
+   "q": "P19",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 12, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2+8x+16)}{\\sqrt{x+5}}\"></span> je pravdivé?",
    "opts": [
@@ -5925,6 +6783,75 @@
   },
   {
    "q": "P9",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 9, 5 bodů)",
+   "body": "Kolika způsoby lze 11 dětí rozdělit na 3 skupiny, aby v první skupině bylo 6 dětí, ve druhé 2 děti a ve třetí 3 děti?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"942\"></span>",
+    "<span class=\"m\" data-tex=\"66\"></span>",
+    "<span class=\"m\" data-tex=\"143\"></span>",
+    "<span class=\"m\" data-tex=\"4620\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{11!}{6!\\,2!\\,3!}=4620\"></span>.",
+   "id": "fit-2014-2-09",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    22
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P10",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 9, 5 bodů)",
+   "body": "Kolika způsoby lze 12 dětí rozdělit na 3 skupiny, aby v první skupině bylo 5 dětí, ve druhé 3 děti a ve třetí 4 děti?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"2520\"></span>",
+    "<span class=\"m\" data-tex=\"27720\"></span>",
+    "<span class=\"m\" data-tex=\"4620\"></span>",
+    "<span class=\"m\" data-tex=\"166\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{12!}{5!\\,3!\\,4!}=27720\"></span>.",
+   "id": "fit-2014-3-09",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    22
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 9, 5 bodů)",
+   "body": "Kolika způsoby lze 13 dětí rozdělit na 3 skupiny, aby v první skupině bylo 6 dětí, ve druhé 5 dětí a ve třetí 2 děti?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"4520\"></span>",
+    "<span class=\"m\" data-tex=\"36036\"></span>",
+    "<span class=\"m\" data-tex=\"2160\"></span>",
+    "<span class=\"m\" data-tex=\"166320\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{13!}{6!\\,5!\\,2!}=36036\"></span>.",
+   "id": "fit-2014-4-09",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    22
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 17, 7 bodů)",
    "body": "Mezi 20 výrobky jsou právě 3 vadné výrobky. Kolika způsoby je možné vybrat 5 výrobků, aby mezi nimi byl maximálně jeden vadný výrobek?",
    "opts": [
@@ -5947,7 +6874,76 @@
    "needs_original": false
   },
   {
-   "q": "P10",
+   "q": "P13",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 17, 7 bodů)",
+   "body": "Mezi 20 výrobky jsou právě 3 vadné výrobky. Kolika způsoby je možné vybrat 5 výrobků, aby mezi nimi byli právě dva vadné výrobky?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"13328\"></span>",
+    "<span class=\"m\" data-tex=\"9180\"></span>",
+    "<span class=\"m\" data-tex=\"6188\"></span>",
+    "<span class=\"m\" data-tex=\"2040\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"\\binom32\\binom{17}3=3\\cdot680=2040\"></span>.",
+   "id": "fit-2014-2-17",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    22
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P14",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 17, 7 bodů)",
+   "body": "Mezi 20 výrobky jsou právě 4 vadné výrobky. Kolika způsoby je možné vybrat 5 výrobků, aby mezi nimi byli alespoň tři vadné výrobky?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"480\"></span>",
+    "<span class=\"m\" data-tex=\"570\"></span>",
+    "<span class=\"m\" data-tex=\"544\"></span>",
+    "<span class=\"m\" data-tex=\"496\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"\\binom43\\binom{16}2+\\binom44\\binom{16}1=480+16=496\"></span>.",
+   "id": "fit-2014-3-17",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    22
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P15",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 17, 7 bodů)",
+   "body": "Mezi 20 výrobky jsou právě 3 vadné výrobky. Kolika způsoby je možné vybrat 5 výrobků, aby mezi nimi byl nejvýše dva vadné výrobky?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"13328\"></span>",
+    "<span class=\"m\" data-tex=\"7140\"></span>",
+    "<span class=\"m\" data-tex=\"6188\"></span>",
+    "<span class=\"m\" data-tex=\"2040\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"\\binom{20}5-\\binom{17}2=15504-136=15368\"></span>.",
+   "id": "fit-2014-4-17",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 2,
+   "topics": [
+    22
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P16",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 15, 3 body)",
    "body": "Kolika různými způsoby můžeme vybrat 5 bonbónů z 20 čokoládových, 10 oříškových a 6 vanilkových?",
    "opts": [
@@ -5970,7 +6966,7 @@
    "needs_original": false
   },
   {
-   "q": "P11",
+   "q": "P17",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 13, 5 bodů)",
    "body": "Kolika různými způsoby lze ze 7 mužů a 3 žen vybrat trojici tak, aby v ní byli alespoň jedna žena a alespoň jeden muž?",
    "opts": [
@@ -5993,7 +6989,7 @@
    "needs_original": false
   },
   {
-   "q": "P12",
+   "q": "P18",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 15, 7 bodů)",
    "body": "Ve skupině je 10 dětí z nich každé má jiné jméno než ostatní. Jsou mezi nimi i Hana a Jana. Kolika způsoby lze vybrat 5 dětí tak, aby mezi nimi byla alespoň jedna z dívek (Hana a Jana)?",
    "opts": [
@@ -6016,7 +7012,7 @@
    "needs_original": false
   },
   {
-   "q": "P13",
+   "q": "P19",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 13, 7 bodů)",
    "body": "Kolika způsoby lze 12 hráčů rozdělit na dvě šestičlenná družstva?",
    "opts": [
@@ -6039,7 +7035,7 @@
    "needs_original": false
   },
   {
-   "q": "P14",
+   "q": "P20",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 8, 7 bodů)",
    "body": "Kolika různými způsoby lze ze 7 mužů a 3 žen vybrat trojici tak, aby v ní byla nejvýše jedna žena?",
    "opts": [
@@ -6067,7 +7063,7 @@
    ]
   },
   {
-   "q": "P15",
+   "q": "P21",
    "src": "FP TUL, přijímací test z matematiky 2021/22 (Matematika, Bc.) (úloha 1, 20 bodů)",
    "body": "Uvažujte pravidelný dvanáctiúhelník. Určete počet trojúhelníků tvořených vrcholy uvažovaného dvanáctiúhelníku, které mají vlastnost, že žádná jeho strana nesplývá se stranou uvažovaného dvanáctiúhelníku.",
    "answer": "<span class=\"m\" data-tex=\"112\"></span>",
@@ -6109,6 +7105,75 @@
   },
   {
    "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 12, 5 bodů)",
+   "body": "Jaká je pravděpodobnost, že při třech hodech stejnou mincí padne alespoň jednou orel?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac12\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac34\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac78\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac38\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"1-\\frac18=\\frac78\"></span>.",
+   "id": "fit-2014-2-12",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    24
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 12, 5 bodů)",
+   "body": "Jaká je pravděpodobnost, že při třech hodech stejnou mincí padne nejvýše dvakrát orel?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac18\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac78\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac14\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac12\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"1-\\frac18=\\frac78\"></span>.",
+   "id": "fit-2014-3-12",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    24
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 12, 5 bodů)",
+   "body": "Jaká je pravděpodobnost, že při třech hodech stejnou mincí padne nejvýše jednou orel?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac12\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac14\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac18\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac38\"></span>",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\frac18+\\frac38=\\frac12\"></span>.",
+   "id": "fit-2014-4-12",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    24
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 16, 7 bodů)",
    "body": "Jaká je pravděpodobnost, že při dvou hodech stejnou šestibokou kostkou bude součet obou hodů 9?",
    "opts": [
@@ -6135,7 +7200,7 @@
    ]
   },
   {
-   "q": "P3",
+   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 14, 7 bodů)",
    "body": "Jaká je pravděpodobnost, že při dvou hodech stejnou šestibokou kostkou bude součet obou hodů 10?",
    "opts": [
@@ -6158,7 +7223,7 @@
    "needs_original": false
   },
   {
-   "q": "P4",
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 20, 3 body)",
    "body": "Náhodně vybereme trojciferné číslo. Jaká je pravděpodobnost, že se v jeho zápisu vyskytuje cifra 8 alespoň dvakrát?",
    "opts": [
@@ -6182,7 +7247,7 @@
    "needs_original": false
   },
   {
-   "q": "P5",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 17, 3 body)",
    "body": "Jaká je pravděpodobnost, že při tažení 2 karet z balíčku o 52 kartách bude alespoň jedna z karet srdcová?",
    "opts": [
@@ -6205,7 +7270,7 @@
    "needs_original": false
   },
   {
-   "q": "P6",
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 13, 7 bodů)",
    "body": "Jaká je pravděpodobnost, že při tažení 2 karet z balíčku o 52 kartách bude právě jedna jedna z karet srdcová?",
    "opts": [
@@ -6228,7 +7293,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P10",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 15, 7 bodů)",
    "body": "Jaká je pravděpodobnost, že při tažení 2 karet z balíčku o 52 kartách bude právě jedna z karet srdcová?",
    "opts": [
@@ -6251,7 +7316,7 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P11",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 14, 7 bodů)",
    "body": "Náhodně vybereme trojciferné číslo. Jaká je pravděpodobnost, že se v jeho zápisu vyskytuje cifra 8 nejvýše jednou?",
    "opts": [
@@ -6914,6 +7979,75 @@
   },
   {
    "q": "P6",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 2, 3 body)",
+   "body": "Poloměr kružnice zadané rovnicí <span class=\"m\" data-tex=\"x^2+y^2+12x-16y+51=0\"></span> je",
+   "opts": [
+    "Roven <span class=\"m\" data-tex=\"8\"></span>.",
+    "Neexistuje, nejedná se o rovnici kružnice.",
+    "Roven <span class=\"m\" data-tex=\"7\"></span>.",
+    "Jeho druhá mocnina je <span class=\"m\" data-tex=\"151\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"(x+6)^2+(y-8)^2=49\"></span>.",
+   "id": "fit-2014-2-02",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    30
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P7",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 2, 3 body)",
+   "body": "Poloměr kružnice zadané rovnicí <span class=\"m\" data-tex=\"x^2+y^2-14x-16y+49=0\"></span> je",
+   "opts": [
+    "Roven <span class=\"m\" data-tex=\"8\"></span>.",
+    "Neexistuje, nejedná se o rovnici kružnice.",
+    "Jeho druhá mocnina je <span class=\"m\" data-tex=\"162\"></span>.",
+    "Roven <span class=\"m\" data-tex=\"7\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"(x-7)^2+(y-8)^2=64\"></span>.",
+   "id": "fit-2014-3-02",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    30
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P8",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 2, 3 body)",
+   "body": "Poloměr kružnice zadané rovnicí <span class=\"m\" data-tex=\"x^2+y^2+10x-24y+69=0\"></span> je",
+   "opts": [
+    "Roven <span class=\"m\" data-tex=\"8\"></span>.",
+    "Neexistuje, nejedná se o rovnici kružnice.",
+    "Jeho druhá mocnina je <span class=\"m\" data-tex=\"238\"></span>.",
+    "Roven <span class=\"m\" data-tex=\"7\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"(x+5)^2+(y-12)^2=100\"></span>, poloměr <span class=\"m\" data-tex=\"10\"></span>.",
+   "id": "fit-2014-4-02",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    30
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 16, 7 bodů)",
    "body": "Poloměr kružnice zadané rovnicí <span class=\"m\" data-tex=\"2x^2+2y^2+16x-12y+20=0\"></span> splňuje:",
    "opts": [
@@ -6936,7 +8070,7 @@
    "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P10",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 14, 5 bodů)",
    "body": "Určete obsah oblasti dané nerovnicemi <span class=\"m\" data-tex=\"x^2+(y+1)^2\\le2,\\quad y\\le x-1\"></span>.",
    "opts": [
@@ -6960,7 +8094,7 @@
    "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P11",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 14, 5 bodů)",
    "body": "Určete obsah oblasti dané nerovnicemi <span class=\"m\" data-tex=\"(x-1)^2+y^2\\le4,\\quad y\\ge x-1\"></span>.",
    "opts": [
@@ -6984,7 +8118,7 @@
    "needs_original": false
   },
   {
-   "q": "P9",
+   "q": "P12",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 18, 3 body)",
    "body": "Poloměr kružnice zadané rovnicí <span class=\"m\" data-tex=\"2x^2+2y^2-16x+12y+20=0\"></span> je",
    "opts": [
@@ -7007,7 +8141,7 @@
    "needs_original": false
   },
   {
-   "q": "P10",
+   "q": "P13",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 12, 7 bodů)",
    "body": "Kuželosečku danou rovnicí <span class=\"m\" data-tex=\"x^2-4x+y^2-6y+9=0\"></span> posuňte rovnoběžně s osou <span class=\"m\" data-tex=\"y\"></span> tak, aby se dotýkala osy <span class=\"m\" data-tex=\"x\"></span>. Bodem dotyku je bod",
    "opts": [
@@ -7035,7 +8169,7 @@
    ]
   },
   {
-   "q": "P11",
+   "q": "P14",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 13, 7 bodů)",
    "body": "Určete hodnotu parametru <span class=\"m\" data-tex=\"p\"></span> tak, aby přímka <span class=\"m\" data-tex=\"q\"></span> neměla s kružnicí <span class=\"m\" data-tex=\"k\"></span> žádný společný bod. <span class=\"m\" data-tex=\"q:px+y-1=0\"></span> a <span class=\"m\" data-tex=\"k:x^2-4x+y^2-6y-3=0\"></span>",
    "opts": [
@@ -7575,6 +8709,75 @@
   },
   {
    "q": "P12",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 1, 3 body)",
+   "body": "V únoru byla zaměstnancům zvýšena mzda o <span class=\"m\" data-tex=\"20\\ \\%\"></span> lednové mzdy. Následně v červnu jim byla mzda snížena o <span class=\"m\" data-tex=\"20\\ \\%\"></span> dubnové mzdy. Jaká je nyní jejich mzda?",
+   "opts": [
+    "O šest procent nižší než před únorovým zvyšováním.",
+    "Stejná jako před únorovým zvyšováním.",
+    "O čtyři procenta nižší než před únorovým zvyšováním.",
+    "O čtyři procenta vyšší než před únorovým zvyšováním.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"1{,}2\\cdot0{,}8=0{,}96\"></span>.",
+   "id": "fit-2014-2-01",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P13",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 1, 3 body)",
+   "body": "V lednu byla zaměstnancům zvýšena mzda o <span class=\"m\" data-tex=\"16\\ \\%\"></span> prosincové mzdy. Následně v červnu jim byla mzda snížena o <span class=\"m\" data-tex=\"15\\ \\%\"></span> březnové mzdy. Jaká je nyní jejich mzda?",
+   "opts": [
+    "O <span class=\"m\" data-tex=\"1{,}6\"></span> procenta nižší než před lednovým zvyšováním.",
+    "Stejná jako před lednovým zvyšováním.",
+    "O <span class=\"m\" data-tex=\"1{,}4\"></span> procenta nižší než před lednovým zvyšováním.",
+    "O <span class=\"m\" data-tex=\"1{,}4\"></span> procenta vyšší než před lednovým zvyšováním.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"1{,}16\\cdot0{,}85=0{,}986\"></span>.",
+   "id": "fit-2014-3-01",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P14",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 1, 3 body)",
+   "body": "V únoru byla zaměstnancům zvýšena mzda o <span class=\"m\" data-tex=\"15\\ \\%\"></span> lednové mzdy. Následně v červnu jim byla mzda snížena o <span class=\"m\" data-tex=\"16\\ \\%\"></span> dubnové mzdy. Jaká je nyní jejich mzda?",
+   "opts": [
+    "Stejná jako před lednovým zvyšováním.",
+    "O <span class=\"m\" data-tex=\"3{,}4\"></span> procenta nižší než před lednovým zvyšováním.",
+    "O <span class=\"m\" data-tex=\"3{,}6\"></span> procenta nižší než před lednovým zvyšováním.",
+    "O <span class=\"m\" data-tex=\"3{,}4\"></span> procenta vyšší než před lednovým zvyšováním.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"1{,}15\\cdot0{,}84=0{,}966\"></span>.",
+   "id": "fit-2014-4-01",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P15",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 7, 5 bodů)",
    "body": "Mějme dvě čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"3402_5\"></span> a <span class=\"m\" data-tex=\"2413_5\"></span>. Vyjádřete jejich rozdíl také v pětkové soustavě.",
    "opts": [
@@ -7597,7 +8800,76 @@
    "needs_original": false
   },
   {
-   "q": "P13",
+   "q": "P16",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 7, 5 bodů)",
+   "body": "Mějme dvě čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"3412_5\"></span> a <span class=\"m\" data-tex=\"2424_5\"></span>. Vyjádřete jejich rozdíl také v pětkové soustavě.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"3412_5-2424_5=988_5\"></span>.",
+    "<span class=\"m\" data-tex=\"3412_5-2424_5=434_5\"></span>.",
+    "<span class=\"m\" data-tex=\"3412_5-2424_5=1033_5\"></span>.",
+    "<span class=\"m\" data-tex=\"3412_5-2424_5=433_5\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"482-364=118=433_5\"></span>.",
+   "id": "fit-2014-2-07",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P17",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 7, 5 bodů)",
+   "body": "Mějme dvě čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"4401_5\"></span> a <span class=\"m\" data-tex=\"2413_5\"></span>. Vyjádřete jejich rozdíl také v pětkové soustavě.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"4401_5-2413_5=1989_5\"></span>.",
+    "<span class=\"m\" data-tex=\"4401_5-2413_5=2043_5\"></span>.",
+    "<span class=\"m\" data-tex=\"4401_5-2413_5=1433_5\"></span>.",
+    "<span class=\"m\" data-tex=\"4401_5-2413_5=433_5\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"601-358=243=1433_5\"></span>.",
+   "id": "fit-2014-3-07",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P18",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 7, 5 bodů)",
+   "body": "Mějme dvě čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"3312_5\"></span> a <span class=\"m\" data-tex=\"2443_5\"></span>. Vyjádřete jejich rozdíl také v pětkové soustavě.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"3312_5-2443_5=869_5\"></span>.",
+    "<span class=\"m\" data-tex=\"3312_5-2443_5=314_5\"></span>.",
+    "<span class=\"m\" data-tex=\"3312_5-2443_5=1314_5\"></span>.",
+    "<span class=\"m\" data-tex=\"3312_5-2443_5=423_5\"></span>.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"457-373=84=314_5\"></span>.",
+   "id": "fit-2014-4-07",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P19",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 1, 7 bodů)",
    "body": "Z původní ceny byl výrobek zlevněn o <span class=\"m\" data-tex=\"10\\ \\%\"></span> a potom ještě o <span class=\"m\" data-tex=\"8\\ \\%\"></span> nové ceny. O kolik procent původní ceny byl zlevněn celkem?",
    "opts": [
@@ -7620,7 +8892,7 @@
    "needs_original": false
   },
   {
-   "q": "P14",
+   "q": "P20",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 2, 7 bodů)",
    "body": "Mějme tři čísla zapsaná v sedmičkové soustavě: <span class=\"m\" data-tex=\"2456_7\"></span>, <span class=\"m\" data-tex=\"1126_7\"></span> a <span class=\"m\" data-tex=\"3245_7\"></span>. Vyjádřete jejich součet také v sedmičkové soustavě.",
    "opts": [
@@ -7643,7 +8915,7 @@
    "needs_original": false
   },
   {
-   "q": "P15",
+   "q": "P21",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 3, 7 bodů)",
    "body": "Pokud ráno zaspím, koupím si v pekárně koblihu. Pokud ráno nezaspím, nasnídám se doma. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -7666,7 +8938,7 @@
    "needs_original": false
   },
   {
-   "q": "P16",
+   "q": "P22",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 1, 7 bodů)",
    "body": "Původní cena knihy byla 350 Kč. Pak byla zdražena o <span class=\"m\" data-tex=\"15\\ \\%\"></span>. Jelikož nešla na odbyt, byla později zlevněna o <span class=\"m\" data-tex=\"14\\ \\%\"></span> (z ceny po zdražení) a to je její současná cena. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -7689,7 +8961,7 @@
    "needs_original": false
   },
   {
-   "q": "P17",
+   "q": "P23",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 3, 7 bodů)",
    "body": "Na setkání několika firem jsme si všimli následujících věcí. Každý, kdo má modrou košili, má i černé boty. Všichni zaměstnanci 1. firmy mají modrou košili. Rozhodněte, které z následujících tvrzení je pravdivé.",
    "opts": [
@@ -7712,7 +8984,7 @@
    "needs_original": false
   },
   {
-   "q": "P18",
+   "q": "P24",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 4, 7 bodů)",
    "body": "Mějme dvě čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"4402_5\"></span> a <span class=\"m\" data-tex=\"2313_5\"></span>. Vyjádřete jejich rozdíl také v pětkové soustavě.",
    "opts": [
@@ -7735,7 +9007,7 @@
    "needs_original": false
   },
   {
-   "q": "P19",
+   "q": "P25",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 3, 3 body)",
    "body": "Pokud bude o víkendu hezky, budeme večer grilovat. Pokud o víkendu nebude hezky, půjdeme do muzea. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -7758,7 +9030,7 @@
    "needs_original": false
   },
   {
-   "q": "P20",
+   "q": "P26",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 3, 3 body)",
    "body": "Mějme tři čísla zapsaná v sedmičkové soustavě: <span class=\"m\" data-tex=\"4266_7\"></span>, <span class=\"m\" data-tex=\"2526_7\"></span> a <span class=\"m\" data-tex=\"445_7\"></span>. Vyjádřete jejich součet také v sedmičkové soustavě.",
    "opts": [
@@ -7781,7 +9053,7 @@
    "needs_original": false
   },
   {
-   "q": "P21",
+   "q": "P27",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 4, 7 bodů)",
    "body": "Kladné číslo <span class=\"m\" data-tex=\"x\"></span> je o <span class=\"m\" data-tex=\"25\\ \\%\"></span> větší než kladné číslo <span class=\"m\" data-tex=\"y\"></span>. O kolik procent je číslo <span class=\"m\" data-tex=\"y\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>?",
    "opts": [
@@ -7807,7 +9079,7 @@
    ]
   },
   {
-   "q": "P22",
+   "q": "P28",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 2, 3 body)",
    "body": "Při koupi dvou párů bot dostaneme slevu <span class=\"m\" data-tex=\"30\\%\"></span> na druhý pár. Chceme koupit boty za 1800 a 1500 korun. Jaká je nejmenší cena za kterou můžeme oba páry získat?",
    "opts": [
@@ -7833,7 +9105,7 @@
    ]
   },
   {
-   "q": "P23",
+   "q": "P29",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 3, 3 body)",
    "body": "Mějme dvě čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"4112_5\"></span> a <span class=\"m\" data-tex=\"2443_5\"></span>. Vyjádřete jejich rozdíl také v pětkové soustavě.",
    "opts": [
@@ -7860,7 +9132,7 @@
    ]
   },
   {
-   "q": "P24",
+   "q": "P30",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 4, 7 bodů)",
    "body": "Původní cena knihy byla 350 Kč. Pak byla zdražena o <span class=\"m\" data-tex=\"20\\ \\%\"></span>. Jelikož nešla na odbyt, byla zlevněna o <span class=\"m\" data-tex=\"15\\ \\%\"></span> (z ceny po zdražení) a to je její současná cena. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -7886,7 +9158,7 @@
    ]
   },
   {
-   "q": "P25",
+   "q": "P31",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 2, 3 body)",
    "body": "Mějme tři čísla zapsaná v pětkové soustavě: <span class=\"m\" data-tex=\"3431_5\"></span>, <span class=\"m\" data-tex=\"122_5\"></span> a <span class=\"m\" data-tex=\"2040_5\"></span>. Vyjádřete jejich součet také v pětkové soustavě.",
    "opts": [
@@ -7909,7 +9181,7 @@
    "needs_original": false
   },
   {
-   "q": "P26",
+   "q": "P32",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 4, 7 bodů)",
    "body": "Petr a Pavel mají stejně vysoký plat. Pavel platí o čtvrtinu vyšší nájem než Petr. Nájem bytu stojí Pavla <span class=\"m\" data-tex=\"25\\%\"></span> jeho platu. Kolik procent svého platu platí za nájem Petr?",
    "opts": [
@@ -7932,7 +9204,7 @@
    "needs_original": false
   },
   {
-   "q": "P27",
+   "q": "P33",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2024 (příklad 1, 3 body)",
    "body": "Z původní ceny byl výrobek zlevněn o <span class=\"m\" data-tex=\"12\\ \\%\"></span> a potom ještě o <span class=\"m\" data-tex=\"15\\ \\%\"></span> nové ceny. O kolik procent původní ceny byl zlevněn celkem?",
    "opts": [
@@ -7955,7 +9227,7 @@
    "needs_original": false
   },
   {
-   "q": "P28",
+   "q": "P34",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 14, 7 bodů)",
    "body": "Pokud bude v sobotu pršet, půjdeme hrát badminton. Pokud budeme hrát badminton, navštívíme saunu. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -7978,7 +9250,7 @@
    "needs_original": false
   },
   {
-   "q": "P29",
+   "q": "P35",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 2, 3 body)",
    "body": "Kladné číslo <span class=\"m\" data-tex=\"x\"></span> je o <span class=\"m\" data-tex=\"20\\ \\%\"></span> menší než kladné číslo <span class=\"m\" data-tex=\"y\"></span>. O kolik procent je číslo <span class=\"m\" data-tex=\"y\"></span> větší než číslo <span class=\"m\" data-tex=\"x\"></span>?",
    "opts": [
@@ -8004,7 +9276,7 @@
    ]
   },
   {
-   "q": "P30",
+   "q": "P36",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 1, 3 body)",
    "body": "Mějme tři čísla zapsaná v sedmičkové soustavě: <span class=\"m\" data-tex=\"1456_7\"></span>, <span class=\"m\" data-tex=\"1526_7\"></span> a <span class=\"m\" data-tex=\"4345_7\"></span>. Vyjádřete jejich součet také v sedmičkové soustavě.",
    "opts": [
@@ -8032,7 +9304,7 @@
    ]
   },
   {
-   "q": "P31",
+   "q": "P37",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 1, 2 body)",
    "body": "Zjednodušte výraz <span class=\"m\" data-tex=\"F(x)=(2x^2+x+5)^2-(4x^2-x+5)^2+4x(x-1)(3x^2+5)\"></span> a ověřte dosazením <span class=\"m\" data-tex=\"x=1\"></span>",
    "opts": [
@@ -8055,7 +9327,7 @@
    "needs_original": false
   },
   {
-   "q": "P32",
+   "q": "P38",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 1, 2 body)",
    "body": "Zjednodušte výraz <span class=\"m\" data-tex=\"F(x)=(8x^2-1)^2+(6x^2-7)(6x^2+7)-3x^2(x+4)(3x-9)\"></span> a ověřte dosazením <span class=\"m\" data-tex=\"x=1\"></span>",
    "opts": [
@@ -8078,7 +9350,7 @@
    "needs_original": false
   },
   {
-   "q": "P33",
+   "q": "P39",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 2, 2 body)",
    "body": "Zjednodušte výraz a zapište podmínky pro jeho platnost <span class=\"m\" data-tex=\"\\dfrac{c+d}{c-d}:\\dfrac{c^2+cd}{c^2-d^2}\"></span>",
    "opts": [
@@ -8101,7 +9373,7 @@
    "needs_original": false
   },
   {
-   "q": "P34",
+   "q": "P40",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 2, 2 body)",
    "body": "Zjednodušte výraz a zapište podmínky pro jeho platnost <span class=\"m\" data-tex=\"\\dfrac{a^2-25}{a^2-3a}:\\dfrac{a^2+10a+25}{a-3}\"></span>",
    "opts": [
@@ -8124,7 +9396,7 @@
    "needs_original": false
   },
   {
-   "q": "P35",
+   "q": "P41",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 3 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\dfrac{ax-x^2}{a^2+2ax+x^2}\\cdot\\dfrac{a^2+ax}{a^2-2ax+x^2}\"></span> a stanovte podmínky, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{ax}{a^2-x^2}\"></span>, podmínka <span class=\"m\" data-tex=\"a\\ne\\pm x\"></span>",
@@ -8139,7 +9411,7 @@
    "needs_original": false
   },
   {
-   "q": "P36",
+   "q": "P42",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 4 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left[\\left(\\dfrac xy\\right)^2-\\dfrac x{y^2}\\right]:\\left(\\dfrac y{x-1}\\right)^{-2}\"></span> a stanovte podmínky, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac x{x-1}\"></span>, podmínky <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne1\"></span>",
@@ -8154,7 +9426,7 @@
    "needs_original": false
   },
   {
-   "q": "P37",
+   "q": "P43",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2013/14, PZ 11 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left[\\left(\\dfrac xy-\\dfrac yx\\right):\\left(\\dfrac xy-2+\\dfrac yx\\right)\\right]:\\left(1+\\dfrac yx\\right)\"></span> a stanovte, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac x{x-y}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne\\pm y\"></span>",
@@ -8169,7 +9441,7 @@
    "needs_original": false
   },
   {
-   "q": "P38",
+   "q": "P44",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac4{x-2}+1\\right)\\cdot\\left(\\dfrac4{x+2}-1\\right)\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=-1\"></span>, podmínka <span class=\"m\" data-tex=\"x\\ne\\pm2\"></span>",
@@ -8184,7 +9456,7 @@
    "needs_original": false
   },
   {
-   "q": "P39",
+   "q": "P45",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 24 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac1y+\\dfrac15\\right)^{-1}\\cdot\\left(\\dfrac1y-\\dfrac y{25}\\right)\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{5-y}5\"></span>, podmínky <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"y\\ne-5\"></span>",
@@ -8199,7 +9471,7 @@
    "needs_original": false
   },
   {
-   "q": "P40",
+   "q": "P46",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 25 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac{x-2}{x-3}\\right)^{-1}+\\dfrac{5x}{x^2-4}-\\left(\\dfrac{x+2}x\\right)^{-1}\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{6(x-1)}{x^2-4}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne3\"></span>, <span class=\"m\" data-tex=\"x\\ne\\pm2\"></span>",
@@ -8214,7 +9486,7 @@
    "needs_original": false
   },
   {
-   "q": "P41",
+   "q": "P47",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 31 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\dfrac{x^2-y^2}{3x^2y^2}:\\left(\\dfrac{1+2x}x-\\dfrac{2y-1}y\\right)\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{x-y}{3xy}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne-y\"></span>",
@@ -8229,7 +9501,7 @@
    "needs_original": false
   },
   {
-   "q": "P42",
+   "q": "P48",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac1{1-a}-1\\right):\\left(\\dfrac{2a^2}{1-a}-a\\right)\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac1{3a-1}\"></span>, podmínky <span class=\"m\" data-tex=\"a\\ne0\"></span>, <span class=\"m\" data-tex=\"a\\ne1\"></span>, <span class=\"m\" data-tex=\"a\\ne\\frac13\"></span>",
@@ -8244,7 +9516,7 @@
    "needs_original": false
   },
   {
-   "q": "P43",
+   "q": "P49",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 1 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac a{b^2+ab}-\\dfrac2{a+b}+\\dfrac b{a^2+ab}\\right):\\left(\\dfrac ba-2+\\dfrac ab\\right)\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac1{a+b}\"></span>, podmínky <span class=\"m\" data-tex=\"a\\ne\\pm b\"></span>, <span class=\"m\" data-tex=\"a\\ne0\"></span>, <span class=\"m\" data-tex=\"b\\ne0\"></span>",
@@ -8259,7 +9531,7 @@
    "needs_original": false
   },
   {
-   "q": "P44",
+   "q": "P50",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=1-t+\\dfrac t{1-\\frac t{t+1}}\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=t^2+1\"></span>, podmínka <span class=\"m\" data-tex=\"t\\ne-1\"></span>",
@@ -8274,7 +9546,7 @@
    "needs_original": false
   },
   {
-   "q": "P45",
+   "q": "P51",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left[\\left(\\dfrac xy-\\dfrac yx\\right):\\left(\\dfrac xy-2+\\dfrac yx\\right)\\right]:\\left(1+\\dfrac yx\\right)\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac x{x-y}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne\\pm y\"></span>",
@@ -8289,7 +9561,7 @@
    "needs_original": false
   },
   {
-   "q": "P46",
+   "q": "P52",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\left(\\dfrac u{u+v}+\\dfrac v{u-v}\\right):\\left(1-\\dfrac{2uv}{u^2+v^2}\\right)^{-1}\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{u-v}{u+v}\"></span>, podmínka <span class=\"m\" data-tex=\"u\\ne\\pm v\"></span>",
@@ -8304,7 +9576,7 @@
    "needs_original": false
   },
   {
-   "q": "P47",
+   "q": "P53",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 15 (úloha 1, 10 bodů)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"V=\\dfrac{\\frac x4-1+\\frac1x}{\\frac{x+2}x\\cdot\\frac{x-2}4}\"></span> a určete, kdy je reálný.",
    "answer": "<span class=\"m\" data-tex=\"V=\\dfrac{x-2}{x+2}\"></span>, podmínky <span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"x\\ne\\pm2\"></span>",
@@ -8319,7 +9591,7 @@
    "needs_original": false
   },
   {
-   "q": "P48",
+   "q": "P54",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 13, 5 bodů)",
    "body": "Kolik litrů kyseliny je třeba přidat do 5 litrů 20% roztoku kyseliny, abychom získali roztok padesátiprocentní?",
    "opts": [
@@ -8342,7 +9614,7 @@
    "needs_original": false
   },
   {
-   "q": "P49",
+   "q": "P55",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 6, 3 body)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{x-1}{x^2+2x}-\\dfrac{x-4}{x^2-4}\"></span>.",
    "opts": [
@@ -8365,7 +9637,7 @@
    "needs_original": false
   },
   {
-   "q": "P50",
+   "q": "P56",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 6, 3 body)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{x+5}{x^2-9}-\\dfrac{x+1}{x^2-3x}\"></span>.",
    "opts": [
@@ -8388,7 +9660,7 @@
    "needs_original": false
   },
   {
-   "q": "P51",
+   "q": "P57",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 01 (úloha 15, 5 bodů)",
    "body": "Počty chlapců ve třídách 1.A a 1.B jsou v poměru <span class=\"m\" data-tex=\"4:3\"></span>, počty dívek jsou v poměru <span class=\"m\" data-tex=\"1:2\"></span>. Z celkového počtu žáků v 1.A tvoří dívky <span class=\"m\" data-tex=\"1/3\"></span>. Jakou část všech žáků 1.B tvoří dívky?",
    "opts": [
@@ -8411,7 +9683,7 @@
    "needs_original": false
   },
   {
-   "q": "P52",
+   "q": "P58",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2023, verze FEKT 02 (úloha 15, 5 bodů)",
    "body": "Počty chlapců ve třídách 1.A a 1.B jsou v poměru <span class=\"m\" data-tex=\"5:3\"></span>, počty dívek jsou v poměru <span class=\"m\" data-tex=\"1:2\"></span>. Z celkového počtu žáků v 1.A tvoří dívky <span class=\"m\" data-tex=\"2/5\"></span>. Jakou část všech žáků 1.B tvoří dívky?",
    "opts": [
@@ -8434,7 +9706,7 @@
    "needs_original": false
   },
   {
-   "q": "P53",
+   "q": "P59",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 01 (úloha 6, 3 body)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{1-3x}{x^3-x}+\\dfrac1{x-1}\"></span>.",
    "opts": [
@@ -8457,7 +9729,7 @@
    "needs_original": false
   },
   {
-   "q": "P54",
+   "q": "P60",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2024, verze FEKT 02 (úloha 6, 3 body)",
    "body": "Upravte výraz <span class=\"m\" data-tex=\"\\dfrac{3x+1}{x^3-x}+\\dfrac1{x+1}\"></span>.",
    "opts": [
@@ -8480,7 +9752,7 @@
    "needs_original": false
   },
   {
-   "q": "P55",
+   "q": "P61",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 14, 5 bodů)",
    "body": "Z jakého nejmenšího počtu shodných krychlí, s velikostí hrany v centimetrech vyjádřenou přirozeným číslem, můžeme sestavit kvádr o rozměrech 9, 12 a 21 cm?",
    "opts": [
@@ -8503,7 +9775,7 @@
    "needs_original": false
   },
   {
-   "q": "P56",
+   "q": "P62",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 6, 7 bodů)",
    "body": "Plavecký bazén si vede měsíční statistiky. Jedna čtvrtina návštěvníků chodí do bazénu alespoň dvakrát týdně a jedna pětina z nich dokonce denně. Jedna pětina všech návštěvníků chodí jedenkrát týdně. Ostatní návštěvníci chodí několikrát do měsíce, ale nepravidelně. Každý desátý návštěvník se po první návštěvě víckrát nevrátí. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -8529,7 +9801,7 @@
    ]
   },
   {
-   "q": "P57",
+   "q": "P63",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2021 (příklad 15, 7 bodů)",
    "body": "Převodovka se skládá ze tří ozubených kol spojených řetězy. Nejmenší kolo je spojené s prostředním kolem a prostřední kolo je spojené s největším kolem. Kola mají postupně 27, 54 a 99 zubů. Po jakém minimálním počtu otoček největšího kola budou všechna tři kola ve stejné pozici jako na začátku pohybu?",
    "opts": [
@@ -8555,7 +9827,7 @@
    ]
   },
   {
-   "q": "P58",
+   "q": "P64",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 16, 7 bodů)",
    "body": "Z jakého nejmenšího počtu shodných krychlí, s velikostí hrany v centimetrech vyjádřenou přirozeným číslem, můžeme sestavit kvádr o rozměrech 8, 12 a 28 cm?",
    "opts": [
@@ -8578,7 +9850,7 @@
    "needs_original": false
   },
   {
-   "q": "P59",
+   "q": "P65",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 13, 7 bodů)",
    "body": "Dětský tábor má kapacitu 80 dětí. Vytvoří-li děti trojice, nikdo nezbude; vytvoří-li dvojice, zbude jedno dítě. Vytvoří-li sedmice, nikdo nezbude; vytvoří-li čtveřice, zbudou tři děti. Kolik zbude dětí, vytvoří-li šestice?",
    "opts": [
@@ -8604,7 +9876,7 @@
    ]
   },
   {
-   "q": "P60",
+   "q": "P66",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 13, 5 bodů)",
    "body": "Z kolika obdélníkových dlaždic o rozměrech 15 cm a 20 cm se dá sestavit čtverec, máme-li k dispozici 120 dlaždic? Všechny dlaždice pokládáme se stejnou orientací.",
    "opts": [
@@ -8618,6 +9890,75 @@
    "key": "c",
    "sol": "Strana čtverce je násobkem <span class=\"m\" data-tex=\"\\mathrm{NSN}(15,20)=60\"></span>: <span class=\"m\" data-tex=\"12\"></span>, <span class=\"m\" data-tex=\"48\"></span> nebo <span class=\"m\" data-tex=\"108\"></span> dlaždic; součet <span class=\"m\" data-tex=\"168\"></span>.",
    "id": "fit-2014-1-13",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 3,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P67",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 13, 5 bodů)",
+   "body": "Z kolika obdélníkových dlaždic o rozměrech 16 cm a 20 cm se dá sestavit čtverec, máme-li k dispozici 200 dlaždic? Všechny dlaždice pokládáme se stejnou orientací.",
+   "opts": [
+    "Součin všech řešení je <span class=\"m\" data-tex=\"280\"></span>.",
+    "Nelze sestavit ani jeden čtverec.",
+    "Součet všech řešení je <span class=\"m\" data-tex=\"168\"></span>.",
+    "Úloha má víc než <span class=\"m\" data-tex=\"5\"></span> řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "Strana je násobkem <span class=\"m\" data-tex=\"80\"></span>: <span class=\"m\" data-tex=\"20\"></span>, <span class=\"m\" data-tex=\"80\"></span> nebo <span class=\"m\" data-tex=\"180\"></span> dlaždic; součet <span class=\"m\" data-tex=\"280\"></span>, součin <span class=\"m\" data-tex=\"288\\,000\"></span>.",
+   "id": "fit-2014-2-13",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 3,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P68",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 13, 5 bodů)",
+   "body": "Z kolika obdélníkových dlaždic o rozměrech 12 cm a 16 cm se dá sestavit čtverec, máme-li k dispozici 120 dlaždic? Všechny dlaždice pokládáme se stejnou orientací.",
+   "opts": [
+    "Součin všech řešení je <span class=\"m\" data-tex=\"62208\"></span>.",
+    "Nelze sestavit ani jeden čtverec.",
+    "Součet všech řešení je <span class=\"m\" data-tex=\"120\"></span>.",
+    "Úloha má víc než <span class=\"m\" data-tex=\"5\"></span> řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "Strana je násobkem <span class=\"m\" data-tex=\"48\"></span>: <span class=\"m\" data-tex=\"12\"></span>, <span class=\"m\" data-tex=\"48\"></span> nebo <span class=\"m\" data-tex=\"108\"></span> dlaždic; součin <span class=\"m\" data-tex=\"62208\"></span>.",
+   "id": "fit-2014-3-13",
+   "uni": "ČVUT",
+   "fac": "FIT",
+   "level": 3,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P69",
+   "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 13, 5 bodů)",
+   "body": "Z kolika obdélníkových dlaždic o rozměrech 12 cm a 20 cm se dá sestavit čtverec, máme-li k dispozici 120 dlaždic? Všechny dlaždice pokládáme se stejnou orientací.",
+   "opts": [
+    "Nelze sestavit ani jeden čtverec.",
+    "Součin všech řešení je <span class=\"m\" data-tex=\"900\"></span>.",
+    "Součet všech řešení je <span class=\"m\" data-tex=\"145\"></span>.",
+    "Úloha má víc než <span class=\"m\" data-tex=\"3\"></span> řešení.",
+    "Žádná z předcházejících možností není správná."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Strana je násobkem <span class=\"m\" data-tex=\"60\"></span>: <span class=\"m\" data-tex=\"15\"></span> nebo <span class=\"m\" data-tex=\"60\"></span> dlaždic; součin <span class=\"m\" data-tex=\"900\"></span>.",
+   "id": "fit-2014-4-13",
    "uni": "ČVUT",
    "fac": "FIT",
    "level": 3,

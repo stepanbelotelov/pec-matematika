@@ -11,7 +11,7 @@
   "url": "https://fit.cvut.cz/cs/fakulta/informacni-deska",
   "url_pattern": "https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-RRRR.pdf",
   "index": "https://fit.cvut.cz/cs/fakulta/informacni-deska",
-  "status": "v bance (přepsáno z originálů)",
+  "status": "v bance celé (16 souborů, «pro rok 2015» ve 4 verzích); u «pro rok 2015» jsou správné odpovědi označeny křížkem v tabulce odpovědí",
   "note": "Pozor na tři různé roky: název souboru (…-2019.pdf), popis na webu FIT („pro rok 2020“) a nadpis v PDF („Přijímací zkouška z matematiky 2018“). V bance je vždy uveden popis z webu FIT; soubor a rok v PDF jsou v polích file a printed. Stará doména old.fit.cvut.cz už neodpovídá.",
   "include": true,
   "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"

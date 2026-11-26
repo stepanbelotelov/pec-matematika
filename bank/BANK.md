@@ -2,7 +2,7 @@
 
 Файл собирается скриптом `bank/build.py` из `tasks.json` и `sources.json`; вручную не редактировать.
 
-Всего задач: **392** · базовый: 220 · стандартный: 152 · сложный: 20 · ČVUT FIT: 137 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FBMI: 40 · ČVUT FJFI: 24 · ČVUT FEL: 15 · VŠCHT VŠCHT: 7 · TUL FP: 5
+Всего задач: **450** · базовый: 238 · стандартный: 183 · сложный: 29 · ČVUT FIT: 195 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FBMI: 40 · ČVUT FJFI: 24 · ČVUT FEL: 15 · VŠCHT VŠCHT: 7 · TUL FP: 5
 
 ⚠ **0** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.
 
@@ -10,18 +10,18 @@
 
 | № | Тема | Ур. 1 | Ур. 2 | Ур. 3 | Всего |
 |---|---|---|---|---|---|
-| 1 | Množina. Podmnožina |  | 2 | 4 | 6 |
+| 1 | Množina. Podmnožina |  | 2 | 7 | 9 |
 | 2 | Mocnina. Odmocnina | 17 | 1 |  | 18 |
-| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 20 | 21 | 2 | 43 |
-| 4 | Rovnice s parametrem | 1 | 2 | 2 | 5 |
-| 5 | Rovnice s absolutní hodnotou |  | 5 |  | 5 |
-| 6 | Nerovnice. Soustava nerovnic | 15 | 4 | 2 | 21 |
+| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 23 | 25 | 5 | 53 |
+| 4 | Rovnice s parametrem | 1 | 5 | 2 | 8 |
+| 5 | Rovnice s absolutní hodnotou |  | 8 |  | 8 |
+| 6 | Nerovnice. Soustava nerovnic | 18 | 7 | 2 | 27 |
 | 7 | Nerovnice s absolutní hodnotou | 2 | 6 |  | 8 |
-| 8 | Iracionální rovnice. Iracionální nerovnice | 16 | 6 |  | 22 |
+| 8 | Iracionální rovnice. Iracionální nerovnice | 16 | 9 |  | 25 |
 | 9 | Funkce (lineární, kvadratická, lomená). Grafy | 17 | 5 |  | 22 |
 | 10 | Exponenciální funkce | 4 | 2 |  | 6 |
-| 11 | Exponenciální rovnice a nerovnice | 12 | 7 |  | 19 |
-| 12 | Logaritmická funkce | 9 | 7 |  | 16 |
+| 11 | Exponenciální rovnice a nerovnice | 12 | 13 |  | 25 |
+| 12 | Logaritmická funkce | 9 | 10 |  | 19 |
 | 13 | Logaritmické rovnice a nerovnice | 5 | 5 | 1 | 11 |
 | 14 | Goniometrické funkce | 6 |  |  | 6 |
 | 15 | Goniometrické rovnice a nerovnice | 2 | 17 | 1 | 20 |
@@ -31,21 +31,21 @@
 | 19 | Aritmetická posloupnost | 8 | 2 | 2 | 12 |
 | 20 | Geometrická posloupnost | 4 | 6 | 2 | 12 |
 | 21 | Kombinatorika. Faktoriál | 1 | 1 | 1 | 3 |
-| 22 | Variace. Permutace. Kombinace | 3 | 11 | 1 | 15 |
+| 22 | Variace. Permutace. Kombinace | 3 | 17 | 1 | 21 |
 | 23 | Kombinační číslo. Binomická věta |  |  |  | — |
-| 24 | Pravděpodobnost | 3 | 5 |  | 8 |
+| 24 | Pravděpodobnost | 6 | 5 |  | 11 |
 | 25 | Analytická geometrie. Vektory |  | 1 |  | 1 |
 | 26 | Parametrická rovnice přímky | 2 |  |  | 2 |
 | 27 | Obecná rovnice přímky | 14 | 1 |  | 15 |
 | 28 | Vzájemná poloha přímek | 7 |  |  | 7 |
 | 29 | Směrnicový a úsekový tvar rovnice přímky |  | 1 |  | 1 |
-| 30 | Kuželosečky. Kružnice | 6 | 4 | 1 | 11 |
+| 30 | Kuželosečky. Kružnice | 9 | 4 | 1 | 14 |
 | 31 | Elipsa |  | 1 |  | 1 |
 | 32 | Hyperbola |  | 1 |  | 1 |
 | 33 | Parabola | 2 |  |  | 2 |
 | 34 | Planimetrie | 5 |  |  | 5 |
 | 35 | Stereometrie |  | 2 |  | 2 |
-| — | Ostatní | 34 | 25 | 1 | 60 |
+| — | Ostatní | 40 | 25 | 4 | 69 |
 
 Задача считается по основной (первой) теме; дополнительные темы указаны в карточке. «Ostatní» — задачи вне 35 тем плана.
 
@@ -598,6 +598,60 @@ Binární operace $\star$ je definovaná jako $a\star b=a-b+2a$. Určete neznám
 
 </details>
 
+### `fit-2014-2-10` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 10, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Binární operace $\star$ je definovaná jako $a\star b=a-b+2a$. Určete neznámou $x$, platí-li $(2\star x)\star3=3\,.$
+
+- **a)** Rovnice nemá řešení.
+- **b)** Rovnice má jedno kladné řešení.
+- **c)** Rovnice má dvě řešení a jejich součet je 10.
+- **d)** Rovnice má více než dvě řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Rovnice má jedno kladné řešení.. $a\star b=3a-b$: $3(6-x)-3=3\Rightarrow x=4$.
+
+</details>
+
+### `fit-2014-3-10` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 10, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Binární operace $\star$ je definovaná jako $a\star b=a-b+2a$. Určete neznámou $x$, platí-li $(3\star x)\star2=6\,.$
+
+- **a)** Rovnice nemá řešení.
+- **b)** Rovnice má více než dvě řešení.
+- **c)** Rovnice má jedno kladné řešení.
+- **d)** Rovnice má dvě řešení a jejich součet je 10.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — Rovnice má jedno kladné řešení.. $3(9-x)-2=6\Rightarrow x=\frac{19}3$.
+
+</details>
+
+### `fit-2014-4-10` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 10, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Binární operace $\star$ je definovaná jako $a\star b=a-b+2a$. Určete neznámou, $x$ platí-li $(2\star x)\star3=0\,.$
+
+- **a)** Rovnice nemá řešení.
+- **b)** Rovnice má více než dvě řešení.
+- **c)** Rovnice má dvě řešení a jejich součet je 10.
+- **d)** Rovnice má jedno kladné řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Rovnice má jedno kladné řešení.. $3(6-x)-3=0\Rightarrow x=5$.
+
+</details>
+
 ### `fit-2015-05` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 5, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
 
 *Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
@@ -885,6 +939,60 @@ Mezi čísly $a$, $b$, $c$, $d$, $e$ platí následující vztahy: $a>d$, $b>d$,
 <details><summary>Ответ и решение</summary>
 
 **c** — $e>c$.. $e<a<c$, tedy vždy $e<c$.
+
+</details>
+
+### `fit-2014-2-06` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 6, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Mezi čísly $a$, $b$, $c$, $d$, $e$ platí následující vztahy: $b>e$, $c>e$, $b<d$, $a<b$. Který z následujících výroků nemůže být pravdivý?
+
+- **a)** $a<c$.
+- **b)** $a>d$.
+- **c)** $c>d$.
+- **d)** $b<c$.
+- **e)** Platí právě jeden z předchozích vztahů.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $a>d$.. $a<b<d$, tedy $a>d$ nastat nemůže.
+
+</details>
+
+### `fit-2014-3-06` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 6, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Mezi čísly $a$, $b$, $c$, $d$, $e$ platí následující vztahy: $e>c$, $a>c$, $e<b$, $d<e$. Který z následujících výroků nemůže být pravdivý?
+
+- **a)** $d<a$.
+- **b)** $a>b$.
+- **c)** $d>b$.
+- **d)** $e<a$.
+- **e)** Platí právě jeden z předchozích vztahů.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $d>b$.. $d<e<b$, tedy $d>b$ nastat nemůže.
+
+</details>
+
+### `fit-2014-4-06` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 6, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Mezi čísly $a$, $b$, $c$, $d$, $e$ platí následující vztahy: $c>a$, $d>a$, $c<e$, $b<c$. Který z následujících výroků nemůže být pravdivý?
+
+- **a)** $b<d$.
+- **b)** $d>e$.
+- **c)** $c<d$.
+- **d)** $b>e$.
+- **e)** Platí právě jeden z předchozích vztahů.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $b>e$.. $b<c<e$, tedy $b>e$ nastat nemůže.
 
 </details>
 
@@ -2502,6 +2610,60 @@ Jaká je pravděpodobnost, že při třech hodech stejnou mincí padne alespoň 
 
 </details>
 
+### `fit-2014-2-12` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 12, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 24. Pravděpodobnost · *Текст:* текст оригинала (по курсу)
+
+Jaká je pravděpodobnost, že při třech hodech stejnou mincí padne alespoň jednou orel?
+
+- **a)** $\frac12$
+- **b)** $\frac34$
+- **c)** $\frac78$
+- **d)** $\frac38$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\frac78$. $1-\frac18=\frac78$.
+
+</details>
+
+### `fit-2014-3-12` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 12, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 24. Pravděpodobnost · *Текст:* текст оригинала (по курсу)
+
+Jaká je pravděpodobnost, že při třech hodech stejnou mincí padne nejvýše dvakrát orel?
+
+- **a)** $\frac18$
+- **b)** $\frac78$
+- **c)** $\frac14$
+- **d)** $\frac12$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\frac78$. $1-\frac18=\frac78$.
+
+</details>
+
+### `fit-2014-4-12` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 12, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 24. Pravděpodobnost · *Текст:* текст оригинала (по курсу)
+
+Jaká je pravděpodobnost, že při třech hodech stejnou mincí padne nejvýše jednou orel?
+
+- **a)** $\frac12$
+- **b)** $\frac14$
+- **c)** $\frac18$
+- **d)** $\frac38$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\frac12$. $\frac18+\frac38=\frac12$.
+
+</details>
+
 ### `fit-2021-16` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 16, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2021.pdf)
 
 *Темы:* 24. Pravděpodobnost · *Текст:* текст оригинала (по курсу)
@@ -2972,6 +3134,60 @@ Poloměr kružnice zadané rovnicí $x^2+y^2-16x+12y+51=0$ je
 
 </details>
 
+### `fit-2014-2-02` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 2, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Poloměr kružnice zadané rovnicí $x^2+y^2+12x-16y+51=0$ je
+
+- **a)** Roven $8$.
+- **b)** Neexistuje, nejedná se o rovnici kružnice.
+- **c)** Roven $7$.
+- **d)** Jeho druhá mocnina je $151$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — Roven $7$.. $(x+6)^2+(y-8)^2=49$.
+
+</details>
+
+### `fit-2014-3-02` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 2, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Poloměr kružnice zadané rovnicí $x^2+y^2-14x-16y+49=0$ je
+
+- **a)** Roven $8$.
+- **b)** Neexistuje, nejedná se o rovnici kružnice.
+- **c)** Jeho druhá mocnina je $162$.
+- **d)** Roven $7$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — Roven $8$.. $(x-7)^2+(y-8)^2=64$.
+
+</details>
+
+### `fit-2014-4-02` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 2, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Poloměr kružnice zadané rovnicí $x^2+y^2+10x-24y+69=0$ je
+
+- **a)** Roven $8$.
+- **b)** Neexistuje, nejedná se o rovnici kružnice.
+- **c)** Jeho druhá mocnina je $238$.
+- **d)** Roven $7$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. $(x+5)^2+(y-12)^2=100$, poloměr $10$.
+
+</details>
+
 ### `fit-2027-16` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 16, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2027-s-resenim.pdf)
 
 *Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
@@ -3302,6 +3518,60 @@ V lednu byla zaměstnancům zvýšena mzda o $10\ \%$ prosincové mzdy. Následn
 
 </details>
 
+### `fit-2014-2-01` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 1, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+V únoru byla zaměstnancům zvýšena mzda o $20\ \%$ lednové mzdy. Následně v červnu jim byla mzda snížena o $20\ \%$ dubnové mzdy. Jaká je nyní jejich mzda?
+
+- **a)** O šest procent nižší než před únorovým zvyšováním.
+- **b)** Stejná jako před únorovým zvyšováním.
+- **c)** O čtyři procenta nižší než před únorovým zvyšováním.
+- **d)** O čtyři procenta vyšší než před únorovým zvyšováním.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — O čtyři procenta nižší než před únorovým zvyšováním.. $1{,}2\cdot0{,}8=0{,}96$.
+
+</details>
+
+### `fit-2014-3-01` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 1, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+V lednu byla zaměstnancům zvýšena mzda o $16\ \%$ prosincové mzdy. Následně v červnu jim byla mzda snížena o $15\ \%$ březnové mzdy. Jaká je nyní jejich mzda?
+
+- **a)** O $1{,}6$ procenta nižší než před lednovým zvyšováním.
+- **b)** Stejná jako před lednovým zvyšováním.
+- **c)** O $1{,}4$ procenta nižší než před lednovým zvyšováním.
+- **d)** O $1{,}4$ procenta vyšší než před lednovým zvyšováním.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — O $1{,}4$ procenta nižší než před lednovým zvyšováním.. $1{,}16\cdot0{,}85=0{,}986$.
+
+</details>
+
+### `fit-2014-4-01` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 1, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+V únoru byla zaměstnancům zvýšena mzda o $15\ \%$ lednové mzdy. Následně v červnu jim byla mzda snížena o $16\ \%$ dubnové mzdy. Jaká je nyní jejich mzda?
+
+- **a)** Stejná jako před lednovým zvyšováním.
+- **b)** O $3{,}4$ procenta nižší než před lednovým zvyšováním.
+- **c)** O $3{,}6$ procenta nižší než před lednovým zvyšováním.
+- **d)** O $3{,}4$ procenta vyšší než před lednovým zvyšováním.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — O $3{,}4$ procenta nižší než před lednovým zvyšováním.. $1{,}15\cdot0{,}84=0{,}966$.
+
+</details>
+
 ### `fit-2014-1-07` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 7, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-1.pdf)
 
 *Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
@@ -3317,6 +3587,60 @@ Mějme dvě čísla zapsaná v pětkové soustavě: $3402_5$ a $2413_5$. Vyjád�
 <details><summary>Ответ и решение</summary>
 
 **b** — $3402_5-2413_5=434_5$.. $477-358=119=434_5$.
+
+</details>
+
+### `fit-2014-2-07` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 7, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Mějme dvě čísla zapsaná v pětkové soustavě: $3412_5$ a $2424_5$. Vyjádřete jejich rozdíl také v pětkové soustavě.
+
+- **a)** $3412_5-2424_5=988_5$.
+- **b)** $3412_5-2424_5=434_5$.
+- **c)** $3412_5-2424_5=1033_5$.
+- **d)** $3412_5-2424_5=433_5$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $3412_5-2424_5=433_5$.. $482-364=118=433_5$.
+
+</details>
+
+### `fit-2014-3-07` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 7, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Mějme dvě čísla zapsaná v pětkové soustavě: $4401_5$ a $2413_5$. Vyjádřete jejich rozdíl také v pětkové soustavě.
+
+- **a)** $4401_5-2413_5=1989_5$.
+- **b)** $4401_5-2413_5=2043_5$.
+- **c)** $4401_5-2413_5=1433_5$.
+- **d)** $4401_5-2413_5=433_5$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $4401_5-2413_5=1433_5$.. $601-358=243=1433_5$.
+
+</details>
+
+### `fit-2014-4-07` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 7, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Mějme dvě čísla zapsaná v pětkové soustavě: $3312_5$ a $2443_5$. Vyjádřete jejich rozdíl také v pětkové soustavě.
+
+- **a)** $3312_5-2443_5=869_5$.
+- **b)** $3312_5-2443_5=314_5$.
+- **c)** $3312_5-2443_5=1314_5$.
+- **d)** $3312_5-2443_5=423_5$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $3312_5-2443_5=314_5$.. $457-373=84=314_5$.
 
 </details>
 
@@ -3858,6 +4182,8 @@ Rovnost $\frac{3}{x+1}=\frac3x+3$ platí právě pro
 
 Pro zlomek v základním tvaru platí následující. Jmenovatel zlomku je dvojnásobek čitatele zmenšený o jedna. Hodnota zlomku se nezmění, pokud k čitateli přičteme dvě a k jmenovateli přičteme tři. Rozhodněte, které tvrzení je pravdivé.
 
+*Встречается также:* FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3, příklad 5, 3 b; FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4, příklad 5, 3 b
+
 - **a)** Takový zlomek neexistuje.
 - **b)** Součin čitatele a jmenovatele je 6.
 - **c)** Existují dva různé zlomky vyhovující podmínkám.
@@ -3867,6 +4193,24 @@ Pro zlomek v základním tvaru platí následující. Jmenovatel zlomku je dvojn
 <details><summary>Ответ и решение</summary>
 
 **b** — Součin čitatele a jmenovatele je 6.. $b=2a-1$, $\frac{a+2}{b+3}=\frac ab\Rightarrow2b=3a$, tedy $a=2$, $b=3$.
+
+</details>
+
+### `fit-2014-2-05` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 5, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Pro zlomek v základním tvaru platí následující. Jmenovatel zlomku je dvojnásobek čitatele zmenšený o jedna. Hodnota zlomku se nezmění, pokud k čitateli přičteme dvě a k jmenovateli přičteme tři. Rozhodněte, které tvrzení je pravdivé.
+
+- **a)** Takový zlomek neexistuje.
+- **b)** Součin čitatele a jmenovatele je 24.
+- **c)** Existují dva různé zlomky vyhovující podmínkám.
+- **d)** Součet čitatele a jmenovatele je 6.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. $b=2a-1$, $2b=3a$: zlomek $\frac23$, součin $6$, součet $5$.
 
 </details>
 
@@ -3885,6 +4229,60 @@ Pro řešení rovnice $2x^8+6x^5-36x^2=0$ platí
 <details><summary>Ответ и решение</summary>
 
 **c** — Všechna reálná řešení rovnice leží v intervalu $\langle-4,2\rangle$.. $2x^2(x^3+6)(x^3-3)=0$: $x\in\{0,-\sqrt[3]6,\sqrt[3]3\}$.
+
+</details>
+
+### `fit-2014-2-08` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 8, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Pro řešení rovnice $2x^8-10x^5+12x^2=0$ platí
+
+- **a)** Rovnice má pouze záporná řešení.
+- **b)** Součin všech řešení je $6$.
+- **c)** Všechna reálná řešení rovnice leží v intervalu $\langle-2,2\rangle$.
+- **d)** Rovnice nemá řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — Všechna reálná řešení rovnice leží v intervalu $\langle-2,2\rangle$.. $2x^2(x^3-2)(x^3-3)=0$: $x\in\{0,\sqrt[3]2,\sqrt[3]3\}$.
+
+</details>
+
+### `fit-2014-3-08` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 8, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Pro řešení rovnice $3x^9+12x^6-63x^3=0$ platí
+
+- **a)** Rovnice má pouze nezáporná řešení.
+- **b)** Součin všech řešení je $-21$.
+- **c)** Rovnice nemá řešení.
+- **d)** Všechna reálná řešení rovnice leží v intervalu $\langle-3,4\rangle$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Všechna reálná řešení rovnice leží v intervalu $\langle-3,4\rangle$.. $3x^3(x^3+7)(x^3-3)=0$: $x\in\{0,-\sqrt[3]7,\sqrt[3]3\}$.
+
+</details>
+
+### `fit-2014-4-08` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 8, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Pro řešení rovnice $2x^7+4x^4-16x=0$ platí
+
+- **a)** Rovnice má pouze nezáporná řešení.
+- **b)** Součet všech řešení je $3$.
+- **c)** Rovnice nemá řešení.
+- **d)** Všechna reálná řešení rovnice leží v intervalu $\langle-2,3\rangle$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Všechna reálná řešení rovnice leží v intervalu $\langle-2,3\rangle$.. $2x(x^3+4)(x^3-2)=0$: $x\in\{0,-\sqrt[3]4,\sqrt[3]2\}$.
 
 </details>
 
@@ -4186,6 +4584,60 @@ Určete všechny hodnoty reálného parametru $p$, pro které má rovnice 2 růz
 
 </details>
 
+### `fit-2014-2-19` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 19, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу)
+
+Určete všechny hodnoty reálného parametru $p$, pro které rovnice nemá reálné kořeny. $x(x+p)+p=-3(3+2x)$
+
+- **a)** Takové $p$ neexistuje.
+- **b)** $p\in(-8,0)$.
+- **c)** $p>8$.
+- **d)** $p<0$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $p\in(-8,0)$.. $x^2+(p+6)x+p+9=0$, $D=p^2+8p<0$.
+
+</details>
+
+### `fit-2014-3-19` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 19, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу)
+
+Určete všechny hodnoty reálného parametru $p$, pro které má rovnice 1 reálný kořen. $x(x+p)+p=-3(3+2x)$
+
+- **a)** Existují dvě taková $p$ a jejich součet je $-8$.
+- **b)** $p<0$.
+- **c)** $p=8$.
+- **d)** Všechna reálná čísla.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — Existují dvě taková $p$ a jejich součet je $-8$.. $D=p^2+8p=0$ pro $p=0$ a $p=-8$.
+
+</details>
+
+### `fit-2014-4-19` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 19, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу)
+
+Určete všechny hodnoty reálného parametru $p$, pro které má rovnice alespoň jeden reálný kořen. $x(x+p)+p=-3(3+2x)$
+
+- **a)** Takové $p$ neexistuje.
+- **b)** $p\le0$.
+- **c)** $p>8$.
+- **d)** $p\in\langle0,8\rangle$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. $D=p^2+8p\ge0\iff p\le-8\vee p\ge0$.
+
+</details>
+
 ### `fit-2023-15` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 15, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
 *Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 3, úloha 19
@@ -4260,6 +4712,60 @@ Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. $|2x+1
 
 </details>
 
+### `fit-2014-2-03` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 3, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. $|x-3|-|1-2x|=x$
+
+- **a)** Rovnice má 3 různá řešení.
+- **b)** Rovnice má 2 různá řešení.
+- **c)** Rovnice má jediné řešení.
+- **d)** Rovnice nemá řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — Rovnice má jediné řešení.. Pro $x<\frac12$: $2+x=x$ — nic; na $\langle\frac12,3)$: $4-3x=x$, $x=1$; pro $x\ge3$: $-x-2=x$ — nic.
+
+</details>
+
+### `fit-2014-3-03` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 3, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. $|2x+1|-|3-x|=2x$
+
+- **a)** Rovnice má 3 různá řešení.
+- **b)** Rovnice má 2 různá řešení.
+- **c)** Rovnice má jediné řešení.
+- **d)** Rovnice nemá řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — Rovnice má 3 různá řešení.. Kořeny $-\frac43$, $2$ a $4$ — v každém intervalu jeden.
+
+</details>
+
+### `fit-2014-4-03` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 3, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. $|2x+1|-|3-x|=3x$
+
+- **a)** Rovnice má 3 různá řešení.
+- **b)** Rovnice má 2 různá řešení.
+- **c)** Rovnice nemá řešení.
+- **d)** Rovnice má jediné řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Rovnice má jediné řešení.. Pro $x<-\frac12$: $-x-4=3x$, $x=-1$; jinde řešení není.
+
+</details>
+
 ### `fit-2022-06` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 6, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
 *Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 5, úloha 17
@@ -4313,6 +4819,60 @@ Určete počet všech lichých čísel, která vyhovují nerovnici $x^2-53x+150\
 <details><summary>Ответ и решение</summary>
 
 **d** — Nekonečně mnoho.. Řešením je $(-\infty,3\rangle\cup\langle50,\infty)$ — lichých čísel nekonečně mnoho.
+
+</details>
+
+### `fit-2014-2-04` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 4, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete počet všech lichých čísel, která vyhovují nerovnici $x^2-87x+230\ge0\,.$
+
+- **a)** $72$
+- **b)** $73$
+- **c)** Nekonečně mnoho.
+- **d)** Žádné.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — Nekonečně mnoho.. Řešením je $(-\infty,x_1\rangle\cup\langle x_2,\infty)$ — lichých čísel nekonečně mnoho.
+
+</details>
+
+### `fit-2014-3-04` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 4, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete počet všech lichých čísel, která vyhovují nerovnici $x^2-27x+320\ge0\,.$
+
+- **a)** Nekonečně mnoho.
+- **b)** Žádné.
+- **c)** $48$
+- **d)** $47$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — Nekonečně mnoho.. $D<0$, nerovnost platí pro všechna $x$.
+
+</details>
+
+### `fit-2014-4-04` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 4, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete počet všech lichých čísel, která vyhovují nerovnici $x^2-35x+510\ge0\,.$
+
+- **a)** $58$
+- **b)** $59$
+- **c)** Žádné.
+- **d)** Nekonečně mnoho.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Nekonečně mnoho.. $D<0$, nerovnost platí pro všechna $x$.
 
 </details>
 
@@ -4520,6 +5080,60 @@ Pro definiční obor funkce $f(x)=\sqrt{x+4}+\sqrt{\dfrac{1}{7-6x-x^2}}$ platí
 <details><summary>Ответ и решение</summary>
 
 **c** — Definiční obor je $\langle-4,1)$.. $x\ge-4$ a $(x+7)(x-1)<0$.
+
+</details>
+
+### `fit-2014-2-16` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 16, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Pro definiční obor funkce $f(x)=\sqrt{\dfrac1{x+4}}+\sqrt{7-6x-x^2}$ platí
+
+- **a)** Definičním oborem jsou všechna kladná čísla větší než 1.
+- **b)** Definiční obor je $(-\infty,-7\rangle\cup(-4,+\infty)$.
+- **c)** Definiční obor je $\langle-4,1\rangle$.
+- **d)** Definiční obor je $(-\infty,-7\rangle\cup(-4,1\rangle$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. $x>-4$ a $x^2+6x-7\le0$: $(-4,1\rangle$.
+
+</details>
+
+### `fit-2014-3-16` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 16, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Pro definiční obor funkce $f(x)=\sqrt{\dfrac1{x+4}}+\sqrt{\dfrac1{7-6x-x^2}}$ platí
+
+- **a)** Definičním oborem jsou všechna kladná čísla větší než 1.
+- **b)** Definiční obor je $(-\infty,-7)\cup(-4,+\infty)$.
+- **c)** Definiční obor je $(-\infty,-7\rangle\cup(-4,1)$.
+- **d)** Definiční obor je $(-4,1)$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Definiční obor je $(-4,1)$.. $x>-4$ a $7-6x-x^2>0$: $(-4,1)$.
+
+</details>
+
+### `fit-2014-4-16` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 16, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Pro definiční obor funkce $f(x)=\sqrt{\dfrac{x+4}{7-6x-x^2}}$ platí
+
+- **a)** Definičním oborem jsou všechna kladná čísla větší než 1.
+- **b)** Definiční obor je $(-\infty,-7\rangle\cup\langle-4,+\infty)$.
+- **c)** Definiční obor je $\langle-4,1)$.
+- **d)** Definiční obor je $(-\infty,-7)\cup\langle-4,1)$.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Definiční obor je $(-\infty,-7)\cup\langle-4,1)$.. $\frac{x+4}{(1-x)(x+7)}\ge0$: $(-\infty,-7)\cup\langle-4,1)$.
 
 </details>
 
@@ -4739,6 +5353,60 @@ Za jaký minimální počet let klesne hodnota předmětu na méně než desetin
 
 </details>
 
+### `fit-2014-2-11` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 11, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Za jaký minimální počet let klesne hodnota předmětu na méně než pětinu původní ceny, pokud ročně odepisujeme $22\%$ ceny předmětu z předchozího roku?
+
+- **a)** Za 5 let.
+- **b)** Za 7 let.
+- **c)** Za 11 let.
+- **d)** Za 12 let.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Za 7 let.. $0{,}78^n<0{,}2\iff n>\frac{\ln0{,}2}{\ln0{,}78}\approx6{,}5$.
+
+</details>
+
+### `fit-2014-3-11` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 11, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Za jaký minimální počet let klesne hodnota předmětu na méně než desetinu původní ceny, pokud ročně odepisujeme $15\%$ ceny předmětu z předchozího roku?
+
+- **a)** Za 11 let.
+- **b)** Za 12 let.
+- **c)** Za 15 let.
+- **d)** Za 14 let.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — Za 15 let.. $0{,}85^n<0{,}1\iff n>\frac{\ln0{,}1}{\ln0{,}85}\approx14{,}2$.
+
+</details>
+
+### `fit-2014-4-11` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 11, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Za jaký minimální počet let klesne hodnota předmětu na méně než dvacetinu původní ceny, pokud ročně odepisujeme $20\ \%$ ceny předmětu z předchozího roku?
+
+- **a)** Za 13 let.
+- **b)** Za 12 let.
+- **c)** Za 8 let.
+- **d)** Za 5 let.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. $0{,}8^n<0{,}05\iff n>\frac{\ln0{,}05}{\ln0{,}8}\approx13{,}4$ — za 14 let.
+
+</details>
+
 ### `fit-2014-1-18` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 18, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-1.pdf)
 
 *Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -4754,6 +5422,60 @@ Pro řešení rovnice $2^{x-2}+4^{x-\frac12}=9$ platí
 <details><summary>Ответ и решение</summary>
 
 **e** — Žádná z předcházejících možností není správná.. $t=2^x$: $\frac t4+\frac{t^2}{2}=9\Rightarrow2t^2+t-36=0$, $t=4$, jediné řešení $x=2$.
+
+</details>
+
+### `fit-2014-2-18` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 18, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Pro řešení rovnice $3^{2x+1}-2\cdot3^{x+2}=36+5\cdot3^x$ platí
+
+- **a)** Rovnice má dvě řešení.
+- **b)** Rovnice má nekonečně mnoho řešení.
+- **c)** Rovnice má jedno kladné řešení.
+- **d)** Rovnice nemá řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — Rovnice má jedno kladné řešení.. $t=3^x$: $3t^2-23t-36=0$, $t=9$ ($t=-\frac43$ nevyhovuje), $x=2$.
+
+</details>
+
+### `fit-2014-3-18` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 18, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Pro řešení rovnice $2^{x-2}+4^{x-\frac12}=9$ platí
+
+- **a)** Součet všech řešení je $-\frac12$.
+- **b)** Rovnice má nekonečně mnoho řešení.
+- **c)** Rovnice má dvě řešení.
+- **d)** Rovnice má jedno kladné řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Rovnice má jedno kladné řešení.. $t=2^x$: $2t^2+t-36=0$, $t=4$, $x=2$.
+
+</details>
+
+### `fit-2014-4-18` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 18, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Pro řešení rovnice $3^{2x+1}-2\cdot3^{x+2}=36+5\cdot3^x$ platí
+
+- **a)** Rovnice má dvě řešení.
+- **b)** Rovnice má jedno kladné řešení řešení.
+- **c)** Součin všech řešení je $-12$.
+- **d)** Rovnice nemá řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Rovnice má jedno kladné řešení řešení.. $t=3^x$: $3t^2-23t-36=0$, $t=9$, jediné řešení $x=2$.
 
 </details>
 
@@ -4858,6 +5580,60 @@ Jestliže $y=\log_{\frac12}x$, pak $y\in\langle-2,2\rangle$ právě pro
 <details><summary>Ответ и решение</summary>
 
 **c** — $x\in\langle\frac14,4\rangle$. Funkce je klesající: $\left(\frac12\right)^2\le x\le\left(\frac12\right)^{-2}$.
+
+</details>
+
+### `fit-2014-2-15` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 15, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Jestliže $y=\log_{\frac13}x$, pak $y\in\langle-2,2\rangle$ právě pro
+
+- **a)** $x\in\langle-\frac19,9\rangle$
+- **b)** $x\in\langle-9,-\frac19\rangle$
+- **c)** $x\in\langle\frac16,6\rangle$
+- **d)** $x\in\langle-6,\frac16\rangle$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. Správně $x\in\langle\frac19,9\rangle$.
+
+</details>
+
+### `fit-2014-3-15` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 15, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Jestliže $y=\log_{\frac12}x$, pak $y\in\langle-3,0\rangle$ právě pro
+
+- **a)** $x\in\langle-\frac18,0\rangle$
+- **b)** $x\in\langle-8,0\rangle$
+- **c)** $x\in\langle\frac18,1\rangle$
+- **d)** $x\in\langle1,8\rangle$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x\in\langle1,8\rangle$. Funkce je klesající: $\left(\frac12\right)^0\le x\le\left(\frac12\right)^{-3}$.
+
+</details>
+
+### `fit-2014-4-15` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 15, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Jestliže $y=\log_{\frac12}x$, pak $y\in\langle-2,1\rangle$ právě pro
+
+- **a)** $x\in\langle-\frac14,\frac12\rangle$
+- **b)** $x\in\langle0,\frac14\rangle$
+- **c)** $x\in\langle1,4\rangle$
+- **d)** $x\in\langle-4,0\rangle$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. Správně $x\in\langle\frac12,4\rangle$.
 
 </details>
 
@@ -5528,6 +6304,60 @@ Kolika způsoby lze 10 dětí rozdělit na 3 skupiny, aby v první skupině bylo
 
 </details>
 
+### `fit-2014-2-09` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 9, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Kolika způsoby lze 11 dětí rozdělit na 3 skupiny, aby v první skupině bylo 6 dětí, ve druhé 2 děti a ve třetí 3 děti?
+
+- **a)** $942$
+- **b)** $66$
+- **c)** $143$
+- **d)** $4620$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $4620$. $\frac{11!}{6!\,2!\,3!}=4620$.
+
+</details>
+
+### `fit-2014-3-09` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 9, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Kolika způsoby lze 12 dětí rozdělit na 3 skupiny, aby v první skupině bylo 5 dětí, ve druhé 3 děti a ve třetí 4 děti?
+
+- **a)** $2520$
+- **b)** $27720$
+- **c)** $4620$
+- **d)** $166$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $27720$. $\frac{12!}{5!\,3!\,4!}=27720$.
+
+</details>
+
+### `fit-2014-4-09` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 9, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Kolika způsoby lze 13 dětí rozdělit na 3 skupiny, aby v první skupině bylo 6 dětí, ve druhé 5 dětí a ve třetí 2 děti?
+
+- **a)** $4520$
+- **b)** $36036$
+- **c)** $2160$
+- **d)** $166320$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $36036$. $\frac{13!}{6!\,5!\,2!}=36036$.
+
+</details>
+
 ### `fit-2014-1-17` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 17, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-1.pdf)
 
 *Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
@@ -5543,6 +6373,60 @@ Mezi 20 výrobky jsou právě 3 vadné výrobky. Kolika způsoby je možné vybr
 <details><summary>Ответ и решение</summary>
 
 **a** — $13328$. $\binom{17}{5}+3\binom{17}{4}=6188+7140=13328$.
+
+</details>
+
+### `fit-2014-2-17` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 17, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Mezi 20 výrobky jsou právě 3 vadné výrobky. Kolika způsoby je možné vybrat 5 výrobků, aby mezi nimi byli právě dva vadné výrobky?
+
+- **a)** $13328$
+- **b)** $9180$
+- **c)** $6188$
+- **d)** $2040$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $2040$. $\binom32\binom{17}3=3\cdot680=2040$.
+
+</details>
+
+### `fit-2014-3-17` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 17, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Mezi 20 výrobky jsou právě 4 vadné výrobky. Kolika způsoby je možné vybrat 5 výrobků, aby mezi nimi byli alespoň tři vadné výrobky?
+
+- **a)** $480$
+- **b)** $570$
+- **c)** $544$
+- **d)** $496$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $496$. $\binom43\binom{16}2+\binom44\binom{16}1=480+16=496$.
+
+</details>
+
+### `fit-2014-4-17` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 17, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Mezi 20 výrobky jsou právě 3 vadné výrobky. Kolika způsoby je možné vybrat 5 výrobků, aby mezi nimi byl nejvýše dva vadné výrobky?
+
+- **a)** $13328$
+- **b)** $7140$
+- **c)** $6188$
+- **d)** $2040$
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. $\binom{20}5-\binom{17}2=15504-136=15368$.
 
 </details>
 
@@ -6322,6 +7206,60 @@ V testu byly tři úlohy. Šest studentů vyřešilo všechny tři úlohy, dva s
 
 </details>
 
+### `fit-2014-2-14` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 14, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу)
+
+V testu byly tři příklady. Osm studentů vyřešilo všechny tři příklady, dva studenti ani jeden. První příklad vyřešilo celkem 25 studentů, druhý celkem 21 studentů a třetí 19 studentů. První a zároveň druhý příklad vyřešilo 15 studentů, první a zároveň třetí příklad vyřešilo také 15 studentů a druhý a zároveň třetí příklad 10 studentů. Rozhodněte, které tvrzení je pravdivé.
+
+- **a)** Popsaná situace nemůže nastat.
+- **b)** Neexistuje student, který by vyřešil pouze první příklad.
+- **c)** První nebo druhý příklad vyřešilo více studentů než druhý nebo třetí příklad.
+- **d)** Test psalo 32 studentů.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — První nebo druhý příklad vyřešilo více studentů než druhý nebo třetí příklad.. $|1\cup2|=25+21-15=31>|2\cup3|=21+19-10=30$; test psalo $35$ studentů.
+
+</details>
+
+### `fit-2014-3-14` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 14, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу)
+
+V testu byly tři příklady. Devět studentů vyřešilo všechny tři příklady, dva studenti ani jeden. První příklad vyřešilo celkem 22 studentů, druhý celkem 20 studentů a třetí 24 studentů. První a zároveň druhý příklad vyřešilo 14 studentů, první a zároveň třetí příklad vyřešilo 17 studentů a druhý a zároveň třetí příklad 12 studentů. Rozhodněte, které tvrzení je pravdivé.
+
+- **a)** Popsaná situace nemůže nastat.
+- **b)** Neexistuje student, který by vyřešil pouze první příklad.
+- **c)** První nebo druhý příklad vyřešilo více studentů než druhý nebo třetí příklad.
+- **d)** Test psalo 32 studentů.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Neexistuje student, který by vyřešil pouze první příklad.. Pouze první: $22-14-17+9=0$.
+
+</details>
+
+### `fit-2014-4-14` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 14, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу)
+
+V testu byly tři příklady. Pět studentů vyřešilo všechny tři příklady, dva studenti ani jeden. První příklad vyřešilo celkem 20 studentů, druhý celkem 19 studentů a třetí 17 studentů. První a zároveň druhý příklad vyřešilo 12 studentů, první a zároveň třetí příklad vyřešilo také 12 studentů a druhý a zároveň třetí příklad 7 studentů. Rozhodněte, které tvrzení je pravdivé.
+
+- **a)** Popsaná situace nemůže nastat.
+- **b)** Neexistuje student, který by vyřešil pouze první příklad.
+- **c)** První nebo druhý příklad vyřešilo méně studentů než druhý nebo třetí příklad.
+- **d)** Test psalo 30 studentů.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — První nebo druhý příklad vyřešilo méně studentů než druhý nebo třetí příklad.. $|1\cup2|=27<|2\cup3|=29$; test psalo $32$ studentů.
+
+</details>
+
 ### `fit-2016-06` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 6, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2016.pdf)
 
 *Темы:* 1. Množina. Podmnožina, 9. Funkce (lineární, kvadratická, lomená). Grafy, 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
@@ -6393,6 +7331,60 @@ Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin 
 <details><summary>Ответ и решение</summary>
 
 **d** — Bazén se naplní za $\frac{48}{7}$ hodiny a zbytečně vyteče objem vody odpovídající $\frac37$ objemu bazénu.. $\frac18+\frac1{12}-\frac1{16}=\frac7{48}$; doba $\frac{48}{7}$ h, výpustí vyteče $\frac{48}{7}\cdot\frac1{16}=\frac37$.
+
+</details>
+
+### `fit-2014-2-20` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 20, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?
+
+- **a)** Bazén se nikdy nenaplní.
+- **b)** Bazén se naplní za 12 hodin a zbytečně vyteče objem vody odpovídající $\frac32$ objemu bazénu.
+- **c)** Bazén se naplní za $\frac{48}{7}$ hodiny a zbytečně vyteče objem vody odpovídající $\frac37$ objemu bazénu.
+- **d)** Bazén se naplní za 8 hodin a zbytečně vyteče objem vody odpovídající $\frac47$ objemu bazénu.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — Bazén se naplní za $\frac{48}{7}$ hodiny a zbytečně vyteče objem vody odpovídající $\frac37$ objemu bazénu.. $\frac18+\frac1{12}-\frac1{16}=\frac7{48}$; doba $\frac{48}7$ h, výpustí vyteče $\frac37$.
+
+</details>
+
+### `fit-2014-3-20` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 20, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?
+
+- **a)** Bazén se naplní za 10 hodin a zbytečně vyteče objem vody odpovídající $\frac43$ objemu bazénu.
+- **b)** Bazén se naplní za $\frac{48}{7}$ hodiny a zbytečně vyteče objem vody odpovídající $\frac37$ objemu bazénu.
+- **c)** Bazén se naplní za 8 hodin a zbytečně vyteče objem vody odpovídající $\frac37$ objemu bazénu.
+- **d)** Bazén se nikdy nenaplní.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Bazén se naplní za $\frac{48}{7}$ hodiny a zbytečně vyteče objem vody odpovídající $\frac37$ objemu bazénu.. $\frac18+\frac1{12}-\frac1{16}=\frac7{48}$; doba $\frac{48}7$ h, výpustí vyteče $\frac37$.
+
+</details>
+
+### `fit-2014-4-20` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 20, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?
+
+- **a)** Bazén se naplní za 6 hodin a zbytečně vyteče objem vody odpovídající $\frac37$ objemu bazénu.
+- **b)** Bazén se naplní za 8 hodin a zbytečně vyteče objem vody odpovídající $\frac12$ objemu bazénu.
+- **c)** Bazén se nikdy nenaplní.
+- **d)** Bazén se naplní za $\frac{48}{7}$ hodiny a zbytečně vyteče objem vody odpovídající $\frac47$ objemu bazénu.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. Doba $\frac{48}7$ h, výpustí vyteče $\frac37$ objemu, ne $\frac47$.
 
 </details>
 
@@ -6667,5 +7659,59 @@ Z kolika obdélníkových dlaždic o rozměrech 15 cm a 20 cm se dá sestavit č
 <details><summary>Ответ и решение</summary>
 
 **c** — Součet všech řešení je $168$.. Strana čtverce je násobkem $\mathrm{NSN}(15,20)=60$: $12$, $48$ nebo $108$ dlaždic; součet $168$.
+
+</details>
+
+### `fit-2014-2-13` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 13, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-2.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Z kolika obdélníkových dlaždic o rozměrech 16 cm a 20 cm se dá sestavit čtverec, máme-li k dispozici 200 dlaždic? Všechny dlaždice pokládáme se stejnou orientací.
+
+- **a)** Součin všech řešení je $280$.
+- **b)** Nelze sestavit ani jeden čtverec.
+- **c)** Součet všech řešení je $168$.
+- **d)** Úloha má víc než $5$ řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z předcházejících možností není správná.. Strana je násobkem $80$: $20$, $80$ nebo $180$ dlaždic; součet $280$, součin $288\,000$.
+
+</details>
+
+### `fit-2014-3-13` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 13, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-3.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Z kolika obdélníkových dlaždic o rozměrech 12 cm a 16 cm se dá sestavit čtverec, máme-li k dispozici 120 dlaždic? Všechny dlaždice pokládáme se stejnou orientací.
+
+- **a)** Součin všech řešení je $62208$.
+- **b)** Nelze sestavit ani jeden čtverec.
+- **c)** Součet všech řešení je $120$.
+- **d)** Úloha má víc než $5$ řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — Součin všech řešení je $62208$.. Strana je násobkem $48$: $12$, $48$ nebo $108$ dlaždic; součin $62208$.
+
+</details>
+
+### `fit-2014-4-13` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 13, 5 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-4.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Z kolika obdélníkových dlaždic o rozměrech 12 cm a 20 cm se dá sestavit čtverec, máme-li k dispozici 120 dlaždic? Všechny dlaždice pokládáme se stejnou orientací.
+
+- **a)** Nelze sestavit ani jeden čtverec.
+- **b)** Součin všech řešení je $900$.
+- **c)** Součet všech řešení je $145$.
+- **d)** Úloha má víc než $3$ řešení.
+- **e)** Žádná z předcházejících možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Součin všech řešení je $900$.. Strana je násobkem $60$: $15$ nebo $60$ dlaždic; součin $900$.
 
 </details>
