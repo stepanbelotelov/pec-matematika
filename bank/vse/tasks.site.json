@@ -1,0 +1,535 @@
+{
+ "1": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzorový test z matematiky (příklad 14, 10 bodů)",
+   "body": "O skupině <span class=\"m\" data-tex=\"32\"></span> zaměstnanců máme následující informace ve vztahu k ovládání programu MS Teams a tvorbě kontingenčních tabulek. <span class=\"m\" data-tex=\"24\"></span> zaměstnanců má alespoň jednu z těchto dovedností. <span class=\"m\" data-tex=\"25\"></span> zaměstnanců má nejvýše jednu z nich. MS Teams ovládá o <span class=\"m\" data-tex=\"7\"></span> více zaměstnanců, než je počet těch, co umí vytvářet kontingenční tabulky. Kolik minimálně členů musí mít tým, který bude náhodně vytvořený z této skupiny, aby byla jistota, že v týmu bude člen, který umí vytvářet kontingenční tabulky?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"13\"></span>",
+    "<span class=\"m\" data-tex=\"21\"></span>",
+    "<span class=\"m\" data-tex=\"24\"></span>",
+    "<span class=\"m\" data-tex=\"19\"></span>",
+    "Žádná z předchozích možností."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Obě dovednosti má <span class=\"m\" data-tex=\"32-25=7\"></span>, tedy <span class=\"m\" data-tex=\"|T|+|K|=24+7=31\"></span> a <span class=\"m\" data-tex=\"|T|=|K|+7\"></span>: <span class=\"m\" data-tex=\"|K|=12\"></span>. Bez tabulek je <span class=\"m\" data-tex=\"20\"></span> lidí, proto je třeba <span class=\"m\" data-tex=\"21\"></span>.",
+   "id": "vse-vzor-14",
+   "uni": "VŠE",
+   "fac": "FMV/FFÚ/FPH",
+   "level": 2,
+   "topics": [
+    1
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "VŠE, vzor přijímacích zkoušek A (úloha 9; přeformulováno)",
+   "body": "Na škole používá alespoň jeden z programů MS Teams a Zoom <span class=\"m\" data-tex=\"250\"></span> vyučujících a nejvýše jeden z nich <span class=\"m\" data-tex=\"240\"></span> vyučujících. MS Teams používá <span class=\"m\" data-tex=\"130\"></span> vyučujících, Zoom <span class=\"m\" data-tex=\"150\"></span>. Počet vyučujících, kteří nepoužívají ani jeden program, leží v intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\langle0;9\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle10;20\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle21;30\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle31;40\\rangle\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Oba programy: <span class=\"m\" data-tex=\"130+150-250=30\"></span>; všech vyučujících <span class=\"m\" data-tex=\"240+30=270\"></span>; žádný: <span class=\"m\" data-tex=\"270-250=20\"></span>.",
+   "id": "vse-a-09",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 2,
+   "topics": [
+    1
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "VŠE, vzor přijímacích zkoušek B (úloha 10; přeformulováno)",
+   "body": "Atletický klub má <span class=\"m\" data-tex=\"120\"></span> členů a uspořádal <span class=\"m\" data-tex=\"3\"></span> závody. Nikdo se nezúčastnil dvou závodů jdoucích po sobě. Alespoň jednoho závodu se zúčastnilo <span class=\"m\" data-tex=\"90\\,\\%\"></span> členů, právě dvou závodů třetina členů. Druhého závodu se zúčastnilo o <span class=\"m\" data-tex=\"20\"></span> lidí méně než prvního a o <span class=\"m\" data-tex=\"8\"></span> méně než třetího. Počet účastníků třetího závodu leží v intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(20;30\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(30;40\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(40;50\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(50;60\\rangle\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Dva závody jen 1. a 3.: <span class=\"m\" data-tex=\"40\"></span> lidí; jen jeden závod: <span class=\"m\" data-tex=\"108-40=68\"></span>. Je-li <span class=\"m\" data-tex=\"b\"></span> účastníků 2. závodu: jen 1. <span class=\"m\" data-tex=\"b-20\"></span>, jen 3. <span class=\"m\" data-tex=\"b-32\"></span>, tedy <span class=\"m\" data-tex=\"3b-52=68\"></span>, <span class=\"m\" data-tex=\"b=40\"></span>; třetí závod <span class=\"m\" data-tex=\"8+40=48\"></span>.",
+   "id": "vse-b-10",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 3,
+   "topics": [
+    1,
+    3
+   ],
+   "needs_original": true
+  }
+ ],
+ "3": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzor přijímacích zkoušek A (úloha 10; přeformulováno)",
+   "body": "Test má <span class=\"m\" data-tex=\"20\"></span> úloh. Za každou správně vyřešenou úlohu dostane Petr <span class=\"m\" data-tex=\"50\"></span> Kč, za každou chybnou zaplatí <span class=\"m\" data-tex=\"150\"></span> Kč. Nakonec získal <span class=\"m\" data-tex=\"200\"></span> Kč. Podíl správně vyřešených úloh (v %) leží v intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(91;100)\"></span>",
+    "<span class=\"m\" data-tex=\"(70;81)\"></span>",
+    "<span class=\"m\" data-tex=\"(81;86)\"></span>",
+    "<span class=\"m\" data-tex=\"(86;91)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"50k-150(20-k)=200\\Rightarrow k=16\"></span>, tj. <span class=\"m\" data-tex=\"80\\,\\%\"></span>.",
+   "id": "vse-a-10",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "VŠE, vzor přijímacích zkoušek B (úloha 11; přeformulováno)",
+   "body": "Průměrný věk dětí v turistickém oddílu je <span class=\"m\" data-tex=\"10\"></span> let. Když se do průměru započítá i vedoucí (<span class=\"m\" data-tex=\"54\"></span> let), průměrný věk vzroste o <span class=\"m\" data-tex=\"2\"></span> roky. Počet dětí v oddílu leží v intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(0;7)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle7;14)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle14;21)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle21;28)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{10n+54}{n+1}=12\\Rightarrow n=21\"></span>.",
+   "id": "vse-b-11",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P3",
+   "src": "VŠE, vzorový test z matematiky (příklad 11, 10 bodů)",
+   "body": "Ze dvou částek, ze kterých jedna je úročena čtrnácti procenty a druhá osmi procenty ročně, byl za jeden rok získán celkem úrok ve výši <span class=\"m\" data-tex=\"6\\,000\"></span> Kč. Pokud by se úrokové sazby navzájem vyměnily, dosahoval by celkový úrok za stejné období hodnoty o <span class=\"m\" data-tex=\"1\\,200\"></span> Kč vyšší. Vyšší z původních částek (v Kč) je z intervalu:",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(27\\,000;32\\,000\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(32\\,000;37\\,000\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(37\\,000;42\\,000\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(42\\,000;45\\,000\\rangle\"></span>",
+    "Žádná z předchozích možností."
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"0{,}14a+0{,}08b=6000\"></span>, <span class=\"m\" data-tex=\"0{,}08a+0{,}14b=7200\"></span>. Součet: <span class=\"m\" data-tex=\"a+b=60\\,000\"></span>, rozdíl: <span class=\"m\" data-tex=\"b-a=20\\,000\"></span>, tedy <span class=\"m\" data-tex=\"b=40\\,000\"></span>, <span class=\"m\" data-tex=\"a=20\\,000\"></span>.",
+   "id": "vse-vzor-11",
+   "uni": "VŠE",
+   "fac": "FMV/FFÚ/FPH",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P4",
+   "src": "VŠE, vzor přijímacích zkoušek A (úloha 8; přeformulováno)",
+   "body": "Kolik řešení <span class=\"m\" data-tex=\"(x;y)\\in\\mathbb{R}\\times\\mathbb{R}\"></span> má soustava <span class=\"m\" data-tex=\"xy+3x=0\"></span>, <span class=\"m\" data-tex=\"x^2+y^2=25\"></span>?",
+   "opts": [
+    "jedno",
+    "právě dvě",
+    "právě čtyři",
+    "žádné",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"x(y+3)=0\"></span>: <span class=\"m\" data-tex=\"x=0\\Rightarrow y=\\pm5\"></span>; <span class=\"m\" data-tex=\"y=-3\\Rightarrow x=\\pm4\"></span>.",
+   "id": "vse-a-08",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P5",
+   "src": "VŠE, vzor přijímacích zkoušek B (úloha 9; přeformulováno)",
+   "body": "Náklad se má rozvézt v připravených kontejnerech. Kdyby se do každého naložilo <span class=\"m\" data-tex=\"15{,}5\"></span> t, zbyly by <span class=\"m\" data-tex=\"3\"></span> t nenaložené. Kdyby se do každého naložilo <span class=\"m\" data-tex=\"18\"></span> t, jeden kontejner by zůstal prázdný a jeden by byl naložen jen zpola. Počet připravených kontejnerů leží v intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(0;10)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle10;12)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle12;14)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle14;18)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"15{,}5n+3=18(n-2)+9\\Rightarrow2{,}5n=30\"></span>, <span class=\"m\" data-tex=\"n=12\"></span>.",
+   "id": "vse-b-09",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 2,
+   "topics": [
+    3
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P6",
+   "src": "VŠE, vzor přijímacích zkoušek A (úloha 12; přeformulováno)",
+   "body": "Pět začátečníků by zakázku dokončilo za <span class=\"m\" data-tex=\"8\"></span> dní, pět zkušených dělníků za <span class=\"m\" data-tex=\"6\"></span> dní. První <span class=\"m\" data-tex=\"3\"></span> dny pracovalo <span class=\"m\" data-tex=\"6\"></span> začátečníků a <span class=\"m\" data-tex=\"2\"></span> zkušení, potom až do konce <span class=\"m\" data-tex=\"4\"></span> začátečníci a <span class=\"m\" data-tex=\"3\"></span> zkušení. Celková doba práce (ve dnech) leží v intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(0;4\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(4;5\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(5;6\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(6;7\\rangle\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Začátečník <span class=\"m\" data-tex=\"\\frac1{40}\"></span>, zkušený <span class=\"m\" data-tex=\"\\frac1{30}\"></span> zakázky za den. Za 3 dny: <span class=\"m\" data-tex=\"3\\left(\\frac6{40}+\\frac2{30}\\right)=\\frac{39}{60}\"></span>; zbytek <span class=\"m\" data-tex=\"\\frac{21}{60}\"></span> při výkonu <span class=\"m\" data-tex=\"\\frac15\"></span> za den trvá <span class=\"m\" data-tex=\"1{,}75\"></span> dne.",
+   "id": "vse-a-12",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 3,
+   "topics": [
+    3
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P7",
+   "src": "VŠE, vzor přijímacích zkoušek B (úloha 12; přeformulováno)",
+   "body": "Zákazník zaplatil <span class=\"m\" data-tex=\"150\"></span> Kč celkem padesáti mincemi v hodnotách <span class=\"m\" data-tex=\"1\"></span>, <span class=\"m\" data-tex=\"2\"></span>, <span class=\"m\" data-tex=\"5\"></span> a <span class=\"m\" data-tex=\"10\"></span> Kč. Desetikoruny měly dohromady dvakrát větší hodnotu než pětikoruny a stejnou hodnotu jako všechny jednokoruny a dvoukoruny dohromady. Počet dvoukorun leží v intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\langle15;18)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle18;21)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle21;24)\"></span>",
+    "<span class=\"m\" data-tex=\"\\langle24;27)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Desetikorun <span class=\"m\" data-tex=\"d\"></span> = pětikorun; hodnota <span class=\"m\" data-tex=\"10d+5d+10d=150\\Rightarrow d=6\"></span>. Jedno- a dvoukorun je <span class=\"m\" data-tex=\"38\"></span> v hodnotě <span class=\"m\" data-tex=\"60\"></span> Kč: <span class=\"m\" data-tex=\"b=22\"></span>, <span class=\"m\" data-tex=\"a=16\"></span>.",
+   "id": "vse-b-12",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 3,
+   "topics": [
+    3
+   ],
+   "needs_original": true
+  }
+ ],
+ "4": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzor přijímacích zkoušek A (úloha 7; přeformulováno)",
+   "body": "Rovnice <span class=\"m\" data-tex=\"px^2+px+5=0\"></span> s neznámou <span class=\"m\" data-tex=\"x\"></span> má dva různé reálné kořeny právě pro",
+   "opts": [
+    "<span class=\"m\" data-tex=\"p\\in(-\\infty;0)\\cup(5;20)\"></span>",
+    "<span class=\"m\" data-tex=\"p\\in(-\\infty;0)\\cup(20;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"p\\in(-\\infty;0)\"></span>",
+    "<span class=\"m\" data-tex=\"p\\in(20;\\infty)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"p\\ne0\"></span> a <span class=\"m\" data-tex=\"D=p^2-20p&gt;0\"></span>.",
+   "id": "vse-a-07",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 2,
+   "topics": [
+    4
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "VŠE, vzor přijímacích zkoušek B (úloha 8; přeformulováno)",
+   "body": "Soustava <span class=\"m\" data-tex=\"3x-6y=1\"></span>, <span class=\"m\" data-tex=\"5x-ay=2\"></span> s parametrem <span class=\"m\" data-tex=\"a\"></span> má řešení, ve kterém jsou obě neznámé záporné, právě pro <span class=\"m\" data-tex=\"a\"></span> z intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-\\infty;12)\"></span>",
+    "<span class=\"m\" data-tex=\"(10;12)\"></span>",
+    "<span class=\"m\" data-tex=\"(10;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(12;\\infty)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"x=\\frac{12-a}{30-3a}\"></span>, <span class=\"m\" data-tex=\"y=\\frac{1}{30-3a}\"></span>. <span class=\"m\" data-tex=\"y&lt;0\\Rightarrow a&gt;10\"></span>; pak <span class=\"m\" data-tex=\"x&lt;0\\Rightarrow 12-a&gt;0\"></span>.",
+   "id": "vse-b-08",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 3,
+   "topics": [
+    4,
+    3
+   ],
+   "needs_original": true
+  }
+ ],
+ "6": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzor přijímacích zkoušek B (úloha 5; přeformulováno)",
+   "body": "Určete množinu všech reálných <span class=\"m\" data-tex=\"x\"></span>, pro která platí <span class=\"m\" data-tex=\"(x+3)^2&lt;9x+19\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-2;5)\"></span>",
+    "<span class=\"m\" data-tex=\"(-1;10)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty;-2)\\cup(5;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty;-1)\\cup(10;\\infty)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"x^2-3x-10&lt;0\\iff(x-5)(x+2)&lt;0\"></span>.",
+   "id": "vse-b-05",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 1,
+   "topics": [
+    6
+   ],
+   "needs_original": true
+  },
+  {
+   "q": "P2",
+   "src": "VŠE, vzor přijímacích zkoušek A (úloha 5; přeformulováno)",
+   "body": "Určete množinu všech reálných <span class=\"m\" data-tex=\"x\"></span>, pro která platí <span class=\"m\" data-tex=\"\\dfrac{x+3}{2x-4}&lt;1\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(2;7)\"></span>",
+    "<span class=\"m\" data-tex=\"(7;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty;2)\\cup(7;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty;2\\rangle\\cup\\langle7;\\infty)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\frac{x+3}{2x-4}-1=\\frac{7-x}{2x-4}&lt;0\\iff\\frac{x-7}{x-2}&gt;0\"></span>.",
+   "id": "vse-a-05",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 2,
+   "topics": [
+    6
+   ],
+   "needs_original": true
+  }
+ ],
+ "7": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzor přijímacích zkoušek B (úloha 7; přeformulováno)",
+   "body": "Maximální definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{x+1}{\\sqrt{|2x-1|-|x+1|-3}}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-\\infty;0{,}5)\\cup(5;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty;-1)\\cup(5;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-1;0{,}5)\"></span>",
+    "<span class=\"m\" data-tex=\"(0{,}5;5)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Potřebujeme <span class=\"m\" data-tex=\"|2x-1|-|x+1|&gt;3\"></span>. Pro <span class=\"m\" data-tex=\"x&lt;-1\"></span>: <span class=\"m\" data-tex=\"2-x&gt;3\"></span> ✓; na <span class=\"m\" data-tex=\"\\left\\langle-1;\\frac12\\right)\"></span>: <span class=\"m\" data-tex=\"-3x&gt;3\"></span> ✗; pro <span class=\"m\" data-tex=\"x\\ge\\frac12\"></span>: <span class=\"m\" data-tex=\"x-2&gt;3\\Rightarrow x&gt;5\"></span>.",
+   "id": "vse-b-07",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 3,
+   "topics": [
+    7,
+    8
+   ],
+   "needs_original": true
+  }
+ ],
+ "9": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzor přijímacích zkoušek B (úloha 3; přeformulováno)",
+   "body": "Která z následujících funkcí je na svém definičním oboru lichá a zároveň omezená?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"f(x)=x^3\"></span>",
+    "<span class=\"m\" data-tex=\"f(x)=\\operatorname{tg}x\"></span>",
+    "<span class=\"m\" data-tex=\"f(x)=\\sin x\"></span>",
+    "<span class=\"m\" data-tex=\"f(x)=\\frac1x\"></span>",
+    "žádná z uvedených"
+   ],
+   "letters": "abcde",
+   "key": "c",
+   "sol": "Všechny čtyři jsou liché, omezená je jen <span class=\"m\" data-tex=\"\\sin x\\in\\langle-1;1\\rangle\"></span>.",
+   "id": "vse-b-03",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 1,
+   "topics": [
+    9,
+    14
+   ],
+   "needs_original": true
+  }
+ ],
+ "10": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzor přijímacích zkoušek A (úloha 3; přeformulováno)",
+   "body": "Která z následujících funkcí je na celém svém definičním oboru rostoucí, prostá a má obor hodnot <span class=\"m\" data-tex=\"H(f)=\\mathbb{R}\"></span>?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"f(x)=3^x\"></span>",
+    "<span class=\"m\" data-tex=\"f(x)=\\ln x\"></span>",
+    "<span class=\"m\" data-tex=\"f(x)=\\sin x\"></span>",
+    "<span class=\"m\" data-tex=\"f(x)=\\frac1x\"></span>",
+    "žádná z uvedených"
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"3^x\"></span> má <span class=\"m\" data-tex=\"H=(0;\\infty)\"></span>, <span class=\"m\" data-tex=\"\\sin x\"></span> a <span class=\"m\" data-tex=\"\\frac1x\"></span> nejsou rostoucí; <span class=\"m\" data-tex=\"\\ln x\"></span> je rostoucí a <span class=\"m\" data-tex=\"H=\\mathbb{R}\"></span>.",
+   "id": "vse-a-03",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 1,
+   "topics": [
+    10,
+    12,
+    9
+   ],
+   "needs_original": true
+  }
+ ],
+ "12": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzor přijímacích zkoušek A (úloha 4; přeformulováno)",
+   "body": "Maximální definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2-4)}{x+3}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(-2;2)\"></span>",
+    "<span class=\"m\" data-tex=\"(2;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty;-2)\\cup(2;\\infty)\"></span>",
+    "<span class=\"m\" data-tex=\"(-\\infty;-2\\rangle\\cup\\langle2;\\infty)\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "e",
+   "sol": "<span class=\"m\" data-tex=\"x^2&gt;4\"></span> a <span class=\"m\" data-tex=\"x\\ne-3\"></span>; bod <span class=\"m\" data-tex=\"-3\"></span> v nabízených množinách nevynechávají, proto „jiná odpověď“.",
+   "id": "vse-a-04",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 2,
+   "topics": [
+    12
+   ],
+   "needs_original": true
+  }
+ ],
+ "19": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzorový test z matematiky (příklad 1)",
+   "body": "Mezi kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-7x-8=0\"></span> vložte dvě čísla tak, aby spolu s těmito kořeny vznikly první čtyři členy aritmetické posloupnosti. Součet vložených čísel je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"5\"></span>",
+    "<span class=\"m\" data-tex=\"7\"></span>",
+    "<span class=\"m\" data-tex=\"3\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "ABCDE",
+   "key": "C",
+   "sol": "Kořeny <span class=\"m\" data-tex=\"-1\"></span> a <span class=\"m\" data-tex=\"8\"></span>; čtyři členy <span class=\"m\" data-tex=\"-1,2,5,8\"></span> (<span class=\"m\" data-tex=\"d=3\"></span>), vložená čísla <span class=\"m\" data-tex=\"2+5=7\"></span>.",
+   "id": "vse-vzor-01",
+   "uni": "VŠE",
+   "fac": "FMV/FFÚ/FPH",
+   "level": 1,
+   "topics": [
+    19,
+    3
+   ],
+   "needs_original": false
+  }
+ ],
+ "ostatni": [
+  {
+   "q": "P1",
+   "src": "VŠE, vzorový test z matematiky (příklad 12, 10 bodů)",
+   "body": "V rámci objednávky mělo být vyrobeno celkem <span class=\"m\" data-tex=\"s\"></span> kg sypké směsi. V první etapě výroby byla vyrobena třetina toho, co se mělo vyrobit celkem. Ve druhé etapě byly vyrobeny tři čtvrtiny ze zbytku celkového objednaného množství. Na třetí etapu zůstalo množství <span class=\"m\" data-tex=\"m\"></span> kg. Tuto situaci popisuje vztah:",
+   "opts": [
+    "<span class=\"m\" data-tex=\"m=s-\\frac13s-\\frac34s\"></span>",
+    "<span class=\"m\" data-tex=\"m=\\frac14\\cdot\\frac23s\"></span>",
+    "<span class=\"m\" data-tex=\"m=s-\\frac13-\\frac34\"></span>",
+    "<span class=\"m\" data-tex=\"m=\\frac14s\\cdot\\frac23s\"></span>",
+    "Žádná z předchozích možností."
+   ],
+   "letters": "abcde",
+   "key": "b",
+   "sol": "Po první etapě zbývá <span class=\"m\" data-tex=\"\\frac23s\"></span>, druhá etapa z něj vyrobí <span class=\"m\" data-tex=\"\\frac34\"></span>, zůstane <span class=\"m\" data-tex=\"\\frac14\\cdot\\frac23s\"></span>.",
+   "id": "vse-vzor-12",
+   "uni": "VŠE",
+   "fac": "FMV/FFÚ/FPH",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "VŠE, vzorový test z matematiky (příklad 13, 10 bodů)",
+   "body": "Cena za umístění informačního plakátu se odvíjí od plochy, kterou plakát zabírá. Obdélníkový plakát P1 má rozměry <span class=\"m\" data-tex=\"75\"></span> cm a <span class=\"m\" data-tex=\"40\"></span> cm. Plakát P2 získáme tak, že delší rozměr plakátu P1 zmenšíme o <span class=\"m\" data-tex=\"20\\,\\%\"></span>, a zároveň kratší rozměr plakátu P1 zvětšíme o <span class=\"m\" data-tex=\"20\\,\\%\"></span>. Potom platí, že:",
+   "opts": [
+    "Plocha plakátu P2 je stejná, jako plocha plakátu P1.",
+    "Plocha plakátu P2 je o více než <span class=\"m\" data-tex=\"10\\,\\%\"></span> větší než plocha plakátu P1.",
+    "Plocha plakátu P2 je o více než <span class=\"m\" data-tex=\"8\\,\\%\"></span> menší než plocha plakátu P1.",
+    "Plocha plakátu P2 je o méně než <span class=\"m\" data-tex=\"6\\,\\%\"></span> menší než plocha plakátu P1.",
+    "Žádná z předchozích možností."
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "<span class=\"m\" data-tex=\"0{,}8\\cdot1{,}2=0{,}96\"></span>: plocha klesne o <span class=\"m\" data-tex=\"4\\,\\%\"></span> (<span class=\"m\" data-tex=\"3000\\to2880\"></span> cm<span class=\"m\" data-tex=\"^2\"></span>).",
+   "id": "vse-vzor-13",
+   "uni": "VŠE",
+   "fac": "FMV/FFÚ/FPH",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P3",
+   "src": "VŠE, vzor přijímacích zkoušek A (úloha 11; přeformulováno)",
+   "body": "Průměrný počet bodů <span class=\"m\" data-tex=\"10\"></span> studentů z testu je <span class=\"m\" data-tex=\"75\"></span>. Nejlepší student má o <span class=\"m\" data-tex=\"40\\,\\%\"></span> více bodů, než je průměr, nejhorší o dvě třetiny méně než nejlepší. Průměrný počet bodů ostatních osmi studentů leží v intervalu",
+   "opts": [
+    "<span class=\"m\" data-tex=\"(60;65\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(65;70\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(70;75\\rangle\"></span>",
+    "<span class=\"m\" data-tex=\"(75;80\\rangle\"></span>",
+    "jiná odpověď"
+   ],
+   "letters": "abcde",
+   "key": "d",
+   "sol": "Součet <span class=\"m\" data-tex=\"750\"></span>; nejlepší <span class=\"m\" data-tex=\"105\"></span>, nejhorší <span class=\"m\" data-tex=\"105-70=35\"></span>; zbylých osm: <span class=\"m\" data-tex=\"\\frac{750-140}{8}=76{,}25\"></span>.",
+   "id": "vse-a-11",
+   "uni": "VŠE",
+   "fac": "KMAT",
+   "level": 2,
+   "topics": [
+    0
+   ],
+   "needs_original": true
+  }
+ ]
+}

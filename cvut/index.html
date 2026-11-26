@@ -775,7 +775,8 @@ body.line-cvut { --faint: #7A8FA4 }
 .pb-pips { display: inline-flex; gap: 3px }
 .pb-pips i { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid currentColor; box-sizing: border-box }
 .pb-pips i.on { background: currentColor }
-.pb-l1 { color: var(--ok) } .pb-l2 { color: var(--accent) } .pb-l3 { color: var(--gold) }
+.pb-l1, .pb-l2, .pb-l3 { color: var(--accent) }
+.pb-lvl { color: var(--fg) } .pb-lvl .pb-pips { color: var(--accent) }
 .pb-res { display: grid; gap: 10px }
 .pb-res .btns { align-items: center }
 .pb-open-a { font-size: 15px; line-height: 1.6 }
@@ -793,7 +794,7 @@ body.line-cvut { --faint: #7A8FA4 }
 @media (max-width: 820px) { .mod.appmod { grid-template-columns: minmax(0, 1fr); grid-template-areas: "k" "h" "v" "p" "f" } .appmod > .foot { justify-self: start } }
 .pb-lv { display: grid; gap: 10px; font-size: 13px }
 .pb-lv-r { display: grid; grid-template-columns: 34px 100px minmax(60px, 1fr) 52px; gap: 10px; align-items: center }
-.pb-lv-r .pb-meter { height: 4px }
+.pb-lv-r .pb-meter { height: 6px; background: color-mix(in srgb, var(--muted) 28%, transparent) }
 .pb-lv-r .pb-meter i { background: var(--accent) }
 .pb-lv-r > b { text-align: right; font-variant-numeric: tabular-nums; color: var(--fg); font-weight: 600 }
 .pb-lv-r > span:nth-child(2) { color: var(--muted) }
@@ -829,6 +830,8 @@ body.line-cvut { --faint: #7A8FA4 }
 .pb-task .eopt > span:last-child, .pb-open-a, .pb-esol { padding-bottom: 6px; margin-bottom: -6px }
 .line-cvut .pb-fold { border-radius: 0 }
 .line-cvut .pb-fold > summary { font-family: var(--f-mono); font-size: 13px }
+/* VŠE: модуль — обычная плитка сетки (не полоса во всю ширину), кнопка как у соседних плиток */
+.line-vse .bankmod > .foot { align-self: stretch; margin-top: auto; padding-top: 8px }
 
 </style>
 
@@ -1511,8 +1514,8 @@ function showWarm() {
 }
 
 
-/* ---- банк задач přijímaček: реальные задачи ČVUT из bank/tasks.site.json ---- */
-const PB = { url: "../bank/tasks.site.json", all: null, err: false, loading: false };
+/* ---- банк задач přijímaček: ČVUT — bank/tasks.site.json, VŠE — bank/vse/tasks.site.json ---- */
+const PB = { url: LINE === "ČVUT" ? "../bank/tasks.site.json" : "../bank/vse/tasks.site.json", all: null, err: false, loading: false };
 const PB_KEY = "pec-bank-" + LINE;
 const PB_LEVEL = { 1: "базовый", 2: "стандартный", 3: "сложный" };
 let pbState = {};
@@ -1520,18 +1523,20 @@ try { pbState = JSON.parse(localStorage.getItem(PB_KEY) || "{}") || {}; } catch 
 const pbSave = () => { try { localStorage.setItem(PB_KEY, JSON.stringify(pbState)); } catch (e) {} };
 let pbF = { lvl: 0, topic: "all", fac: "all", todo: false };
 function pbLoad() {
-  if (!IS_CVUT || PB.all || PB.loading) return;
+  if (PB.all || PB.loading) return;
   PB.loading = true; PB.err = false;
   fetch(PB.url).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then((d) => { PB.all = Object.values(d).flat().map((t) => ({ ...t, n: t.topics[0], fac: t.fac || t.src.split(" ")[0], uni: t.uni || "ČVUT" })); })
+    .then((d) => { PB.all = Object.values(d).flat().map((t) => ({ ...t, n: t.topics[0], fac: t.fac || t.src.split(" ")[0], uni: t.uni || LINE })); })
     .catch(() => { PB.err = true; })
     .finally(() => { PB.loading = false; renderMods(); if (location.hash === "#banka" && !$("sheetwrap").hidden) showBank(); });
 }
 // открыты все задачи банка — по всем темам, в том числе ещё не пройденным (в карточке они помечены)
 const pbOpen = () => PB.all || [];
+// пройденные темы от текущей вниз, затем темы впереди по порядку, Ostatní в конце
+const pbRank = (t) => (!t.n ? 1000 : t.n <= latest.n ? latest.n - t.n : 100 + t.n);
 const pbAhead = (t) => t.n > latest.n;
-const PB_FAC_ORDER = ["FIT", "FEL", "FJFI", "FBMI", "FSv", "FS", "FD", "FEKT", "FSI", "FAST"];
-const pbFacName = (f) => { const t = (PB.all || []).find((x) => x.fac === f); return f + " " + (t ? t.uni : "ČVUT"); };
+const PB_FAC_ORDER = ["FIT", "FEL", "FJFI", "FBMI", "FSv", "FS", "FD", "FEKT", "FSI", "FAST", "FMV/FFÚ/FPH", "KMAT", "FIS"];
+const pbFacName = (f) => { const t = (PB.all || []).find((x) => x.fac === f); return f + " " + (t ? t.uni : LINE); };
 const pbFacs = (ts) => [...new Set(ts.map((t) => t.fac))].sort((a, b) => (PB_FAC_ORDER.indexOf(a) + 1 || 99) - (PB_FAC_ORDER.indexOf(b) + 1 || 99));
 const pbOk = (t) => { const r = pbState[t.id]; return !!r && r.ok === true; };
 const pbDone = (t) => { const r = pbState[t.id]; return !!r && (r.a || r.ok != null); };
@@ -1558,20 +1563,19 @@ function pbLevelsVis(tasks) {
   return v;
 }
 function bankModCard() {
-  if (!IS_CVUT) return null;
   if (!PB.all) {
     return modCard({ cls: "bankmod", k: "Тренировка", h: "Банк задач", p: "Настоящие задачи из вступительных тестов по всем темам курса — с уровнем сложности и решением.",
       note: PB.err ? "Не удалось загрузить задачи — нужен интернет." : "Загружаю задачи…", btn: PB.err ? "Повторить" : null, btnCls: "btn ghost", hash: "banka" });
   }
-  const open = pbOpen(), done = open.filter(pbDone).length, ok = open.filter(pbOk).length, facs = pbFacs(open).join(", ");
+  const open = pbOpen(), done = open.filter(pbDone).length, ok = open.filter(pbOk).length, facs = LINE === "ČVUT" ? pbFacs(open).join(", ") : LINE;
   return modCard({ cls: "bankmod", k: "Тренировка", rd: `<b>${open.length}</b> ${plural(open.length, "задача", "задачи", "задач")} · ${facs}`, h: "Банк задач",
-    vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов по всем темам курса, в том числе ещё не пройденным. Фильтр по уровню и теме, к каждой — короткое решение.",
+    vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов по всем темам курса. Фильтр по уровню и теме, к каждой — короткое решение.",
     note: done ? `Решено <b>${done} / ${open.length}</b> · верно <b>${ok}</b>` : `Все задачи открыты — начните с уровня 1`,
     btn: done ? "Продолжить" : "Открыть банк", btnCls: "btn ghost", hash: "banka" });
 }
 function showBank() {
   hideViewer();
-  openSheet("Банк задач · přijímačky ČVUT", "Задачи из вступительных тестов");
+  openSheet("Банк задач · přijímačky " + LINE, "Задачи из вступительных тестов");
   document.querySelector(".sheet").classList.add("wide");
   const body = $("sbody");
   if (!PB.all) {
@@ -1580,7 +1584,7 @@ function showBank() {
     if (PB.err) { const b = el("button", "btn ghost", "Повторить"); b.type = "button"; b.addEventListener("click", () => { pbLoad(); showBank(); }); box.append(b); }
     body.append(box); pbLoad(); return;
   }
-  const open = pbOpen().slice().sort((a, b) => (b.n || -1) - (a.n || -1) || a.level - b.level);
+  const open = pbOpen().slice().sort((a, b) => pbRank(a) - pbRank(b) || a.level - b.level);
   // on phones the intro and the filters fold into one line each, so the first task is visible right away
   const BIG = matchMedia("(min-width: 761px) and (min-height: 501px)").matches;
   const about = el("details", "pb-fold pb-about"); about.open = BIG; const aSum = el("summary"); aSum.append(el("b", null, "Как устроен банк"));
@@ -2548,9 +2552,8 @@ function route() {
   markSeen(tk);
   if (tk === "razminka") { showWarm(); return; }
   if (tk === "slovnik") { showGlossary(); return; }
-  if (tk === "banka" && IS_CVUT) { showBank(); return; }
+  if (tk === "banka") { showBank(); return; }
   if (tk === "grafy") { Plotter.open(); return; }
-  if (tk === "banka" && !IS_CVUT) { closeAll(true); toast("Банк задач přijímaček пока есть только на сайте линии ČVUT."); return; }
   if (tk === "app" && window.PEC_SITE) { App.open(); return; }
   if (CTX[tk]) { if (CTX[tk].enabled()) showTimed(CTX[tk]); else closeAll(false); return; }
   const m = /^#(lekce|du|formuly|test)-(\d+)$/.exec(location.hash);

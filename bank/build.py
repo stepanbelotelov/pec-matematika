@@ -7,15 +7,19 @@
 пока переписаны из курса не дословно, помечены needs_original=true и ждут сверки с PDF.
 Тема 0 = «Ostatní» — задачи вне 35 тем плана.
 
-Запуск: python3 bank/build.py  (без зависимостей)
+Запуск: python3 bank/build.py            — банк технических вузов (bank/)
+        python3 bank/build.py bank/vse   — банк VŠE (bank/vse/)
+Без зависимостей.
 """
 import html
 import json
 import re
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
+HERE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parent
+TITLE = {"vse": "VŠE"}.get(HERE.name, "технические вузы")
 TASKS = json.loads((HERE / "tasks.json").read_text(encoding="utf-8"))
 SOURCES = {s["id"]: s for s in json.loads((HERE / "sources.json").read_text(encoding="utf-8"))}
 
@@ -52,6 +56,9 @@ def src_line(t):
     if t["faculty"] == "FBMI":
         parts = ([f"úloha {t['num']}"] if t["num"] else []) + ([fid] if fid else [])
         return "FBMI ČVUT, přijímací zkouška Bc 2020/21" + (f" ({'; '.join(parts)})" if parts else "")
+    if t["uni"] == "VŠE":
+        parts = ([f"{t.get('num_word', 'úloha')} {t['num']}" + (f", {t['points']} {body_points(t['points'])}" if t.get("points") else "")] if t["num"] else []) + ([fid] if fid else [])
+        return f"VŠE, {t['exam_short']}" + (f" ({'; '.join(parts)})" if parts else "")
     num = f", úloha {t['num']}" if t.get("num") else ""
     return f"{t['faculty']} {t['uni']}, {t['exam']}{num}" + (f" ({fid})" if fid else "")
 
@@ -113,8 +120,8 @@ def main():
     lv = Counter(t["level"] for t in TASKS)
     fac = Counter(f"{t['uni']} {t['faculty']}" for t in TASKS)
     todo = sum(t["needs_original"] for t in TASKS)
-    lines = ["# Банк задач přijímaček — обзор", "",
-             "Файл собирается скриптом `build.py` из `tasks.json` и `sources.json`; вручную не редактировать.", "",
+    lines = [f"# Банк задач přijímaček ({TITLE}) — обзор", "",
+             "Файл собирается скриптом `bank/build.py` из `tasks.json` и `sources.json`; вручную не редактировать.", "",
              f"Всего задач: **{len(TASKS)}** · " + " · ".join(f"{LEVEL[k].split(' — ')[1]}: {lv[k]}" for k in sorted(lv)) +
              " · " + " · ".join(f"{k}: {v}" for k, v in fac.most_common()), "",
              f"⚠ **{todo}** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.", "",
