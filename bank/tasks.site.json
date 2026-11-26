@@ -2,23 +2,16 @@
  "1": [
   {
    "q": "P1",
-   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (varianty doplněny)",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01",
    "body": "Jsou dány množiny <span class=\"m\" data-tex=\"A=\\{1,2,3,\\dots,1000\\}\"></span>, <span class=\"m\" data-tex=\"B=\\{x\\in A:\\ \\frac x6\\in\\mathbb{Z}\\}\"></span>, <span class=\"m\" data-tex=\"C=\\{x\\in A:\\ \\frac x8\\in\\mathbb{Z}\\}\"></span>, <span class=\"m\" data-tex=\"D=\\{x\\in A:\\ 237\\le x\\le356\\}\"></span>. Určete počet prvků množiny <span class=\"m\" data-tex=\"(B\\cap C)\\cup D\"></span>.",
-   "opts": [
-    "<span class=\"m\" data-tex=\"161\"></span>",
-    "<span class=\"m\" data-tex=\"156\"></span>",
-    "<span class=\"m\" data-tex=\"151\"></span>",
-    "<span class=\"m\" data-tex=\"155\"></span>",
-    "<span class=\"m\" data-tex=\"120\"></span>"
-   ],
-   "letters": "ABCDE",
-   "key": "B",
+   "answer": "<span class=\"m\" data-tex=\"156\"></span>",
    "sol": "<span class=\"m\" data-tex=\"B\\cap C\"></span> = násobky <span class=\"m\" data-tex=\"24\"></span>: <span class=\"m\" data-tex=\"41\"></span> prvků; <span class=\"m\" data-tex=\"|D|=120\"></span>; v <span class=\"m\" data-tex=\"D\"></span> leží násobky <span class=\"m\" data-tex=\"24\"></span>: <span class=\"m\" data-tex=\"240,\\dots,336\"></span> — <span class=\"m\" data-tex=\"5\"></span>. <span class=\"m\" data-tex=\"41+120-5=156\"></span>.",
    "id": "fel-vzor01-mnoziny",
    "level": 2,
    "topics": [
     1
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P2",
@@ -40,7 +33,8 @@
     1,
     7,
     9
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P3",
@@ -62,7 +56,8 @@
     1,
     7,
     9
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P4",
@@ -82,29 +77,23 @@
    "level": 3,
    "topics": [
     1
-   ]
+   ],
+   "needs_original": false
   }
  ],
  "2": [
   {
    "q": "P1",
-   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (varianty doplněny)",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01",
    "body": "Zjednodušte výraz <span class=\"m\" data-tex=\"\\dfrac{6x^3b^3}{25y^4}\\cdot\\dfrac{15y}{b^2}\"></span> (pro <span class=\"m\" data-tex=\"y\\ne0\"></span>, <span class=\"m\" data-tex=\"b\\ne0\"></span>).",
-   "opts": [
-    "<span class=\"m\" data-tex=\"\\dfrac{18bx^3}{5y^4}\"></span>",
-    "<span class=\"m\" data-tex=\"\\dfrac{2bx^3}{5y^3}\"></span>",
-    "<span class=\"m\" data-tex=\"\\dfrac{18bx^3}{5y^3}\"></span>",
-    "<span class=\"m\" data-tex=\"\\dfrac{18b^5x^3}{5y^3}\"></span>",
-    "<span class=\"m\" data-tex=\"\\dfrac{18bx^3y^3}{5}\"></span>"
-   ],
-   "letters": "ABCDE",
-   "key": "C",
+   "answer": "<span class=\"m\" data-tex=\"\\dfrac{18bx^3}{5y^3}\"></span>",
    "sol": "<span class=\"m\" data-tex=\"\\frac{90}{25}=\\frac{18}{5}\"></span>, <span class=\"m\" data-tex=\"\\frac{b^3}{b^2}=b\"></span>, <span class=\"m\" data-tex=\"\\frac{y}{y^4}=\\frac1{y^3}\"></span>.",
    "id": "fel-vzor01-mocniny",
    "level": 1,
    "topics": [
     2
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P2",
@@ -125,7 +114,8 @@
    "topics": [
     2,
     8
-   ]
+   ],
+   "needs_original": false
   }
  ],
  "3": [
@@ -146,7 +136,8 @@
    "level": 1,
    "topics": [
     3
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P2",
@@ -165,7 +156,8 @@
    "level": 1,
    "topics": [
     3
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P3",
@@ -184,50 +176,11 @@
    "level": 1,
    "topics": [
     3
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P4",
-   "src": "FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 4, 7 bodů)",
-   "body": "Kladné číslo <span class=\"m\" data-tex=\"x\"></span> je o <span class=\"m\" data-tex=\"25\\,\\%\"></span> větší než kladné číslo <span class=\"m\" data-tex=\"y\"></span>. O kolik procent je číslo <span class=\"m\" data-tex=\"y\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>?",
-   "opts": [
-    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"15\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>.",
-    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"33\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>.",
-    "Žádná z ostatních možností není správná.",
-    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"20\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>.",
-    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"25\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>."
-   ],
-   "letters": "ABCDE",
-   "key": "D",
-   "sol": "<span class=\"m\" data-tex=\"y=\\frac{x}{1{,}25}=0{,}8x\"></span>.",
-   "id": "fit-2019-04",
-   "level": 1,
-   "topics": [
-    3
-   ]
-  },
-  {
-   "q": "P5",
-   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 4, 7 bodů)",
-   "body": "Petr a Pavel mají stejně vysoký plat. Pavel platí o čtvrtinu vyšší nájem než Petr. Nájem bytu stojí Pavla <span class=\"m\" data-tex=\"25\\,\\%\"></span> jeho platu. Kolik procent svého platu platí za nájem Petr?",
-   "opts": [
-    "<span class=\"m\" data-tex=\"22{,}5\\,\\%\"></span>",
-    "<span class=\"m\" data-tex=\"15\\,\\%\"></span>",
-    "<span class=\"m\" data-tex=\"18{,}75\\,\\%\"></span>",
-    "Žádná z ostatních možností není správná.",
-    "<span class=\"m\" data-tex=\"20\\,\\%\"></span>"
-   ],
-   "letters": "ABCDE",
-   "key": "E",
-   "sol": "<span class=\"m\" data-tex=\"1{,}25\\cdot n=0{,}25\\,S\\Rightarrow n=0{,}2\\,S\"></span>.",
-   "id": "fit-2022-04",
-   "level": 1,
-   "topics": [
-    3
-   ]
-  },
-  {
-   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 6, 7 bodů)",
    "body": "Řešte soustavu rovnic <span class=\"m\" data-tex=\"3(x+2)-4(y+x)=7\"></span>, <span class=\"m\" data-tex=\"2x-(x-4y)=-1\"></span>.",
    "opts": [
@@ -244,10 +197,11 @@
    "level": 1,
    "topics": [
     3
-   ]
+   ],
+   "needs_original": false
   },
   {
-   "q": "P7",
+   "q": "P5",
    "src": "FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 2, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definována předpisem <span class=\"m\" data-tex=\"a\\star b=\\dfrac{a+b}{a\\cdot b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star 3=3\"></span>.",
    "opts": [
@@ -264,10 +218,11 @@
    "level": 2,
    "topics": [
     3
-   ]
+   ],
+   "needs_original": false
   },
   {
-   "q": "P8",
+   "q": "P6",
    "src": "FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 10, 7 bodů)",
    "body": "Za nákup <span class=\"m\" data-tex=\"1{,}5\"></span> kg mandarinek a <span class=\"m\" data-tex=\"3{,}5\"></span> kg pomerančů jsme zaplatili celkem <span class=\"m\" data-tex=\"185\"></span> korun. Kilo pomerančů stojí o třetinu více než kilo mandarinek. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -284,10 +239,11 @@
    "level": 2,
    "topics": [
     3
-   ]
+   ],
+   "needs_original": false
   },
   {
-   "q": "P9",
+   "q": "P7",
    "src": "FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 1, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definována předpisem <span class=\"m\" data-tex=\"a\\star b=\\dfrac{a+b}{a-b}\"></span>. Řešte rovnici <span class=\"m\" data-tex=\"(2\\star x)\\star 3=-2\"></span>.",
    "opts": [
@@ -304,10 +260,11 @@
    "level": 2,
    "topics": [
     3
-   ]
+   ],
+   "needs_original": false
   },
   {
-   "q": "P10",
+   "q": "P8",
    "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 7, 7 bodů)",
    "body": "Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno <span class=\"m\" data-tex=\"15\\,\\%\"></span> celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla <span class=\"m\" data-tex=\"51\"></span> kg, v druhé etapě <span class=\"m\" data-tex=\"55\"></span> kg a ve třetí etapě <span class=\"m\" data-tex=\"48\"></span> kg. Celková průměrná hmotnost pytle brambor v tomto skladu je <span class=\"m\" data-tex=\"50{,}55\"></span> kg. Určete, kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.",
    "opts": [
@@ -324,10 +281,11 @@
    "level": 2,
    "topics": [
     3
-   ]
+   ],
+   "needs_original": false
   },
   {
-   "q": "P11",
+   "q": "P9",
    "src": "FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 16, 7 bodů)",
    "body": "Řešte rovnici <span class=\"m\" data-tex=\"(x^2-x+3)^2-8(x^2-x)=9\"></span>.",
    "opts": [
@@ -344,7 +302,8 @@
    "level": 2,
    "topics": [
     3
-   ]
+   ],
+   "needs_original": false
   }
  ],
  "4": [
@@ -358,7 +317,8 @@
    "level": 1,
    "topics": [
     4
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P2",
@@ -379,7 +339,8 @@
    "topics": [
     4,
     3
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P3",
@@ -399,7 +360,8 @@
    "level": 3,
    "topics": [
     4
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P4",
@@ -419,7 +381,8 @@
    "level": 3,
    "topics": [
     4
-   ]
+   ],
+   "needs_original": false
   }
  ],
  "5": [
@@ -441,7 +404,8 @@
    "level": 2,
    "topics": [
     5
-   ]
+   ],
+   "needs_original": false
   }
  ],
  "6": [
@@ -463,7 +427,8 @@
    "level": 1,
    "topics": [
     6
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P2",
@@ -483,7 +448,8 @@
    "level": 1,
    "topics": [
     6
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P3",
@@ -503,7 +469,8 @@
    "level": 2,
    "topics": [
     6
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P4",
@@ -524,7 +491,8 @@
    "topics": [
     6,
     9
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P5",
@@ -544,7 +512,8 @@
    "level": 3,
    "topics": [
     6
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "7": [
@@ -558,7 +527,8 @@
    "level": 1,
    "topics": [
     7
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P2",
@@ -570,7 +540,8 @@
    "level": 2,
    "topics": [
     7
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P3",
@@ -592,23 +563,16 @@
     7,
     6,
     1
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "8": [
   {
    "q": "P1",
-   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 10; varianty doplněny)",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 10; přeformulováno)",
    "body": "Graf funkce <span class=\"m\" data-tex=\"y=\\left(\\dfrac{1-\\sqrt x}{\\sqrt x-x}\\right)^2\"></span> je částí",
-   "opts": [
-    "paraboly.",
-    "hyperboly.",
-    "přímky.",
-    "kružnice.",
-    "Žádná z ostatních možností není správná."
-   ],
-   "letters": "ABCDE",
-   "key": "B",
+   "answer": "<span class=\"m\" data-tex=\"y=\\frac1x\"></span> pro <span class=\"m\" data-tex=\"x&gt;0\"></span>, <span class=\"m\" data-tex=\"x\\ne1\"></span>",
    "sol": "<span class=\"m\" data-tex=\"\\sqrt x-x=\\sqrt x(1-\\sqrt x)\"></span>, takže <span class=\"m\" data-tex=\"y=\\frac1x\"></span> pro <span class=\"m\" data-tex=\"x&gt;0\"></span>, <span class=\"m\" data-tex=\"x\\ne1\"></span> — část hyperboly.",
    "id": "fel-vzor01-10",
    "level": 2,
@@ -616,7 +580,8 @@
     8,
     2,
     9
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P2",
@@ -637,7 +602,8 @@
    "topics": [
     8,
     6
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P3",
@@ -658,7 +624,8 @@
    "topics": [
     8,
     6
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P4",
@@ -679,7 +646,8 @@
    "topics": [
     8,
     6
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "9": [
@@ -700,7 +668,8 @@
    "level": 1,
    "topics": [
     9
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P2",
@@ -719,7 +688,8 @@
    "level": 1,
    "topics": [
     9
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P3",
@@ -738,7 +708,8 @@
    "level": 1,
    "topics": [
     9
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P4",
@@ -757,7 +728,8 @@
    "level": 1,
    "topics": [
     9
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P5",
@@ -776,7 +748,8 @@
    "level": 1,
    "topics": [
     9
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P6",
@@ -796,7 +769,8 @@
    "topics": [
     9,
     27
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P7",
@@ -816,28 +790,22 @@
    "level": 1,
    "topics": [
     9
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P8",
-   "src": "FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 8, 7 bodů; varianty doplněny)",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 8, 7 bodů; přeformulováno)",
    "body": "Obor hodnot funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{2x+3}-1\"></span> je",
-   "opts": [
-    "<span class=\"m\" data-tex=\"\\left\\langle-\\frac32;\\infty\\right)\"></span>",
-    "<span class=\"m\" data-tex=\"\\mathbb{R}\"></span>",
-    "<span class=\"m\" data-tex=\"\\langle-1;\\infty)\"></span>",
-    "Žádná z ostatních možností není správná.",
-    "<span class=\"m\" data-tex=\"\\langle1;\\infty)\"></span>"
-   ],
-   "letters": "ABCDE",
-   "key": "C",
+   "answer": "<span class=\"m\" data-tex=\"\\langle-1;\\infty)\"></span>",
    "sol": "<span class=\"m\" data-tex=\"\\sqrt{2x+3}\"></span> nabývá všech hodnot <span class=\"m\" data-tex=\"\\langle0;\\infty)\"></span>, po odečtení <span class=\"m\" data-tex=\"1\"></span> dostaneme <span class=\"m\" data-tex=\"\\langle-1;\\infty)\"></span>.",
    "id": "fit-2018-08",
    "level": 1,
    "topics": [
     9,
     8
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P9",
@@ -857,7 +825,8 @@
    "level": 1,
    "topics": [
     9
-   ]
+   ],
+   "needs_original": false
   },
   {
    "q": "P10",
@@ -877,7 +846,8 @@
    "level": 1,
    "topics": [
     9
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "10": [
@@ -899,7 +869,8 @@
    "level": 2,
    "topics": [
     10
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P2",
@@ -919,7 +890,8 @@
    "level": 2,
    "topics": [
     10
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "11": [
@@ -941,7 +913,8 @@
    "level": 2,
    "topics": [
     11
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P2",
@@ -961,7 +934,8 @@
    "level": 2,
    "topics": [
     11
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P3",
@@ -981,7 +955,8 @@
    "level": 2,
    "topics": [
     11
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "12": [
@@ -1002,7 +977,8 @@
    "level": 1,
    "topics": [
     12
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P2",
@@ -1021,7 +997,8 @@
    "level": 1,
    "topics": [
     12
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P3",
@@ -1040,7 +1017,8 @@
    "level": 1,
    "topics": [
     12
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P4",
@@ -1060,7 +1038,8 @@
    "level": 2,
    "topics": [
     12
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P5",
@@ -1080,7 +1059,8 @@
    "level": 2,
    "topics": [
     12
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P6",
@@ -1101,7 +1081,8 @@
    "topics": [
     12,
     6
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "19": [
@@ -1124,7 +1105,8 @@
    "topics": [
     19,
     3
-   ]
+   ],
+   "needs_original": false
   }
  ],
  "20": [
@@ -1139,30 +1121,24 @@
    "topics": [
     20,
     3
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "22": [
   {
    "q": "P1",
-   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (varianty doplněny)",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01",
    "body": "Kolik různých znaků Morseovy abecedy lze vytvořit ze skupin teček a čárek o délce <span class=\"m\" data-tex=\"1\"></span> až <span class=\"m\" data-tex=\"5\"></span> (tj. skupin obsahujících <span class=\"m\" data-tex=\"1\"></span> až <span class=\"m\" data-tex=\"5\"></span> symbolů)?",
-   "opts": [
-    "<span class=\"m\" data-tex=\"32\"></span>",
-    "<span class=\"m\" data-tex=\"31\"></span>",
-    "<span class=\"m\" data-tex=\"62\"></span>",
-    "<span class=\"m\" data-tex=\"63\"></span>",
-    "<span class=\"m\" data-tex=\"120\"></span>"
-   ],
-   "letters": "ABCDE",
-   "key": "C",
+   "answer": "<span class=\"m\" data-tex=\"62\"></span>",
    "sol": "<span class=\"m\" data-tex=\"2+2^2+2^3+2^4+2^5=62\"></span>.",
    "id": "fel-vzor01-morse",
    "level": 1,
    "topics": [
     22,
     2
-   ]
+   ],
+   "needs_original": false
   }
  ],
  "28": [
@@ -1185,7 +1161,8 @@
    "topics": [
     28,
     27
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P2",
@@ -1206,7 +1183,8 @@
    "topics": [
     28,
     27
-   ]
+   ],
+   "needs_original": true
   },
   {
    "q": "P3",
@@ -1226,30 +1204,24 @@
    "level": 1,
    "topics": [
     28
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "29": [
   {
    "q": "P1",
-   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 12; varianty doplněny)",
+   "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 12; přeformulováno)",
    "body": "Přímky procházejí bodem <span class=\"m\" data-tex=\"A[0;-5]\"></span> a mají od počátku souřadnic vzdálenost <span class=\"m\" data-tex=\"\\sqrt5\"></span>. Jejich směrnice jsou",
-   "opts": [
-    "<span class=\"m\" data-tex=\"2\"></span> a <span class=\"m\" data-tex=\"-2\"></span>",
-    "<span class=\"m\" data-tex=\"\\frac12\"></span> a <span class=\"m\" data-tex=\"-\\frac12\"></span>",
-    "pouze <span class=\"m\" data-tex=\"2\"></span>",
-    "<span class=\"m\" data-tex=\"\\sqrt5\"></span> a <span class=\"m\" data-tex=\"-\\sqrt5\"></span>",
-    "Žádná z ostatních možností není správná."
-   ],
-   "letters": "ABCDE",
-   "key": "A",
+   "answer": "<span class=\"m\" data-tex=\"k=\\pm2\"></span>",
    "sol": "<span class=\"m\" data-tex=\"y=kx-5\"></span>: <span class=\"m\" data-tex=\"\\frac{5}{\\sqrt{k^2+1}}=\\sqrt5\\Rightarrow k^2=4\"></span>.",
    "id": "fel-vzor01-12",
    "level": 2,
    "topics": [
     29,
     9
-   ]
+   ],
+   "needs_original": true
   }
  ],
  "30": [
@@ -1272,7 +1244,52 @@
    "topics": [
     30,
     4
-   ]
+   ],
+   "needs_original": false
+  }
+ ],
+ "ostatni": [
+  {
+   "q": "P1",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 4, 7 bodů)",
+   "body": "Kladné číslo <span class=\"m\" data-tex=\"x\"></span> je o <span class=\"m\" data-tex=\"25\\,\\%\"></span> větší než kladné číslo <span class=\"m\" data-tex=\"y\"></span>. O kolik procent je číslo <span class=\"m\" data-tex=\"y\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>?",
+   "opts": [
+    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"15\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>.",
+    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"33\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>.",
+    "Žádná z ostatních možností není správná.",
+    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"20\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>.",
+    "Číslo <span class=\"m\" data-tex=\"y\"></span> je o <span class=\"m\" data-tex=\"25\\,\\%\"></span> menší než číslo <span class=\"m\" data-tex=\"x\"></span>."
+   ],
+   "letters": "ABCDE",
+   "key": "D",
+   "sol": "<span class=\"m\" data-tex=\"y=\\frac{x}{1{,}25}=0{,}8x\"></span>.",
+   "id": "fit-2019-04",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P2",
+   "src": "FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 4, 7 bodů)",
+   "body": "Petr a Pavel mají stejně vysoký plat. Pavel platí o čtvrtinu vyšší nájem než Petr. Nájem bytu stojí Pavla <span class=\"m\" data-tex=\"25\\,\\%\"></span> jeho platu. Kolik procent svého platu platí za nájem Petr?",
+   "opts": [
+    "<span class=\"m\" data-tex=\"22{,}5\\,\\%\"></span>",
+    "<span class=\"m\" data-tex=\"15\\,\\%\"></span>",
+    "<span class=\"m\" data-tex=\"18{,}75\\,\\%\"></span>",
+    "Žádná z ostatních možností není správná.",
+    "<span class=\"m\" data-tex=\"20\\,\\%\"></span>"
+   ],
+   "letters": "ABCDE",
+   "key": "E",
+   "sol": "<span class=\"m\" data-tex=\"1{,}25\\cdot n=0{,}25\\,S\\Rightarrow n=0{,}2\\,S\"></span>.",
+   "id": "fit-2022-04",
+   "level": 1,
+   "topics": [
+    0
+   ],
+   "needs_original": false
   }
  ]
 }

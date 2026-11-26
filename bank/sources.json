@@ -22,7 +22,9 @@
    2021,
    2022,
    2024
-  ]
+  ],
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "fit-bc-2026",
@@ -35,7 +37,9 @@
   "answers": "ano, vyznačené řešení",
   "url": "https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf",
   "index": "https://fit.cvut.cz/cs/uchazeci/prijimaci-rizeni-2/bakalarsky-studijni-program",
-  "status": "částečně v bance (7 úloh z kurzu); zbytek nestažen"
+  "status": "částečně v bance (7 úloh z kurzu); zbytek nestažen",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "fel-vzor01",
@@ -49,7 +53,9 @@
   "url": "https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf",
   "index": "https://fel.cvut.cz/cs/uchazeci/prijimaci-rizeni/prijimaci-zkouska/prijimaci-zkouska-do-bakalarskeho-studia",
   "status": "částečně v bance (8 úloh z kurzu)",
-  "note": "Stránka FEL o přijímací zkoušce: https://intranet.fel.cvut.cz/cz/prestudent/matematika-zkouska.html"
+  "note": "Stránka FEL o přijímací zkoušce: https://intranet.fel.cvut.cz/cz/prestudent/matematika-zkouska.html",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "fjfi-bs",
@@ -63,7 +69,9 @@
   "url": "https://edu.fjfi.cvut.cz/edu/Prijimaci_rizeni/Prijimaci_zkouska_BS.pdf",
   "index": "https://fjfi.cvut.cz/cz/uchazeci/bakalarske-studium/prijimaci-rizeni-do-bakalarskeho-navazujiciho-magisterskeho-studia",
   "status": "nestaženo (síť)",
-  "note": "Okruhy: https://edu.fjfi.cvut.cz/edu/Prijimaci_rizeni/Okruhy_prijimaci_zkousky_Matematika.pdf; PZ nanečisto 2026: https://edu.fjfi.cvut.cz/edu/Prijimaci_rizeni/PZ_nanecisto_2026.pdf"
+  "note": "Okruhy: https://edu.fjfi.cvut.cz/edu/Prijimaci_rizeni/Okruhy_prijimaci_zkousky_Matematika.pdf; PZ nanečisto 2026: https://edu.fjfi.cvut.cz/edu/Prijimaci_rizeni/PZ_nanecisto_2026.pdf",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "fbmi-bc-2021",
@@ -76,7 +84,9 @@
   "answers": "neověřeno",
   "url": "https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf",
   "status": "částečně v bance (12 úloh z kurzu)",
-  "note": "Další vzor: https://www.fbmi.cvut.cz/sites/default/files/2020-11/Bc_Matematika_22_21_IKZ.pdf"
+  "note": "Další vzor: https://www.fbmi.cvut.cz/sites/default/files/2020-11/Bc_Matematika_22_21_IKZ.pdf",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "fsv-online",
@@ -89,7 +99,9 @@
   "answers": "—",
   "url": "https://mat.fsv.cvut.cz/eng/entrance/online",
   "status": "nestaženo (síť)",
-  "note": "PZ nanečisto: https://www.fsv.cvut.cz/prijimaci-zkouska-nanecisto/ ; prominutí: https://www.fsv.cvut.cz/podminky-pro-prominuti-prijimaci-zkousky-z-matematiky-do-bakalarskeho-studia/"
+  "note": "PZ nanečisto: https://www.fsv.cvut.cz/prijimaci-zkouska-nanecisto/ ; prominutí: https://www.fsv.cvut.cz/podminky-pro-prominuti-prijimaci-zkousky-z-matematiky-do-bakalarskeho-studia/",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "fs-kurz",
@@ -102,7 +114,9 @@
   "answers": "částečně",
   "url": "https://www.fs.cvut.cz/aktuality/3155-212/pripravny-kurz-z-matematiky-pro-prijimaci-zkousky-2026",
   "status": "nestaženo (síť)",
-  "note": "https://users.fs.cvut.cz/nikola.pajerova/RepM_zadani.pdf ; https://users.fs.cvut.cz/nikola.pajerova/Repetitorium_M.pdf ; https://marian.fsik.cvut.cz/~mraz/Mat1-Mater2011/OpakovKurs_2011proWEB.pdf ; https://www.fs.cvut.cz/content/files/pripravny-kurz-matematika/2025/L10_2025.pdf"
+  "note": "https://users.fs.cvut.cz/nikola.pajerova/RepM_zadani.pdf ; https://users.fs.cvut.cz/nikola.pajerova/Repetitorium_M.pdf ; https://marian.fsik.cvut.cz/~mraz/Mat1-Mater2011/OpakovKurs_2011proWEB.pdf ; https://www.fs.cvut.cz/content/files/pripravny-kurz-matematika/2025/L10_2025.pdf",
+  "include": false,
+  "copyright": "přípravné materiály, nejde o přijímací zkoušku (jen katalog)"
  },
  {
   "id": "fd-2021",
@@ -114,7 +128,9 @@
   "format": "neověřeno",
   "answers": "neověřeno",
   "url": "https://www.fd.cvut.cz/storage/prijimaci-rizeni/pr2021-2022/priloha-3-2021-PL.pdf",
-  "status": "nestaženo (síť)"
+  "status": "nestaženo (síť)",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "cvut-kniha",
@@ -126,7 +142,9 @@
   "format": "databáze středoškolských úloh, ze které se vybíraly úlohy přijímaček",
   "answers": "—",
   "url": null,
-  "status": "placená kniha, není volně dostupná"
+  "status": "placená kniha, není volně dostupná",
+  "include": false,
+  "copyright": "placená kniha chráněná autorským právem"
  },
  {
   "id": "becvarova-2003",
@@ -139,7 +157,9 @@
   "answers": "neověřeno",
   "url": "https://www.dml.cz/bitstream/handle/10338.dmlcz/150796/UcitelMat_011-2003-1_8.pdf",
   "status": "nestaženo (síť)",
-  "note": "Část 2: https://dml.cz/bitstream/handle/10338.dmlcz/150804/UcitelMat_011-2003-2_5.pdf"
+  "note": "Část 2: https://dml.cz/bitstream/handle/10338.dmlcz/150804/UcitelMat_011-2003-2_5.pdf",
+  "include": false,
+  "copyright": "DML-CZ: digitalizované články jen pro osobní potřebu (https://www.dml.cz/use)"
  },
  {
   "id": "um-1993-fs",
@@ -152,7 +172,9 @@
   "answers": "neověřeno",
   "url": "https://www.dml.cz/bitstream/handle/10338.dmlcz/152235/UcitelMat_001-1993-4_15.pdf",
   "status": "nestaženo (síť)",
-  "note": "Přijímací řízení na ČVUT (UM 1993, č. 3) s ukázkou písemky FSv: https://www.dml.cz/bitstream/handle/10338.dmlcz/152206/UcitelMat_001-1993-3_8.pdf"
+  "note": "Přijímací řízení na ČVUT (UM 1993, č. 3) s ukázkou písemky FSv: https://www.dml.cz/bitstream/handle/10338.dmlcz/152206/UcitelMat_001-1993-3_8.pdf",
+  "include": false,
+  "copyright": "DML-CZ: digitalizované články jen pro osobní potřebu (https://www.dml.cz/use)"
  },
  {
   "id": "vut-fekt-2024",
@@ -165,7 +187,9 @@
   "answers": "neověřeno",
   "url": "https://vut.cz/pomocne2018/f151468/d267522/p273733",
   "status": "nestaženo (síť)",
-  "note": "Možná další verze: https://vut.cz/pomocne2018/f151468/d267530/p273541"
+  "note": "Možná další verze: https://vut.cz/pomocne2018/f151468/d267530/p273541",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "vut-fekt-2022",
@@ -178,7 +202,9 @@
   "answers": "neověřeno",
   "url": "https://vut.cz/pomocne2018/f124247/d232373/p229505",
   "status": "nestaženo (síť)",
-  "note": "Další dokument z téže sady (pravděpodobně 2023): https://vut.cz/pomocne2018/f137459/d248394/p249980"
+  "note": "Další dokument z téže sady (pravděpodobně 2023): https://vut.cz/pomocne2018/f137459/d248394/p249980",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "vut-fsi",
@@ -191,7 +217,9 @@
   "answers": "výsledky zveřejněny u statistik",
   "url": "https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179",
   "status": "nestaženo (síť)",
-  "note": "MATEMATIKA 2017: https://vut.cz/pomocne2018/f69785/d158882/p149140"
+  "note": "MATEMATIKA 2017: https://vut.cz/pomocne2018/f69785/d158882/p149140",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "vut-fast",
@@ -203,7 +231,9 @@
   "format": "10 otázek v testu, kombinace matematiky a fyziky, výběr z možností",
   "answers": "neověřeno",
   "url": "https://www.fce.vutbr.cz/api/cs/dokument/9815",
-  "status": "nestaženo (síť)"
+  "status": "nestaženo (síť)",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "vut-prehled",
@@ -216,7 +246,9 @@
   "answers": "—",
   "url": "https://vut.cz/studuj/prehled-prijimaciho-rizeni-2024-2025-pdf-p254298",
   "status": "jen pro kontext",
-  "note": "FIT a FEKT promíjejí zkoušku při percentilu z maturity MAT ≥ 80 nebo z Matematiky+ ≥ 60."
+  "note": "FIT a FEKT promíjejí zkoušku při percentilu z maturity MAT ≥ 80 nebo z Matematiky+ ≥ 60.",
+  "include": false,
+  "copyright": "jen informace o přijímacím řízení, bez úloh"
  },
  {
   "id": "vsb-fbi",
@@ -229,7 +261,9 @@
   "answers": "2017/18 ano",
   "url": "https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf",
   "status": "nestaženo (síť)",
-  "note": "https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf ; https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf"
+  "note": "https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf ; https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "vscht-ekon",
@@ -242,7 +276,9 @@
   "answers": "neověřeno",
   "url": "https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf",
   "status": "nestaženo (síť)",
-  "note": "Chemické programy zkoušku většinou nemají; FTOP píše test jen pro uchazeče bez dostatečných známek: https://ftop.vscht.cz/novinky/26-04-13"
+  "note": "Chemické programy zkoušku většinou nemají; FTOP píše test jen pro uchazeče bez dostatečných známek: https://ftop.vscht.cz/novinky/26-04-13",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "tul",
@@ -255,7 +291,9 @@
   "answers": "neověřeno",
   "url": "https://www.fp.tul.cz/images/fakulta/ukazky_testu/2021/KAP_Ma_Bc_jednoobor_2021.pdf",
   "status": "nestaženo (síť)",
-  "note": "Požadavky: https://new.fm.tul.cz/document/612 (doporučuje Petákovou a sbírku Kubáta). Pedagogická fakulta — nízká priorita."
+  "note": "Požadavky: https://new.fm.tul.cz/document/612 (doporučuje Petákovou a sbírku Kubáta). Pedagogická fakulta — nízká priorita.",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
   "id": "hftu-1989",
@@ -268,7 +306,9 @@
   "answers": "neověřeno",
   "url": "https://www.euroekonom.sk/download2/testy-prijimacky-vs-matematika/Matematika-HFTU-Liberec-PrZk-FH89_var4.pdf",
   "status": "nestaženo (síť)",
-  "note": "Varianta 6: https://www.euroekonom.sk/download2/testy-prijimacky-vs-matematika/Matematika-HFTU-Liberec-PrZk-FH89_var6.pdf"
+  "note": "Varianta 6: https://www.euroekonom.sk/download2/testy-prijimacky-vs-matematika/Matematika-HFTU-Liberec-PrZk-FH89_var6.pdf",
+  "include": "ověřit",
+  "copyright": "kopie u třetí strany (euroekonom.sk), podmínky užití neznámé"
  },
  {
   "id": "cermat-maplus",
@@ -281,7 +321,9 @@
   "answers": "ano, klíč správných řešení",
   "url": "https://data.cermat.cz/files/files/Matematika/MA-plus_2020_hodnotici_zprava.pdf",
   "status": "nestaženo (síť)",
-  "note": "Další roky: MAPLUS_hodnotici_zprava_2019.pdf, MA-PLUS_hodnotici_zprava_2018.pdf, …_2017, …_2015, …_2014 (data.cermat.cz/files/files/Matematika/). Seznam VŠ, které výsledek uznávaly: https://maturita.cermat.cz/files/files/matematika-plus/Seznam_VS/seznam_VS_MA_6_12_2019.pdf. POZOR: CERMAT uvádí, že další užití bez písemného souhlasu je porušením autorských práv."
+  "note": "Další roky: MAPLUS_hodnotici_zprava_2019.pdf, MA-PLUS_hodnotici_zprava_2018.pdf, …_2017, …_2015, …_2014 (data.cermat.cz/files/files/Matematika/). Seznam VŠ, které výsledek uznávaly: https://maturita.cermat.cz/files/files/matematika-plus/Seznam_VS/seznam_VS_MA_6_12_2019.pdf. POZOR: CERMAT uvádí, že další užití bez písemného souhlasu je porušením autorských práv.",
+  "include": false,
+  "copyright": "CERMAT výslovně zakazuje další užití bez písemného souhlasu"
  },
  {
   "id": "cermat-mar",
@@ -294,7 +336,9 @@
   "answers": "ano, vzorová řešení",
   "url": "https://maturita.cermat.cz/files/files/MXMAD24C1T0P_vzorove-reseni.pdf",
   "status": "nestaženo (síť)",
-  "note": "Seznam VŠ (promíjení přijímaček): https://maturita.cermat.cz/files/files/MA-rozsirujici/Seznam-VS/seznam_VS_MX_2022_18-10-2021.pdf ; https://maturita.cermat.cz/files/files/seznam_VS_MR_2023_6.pdf. Stejné autorskoprávní omezení jako u Matematiky+."
+  "note": "Seznam VŠ (promíjení přijímaček): https://maturita.cermat.cz/files/files/MA-rozsirujici/Seznam-VS/seznam_VS_MX_2022_18-10-2021.pdf ; https://maturita.cermat.cz/files/files/seznam_VS_MR_2023_6.pdf. Stejné autorskoprávní omezení jako u Matematiky+.",
+  "include": false,
+  "copyright": "CERMAT výslovně zakazuje další užití bez písemného souhlasu"
  },
  {
   "id": "petakova",
@@ -306,7 +350,9 @@
   "format": "sbírka po tématech s výsledky",
   "answers": "výsledky",
   "url": null,
-  "status": "placená kniha; doporučují FBMI ČVUT, FS ČVUT, TUL"
+  "status": "placená kniha; doporučují FBMI ČVUT, FS ČVUT, TUL",
+  "include": false,
+  "copyright": "placená kniha chráněná autorským právem"
  },
  {
   "id": "dreval",
@@ -319,6 +365,8 @@
   "answers": "neověřeno",
   "url": "https://lms.dreval.net/course/prijimaci-zkousky-na-cvut/",
   "status": "nestaženo (síť)",
-  "note": "Zdroj třetí strany — úlohy brát z originálů fakult."
+  "note": "Zdroj třetí strany — úlohy brát z originálů fakult.",
+  "include": false,
+  "copyright": "kurz třetí strany; úlohy brát z originálů fakult (FJFI)"
  }
 ]

@@ -2,7 +2,9 @@
 
 Файл собирается скриптом `build.py` из `tasks.json` и `sources.json`; вручную не редактировать.
 
-Всего задач: **63** · базовый: 29 · стандартный: 26 · сложный: 8 · FIT: 43 · FBMI: 12 · FEL: 8
+Всего задач: **63** · базовый: 29 · стандартный: 26 · сложный: 8 · ČVUT FIT: 43 · ČVUT FBMI: 12 · ČVUT FEL: 8
+
+⚠ **38** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.
 
 ## Покрытие тем курса
 
@@ -10,7 +12,7 @@
 |---|---|---|---|---|---|
 | 1 | Množina. Podmnožina |  | 3 | 1 | 4 |
 | 2 | Mocnina. Odmocnina | 2 |  |  | 2 |
-| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 6 | 5 |  | 11 |
+| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 4 | 5 |  | 9 |
 | 4 | Rovnice s parametrem | 1 | 1 | 2 | 4 |
 | 5 | Rovnice s absolutní hodnotou |  | 1 |  | 1 |
 | 6 | Nerovnice. Soustava nerovnic | 2 | 1 | 2 | 5 |
@@ -43,34 +45,29 @@
 | 33 | Parabola |  |  |  | — |
 | 34 | Planimetrie |  |  |  | — |
 | 35 | Stereometrie |  |  |  | — |
+| — | Ostatní | 2 |  |  | 2 |
 
-Задача считается по основной (первой) теме; дополнительные темы указаны в карточке.
+Задача считается по основной (первой) теме; дополнительные темы указаны в карточке. «Ostatní» — задачи вне 35 тем плана.
 
 ## Уровень 1 — базовый
 
-### `fel-vzor01-mocniny` — [FEL ČVUT, vzorový přijímací test VZOR01 (varianty doplněny)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
+### `fel-vzor01-mocniny` — [FEL ČVUT, vzorový přijímací test VZOR01](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
 
-*Темы:* 2. Mocnina. Odmocnina · *Точность:* условие оригинала, варианты ответа добавлены курсом · *В курсе:* ČVUT lekce 2, úloha 18
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 2, úloha 18
 
 Zjednodušte výraz $\dfrac{6x^3b^3}{25y^4}\cdot\dfrac{15y}{b^2}$ (pro $y\ne0$, $b\ne0$).
 
-- **A)** $\dfrac{18bx^3}{5y^4}$
-- **B)** $\dfrac{2bx^3}{5y^3}$
-- **C)** $\dfrac{18bx^3}{5y^3}$
-- **D)** $\dfrac{18b^5x^3}{5y^3}$
-- **E)** $\dfrac{18bx^3y^3}{5}$
-
 <details><summary>Ответ и решение</summary>
 
-**C** — $\dfrac{18bx^3}{5y^3}$. $\frac{90}{25}=\frac{18}{5}$, $\frac{b^3}{b^2}=b$, $\frac{y}{y^4}=\frac1{y^3}$.
+$\dfrac{18bx^3}{5y^3}$. $\frac{90}{25}=\frac{18}{5}$, $\frac{b^3}{b^2}=b$, $\frac{y}{y^4}=\frac1{y^3}$.
 
-*Примечание:* Číslo úlohy ve vzoru neuvedeno; varianty doplněny v kurzu.
+*Примечание:* Číslo úlohy ve vzoru neuvedeno. Varianty odpovědí, které doplnil kurz, z banky odstraněny (ve vzoru FEL nejsou).
 
 </details>
 
 ### `fit-2024-03` — [FIT ČVUT, vzorová přijímací zkouška 2024 (příklad 3, 3 body)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2024.pdf)
 
-*Темы:* 2. Mocnina. Odmocnina, 8. Iracionální rovnice. Iracionální nerovnice · *Точность:* дословно · *В курсе:* ČVUT lekce 2, úloha 20; DÚ 8, D2
+*Темы:* 2. Mocnina. Odmocnina, 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 2, úloha 20; DÚ 8, D2
 
 Určete, čemu se rovná druhá odmocnina podílu nenulového čísla $x$ a jeho převrácené hodnoty.
 
@@ -90,7 +87,7 @@ Určete, čemu se rovná druhá odmocnina podílu nenulového čísla $x$ a jeho
 
 ### `fbmi-2021-kvadr-koreny` — [FBMI ČVUT, přijímací zkouška Bc 2020/21](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D1
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D1
 
 Řešením kvadratické rovnice $2x^2+5x+2=0$ jsou čísla:
 
@@ -107,7 +104,7 @@ Určete, čemu se rovná druhá odmocnina podílu nenulového čísla $x$ a jeho
 
 ### `fbmi-2021-diskriminant` — [FBMI ČVUT, přijímací zkouška Bc 2020/21](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D5
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D5
 
 Diskriminant kvadratické rovnice $ax^2+bx+c=0$ je roven:
 
@@ -124,7 +121,7 @@ Diskriminant kvadratické rovnice $ax^2+bx+c=0$ je roven:
 
 ### `fbmi-2021-dvojnasobny` — [FBMI ČVUT, přijímací zkouška Bc 2020/21](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D6
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D6
 
 Pokud má kvadratická rovnice $ax^2+bx+c=0$ v oboru reálných čísel jediné řešení, je rovno:
 
@@ -139,45 +136,9 @@ Pokud má kvadratická rovnice $ax^2+bx+c=0$ v oboru reálných čísel jediné 
 
 </details>
 
-### `fit-2019-04` — [FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 4, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2019.pdf)
-
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D9
-
-Kladné číslo $x$ je o $25\,\%$ větší než kladné číslo $y$. O kolik procent je číslo $y$ menší než číslo $x$?
-
-- **A)** Číslo $y$ je o $15\,\%$ menší než číslo $x$.
-- **B)** Číslo $y$ je o $33\,\%$ menší než číslo $x$.
-- **C)** Žádná z ostatních možností není správná.
-- **D)** Číslo $y$ je o $20\,\%$ menší než číslo $x$.
-- **E)** Číslo $y$ je o $25\,\%$ menší než číslo $x$.
-
-<details><summary>Ответ и решение</summary>
-
-**D** — o $20\,\%$. $y=\frac{x}{1{,}25}=0{,}8x$.
-
-</details>
-
-### `fit-2022-04` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 4, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
-
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D11
-
-Petr a Pavel mají stejně vysoký plat. Pavel platí o čtvrtinu vyšší nájem než Petr. Nájem bytu stojí Pavla $25\,\%$ jeho platu. Kolik procent svého platu platí za nájem Petr?
-
-- **A)** $22{,}5\,\%$
-- **B)** $15\,\%$
-- **C)** $18{,}75\,\%$
-- **D)** Žádná z ostatních možností není správná.
-- **E)** $20\,\%$
-
-<details><summary>Ответ и решение</summary>
-
-**E** — $20\,\%$. $1{,}25\cdot n=0{,}25\,S\Rightarrow n=0{,}2\,S$.
-
-</details>
-
 ### `fit-2026-06` — [FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 6, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
 
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT lekce 3, úloha 17
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 3, úloha 17
 
 Řešte soustavu rovnic $3(x+2)-4(y+x)=7$, $2x-(x-4y)=-1$.
 
@@ -195,7 +156,7 @@ Petr a Pavel mají stejně vysoký plat. Pavel platí o čtvrtinu vyšší náje
 
 ### `fel-vzor01-14` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 14)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
 
-*Темы:* 4. Rovnice s parametrem · *Точность:* дословно · *В курсе:* ČVUT lekce 4, úloha 20 (upravená verze v lekci 3, úloha 20)
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 4, úloha 20 (upravená verze v lekci 3, úloha 20)
 
 Pro která $p$ nemá rovnice $x^2-(p+1)x+4=0$ s neznámou $x$ žádný reálný kořen?
 
@@ -205,9 +166,9 @@ $p\in(-5;3)$. $D=(p+1)^2-16<0\iff|p+1|<4$.
 
 </details>
 
-### `fit-2022-03` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 3, 3 body; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
+### ⚠ `fit-2022-03` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 3, 3 body; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 6. Nerovnice. Soustava nerovnic · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 6, D2 (pool přijímaček)
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 6, D2 (pool přijímaček)
 
 O číslech $a,b,c,d,e$ víme: $a=b$, $a\ge c$, $d>b$, $e<a$. Které tvrzení <i>nemůže</i> být pravdivé?
 
@@ -223,9 +184,9 @@ O číslech $a,b,c,d,e$ víme: $a=b$, $a\ge c$, $d>b$, $e<a$. Které tvrzení <i
 
 </details>
 
-### `fit-2026-01` — [FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 1, 3 body; přeformulováno)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
+### ⚠ `fit-2026-01` — [FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 1, 3 body; přeformulováno)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
 
-*Темы:* 6. Nerovnice. Soustava nerovnic · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 6, úloha 17
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 6, úloha 17
 
 O reálných číslech $a,b,c,d,e$ víme: $a\le b$, $a<c$, $d\le b$, $e<a$. Které tvrzení <i>nemůže</i> platit?
 
@@ -241,9 +202,9 @@ O reálných číslech $a,b,c,d,e$ víme: $a\le b$, $a<c$, $d\le b$, $e<a$. Kter
 
 </details>
 
-### `fel-vzor01-1` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 1; přeformulováno)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
+### ⚠ `fel-vzor01-1` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 1; přeformulováno)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
 
-*Темы:* 7. Nerovnice s absolutní hodnotou · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 7, D1
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 7, D1
 
 Najděte všechna reálná řešení nerovnice $2|x+3|<2$.
 
@@ -253,9 +214,9 @@ $x\in(-4;-2)$. $|x+3|<1\iff-1<x+3<1$.
 
 </details>
 
-### `fbmi-2021-28` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 28; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
+### ⚠ `fbmi-2021-28` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 28; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* VŠE DÚ 9, D1
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* VŠE DÚ 9, D1
 
 Graf funkce $y=\frac23x+\frac16$ prochází body
 
@@ -270,9 +231,9 @@ Graf funkce $y=\frac23x+\frac16$ prochází body
 
 </details>
 
-### `fbmi-2021-29` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 29; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
+### ⚠ `fbmi-2021-29` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 29; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* VŠE DÚ 9, D2
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* VŠE DÚ 9, D2
 
 Graf funkce $y=x^2+x+\frac12$ prochází body
 
@@ -287,9 +248,9 @@ Graf funkce $y=x^2+x+\frac12$ prochází body
 
 </details>
 
-### `fbmi-2021-30` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 30; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
+### ⚠ `fbmi-2021-30` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 30; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 9, D6
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 9, D6
 
 Kvadratická funkce $y=x^2+2x+\frac12$ má extrém:
 
@@ -304,9 +265,9 @@ Kvadratická funkce $y=x^2+2x+\frac12$ má extrém:
 
 </details>
 
-### `fbmi-2021-31` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 31; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
+### ⚠ `fbmi-2021-31` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 31; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* VŠE DÚ 9, D3
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* VŠE DÚ 9, D3
 
 Kvadratická funkce $y=x^2+2x+3$ je klesající na intervalu
 
@@ -321,9 +282,9 @@ Kvadratická funkce $y=x^2+2x+3$ je klesající na intervalu
 
 </details>
 
-### `fbmi-2021-32` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 32; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
+### ⚠ `fbmi-2021-32` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 32; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 9, D5
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 9, D5
 
 Kvadratická funkce $y=-2x^2+4x+7$ je klesající na intervalu
 
@@ -338,9 +299,9 @@ Kvadratická funkce $y=-2x^2+4x+7$ je klesající na intervalu
 
 </details>
 
-### `fbmi-2021-33` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 33; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
+### ⚠ `fbmi-2021-33` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 33; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 27. Obecná rovnice přímky · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* VŠE DÚ 9, D4
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 27. Obecná rovnice přímky · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* VŠE DÚ 9, D4
 
 Lineární funkce, jejíž graf prochází body $[2;3]$ a $[4;-1]$, je
 
@@ -355,9 +316,9 @@ Lineární funkce, jejíž graf prochází body $[2;3]$ a $[4;-1]$, je
 
 </details>
 
-### `fit-2018-03` — [FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 3, 3 body; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2018.pdf)
+### ⚠ `fit-2018-03` — [FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 3, 3 body; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2018.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 9, úloha 17
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 9, úloha 17
 
 Je dána funkce $f(x)=2x^2-2$. Výraz $2f(t+1)-f(t-1)$ je roven
 
@@ -373,29 +334,23 @@ Je dána funkce $f(x)=2x^2-2$. Výraz $2f(t+1)-f(t-1)$ je roven
 
 </details>
 
-### `fit-2018-08` — [FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 8, 7 bodů; varianty doplněny)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2018.pdf)
+### ⚠ `fit-2018-08` — [FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 8, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2018.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 8. Iracionální rovnice. Iracionální nerovnice · *Точность:* условие оригинала, варианты ответа добавлены курсом · *В курсе:* ČVUT DÚ 9, D4 (pool přijímaček)
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 9, D4 (pool přijímaček)
 
 Obor hodnot funkce $f(x)=\sqrt{2x+3}-1$ je
 
-- **A)** $\left\langle-\frac32;\infty\right)$
-- **B)** $\mathbb{R}$
-- **C)** $\langle-1;\infty)$
-- **D)** Žádná z ostatních možností není správná.
-- **E)** $\langle1;\infty)$
-
 <details><summary>Ответ и решение</summary>
 
-**C** — $\langle-1;\infty)$. $\sqrt{2x+3}$ nabývá všech hodnot $\langle0;\infty)$, po odečtení $1$ dostaneme $\langle-1;\infty)$.
+$\langle-1;\infty)$. $\sqrt{2x+3}$ nabývá všech hodnot $\langle0;\infty)$, po odečtení $1$ dostaneme $\langle-1;\infty)$.
 
-*Примечание:* Varianty odpovědí doplněny v kurzu (původní nabídka není k dispozici).
+*Примечание:* Varianty z kurzu (vlastní) odstraněny; původních 5 možností doplnit z originálu.
 
 </details>
 
 ### `fit-2022-01` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 1, 3 body)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* дословно · *В курсе:* ČVUT DÚ 2, D10
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 2, D10
 
 Je dána funkce $f(x)=x^2-2x+1$. Spočtěte hodnotu rozdílu $f(t+1)-f(t-1)$.
 
@@ -411,9 +366,9 @@ Je dána funkce $f(x)=x^2-2x+1$. Spočtěte hodnotu rozdílu $f(t+1)-f(t-1)$.
 
 </details>
 
-### `fit-2022-11` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 11, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
+### ⚠ `fit-2022-11` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 11, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 9, úloha 18
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 9, úloha 18
 
 Obor hodnot funkce $f(x)=2x^2-5x+3$ je
 
@@ -429,9 +384,9 @@ Obor hodnot funkce $f(x)=2x^2-5x+3$ je
 
 </details>
 
-### `fbmi-2021-25` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 25; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
+### ⚠ `fbmi-2021-25` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 25; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 12. Logaritmická funkce · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 12, úloha 20
+*Темы:* 12. Logaritmická funkce · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 12, úloha 20
 
 Výraz $\log\dfrac{a}{(b+c)^2}$ ($a,b,c>0$) je roven
 
@@ -446,9 +401,9 @@ Výraz $\log\dfrac{a}{(b+c)^2}$ ($a,b,c>0$) je roven
 
 </details>
 
-### `fbmi-2021-26` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 26; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
+### ⚠ `fbmi-2021-26` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 26; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 12. Logaritmická funkce · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 12, D1
+*Темы:* 12. Logaritmická funkce · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 12, D1
 
 Výraz $\log\dfrac{a+b}{\sqrt c}$ ($a,b,c>0$) je roven
 
@@ -463,9 +418,9 @@ Výraz $\log\dfrac{a+b}{\sqrt c}$ ($a,b,c>0$) je roven
 
 </details>
 
-### `fbmi-2021-27` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 27; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
+### ⚠ `fbmi-2021-27` — [FBMI ČVUT, přijímací zkouška Bc 2020/21 (úloha 27; přeformulováno)](https://www.fbmi.cvut.cz/sites/default/files/2019-11/Bc_Matematika_20_21.pdf)
 
-*Темы:* 12. Logaritmická funkce · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 12, D2
+*Темы:* 12. Logaritmická funkce · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 12, D2
 
 Výraz $\log\dfrac{a+b}{c^2}$ ($a,b,c>0$) je roven
 
@@ -480,29 +435,23 @@ Výraz $\log\dfrac{a+b}{c^2}$ ($a,b,c>0$) je roven
 
 </details>
 
-### `fel-vzor01-morse` — [FEL ČVUT, vzorový přijímací test VZOR01 (varianty doplněny)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
+### `fel-vzor01-morse` — [FEL ČVUT, vzorový přijímací test VZOR01](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
 
-*Темы:* 22. Variace. Permutace. Kombinace, 2. Mocnina. Odmocnina · *Точность:* условие оригинала, варианты ответа добавлены курсом · *В курсе:* ČVUT lekce 2, úloha 21
+*Темы:* 22. Variace. Permutace. Kombinace, 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 2, úloha 21
 
 Kolik různých znaků Morseovy abecedy lze vytvořit ze skupin teček a čárek o délce $1$ až $5$ (tj. skupin obsahujících $1$ až $5$ symbolů)?
 
-- **A)** $32$
-- **B)** $31$
-- **C)** $62$
-- **D)** $63$
-- **E)** $120$
-
 <details><summary>Ответ и решение</summary>
 
-**C** — $62$. $2+2^2+2^3+2^4+2^5=62$.
+$62$. $2+2^2+2^3+2^4+2^5=62$.
 
-*Примечание:* Číslo úlohy ve vzoru neuvedeno; varianty doplněny v kurzu.
+*Примечание:* Číslo úlohy ve vzoru neuvedeno. Varianty odpovědí, které doplnil kurz, z banky odstraněny (ve vzoru FEL nejsou).
 
 </details>
 
-### `fit-2015-19` — [FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 19, 3 body; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
+### ⚠ `fit-2015-19` — [FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 19, 3 body; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
 
-*Темы:* 28. Vzájemná poloha přímek, 27. Obecná rovnice přímky · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 9, D2 (pool přijímaček)
+*Темы:* 28. Vzájemná poloha přímek, 27. Obecná rovnice přímky · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 9, D2 (pool přijímaček)
 
 Určete parametry $a$, $b$ tak, aby rovnice $ax+4y+1=0$ a $3x+2y-b=0$ popisovaly tutéž přímku.
 
@@ -518,9 +467,9 @@ Určete parametry $a$, $b$ tak, aby rovnice $ax+4y+1=0$ a $3x+2y-b=0$ popisovaly
 
 </details>
 
-### `fit-2016-19` — [FIT ČVUT, vzorová přijímací zkouška 2016 (příklad 19, 3 body; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2016.pdf)
+### ⚠ `fit-2016-19` — [FIT ČVUT, vzorová přijímací zkouška 2016 (příklad 19, 3 body; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2016.pdf)
 
-*Темы:* 28. Vzájemná poloha přímek, 27. Obecná rovnice přímky · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 9, D1 (pool přijímaček)
+*Темы:* 28. Vzájemná poloha přímek, 27. Obecná rovnice přímky · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 9, D1 (pool přijímaček)
 
 Určete parametry $a$, $b$ tak, aby přímky $p:\ ax+4y+1=0$ a $q:\ 3x+2y-b=0$ byly navzájem kolmé.
 
@@ -536,9 +485,9 @@ Určete parametry $a$, $b$ tak, aby přímky $p:\ ax+4y+1=0$ a $q:\ 3x+2y-b=0$ b
 
 </details>
 
-### `fit-2024-13` — [FIT ČVUT, vzorová přijímací zkouška 2024 (příklad 13, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2024.pdf)
+### ⚠ `fit-2024-13` — [FIT ČVUT, vzorová přijímací zkouška 2024 (příklad 13, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2024.pdf)
 
-*Темы:* 28. Vzájemná poloha přímek · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 9, úloha 19
+*Темы:* 28. Vzájemná poloha přímek · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 9, úloha 19
 
 Určete reálné parametry $a$, $b$ tak, aby přímky $ax+4y+1=0$ a $3x+2y-b=0$ měly právě jeden společný bod.
 
@@ -554,31 +503,61 @@ Určete reálné parametry $a$, $b$ tak, aby přímky $ax+4y+1=0$ a $3x+2y-b=0$ 
 
 </details>
 
-## Уровень 2 — стандартный
+### `fit-2019-04` — [FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 4, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2019.pdf)
 
-### `fel-vzor01-mnoziny` — [FEL ČVUT, vzorový přijímací test VZOR01 (varianty doplněny)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D9
 
-*Темы:* 1. Množina. Podmnožina · *Точность:* условие оригинала, варианты ответа добавлены курсом · *В курсе:* ČVUT lekce 1, úloha 15
+Kladné číslo $x$ je o $25\,\%$ větší než kladné číslo $y$. O kolik procent je číslo $y$ menší než číslo $x$?
 
-Jsou dány množiny $A=\{1,2,3,\dots,1000\}$, $B=\{x\in A:\ \frac x6\in\mathbb{Z}\}$, $C=\{x\in A:\ \frac x8\in\mathbb{Z}\}$, $D=\{x\in A:\ 237\le x\le356\}$. Určete počet prvků množiny $(B\cap C)\cup D$.
-
-- **A)** $161$
-- **B)** $156$
-- **C)** $151$
-- **D)** $155$
-- **E)** $120$
+- **A)** Číslo $y$ je o $15\,\%$ menší než číslo $x$.
+- **B)** Číslo $y$ je o $33\,\%$ menší než číslo $x$.
+- **C)** Žádná z ostatních možností není správná.
+- **D)** Číslo $y$ je o $20\,\%$ menší než číslo $x$.
+- **E)** Číslo $y$ je o $25\,\%$ menší než číslo $x$.
 
 <details><summary>Ответ и решение</summary>
 
-**B** — $156$. $B\cap C$ = násobky $24$: $41$ prvků; $|D|=120$; v $D$ leží násobky $24$: $240,\dots,336$ — $5$. $41+120-5=156$.
-
-*Примечание:* Číslo úlohy ve vzoru neuvedeno; varianty doplněny v kurzu.
+**D** — o $20\,\%$. $y=\frac{x}{1{,}25}=0{,}8x$.
 
 </details>
 
-### `fit-2019-08` — [FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 8, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2019.pdf)
+### `fit-2022-04` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 4, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 1. Množina. Podmnožina, 7. Nerovnice s absolutní hodnotou, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 7, D2 (pool přijímaček)
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D11
+
+Petr a Pavel mají stejně vysoký plat. Pavel platí o čtvrtinu vyšší nájem než Petr. Nájem bytu stojí Pavla $25\,\%$ jeho platu. Kolik procent svého platu platí za nájem Petr?
+
+- **A)** $22{,}5\,\%$
+- **B)** $15\,\%$
+- **C)** $18{,}75\,\%$
+- **D)** Žádná z ostatních možností není správná.
+- **E)** $20\,\%$
+
+<details><summary>Ответ и решение</summary>
+
+**E** — $20\,\%$. $1{,}25\cdot n=0{,}25\,S\Rightarrow n=0{,}2\,S$.
+
+</details>
+
+## Уровень 2 — стандартный
+
+### `fel-vzor01-mnoziny` — [FEL ČVUT, vzorový přijímací test VZOR01](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 1, úloha 15
+
+Jsou dány množiny $A=\{1,2,3,\dots,1000\}$, $B=\{x\in A:\ \frac x6\in\mathbb{Z}\}$, $C=\{x\in A:\ \frac x8\in\mathbb{Z}\}$, $D=\{x\in A:\ 237\le x\le356\}$. Určete počet prvků množiny $(B\cap C)\cup D$.
+
+<details><summary>Ответ и решение</summary>
+
+$156$. $B\cap C$ = násobky $24$: $41$ prvků; $|D|=120$; v $D$ leží násobky $24$: $240,\dots,336$ — $5$. $41+120-5=156$.
+
+*Примечание:* Číslo úlohy ve vzoru neuvedeno. Varianty odpovědí, které doplnil kurz, z banky odstraněny (ve vzoru FEL nejsou).
+
+</details>
+
+### ⚠ `fit-2019-08` — [FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 8, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2019.pdf)
+
+*Темы:* 1. Množina. Podmnožina, 7. Nerovnice s absolutní hodnotou, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 7, D2 (pool přijímaček)
 
 Jsou dány množiny $A=\{x^2-4x+5:\ x\in(1;4\rangle\}$ (množina všech hodnot výrazu pro $x\in(1;4\rangle$) a $B=\{x\in\mathbb{R}:\ |x-4|\le\frac12\}$. Sjednocení $A\cup B$ je
 
@@ -596,7 +575,7 @@ Jsou dány množiny $A=\{x^2-4x+5:\ x\in(1;4\rangle\}$ (množina všech hodnot v
 
 ### `fit-2026-08` — [FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 8, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
 
-*Темы:* 1. Množina. Podmnožina, 7. Nerovnice s absolutní hodnotou, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* дословно · *В курсе:* ČVUT lekce 1, úloha 17
+*Темы:* 1. Množina. Podmnožina, 7. Nerovnice s absolutní hodnotou, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 1, úloha 17
 
 Jsou dány množiny $A=\{x^2-4x+5\mid x\in(1,4)\}$ a $B=\{x\mid |x-4|\le\frac12\}$. Množina $A\cup B$ je:
 
@@ -616,7 +595,7 @@ Jsou dány množiny $A=\{x^2-4x+5\mid x\in(1,4)\}$ a $B=\{x\mid |x-4|\le\frac12\
 
 ### `fit-2019-02` — [FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 2, 3 body)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2019.pdf)
 
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D7
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D7
 
 Binární operace $\star$ je definována předpisem $a\star b=\dfrac{a+b}{a\cdot b}$. Určete hodnotu neznámé $x$ tak, aby $(2\star x)\star 3=3$.
 
@@ -634,7 +613,7 @@ Binární operace $\star$ je definována předpisem $a\star b=\dfrac{a+b}{a\cdot
 
 ### `fit-2019-10` — [FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 10, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2019.pdf)
 
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D10
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D10
 
 Za nákup $1{,}5$ kg mandarinek a $3{,}5$ kg pomerančů jsme zaplatili celkem $185$ korun. Kilo pomerančů stojí o třetinu více než kilo mandarinek. Rozhodněte, které tvrzení je pravdivé.
 
@@ -652,7 +631,7 @@ Za nákup $1{,}5$ kg mandarinek a $3{,}5$ kg pomerančů jsme zaplatili celkem $
 
 ### `fit-2021-01` — [FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 1, 3 body)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2021.pdf)
 
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D8
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D8
 
 Binární operace $\star$ je definována předpisem $a\star b=\dfrac{a+b}{a-b}$. Řešte rovnici $(2\star x)\star 3=-2$.
 
@@ -670,7 +649,7 @@ Binární operace $\star$ je definována předpisem $a\star b=\dfrac{a+b}{a-b}$.
 
 ### `fit-2022-07` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 7, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D12
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D12
 
 Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno $15\,\%$ celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla $51$ kg, v druhé etapě $55$ kg a ve třetí etapě $48$ kg. Celková průměrná hmotnost pytle brambor v tomto skladu je $50{,}55$ kg. Určete, kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.
 
@@ -688,7 +667,7 @@ Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě
 
 ### `fit-2026-16` — [FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 16, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
 
-*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT lekce 3, úloha 18; DÚ 2, D12
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 3, úloha 18; DÚ 2, D12
 
 Řešte rovnici $(x^2-x+3)^2-8(x^2-x)=9$.
 
@@ -706,7 +685,7 @@ Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě
 
 ### `fit-2023-15` — [FIT ČVUT, vzorová přijímací zkouška 2023 (příklad 15, 7 bodů)](https://fit.cvut.cz/cs/fakulta/informacni-deska)
 
-*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT lekce 3, úloha 19
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 3, úloha 19
 
 Je dána rovnice $3x^2-24x+p=0$ s neznámou $x$ a parametrem $p$. Určete $p$ tak, aby jeden kořen rovnice byl trojnásobkem druhého.
 
@@ -724,7 +703,7 @@ Je dána rovnice $3x^2-24x+p=0$ s neznámou $x$ a parametrem $p$. Určete $p$ ta
 
 ### `fit-2022-06` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 6, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 5. Rovnice s absolutní hodnotou · *Точность:* дословно · *В курсе:* ČVUT lekce 5, úloha 17
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 5, úloha 17
 
 Nalezněte řešení rovnice $|2x-1|-|2-3x|=-x$ a rozhodněte, které tvrzení je pravdivé.
 
@@ -740,9 +719,9 @@ Nalezněte řešení rovnice $|2x-1|-|2-3x|=-x$ a rozhodněte, které tvrzení j
 
 </details>
 
-### `fit-2018-11` — [FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 11, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2018.pdf)
+### ⚠ `fit-2018-11` — [FIT ČVUT, vzorová přijímací zkouška 2018 (příklad 11, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2018.pdf)
 
-*Темы:* 6. Nerovnice. Soustava nerovnic · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 9, D3 (pool přijímaček)
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 9, D3 (pool přijímaček)
 
 Kolik sudých celých čísel splňuje nerovnici $x^2-53x+150\le0$?
 
@@ -758,9 +737,9 @@ Kolik sudých celých čísel splňuje nerovnici $x^2-53x+150\le0$?
 
 </details>
 
-### `fel-vzor01-11` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 11; přeformulováno)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
+### ⚠ `fel-vzor01-11` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 11; přeformulováno)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
 
-*Темы:* 7. Nerovnice s absolutní hodnotou · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 7, úloha 18
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 7, úloha 18
 
 Najděte množinu všech reálných řešení nerovnice $|x+5|\ge4+|3-2x|$.
 
@@ -770,9 +749,9 @@ $x\in\left\langle\frac23;4\right\rangle$. Nulové body $-5,\frac32$: pro $x<-5$ 
 
 </details>
 
-### `fit-2021-11` — [FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 11, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2021.pdf)
+### ⚠ `fit-2021-11` — [FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 11, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2021.pdf)
 
-*Темы:* 7. Nerovnice s absolutní hodnotou, 6. Nerovnice. Soustava nerovnic, 1. Množina. Podmnožina · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 7, úloha 17
+*Темы:* 7. Nerovnice s absolutní hodnotou, 6. Nerovnice. Soustava nerovnic, 1. Množina. Podmnožina · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 7, úloha 17
 
 Množina $A$ obsahuje všechna reálná $x$, pro která $x^2+4x-2>0$, množina $B$ všechna reálná $x$, pro která $|x+1|\le3$. Určete rozdíl $A-B$ (tj. $A\setminus B$).
 
@@ -788,29 +767,23 @@ Množina $A$ obsahuje všechna reálná $x$, pro která $x^2+4x-2>0$, množina $
 
 </details>
 
-### `fel-vzor01-10` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 10; varianty doplněny)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
+### ⚠ `fel-vzor01-10` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 10; přeformulováno)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
 
-*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 2. Mocnina. Odmocnina, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие оригинала, варианты ответа добавлены курсом · *В курсе:* ČVUT lekce 8, úloha 18
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 2. Mocnina. Odmocnina, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 8, úloha 18
 
 Graf funkce $y=\left(\dfrac{1-\sqrt x}{\sqrt x-x}\right)^2$ je částí
 
-- **A)** paraboly.
-- **B)** hyperboly.
-- **C)** přímky.
-- **D)** kružnice.
-- **E)** Žádná z ostatních možností není správná.
-
 <details><summary>Ответ и решение</summary>
 
-**B** — $y=\frac1x$ pro $x>0$, $x\ne1$. $\sqrt x-x=\sqrt x(1-\sqrt x)$, takže $y=\frac1x$ pro $x>0$, $x\ne1$ — část hyperboly.
+$y=\frac1x$ pro $x>0$, $x\ne1$. $\sqrt x-x=\sqrt x(1-\sqrt x)$, takže $y=\frac1x$ pro $x>0$, $x\ne1$ — část hyperboly.
 
-*Примечание:* Ve vzoru FEL nejsou nabídnuté odpovědi zveřejněny; varianty doplněny v kurzu.
+*Примечание:* Ve vzoru FEL nejsou nabídnuté odpovědi; varianty z kurzu odstraněny. Znění převzato z kurzu (přeformulováno) — nahradit originálem.
 
 </details>
 
-### `fit-2020-10` — [FIT ČVUT, vzorová přijímací zkouška 2020 (příklad 10, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2020.pdf)
+### ⚠ `fit-2020-10` — [FIT ČVUT, vzorová přijímací zkouška 2020 (příklad 10, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2020.pdf)
 
-*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 6. Nerovnice. Soustava nerovnic · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 6, úloha 19
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 6. Nerovnice. Soustava nerovnic · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 6, úloha 19
 
 Určete maximální definiční obor funkce $f(x)=\sqrt{x+2}+\sqrt{\dfrac{1}{x^2-x-\frac34}}$.
 
@@ -826,9 +799,9 @@ Určete maximální definiční obor funkce $f(x)=\sqrt{x+2}+\sqrt{\dfrac{1}{x^2
 
 </details>
 
-### `fit-2021-05` — [FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 5, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2021.pdf)
+### ⚠ `fit-2021-05` — [FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 5, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2021.pdf)
 
-*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 6. Nerovnice. Soustava nerovnic · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 8, D1
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 6. Nerovnice. Soustava nerovnic · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 8, D1
 
 Které z následujících tvrzení o definičním oboru funkce $f(x)=\sqrt{\dfrac{1}{x+2}}+\sqrt{\dfrac{1}{x^2-x-\frac34}}$ je pravdivé?
 
@@ -846,9 +819,9 @@ Které z následujících tvrzení o definičním oboru funkce $f(x)=\sqrt{\dfra
 
 </details>
 
-### `fit-2022-05` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 5, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
+### ⚠ `fit-2022-05` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 5, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 6. Nerovnice. Soustava nerovnic · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 8, úloha 17
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice, 6. Nerovnice. Soustava nerovnic · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 8, úloha 17
 
 Které z následujících tvrzení o definičním oboru funkce $f(x)=\sqrt{\dfrac{x-2}{x^2-x-\frac34}}$ je pravdivé?
 
@@ -864,9 +837,9 @@ Které z následujících tvrzení o definičním oboru funkce $f(x)=\sqrt{\dfra
 
 </details>
 
-### `fit-2016-08` — [FIT ČVUT, vzorová přijímací zkouška 2016 (příklad 8, 5 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2016.pdf)
+### ⚠ `fit-2016-08` — [FIT ČVUT, vzorová přijímací zkouška 2016 (příklad 8, 5 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2016.pdf)
 
-*Темы:* 10. Exponenciální funkce · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 10, úloha 17
+*Темы:* 10. Exponenciální funkce · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 10, úloha 17
 
 Je dána funkce $y=\left(\frac12\right)^{3x-1}$. Pak $y\in\left\langle\frac12;2\right\rangle$ právě pro
 
@@ -882,9 +855,9 @@ Je dána funkce $y=\left(\frac12\right)^{3x-1}$. Pak $y\in\left\langle\frac12;2\
 
 </details>
 
-### `fit-2022-12` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 12, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
+### ⚠ `fit-2022-12` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 12, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 10. Exponenciální funkce · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 10, úloha 18
+*Темы:* 10. Exponenciální funkce · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 10, úloha 18
 
 Je dána funkce $y=2e^{3x-1}$. Pak $y\in\left\langle\frac12;2\right\rangle$ právě pro
 
@@ -900,9 +873,9 @@ Je dána funkce $y=2e^{3x-1}$. Pak $y\in\left\langle\frac12;2\right\rangle$ prá
 
 </details>
 
-### `fit-2015-07` — [FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 7, 5 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
+### ⚠ `fit-2015-07` — [FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 7, 5 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
 
-*Темы:* 11. Exponenciální rovnice a nerovnice · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 11, úloha 18
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 11, úloha 18
 
 Rozhodněte, které tvrzení o řešeních rovnice $9^{x-\frac12}+9^{\frac12-x}=\frac{10}{3}$ je pravdivé.
 
@@ -918,9 +891,9 @@ Rozhodněte, které tvrzení o řešeních rovnice $9^{x-\frac12}+9^{\frac12-x}=
 
 </details>
 
-### `fit-2022-09` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 9, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
+### ⚠ `fit-2022-09` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 9, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 11. Exponenciální rovnice a nerovnice · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 2, D11
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 2, D11
 
 Řešte rovnici $3^x+5\cdot4^x=2\cdot4^{x+1}-3^{x+1}$.
 
@@ -938,9 +911,9 @@ Rozhodněte, které tvrzení o řešeních rovnice $9^{x-\frac12}+9^{\frac12-x}=
 
 </details>
 
-### `fit-2026-03` — [FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 3, 3 body; přeformulováno)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
+### ⚠ `fit-2026-03` — [FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 3, 3 body; přeformulováno)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
 
-*Темы:* 11. Exponenciální rovnice a nerovnice · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 11, úloha 17
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 11, úloha 17
 
 Pro řešení nerovnice $\left(\frac13\right)^{x^2}\le3^{-x-6}$ platí:
 
@@ -958,9 +931,9 @@ Pro řešení nerovnice $\left(\frac13\right)^{x^2}\le3^{-x-6}$ platí:
 
 </details>
 
-### `fit-2015-09` — [FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 9, 5 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
+### ⚠ `fit-2015-09` — [FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 9, 5 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
 
-*Темы:* 12. Logaritmická funkce · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 12, úloha 17
+*Темы:* 12. Logaritmická funkce · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 12, úloha 17
 
 Které tvrzení o definičním oboru funkce $f(x)=\sqrt{\log_5 x+1}$ je pravdivé?
 
@@ -976,9 +949,9 @@ Které tvrzení o definičním oboru funkce $f(x)=\sqrt{\log_5 x+1}$ je pravdiv�
 
 </details>
 
-### `fit-2015-10` — [FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 10, 5 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
+### ⚠ `fit-2015-10` — [FIT ČVUT, vzorová přijímací zkouška 2015 (příklad 10, 5 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
 
-*Темы:* 12. Logaritmická funkce · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 12, úloha 18
+*Темы:* 12. Logaritmická funkce · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 12, úloha 18
 
 Je dána funkce $y=\ln(2x+1)$. Pak $y\in\langle-1;1\rangle$ právě pro
 
@@ -994,9 +967,9 @@ Je dána funkce $y=\ln(2x+1)$. Pak $y\in\langle-1;1\rangle$ právě pro
 
 </details>
 
-### `fit-2017-10` — [FIT ČVUT, vzorová přijímací zkouška 2017 (příklad 10, 7 bodů; přeformulováno)](https://fit.cvut.cz/cs/fakulta/informacni-deska)
+### ⚠ `fit-2017-10` — [FIT ČVUT, vzorová přijímací zkouška 2017 (příklad 10, 7 bodů; přeformulováno)](https://fit.cvut.cz/cs/fakulta/informacni-deska)
 
-*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 12, úloha 19
+*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 12, úloha 19
 
 Které tvrzení o definičním oboru funkce $f(x)=\dfrac{\ln(x^2+8x+15)}{\sqrt{2-x}}$ je pravdivé?
 
@@ -1012,23 +985,17 @@ Které tvrzení o definičním oboru funkce $f(x)=\dfrac{\ln(x^2+8x+15)}{\sqrt{2
 
 </details>
 
-### `fel-vzor01-12` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 12; varianty doplněny)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
+### ⚠ `fel-vzor01-12` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 12; přeformulováno)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-reseni-vzor01.pdf)
 
-*Темы:* 29. Směrnicový a úsekový tvar rovnice přímky, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие оригинала, варианты ответа добавлены курсом · *В курсе:* ČVUT lekce 9, úloha 20
+*Темы:* 29. Směrnicový a úsekový tvar rovnice přímky, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 9, úloha 20
 
 Přímky procházejí bodem $A[0;-5]$ a mají od počátku souřadnic vzdálenost $\sqrt5$. Jejich směrnice jsou
 
-- **A)** $2$ a $-2$
-- **B)** $\frac12$ a $-\frac12$
-- **C)** pouze $2$
-- **D)** $\sqrt5$ a $-\sqrt5$
-- **E)** Žádná z ostatních možností není správná.
-
 <details><summary>Ответ и решение</summary>
 
-**A** — $k=\pm2$. $y=kx-5$: $\frac{5}{\sqrt{k^2+1}}=\sqrt5\Rightarrow k^2=4$.
+$k=\pm2$. $y=kx-5$: $\frac{5}{\sqrt{k^2+1}}=\sqrt5\Rightarrow k^2=4$.
 
-*Примечание:* Varianty doplněny v kurzu.
+*Примечание:* Ve vzoru FEL nejsou nabídnuté odpovědi; varianty z kurzu odstraněny. Znění převzato z kurzu (přeformulováno) — nahradit originálem.
 
 </details>
 
@@ -1036,7 +1003,7 @@ Přímky procházejí bodem $A[0;-5]$ a mají od počátku souřadnic vzdálenos
 
 ### `fit-2026-04` — [FIT ČVUT, vzorová přijímací zkouška 2026 (příklad 4, 7 bodů)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2026-s-resenim.pdf)
 
-*Темы:* 1. Množina. Podmnožina · *Точность:* дословно · *В курсе:* ČVUT lekce 1, úloha 16
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 1, úloha 16
 
 Ve třídě je $30$ žáků. Každý může maturovat z matematiky (M), fyziky (F) a/nebo angličtiny (A). Matematiku a zároveň fyziku si zvolila třetina žáků. Alespoň jeden z předmětů M, F si zvolilo $24$ žáků. Angličtinu si zvolilo $22$ žáků. Všechny tři předměty si vybralo $8$ žáků, jen matematiku $3$ žáci, matematiku a zároveň angličtinu $15$ žáků. $2$ žáci si nevybrali ani jeden z těchto předmětů. Které tvrzení platí?
 
@@ -1054,7 +1021,7 @@ Ve třídě je $30$ žáků. Každý může maturovat z matematiky (M), fyziky (
 
 ### `fit-2020-13` — [FIT ČVUT, vzorová přijímací zkouška 2020 (příklad 13, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2020.pdf)
 
-*Темы:* 4. Rovnice s parametrem · *Точность:* дословно · *В курсе:* ČVUT lekce 4, úloha 17
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 4, úloha 17
 
 Určete hodnoty reálného parametru $p$ tak, aby rovnice $p^2(2x-8)+p\,(x^2-6x+8)+4x-x^2=0$ měla právě jedno řešení, a rozhodněte, které tvrzení je pravdivé.
 
@@ -1072,7 +1039,7 @@ Určete hodnoty reálného parametru $p$ tak, aby rovnice $p^2(2x-8)+p\,(x^2-6x+
 
 ### `fit-2021-15` — [FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 15, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2021.pdf)
 
-*Темы:* 4. Rovnice s parametrem · *Точность:* дословно · *В курсе:* ČVUT lekce 4, úloha 18
+*Темы:* 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 4, úloha 18
 
 Určete všechny hodnoty reálného parametru $p$, pro které má rovnice $px^2-p(p+3)x+2p(p+1)=0$ právě 2 různé reálné kořeny.
 
@@ -1088,9 +1055,9 @@ Určete všechny hodnoty reálného parametru $p$, pro které má rovnice $px^2-
 
 </details>
 
-### `fit-2020-05` — [FIT ČVUT, vzorová přijímací zkouška 2020 (příklad 5, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2020.pdf)
+### ⚠ `fit-2020-05` — [FIT ČVUT, vzorová přijímací zkouška 2020 (příklad 5, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2020.pdf)
 
-*Темы:* 6. Nerovnice. Soustava nerovnic, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT lekce 6, úloha 18
+*Темы:* 6. Nerovnice. Soustava nerovnic, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT lekce 6, úloha 18
 
 Je dána funkce $y=2x^2+2x-12$. Určete všechna $x$, pro která leží $y$ v intervalu $\langle0;12)$.
 
@@ -1106,9 +1073,9 @@ Je dána funkce $y=2x^2+2x-12$. Určete všechna $x$, pro která leží $y$ v in
 
 </details>
 
-### `fit-2024-11` — [FIT ČVUT, vzorová přijímací zkouška 2024 (příklad 11, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2024.pdf)
+### ⚠ `fit-2024-11` — [FIT ČVUT, vzorová přijímací zkouška 2024 (příklad 11, 7 bodů; přeformulováno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2024.pdf)
 
-*Темы:* 6. Nerovnice. Soustava nerovnic · *Точность:* условие пересказано, числа и варианты сохранены · *В курсе:* ČVUT DÚ 6, D1 (pool přijímaček)
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* в курсе пересказано — заменить оригиналом · *В курсе:* ČVUT DÚ 6, D1 (pool přijímaček)
 
 Najděte všechna reálná řešení nerovnice $(x+1)^3\le(x+1)^{-1}$ a vyberte pravdivé tvrzení.
 
@@ -1126,7 +1093,7 @@ Najděte všechna reálná řešení nerovnice $(x+1)^3\le(x+1)^{-1}$ a vyberte 
 
 ### `fit-2022-10` — [FIT ČVUT, vzorová přijímací zkouška 2022 (příklad 10, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2022.pdf)
 
-*Темы:* 19. Aritmetická posloupnost, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* дословно · *В курсе:* ČVUT DÚ 3, D13
+*Темы:* 19. Aritmetická posloupnost, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT DÚ 3, D13
 
 Určete první člen $a_1$ a diferenci $d$ reálné aritmetické posloupnosti, pokud víte, že součet čtvrtého a pátého členu je $4$ a součin čtvrtého a pátého členu je $5$.
 
@@ -1142,9 +1109,9 @@ Určete první člen $a_1$ a diferenci $d$ reálné aritmetické posloupnosti, p
 
 </details>
 
-### `fit-2019-06` — [FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 6, 7 bodů; upraveno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2019.pdf)
+### ⚠ `fit-2019-06` — [FIT ČVUT, vzorová přijímací zkouška 2019 (příklad 6, 7 bodů; upraveno)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2019.pdf)
 
-*Темы:* 20. Geometrická posloupnost, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Точность:* изменён формат или вопрос · *В курсе:* ČVUT DÚ 2, D13
+*Темы:* 20. Geometrická posloupnost, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* в курсе изменён вопрос — заменить оригиналом · *В курсе:* ČVUT DÚ 2, D13
 
 Mezi kořeny rovnice $x^2-30x+81=0$ vložte čtyři čísla tak, aby spolu s oběma kořeny tvořila šest po sobě jdoucích členů geometrické posloupnosti s kvocientem $q>0$. Určete kvocient $q$ a čtvrtý člen posloupnosti.
 
@@ -1158,7 +1125,7 @@ $q=\sqrt[5]{9}$, $a_4=9\sqrt[5]{3}$. Kořeny $3$ a $27$: $a_1=3$, $a_6=3q^5=27$,
 
 ### `fit-2021-13` — [FIT ČVUT, vzorová přijímací zkouška 2021 (příklad 13, 7 bodů)](https://old.fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2021.pdf)
 
-*Темы:* 30. Kuželosečky. Kružnice, 4. Rovnice s parametrem · *Точность:* дословно · *В курсе:* ČVUT lekce 4, úloha 19
+*Темы:* 30. Kuželosečky. Kružnice, 4. Rovnice s parametrem · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 4, úloha 19
 
 Určete hodnotu parametru $p$ tak, aby přímka $q:\ px+y-1=0$ neměla s kružnicí $k:\ x^2-4x+y^2-6y-3=0$ žádný společný bod.
 

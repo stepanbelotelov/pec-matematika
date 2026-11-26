@@ -3,6 +3,10 @@
 - tasks.site.json — задачи в формате сайта (как DATA[].exam: q, src, body, opts, letters, key, sol), по темам;
 - BANK.md — читаемый обзор по уровням сложности со ссылками на источники.
 
+Правила банка: текст задачи — только оригинал вуза (без переформулировок); задачи, которые
+пока переписаны из курса не дословно, помечены needs_original=true и ждут сверки с PDF.
+Тема 0 = «Ostatní» — задачи вне 35 тем плана.
+
 Запуск: python3 bank/build.py  (без зависимостей)
 """
 import html
@@ -23,11 +27,13 @@ PLAN = {1: "Množina. Podmnožina", 2: "Mocnina. Odmocnina", 3: "Rovnice (lineá
         21: "Kombinatorika. Faktoriál", 22: "Variace. Permutace. Kombinace", 23: "Kombinační číslo. Binomická věta", 24: "Pravděpodobnost",
         25: "Analytická geometrie. Vektory", 26: "Parametrická rovnice přímky", 27: "Obecná rovnice přímky", 28: "Vzájemná poloha přímek",
         29: "Směrnicový a úsekový tvar rovnice přímky", 30: "Kuželosečky. Kružnice", 31: "Elipsa", 32: "Hyperbola", 33: "Parabola",
-        34: "Planimetrie", 35: "Stereometrie"}
+        34: "Planimetrie", 35: "Stereometrie", 0: "Ostatní"}
+TOPIC_KEY = lambda n: "ostatni" if n == 0 else str(n)          # ключ в tasks.site.json
+TOPIC_ORDER = lambda n: 99 if n == 0 else n                       # «Ostatní» — в конце
 LEVEL = {1: "Уровень 1 — базовый", 2: "Уровень 2 — стандартный", 3: "Уровень 3 — сложный"}
-FIDELITY = {"original": "", "reworded": "přeformulováno", "adapted": "upraveno", "options_added": "varianty doplněny"}
-FIDELITY_RU = {"original": "дословно", "reworded": "условие пересказано, числа и варианты сохранены",
-               "adapted": "изменён формат или вопрос", "options_added": "условие оригинала, варианты ответа добавлены курсом"}
+FIDELITY = {"original": "", "reworded": "přeformulováno", "adapted": "upraveno"}
+FIDELITY_RU = {"original": "текст оригинала (по курсу)", "reworded": "в курсе пересказано — заменить оригиналом",
+               "adapted": "в курсе изменён вопрос — заменить оригиналом"}
 
 
 def body_points(n):
@@ -46,7 +52,8 @@ def src_line(t):
     if t["faculty"] == "FBMI":
         parts = ([f"úloha {t['num']}"] if t["num"] else []) + ([fid] if fid else [])
         return "FBMI ČVUT, přijímací zkouška Bc 2020/21" + (f" ({'; '.join(parts)})" if parts else "")
-    return f"{t['faculty']} {t['uni']}, {t['exam']}"
+    num = f", úloha {t['num']}" if t.get("num") else ""
+    return f"{t['faculty']} {t['uni']}, {t['exam']}{num}" + (f" ({fid})" if fid else "")
 
 
 def src_url(t):
@@ -70,7 +77,7 @@ def site_item(t, q):
         out["answer"] = tex_to_spans(t["answer"])
     if t.get("sol"):
         out["sol"] = tex_to_spans(t["sol"])
-    out.update(id=t["id"], level=t["level"], topics=t["topics"])
+    out.update(id=t["id"], level=t["level"], topics=t["topics"], needs_original=t["needs_original"])
     return out
 
 
@@ -78,43 +85,52 @@ def check(tasks):
     ids = Counter(t["id"] for t in tasks)
     assert not [i for i, c in ids.items() if c > 1], "повторяющиеся id"
     for t in tasks:
-        assert t["level"] in LEVEL and t["fidelity"] in FIDELITY and t["source"] in SOURCES, t["id"]
-        assert all(n in PLAN for n in t["topics"]), t["id"]
+        src = SOURCES.get(t["source"])
+        assert src and src.get("include") is True, f"{t['id']}: источник не разрешён для банка"
+        assert t["level"] in LEVEL and t["fidelity"] in FIDELITY, t["id"]
+        assert t["needs_original"] == (t["fidelity"] != "original"), t["id"]
+        assert t["topics"] and all(n in PLAN for n in t["topics"]), t["id"]
         if t["type"] == "mc":
             assert len(t["opts"]) == len(t["letters"]) and t["key"] in t["letters"], t["id"]
-        assert t["body"].count("$") % 2 == 0, t["id"]
+        else:
+            assert "opts" not in t and t.get("answer"), t["id"]
+        assert (t["body"] + "".join(t.get("opts", []))).count("$") % 2 == 0, t["id"]
 
 
 def main():
     check(TASKS)
-    order = sorted(TASKS, key=lambda t: (t["topics"][0], t["level"], t["faculty"], t["year"] or 0, t["num"] or 0))
+    order = sorted(TASKS, key=lambda t: (TOPIC_ORDER(t["topics"][0]), t["level"], t["faculty"], t["year"] or 0, t["num"] or 0))
 
-    # tasks.site.json: {номер темы: [задачи]} — по первой (основной) теме
+    # tasks.site.json: {тема: [задачи]} — по первой (основной) теме; «ostatni» для задач вне плана
     by_topic = defaultdict(list)
     for t in order:
         n = t["topics"][0]
         by_topic[n].append(site_item(t, f"P{len(by_topic[n]) + 1}"))
-    (HERE / "tasks.site.json").write_text(json.dumps({str(k): v for k, v in sorted(by_topic.items())}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    site = {TOPIC_KEY(k): v for k, v in sorted(by_topic.items(), key=lambda kv: TOPIC_ORDER(kv[0]))}
+    (HERE / "tasks.site.json").write_text(json.dumps(site, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     # BANK.md
     lv = Counter(t["level"] for t in TASKS)
-    fac = Counter(t["faculty"] for t in TASKS)
+    fac = Counter(f"{t['uni']} {t['faculty']}" for t in TASKS)
+    todo = sum(t["needs_original"] for t in TASKS)
     lines = ["# Банк задач přijímaček — обзор", "",
              "Файл собирается скриптом `build.py` из `tasks.json` и `sources.json`; вручную не редактировать.", "",
              f"Всего задач: **{len(TASKS)}** · " + " · ".join(f"{LEVEL[k].split(' — ')[1]}: {lv[k]}" for k in sorted(lv)) +
              " · " + " · ".join(f"{k}: {v}" for k, v in fac.most_common()), "",
+             f"⚠ **{todo}** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.", "",
              "## Покрытие тем курса", "", "| № | Тема | Ур. 1 | Ур. 2 | Ур. 3 | Всего |", "|---|---|---|---|---|---|"]
-    for n, name in PLAN.items():
+    for n, name in sorted(PLAN.items(), key=lambda kv: TOPIC_ORDER(kv[0])):
         c = Counter(t["level"] for t in TASKS if t["topics"][0] == n)
-        lines.append(f"| {n} | {name} | {c[1] or ''} | {c[2] or ''} | {c[3] or ''} | {sum(c.values()) or '—'} |")
-    lines += ["", "Задача считается по основной (первой) теме; дополнительные темы указаны в карточке.", ""]
+        lines.append(f"| {n if n else '—'} | {name} | {c[1] or ''} | {c[2] or ''} | {c[3] or ''} | {sum(c.values()) or '—'} |")
+    lines += ["", "Задача считается по основной (первой) теме; дополнительные темы указаны в карточке. «Ostatní» — задачи вне 35 тем плана.", ""]
     for level in sorted(LEVEL):
         lines += [f"## {LEVEL[level]}", ""]
         for t in [x for x in order if x["level"] == level]:
             url = src_url(t)
-            topics = ", ".join(f"{n}. {PLAN[n]}" for n in t["topics"])
-            lines += [f"### `{t['id']}` — [{src_line(t)}]({url})" if url else f"### `{t['id']}` — {src_line(t)}", "",
-                      f"*Темы:* {topics} · *Точность:* {FIDELITY_RU[t['fidelity']]}" + (f" · *В курсе:* {t['in_course']}" if t.get("in_course") else ""), "",
+            topics = ", ".join(f"{n}. {PLAN[n]}" if n else PLAN[n] for n in t["topics"])
+            mark = "⚠ " if t["needs_original"] else ""
+            lines += [f"### {mark}`{t['id']}` — [{src_line(t)}]({url})" if url else f"### {mark}`{t['id']}` — {src_line(t)}", "",
+                      f"*Темы:* {topics} · *Текст:* {FIDELITY_RU[t['fidelity']]}" + (f" · *В курсе:* {t['in_course']}" if t.get("in_course") else ""), "",
                       t["body"], ""]
             if t["type"] == "mc":
                 lines += [f"- **{L})** {o}" for L, o in zip(t["letters"], t["opts"])] + [""]
@@ -124,7 +140,7 @@ def main():
                 lines += [f"*Примечание:* {t['note']}", ""]
             lines += ["</details>", ""]
     (HERE / "BANK.md").write_text("\n".join(lines), encoding="utf-8")
-    print(f"ok: {len(TASKS)} задач, темы {sorted(by_topic)}; уровни {dict(sorted(lv.items()))}")
+    print(f"ok: {len(TASKS)} задач, темы {list(site)}; уровни {dict(sorted(lv.items()))}; ждут оригинала: {todo}")
 
 
 if __name__ == "__main__":
