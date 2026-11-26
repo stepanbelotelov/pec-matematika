@@ -22,7 +22,7 @@
 Ответы:
 
 - В образцах FMV, FFÚ/FPH и FIS правильный вариант выделен красным, ключ взят оттуда и пересчитан.
-- В тестах A и B ключа нет. Ответы посчитаны нами (вручную и в sympy).
+- В тестах A и B ключ на сайте не опубликован. Ответы мы посчитали сами и затем сверили с версией тестов с выделенными результатами (KMAT VŠE): все 22 совпали.
 
 Уровни: 16 базовых, 15 стандартных, 5 сложных. Покрыты темы 1–4, 6–13, 15, 19, 28, 30 и Ostatní.
 
@@ -49,7 +49,7 @@
 | Источник | Что это | Формат |
 |---|---|---|
 | [Vzorový test – FMV](https://www.vse.cz/wp-content/uploads/page/153/MAT_vzor-fmv.pdf), [вариант FFÚ/FPH](https://fph.vse.cz/wp-content/uploads/MAT_vzor-ffu-a-fph.pdf) | официальный образец теста по математике | a)–e); в 1–7 последний вариант «jiná odpověď», в 11–14 — «Žádná z předchozích možností.»; ответ выделен красным |
-| [Vzor přijímacích zkoušek A](https://www.vse.cz/wp-content/uploads/page/2128/test-A.pdf), [B](https://vse.cz/wp-content/uploads/page/2128/test-B.pdf) | пробные тесты кафедры математики (KMAT) | a.–e., последний вариант «jiná odpověď»; ответы часто даны интервалом; ключа нет |
+| [Vzor přijímacích zkoušek A](https://www.vse.cz/wp-content/uploads/page/2128/test-A.pdf), [B](https://vse.cz/wp-content/uploads/page/2128/test-B.pdf) | пробные тесты кафедры математики (KMAT) | a.–e., последний вариант «jiná odpověď»; ответы часто даны интервалом; ключ — в версии «s výsledky» |
 | [Vzorový test – FIS](https://www.vse.cz/wp-content/uploads/page/153/MAT_vzor-fis.pdf) | образец FIS | a)–e); 1–8 по 5 баллов, 9–14 по 10 баллов; ответ выделен красным |
 
 ### Не идут в банк
