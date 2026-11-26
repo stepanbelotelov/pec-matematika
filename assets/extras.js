@@ -59,9 +59,10 @@
     var a = document.createElement("a");
     a.className = "pec-fb " + cls; a.target = "_blank"; a.rel = "noopener";
     a.textContent = label;
-    a.setAttribute("aria-label", "Сообщить об ошибке" + (where ? ": " + where() : ""));
-    // адрес собирается в момент нажатия — к этому времени заголовок окна и номер страницы уже актуальны
-    var upd = function () { a.href = feedbackUrl(where()); };
+    // адрес и подпись для программ чтения с экрана собираются в момент фокуса или нажатия:
+    // при загрузке страницы заголовок окна ещё пуст, а окно потом меняется
+    var upd = function () { var w = where(); a.href = feedbackUrl(w); a.setAttribute("aria-label", "Сообщить об ошибке: " + w); };
+    a.setAttribute("aria-label", "Сообщить об ошибке");
     a.addEventListener("pointerdown", upd); a.addEventListener("focus", upd); a.addEventListener("click", upd);
     a.href = "#"; return a;
   }
@@ -74,15 +75,21 @@
     ".etask .eh .pec-fb{margin-left:auto;min-height:24px}" +
     ".shead .pec-fb{margin-left:auto;margin-right:8px;align-self:center}" +
     ".vbar .pec-fb{color:inherit;opacity:.75;font-size:13px;padding:0 8px}" +
-    "@media (max-width:560px){.vbar .pec-fb{display:none}}";
+    "@media (max-width:560px){.vbar .pec-fb{display:none}" +
+    // на телефоне ссылка шапки окна — значок ⚑ в строке подписи над заголовком (см. ниже): в ряду с «×» она сжимала заголовок
+    ".shead .k{display:inline}.shead .pec-fb.in-kind{display:inline-flex;vertical-align:middle;font-size:0;text-decoration:none;width:28px;min-height:24px;margin:-4px 0 -4px 4px;padding:0;justify-content:center}" +
+    ".shead .pec-fb.in-kind::before{content:'\\2691';font-size:15px;line-height:1;color:var(--muted,#5F6B7A)}}";
   document.head.appendChild(css);
 
   // 1) в шапке окна (самопроверка, разминка, пробный экзамен, банк…)
-  var shead = document.querySelector(".shead"), sclose = $("sclose");
+  var shead = document.querySelector(".shead"), sclose = $("sclose"), skind = $("skind");
   if (shead && sclose) {
-    shead.insertBefore(link("in-sheet", "Ошибка?", function () {
+    var narrow = window.matchMedia && matchMedia("(max-width:560px)").matches;
+    var fbSheet = link(narrow ? "in-sheet in-kind" : "in-sheet", "Ошибка?", function () {
       return LINE + " · " + [txt($("skind")), txt($("stitle"))].filter(Boolean).join(" · ");
-    }), sclose);
+    });
+    // телефон: сразу после подписи окна (skind — отдельный элемент, его текст меняется, а ссылка остаётся рядом)
+    if (narrow && skind) skind.parentNode.insertBefore(fbSheet, skind.nextSibling); else shead.insertBefore(fbSheet, sclose);
   }
   // 2) в панели просмотра PDF (лекции и ДЗ) — с номером страницы
   var vopen = $("vopen");
