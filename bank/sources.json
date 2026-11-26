@@ -276,7 +276,7 @@
   "answers": "neověřeno",
   "url": "https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf",
   "status": "nestaženo (síť)",
-  "note": "Chemické programy zkoušku většinou nemají; FTOP píše test jen pro uchazeče bez dostatečných známek: https://ftop.vscht.cz/novinky/26-04-13",
+  "note": "Chemické programy zkoušku většinou nemají; FTOP píše test jen pro uchazeče bez dostatečných známek: https://ftop.vscht.cz/novinky/26-04-13 Podle vyhledávače: úloha 1 exponenciální nerovnice, 2 průsečík přímek rovnoběžných s osami, 3 aritmetická posloupnost (a3+a4=16, a5+a6=24), dále počet řešení goniometrické rovnice, logaritmická nerovnice, kolmice bodem. Přesné znění jen z PDF.",
   "include": true,
   "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
@@ -368,5 +368,47 @@
   "note": "Zdroj třetí strany — úlohy brát z originálů fakult.",
   "include": false,
   "copyright": "kurz třetí strany; úlohy brát z originálů fakult (FJFI)"
+ },
+ {
+  "id": "vut-si-euroeducation",
+  "uni": "VUT Brno",
+  "faculty": "FAST (obor SI)",
+  "kind": "kopie u třetí strany",
+  "title": "Vzory zadání z předchozích přijímacích zkoušek — matematika (VUT, Stavební inženýrství)",
+  "years": "neuvedeno",
+  "format": "neověřeno",
+  "answers": "neověřeno",
+  "url": "https://www.euroeducation.cz/doc/vut-si-matematika.pdf",
+  "status": "nestaženo (síť)",
+  "include": false,
+  "copyright": "kopie u třetí strany (přípravné kurzy euroeducation.cz), podmínky užití neznámé — zatím nebrat; hledat originál na fce.vutbr.cz"
+ },
+ {
+  "id": "vscht-mgr",
+  "uni": "VŠCHT Praha",
+  "faculty": "ekonomické programy (NMgr)",
+  "kind": "vzorový test",
+  "title": "Aplikovaná matematika — přijímací zkouška NMgr, vzorový test",
+  "years": "cca 2021",
+  "format": "vysokoškolská matematika (navazující studium)",
+  "answers": "neověřeno",
+  "url": "https://studuj.vscht.cz/wp-content/uploads/2021/02/Mgr-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf",
+  "status": "jen katalog",
+  "include": false,
+  "copyright": "navazující magisterské studium — mimo rozsah kurzu"
+ },
+ {
+  "id": "kampomaturite",
+  "uni": "—",
+  "faculty": "—",
+  "kind": "komerční vzorové testy",
+  "title": "KamPoMaturitě.cz — vzorové testy z matematiky (z vlastních knih a webu)",
+  "years": "—",
+  "format": "—",
+  "answers": "—",
+  "url": "https://www.kampomaturite.cz/vzorove-testy-matematika/",
+  "status": "jen katalog",
+  "include": false,
+  "copyright": "komerční vlastní testy vydavatele, ne zadání vysoké školy"
  }
 ]

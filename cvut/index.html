@@ -758,7 +758,7 @@ body.line-cvut { --faint: #7A8FA4 }
 .pb-row .chip small { font-weight: 500; opacity: .7; margin-left: 4px; font-variant-numeric: tabular-nums }
 .pb-row .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--paper) }
 .pb-sel { font: 500 16px/1.2 var(--f-body); padding: 8px 10px; border: 1px solid var(--line); background: var(--paper); color: var(--fg); border-radius: 8px; min-height: 40px; width: 100%; flex: 1 1 0; min-width: 0 }
-.pb-intro, .pb-stat, .pb-filters, .pb-row, .pb-list, .pb-locked { min-width: 0 }
+.pb-intro, .pb-stat, .pb-filters, .pb-row, .pb-list { min-width: 0 }
 .pb-list > .etask { min-width: 0 } .pb-task .eopt > span:last-child, .pb-open-a, .pb-esol { min-width: 0; overflow-x: auto }
 .pb-sel:focus-visible { outline: 3px solid var(--gold); outline-offset: 1px }
 .pb-check { display: inline-flex; gap: 8px; align-items: center; font-size: 14px; color: var(--fg); min-height: 40px; cursor: pointer }
@@ -777,8 +777,7 @@ body.line-cvut { --faint: #7A8FA4 }
 .pb-open-a b { font-family: var(--f-display) }
 .pb-esol b { display: block; font-family: var(--f-display); font-size: 13px; color: var(--muted); margin-bottom: 2px }
 .pb-empty { display: grid; gap: 10px; justify-items: start; padding: 18px; border: 1px dashed var(--line); border-radius: 10px }
-.pb-locked { font-size: 13px; color: var(--muted); display: flex; gap: 8px; align-items: center; padding: 4px 2px }
-.pb-locked svg { flex: none }
+.pb-ahead { font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; line-height: 1.4 }
 
 /* модуль на главной линии: во всю ширину, три колонки */
 .mod.bankmod { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) auto; grid-template-areas: "k v f" "h v f" "p v f" "n v f"; column-gap: 28px; row-gap: 8px; align-items: start }
@@ -1498,14 +1497,15 @@ function pbLoad() {
   if (!IS_CVUT || PB.all || PB.loading) return;
   PB.loading = true; PB.err = false;
   fetch(PB.url).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then((d) => { PB.all = Object.values(d).flat().map((t) => ({ ...t, n: t.topics[0], fac: t.src.split(" ")[0] })); })
+    .then((d) => { PB.all = Object.values(d).flat().map((t) => ({ ...t, n: t.topics[0], fac: t.fac || t.src.split(" ")[0], uni: t.uni || "ČVUT" })); })
     .catch(() => { PB.err = true; })
     .finally(() => { PB.loading = false; renderMods(); if (location.hash === "#banka" && !$("sheetwrap").hidden) showBank(); });
 }
-// открыты задачи по пройденным темам (основная тема ≤ текущей) и «Ostatní» (тема 0)
-const pbOpen = () => (PB.all || []).filter((t) => t.n <= latest.n);
-const pbLocked = () => (PB.all || []).filter((t) => t.n > latest.n);
-const PB_FAC_ORDER = ["FIT", "FBMI", "FEL"];
+// открыты все задачи банка — по всем темам, в том числе ещё не пройденным (в карточке они помечены)
+const pbOpen = () => PB.all || [];
+const pbAhead = (t) => t.n > latest.n;
+const PB_FAC_ORDER = ["FIT", "FEL", "FJFI", "FBMI", "FSv", "FS", "FD", "FEKT", "FSI", "FAST"];
+const pbFacName = (f) => { const t = (PB.all || []).find((x) => x.fac === f); return f + " " + (t ? t.uni : "ČVUT"); };
 const pbFacs = (ts) => [...new Set(ts.map((t) => t.fac))].sort((a, b) => (PB_FAC_ORDER.indexOf(a) + 1 || 99) - (PB_FAC_ORDER.indexOf(b) + 1 || 99));
 const pbOk = (t) => { const r = pbState[t.id]; return !!r && r.ok === true; };
 const pbDone = (t) => { const r = pbState[t.id]; return !!r && (r.a || r.ok != null); };
@@ -1534,13 +1534,13 @@ function pbLevelsVis(tasks) {
 function bankModCard() {
   if (!IS_CVUT) return null;
   if (!PB.all) {
-    return modCard({ cls: "bankmod", k: "Тренировка", h: "Банк задач", p: "Настоящие задачи из вступительных тестов ČVUT по пройденным темам — с уровнем сложности и решением.",
+    return modCard({ cls: "bankmod", k: "Тренировка", h: "Банк задач", p: "Настоящие задачи из вступительных тестов по всем темам курса — с уровнем сложности и решением.",
       note: PB.err ? "Не удалось загрузить задачи — нужен интернет." : "Загружаю задачи…", btn: PB.err ? "Повторить" : null, btnCls: "btn ghost", hash: "banka" });
   }
   const open = pbOpen(), done = open.filter(pbDone).length, ok = open.filter(pbOk).length, facs = pbFacs(open).join(", ");
   return modCard({ cls: "bankmod", k: "Тренировка", rd: `<b>${open.length}</b> ${plural(open.length, "задача", "задачи", "задач")} · ${facs}`, h: "Банк задач",
-    vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов ČVUT по пройденным темам. Фильтр по уровню и теме, к каждой — короткое решение.",
-    note: done ? `Решено <b>${done} / ${open.length}</b> · верно <b>${ok}</b>` : `Новые задачи появляются вместе с темами курса`,
+    vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов по всем темам курса, в том числе ещё не пройденным. Фильтр по уровню и теме, к каждой — короткое решение.",
+    note: done ? `Решено <b>${done} / ${open.length}</b> · верно <b>${ok}</b>` : `Все задачи открыты — начните с уровня 1`,
     btn: done ? "Продолжить" : "Открыть банк", btnCls: "btn ghost", hash: "banka" });
 }
 function showBank() {
@@ -1555,7 +1555,7 @@ function showBank() {
     body.append(box); pbLoad(); return;
   }
   const open = pbOpen().slice().sort((a, b) => (b.n || -1) - (a.n || -1) || a.level - b.level);
-  body.append(el("p", "pb-intro", "Задачи из открытых образцов FIT, FBMI и FEL ČVUT — по темам, которые мы уже прошли. Решите на бумаге и выберите ответ: сразу увидите, верно ли, и короткое решение. Без калькулятора, как на экзамене."));
+  body.append(el("p", "pb-intro", `Задачи из открытых образцов ${pbFacs(open).map(pbFacName).join(", ")} — по всем темам курса. Задачи тем, которые мы ещё не прошли, помечены «тема ещё впереди». Решите на бумаге и выберите ответ: сразу увидите, верно ли, и короткое решение. Без калькулятора, как на экзамене.`));
   const stat = el("div", "pb-stat"); body.append(stat);
   // фильтры
   const filt = el("div", "pb-filters"); filt.setAttribute("role", "group"); filt.setAttribute("aria-label", "Фильтры");
@@ -1575,7 +1575,7 @@ function showBank() {
   sel.addEventListener("change", () => { pbF.topic = sel.value; draw(); }); rT.append(sel);
   const rF = row("Тест"), facBtns = [];
   ["all", ...pbFacs(open)].forEach((f) => {
-    const b = el("button", "chip", f === "all" ? "Все" : f + " ČVUT"); b.type = "button"; b.dataset.v = f;
+    const b = el("button", "chip", f === "all" ? "Все" : pbFacName(f)); b.type = "button"; b.dataset.v = f;
     b.addEventListener("click", () => { pbF.fac = f; draw(); }); rF.append(b); facBtns.push(b);
   });
   const chk = el("label", "pb-check"); const cb = el("input"); cb.type = "checkbox"; cb.checked = pbF.todo;
@@ -1583,14 +1583,6 @@ function showBank() {
   chk.append(cb, document.createTextNode("только нерешённые")); rF.append(chk);
   body.append(filt);
   const list = el("div", "pb-list"); list.setAttribute("aria-live", "polite"); body.append(list);
-  const locked = pbLocked();
-  if (locked.length) {
-    const ln = el("p", "pb-locked");
-    ln.innerHTML = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>';
-    const tps = [...new Set(locked.map((t) => t.n))].sort((a, b) => a - b);
-    ln.append(`Ещё ${locked.length} ${plural(locked.length, "задача откроется", "задачи откроются", "задач откроются")} вместе с темами ${tps.join(", ")}.`);
-    body.append(ln);
-  }
   function paintStat() {
     const done = open.filter(pbDone), ok = done.filter(pbOk).length, bad = done.length - ok;
     stat.replaceChildren();
@@ -1620,7 +1612,7 @@ function showBank() {
 function pbCard(t, onChange) {
   const card = el("article", "etask pb-task"); card.id = "pb-" + t.id;
   const eh = el("div", "eh"); eh.append(el("b", null, t.n ? `Téma ${t.n}` : "Ostatní")); const src = el("span"); src.textContent = t.src; eh.append(src);
-  const meta = el("div", "pb-meta"); meta.append(pbPips(t.level));
+  const meta = el("div", "pb-meta"); meta.append(pbPips(t.level)); if (pbAhead(t)) meta.append(el("span", "pb-ahead", "тема ещё впереди"));
   const bd = el("div", "ebody"); bd.innerHTML = t.body;
   const res = el("div", "pb-res");
   card.append(eh, meta, bd);

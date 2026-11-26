@@ -7,6 +7,8 @@
    "answer": "<span class=\"m\" data-tex=\"156\"></span>",
    "sol": "<span class=\"m\" data-tex=\"B\\cap C\"></span> = násobky <span class=\"m\" data-tex=\"24\"></span>: <span class=\"m\" data-tex=\"41\"></span> prvků; <span class=\"m\" data-tex=\"|D|=120\"></span>; v <span class=\"m\" data-tex=\"D\"></span> leží násobky <span class=\"m\" data-tex=\"24\"></span>: <span class=\"m\" data-tex=\"240,\\dots,336\"></span> — <span class=\"m\" data-tex=\"5\"></span>. <span class=\"m\" data-tex=\"41+120-5=156\"></span>.",
    "id": "fel-vzor01-mnoziny",
+   "uni": "ČVUT",
+   "fac": "FEL",
    "level": 2,
    "topics": [
     1
@@ -28,6 +30,8 @@
    "key": "D",
    "sol": "<span class=\"m\" data-tex=\"x^2-4x+5=(x-2)^2+1\"></span> nabývá na <span class=\"m\" data-tex=\"(1;4\\rangle\"></span> hodnot <span class=\"m\" data-tex=\"\\langle1;5\\rangle\"></span>; <span class=\"m\" data-tex=\"B=\\left\\langle\\frac72;\\frac92\\right\\rangle\\subset A\"></span>.",
    "id": "fit-2019-08",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     1,
@@ -51,6 +55,8 @@
    "key": "C",
    "sol": "<span class=\"m\" data-tex=\"(x-2)^2+1\"></span> na <span class=\"m\" data-tex=\"(1;4)\"></span> nabývá hodnot <span class=\"m\" data-tex=\"\\langle1;5)\"></span>; <span class=\"m\" data-tex=\"B=\\left\\langle\\frac72;\\frac92\\right\\rangle\\subset A\"></span>.",
    "id": "fit-2026-08",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     1,
@@ -74,6 +80,8 @@
    "key": "B",
    "sol": "Vennův diagram: jen M <span class=\"m\" data-tex=\"3\"></span>, MF bez A <span class=\"m\" data-tex=\"2\"></span>, MA bez F <span class=\"m\" data-tex=\"7\"></span>, MFA <span class=\"m\" data-tex=\"8\"></span>, FA bez M <span class=\"m\" data-tex=\"3\"></span>, jen F <span class=\"m\" data-tex=\"1\"></span>, jen A <span class=\"m\" data-tex=\"4\"></span>, nic <span class=\"m\" data-tex=\"2\"></span>. <span class=\"m\" data-tex=\"|A\\cup F|=30-2-3=25\"></span>.",
    "id": "fit-2026-04",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 3,
    "topics": [
     1
@@ -89,6 +97,8 @@
    "answer": "<span class=\"m\" data-tex=\"\\dfrac{18bx^3}{5y^3}\"></span>",
    "sol": "<span class=\"m\" data-tex=\"\\frac{90}{25}=\\frac{18}{5}\"></span>, <span class=\"m\" data-tex=\"\\frac{b^3}{b^2}=b\"></span>, <span class=\"m\" data-tex=\"\\frac{y}{y^4}=\\frac1{y^3}\"></span>.",
    "id": "fel-vzor01-mocniny",
+   "uni": "ČVUT",
+   "fac": "FEL",
    "level": 1,
    "topics": [
     2
@@ -110,6 +120,8 @@
    "key": "A",
    "sol": "<span class=\"m\" data-tex=\"\\sqrt{x:\\frac1x}=\\sqrt{x^2}=|x|\"></span>.",
    "id": "fit-2024-03",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     2,
@@ -133,6 +145,8 @@
    "key": "a",
    "sol": "<span class=\"m\" data-tex=\"x=\\frac{-5\\pm3}{4}\"></span>.",
    "id": "fbmi-2021-kvadr-koreny",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     3
@@ -153,6 +167,8 @@
    "key": "d",
    "sol": "<span class=\"m\" data-tex=\"D=b^2-4ac\"></span> (bez odmocniny).",
    "id": "fbmi-2021-diskriminant",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     3
@@ -173,6 +189,8 @@
    "key": "a",
    "sol": "Pro <span class=\"m\" data-tex=\"D=0\"></span> je <span class=\"m\" data-tex=\"x=\\frac{-b}{2a}\"></span>.",
    "id": "fbmi-2021-dvojnasobny",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     3
@@ -194,6 +212,8 @@
    "key": "B",
    "sol": "Obě rovnice jsou ekvivalentní s <span class=\"m\" data-tex=\"x+4y=-1\"></span>.",
    "id": "fit-2026-06",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     3
@@ -215,6 +235,8 @@
    "key": "A",
    "sol": "<span class=\"m\" data-tex=\"u=2\\star x\"></span>: <span class=\"m\" data-tex=\"\\frac{u+3}{3u}=3\\Rightarrow u=\\frac38\"></span>; <span class=\"m\" data-tex=\"\\frac{2+x}{2x}=\\frac38\\Rightarrow x=-8\"></span>.",
    "id": "fit-2019-02",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     3
@@ -236,6 +258,8 @@
    "key": "B",
    "sol": "<span class=\"m\" data-tex=\"1{,}5m+3{,}5\\cdot\\frac43m=185\\Rightarrow\\frac{37}{6}m=185\"></span>, <span class=\"m\" data-tex=\"m=30\"></span>, <span class=\"m\" data-tex=\"p=40\"></span>; <span class=\"m\" data-tex=\"30+\\frac12\\cdot40=50\"></span>.",
    "id": "fit-2019-10",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     3
@@ -257,6 +281,8 @@
    "key": "B",
    "sol": "<span class=\"m\" data-tex=\"u=2\\star x\"></span>: <span class=\"m\" data-tex=\"\\frac{u+3}{u-3}=-2\\Rightarrow u=1\"></span>; <span class=\"m\" data-tex=\"\\frac{2+x}{2-x}=1\\Rightarrow x=0\"></span> (a <span class=\"m\" data-tex=\"2\\star0=1\"></span> je definováno).",
    "id": "fit-2021-01",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     3
@@ -278,6 +304,8 @@
    "key": "D",
    "sol": "<span class=\"m\" data-tex=\"0{,}15\\cdot51+55p+48(0{,}85-p)=50{,}55\\Rightarrow7p=2{,}1\"></span>, <span class=\"m\" data-tex=\"p=0{,}3\"></span>.",
    "id": "fit-2022-07",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     3
@@ -299,6 +327,8 @@
    "key": "C",
    "sol": "<span class=\"m\" data-tex=\"t=x^2-x\"></span>: <span class=\"m\" data-tex=\"(t+3)^2-8t=9\\iff t^2-2t=0\"></span>, <span class=\"m\" data-tex=\"t\\in\\{0;2\\}\"></span>; <span class=\"m\" data-tex=\"x\\in\\{0;1\\}\\cup\\{-1;2\\}\"></span>.",
    "id": "fit-2026-16",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     3
@@ -314,6 +344,8 @@
    "answer": "<span class=\"m\" data-tex=\"p\\in(-5;3)\"></span>",
    "sol": "<span class=\"m\" data-tex=\"D=(p+1)^2-16&lt;0\\iff|p+1|&lt;4\"></span>.",
    "id": "fel-vzor01-14",
+   "uni": "ČVUT",
+   "fac": "FEL",
    "level": 1,
    "topics": [
     4
@@ -335,6 +367,8 @@
    "key": "A",
    "sol": "<span class=\"m\" data-tex=\"x_1=3x_2\"></span>, <span class=\"m\" data-tex=\"x_1+x_2=8\\Rightarrow x_2=2\"></span>, <span class=\"m\" data-tex=\"x_1=6\"></span>; <span class=\"m\" data-tex=\"x_1x_2=\\frac p3=12\\Rightarrow p=36\"></span> — mezi variantami není.",
    "id": "fit-2023-15",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     4,
@@ -357,6 +391,8 @@
    "key": "A",
    "sol": "Rovnice je <span class=\"m\" data-tex=\"(p-1)(x-4)(x+2p)=0\"></span>. Pro <span class=\"m\" data-tex=\"p=1\"></span> je řešením každé <span class=\"m\" data-tex=\"x\"></span>; jinak <span class=\"m\" data-tex=\"x=4\"></span> nebo <span class=\"m\" data-tex=\"x=-2p\"></span>, jediné řešení právě pro <span class=\"m\" data-tex=\"-2p=4\"></span>, tj. <span class=\"m\" data-tex=\"p=-2\"></span>.",
    "id": "fit-2020-13",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 3,
    "topics": [
     4
@@ -378,6 +414,8 @@
    "key": "B",
    "sol": "Pro <span class=\"m\" data-tex=\"p=0\"></span> je řešením každé <span class=\"m\" data-tex=\"x\"></span>. Pro <span class=\"m\" data-tex=\"p\\ne0\"></span>: <span class=\"m\" data-tex=\"x^2-(p+3)x+2(p+1)=0\"></span>, <span class=\"m\" data-tex=\"D=(p-1)^2&gt;0\\iff p\\ne1\"></span>.",
    "id": "fit-2021-15",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 3,
    "topics": [
     4
@@ -401,6 +439,8 @@
    "key": "E",
    "sol": "Nulové body <span class=\"m\" data-tex=\"\\frac12,\\frac23\"></span>. Na <span class=\"m\" data-tex=\"x&lt;\\frac12\"></span>: <span class=\"m\" data-tex=\"x-1=-x\"></span>, <span class=\"m\" data-tex=\"x=\\frac12\"></span> nevyhovuje; na <span class=\"m\" data-tex=\"\\left\\langle\\frac12;\\frac23\\right)\"></span>: <span class=\"m\" data-tex=\"5x-3=-x\"></span>, <span class=\"m\" data-tex=\"x=\\frac12\"></span> ✓; na <span class=\"m\" data-tex=\"x\\ge\\frac23\"></span>: <span class=\"m\" data-tex=\"1=0\"></span>.",
    "id": "fit-2022-06",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     5
@@ -424,6 +464,8 @@
    "key": "D",
    "sol": "<span class=\"m\" data-tex=\"c\\le a=b&lt;d\"></span>, tedy vždy <span class=\"m\" data-tex=\"c&lt;d\"></span>.",
    "id": "fit-2022-03",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     6
@@ -445,6 +487,8 @@
    "key": "A",
    "sol": "<span class=\"m\" data-tex=\"e&lt;a&lt;c\"></span>, tedy vždy <span class=\"m\" data-tex=\"e&lt;c\"></span>.",
    "id": "fit-2026-01",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     6
@@ -466,6 +510,8 @@
    "key": "A",
    "sol": "Kořeny <span class=\"m\" data-tex=\"3\"></span> a <span class=\"m\" data-tex=\"50\"></span>, řešení <span class=\"m\" data-tex=\"\\langle3;50\\rangle\"></span>. Sudá čísla <span class=\"m\" data-tex=\"4,6,\\dots,50\"></span>: celkem <span class=\"m\" data-tex=\"24\"></span>.",
    "id": "fit-2018-11",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     6
@@ -487,6 +533,8 @@
    "key": "A",
    "sol": "<span class=\"m\" data-tex=\"y\\ge0\\iff(x+3)(x-2)\\ge0\"></span>; <span class=\"m\" data-tex=\"y&lt;12\\iff(x+4)(x-3)&lt;0\"></span>. Průnik: <span class=\"m\" data-tex=\"(-4;-3\\rangle\\cup\\langle2;3)\"></span> — mezi variantami není.",
    "id": "fit-2020-05",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 3,
    "topics": [
     6,
@@ -509,6 +557,8 @@
    "key": "C",
    "sol": "<span class=\"m\" data-tex=\"t=x+1\\ne0\"></span>: <span class=\"m\" data-tex=\"\\frac{t^4-1}{t}\\le0\\iff\\frac{(t-1)(t+1)}{t}\\le0\\iff t\\le-1\\ \\vee\\ 0&lt;t\\le1\"></span>.",
    "id": "fit-2024-11",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 3,
    "topics": [
     6
@@ -524,6 +574,8 @@
    "answer": "<span class=\"m\" data-tex=\"x\\in(-4;-2)\"></span>",
    "sol": "<span class=\"m\" data-tex=\"|x+3|&lt;1\\iff-1&lt;x+3&lt;1\"></span>.",
    "id": "fel-vzor01-1",
+   "uni": "ČVUT",
+   "fac": "FEL",
    "level": 1,
    "topics": [
     7
@@ -537,6 +589,8 @@
    "answer": "<span class=\"m\" data-tex=\"x\\in\\left\\langle\\frac23;4\\right\\rangle\"></span>",
    "sol": "Nulové body <span class=\"m\" data-tex=\"-5,\\frac32\"></span>: pro <span class=\"m\" data-tex=\"x&lt;-5\"></span> nic; na <span class=\"m\" data-tex=\"\\left\\langle-5;\\frac32\\right\\rangle\"></span>: <span class=\"m\" data-tex=\"x\\ge\\frac23\"></span>; pro <span class=\"m\" data-tex=\"x&gt;\\frac32\"></span>: <span class=\"m\" data-tex=\"x\\le4\"></span>.",
    "id": "fel-vzor01-11",
+   "uni": "ČVUT",
+   "fac": "FEL",
    "level": 2,
    "topics": [
     7
@@ -558,6 +612,8 @@
    "key": "D",
    "sol": "<span class=\"m\" data-tex=\"A=\\left(-\\infty;-2-\\sqrt6\\right)\\cup\\left(-2+\\sqrt6;\\infty\\right)\"></span>, <span class=\"m\" data-tex=\"B=\\langle-4;2\\rangle\"></span>; <span class=\"m\" data-tex=\"-2-\\sqrt6\\approx-4{,}45&lt;-4\"></span>.",
    "id": "fit-2021-11",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     7,
@@ -575,6 +631,8 @@
    "answer": "<span class=\"m\" data-tex=\"y=\\frac1x\"></span> pro <span class=\"m\" data-tex=\"x&gt;0\"></span>, <span class=\"m\" data-tex=\"x\\ne1\"></span>",
    "sol": "<span class=\"m\" data-tex=\"\\sqrt x-x=\\sqrt x(1-\\sqrt x)\"></span>, takže <span class=\"m\" data-tex=\"y=\\frac1x\"></span> pro <span class=\"m\" data-tex=\"x&gt;0\"></span>, <span class=\"m\" data-tex=\"x\\ne1\"></span> — část hyperboly.",
    "id": "fel-vzor01-10",
+   "uni": "ČVUT",
+   "fac": "FEL",
    "level": 2,
    "topics": [
     8,
@@ -598,6 +656,8 @@
    "key": "B",
    "sol": "<span class=\"m\" data-tex=\"x\\ge-2\"></span> a <span class=\"m\" data-tex=\"x^2-x-\\frac34=\\left(x-\\frac32\\right)\\left(x+\\frac12\\right)&gt;0\"></span>.",
    "id": "fit-2020-10",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     8,
@@ -620,6 +680,8 @@
    "key": "D",
    "sol": "<span class=\"m\" data-tex=\"x+2&gt;0\"></span> a <span class=\"m\" data-tex=\"\\left(x-\\frac32\\right)\\left(x+\\frac12\\right)&gt;0\"></span>; výsledek mezi variantami není.",
    "id": "fit-2021-05",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     8,
@@ -642,6 +704,8 @@
    "key": "C",
    "sol": "<span class=\"m\" data-tex=\"\\frac{x-2}{\\left(x-\\frac32\\right)\\left(x+\\frac12\\right)}\\ge0\"></span> — metoda intervalů s body <span class=\"m\" data-tex=\"-\\frac12,\\frac32,2\"></span>.",
    "id": "fit-2022-05",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     8,
@@ -665,6 +729,8 @@
    "key": "b",
    "sol": "<span class=\"m\" data-tex=\"y(0)=\\frac16\"></span>, <span class=\"m\" data-tex=\"y\\left(\\frac12\\right)=\\frac13+\\frac16=\\frac12\"></span>.",
    "id": "fbmi-2021-28",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     9
@@ -685,6 +751,8 @@
    "key": "a",
    "sol": "<span class=\"m\" data-tex=\"y(-1)=y(0)=\\frac12\"></span>, <span class=\"m\" data-tex=\"y(1)=\\frac52\"></span>.",
    "id": "fbmi-2021-29",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     9
@@ -705,6 +773,8 @@
    "key": "b",
    "sol": "<span class=\"m\" data-tex=\"y=(x+1)^2-\\frac12\"></span>.",
    "id": "fbmi-2021-30",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     9
@@ -725,6 +795,8 @@
    "key": "c",
    "sol": "Vrchol <span class=\"m\" data-tex=\"x=-1\"></span>, parabola otevřená nahoru.",
    "id": "fbmi-2021-31",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     9
@@ -745,6 +817,8 @@
    "key": "b",
    "sol": "Vrchol <span class=\"m\" data-tex=\"x=1\"></span>, parabola otevřená dolů.",
    "id": "fbmi-2021-32",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     9
@@ -765,6 +839,8 @@
    "key": "d",
    "sol": "<span class=\"m\" data-tex=\"k=\\frac{-1-3}{4-2}=-2\"></span>, <span class=\"m\" data-tex=\"q=3+4=7\"></span>.",
    "id": "fbmi-2021-33",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     9,
@@ -787,6 +863,8 @@
    "key": "C",
    "sol": "<span class=\"m\" data-tex=\"2\\left(2(t+1)^2-2\\right)-\\left(2(t-1)^2-2\\right)=4t^2+8t-2t^2+4t=2t^2+12t\"></span>.",
    "id": "fit-2018-03",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     9
@@ -800,6 +878,8 @@
    "answer": "<span class=\"m\" data-tex=\"\\langle-1;\\infty)\"></span>",
    "sol": "<span class=\"m\" data-tex=\"\\sqrt{2x+3}\"></span> nabývá všech hodnot <span class=\"m\" data-tex=\"\\langle0;\\infty)\"></span>, po odečtení <span class=\"m\" data-tex=\"1\"></span> dostaneme <span class=\"m\" data-tex=\"\\langle-1;\\infty)\"></span>.",
    "id": "fit-2018-08",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     9,
@@ -822,6 +902,8 @@
    "key": "C",
    "sol": "<span class=\"m\" data-tex=\"f(x)=(x-1)^2\"></span>: <span class=\"m\" data-tex=\"t^2-(t-2)^2=4t-4\"></span>.",
    "id": "fit-2022-01",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     9
@@ -843,6 +925,8 @@
    "key": "E",
    "sol": "Vrchol <span class=\"m\" data-tex=\"x=\\frac54\"></span>, <span class=\"m\" data-tex=\"f\\left(\\frac54\\right)=-\\frac18\"></span>.",
    "id": "fit-2022-11",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     9
@@ -866,6 +950,8 @@
    "key": "B",
    "sol": "<span class=\"m\" data-tex=\"y=2^{1-3x}\"></span>, <span class=\"m\" data-tex=\"2^{-1}\\le2^{1-3x}\\le2^1\\iff-1\\le1-3x\\le1\\iff0\\le x\\le\\frac23\"></span>.",
    "id": "fit-2016-08",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     10
@@ -887,6 +973,8 @@
    "key": "A",
    "sol": "<span class=\"m\" data-tex=\"e^{3x-1}\\in\\left\\langle\\frac14;1\\right\\rangle\\iff-\\ln4\\le3x-1\\le0\"></span>.",
    "id": "fit-2022-12",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     10
@@ -910,6 +998,8 @@
    "key": "D",
    "sol": "<span class=\"m\" data-tex=\"t=9^{x-\\frac12}&gt;0\"></span>: <span class=\"m\" data-tex=\"t+\\frac1t=\\frac{10}{3}\"></span>, tj. <span class=\"m\" data-tex=\"3t^2-10t+3=0\"></span>, <span class=\"m\" data-tex=\"t\\in\\{3;\\frac13\\}\"></span>. Odtud <span class=\"m\" data-tex=\"x=1\"></span> nebo <span class=\"m\" data-tex=\"x=0\"></span>.",
    "id": "fit-2015-07",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     11
@@ -931,6 +1021,8 @@
    "key": "C",
    "sol": "<span class=\"m\" data-tex=\"3^x+3\\cdot3^x=8\\cdot4^x-5\\cdot4^x\\Rightarrow4\\cdot3^x=3\\cdot4^x\\Rightarrow\\left(\\frac34\\right)^x=\\frac34\"></span>, <span class=\"m\" data-tex=\"x=1\"></span>.",
    "id": "fit-2022-09",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     11
@@ -952,6 +1044,8 @@
    "key": "A",
    "sol": "<span class=\"m\" data-tex=\"3^{-x^2}\\le3^{-x-6}\\iff-x^2\\le-x-6\\iff(x-3)(x+2)\\ge0\"></span>.",
    "id": "fit-2026-03",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     11
@@ -974,6 +1068,8 @@
    "key": "b",
    "sol": "Logaritmus podílu a mocniny.",
    "id": "fbmi-2021-25",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     12
@@ -994,6 +1090,8 @@
    "key": "c",
    "sol": "<span class=\"m\" data-tex=\"\\log(a+b)\"></span> se nerozkládá.",
    "id": "fbmi-2021-26",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     12
@@ -1014,6 +1112,8 @@
    "key": "c",
    "sol": "<span class=\"m\" data-tex=\"\\log(a+b)\"></span> se nerozkládá.",
    "id": "fbmi-2021-27",
+   "uni": "ČVUT",
+   "fac": "FBMI",
    "level": 1,
    "topics": [
     12
@@ -1035,6 +1135,8 @@
    "key": "D",
    "sol": "<span class=\"m\" data-tex=\"x&gt;0\"></span> a <span class=\"m\" data-tex=\"\\log_5x\\ge-1=\\log_5\\frac15\"></span>; logaritmus o základu <span class=\"m\" data-tex=\"5\"></span> je rostoucí, tedy <span class=\"m\" data-tex=\"x\\ge\\frac15\"></span>.",
    "id": "fit-2015-09",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     12
@@ -1056,6 +1158,8 @@
    "key": "D",
    "sol": "<span class=\"m\" data-tex=\"e^{-1}\\le2x+1\\le e\"></span>, odtud <span class=\"m\" data-tex=\"\\frac{e^{-1}-1}{2}\\le x\\le\\frac{e-1}{2}\"></span>.",
    "id": "fit-2015-10",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     12
@@ -1077,6 +1181,8 @@
    "key": "B",
    "sol": "<span class=\"m\" data-tex=\"(x+3)(x+5)&gt;0\\Rightarrow x&lt;-5\\ \\vee\\ x&gt;-3\"></span>; <span class=\"m\" data-tex=\"2-x&gt;0\\Rightarrow x&lt;2\"></span>.",
    "id": "fit-2017-10",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 2,
    "topics": [
     12,
@@ -1101,6 +1207,8 @@
    "key": "B",
    "sol": "<span class=\"m\" data-tex=\"a_4,a_5\"></span> jsou kořeny <span class=\"m\" data-tex=\"t^2-4t+5=0\"></span>, <span class=\"m\" data-tex=\"D=16-20&lt;0\"></span> — reálná řešení neexistují.",
    "id": "fit-2022-10",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 3,
    "topics": [
     19,
@@ -1117,6 +1225,8 @@
    "answer": "<span class=\"m\" data-tex=\"q=\\sqrt[5]{9}\"></span>, <span class=\"m\" data-tex=\"a_4=9\\sqrt[5]{3}\"></span>",
    "sol": "Kořeny <span class=\"m\" data-tex=\"3\"></span> a <span class=\"m\" data-tex=\"27\"></span>: <span class=\"m\" data-tex=\"a_1=3\"></span>, <span class=\"m\" data-tex=\"a_6=3q^5=27\"></span>, <span class=\"m\" data-tex=\"q^5=9\"></span>, <span class=\"m\" data-tex=\"q=3^{2/5}\"></span>, <span class=\"m\" data-tex=\"a_4=3q^3=3^{11/5}=9\\sqrt[5]{3}\"></span>.",
    "id": "fit-2019-06",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 3,
    "topics": [
     20,
@@ -1133,6 +1243,8 @@
    "answer": "<span class=\"m\" data-tex=\"62\"></span>",
    "sol": "<span class=\"m\" data-tex=\"2+2^2+2^3+2^4+2^5=62\"></span>.",
    "id": "fel-vzor01-morse",
+   "uni": "ČVUT",
+   "fac": "FEL",
    "level": 1,
    "topics": [
     22,
@@ -1157,6 +1269,8 @@
    "key": "E",
    "sol": "Koeficienty musí být úměrné: <span class=\"m\" data-tex=\"\\frac a3=\\frac42=\\frac{1}{-b}\"></span>, tedy <span class=\"m\" data-tex=\"a=6\"></span>, <span class=\"m\" data-tex=\"b=-\\frac12\"></span>.",
    "id": "fit-2015-19",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     28,
@@ -1179,6 +1293,8 @@
    "key": "B",
    "sol": "Normálové vektory <span class=\"m\" data-tex=\"(a;4)\"></span> a <span class=\"m\" data-tex=\"(3;2)\"></span> jsou kolmé: <span class=\"m\" data-tex=\"3a+8=0\"></span>, <span class=\"m\" data-tex=\"a=-\\frac83\"></span>; <span class=\"m\" data-tex=\"b\"></span> libovolné.",
    "id": "fit-2016-19",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     28,
@@ -1201,6 +1317,8 @@
    "key": "D",
    "sol": "Přímky nesmí být rovnoběžné: <span class=\"m\" data-tex=\"\\frac a3\\ne\\frac42\"></span>, tj. <span class=\"m\" data-tex=\"a\\ne6\"></span>.",
    "id": "fit-2024-13",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     28
@@ -1216,6 +1334,8 @@
    "answer": "<span class=\"m\" data-tex=\"k=\\pm2\"></span>",
    "sol": "<span class=\"m\" data-tex=\"y=kx-5\"></span>: <span class=\"m\" data-tex=\"\\frac{5}{\\sqrt{k^2+1}}=\\sqrt5\\Rightarrow k^2=4\"></span>.",
    "id": "fel-vzor01-12",
+   "uni": "ČVUT",
+   "fac": "FEL",
    "level": 2,
    "topics": [
     29,
@@ -1240,6 +1360,8 @@
    "key": "E",
    "sol": "Přímka prochází bodem <span class=\"m\" data-tex=\"[0;1]\"></span>, který leží uvnitř kružnice <span class=\"m\" data-tex=\"(x-2)^2+(y-3)^2=16\"></span> (vzdálenost od středu <span class=\"m\" data-tex=\"\\sqrt8&lt;4\"></span>), proto ji vždy protne.",
    "id": "fit-2021-13",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 3,
    "topics": [
     30,
@@ -1264,6 +1386,8 @@
    "key": "D",
    "sol": "<span class=\"m\" data-tex=\"y=\\frac{x}{1{,}25}=0{,}8x\"></span>.",
    "id": "fit-2019-04",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     0
@@ -1285,6 +1409,8 @@
    "key": "E",
    "sol": "<span class=\"m\" data-tex=\"1{,}25\\cdot n=0{,}25\\,S\\Rightarrow n=0{,}2\\,S\"></span>.",
    "id": "fit-2022-04",
+   "uni": "ČVUT",
+   "fac": "FIT",
    "level": 1,
    "topics": [
     0

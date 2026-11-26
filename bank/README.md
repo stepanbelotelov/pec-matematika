@@ -38,7 +38,7 @@
 | `tasks.json` | **Источник правды.** Задачи с TeX в `$…$` |
 | `sources.json` | Каталог найденных источников со ссылками; для каждого указано, можно ли брать в банк (`include`) и почему (`copyright`) |
 | `build.py` | Проверяет данные и собирает `tasks.site.json` и `BANK.md`. Запуск: `python3 bank/build.py` |
-| `tasks.site.json` | Задачи в формате сайта (как `DATA[].exam`: `q, src, body, opts, letters, key, sol` + `id, level, topics, needs_original`), по основной теме; задачи вне плана — под ключом `ostatni` |
+| `tasks.site.json` | Задачи в формате сайта (как `DATA[].exam`: `q, src, body, opts, letters, key, sol` + `id, uni, fac, level, topics, needs_original`), по основной теме; задачи вне плана — под ключом `ostatni` |
 | `BANK.md` | Читаемый обзор: покрытие тем и задачи по уровням, ответы спрятаны под спойлер |
 
 Поля задачи в `tasks.json`:
