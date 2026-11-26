@@ -719,6 +719,11 @@ body.line-cvut { --faint: #7A8FA4 }
 }
 /* телефон горизонтально: PDF и панель рядом, шапка в одну строку, инструменты — иконки справа, калькулятор в две колонки */
 @media (orientation: landscape) and (max-height: 500px) {
+  /* окна: компактная шапка — на экране 340px она занимала треть высоты */
+  .shead { padding-top: calc(env(safe-area-inset-top, 0px) + 8px); padding-bottom: 8px }
+  .shead h3, .line-cvut .shead h3, .line-vse .shead h3 { font-size: 18px; line-height: 1.15 }
+  .sbody { gap: 10px; padding-top: 10px }
+  .pb-stat { padding: 8px 12px; gap: 6px }
   .vmain { flex-direction: row }
   .viewer.split .pages { flex: 1 1 auto }
   .vside { width: min(460px, 52vw); flex: none; border-top: 0; border-left: 1px solid var(--line) }
@@ -758,7 +763,7 @@ body.line-cvut { --faint: #7A8FA4 }
 .pb-row .chip small { font-weight: 500; opacity: .7; margin-left: 4px; font-variant-numeric: tabular-nums }
 .pb-row .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--paper) }
 .pb-sel { font: 500 16px/1.2 var(--f-body); padding: 8px 10px; border: 1px solid var(--line); background: var(--paper); color: var(--fg); border-radius: 8px; min-height: 40px; width: 100%; flex: 1 1 0; min-width: 0 }
-.pb-intro, .pb-stat, .pb-filters, .pb-row, .pb-list, .pb-locked { min-width: 0 }
+.pb-intro, .pb-stat, .pb-filters, .pb-row, .pb-list { min-width: 0 }
 .pb-list > .etask { min-width: 0 } .pb-task .eopt > span:last-child, .pb-open-a, .pb-esol { min-width: 0; overflow-x: auto }
 .pb-sel:focus-visible { outline: 3px solid var(--gold); outline-offset: 1px }
 .pb-check { display: inline-flex; gap: 8px; align-items: center; font-size: 14px; color: var(--fg); min-height: 40px; cursor: pointer }
@@ -777,8 +782,7 @@ body.line-cvut { --faint: #7A8FA4 }
 .pb-open-a b { font-family: var(--f-display) }
 .pb-esol b { display: block; font-family: var(--f-display); font-size: 13px; color: var(--muted); margin-bottom: 2px }
 .pb-empty { display: grid; gap: 10px; justify-items: start; padding: 18px; border: 1px dashed var(--line); border-radius: 10px }
-.pb-locked { font-size: 13px; color: var(--muted); display: flex; gap: 8px; align-items: center; padding: 4px 2px }
-.pb-locked svg { flex: none }
+.pb-ahead { font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; line-height: 1.4 }
 
 /* модуль на главной линии: во всю ширину, три колонки */
 .mod.bankmod { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) auto; grid-template-areas: "k v f" "h v f" "p v f" "n v f"; column-gap: 28px; row-gap: 8px; align-items: start }
@@ -805,6 +809,27 @@ body.line-cvut { --faint: #7A8FA4 }
 .line-cvut .pb-row .chip[aria-pressed="true"] { background: var(--accent); color: #05080C }
 .line-cvut .pb-l2 { color: var(--accent) }
 .line-cvut .bankmod .pb-lv-r > span:nth-child(2) { text-transform: uppercase; letter-spacing: .08em; font-size: 11px }
+/* ===== Банк задач: доступность и телефоны ===== */
+.pb-status { margin: 0; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums }
+.pb-fold { border: 1px solid var(--line); border-radius: 10px; background: var(--paper) }
+.pb-fold > summary { list-style: none; cursor: pointer; display: flex; gap: 10px; align-items: center; min-height: 44px; padding: 8px 14px; font-size: 14px; color: var(--fg) }
+.pb-fold > summary::-webkit-details-marker { display: none }
+.pb-fold > summary::after { content: "▾"; margin-left: auto; color: var(--muted); transition: transform .2s }
+.pb-fold[open] > summary::after { transform: rotate(180deg) }
+.pb-fold > summary b { font-weight: 600 }
+.pb-fold > summary .pb-sum { color: var(--muted); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.pb-fold > summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px }
+.pb-fold > .pb-filters { padding: 4px 14px 14px }
+.pb-about > .pb-intro { padding: 0 14px 14px }
+.pb-row > .pb-lb { font-size: 12px }
+.pb-row .chip { min-height: 40px }
+.pb-res:focus { outline: none }
+.pb-res:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px }
+/* дроби в вариантах и решениях не обрезаются снизу */
+.pb-task .eopt > span:last-child, .pb-open-a, .pb-esol { padding-bottom: 6px; margin-bottom: -6px }
+.line-cvut .pb-fold { border-radius: 0 }
+.line-cvut .pb-fold > summary { font-family: var(--f-mono); font-size: 13px }
+
 </style>
 
 </head><body><!--BODY-->
@@ -1498,14 +1523,15 @@ function pbLoad() {
   if (!IS_CVUT || PB.all || PB.loading) return;
   PB.loading = true; PB.err = false;
   fetch(PB.url).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then((d) => { PB.all = Object.values(d).flat().map((t) => ({ ...t, n: t.topics[0], fac: t.src.split(" ")[0] })); })
+    .then((d) => { PB.all = Object.values(d).flat().map((t) => ({ ...t, n: t.topics[0], fac: t.fac || t.src.split(" ")[0], uni: t.uni || "ČVUT" })); })
     .catch(() => { PB.err = true; })
     .finally(() => { PB.loading = false; renderMods(); if (location.hash === "#banka" && !$("sheetwrap").hidden) showBank(); });
 }
-// открыты задачи по пройденным темам (основная тема ≤ текущей) и «Ostatní» (тема 0)
-const pbOpen = () => (PB.all || []).filter((t) => t.n <= latest.n);
-const pbLocked = () => (PB.all || []).filter((t) => t.n > latest.n);
-const PB_FAC_ORDER = ["FIT", "FBMI", "FEL"];
+// открыты все задачи банка — по всем темам, в том числе ещё не пройденным (в карточке они помечены)
+const pbOpen = () => PB.all || [];
+const pbAhead = (t) => t.n > latest.n;
+const PB_FAC_ORDER = ["FIT", "FEL", "FJFI", "FBMI", "FSv", "FS", "FD", "FEKT", "FSI", "FAST"];
+const pbFacName = (f) => { const t = (PB.all || []).find((x) => x.fac === f); return f + " " + (t ? t.uni : "ČVUT"); };
 const pbFacs = (ts) => [...new Set(ts.map((t) => t.fac))].sort((a, b) => (PB_FAC_ORDER.indexOf(a) + 1 || 99) - (PB_FAC_ORDER.indexOf(b) + 1 || 99));
 const pbOk = (t) => { const r = pbState[t.id]; return !!r && r.ok === true; };
 const pbDone = (t) => { const r = pbState[t.id]; return !!r && (r.a || r.ok != null); };
@@ -1534,13 +1560,13 @@ function pbLevelsVis(tasks) {
 function bankModCard() {
   if (!IS_CVUT) return null;
   if (!PB.all) {
-    return modCard({ cls: "bankmod", k: "Тренировка", h: "Банк задач", p: "Настоящие задачи из вступительных тестов ČVUT по пройденным темам — с уровнем сложности и решением.",
+    return modCard({ cls: "bankmod", k: "Тренировка", h: "Банк задач", p: "Настоящие задачи из вступительных тестов по всем темам курса — с уровнем сложности и решением.",
       note: PB.err ? "Не удалось загрузить задачи — нужен интернет." : "Загружаю задачи…", btn: PB.err ? "Повторить" : null, btnCls: "btn ghost", hash: "banka" });
   }
   const open = pbOpen(), done = open.filter(pbDone).length, ok = open.filter(pbOk).length, facs = pbFacs(open).join(", ");
   return modCard({ cls: "bankmod", k: "Тренировка", rd: `<b>${open.length}</b> ${plural(open.length, "задача", "задачи", "задач")} · ${facs}`, h: "Банк задач",
-    vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов ČVUT по пройденным темам. Фильтр по уровню и теме, к каждой — короткое решение.",
-    note: done ? `Решено <b>${done} / ${open.length}</b> · верно <b>${ok}</b>` : `Новые задачи появляются вместе с темами курса`,
+    vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов по всем темам курса, в том числе ещё не пройденным. Фильтр по уровню и теме, к каждой — короткое решение.",
+    note: done ? `Решено <b>${done} / ${open.length}</b> · верно <b>${ok}</b>` : `Все задачи открыты — начните с уровня 1`,
     btn: done ? "Продолжить" : "Открыть банк", btnCls: "btn ghost", hash: "banka" });
 }
 function showBank() {
@@ -1555,7 +1581,10 @@ function showBank() {
     body.append(box); pbLoad(); return;
   }
   const open = pbOpen().slice().sort((a, b) => (b.n || -1) - (a.n || -1) || a.level - b.level);
-  body.append(el("p", "pb-intro", "Задачи из открытых образцов FIT, FBMI и FEL ČVUT — по темам, которые мы уже прошли. Решите на бумаге и выберите ответ: сразу увидите, верно ли, и короткое решение. Без калькулятора, как на экзамене."));
+  // on phones the intro and the filters fold into one line each, so the first task is visible right away
+  const BIG = matchMedia("(min-width: 761px) and (min-height: 501px)").matches;
+  const about = el("details", "pb-fold pb-about"); about.open = BIG; const aSum = el("summary"); aSum.append(el("b", null, "Как устроен банк"));
+  about.append(aSum, el("p", "pb-intro", `Задачи из открытых образцов ${pbFacs(open).map(pbFacName).join(", ")} — по всем темам курса. Задачи тем, которые мы ещё не прошли, помечены «тема ещё впереди». Решите на бумаге и выберите ответ: сразу увидите, верно ли, и короткое решение. Без калькулятора, как на экзамене.`)); body.append(about);
   const stat = el("div", "pb-stat"); body.append(stat);
   // фильтры
   const filt = el("div", "pb-filters"); filt.setAttribute("role", "group"); filt.setAttribute("aria-label", "Фильтры");
@@ -1575,22 +1604,18 @@ function showBank() {
   sel.addEventListener("change", () => { pbF.topic = sel.value; draw(); }); rT.append(sel);
   const rF = row("Тест"), facBtns = [];
   ["all", ...pbFacs(open)].forEach((f) => {
-    const b = el("button", "chip", f === "all" ? "Все" : f + " ČVUT"); b.type = "button"; b.dataset.v = f;
+    const b = el("button", "chip", f === "all" ? "Все" : pbFacName(f)); b.type = "button"; b.dataset.v = f;
     b.addEventListener("click", () => { pbF.fac = f; draw(); }); rF.append(b); facBtns.push(b);
   });
   const chk = el("label", "pb-check"); const cb = el("input"); cb.type = "checkbox"; cb.checked = pbF.todo;
   cb.addEventListener("change", () => { pbF.todo = cb.checked; draw(); });
   chk.append(cb, document.createTextNode("только нерешённые")); rF.append(chk);
-  body.append(filt);
-  const list = el("div", "pb-list"); list.setAttribute("aria-live", "polite"); body.append(list);
-  const locked = pbLocked();
-  if (locked.length) {
-    const ln = el("p", "pb-locked");
-    ln.innerHTML = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>';
-    const tps = [...new Set(locked.map((t) => t.n))].sort((a, b) => a - b);
-    ln.append(`Ещё ${locked.length} ${plural(locked.length, "задача откроется", "задачи откроются", "задач откроются")} вместе с темами ${tps.join(", ")}.`);
-    body.append(ln);
-  }
+  const fold = el("details", "pb-fold"); fold.open = BIG;
+  const sumLine = el("summary"); const sumTxt = el("span", "pb-sum"); sumLine.append(el("b", null, "Фильтры"), sumTxt); fold.append(sumLine, filt);
+  body.append(fold);
+  // a short live status — the list itself is not live (it would read out every task with formulas)
+  const status = el("p", "pb-status"); status.setAttribute("role", "status"); body.append(status);
+  const list = el("div", "pb-list"); body.append(list);
   function paintStat() {
     const done = open.filter(pbDone), ok = done.filter(pbOk).length, bad = done.length - ok;
     stat.replaceChildren();
@@ -1599,7 +1624,8 @@ function showBank() {
     const b = el("span"); b.innerHTML = done.length ? `верно <b>${ok}</b> · ошибок <b>${bad}</b>` : "сначала уровень 1 — потом выше";
     t.append(a, b);
     const m = el("div", "pb-meter"); m.setAttribute("role", "img"); m.setAttribute("aria-label", `Верно ${ok}, ошибок ${bad}, всего ${open.length}`);
-    const io = el("i", "ok"); io.style.width = (100 * ok) / open.length + "%"; const ib = el("i", "bad"); ib.style.width = (100 * bad) / open.length + "%";
+    const tot = open.length || 1;
+    const io = el("i", "ok"); io.style.width = (100 * ok) / tot + "%"; const ib = el("i", "bad"); ib.style.width = (100 * bad) / tot + "%";
     m.append(io, ib); stat.append(t, m);
   }
   function draw() {
@@ -1613,6 +1639,9 @@ function showBank() {
       r.addEventListener("click", () => { pbF = { lvl: 0, topic: "all", fac: "all", todo: false }; sel.value = "all"; cb.checked = false; draw(); });
       e.append(r); list.append(e);
     } else shown.forEach((t) => list.append(pbCard(t, paintStat)));
+    const parts = [pbF.lvl ? "уровень " + pbF.lvl : "", pbF.topic !== "all" ? (pbF.topic === "0" ? "Ostatní" : "тема " + pbF.topic) : "", pbF.fac !== "all" ? pbF.fac : "", pbF.todo ? "нерешённые" : ""].filter(Boolean);
+    sumTxt.textContent = parts.length ? parts.join(" · ") : "все задачи";
+    status.textContent = `Показано ${shown.length} ${plural(shown.length, "задача", "задачи", "задач")} из ${open.length}`;
     paintStat(); typeset(list);
   }
   draw();
@@ -1620,19 +1649,20 @@ function showBank() {
 function pbCard(t, onChange) {
   const card = el("article", "etask pb-task"); card.id = "pb-" + t.id;
   const eh = el("div", "eh"); eh.append(el("b", null, t.n ? `Téma ${t.n}` : "Ostatní")); const src = el("span"); src.textContent = t.src; eh.append(src);
-  const meta = el("div", "pb-meta"); meta.append(pbPips(t.level));
+  const meta = el("div", "pb-meta"); meta.append(pbPips(t.level)); if (pbAhead(t)) meta.append(el("span", "pb-ahead", "тема ещё впереди"));
   const bd = el("div", "ebody"); bd.innerHTML = t.body;
   const res = el("div", "pb-res");
+  const focusRes = () => { res.tabIndex = -1; res.focus(); }; // keyboard / screen reader land on the verdict and solution
   card.append(eh, meta, bd);
   const solBlock = () => { const s = el("div", "esol pb-esol"); s.innerHTML = "<b>Решение</b>" + t.sol; return s; };
-  const again = () => { const b = el("button", "chip plain", "Решить заново"); b.type = "button"; b.addEventListener("click", () => { delete pbState[t.id]; pbSave(); card.replaceWith(pbCard(t, onChange)); onChange(); renderMods(); }); return b; };
+  const again = () => { const b = el("button", "chip plain", "Решить заново"); b.type = "button"; b.addEventListener("click", () => { delete pbState[t.id]; pbSave(); const nc = pbCard(t, onChange); card.replaceWith(nc); typeset(nc); onChange(); renderMods(); const f = nc.querySelector(".eopt, .pb-res .btn"); if (f) f.focus(); }); return b; };
   if (t.opts && t.opts.length) {
     const ops = el("div", "eopts");
     t.opts.forEach((h, j) => {
       const L = t.letters[j];
       const b = el("button", "eopt"); b.type = "button"; b.dataset.l = L; b.setAttribute("aria-pressed", "false");
       const tx = el("span"); tx.innerHTML = h; b.append(el("span", "L", L), tx);
-      b.addEventListener("click", () => { if (pbState[t.id]) return; pbState[t.id] = { a: L, ok: L === t.key }; pbSave(); paint(); onChange(); renderMods(); });
+      b.addEventListener("click", () => { if (pbState[t.id]) return; pbState[t.id] = { a: L, ok: L === t.key }; pbSave(); paint(); onChange(); renderMods(); focusRes(); });
       ops.append(b);
     });
     card.append(ops, res);
@@ -1652,15 +1682,15 @@ function pbCard(t, onChange) {
       res.replaceChildren();
       if (!r) {
         const b = el("button", "btn ghost", "Показать ответ"); b.type = "button";
-        b.addEventListener("click", () => { pbState[t.id] = { shown: true }; pbSave(); paint(); });
+        b.addEventListener("click", () => { pbState[t.id] = { shown: true }; pbSave(); paint(); focusRes(); });
         const f = el("div", "btns"); f.append(el("span", "note", "Задача без вариантов: решите и сверьтесь с ответом."), b); res.append(f); return;
       }
       const a = el("div", "pb-open-a"); a.innerHTML = "<b>Ответ:</b> " + t.answer; res.append(a, solBlock());
       const f = el("div", "btns");
       if (r.ok == null) {
         const y = el("button", "chip", "У меня так же"), n = el("button", "chip plain", "У меня иначе"); y.type = n.type = "button";
-        y.addEventListener("click", () => { pbState[t.id] = { shown: true, ok: true }; pbSave(); paint(); onChange(); renderMods(); });
-        n.addEventListener("click", () => { pbState[t.id] = { shown: true, ok: false }; pbSave(); paint(); onChange(); renderMods(); });
+        y.addEventListener("click", () => { pbState[t.id] = { shown: true, ok: true }; pbSave(); paint(); onChange(); renderMods(); focusRes(); });
+        n.addEventListener("click", () => { pbState[t.id] = { shown: true, ok: false }; pbSave(); paint(); onChange(); renderMods(); focusRes(); });
         f.append(y, n);
       } else { card.classList.add(r.ok ? "right" : "wrong"); f.append(el("span", "etag", r.ok ? "решено верно" : "ошибка — разберите решение"), again()); }
       res.append(f); typeset(res);
@@ -2218,7 +2248,7 @@ function buildCalc() {
   const syncOver = () => dock.classList.toggle("over", !$("viewer").hidden || !$("sheetwrap").hidden);
   const mo = new MutationObserver(syncOver); ["viewer", "sheetwrap"].forEach((id) => mo.observe($(id), { attributes: true, attributeFilter: ["hidden"] })); syncOver();
   // no calculator during timed tests (exams are without a calculator)
-  const guard = () => { const timed = Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash);
+  const guard = () => { const timed = (Object.values(CTX).some((c) => c.st && c.st.run && !c.st.run.done) && /^#(zkouska|srez-\d+)$/.test(location.hash)) || location.hash === "#banka";
     // the ДЗ answer panel / sheet answer bar sits where the dock is — hide the dock over it
     const bar = (!$("viewer").hidden && (!$("vside").hidden || !$("vgraph").hidden)) || (!$("sheetwrap").hidden && !$("qbar").hidden);
     fab.hidden = timed || bar; gfab.hidden = timed || bar || location.hash === "#grafy"; dock.hidden = fab.hidden && gfab.hidden; document.body.classList.toggle("has-dock", !dock.hidden); if (timed || bar) toggle(false); };
@@ -2520,6 +2550,7 @@ function route() {
   if (tk === "slovnik") { showGlossary(); return; }
   if (tk === "banka" && IS_CVUT) { showBank(); return; }
   if (tk === "grafy") { Plotter.open(); return; }
+  if (tk === "banka" && !IS_CVUT) { closeAll(true); toast("Банк задач přijímaček пока есть только на сайте линии ČVUT."); return; }
   if (tk === "app" && window.PEC_SITE) { App.open(); return; }
   if (CTX[tk]) { if (CTX[tk].enabled()) showTimed(CTX[tk]); else closeAll(false); return; }
   const m = /^#(lekce|du|formuly|test)-(\d+)$/.exec(location.hash);
@@ -2544,9 +2575,16 @@ document.addEventListener("keydown", (e) => {
   const extra = [...document.querySelectorAll(".calc:not([hidden]), .tooldock:not([hidden])")].flatMap((x) => [...x.querySelectorAll(SEL)]);
   const list = [...dlg.querySelectorAll(SEL), ...extra].filter(shown);
   if (!list.length) return;
-  const i = list.indexOf(document.activeElement);
+  const a = document.activeElement, i = list.indexOf(a);
   e.preventDefault();
-  const j = i === -1 ? (e.shiftKey ? list.length - 1 : 0) : (i + (e.shiftKey ? -1 : 1) + list.length) % list.length;
+  let j;
+  if (i !== -1) j = (i + (e.shiftKey ? -1 : 1) + list.length) % list.length;
+  else if (a && a !== document.body && dlg.contains(a)) {
+    // focus sits on a non-tabbable element inside the window (a result block, the document): continue from its place
+    const after = list.findIndex((x) => a.compareDocumentPosition(x) & Node.DOCUMENT_POSITION_FOLLOWING && !a.contains(x)), inside = list.findIndex((x) => a.contains(x));
+    if (e.shiftKey) { const before = list.map((x, k) => [x, k]).filter(([x]) => a.compareDocumentPosition(x) & Node.DOCUMENT_POSITION_PRECEDING).pop(); j = before ? before[1] : list.length - 1; }
+    else j = inside !== -1 ? inside : after !== -1 ? after : 0;
+  } else j = e.shiftKey ? list.length - 1 : 0;
   list[j].focus();
 });
 

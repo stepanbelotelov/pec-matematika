@@ -77,7 +77,7 @@ def site_item(t, q):
         out["answer"] = tex_to_spans(t["answer"])
     if t.get("sol"):
         out["sol"] = tex_to_spans(t["sol"])
-    out.update(id=t["id"], level=t["level"], topics=t["topics"], needs_original=t["needs_original"])
+    out.update(id=t["id"], uni=t["uni"], fac=t["faculty"], level=t["level"], topics=t["topics"], needs_original=t["needs_original"])
     return out
 
 

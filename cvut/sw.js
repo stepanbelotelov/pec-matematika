@@ -35,6 +35,12 @@ async function page(req) {
   try { const r = await fetch(req); if (r.ok) await c.put("./", r.clone()); return r; }
   catch (e) { return (await c.match("./")) || (await c.match(req)) || new Response("Нет сети", { status: 503, headers: { "Content-Type": "text/plain; charset=utf-8" } }); }
 }
+// банк задач (../bank/tasks.site.json): сначала сеть, без сети — последняя сохранённая копия
+async function bank(req) {
+  const c = await caches.open("pec-bank");
+  try { const r = await fetch(req); if (r.ok) await c.put(req, r.clone()); return r; }
+  catch (e) { return (await c.match(req)) || new Response("{}", { status: 503, headers: { "Content-Type": "application/json" } }); }
+}
 async function cdn(req) {
   const c = await caches.open(CDN), hit = await c.match(req);
   if (hit) return hit;
@@ -44,6 +50,7 @@ async function cdn(req) {
 self.addEventListener("fetch", (e) => {
   const req = e.request; if (req.method !== "GET") return;
   const u = new URL(req.url);
+  if (u.origin === location.origin && u.pathname.endsWith("/bank/tasks.site.json")) return e.respondWith(bank(req));
   if (u.origin === location.origin) {
     if (req.mode === "navigate" || u.pathname.endsWith("/" + LINE + "/") || u.pathname.endsWith("/index.html")) return e.respondWith(page(req));
     if (u.pathname.endsWith(".pdf")) return e.respondWith(pdf(req));
