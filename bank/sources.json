@@ -307,8 +307,8 @@
   "url": "https://www.euroekonom.sk/download2/testy-prijimacky-vs-matematika/Matematika-HFTU-Liberec-PrZk-FH89_var4.pdf",
   "status": "nestaženo (síť)",
   "note": "Varianta 6: https://www.euroekonom.sk/download2/testy-prijimacky-vs-matematika/Matematika-HFTU-Liberec-PrZk-FH89_var6.pdf",
-  "include": "ověřit",
-  "copyright": "kopie u třetí strany (euroekonom.sk), podmínky užití neznámé"
+  "include": false,
+  "copyright": "kopie u třetí strany (euroekonom.sk), podmínky užití neznámé; rozhodnutí: zatím nebrat"
  },
  {
   "id": "cermat-maplus",
