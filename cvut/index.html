@@ -785,6 +785,7 @@ body.line-cvut { --faint: #7A8FA4 }
 .pb-esol b { display: block; font-family: var(--f-display); font-size: 13px; color: var(--muted); margin-bottom: 2px }
 .pb-empty { display: grid; gap: 10px; justify-items: start; padding: 18px; border: 1px dashed var(--line); border-radius: 10px }
 .pb-ahead { font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; line-height: 1.4 }
+.pb-also { flex-basis: 100%; line-height: 1.4 }
 
 /* модуль на главной линии: во всю ширину, три колонки */
 .mod.bankmod { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) auto; grid-template-areas: "k v f" "h v f" "p v f" "n v f"; column-gap: 28px; row-gap: 8px; align-items: start }
@@ -1553,8 +1554,8 @@ const pbOpen = () => PB.all || [];
 // пройденные темы от текущей вниз, затем темы впереди по порядку, Ostatní в конце
 const pbRank = (t) => (!t.n ? 1000 : t.n <= latest.n ? latest.n - t.n : 100 + t.n);
 const pbAhead = (t) => t.n > latest.n;
-const PB_FAC_ORDER = ["FIT", "FEL", "FJFI", "FBMI", "FSv", "FS", "FD", "FEKT", "FSI", "FAST", "FMV/FFÚ/FPH", "KMAT", "FIS"];
-const pbFacName = (f) => { const t = (PB.all || []).find((x) => x.fac === f); return f + " " + (t ? t.uni : LINE); };
+const PB_FAC_ORDER = ["FIT", "FEL", "FJFI", "FBMI", "FSv", "FS", "FD", "FEKT", "FSI", "FAST", "FBI", "VŠCHT", "FP", "FMV", "FIS", "KMAT"];
+const pbFacName = (f) => { const t = (PB.all || []).find((x) => x.fac === f), u = t ? t.uni : LINE; return f === u ? f : f + " " + u; };
 const pbFacs = (ts) => [...new Set(ts.map((t) => t.fac))].sort((a, b) => (PB_FAC_ORDER.indexOf(a) + 1 || 99) - (PB_FAC_ORDER.indexOf(b) + 1 || 99));
 const pbOk = (t) => { const r = pbState[t.id]; return !!r && r.ok === true; };
 const pbDone = (t) => { const r = pbState[t.id]; return !!r && (r.a || r.ok != null); };
@@ -1585,7 +1586,7 @@ function bankModCard() {
     return modCard({ cls: "bankmod", k: "Тренировка", h: "Банк задач", p: "Настоящие задачи из вступительных тестов по всем темам курса — с уровнем сложности и решением.",
       note: PB.err ? "Не удалось загрузить задачи — нужен интернет." : "Загружаю задачи…", btn: PB.err ? "Повторить" : null, btnCls: "btn ghost", hash: "banka" });
   }
-  const open = pbOpen(), done = open.filter(pbDone).length, ok = open.filter(pbOk).length, facs = LINE === "ČVUT" ? pbFacs(open).join(", ") : LINE;
+  const open = pbOpen(), done = open.filter(pbDone).length, ok = open.filter(pbOk).length, unis = [...new Set(open.map((t) => t.uni))], facs = LINE !== "ČVUT" ? LINE : unis.length > 1 ? unis.join(", ") : pbFacs(open).join(", ");
   return modCard({ cls: "bankmod", k: "Тренировка", rd: `<b>${open.length}</b> ${plural(open.length, "задача", "задачи", "задач")} · ${facs}`, h: "Банк задач",
     vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов по всем темам курса. Фильтр по уровню и теме, к каждой — короткое решение.",
     note: done ? `Решено <b>${done} / ${open.length}</b> · верно <b>${ok}</b>` : `Все задачи открыты — начните с уровня 1`,
@@ -1672,6 +1673,7 @@ function pbCard(t, onChange) {
   const card = el("article", "etask pb-task"); card.id = "pb-" + t.id;
   const eh = el("div", "eh"); eh.append(el("b", null, t.n ? `Téma ${t.n}` : "Ostatní")); const src = el("span"); src.textContent = t.src; eh.append(src);
   const meta = el("div", "pb-meta"); meta.append(pbPips(t.level)); if (pbAhead(t)) meta.append(el("span", "pb-ahead", "тема ещё впереди"));
+  if (t.also_in && t.also_in.length) meta.append(el("span", "pb-also", "Также: " + t.also_in.join("; ")));
   const bd = el("div", "ebody"); bd.innerHTML = t.body;
   const res = el("div", "pb-res");
   const focusRes = () => { res.tabIndex = -1; res.focus(); }; // keyboard / screen reader land on the verdict and solution

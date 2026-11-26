@@ -45,26 +45,31 @@ def body_points(n):
 
 
 def src_line(t):
-    """Подпись источника в том же стиле, что уже используется на сайте."""
+    """Подпись источника для сайта и обзора."""
     fid = FIDELITY[t["fidelity"]]
+    pts = f", {t['points']} {body_points(t['points'])}" if t.get("points") else ""
     if t["faculty"] == "FIT":
-        inner = f"příklad {t['num']}, {t['points']} {body_points(t['points'])}" + (f"; {fid}" if fid else "")
-        return f"FIT ČVUT, vzorová přijímací zkouška {t['year']} ({inner})"
+        v = f", {t['verze']}" if t.get("verze") else ""
+        inner = f"příklad {t['num']}{pts}" + (f"; {fid}" if fid else "")
+        return f"FIT ČVUT, vzorová přijímací zkouška pro rok {t['year']}{v} ({inner})"
     if t["faculty"] == "FEL":
-        parts = ([f"příklad {t['num']}"] if t["num"] else []) + ([fid] if fid else [])
+        parts = ([f"příklad {t['num']}{pts}"] if t["num"] else []) + ([fid] if fid else [])
         return "FEL ČVUT, vzorový přijímací test VZOR01" + (f" ({'; '.join(parts)})" if parts else "")
     if t["faculty"] == "FBMI":
         parts = ([f"úloha {t['num']}"] if t["num"] else []) + ([fid] if fid else [])
-        return "FBMI ČVUT, přijímací zkouška Bc 2020/21" + (f" ({'; '.join(parts)})" if parts else "")
-    if t["uni"] == "VŠE":
-        parts = ([f"{t.get('num_word', 'úloha')} {t['num']}" + (f", {t['points']} {body_points(t['points'])}" if t.get("points") else "")] if t["num"] else []) + ([fid] if fid else [])
-        return f"VŠE, {t['exam_short']}" + (f" ({'; '.join(parts)})" if parts else "")
+        return "FBMI ČVUT, vzorové testové příklady Bc 2020/21" + (f" ({'; '.join(parts)})" if parts else "")
+    if t["uni"] == "VŠE" or t.get("exam_short"):
+        who = "VŠE" if t["uni"] == "VŠE" else t["faculty"] if t["faculty"] == t["uni"] else f"{t['faculty']} {t['uni']}"
+        parts = ([f"{t.get('num_word', 'úloha')} {t['num']}{pts}"] if t["num"] else []) + ([fid] if fid else [])
+        return f"{who}, {t['exam_short']}" + (f" ({'; '.join(parts)})" if parts else "")
     num = f", úloha {t['num']}" if t.get("num") else ""
     return f"{t['faculty']} {t['uni']}, {t['exam']}{num}" + (f" ({fid})" if fid else "")
 
 
 def src_url(t):
     """Ссылка на конкретный PDF: для FIT — по году (только для годов, подтверждённых поиском)."""
+    if t.get("url"):
+        return t["url"]
     src = SOURCES[t["source"]]
     if src.get("url_pattern") and t.get("year") in src.get("years_confirmed", []):
         return src["url_pattern"].replace("RRRR", str(t["year"]))
@@ -85,6 +90,8 @@ def site_item(t, q):
     if t.get("sol"):
         out["sol"] = tex_to_spans(t["sol"])
     out.update(id=t["id"], uni=t["uni"], fac=t["faculty"], level=t["level"], topics=t["topics"], needs_original=t["needs_original"])
+    if t.get("also_in"):
+        out["also_in"] = t["also_in"]
     return out
 
 
@@ -139,6 +146,8 @@ def main():
             lines += [f"### {mark}`{t['id']}` — [{src_line(t)}]({url})" if url else f"### {mark}`{t['id']}` — {src_line(t)}", "",
                       f"*Темы:* {topics} · *Текст:* {FIDELITY_RU[t['fidelity']]}" + (f" · *В курсе:* {t['in_course']}" if t.get("in_course") else ""), "",
                       t["body"], ""]
+            if t.get("also_in"):
+                lines[-2:-1] = [lines[-2], "", "*Встречается также:* " + "; ".join(t["also_in"])]
             if t["type"] == "mc":
                 lines += [f"- **{L})** {o}" for L, o in zip(t["letters"], t["opts"])] + [""]
             ans = (f"**{t['key']}** — " if t["type"] == "mc" else "") + t["answer"]

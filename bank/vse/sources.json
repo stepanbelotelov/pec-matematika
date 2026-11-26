@@ -6,11 +6,11 @@
   "kind": "vzorový test",
   "title": "Vzorový test pro přijímací zkoušky z matematiky – FMV (tytéž úlohy ve vzoru FFÚ a FPH)",
   "years": "aktuální",
-  "format": "výběr z 5 možností a)–e), poslední „Žádná z předchozích možností“; část „Příklady za 60 bodů – 5 příkladů“ a příklady za 10 bodů",
-  "answers": "neověřeno",
+  "format": "výběr z 5 možností a)–e); příklady 1–5 a 6–7 s poslední možností „jiná odpověď“, příklady 11–14 se „Žádná z předchozích možností.“; bodování FMV 60/150/100, FFÚ a FPH 6/15/10",
+  "answers": "správná možnost vyznačena červeně",
   "url": "https://www.vse.cz/wp-content/uploads/page/153/MAT_vzor-fmv.pdf",
-  "status": "částečně v bance (5 úloh z kurzu); originál nestažen",
-  "note": "Vzor FFÚ a FPH: https://fph.vse.cz/wp-content/uploads/MAT_vzor-ffu-a-fph.pdf",
+  "status": "v bance celý (11 příkladů: 1–7, 11–14)",
+  "note": "Vzor FFÚ a FPH (https://fph.vse.cz/wp-content/uploads/MAT_vzor-ffu-a-fph.pdf) má stejné příklady i čísla, liší se jen body (6/15/10); v bance je uveden v poli also_in.",
   "include": true,
   "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno"
  },
@@ -21,10 +21,10 @@
   "kind": "vzorový test",
   "title": "Vzorový test pro přijímací zkoušky z matematiky – FIS",
   "years": "aktuální",
-  "format": "neověřeno",
-  "answers": "neověřeno",
+  "format": "výběr z 5 možností a)–e); příklady 1–8 po 5 bodech, 9–14 po 10 bodech",
+  "answers": "správná možnost vyznačena červeně",
   "url": "https://www.vse.cz/wp-content/uploads/page/153/MAT_vzor-fis.pdf",
-  "status": "nestaženo (síť)",
+  "status": "v bance: příklady 6–8 samostatně; 1–5 a 9–14 jsou tytéž jako ve vzoru FMV (1–7, 11–14) a jsou uvedeny v poli also_in",
   "include": true,
   "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno"
  },
@@ -36,11 +36,12 @@
   "title": "Vzor přijímacích zkoušek A (katedra matematiky VŠE)",
   "years": "aktuální",
   "format": "výběr z 5 možností a)–e), poslední „jiná odpověď“; mj. úpravy výrazů, vlastnosti funkcí, slovní úlohy s odpovědí v intervalu",
-  "answers": "neověřeno",
+  "answers": "verze testu s vyznačenými výsledky (KMAT VŠE, autorka Jana Pasáčková) — všech 11 našich odpovědí s ní sedí; úloha 2 (s grafem) má klíč c)",
   "url": "https://www.vse.cz/wp-content/uploads/page/2128/test-A.pdf",
-  "status": "částečně v bance (úlohy z kurzu); originál nestažen",
+  "status": "v bance 11 úloh (1, 3–12); úloha 2 s grafem funkce vynechána, web zatím obrázky neumí",
   "include": true,
-  "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno"
+  "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno",
+  "note": "Intervaly jsou v originále sázeny znaky „<“ a „>“ (např. „<0; 9>“); v bance zapsány jako ⟨ ⟩."
  },
  {
   "id": "vse-kmat-b",
@@ -50,11 +51,12 @@
   "title": "Vzor přijímacích zkoušek B (katedra matematiky VŠE)",
   "years": "aktuální",
   "format": "výběr z 5 možností a)–e), poslední „jiná odpověď“; mj. úpravy výrazů, vlastnosti funkcí, slovní úlohy s odpovědí v intervalu",
-  "answers": "neověřeno",
+  "answers": "verze testu s vyznačenými výsledky (KMAT VŠE, autorka Jana Pasáčková) — všech 11 našich odpovědí s ní sedí; úloha 2 (s grafem) má klíč b)",
   "url": "https://vse.cz/wp-content/uploads/page/2128/test-B.pdf",
-  "status": "částečně v bance (úlohy z kurzu); originál nestažen",
+  "status": "v bance 11 úloh (1, 3–12); úloha 2 s grafem funkce vynechána, web zatím obrázky neumí",
   "include": true,
-  "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno"
+  "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno",
+  "note": "Intervaly jsou v originále sázeny znaky „<“ a „>“ (např. „<0; 9>“); v bance zapsány jako ⟨ ⟩."
  },
  {
   "id": "vse-podminky",
@@ -128,5 +130,27 @@
   "status": "jen katalog",
   "include": false,
   "copyright": "vlastní cvičné testy třetí strany, ne zadání VŠE"
+ },
+ {
+  "id": "klufa-2011",
+  "uni": "VŠE",
+  "faculty": "—",
+  "kind": "placená kniha",
+  "title": "Jindřich Klůfa: Matematika k přijímacím zkouškám na VŠE — úplný soubor variant použitých v roce 2011",
+  "years": "2011",
+  "include": false,
+  "copyright": "vydaná kniha; obsahuje reálné varianty 2011, ale bez svolení nakladatele/autora je nepřebíráme",
+  "status": "do banky nebereme"
+ },
+ {
+  "id": "sbirka-vse",
+  "uni": "VŠE",
+  "faculty": "—",
+  "kind": "sbírka (kniha)",
+  "title": "Sbírka příkladů z matematiky k přijímacím zkouškám na VŠE",
+  "years": "?",
+  "include": false,
+  "copyright": "vydaná sbírka; svolení k přebírání nemáme",
+  "status": "do banky nebereme"
  }
 ]
