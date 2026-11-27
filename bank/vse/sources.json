@@ -5,7 +5,7 @@
   "faculty": "FMV / FFÚ / FPH",
   "kind": "vzorový test",
   "title": "Vzorový test pro přijímací zkoušky z matematiky – FMV (tytéž úlohy ve vzoru FFÚ a FPH)",
-  "years": "aktuální",
+  "years": "2023 (na vse.cz «zadání a řešení (2023)»)",
   "format": "výběr z 5 možností a)–e); příklady 1–5 a 6–7 s poslední možností „jiná odpověď“, příklady 11–14 se „Žádná z předchozích možností.“; bodování FMV 60/150/100, FFÚ a FPH 6/15/10",
   "answers": "správná možnost vyznačena červeně",
   "url": "https://www.vse.cz/wp-content/uploads/page/153/MAT_vzor-fmv.pdf",
@@ -26,7 +26,8 @@
   "url": "https://www.vse.cz/wp-content/uploads/page/153/MAT_vzor-fis.pdf",
   "status": "v bance: příklady 6–8 samostatně; 1–5 a 9–14 jsou tytéž jako ve vzoru FMV (1–7, 11–14) a jsou uvedeny v poli also_in",
   "include": true,
-  "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno"
+  "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno",
+  "note": "FIS od přijímacího řízení 2027/28 přijímá jen podle NSZ Scio OSP/VŠP (https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/); vlastní test z matematiky nepíše."
  },
  {
   "id": "vse-kmat-a",
@@ -41,7 +42,8 @@
   "status": "v bance 11 úloh (1, 3–12); úloha 2 s grafem funkce vynechána, web zatím obrázky neumí",
   "include": true,
   "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno",
-  "note": "Intervaly jsou v originále sázeny znaky „<“ a „>“ (např. „<0; 9>“); v bance zapsány jako ⟨ ⟩."
+  "note": "Intervaly jsou v originále sázeny znaky „<“ a „>“ (např. „<0; 9>“); v bance zapsány jako ⟨ ⟩.",
+  "answers_url": "https://www.vse.cz/wp-content/uploads/page/153/test-A-s-vysledky.pdf"
  },
  {
   "id": "vse-kmat-b",
@@ -56,7 +58,8 @@
   "status": "v bance 11 úloh (1, 3–12); úloha 2 s grafem funkce vynechána, web zatím obrázky neumí",
   "include": true,
   "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno",
-  "note": "Intervaly jsou v originále sázeny znaky „<“ a „>“ (např. „<0; 9>“); v bance zapsány jako ⟨ ⟩."
+  "note": "Intervaly jsou v originále sázeny znaky „<“ a „>“ (např. „<0; 9>“); v bance zapsány jako ⟨ ⟩.",
+  "answers_url": "https://www.vse.cz/wp-content/uploads/page/153/test-B-s-vysledky.pdf"
  },
  {
   "id": "vse-podminky",
@@ -69,7 +72,7 @@
   "answers": "—",
   "url": "https://fmv.vse.cz/wp-content/uploads/page/982/podminky_prijeti_bakalari_2026_2027.pdf",
   "status": "jen pro kontext",
-  "note": "FIS: https://fis.vse.cz/wp-content/uploads/page/12263/Bc_Podminky-prijimaciho-rizeni-2026.pdf ; FM: https://fm.vse.cz/wp-content/uploads/page/11080/podminky-bc-26-27.pdf ; FPH: https://fph.vse.cz/wp-content/uploads/Vyhlaska_PR26_27_final.pdf ; NF: https://www.vse.cz/wp-content/uploads/page/5764/NF_bc.pdf",
+  "note": "FIS: https://fis.vse.cz/wp-content/uploads/page/12263/Bc_Podminky-prijimaciho-rizeni-2026.pdf ; FM: https://fm.vse.cz/wp-content/uploads/page/11080/podminky-bc-26-27.pdf ; FPH: https://fph.vse.cz/wp-content/uploads/Vyhlaska_PR26_27_final.pdf ; NF: https://www.vse.cz/wp-content/uploads/page/5764/NF_bc.pdf FPH 2027/28: https://fph.vse.cz/uchazeci/bakalarske-studium/prijimaci-zkousky/podminky-prijeti-do-bc-podnikova-ekonomika-a-management/ ; FIS 2027/28: https://fis.vse.cz/wp-content/uploads/page/12263/Bc_podminky-prijimaciho-rizeni-2027.pdf ; specifikace matematiky: https://www.vse.cz/zajemci-o-studium/bakalarske-obory/prijimaci-rizeni-a-prihlaska-ke-studiu/specifikace-obsahu-prijimacich-zkousek/matematika/",
   "include": false,
   "copyright": "jen informace o přijímacím řízení, bez úloh"
  },
@@ -152,5 +155,16 @@
   "include": false,
   "copyright": "vydaná sbírka; svolení k přebírání nemáme",
   "status": "do banky nebereme"
+ },
+ {
+  "id": "vse-cj-cizinci",
+  "uni": "VŠE",
+  "faculty": "KAJ (pro všechny fakulty)",
+  "kind": "související informace",
+  "title": "Vstupní test z českého jazyka pro cizince — vzorová verze",
+  "url": "https://fph.vse.cz/wp-content/uploads/Vzorov%C3%A1-verze-vstupn%C3%ADho-testu-z-%C4%8CJ.pdf",
+  "include": false,
+  "copyright": "—",
+  "status": "není matematika; odkaz pro uchazeče bez maturity z ČJ/SJ (min. 60 %, placený test KAJ VŠE)"
  }
 ]
