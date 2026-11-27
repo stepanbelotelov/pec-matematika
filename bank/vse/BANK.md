@@ -5103,7 +5103,7 @@ Maximální definiční obor funkce $f(x)=\log(x^2-7x)$ je:
 
 *Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
 
-Maximální definiční obor funkce $f(x)=\sqrt{1-\logx}$ je:
+Maximální definiční obor funkce $f(x)=\sqrt{1-\log x}$ je:
 
 - **a)** $\langle 1;10\rangle$
 - **b)** $\langle 1;10)$

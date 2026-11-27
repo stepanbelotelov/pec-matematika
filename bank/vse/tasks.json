@@ -9291,7 +9291,7 @@
   "fidelity": "own",
   "needs_original": false,
   "type": "mc",
-  "body": "Maximální definiční obor funkce $f(x)=\\sqrt{1-\\logx}$ je:",
+  "body": "Maximální definiční obor funkce $f(x)=\\sqrt{1-\\log x}$ je:",
   "sol": "Logaritmus je definován pro $x>0$ a musí platit $\\log(x)\\le1$, tj. $x\\le10$.",
   "topics": [
    12,
