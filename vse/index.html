@@ -1577,7 +1577,7 @@ function showBank() {
   // on phones the intro and the filters fold into one line each, so the first task is visible right away
   const BIG = matchMedia("(min-width: 761px) and (min-height: 501px)").matches;
   const about = el("details", "pb-fold pb-about"); about.open = BIG; const aSum = el("summary"); aSum.append(el("b", null, "Как устроен банк"));
-  about.append(aSum, el("p", "pb-intro", `Задачи из открытых образцов ${pbFacs(open).filter((k) => k !== "Vlastní").join(", ")}${open.some((t) => t.fac === "Vlastní") ? " и наши собственные задачи в стиле NSZ Matematika (кнопка «Vlastní»): их числа и формулировки свои, потому что тесты Scio защищены авторским правом" : ""} — по всем темам курса. Задачи тем, которые мы ещё не прошли, помечены «тема ещё впереди». Решите на бумаге и выберите ответ: сразу увидите, верно ли, и короткое решение. Без калькулятора, как на экзамене.`)); body.append(about);
+  about.append(aSum, el("p", "pb-intro", `Задачи из открытых образцов ${pbFacs(open).filter((k) => k !== "Vlastní").join(", ")}${open.some((t) => t.fac === "Vlastní") ? " и наши собственные задачи (кнопка «Vlastní») — того же типа, что в тестах и сборниках, защищённых авторским правом; числа, сюжеты и формулировки у них свои" : ""} — по всем темам курса. Задачи тем, которые мы ещё не прошли, помечены «тема ещё впереди». Решите на бумаге и выберите ответ: сразу увидите, верно ли, и короткое решение. Без калькулятора, как на экзамене.`)); body.append(about);
   const stat = el("div", "pb-stat"); body.append(stat);
   // фильтры
   const filt = el("div", "pb-filters"); filt.setAttribute("role", "group"); filt.setAttribute("aria-label", "Фильтры");

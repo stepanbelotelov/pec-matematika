@@ -2,7 +2,7 @@
 
 Файл собирается скриптом `bank/build.py` из `tasks.json` и `sources.json`; вручную не редактировать.
 
-Всего задач: **1079** · базовый: 643 · стандартный: 393 · сложный: 43 · Vlastní Vlastní: 216 · VUT FSI: 198 · ČVUT FIT: 195 · VUT FAST: 99 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FS: 71 · ČVUT FBMI: 40 · VŠB FAST: 35 · ČVUT FJFI: 24 · ČVUT FEL: 15 · ČVUT MÚVS: 10 · VŠCHT VŠCHT: 7 · TUL FP: 5
+Всего задач: **1356** · базовый: 755 · стандартный: 528 · сложный: 73 · Vlastní Vlastní: 493 · VUT FSI: 198 · ČVUT FIT: 195 · VUT FAST: 99 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FS: 71 · ČVUT FBMI: 40 · VŠB FAST: 35 · ČVUT FJFI: 24 · ČVUT FEL: 15 · ČVUT MÚVS: 10 · VŠCHT VŠCHT: 7 · TUL FP: 5
 
 ⚠ **0** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.
 
@@ -10,42 +10,42 @@
 
 | № | Тема | Ур. 1 | Ур. 2 | Ур. 3 | Всего |
 |---|---|---|---|---|---|
-| 1 | Množina. Podmnožina | 5 | 5 | 7 | 17 |
-| 2 | Mocnina. Odmocnina | 44 | 8 | 1 | 53 |
-| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 55 | 33 | 5 | 93 |
-| 4 | Rovnice s parametrem | 4 | 8 | 3 | 15 |
-| 5 | Rovnice s absolutní hodnotou | 7 | 11 |  | 18 |
-| 6 | Nerovnice. Soustava nerovnic | 31 | 9 | 2 | 42 |
-| 7 | Nerovnice s absolutní hodnotou | 15 | 12 |  | 27 |
-| 8 | Iracionální rovnice. Iracionální nerovnice | 23 | 11 |  | 34 |
-| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 39 | 22 |  | 61 |
-| 10 | Exponenciální funkce | 5 | 4 |  | 9 |
-| 11 | Exponenciální rovnice a nerovnice | 30 | 19 | 2 | 51 |
-| 12 | Logaritmická funkce | 22 | 14 |  | 36 |
-| 13 | Logaritmické rovnice a nerovnice | 9 | 27 | 1 | 37 |
-| 14 | Goniometrické funkce | 23 | 19 |  | 42 |
-| 15 | Goniometrické rovnice a nerovnice | 15 | 28 | 2 | 45 |
-| 16 | Komplexní čísla | 31 | 3 |  | 34 |
-| 17 | Goniometrický tvar komplexního čísla. Moivreova věta | 1 |  |  | 1 |
-| 18 | Posloupnosti | 2 | 2 |  | 4 |
-| 19 | Aritmetická posloupnost | 21 | 7 | 2 | 30 |
-| 20 | Geometrická posloupnost | 16 | 10 | 3 | 29 |
+| 1 | Množina. Podmnožina | 8 | 6 | 7 | 21 |
+| 2 | Mocnina. Odmocnina | 53 | 12 | 1 | 66 |
+| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 59 | 37 | 5 | 101 |
+| 4 | Rovnice s parametrem | 4 | 13 | 10 | 27 |
+| 5 | Rovnice s absolutní hodnotou | 7 | 13 |  | 20 |
+| 6 | Nerovnice. Soustava nerovnic | 36 | 10 | 2 | 48 |
+| 7 | Nerovnice s absolutní hodnotou | 19 | 18 | 2 | 39 |
+| 8 | Iracionální rovnice. Iracionální nerovnice | 23 | 13 |  | 36 |
+| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 51 | 31 |  | 82 |
+| 10 | Exponenciální funkce | 6 | 4 |  | 10 |
+| 11 | Exponenciální rovnice a nerovnice | 33 | 23 | 2 | 58 |
+| 12 | Logaritmická funkce | 28 | 18 |  | 46 |
+| 13 | Logaritmické rovnice a nerovnice | 10 | 30 | 3 | 43 |
+| 14 | Goniometrické funkce | 33 | 22 |  | 55 |
+| 15 | Goniometrické rovnice a nerovnice | 15 | 36 | 3 | 54 |
+| 16 | Komplexní čísla | 37 | 8 |  | 45 |
+| 17 | Goniometrický tvar komplexního čísla. Moivreova věta | 1 | 5 | 1 | 7 |
+| 18 | Posloupnosti | 4 | 3 | 1 | 8 |
+| 19 | Aritmetická posloupnost | 25 | 11 | 2 | 38 |
+| 20 | Geometrická posloupnost | 20 | 12 | 4 | 36 |
 | 21 | Kombinatorika. Faktoriál | 5 | 2 | 1 | 8 |
-| 22 | Variace. Permutace. Kombinace | 14 | 26 | 1 | 41 |
-| 23 | Kombinační číslo. Binomická věta | 3 | 2 | 1 | 6 |
-| 24 | Pravděpodobnost | 8 | 9 | 1 | 18 |
-| 25 | Analytická geometrie. Vektory |  | 3 |  | 3 |
+| 22 | Variace. Permutace. Kombinace | 16 | 30 | 1 | 47 |
+| 23 | Kombinační číslo. Binomická věta | 3 | 3 | 1 | 7 |
+| 24 | Pravděpodobnost | 9 | 11 | 1 | 21 |
+| 25 | Analytická geometrie. Vektory | 4 | 5 | 1 | 10 |
 | 26 | Parametrická rovnice přímky | 3 |  |  | 3 |
-| 27 | Obecná rovnice přímky | 21 | 9 | 1 | 31 |
-| 28 | Vzájemná poloha přímek | 10 |  |  | 10 |
+| 27 | Obecná rovnice přímky | 23 | 13 | 3 | 39 |
+| 28 | Vzájemná poloha přímek | 12 | 4 |  | 16 |
 | 29 | Směrnicový a úsekový tvar rovnice přímky | 5 | 1 |  | 6 |
-| 30 | Kuželosečky. Kružnice | 19 | 8 | 1 | 28 |
-| 31 | Elipsa | 6 | 3 |  | 9 |
-| 32 | Hyperbola | 3 | 1 |  | 4 |
-| 33 | Parabola | 6 |  |  | 6 |
-| 34 | Planimetrie | 30 | 10 | 1 | 41 |
-| 35 | Stereometrie | 20 | 9 | 2 | 31 |
-| — | Ostatní | 92 | 58 | 6 | 156 |
+| 30 | Kuželosečky. Kružnice | 20 | 12 | 2 | 34 |
+| 31 | Elipsa | 6 | 6 | 1 | 13 |
+| 32 | Hyperbola | 3 | 2 |  | 5 |
+| 33 | Parabola | 6 | 3 | 1 | 10 |
+| 34 | Planimetrie | 37 | 18 | 8 | 63 |
+| 35 | Stereometrie | 24 | 23 | 4 | 51 |
+| — | Ostatní | 107 | 70 | 6 | 183 |
 
 Задача считается по основной (первой) теме; дополнительные темы указаны в карточке. «Ostatní» — задачи вне 35 тем плана.
 
@@ -119,6 +119,36 @@ Jsou dány intervaly $A=(1,+\infty)$, $B=\langle0,3)$. Určete jejich sjednocen�
 
 </details>
 
+### `vl-obec-020` — Vlastní úloha ve stylu přijímacích testů (č. 20)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro množiny $A$, $B$, $C$ platí $A\subset B$ a $C\subset B$. Který z uvedených vztahů nemusí platit?
+
+- **a)** $A\cup B=B$
+- **b)** $C\cap B=C$
+- **c)** $A\cup C\subseteq B$
+- **d)** $A\cap C=\emptyset$
+- **e)** $(C\setminus A)\subseteq(B\setminus A)$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $A\cap C=\emptyset$. Množiny $A$ a $C$ mohou mít společné prvky (např. $A=C$).
+
+</details>
+
+### `vl-obec-052` — Vlastní úloha ve stylu přijímacích testů (č. 52)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jsou dány množiny $A=\{x\in\mathbb Z;\ -2<x\le2\}$ a $B=\langle-1;3)$. Určete $A\cap B$ a $A\setminus B$.
+
+<details><summary>Ответ и решение</summary>
+
+$A\cap B=\{-1;0;1;2\}$, $A\setminus B=\emptyset$. $A=\{-1;0;1;2\}$ a všechny prvky leží v $B$.
+
+</details>
+
 ### `vl-nsz-074` — [Vlastní úloha ve stylu NSZ Matematika (č. 74)](https://www.scio.cz/matematika)
 
 *Темы:* 1. Množina. Podmnožina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -133,6 +163,24 @@ Rozdílem množiny všech celých čísel a množiny všech sudých celých čí
 <details><summary>Ответ и решение</summary>
 
 **a** — množina všech lichých celých čísel. V $\mathbb Z$ zbudou po odebrání sudých právě lichá čísla, kladná i záporná.
+
+</details>
+
+### `vl-obec-088` — Vlastní úloha ve stylu přijímacích testů (č. 88)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik celých čísel obsahuje množina $\left(-\frac72;\sqrt{10}\right)\cap\langle-1;5\rangle$?
+
+- **a)** $3$
+- **b)** $4$
+- **c)** $5$
+- **d)** $6$
+- **e)** $7$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $5$. Průnik je $\langle-1;\sqrt{10})$, celá čísla $-1,0,1,2,3$.
 
 </details>
 
@@ -895,6 +943,78 @@ Výraz $\sqrt y\cdot\sqrt[3]{y^{-2}}\cdot\sqrt[6]{y^3}$ je pro $y>0$ roven
 
 </details>
 
+### `vl-obec-009` — Vlastní úloha ve stylu přijímacích testů (č. 9)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Číslo $\dfrac{\sqrt[3]9\cdot\sqrt[6]{3}}{\sqrt3\cdot\sqrt[3]3}$ je rovno číslu:
+
+- **a)** $\sqrt3$
+- **b)** $\sqrt[3]3$
+- **c)** $1$
+- **d)** $3$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $1$. V mocninách trojky: $\frac23+\frac16-\frac12-\frac13=0$, výsledek $3^0=1$.
+
+</details>
+
+### `vl-obec-026` — Vlastní úloha ve stylu přijímacích testů (č. 26)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Číslo $2^5\cdot5^7\cdot3^2$ se rovná číslu:
+
+- **a)** $2{,}25\cdot10^5$
+- **b)** $2{,}25\cdot10^6$
+- **c)** $2{,}25\cdot10^7$
+- **d)** $2{,}25\cdot10^8$
+- **e)** $22{,}5\cdot10^7$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $2{,}25\cdot10^7$. $2^5\cdot5^5=10^5$ a zbývá $5^2\cdot3^2=225$.
+
+</details>
+
+### `vl-obec-034` — Vlastní úloha ve stylu přijímacích testů (č. 34)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Číslo $\dfrac{\sqrt[3]{11}\cdot\sqrt{11}}{\sqrt{11}}$ je rovno číslu:
+
+- **a)** $11^{\dfrac{2}{3}}$
+- **b)** $\dfrac{11^{\dfrac{2}{3}}}{11}$
+- **c)** $\sqrt[3]{11}$
+- **d)** $11^{\dfrac{5}{6}}$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\sqrt[3]{11}$. Exponenty: $\dfrac{1}{3}+\dfrac{1}{2}-\dfrac{1}{2}=\dfrac{1}{3}$.
+
+</details>
+
+### `vl-obec-040` — Vlastní úloha ve stylu přijímacích testů (č. 40)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Hodnota výrazu $\left(\sqrt3\right)^2+\sqrt{3^4}+\left(\sqrt3\right)^4+\sqrt{3^6}$ je:
+
+- **a)** $24$
+- **b)** $36$
+- **c)** $48$
+- **d)** $54$
+- **e)** $81$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $48$. $3+9+9+27$.
+
+</details>
+
 ### `vl-nsz-067` — [Vlastní úloha ve stylu NSZ Matematika (č. 67)](https://www.scio.cz/matematika)
 
 *Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -912,6 +1032,66 @@ Upravte na součin mocnin prvočísel: $(12^3\cdot25^2\cdot18):(6^4\cdot10)$
 
 </details>
 
+### `vl-obec-071` — Vlastní úloha ve stylu přijímacích testů (č. 71)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Zjednodušte výraz $\dfrac{\sqrt[4]x\cdot\sqrt x}{\sqrt[6]x\cdot\sqrt[3]x}$ pro $x>0$.
+
+<details><summary>Ответ и решение</summary>
+
+$\sqrt[4]x$. $\frac14+\frac12-\frac16-\frac13=\frac14$.
+
+</details>
+
+### `vl-obec-074` — Vlastní úloha ve stylu přijímacích testů (č. 74)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Číslo $\dfrac{8^{3}\cdot4^{-2}}{2^{5}}$ je rovno:
+
+- **a)** $\dfrac12$
+- **b)** $1$
+- **c)** $2$
+- **d)** $4$
+- **e)** $8$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $1$. $2^{9-4-5}=2^0$.
+
+</details>
+
+### `vl-obec-086` — Vlastní úloha ve stylu přijímacích testů (č. 86)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kladné číslo $x$, jehož třetí mocnina je $5^{12}$, vydělíme druhou mocninou čísla $5^3$ a dostaneme číslo $y$. Hodnota $y$ je:
+
+- **a)** $\dfrac1{25}$
+- **b)** $\dfrac15$
+- **c)** $1$
+- **d)** $5$
+- **e)** $25$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac1{25}$. $x=5^4$, $y=\frac{5^4}{5^6}$.
+
+</details>
+
+### `vl-cvut-106` — Vlastní úloha ve stylu přijímaček ČVUT (č. 106)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Za předpokladu $a>0$ zjednodušte $\sqrt[3]{a^2\sqrt a}\cdot\sqrt[6]{a}$.
+
+<details><summary>Ответ и решение</summary>
+
+$a$. $a^{\frac13(2+\frac12)}\cdot a^{\frac16}=a^{\frac56+\frac16}$.
+
+</details>
+
 ### `vl-nsz-107` — [Vlastní úloha ve stylu NSZ Matematika (č. 107)](https://www.scio.cz/matematika)
 
 *Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -926,6 +1106,24 @@ Operace $*$ je definována vztahem $a*b=a^b+b^a$. Čemu se rovná $2*(-1)$?
 <details><summary>Ответ и решение</summary>
 
 **c** — $\dfrac32$. $2^{-1}+(-1)^2=\frac12+1$.
+
+</details>
+
+### `vl-cvut-117` — Vlastní úloha ve stylu přijímaček ČVUT (č. 117)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro každé $x>0$ je výraz $\dfrac{\sqrt{x\cdot\sqrt[3]x}}{\sqrt[6]x}$ roven
+
+- **a)** $x^{\frac12}$
+- **b)** $x^{\frac23}$
+- **c)** $x$
+- **d)** $x^{\frac13}$
+- **e)** $x^{\frac56}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x^{\frac12}$. $\frac12\cdot\frac43-\frac16=\frac12$.
 
 </details>
 
@@ -1642,6 +1840,18 @@ Krabička čaje obsahuje $C$ sáčků, krabička kávy $K$ kapslí. Platí $\dfr
 
 </details>
 
+### `vl-obec-013` — Vlastní úloha ve stylu přijímacích testů (č. 13)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Ze vztahu $1-\dfrac3x=\dfrac b{cx}$ ($x\ne0$, $c\ne0$) vyjádřete $x$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=3+\dfrac bc$. Vynásobíme $cx$: $cx-3c=b$.
+
+</details>
+
 ### `vl-nsz-035` — [Vlastní úloha ve stylu NSZ Matematika (č. 35)](https://www.scio.cz/matematika)
 
 *Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -1673,6 +1883,36 @@ Písmena označují ceny ovoce v korunách: $J$ — jablko, $H$ — hruška, $B$
 <details><summary>Ответ и решение</summary>
 
 **a** — Banán je pětkrát dražší než jablko.. $H=2J$, tedy $B=3H-J=6J-J=5J$.
+
+</details>
+
+### `vl-obec-103` — Vlastní úloha ve stylu přijímacích testů (č. 103)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Z Plzně vyjel v 7:00 nákladní vůz rychlostí 50 km/h. V 7:45 za ním ze stejného místa vyjel osobní vůz rychlostí 80 km/h. V kolik hodin ho dohoní?
+
+<details><summary>Ответ и решение</summary>
+
+v 9:00. Náskok $37{,}5$ km, rozdíl rychlostí $30$ km/h: $1{,}25$ h po 7:45.
+
+</details>
+
+### `vl-obec-106` — Vlastní úloha ve stylu přijímacích testů (č. 106)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kořeny rovnice $x^2-x-12=0$ jsou $x_1$, $x_2$. Hodnota $x_1^2+x_2^2$ je:
+
+- **a)** $1$
+- **b)** $13$
+- **c)** $24$
+- **d)** $25$
+- **e)** $145$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $25$. $(x_1+x_2)^2-2x_1x_2=1+24$.
 
 </details>
 
@@ -1758,6 +1998,18 @@ Proměnná $x$ může nabývat hodnot $-4,-3,-1,0,1,2,4$. Pro kolik z nich má v
 <details><summary>Ответ и решение</summary>
 
 **c** — $2$. $x^2(x-2)-9(x-2)=(x-2)(x-3)(x+3)$; ze seznamu vyhovují $-3$ a $2$.
+
+</details>
+
+### `vl-cvut-158` — Vlastní úloha ve stylu přijímaček ČVUT (č. 158)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte rovnici $\dfrac{x-1}3-\dfrac{x+2}4=\dfrac{x}6-1$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=2$. Vynásobíme 12: $4x-4-3x-6=2x-12$.
 
 </details>
 
@@ -2510,6 +2762,48 @@ Výraz $\dfrac{2x-4}{9-3x}$ je kladný pro
 
 </details>
 
+### `vl-cvut-019` — Vlastní úloha ve stylu přijímaček ČVUT (č. 19)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte nerovnici $\dfrac{x+2}{x-3}\ge2$.
+
+<details><summary>Ответ и решение</summary>
+
+$(3;8\rangle$. $\frac{8-x}{x-3}\ge0$.
+
+</details>
+
+### `vl-obec-033` — Vlastní úloha ve stylu přijímacích testů (č. 33)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik řešení má nerovnice $(x+3)(3x-11)\le0$ v množině celých kladných čísel?
+
+<details><summary>Ответ и решение</summary>
+
+$3$ (čísla 1, 2, 3). $x\in\left\langle-3;\frac{11}3\right\rangle$.
+
+</details>
+
+### `vl-obec-080` — Vlastní úloha ve stylu přijímacích testů (č. 80)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešením nerovnice $\dfrac{3x-2}{x+2}<2$ je:
+
+- **a)** $x\in(-2;6)$
+- **b)** $x\in(6;\infty)$
+- **c)** $x\in(-\infty;-2)\cup(6;\infty)$
+- **d)** $x\in\langle-2;6)$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x\in(-2;6)$. $\frac{3x-2-2x-4}{x+2}=\frac{x-6}{x+2}<0$.
+
+</details>
+
 ### `vl-nsz-092` — [Vlastní úloha ve stylu NSZ Matematika (č. 92)](https://www.scio.cz/matematika)
 
 *Темы:* 6. Nerovnice. Soustava nerovnic, 4. Rovnice s parametrem · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -2527,6 +2821,24 @@ Interval $\langle-1;5\rangle$ je množinou všech řešení nerovnice $x^2-4x+c\
 
 </details>
 
+### `vl-obec-105` — Vlastní úloha ve stylu přijímacích testů (č. 105)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množinou všech řešení nerovnice $x^2\le4x$ je:
+
+- **a)** $\langle0;4\rangle$
+- **b)** $(-\infty;4\rangle$
+- **c)** $(0;4)$
+- **d)** $\langle4;\infty)$
+- **e)** $(-\infty;0\rangle\cup\langle4;\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\langle0;4\rangle$. $x(x-4)\le0$.
+
+</details>
+
 ### `vl-nsz-110` — [Vlastní úloha ve stylu NSZ Matematika (č. 110)](https://www.scio.cz/matematika)
 
 *Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -2541,6 +2853,18 @@ Množinou všech řešení nerovnice $\dfrac{3x-1}{x-3}<2$ je:
 <details><summary>Ответ и решение</summary>
 
 **a** — $(-5,3)$. $\frac{3x-1-2(x-3)}{x-3}=\frac{x+5}{x-3}<0$.
+
+</details>
+
+### `vl-cvut-127` — Vlastní úloha ve stylu přijímaček ČVUT (č. 127)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte nerovnici $x^2-5x+4\le0$.
+
+<details><summary>Ответ и решение</summary>
+
+$\langle1;4\rangle$. $(x-1)(x-4)\le0$.
 
 </details>
 
@@ -2825,6 +3149,78 @@ Nerovnice $\sqrt{x^2}-1<0$ má řešení
 <details><summary>Ответ и решение</summary>
 
 **e** — nerovnice nemá řešení
+
+</details>
+
+### `vl-cvut-004` — Vlastní úloha ve stylu přijímaček ČVUT (č. 4)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech řešení nerovnice $|x-4|<|x+2|$ je
+
+- **a)** $(1,\infty)$
+- **b)** $(-\infty,1)$
+- **c)** $(-2,1)$
+- **d)** $(1,4)$
+- **e)** $\langle4,\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(1,\infty)$. Body bližší k 4 než k $-2$: napravo od středu $1$.
+
+</details>
+
+### `vl-obec-021` — Vlastní úloha ve stylu přijímacích testů (č. 21)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech reálných $x$, pro která platí $|x+2|>2$, je:
+
+- **a)** $(-4;0)$
+- **b)** $\langle -4;0\rangle$
+- **c)** $(-\infty;-4\rangle\cup\langle 0;\infty)$
+- **d)** $(0;4)$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z ostatních odpovědí není správná.. Vzdálenost čísla $x$ od $(-2)$ je větší než 2. Mezi možnostmi a)–d) tento výsledek není, správně je tedy e).
+
+</details>
+
+### `vl-obec-058` — Vlastní úloha ve stylu přijímacích testů (č. 58)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešením nerovnice $|x+1|\ge4$ je:
+
+- **a)** $x\in(-\infty;-5\rangle\cup\langle3;\infty)$
+- **b)** $x\in\langle-5;3\rangle$
+- **c)** $x\in(-\infty;3\rangle$
+- **d)** $x\in\langle3;\infty)$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x\in(-\infty;-5\rangle\cup\langle3;\infty)$. $x+1\ge4$ nebo $x+1\le-4$.
+
+</details>
+
+### `vl-cvut-092` — Vlastní úloha ve stylu přijímaček ČVUT (č. 92)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množinou všech řešení nerovnice $|2-5x|>3$ je
+
+- **a)** $\left(-\infty,-\frac15\right)\cup(1,\infty)$
+- **b)** $\left(-\frac15,1\right)$
+- **c)** $(1,\infty)$
+- **d)** $\left(-\infty,-\frac15\right\rangle\cup\langle1,\infty)$
+- **e)** $(-\infty,-1)\cup\left(\frac15,\infty\right)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\left(-\infty,-\frac15\right)\cup(1,\infty)$. $2-5x>3$ nebo $2-5x<-3$.
 
 </details>
 
@@ -3646,6 +4042,24 @@ Určete definiční obor funkce $f(x)=e^x+\sqrt{(1-x)}$
 
 </details>
 
+### `vl-obec-008` — Vlastní úloha ve stylu přijímacích testů (č. 8)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Obor hodnot funkce $y=-x^2+4x$ je:
+
+- **a)** $(-\infty;4\rangle$
+- **b)** $\langle4;\infty)$
+- **c)** $\mathbb R$
+- **d)** $(-\infty;2\rangle$
+- **e)** $\langle0;4\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(-\infty;4\rangle$. $y=-(x-2)^2+4$.
+
+</details>
+
 ### `vl-nsz-016` — [Vlastní úloha ve stylu NSZ Matematika (č. 16)](https://www.scio.cz/matematika)
 
 *Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -3660,6 +4074,24 @@ Kladná veličina $X$ závisí jen na kladné veličině $Y$ vztahem $X=\dfrac K
 <details><summary>Ответ и решение</summary>
 
 **b** — $X^2\cdot Y$. $X^2=\frac{K^2}Y$, tedy $X^2Y=K^2$.
+
+</details>
+
+### `vl-cvut-022` — Vlastní úloha ve stylu přijímaček ČVUT (č. 22)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Které tvrzení o grafu funkce $f:\ y=\left|(x-2)^2+1\right|$ platí?
+
+- **a)** Je to parabola s vrcholem $[2;1]$.
+- **b)** Graf protíná osu $x$ ve dvou bodech.
+- **c)** Je to parabola s vrcholem $[-2;1]$.
+- **d)** Graf má tvar písmene W.
+- **e)** žádná z uvedených možností
+
+<details><summary>Ответ и решение</summary>
+
+**a** — Je to parabola s vrcholem $[2;1]$.. $(x-2)^2+1>0$, absolutní hodnota nic nemění.
 
 </details>
 
@@ -3697,6 +4129,60 @@ Funkce $f:\ y=2x^2-8x+3$ má:
 
 </details>
 
+### `vl-cvut-051` — Vlastní úloha ve stylu přijímaček ČVUT (č. 51)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Napište lineární funkci, jejíž graf je rovnoběžný s přímkou $y=3x-1$ a prochází bodem $[2;4]$. Určete její průsečík s osou $x$.
+
+<details><summary>Ответ и решение</summary>
+
+$y=3x-2$; průsečík $\left[\frac23;0\right]$. Směrnice 3, z bodu $[2;4]$: $b=-2$.
+
+</details>
+
+### `vl-cvut-056` — Vlastní úloha ve stylu přijímaček ČVUT (č. 56)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete definiční obor funkce $f:\ y=\dfrac{\sqrt{4-x}}{x+1}$.
+
+<details><summary>Ответ и решение</summary>
+
+$(-\infty;-1)\cup(-1;4\rangle$. $4-x\ge0$ a $x\ne-1$.
+
+</details>
+
+### `vl-cvut-071` — Vlastní úloha ve stylu přijímaček ČVUT (č. 71)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete definiční obor funkce $f:\ y=(x^2-9)^{-\frac12}$.
+
+<details><summary>Ответ и решение</summary>
+
+$(-\infty;-3)\cup(3;\infty)$. Mocnina s exponentem $-\frac12$ je $\frac1{\sqrt{x^2-9}}$.
+
+</details>
+
+### `vl-cvut-074` — Vlastní úloha ve stylu přijímaček ČVUT (č. 74)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro které $a$, $b$ je funkce $f(x)=ax+b$ klesající a její graf protíná osu $y$ nad počátkem?
+
+- **a)** $a<0$, $b>0$
+- **b)** $a>0$, $b>0$
+- **c)** $a<0$, $b<0$
+- **d)** $a>0$, $b<0$
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a<0$, $b>0$. Klesá pro $a<0$, průsečík s osou $y$ je $[0;b]$.
+
+</details>
+
 ### `vl-nsz-075` — [Vlastní úloha ve stylu NSZ Matematika (č. 75)](https://www.scio.cz/matematika)
 
 *Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -3731,6 +4217,60 @@ Jsou dány funkce $f(x)=\dfrac{x^2-1}{x-1}$ a $g(x)=x+1$. Které tvrzení je pra
 
 </details>
 
+### `vl-obec-077` — Vlastní úloha ve stylu přijímacích testů (č. 77)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Graf funkce $y=\dfrac{2}{x-1}+3$ má střed souměrnosti v bodě:
+
+- **a)** $[1;3]$
+- **b)** $[-1;3]$
+- **c)** $[3;1]$
+- **d)** $[1;-3]$
+- **e)** $[2;3]$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $[1;3]$. Průsečík asymptot $x=1$, $y=3$.
+
+</details>
+
+### `vl-cvut-088` — Vlastní úloha ve stylu přijímaček ČVUT (č. 88)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Lineární funkce $f(x)=ax+b$ má graf procházející body $[1;5]$ a $[3;1]$. Pak:
+
+- **a)** $a=-2,\ b=7$
+- **b)** $a=2,\ b=3$
+- **c)** $a=-2,\ b=3$
+- **d)** $a=-\frac12,\ b=\frac{11}2$
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a=-2,\ b=7$. $a=\frac{1-5}{3-1}=-2$, $b=5+2$.
+
+</details>
+
+### `vl-obec-094` — Vlastní úloha ve stylu přijímacích testů (č. 94)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Definiční obor funkce $f(x)=\sqrt{16-x^2}$ je množina:
+
+- **a)** $\langle-4;0)\cup(0;4\rangle$
+- **b)** $(-\infty;4\rangle$
+- **c)** $\langle-4;4\rangle$
+- **d)** $(-4;4)$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\langle-4;4\rangle$. $16-x^2\ge0\iff|x|\le4$.
+
+</details>
+
 ### `vl-nsz-102` — [Vlastní úloha ve stylu NSZ Matematika (č. 102)](https://www.scio.cz/matematika)
 
 *Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 12. Logaritmická funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -3745,6 +4285,54 @@ Která z funkcí není definována alespoň pro jedno $x$ z intervalu $(0;1)$?
 <details><summary>Ответ и решение</summary>
 
 **a** — $f(x)=\ln(3x-1)$. Pro $x\le\frac13$ je $3x-1\le0$ a logaritmus není definován.
+
+</details>
+
+### `vl-cvut-114` — Vlastní úloha ve stylu přijímaček ČVUT (č. 114)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 12. Logaritmická funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Maximální definiční obor funkce $f(x)=\dfrac{\sqrt{x-3}}{\ln(2-x)}$ je
+
+- **a)** $\emptyset$
+- **b)** $\{3\}$
+- **c)** $\langle3;\infty)$
+- **d)** $(-\infty;2)$
+- **e)** $(2;3)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\emptyset$. Potřebujeme $x\ge3$ a zároveň $x<2$.
+
+</details>
+
+### `vl-cvut-116` — Vlastní úloha ve stylu přijímaček ČVUT (č. 116)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete rovnice asymptot a průsečíky s osami grafu funkce $f:\ y=\dfrac{2x-6}{x+1}$.
+
+<details><summary>Ответ и решение</summary>
+
+Asymptoty $x=-1$, $y=2$; průsečíky $[3;0]$ a $[0;-6]$. $y=2-\frac8{x+1}$.
+
+</details>
+
+### `vl-cvut-124` — Vlastní úloha ve stylu přijímaček ČVUT (č. 124)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Parabola má vrchol $[1;-3]$ a prochází bodem $[0;-4]$. Je to graf funkce
+
+- **a)** $y=-x^2+2x-4$
+- **b)** $y=x^2-2x-4$
+- **c)** $y=-x^2-2x-4$
+- **d)** $y=-x^2+2x-3$
+- **e)** $y=x^2+2x-4$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $y=-x^2+2x-4$. $y=a(x-1)^2-3$ a z bodu $[0;-4]$: $a=-1$.
 
 </details>
 
@@ -3902,6 +4490,18 @@ Ze zadaných funkcí vyberte tu, jejíž graf vznikne z grafu funkce $y=2^x$ pos
 <details><summary>Ответ и решение</summary>
 
 **a** — $y=2^{x-2}-3$
+
+</details>
+
+### `vl-cvut-045` — Vlastní úloha ve stylu přijímaček ČVUT (č. 45)
+
+*Темы:* 10. Exponenciální funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete obor hodnot a průsečík s osou $y$ funkce $f:\ y=3-2^{x+1}$.
+
+<details><summary>Ответ и решение</summary>
+
+$H(f)=(-\infty;3)$, průsečík $[0;1]$. $2^{x+1}$ nabývá všech kladných hodnot.
 
 </details>
 
@@ -4386,6 +4986,60 @@ Výraz $\left(\frac13\right)^x$ má trojnásobnou hodnotu oproti výrazu $\left(
 
 </details>
 
+### `vl-cvut-101` — Vlastní úloha ve stylu přijímaček ČVUT (č. 101)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množinou všech řešení nerovnice $3^{|x+2|}\ge27$ je
+
+- **a)** $(-\infty,-5\rangle\cup\langle1,\infty)$
+- **b)** $\langle-5,1\rangle$
+- **c)** $(-\infty,-5)\cup(1,\infty)$
+- **d)** $\langle1,\infty)$
+- **e)** $(-\infty,-1\rangle\cup\langle5,\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(-\infty,-5\rangle\cup\langle1,\infty)$. $|x+2|\ge3$.
+
+</details>
+
+### `vl-obec-107` — Vlastní úloha ve stylu přijímacích testů (č. 107)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech reálných $x$, pro která platí $\left(\dfrac{5}{9}\right)^{x}>\left(\dfrac{9}{5}\right)^{3}$, je:
+
+- **a)** $(-\infty;-3)$
+- **b)** $(-3;\infty)$
+- **c)** $(-\infty;3)$
+- **d)** $(3;\infty)$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(-\infty;-3)$. Základ je menší než 1, proto se při porovnání exponentů obrací nerovnost; $\left(\frac qp\right)^k=\left(\frac pq\right)^{-k}$.
+
+</details>
+
+### `vl-cvut-159` — Vlastní úloha ve stylu přijímaček ČVUT (č. 159)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množinou všech řešení nerovnice $2^{|x-2|}<8$ je
+
+- **a)** $(-1,5)$
+- **b)** $\langle-1,5\rangle$
+- **c)** $(-\infty,-1)\cup(5,\infty)$
+- **d)** $(2,5)$
+- **e)** $(-5,1)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(-1,5)$. $|x-2|<3$.
+
+</details>
+
 ### `vscht-01` — [VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 1, 1 bod)](https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf)
 
 *Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -4771,6 +5425,78 @@ Která z funkcí je klesající?
 
 </details>
 
+### `vl-obec-029` — Vlastní úloha ve stylu přijímacích testů (č. 29)
+
+*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Maximální definiční obor funkce $f(x)=\log(x^2-7x)$ je:
+
+- **a)** $(-\infty;0)\cup(7;\infty)$
+- **b)** $(7;\infty)$
+- **c)** $(-\infty;0\rangle\cup\langle 7;\infty)$
+- **d)** $(0;7)$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(-\infty;0)\cup(7;\infty)$. $x(x-k)>0$.
+
+</details>
+
+### `vl-obec-049` — Vlastní úloha ve stylu přijímacích testů (č. 49)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jaký je vztah hodnot $\log_{\frac13}(x+1)$ a $\log_3(x+1)$ pro $x=2$?
+
+- **a)** $\log_{\frac13}(x+1)>\log_3(x+1)$
+- **b)** $\log_{\frac13}(x+1)=\log_3(x+1)$
+- **c)** $\log_{\frac13}(x+1)<\log_3(x+1)$
+- **d)** Pro $x=2$ nejsou výrazy definovány.
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\log_{\frac13}(x+1)<\log_3(x+1)$. $\log_{\frac13}3=-1$, $\log_33=1$.
+
+</details>
+
+### `vl-obec-069` — Vlastní úloha ve stylu přijímacích testů (č. 69)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pokud pro kladné $x$ platí $\log x=4$, pak $\log\sqrt{\dfrac1x}$ je rovno:
+
+- **a)** $-2$
+- **b)** $2$
+- **c)** $-4$
+- **d)** $\dfrac12$
+- **e)** $-\dfrac12$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-2$. $\log x^{-\frac12}=-\frac12\cdot4$.
+
+</details>
+
+### `vl-obec-078` — Vlastní úloha ve stylu přijímacích testů (č. 78)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Číslo $\log_{\frac{1}{3}}9$ je rovno číslu:
+
+- **a)** $- \dfrac{1}{2}$
+- **b)** $-2$
+- **c)** $-1$
+- **d)** $2$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $-2$. $\frac{1}{3}=3^{-1}$, $9=3^{2}$, tedy logaritmus je $\frac{2}{-1}$.
+
+</details>
+
 ### `vl-nsz-090` — [Vlastní úloha ve stylu NSZ Matematika (č. 90)](https://www.scio.cz/matematika)
 
 *Темы:* 12. Logaritmická funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -4785,6 +5511,36 @@ Které nejmenší přirozené číslo je větší než hodnota výrazu $\log_48+
 <details><summary>Ответ и решение</summary>
 
 **b** — $4$. $\log_48=\frac32$, $\log_927=\frac32$; součet $3$, nejbližší větší přirozené číslo je $4$.
+
+</details>
+
+### `vl-cvut-119` — Vlastní úloha ve stylu přijímaček ČVUT (č. 119)
+
+*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete definiční obor funkce $f:\ y=\log_2\dfrac{x+3}{2-x}$.
+
+<details><summary>Ответ и решение</summary>
+
+$(-3;2)$. $\frac{x+3}{2-x}>0$.
+
+</details>
+
+### `vl-cvut-140` — Vlastní úloha ve stylu přijímaček ČVUT (č. 140)
+
+*Темы:* 12. Logaritmická funkce, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Definičním oborem funkce $f:\ y=\log(x^2-4x+4)$ je množina
+
+- **a)** $\mathbb R\setminus\{2\}$
+- **b)** $(2,\infty)$
+- **c)** $\mathbb R$
+- **d)** $\mathbb R\setminus\{-2,2\}$
+- **e)** $\langle2,\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\mathbb R\setminus\{2\}$. $(x-2)^2>0\iff x\ne2$.
 
 </details>
 
@@ -4942,6 +5698,24 @@ Rovnice $\log x^3+1=\log x-1$ má řešení $x=$
 <details><summary>Ответ и решение</summary>
 
 **b** — $10^{-1}$. $2\log x=-2$.
+
+</details>
+
+### `vl-obec-056` — Vlastní úloha ve stylu přijímacích testů (č. 56)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Které z rovnic má největší řešení? A) $\log_3x+\log_39=3$; B) $\log_2(x+1)=\log1$; C) $\log_x16=-2$.
+
+- **a)** A
+- **b)** B
+- **c)** C
+- **d)** všechny mají stejné řešení
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — A. A: $x=3$; B: $x=0$; C: $x=\frac14$.
 
 </details>
 
@@ -5347,6 +6121,180 @@ Nejmenší perioda funkce $y=\operatorname{tg}2x$ je
 <details><summary>Ответ и решение</summary>
 
 **d** — $\dfrac\pi2$
+
+</details>
+
+### `vl-cvut-028` — Vlastní úloha ve stylu přijímaček ČVUT (č. 28)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Definičním oborem funkce $f:\ y=\dfrac{3-\cos x}{1-\sin x}$ je
+
+- **a)** $\mathbb R\setminus\left\{\frac\pi2+2k\pi\right\}$
+- **b)** $\mathbb R\setminus\left\{\frac\pi2+k\pi\right\}$
+- **c)** $\mathbb R\setminus\{2k\pi\}$
+- **d)** $\mathbb R\setminus\{k\pi\}$
+- **e)** $\mathbb R$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\mathbb R\setminus\left\{\frac\pi2+2k\pi\right\}$. $\sin x\ne1$.
+
+</details>
+
+### `vl-cvut-030` — Vlastní úloha ve stylu přijímaček ČVUT (č. 30)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jestliže $\sin\alpha=\frac{\sqrt3}2$ a $\alpha\in\left(\frac\pi2,\pi\right)$, pak
+
+- **a)** $\operatorname{cotg}\alpha=\frac{\sqrt3}3$
+- **b)** $\operatorname{cotg}\alpha=-\frac{\sqrt3}3$
+- **c)** $\operatorname{cotg}\alpha=-\sqrt3$
+- **d)** $\operatorname{cotg}\alpha$ není definován
+- **e)** $\operatorname{cotg}\alpha=1$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\operatorname{cotg}\alpha=-\frac{\sqrt3}3$. $\alpha=\frac{2\pi}3$, $\cos\alpha=-\frac12$.
+
+</details>
+
+### `vl-obec-035` — Vlastní úloha ve stylu přijímacích testů (č. 35)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Je-li $\sin x=- \frac{\sqrt{6}}{3}$, pak výraz $\sin^2x-\cos^2x$ je roven číslu:
+
+- **a)** $- \dfrac{1}{3}$
+- **b)** $\dfrac{1}{3}$
+- **c)** $\dfrac{2}{3}$
+- **d)** $- \dfrac{2}{3}$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\dfrac{1}{3}$. Stačí $\sin^2x=\dfrac{2}{3}$ a $\cos2x=1-2\sin^2x$.
+
+</details>
+
+### `vl-cvut-050` — Vlastní úloha ve stylu přijímaček ČVUT (č. 50)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jestliže $\sin\left(\alpha-\frac\pi2\right)=1$, pak
+
+- **a)** $\operatorname{tg}\alpha=0$
+- **b)** $\operatorname{tg}\alpha=1$
+- **c)** $\operatorname{tg}\alpha=-1$
+- **d)** $\operatorname{tg}\alpha$ není definován
+- **e)** $\operatorname{tg}\alpha=\sqrt3$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\operatorname{tg}\alpha=0$. $-\cos\alpha=1$, $\alpha=\pi+2k\pi$, $\sin\alpha=0$.
+
+</details>
+
+### `vl-obec-055` — Vlastní úloha ve stylu přijímacích testů (č. 55)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jaká je nejmenší perioda funkce $y=3\sin\left(2x-\frac\pi3\right)$?
+
+- **a)** $\dfrac\pi2$
+- **b)** $\pi$
+- **c)** $2\pi$
+- **d)** $\dfrac{2\pi}3$
+- **e)** $6\pi$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\pi$. $\frac{2\pi}2$.
+
+</details>
+
+### `vl-cvut-087` — Vlastní úloha ve stylu přijímaček ČVUT (č. 87)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jestliže $\cos2\alpha=1$, pak
+
+- **a)** $\operatorname{tg}\alpha=0$
+- **b)** $\operatorname{tg}\alpha=1$
+- **c)** $\operatorname{tg}\alpha$ není definován
+- **d)** $\operatorname{tg}\alpha=-1$
+- **e)** $\operatorname{tg}\alpha=\frac12$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\operatorname{tg}\alpha=0$. $\alpha=k\pi$.
+
+</details>
+
+### `vl-cvut-128` — Vlastní úloha ve stylu přijímaček ČVUT (č. 128)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jestliže $\sin(\alpha+\pi)=1$, pak
+
+- **a)** $\operatorname{cotg}\alpha=0$
+- **b)** $\operatorname{cotg}\alpha$ není definován
+- **c)** $\operatorname{cotg}\alpha=1$
+- **d)** $\operatorname{cotg}\alpha=-1$
+- **e)** $\operatorname{cotg}\alpha=\sqrt3$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\operatorname{cotg}\alpha=0$. $\sin\alpha=-1$, tedy $\cos\alpha=0$.
+
+</details>
+
+### `vl-cvut-132` — Vlastní úloha ve stylu přijímaček ČVUT (č. 132)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete $\sin\alpha$ a $\operatorname{tg}\alpha$, jestliže $\cos\alpha=-\frac45$ a $\alpha\in\left(\pi;\frac{3\pi}2\right)$.
+
+<details><summary>Ответ и решение</summary>
+
+$\sin\alpha=-\frac35$, $\operatorname{tg}\alpha=\frac34$. Ve III. kvadrantu je sinus záporný: $\sin\alpha=-\sqrt{1-\frac{16}{25}}$.
+
+</details>
+
+### `vl-cvut-136` — Vlastní úloha ve stylu přijímaček ČVUT (č. 136)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Maximální definiční obor funkce $f(x)=\dfrac{\cos2x}{\sin x}$ je
+
+- **a)** $\mathbb R\setminus\{k\pi\}$
+- **b)** $\mathbb R$
+- **c)** $\mathbb R\setminus\left\{\frac\pi2+k\pi\right\}$
+- **d)** $\mathbb R\setminus\left\{\frac{k\pi}2\right\}$
+- **e)** $(0,\pi)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\mathbb R\setminus\{k\pi\}$. $\sin x\ne0$.
+
+</details>
+
+### `vl-cvut-155` — Vlastní úloha ve stylu přijímaček ČVUT (č. 155)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jestliže $\cos2\alpha=-1$, pak
+
+- **a)** $\operatorname{tg}\alpha=1$
+- **b)** $\operatorname{tg}\alpha=0$
+- **c)** $\operatorname{tg}\alpha=-1$
+- **d)** $\operatorname{tg}\alpha$ není definován
+- **e)** $\operatorname{tg}\alpha=\sqrt3$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\operatorname{tg}\alpha$ není definován. $2\alpha=\pi+2k\pi$, $\alpha=\frac\pi2+k\pi$.
 
 </details>
 
@@ -6168,6 +7116,102 @@ $i^{2017}=$
 
 </details>
 
+### `vl-cvut-003` — Vlastní úloha ve stylu přijímaček ČVUT (č. 3)
+
+*Темы:* 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Absolutní hodnota čísla $z=\dfrac{7-9i}{1+2i}$ je
+
+- **a)** $\sqrt{26}$
+- **b)** $26$
+- **c)** $\sqrt{130}$
+- **d)** $5$
+- **e)** $3\sqrt3$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\sqrt{26}$. $\frac{|7-9i|}{|1+2i|}=\frac{\sqrt{130}}{\sqrt5}$.
+
+</details>
+
+### `vl-obec-006` — Vlastní úloha ve stylu přijímacích testů (č. 6)
+
+*Темы:* 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Číslo $\overline{z}$ komplexně sdružené k $z=(1+i)^2$ je:
+
+- **a)** $-2i$
+- **b)** $2i$
+- **c)** $2$
+- **d)** $-2$
+- **e)** $1-i$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-2i$. $(1+i)^2=2i$.
+
+</details>
+
+### `vl-cvut-025` — Vlastní úloha ve stylu přijímaček ČVUT (č. 25)
+
+*Темы:* 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Algebraický tvar čísla $z=(2-i)^2+(1+3i)(2+i)$ je
+
+- **a)** $2+3i$
+- **b)** $4+3i$
+- **c)** $2-11i$
+- **d)** $-2+3i$
+- **e)** $3+7i$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $2+3i$. $(3-4i)+(-1+7i)$.
+
+</details>
+
+### `vl-obec-048` — Vlastní úloha ve stylu přijímacích testů (č. 48)
+
+*Темы:* 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Imaginární část komplexního čísla $z=\dfrac{-2}{1 - i}$ je rovna číslu:
+
+- **a)** $1$
+- **b)** $- i$
+- **c)** $0$
+- **d)** $-1$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $-1$. $z=-1 - i$.
+
+</details>
+
+### `vl-cvut-096` — Vlastní úloha ve stylu přijímaček ČVUT (č. 96)
+
+*Темы:* 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Zapište v algebraickém tvaru číslo $(3-2i)(1+4i)$.
+
+<details><summary>Ответ и решение</summary>
+
+$11+10i$. $3+12i-2i+8$.
+
+</details>
+
+### `vl-cvut-154` — Vlastní úloha ve stylu přijímaček ČVUT (č. 154)
+
+*Темы:* 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Zapište v algebraickém tvaru číslo $\dfrac{5+5i}{2-i}$.
+
+<details><summary>Ответ и решение</summary>
+
+$1+3i$. Rozšíříme $2+i$: $\frac{5+15i}5$.
+
+</details>
+
 ### `vut-fsi-2014-z2-11` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 11, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 17. Goniometrický tvar komplexního čísla. Moivreova věta, 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
@@ -6202,6 +7246,36 @@ Posloupnost reálných čísel $(a_n)$ je klesající, právě když pro všechn
 <details><summary>Ответ и решение</summary>
 
 **a** — $a_{n+1}<a_n$. Podíl nefunguje pro záporné členy, neostrá nerovnost připouští rovnost a poslední podmínka popisuje rostoucí posloupnost.
+
+</details>
+
+### `vl-cvut-068` — Vlastní úloha ve stylu přijímaček ČVUT (č. 68)
+
+*Темы:* 18. Posloupnosti · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete prvních pět členů a $a_{10}$ posloupnosti $a_n=\dfrac{(-1)^nn}{n+1}$.
+
+<details><summary>Ответ и решение</summary>
+
+$-\frac12,\frac23,-\frac34,\frac45,-\frac56$; $a_{10}=\frac{10}{11}$. Dosazujeme $n=1,\dots,5$ a $n=10$.
+
+</details>
+
+### `vl-cvut-108` — Vlastní úloha ve stylu přijímaček ČVUT (č. 108)
+
+*Темы:* 18. Posloupnosti · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Člen $a_4$ posloupnosti dané rekurentně $a_{n+1}=2a_n+3$, $a_1=-1$, je
+
+- **a)** $13$
+- **b)** $11$
+- **c)** $29$
+- **d)** $5$
+- **e)** $9$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $13$. $-1,\ 1,\ 5,\ 13$.
 
 </details>
 
@@ -6552,6 +7626,72 @@ Jana spořila: první týden uložila 45 Kč a každý další týden o stejnou 
 
 </details>
 
+### `vl-cvut-093` — Vlastní úloha ve stylu přijímaček ČVUT (č. 93)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V aritmetické posloupnosti je $a_3=7$ a $a_7=-5$. Člen $a_1$ je
+
+- **a)** $13$
+- **b)** $10$
+- **c)** $-11$
+- **d)** $16$
+- **e)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $13$. $4d=-12$, $d=-3$, $a_1=a_3-2d$.
+
+</details>
+
+### `vl-obec-098` — Vlastní úloha ve stylu přijímacích testů (č. 98)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V aritmetické posloupnosti je $a_5=17$ a $a_{12}=38$. Součet $a_1+a_{16}$ je:
+
+- **a)** $47$
+- **b)** $50$
+- **c)** $55$
+- **d)** $58$
+- **e)** $61$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $55$. $a_1+a_{16}=a_5+a_{12}$.
+
+</details>
+
+### `vl-cvut-151` — Vlastní úloha ve stylu přijímaček ČVUT (č. 151)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V aritmetické posloupnosti je $a_4=11$ a $a_9=26$. Určete $a_1$, $d$ a $s_{10}$.
+
+<details><summary>Ответ и решение</summary>
+
+$a_1=2$, $d=3$, $s_{10}=155$. $5d=15$; $s_{10}=\frac{10(2+29)}2$.
+
+</details>
+
+### `vl-cvut-167` — Vlastní úloha ve stylu přijímaček ČVUT (č. 167)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V aritmetické posloupnosti je $a_1=5$ a diference $d=-3$. Členy $a_7$ a $a_{11}$ jsou
+
+- **a)** $-13$ a $-25$
+- **b)** $-16$ a $-28$
+- **c)** $-13$ a $-28$
+- **d)** $23$ a $35$
+- **e)** $-10$ a $-22$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-13$ a $-25$. $a_7=5-18$, $a_{11}=5-30$.
+
+</details>
+
 ### `vl-nsz-176` — [Vlastní úloha ve stylu NSZ Matematika (č. 176)](https://www.scio.cz/matematika)
 
 *Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -6808,6 +7948,18 @@ Jana se učí slovíčka. V úterý se naučila 4, každý další den trojnáso
 
 </details>
 
+### `vl-obec-018` — Vlastní úloha ve stylu přijímacích testů (č. 18)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Posloupnost je dána rekurentně $a_1=8$, $a_{n+1}=\frac32a_n$. Určete součet prvních čtyř členů.
+
+<details><summary>Ответ и решение</summary>
+
+$65$. $8+12+18+27$.
+
+</details>
+
 ### `vl-nsz-034` — [Vlastní úloha ve stylu NSZ Matematika (č. 34)](https://www.scio.cz/matematika)
 
 *Темы:* 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -6825,6 +7977,18 @@ Nová cukrárna měla první měsíc 7 objednávek dortů a každý další měs
 
 </details>
 
+### `vl-cvut-073` — Vlastní úloha ve stylu přijímaček ČVUT (č. 73)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V geometrické posloupnosti je $a_2=6$ a $a_5=162$. Určete $a_1$, $q$ a součet prvních pěti členů.
+
+<details><summary>Ответ и решение</summary>
+
+$a_1=2$, $q=3$, $s_5=242$. $q^3=27$; $s_5=2\cdot\frac{3^5-1}2$.
+
+</details>
+
 ### `vl-nsz-086` — [Vlastní úloha ve stylu NSZ Matematika (č. 86)](https://www.scio.cz/matematika)
 
 *Темы:* 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -6839,6 +8003,42 @@ Výstavu navštívilo v prvních třech týdnech celkem 117 tisíc lidí. Ve dru
 <details><summary>Ответ и решение</summary>
 
 **b** — $3\,000$. $x\left(1+\frac13+\frac19\right)=\frac{13}9x=117\,000$, $x=81\,000$; čtvrtý týden $\frac{81\,000}{27}=3\,000$.
+
+</details>
+
+### `vl-cvut-100` — Vlastní úloha ve stylu přijímaček ČVUT (č. 100)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V geometrické posloupnosti je $a_3=12$ a $a_6=-96$. Člen $a_1$ je
+
+- **a)** $3$
+- **b)** $-3$
+- **c)** $6$
+- **d)** $1{,}5$
+- **e)** $-6$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $3$. $q^3=-8$, $q=-2$, $a_1=\frac{12}{4}$.
+
+</details>
+
+### `vl-cvut-125` — Vlastní úloha ve stylu přijímaček ČVUT (č. 125)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Mezi čísla 3 a 243 vložte tři čísla tak, aby s danými čísly tvořila pět členů geometrické posloupnosti. Prostřední z vložených čísel je
+
+- **a)** $27$
+- **b)** $-27$
+- **c)** $9$
+- **d)** $81$
+- **e)** $123$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $27$. $q^4=81$, $q=\pm3$; prostřední člen $a_3=3q^2=27$ v obou případech.
 
 </details>
 
@@ -7122,6 +8322,24 @@ V dodávce je 15 výrobků. Kolika způsoby je možné z této dodávky vybrat k
 
 </details>
 
+### `vl-obec-003` — Vlastní úloha ve stylu přijímacích testů (č. 3)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik různých čtyřpísmenných „slov“ lze sestavit z písmen slova ODRAZ (každé písmeno nejvýš jednou)?
+
+- **a)** $24$
+- **b)** $60$
+- **c)** $120$
+- **d)** $625$
+- **e)** $1\,024$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $120$. $V_4(5)=5\cdot4\cdot3\cdot2$.
+
+</details>
+
 ### `vl-nsz-038` — [Vlastní úloha ve stylu NSZ Matematika (č. 38)](https://www.scio.cz/matematika)
 
 *Темы:* 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -7136,6 +8354,24 @@ Zmrzlinárna má 64 příchutí. Kolik různých kornoutů se dvěma kopečky r�
 <details><summary>Ответ и решение</summary>
 
 **a** — $2\,016$. $\binom{64}2=2016$.
+
+</details>
+
+### `vl-obec-057` — Vlastní úloha ve stylu přijímacích testů (č. 57)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolika způsoby se může postavit do řady šest kamarádů, jestliže dva z nich nesmějí stát na prvním místě?
+
+- **a)** $120$
+- **b)** $240$
+- **c)** $480$
+- **d)** $600$
+- **e)** $720$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $480$. Na první místo 4 možnosti, zbytek $5!$.
 
 </details>
 
@@ -7394,6 +8630,24 @@ Adéla náhodně vybere číslo z $\{1,2,\dots,6\}$, Bětka z $\{1,2,\dots,5\}$.
 
 </details>
 
+### `vl-obec-022` — Vlastní úloha ve stylu přijímacích testů (č. 22)
+
+*Темы:* 24. Pravděpodobnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Házíme pěti mincemi. Jaká je pravděpodobnost, že padne aspoň čtyřikrát líc?
+
+- **a)** $\dfrac5{32}$
+- **b)** $\dfrac3{16}$
+- **c)** $\dfrac14$
+- **d)** $\dfrac1{32}$
+- **e)** $\dfrac12$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\dfrac3{16}$. $\frac{\binom54+\binom55}{32}$.
+
+</details>
+
 ### `vl-nsz-181` — [Vlastní úloha ve stylu NSZ Matematika (č. 181)](https://www.scio.cz/matematika)
 
 *Темы:* 24. Pravděpodobnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -7408,6 +8662,66 @@ Kolo štěstí má 25 stejných výsečí: 1 zlatou, 12 modrých a 12 žlutých.
 <details><summary>Ответ и решение</summary>
 
 **c** — $52\,\%$. $\frac{1+12}{25}=0{,}52$.
+
+</details>
+
+### `vl-obec-043` — Vlastní úloha ve stylu přijímacích testů (č. 43)
+
+*Темы:* 25. Analytická geometrie. Vektory, 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V trojúhelníku $ABC$ je $D$ střed strany $AB$ a $E$ střed strany $BC$. Které tvrzení platí?
+
+- **a)** $|DE|=\frac12|AC|$
+- **b)** $|DE|=|AC|$
+- **c)** $\overrightarrow{DE}=\overrightarrow{AC}$
+- **d)** $|AD|+|BE|=|AC|$
+- **e)** $DE\perp AC$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $|DE|=\frac12|AC|$. Střední příčka je rovnoběžná se stranou $AC$ a má poloviční délku.
+
+</details>
+
+### `vl-obec-054` — Vlastní úloha ve stylu přijímacích testů (č. 54)
+
+*Темы:* 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Vektory $\vec u=(2;-1;3)$ a $\vec v=(1;4;k)$ jsou kolmé pro $k$ rovno:
+
+- **a)** $-2$
+- **b)** $\dfrac23$
+- **c)** $\dfrac43$
+- **d)** $2$
+- **e)** $\dfrac{2}{3}$ nebo $-2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\dfrac23$. $2-4+3k=0$.
+
+</details>
+
+### `vl-cvut-082` — Vlastní úloha ve stylu přijímaček ČVUT (č. 82)
+
+*Темы:* 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnoběžník $ABCD$ má vrcholy $A=[1;2]$, $B=[5;3]$, $C=[6;7]$. Určete vrchol $D$ a průsečík úhlopříček.
+
+<details><summary>Ответ и решение</summary>
+
+$D=[2;6]$, průsečík $\left[\frac72;\frac92\right]$. $D=A+C-B$; průsečík je střed $AC$.
+
+</details>
+
+### `vl-cvut-145` — Vlastní úloha ve stylu přijímaček ČVUT (č. 145)
+
+*Темы:* 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Vyjádřete vektor $\vec w=(7;-1)$ jako lineární kombinaci vektorů $\vec u=(1;2)$ a $\vec v=(3;1)$.
+
+<details><summary>Ответ и решение</summary>
+
+$\vec w=-2\vec u+3\vec v$. $k+3l=7$, $2k+l=-1$.
 
 </details>
 
@@ -7752,6 +9066,36 @@ Rovnice přímky procházející bodem $A=[-2;3]$ a počátkem souřadné sousta
 
 </details>
 
+### `vl-obec-051` — Vlastní úloha ve stylu přijímacích testů (č. 51)
+
+*Темы:* 27. Obecná rovnice přímky, 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Která přímka prochází body $[0;2]$ a $[3;0]$?
+
+- **a)** $2x+3y-6=0$
+- **b)** $3x+2y-6=0$
+- **c)** $2x-3y+6=0$
+- **d)** $y=\frac23x+2$
+- **e)** $x=3t,\ y=2+2t$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $2x+3y-6=0$. Úsekový tvar $\frac x3+\frac y2=1$.
+
+</details>
+
+### `vl-cvut-057` — Vlastní úloha ve stylu přijímaček ČVUT (č. 57)
+
+*Темы:* 27. Obecná rovnice přímky · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Napište obecnou rovnici přímky, která prochází bodem $M=[2;-3]$ a je kolmá k přímce $p:\ 3x-y+5=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x+3y+7=0$. Normálový vektor $p$ je směrovým vektorem hledané přímky.
+
+</details>
+
 ### `vscht-07` — [VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 7, 2 body)](https://studuj.vscht.cz/wp-content/uploads/2021/02/BC-ekonomove-matematika-prijimaci-zkouska-vzorovy-test.pdf)
 
 *Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
@@ -7930,6 +9274,42 @@ Přímky o rovnicích $p:2x-5y+13=0$; $q:2x+5y+13=0$ mají společné právě:
 <details><summary>Ответ и решение</summary>
 
 **b** — jeden bod. Normály nejsou rovnoběžné.
+
+</details>
+
+### `vl-cvut-029` — Vlastní úloha ve stylu přijímaček ČVUT (č. 29)
+
+*Темы:* 28. Vzájemná poloha přímek · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Přímky $p=AB$, $A=[2,-1]$, $B=[4,3]$, a $q:\ 2x-y+3=0$ jsou
+
+- **a)** totožné
+- **b)** rovnoběžné různé
+- **c)** navzájem kolmé
+- **d)** různoběžné, nikoli kolmé
+- **e)** mimoběžné
+
+<details><summary>Ответ и решение</summary>
+
+**b** — rovnoběžné různé. Směr $AB$ je $(1,2)$, stejně jako u $q$; bod $A$ na $q$ neleží ($4+1+3\ne0$).
+
+</details>
+
+### `vl-obec-097` — Vlastní úloha ve stylu přijímacích testů (č. 97)
+
+*Темы:* 28. Vzájemná poloha přímek, 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro jakou hodnotu parametru $p$ je přímka $y=3x-7$ kolmá k přímce $y=p(x+5)$?
+
+- **a)** $-3$
+- **b)** $-\dfrac13$
+- **c)** $\dfrac13$
+- **d)** $3$
+- **e)** $5$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $-\dfrac13$. Součin směrnic je $-1$: $3p=-1$.
 
 </details>
 
@@ -8364,6 +9744,24 @@ Poloměr kružnice o rovnici $x^2+y^2+6x-2y-15=0$ je
 <details><summary>Ответ и решение</summary>
 
 **c** — $5$. $(x+3)^2+(y-1)^2=25$, $r=5$.
+
+</details>
+
+### `vl-obec-064` — Vlastní úloha ve stylu přijímacích testů (č. 64)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Poloměr kružnice $x^2+y^2-6x+8y-11=0$ je roven:
+
+- **a)** $36$
+- **b)** $\sqrt{11}$
+- **c)** $6$
+- **d)** $5$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $6$. $(x-3)^2+(y+4)^2=36$.
 
 </details>
 
@@ -9139,6 +10537,72 @@ Ze čtvercového plechu odstřihneme ve všech čtyřech rozích čtverečky o s
 
 </details>
 
+### `vl-obec-028` — Vlastní úloha ve stylu přijímacích testů (č. 28)
+
+*Темы:* 34. Planimetrie, 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V pravoúhlém trojúhelníku $ABC$ s pravým úhlem u $C$ je odvěsna $BC$ poloviční než přepona $AB$. Jak velký je úhel při vrcholu $A$?
+
+- **a)** $30^\circ$
+- **b)** $45^\circ$
+- **c)** $60^\circ$
+- **d)** $90^\circ$
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $30^\circ$. $\sin\alpha=\frac{|BC|}{|AB|}=\frac12$.
+
+</details>
+
+### `vl-obec-031` — Vlastní úloha ve stylu přijímacích testů (č. 31)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Vnitřní úhly trojúhelníku jsou v poměru $2:3:7$. Největší z nich má:
+
+- **a)** $90^\circ$
+- **b)** $100^\circ$
+- **c)** $105^\circ$
+- **d)** $110^\circ$
+- **e)** $120^\circ$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $105^\circ$. $\frac7{12}\cdot180^\circ$.
+
+</details>
+
+### `vl-cvut-039` — Vlastní úloha ve stylu přijímaček ČVUT (č. 39)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V rovnoramenném trojúhelníku je úhel při vrcholu o $24^\circ$ větší než úhel při základně. Určete úhly trojúhelníku.
+
+<details><summary>Ответ и решение</summary>
+
+$52^\circ$, $52^\circ$, $76^\circ$. $2\alpha+\alpha+24^\circ=180^\circ$.
+
+</details>
+
+### `vl-obec-068` — Vlastní úloha ve stylu přijímacích testů (č. 68)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik úhlopříček má konvexní desetiúhelník?
+
+- **a)** $20$
+- **b)** $35$
+- **c)** $40$
+- **d)** $45$
+- **e)** $90$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $35$. $\frac{10\cdot7}2$.
+
+</details>
+
 ### `vl-nsz-070` — [Vlastní úloha ve stylu NSZ Matematika (č. 70)](https://www.scio.cz/matematika)
 
 *Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -9153,6 +10617,54 @@ Ze čtvercového plechu odstřihneme ve všech čtyřech rozích čtverečky o s
 <details><summary>Ответ и решение</summary>
 
 **d** — $110^\circ$. V tětivovém čtyřúhelníku je součet protějších úhlů $180^\circ$: $\angle ADC=180^\circ-70^\circ$.
+
+</details>
+
+### `vl-obec-085` — Vlastní úloha ve stylu přijímacích testů (č. 85)
+
+*Темы:* 34. Planimetrie, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Obvod obdélníku je 34 cm a jeho úhlopříčka měří 13 cm. Obsah obdélníku je:
+
+- **a)** $50$ cm$^2$
+- **b)** $60$ cm$^2$
+- **c)** $64$ cm$^2$
+- **d)** $72$ cm$^2$
+- **e)** $120$ cm$^2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $60$ cm$^2$. $a+b=17$, $a^2+b^2=169$, $2ab=289-169$.
+
+</details>
+
+### `vl-cvut-086` — Vlastní úloha ve stylu přijímaček ČVUT (č. 86)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete součet vnitřních úhlů a počet úhlopříček pravidelného dvanáctiúhelníku.
+
+<details><summary>Ответ и решение</summary>
+
+$1800^\circ$; $54$ úhlopříček. $(n-2)\cdot180^\circ$; $\frac{n(n-3)}2$.
+
+</details>
+
+### `vl-cvut-113` — Vlastní úloha ve stylu přijímaček ČVUT (č. 113)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V trojúhelníku platí $\alpha=2\beta$ a $\gamma=\alpha+\beta$. Úhel $\alpha$ má velikost
+
+- **a)** $30^\circ$
+- **b)** $45^\circ$
+- **c)** $60^\circ$
+- **d)** $90^\circ$
+- **e)** $120^\circ$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $60^\circ$. $\gamma=90^\circ$, $3\beta=90^\circ$.
 
 </details>
 
@@ -9503,6 +11015,18 @@ Povrch větší krychle je čtyřnásobkem povrchu krychle menší. Její objem 
 
 </details>
 
+### `vl-obec-001` — Vlastní úloha ve stylu přijímacích testů (č. 1)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kvádr má čtvercovou podstavu a výšku dvakrát větší, než je podstavná hrana. Jeho povrch je 160 cm$^2$. Určete objem.
+
+<details><summary>Ответ и решение</summary>
+
+$128$ cm$^3$. $2a^2+4\cdot2a^2=10a^2=160$, $a=4$.
+
+</details>
+
 ### `vl-nsz-025` — [Vlastní úloha ve stylu NSZ Matematika (č. 25)](https://www.scio.cz/matematika)
 
 *Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -9520,6 +11044,42 @@ Na čtvercovém půdorysu $3\times3$ políček stojí sloupce krychliček o hran
 
 </details>
 
+### `vl-obec-038` — Vlastní úloha ve stylu přijímacích testů (č. 38)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kovový váleček má poloměr podstavy 3 cm a výšku 8 cm. Kolik kuliček o poloměru 1 cm z něj lze odlít?
+
+- **a)** $18$
+- **b)** $24$
+- **c)** $36$
+- **d)** $54$
+- **e)** $72$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $54$. $\frac{\pi\cdot9\cdot8}{\frac43\pi}=54$.
+
+</details>
+
+### `vl-obec-047` — Vlastní úloha ve stylu přijímacích testů (č. 47)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+O kolik procent se zvětší objem krychle, zvětší-li se její hrana o 10 %?
+
+- **a)** o 10 %
+- **b)** o 21 %
+- **c)** o 30 %
+- **d)** o 33,1 %
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — o 33,1 %. $1{,}1^3=1{,}331$.
+
+</details>
+
 ### `vl-nsz-083` — [Vlastní úloha ve stylu NSZ Matematika (č. 83)](https://www.scio.cz/matematika)
 
 *Темы:* 35. Stereometrie, Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -9534,6 +11094,24 @@ Ze střechy o rozměrech 12 m × 5 m odtéká všechna dešťová voda do prázd
 <details><summary>Ответ и решение</summary>
 
 **c** — $12{,}5$ h. Za hodinu přiteče $60\cdot0{,}002=0{,}12$ m$^3$; $1{,}5:0{,}12=12{,}5$.
+
+</details>
+
+### `vl-obec-104` — Vlastní úloha ve stylu přijímacích testů (č. 104)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Krychle a koule mají stejný povrch. Které těleso má větší objem?
+
+- **a)** krychle
+- **b)** koule
+- **c)** mají stejný objem
+- **d)** záleží na velikosti
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — koule. Při daném povrchu má největší objem koule.
 
 </details>
 
@@ -10748,6 +12326,54 @@ Symbol $\circ$ představuje v rovnici $\dfrac{2\circ9}{3\circ1}=6\circ1$ jednu z
 
 </details>
 
+### `vl-cvut-008` — Vlastní úloha ve stylu přijímaček ČVUT (č. 8)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Výraz $(a+b)^3-(a-b)^3$ je pro všechna $a,b\in\mathbb R$ roven
+
+- **a)** $6a^2b+2b^3$
+- **b)** $2b^3$
+- **c)** $6ab^2$
+- **d)** $2a^3+6ab^2$
+- **e)** $6a^2b$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $6a^2b+2b^3$. Liché mocniny $b$ se zdvojí, sudé se odečtou.
+
+</details>
+
+### `vl-obec-010` — Vlastní úloha ve stylu přijímacích testů (č. 10)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Hodnoty 4, 7, 7, 9, 13 mají aritmetický průměr $p$ a modus $m$. Platí:
+
+- **a)** $p=m=7$
+- **b)** $p=8$, $m=7$
+- **c)** $p=7$, $m=9$
+- **d)** $p=8$, $m=9$
+- **e)** $p=m=8$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $p=8$, $m=7$. $\frac{40}5=8$, nejčastější hodnota 7.
+
+</details>
+
+### `vl-cvut-021` — Vlastní úloha ve stylu přijímaček ČVUT (č. 21)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Výraz $x^5-4x^3-x^2+4$ rozložte na součin mnohočlenů s co nejnižšími stupni (s reálnými koeficienty).
+
+<details><summary>Ответ и решение</summary>
+
+$(x-1)(x-2)(x+2)(x^2+x+1)$. $x^3(x^2-4)-(x^2-4)=(x^2-4)(x^3-1)$; $x^2+x+1$ nemá reálné kořeny.
+
+</details>
+
 ### `vl-nsz-027` — [Vlastní úloha ve stylu NSZ Matematika (č. 27)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -10782,6 +12408,24 @@ Za jakých podmínek má smysl výraz $\dfrac{a^2-9b^2}{a^2+6ab+9b^2}$?
 
 </details>
 
+### `vl-obec-039` — Vlastní úloha ve stylu přijímacích testů (č. 39)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Platí: Jestliže pojede Petr, pojede i Ota. Pojede aspoň jeden z nich. Které tvrzení určitě platí?
+
+- **a)** Petr pojede.
+- **b)** Ota pojede.
+- **c)** Pojedou oba.
+- **d)** Pojede právě jeden z nich.
+- **e)** Nepojede nikdo.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Ota pojede.. Kdyby Ota nejel, nejel by ani Petr — spor s tím, že jede aspoň jeden.
+
+</details>
+
 ### `vl-nsz-046` — [Vlastní úloha ve stylu NSZ Matematika (č. 46)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -10796,6 +12440,24 @@ Kolik z výrazů $\frac13-\frac12$; $\log_3\frac19$; $-\sqrt2$; $(-2)^{-2}$ má 
 <details><summary>Ответ и решение</summary>
 
 **c** — dva. $-\frac16$ a $-2$ ano; $-\sqrt2$ je iracionální, $(-2)^{-2}=\frac14$ je kladné.
+
+</details>
+
+### `vl-obec-046` — Vlastní úloha ve stylu přijímacích testů (č. 46)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Poměr rychlostí běžce a cyklisty je $3:8$. Běžec uběhne 6 km za 40 minut. Kolik kilometrů ujede cyklista za 1,5 hodiny?
+
+- **a)** 16 km
+- **b)** 24 km
+- **c)** 32 km
+- **d)** 36 km
+- **e)** 48 km
+
+<details><summary>Ответ и решение</summary>
+
+**d** — 36 km. Běžec $9$ km/h, cyklista $24$ km/h, za $1{,}5$ h $36$ km.
 
 </details>
 
@@ -10833,6 +12495,24 @@ Tomáš nabil kartu do školní jídelny tak, aby mu peníze přesně stačily n
 
 </details>
 
+### `vl-obec-059` — Vlastní úloha ve stylu přijímacích testů (č. 59)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik dělitelů má číslo 72?
+
+- **a)** $6$
+- **b)** $8$
+- **c)** $10$
+- **d)** $12$
+- **e)** $18$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $12$. $72=2^3\cdot3^2$: $(3+1)(2+1)=12$.
+
+</details>
+
 ### `vl-nsz-060` — [Vlastní úloha ve stylu NSZ Matematika (č. 60)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -10847,6 +12527,18 @@ Kočka sežere denně 25 % toho, co pes. Za 30 dní sežerou dohromady 15 kg krm
 <details><summary>Ответ и решение</summary>
 
 **b** — $3$ kg. Pes $p$, kočka $0{,}25p$: $1{,}25p=15$, $p=12$, kočka $3$ kg.
+
+</details>
+
+### `vl-obec-062` — Vlastní úloha ve stylu přijímacích testů (č. 62)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Doplňte výraz místo otazníku tak, aby pro všechna $x$ platilo $(2x-1)\cdot\,?\,=1-4x^2$.
+
+<details><summary>Ответ и решение</summary>
+
+$-(2x+1)$, tj. $-2x-1$. $1-4x^2=-(2x-1)(2x+1)$.
 
 </details>
 
@@ -10884,6 +12576,18 @@ Včelař má 18 úlů a každý dá za sezónu 15 kg medu. Třetinu medu prodá 
 
 </details>
 
+### `vl-cvut-079` — Vlastní úloha ve stylu přijímaček ČVUT (č. 79)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Zjednodušte výraz $\left(\dfrac1{u-1}-\dfrac1{u+1}\right):\dfrac2{u^2-1}$ a uveďte podmínky.
+
+<details><summary>Ответ и решение</summary>
+
+$1$ pro $u\ne\pm1$. Závorka je $\frac2{u^2-1}$, dělíme stejným výrazem.
+
+</details>
+
 ### `vl-nsz-084` — [Vlastní úloha ve stylu NSZ Matematika (č. 84)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -10918,6 +12622,24 @@ Pro kladná čísla $x$, $y$, $z$ platí $x=3y$ a $z=\frac x2$. Pak platí:
 
 </details>
 
+### `vl-obec-093` — Vlastní úloha ve stylu přijímacích testů (č. 93)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Které tvrzení je pravdivé?
+
+- **a)** Součin všech celých čísel větších než $-50$ a menších než $-20$ je kladný.
+- **b)** Součet všech celých čísel od $-30$ do $32$ (včetně) je $63$.
+- **c)** Součin všech celých čísel od $-5$ do $5$ je $-120$.
+- **d)** Součet všech lichých čísel od 1 do 99 je 2 450.
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Součet všech celých čísel od $-30$ do $32$ (včetně) je $63$.. Čísla $-30$ až $30$ se vyruší, zbývá $31+32$. Součin 29 záporných čísel je záporný, součin s nulou je 0, lichá čísla do 99 dávají $50^2$.
+
+</details>
+
 ### `vl-nsz-095` — [Vlastní úloha ve stylu NSZ Matematika (č. 95)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -10935,6 +12657,24 @@ Na záhonu o rozměrech 3 m × 1,2 m sázíme cibulky ve čtvercové síti s roz
 
 </details>
 
+### `vl-obec-099` — Vlastní úloha ve stylu přijímacích testů (č. 99)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Směs obsahuje písek a cement v poměru $5:2$. Kolik kilogramů cementu je ve 42 kg směsi?
+
+- **a)** $8$
+- **b)** $12$
+- **c)** $15$
+- **d)** $16{,}8$
+- **e)** $30$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $12$. $\frac27\cdot42$.
+
+</details>
+
 ### `vl-nsz-101` — [Vlastní úloha ve stylu NSZ Matematika (č. 101)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -10949,6 +12689,24 @@ Na stojan o hmotnosti 12 kg jsou na každou stranu nasazeny dva pětikilogramov�
 <details><summary>Ответ и решение</summary>
 
 **c** — $39{,}5$ kg. Na jedné straně $10+3{,}75=13{,}75$ kg; celkem $12+2\cdot13{,}75=39{,}5$ kg.
+
+</details>
+
+### `vl-obec-102` — Vlastní úloha ve stylu přijímacích testů (č. 102)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Je-li celé kladné číslo $k$ násobkem čísla 90, pak číslo $\dfrac k{15}$ je určitě dělitelné číslem:
+
+- **a)** $4$
+- **b)** $5$
+- **c)** $6$
+- **d)** $9$
+- **e)** Nelze určit bez dalších informací.
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $6$. $k=90m$, $\frac k{15}=6m$.
 
 </details>
 
@@ -10983,6 +12741,36 @@ Která možnost je negací výroku „Každý žák naší třídy umí plavat n
 <details><summary>Ответ и решение</summary>
 
 **b** — Aspoň jeden žák naší třídy neumí plavat ani jezdit na kole.. Negace „každý má vlastnost $V$“ je „aspoň jeden nemá $V$“; negace „$P$ nebo $Q$“ je „ani $P$, ani $Q$“.
+
+</details>
+
+### `vl-cvut-109` — Vlastní úloha ve stylu přijímaček ČVUT (č. 109)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Výraz $a^2-b^2-3a+3b$ rozložte na součin.
+
+<details><summary>Ответ и решение</summary>
+
+$(a-b)(a+b-3)$. $(a-b)(a+b)-3(a-b)$.
+
+</details>
+
+### `vl-obec-109` — Vlastní úloha ve stylu přijímacích testů (č. 109)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Cena zboží se zvýšila o 25 % a potom snížila o 20 %. Jak se změnila oproti původní ceně?
+
+- **a)** zvýšila se o 5 %
+- **b)** nezměnila se
+- **c)** snížila se o 5 %
+- **d)** zvýšila se o 0,5 %
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — nezměnila se. $1{,}25\cdot0{,}8=1$.
 
 </details>
 
@@ -11071,6 +12859,24 @@ Zdvojený operátor ($++$, $--$, $\cdot\cdot$, $::$) znamená: číslo vlevo zv�
 
 </details>
 
+### `vl-cvut-146` — Vlastní úloha ve stylu přijímaček ČVUT (č. 146)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech reálných $x$, pro která je výraz $\dfrac{x^2-1}{x+1}-x$ roven $-1$, je
+
+- **a)** $\mathbb R\setminus\{-1\}$
+- **b)** $\mathbb R$
+- **c)** $\emptyset$
+- **d)** $\{-1\}$
+- **e)** $(-1,\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\mathbb R\setminus\{-1\}$. Pro $x\ne-1$ je výraz $x-1-x=-1$.
+
+</details>
+
 ### `vl-nsz-149` — [Vlastní úloha ve stylu NSZ Matematika (č. 149)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -11085,6 +12891,18 @@ Vstupenka zlevněná o tři osminy původní ceny stojí 250 Kč. Kolik by stál
 <details><summary>Ответ и решение</summary>
 
 **c** — $320$ Kč. $\frac58p=250$, $p=400$; $\frac45\cdot400=320$.
+
+</details>
+
+### `vl-cvut-152` — Vlastní úloha ve stylu přijímaček ČVUT (č. 152)
+
+*Темы:* Ostatní, 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete podmínky, za kterých má smysl výraz $\dfrac{\sqrt{x+3}}{x^2-x-2}$.
+
+<details><summary>Ответ и решение</summary>
+
+$x\ge-3$, $x\ne-1$, $x\ne2$. Odmocnina vyžaduje $x\ge-3$, jmenovatel $(x-2)(x+1)\ne0$.
 
 </details>
 
@@ -11247,6 +13065,24 @@ Pro množiny $A$, $B$, $C$ platí $A\cap B=A$, $B\cup C=C$ a $C\subseteq A$. Kte
 
 </details>
 
+### `vl-obec-060` — Vlastní úloha ve stylu přijímacích testů (č. 60)
+
+*Темы:* 1. Množina. Podmnožina, 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Je dána množina $A=\{x\in\mathbb Z;\ |x-\mathrm e|\ge3\}$, kde $\mathrm e\approx2{,}718$. Je-li $B$ její doplněk v množině celých čísel, má $B$ prvků:
+
+- **a)** $4$
+- **b)** $5$
+- **c)** $6$
+- **d)** $7$
+- **e)** $8$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $6$. $B=\{x\in\mathbb Z;\ |x-\mathrm e|<3\}$, tj. $-0{,}28<x<5{,}72$: čísla $0,1,\dots,5$.
+
+</details>
+
 ### `vl-nsz-129` — [Vlastní úloha ve stylu NSZ Matematika (č. 129)](https://www.scio.cz/matematika)
 
 *Темы:* 1. Množina. Podmnožina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -11353,6 +13189,24 @@ $\sqrt[3]{\dfrac a{\sqrt{b^3}}}\sqrt{\dfrac b{\sqrt[3]a}}=$
 
 </details>
 
+### `vl-obec-014` — Vlastní úloha ve stylu přijímacích testů (č. 14)
+
+*Темы:* 2. Mocnina. Odmocnina, 5. Rovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Výraz $\dfrac{|\sqrt2-\sqrt5|}{|1-\sqrt2|+|3-\sqrt5|-2}$ je roven číslu:
+
+- **a)** $-1$
+- **b)** $1$
+- **c)** $\dfrac12$
+- **d)** $-\dfrac12$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-1$. Čitatel $\sqrt5-\sqrt2$; jmenovatel $(\sqrt2-1)+(3-\sqrt5)-2=\sqrt2-\sqrt5$. Podíl je $-1$.
+
+</details>
+
 ### `vl-nsz-024` — [Vlastní úloha ve stylu NSZ Matematika (č. 24)](https://www.scio.cz/matematika)
 
 *Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -11370,6 +13224,24 @@ Pro všechna kladná $x$ platí $\dfrac{\sqrt[3]{x^2}\cdot x}{\sqrt{x^5}}=x^t$. 
 
 </details>
 
+### `vl-obec-101` — Vlastní úloha ve stylu přijímacích testů (č. 101)
+
+*Темы:* 2. Mocnina. Odmocnina, 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Součet $4^5+4^4\cdot3+4^3\cdot3^2+4^2\cdot3^3+4\cdot3^4+3^5$ je roven:
+
+- **a)** $4^6-3^6$
+- **b)** $4^6+3^6$
+- **c)** $4^5-3^5$
+- **d)** $7^5$
+- **e)** $\dfrac{4^6-3^6}7$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $4^6-3^6$. $(4-3)(4^5+4^4\cdot3+\dots+3^5)=4^6-3^6$.
+
+</details>
+
 ### `vl-nsz-103` — [Vlastní úloha ve stylu NSZ Matematika (č. 103)](https://www.scio.cz/matematika)
 
 *Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -11384,6 +13256,24 @@ Jakou hodnotu musí mít reálné číslo $a$, aby pro všechna kladná $s$, $t$
 <details><summary>Ответ и решение</summary>
 
 **c** — $2$. Exponent u $s$: $a+2=4$; u $t$: $2a-4=0$. Obě podmínky dávají $a=2$.
+
+</details>
+
+### `vl-cvut-104` — Vlastní úloha ve stylu přijímaček ČVUT (č. 104)
+
+*Темы:* 2. Mocnina. Odmocnina, Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech reálných $a$, pro která je výraz $\left(a^{-1}+2^{-1}\right)\cdot\dfrac{2a}{a+2}$ roven 1, je
+
+- **a)** $\mathbb R\setminus\{-2;0\}$
+- **b)** $\mathbb R\setminus\{0\}$
+- **c)** $(0;\infty)$
+- **d)** $\emptyset$
+- **e)** $\mathbb R$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\mathbb R\setminus\{-2;0\}$. $\frac{2+a}{2a}\cdot\frac{2a}{a+2}=1$, pokud $a\ne0$ a $a\ne-2$.
 
 </details>
 
@@ -11418,6 +13308,18 @@ Pro čísla $2^{45}$, $3^{30}$ a $5^{20}$ platí:
 <details><summary>Ответ и решение</summary>
 
 **a** — $3^{30}>5^{20}>2^{45}$. Se společným exponentem 5: $2^{45}=512^5$, $3^{30}=729^5$, $5^{20}=625^5$.
+
+</details>
+
+### `vl-cvut-153` — Vlastní úloha ve stylu přijímaček ČVUT (č. 153)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Za předpokladu $x>0$, $y>0$ zjednodušte $\dfrac{\sqrt{x^3y}\cdot\sqrt[4]{xy^2}}{\sqrt[4]{x^7y^4}}$.
+
+<details><summary>Ответ и решение</summary>
+
+$1$. Exponent u $x$: $\frac32+\frac14-\frac74=0$; u $y$: $\frac12+\frac12-1=0$.
 
 </details>
 
@@ -11901,6 +13803,24 @@ Všechna řešení rovnice $\dfrac{x+\sqrt3}x-\dfrac{2x}{x+\sqrt3}=2$ lze zapsat
 
 </details>
 
+### `vl-obec-011` — Vlastní úloha ve stylu přijímacích testů (č. 11)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Soustava $2x-3y=4$, $-4x+6y=c$ nemá žádné řešení, právě když:
+
+- **a)** $c=-8$
+- **b)** $c\ne-8$
+- **c)** $c=8$
+- **d)** $c\ne8$
+- **e)** $c=0$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $c\ne-8$. Levé strany jsou úměrné ($\cdot(-2)$); řešení by existovalo jen pro $c=-8$.
+
+</details>
+
 ### `vl-nsz-022` — [Vlastní úloha ve stylu NSZ Matematika (č. 22)](https://www.scio.cz/matematika)
 
 *Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -11935,6 +13855,18 @@ Kavárna denně spotřebuje $x$ kg kávy na espresso a $2x+0{,}5$ kg na cappucci
 
 </details>
 
+### `vl-cvut-031` — Vlastní úloha ve stylu přijímaček ČVUT (č. 31)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jeden kořen rovnice $x^2+bx-12=0$ je $x_1=3$. Určete $b$ a druhý kořen.
+
+<details><summary>Ответ и решение</summary>
+
+$b=1$, $x_2=-4$. Viète: $x_1x_2=-12$, $x_1+x_2=-b$.
+
+</details>
+
 ### `vl-nsz-089` — [Vlastní úloha ve stylu NSZ Matematika (č. 89)](https://www.scio.cz/matematika)
 
 *Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -11952,6 +13884,24 @@ Klára šije 8 hodin denně. Jitka šije o čtvrtinu rychleji, ale pracuje o 2 h
 
 </details>
 
+### `vl-obec-095` — Vlastní úloha ve stylu přijímacích testů (č. 95)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $x^4-3x^3-x^2+3x=0$ má kořen $x=3$. Kolik jejích kořenů leží v intervalu $(-1;1\rangle$?
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $2$
+- **d)** $3$
+- **e)** $4$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $2$. $x(x-3)(x^2-1)=0$: kořeny $-1,0,1,3$; v intervalu jsou $0$ a $1$.
+
+</details>
+
 ### `vl-nsz-106` — [Vlastní úloha ve stylu NSZ Matematika (č. 106)](https://www.scio.cz/matematika)
 
 *Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -11966,6 +13916,18 @@ Když libovolné číslo $x$ vydělím dvěma a s výsledkem provedu tajnou oper
 <details><summary>Ответ и решение</summary>
 
 **b** — odečtení šesti. Pro přičtení $c$: $\frac x2+c=\frac{x+c-6}2$, tedy $c=-6$. Násobení $k$ by dalo $\frac{kx}2=\frac{kx-6}2$ — nikdy.
+
+</details>
+
+### `vl-cvut-138` — Vlastní úloha ve stylu přijímaček ČVUT (č. 138)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Obsah obdélníku je 48 cm$^2$ a jedna strana je o 2 cm delší než druhá. Určete rozměry obdélníku.
+
+<details><summary>Ответ и решение</summary>
+
+$6$ cm a $8$ cm. $x(x+2)=48$, $x^2+2x-48=0$, $x=6$.
 
 </details>
 
@@ -12149,6 +14111,72 @@ Rovnice $(m+1)x^2-2mx+(m-1)=0$ s neznámou $x$ má dvojnásobný kořen pro
 <details><summary>Ответ и решение</summary>
 
 **e** — nemá dvojnásobný kořen. $D=4m^2-4(m^2-1)=4>0$; pro $m=-1$ je rovnice lineární.
+
+</details>
+
+### `vl-cvut-047` — Vlastní úloha ve stylu přijímaček ČVUT (č. 47)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro které hodnoty parametru $p$ nemá rovnice $px^2+4x+p-3=0$ žádný reálný kořen?
+
+<details><summary>Ответ и решение</summary>
+
+$p\in(-\infty;-1)\cup(4;\infty)$. Pro $p=0$ má kořen. Jinak $\frac D4=4-p(p-3)<0\iff p^2-3p-4>0$.
+
+</details>
+
+### `vl-cvut-063` — Vlastní úloha ve stylu přijímaček ČVUT (č. 63)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $x^2-ax-2a^2=0$ (s neznámou $x$) má jeden kořen o 6 větší než druhý právě tehdy, když
+
+- **a)** $a=2$
+- **b)** $a=-2$
+- **c)** $a=2$ nebo $a=-2$
+- **d)** $a=0$
+- **e)** $a$ je libovolné
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $a=2$ nebo $a=-2$. Kořeny $2a$ a $-a$ se liší o $|3a|=6$.
+
+</details>
+
+### `vl-cvut-081` — Vlastní úloha ve stylu přijímaček ČVUT (č. 81)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro které hodnoty parametru $m$ má rovnice $m(x-2)=3x+1$ právě jedno řešení? Určete ho.
+
+<details><summary>Ответ и решение</summary>
+
+Pro $m\ne3$: $x=\frac{2m+1}{m-3}$; pro $m=3$ řešení není. $(m-3)x=2m+1$.
+
+</details>
+
+### `vl-cvut-097` — Vlastní úloha ve stylu přijímaček ČVUT (č. 97)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro které hodnoty parametru $m$ má rovnice $\dfrac{x+m}{x-1}=2$ (s neznámou $x$) řešení? Určete je.
+
+<details><summary>Ответ и решение</summary>
+
+Pro $m\ne-1$: $x=m+2$; pro $m=-1$ řešení nemá. $x+m=2x-2$, $x=m+2$; musí platit $x\ne1$, tj. $m\ne-1$.
+
+</details>
+
+### `vl-cvut-149` — Vlastní úloha ve stylu přijímaček ČVUT (č. 149)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro které hodnoty parametru $p$ má rovnice $x^2-2px+p+6=0$ dvojnásobný kořen? Určete ho.
+
+<details><summary>Ответ и решение</summary>
+
+$p=3$ (kořen $3$) nebo $p=-2$ (kořen $-2$). $\frac D4=p^2-p-6=0$; dvojnásobný kořen je $x=p$.
 
 </details>
 
@@ -12366,6 +14394,36 @@ Nalezněte řešení rovnice a rozhodněte, které tvrzení je pravdivé. $|2x-1
 
 </details>
 
+### `vl-obec-042` — Vlastní úloha ve stylu přijímacích testů (č. 42)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešením rovnice $|x-2|+3=5-x$ je:
+
+- **a)** $x=2$
+- **b)** $x\in(-\infty;2\rangle$
+- **c)** $\emptyset$
+- **d)** $x=4$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x\in(-\infty;2\rangle$. Pro $x\le2$: $2-x+3=5-x$ platí vždy. Pro $x>2$: $x+1=5-x$, $x=2$ — spor s $x>2$.
+
+</details>
+
+### `vl-cvut-102` — Vlastní úloha ve stylu přijímaček ČVUT (č. 102)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte v $\mathbb R$ rovnici $|x-1|+|x-3|=2$.
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\langle1;3\rangle$. Mezi 1 a 3 je součet vzdáleností právě 2, mimo interval je větší.
+
+</details>
+
 ### `fit-2014-1-04` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 4, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2014-1.pdf)
 
 *Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
@@ -12510,6 +14568,18 @@ Která z následujících množin je podmnožinou množiny řešení nerovnice $
 <details><summary>Ответ и решение</summary>
 
 **b** — $(1,3\rangle$. Nulové body $-1$, $\frac12$, $3$. Výraz je $\le0$ na $(-\infty,-1\rangle\cup\left(\frac12,3\right\rangle$; celý interval $(1,3\rangle$ v tom leží.
+
+</details>
+
+### `vl-cvut-095` — Vlastní úloha ve stylu přijímaček ČVUT (č. 95)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte nerovnici $\dfrac{x^2-4}{x^2-2x-3}<0$.
+
+<details><summary>Ответ и решение</summary>
+
+$(-2;-1)\cup(2;3)$. Nulové body $-2,-1,2,3$, metoda intervalů.
 
 </details>
 
@@ -12705,6 +14775,72 @@ Množina všech reálných čísel, pro která platí $\frac{|x-4|}{x+6}<1$, je 
 
 </details>
 
+### `vl-cvut-014` — Vlastní úloha ve stylu přijímaček ČVUT (č. 14)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množinou všech řešení nerovnice $\dfrac6{|x-2|}>3$ je
+
+- **a)** $(0,2)\cup(2,4)$
+- **b)** $(0,4)$
+- **c)** $\langle0,2)\cup(2,4\rangle$
+- **d)** $(-\infty,0)\cup(4,\infty)$
+- **e)** $(2,4)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(0,2)\cup(2,4)$. $0<|x-2|<2$.
+
+</details>
+
+### `vl-cvut-033` — Vlastní úloha ve stylu přijímaček ČVUT (č. 33)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech řešení nerovnice $|x-4|+1\le|x|$ je
+
+- **a)** $\left\langle\frac52,\infty\right)$
+- **b)** $\left\langle\frac52,4\right\rangle$
+- **c)** $\left(-\infty,\frac52\right\rangle$
+- **d)** $\langle4,\infty)$
+- **e)** $\langle0,\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\left\langle\frac52,\infty\right)$. Pro $x\ge4$ platí vždy; pro $0\le x<4$: $5-x\le x$, $x\ge\frac52$; pro $x<0$: $5\le0$ — nikdy.
+
+</details>
+
+### `vl-cvut-038` — Vlastní úloha ve stylu přijímaček ČVUT (č. 38)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množinou všech řešení nerovnice $\dfrac4{|x+1|}\ge2$ je
+
+- **a)** $\langle-3,-1)\cup(-1,1\rangle$
+- **b)** $\langle-3,1\rangle$
+- **c)** $(-3,-1)\cup(-1,1)$
+- **d)** $(-\infty,-3\rangle\cup\langle1,\infty)$
+- **e)** $(-1,1\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\langle-3,-1)\cup(-1,1\rangle$. $0<|x+1|\le2$.
+
+</details>
+
+### `vl-cvut-089` — Vlastní úloha ve stylu přijímaček ČVUT (č. 89)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete množinu všech řešení nerovnice $|2x-1|<x+4$.
+
+<details><summary>Ответ и решение</summary>
+
+$(-1;5)$. $-x-4<2x-1<x+4$.
+
+</details>
+
 ### `vl-nsz-100` — [Vlastní úloha ve stylu NSZ Matematika (č. 100)](https://www.scio.cz/matematika)
 
 *Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -12722,6 +14858,24 @@ Množina $(-6,-4\rangle\cup\langle0,2)$ je řešením nerovnice:
 
 </details>
 
+### `vl-cvut-134` — Vlastní úloha ve stylu přijímaček ČVUT (č. 134)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech řešení nerovnice $3|x|+|x-1|<2$ je
+
+- **a)** $\left(-\frac14,\frac12\right)$
+- **b)** $\left(-\frac14,0\right\rangle$
+- **c)** $\left(-\infty,\frac12\right)$
+- **d)** $\left\langle0,\frac12\right)$
+- **e)** $\left(-\frac14,1\right)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\left(-\frac14,\frac12\right)$. Pro $0\le x<1$: $2x+1<2$; pro $x<0$: $1-4x<2$; pro $x\ge1$: $4x-1<2$ — nevyhovuje.
+
+</details>
+
 ### `vl-nsz-143` — [Vlastní úloha ve stylu NSZ Matematika (č. 143)](https://www.scio.cz/matematika)
 
 *Темы:* 7. Nerovnice s absolutní hodnotou, 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -12736,6 +14890,24 @@ Množina všech řešení nerovnice $x^2-x-6<3|x-3|$ v $\mathbb R$ je:
 <details><summary>Ответ и решение</summary>
 
 **b** — $(-5;3)$. Pro $x\ge3$: $x^2-4x+3<0$, tj. $1<x<3$ — žádné řešení. Pro $x<3$: $x^2+2x-15<0$, tj. $-5<x<3$.
+
+</details>
+
+### `vl-cvut-165` — Vlastní úloha ve stylu přijímaček ČVUT (č. 165)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech řešení nerovnice $|x+1|+|x-3|\le6$ je
+
+- **a)** $\langle-2,4\rangle$
+- **b)** $(-2,4)$
+- **c)** $\langle-1,3\rangle$
+- **d)** $(-\infty,-2\rangle\cup\langle4,\infty)$
+- **e)** $\langle-2,3\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\langle-2,4\rangle$. Mezi $-1$ a $3$ je součet 4; mimo roste — rovnost v $-2$ a $4$.
 
 </details>
 
@@ -12941,6 +15113,42 @@ Nerovnice $\sqrt{x^2+x-12}<x+4$ má řešení
 
 </details>
 
+### `vl-obec-075` — Vlastní úloha ve stylu přijímacích testů (č. 75)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Počet všech reálných řešení rovnice $\sqrt{x-3}=x-5$ je:
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $2$
+- **d)** $4$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $1$. Umocněním $x^2-11x+28=0$: $x=4$ nebo $x=7$; zkouška vyřadí $x=4$.
+
+</details>
+
+### `vl-obec-082` — Vlastní úloha ve stylu přijímacích testů (č. 82)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Počet řešení rovnice $\sqrt{x^2-4}=\sqrt{x^2}-2$ v oboru reálných čísel je:
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $2$
+- **d)** $3$
+- **e)** $4$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $2$. Pravá strana je $|x|-2\ge0$. Umocněním $x^2-4=x^2-4|x|+4$, tedy $|x|=2$; obě hodnoty $\pm2$ vyhovují.
+
+</details>
+
 ### `vsb-fbi-2015-pz23-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 23 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
 
 *Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
@@ -13055,6 +15263,84 @@ Určete definiční obor funkce $f(x)=\frac{10}{\sqrt{x-|x|}}$
 
 </details>
 
+### `vl-cvut-001` — Vlastní úloha ve stylu přijímaček ČVUT (č. 1)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete kvadratickou funkci $f(x)=ax^2+bx+c$, pro kterou platí $f(0)=4$, $f(1)=3$ a $f(-2)=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$f(x)=-x^2+4$. $c=4$; $a+b=-1$; $4a-2b=-4$; odtud $a=-1$, $b=0$.
+
+</details>
+
+### `vl-obec-005` — Vlastní úloha ve stylu přijímacích testů (č. 5)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Počet celých čísel v definičním oboru funkce $f:\ y=\log(\cos x)+\sqrt{9-x^2}$ je:
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $2$
+- **d)** $3$
+- **e)** Definiční obor obsahuje nekonečně mnoho celých čísel.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $3$. Celá čísla z $\langle-3;3\rangle$, pro která $\cos x>0$: $-1$, $0$, $1$.
+
+</details>
+
+### `vl-cvut-009` — Vlastní úloha ve stylu přijímaček ČVUT (č. 9)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Grafem funkce $f:\ y=\dfrac{x^3-3x^2+3x-1}{4x-4}$ je
+
+- **a)** parabola s vrcholem $[1;0]$, z níž je vyjmut vrchol
+- **b)** celá parabola s vrcholem $[1;0]$
+- **c)** přímka
+- **d)** parabola s vrcholem $[-1;0]$ bez vrcholu
+- **e)** hyperbola
+
+<details><summary>Ответ и решение</summary>
+
+**a** — parabola s vrcholem $[1;0]$, z níž je vyjmut vrchol. Čitatel je $(x-1)^3$, takže pro $x\ne1$ je $y=\frac{(x-1)^2}4$; bod $x=1$ do definičního oboru nepatří.
+
+</details>
+
+### `vl-obec-025` — Vlastní úloha ve stylu přijímacích testů (č. 25)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 5. Rovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Funkce $f(x)=|x-2|-|x|$ nabývá:
+
+- **a)** všech hodnot z $\langle-2;2\rangle$
+- **b)** jen hodnot $-2$ a $2$
+- **c)** všech reálných hodnot
+- **d)** jen kladných hodnot
+- **e)** jen hodnot z $(0;2)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — všech hodnot z $\langle-2;2\rangle$. Pro $x\le0$ je $f=2$, pro $x\ge2$ je $f=-2$, mezi tím lineárně klesá.
+
+</details>
+
+### `vl-cvut-034` — Vlastní úloha ve stylu přijímaček ČVUT (č. 34)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete lineární lomenou funkci, jejíž graf má asymptoty $x=2$, $y=-3$ a prochází počátkem.
+
+<details><summary>Ответ и решение</summary>
+
+$y=\dfrac{-3x}{x-2}$ (tj. $y=-3-\frac6{x-2}$). $y=-3+\frac k{x-2}$, z bodu $[0;0]$: $k=-6$.
+
+</details>
+
 ### `vl-nsz-041` — [Vlastní úloha ve stylu NSZ Matematika (č. 41)](https://www.scio.cz/matematika)
 
 *Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 5. Rovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -13069,6 +15355,36 @@ O funkci $y=\bigl||x|-3\bigr|$ platí:
 <details><summary>Ответ и решение</summary>
 
 **b** — je sudá. $f(-x)=f(x)$. Nulové body jsou jen $\pm3$, na $\langle0,3\rangle$ klesá a obor hodnot je $\langle0,\infty)$.
+
+</details>
+
+### `vl-cvut-048` — Vlastní úloha ve stylu přijímaček ČVUT (č. 48)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete kvadratickou funkci, jejíž graf má vrchol $[2;-3]$ a prochází bodem $[0;5]$.
+
+<details><summary>Ответ и решение</summary>
+
+$y=2x^2-8x+5$. $y=a(x-2)^2-3$, z bodu $[0;5]$: $4a=8$.
+
+</details>
+
+### `vl-cvut-053` — Vlastní úloha ve stylu přijímaček ČVUT (č. 53)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 5. Rovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Která funkce má nejmenší hodnotu 4 a nabývá jí na celém intervalu $\langle-2;2\rangle$?
+
+- **a)** $y=|x-2|+|x+2|$
+- **b)** $y=|x-2|\cdot|x+2|+4$
+- **c)** $y=x^2+4$
+- **d)** $y=2|x|+4$
+- **e)** $y=|x^2-4|$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $y=|x-2|+|x+2|$. Pro $-2\le x\le2$ je $|x-2|+|x+2|=4$, mimo interval víc.
 
 </details>
 
@@ -13089,6 +15405,18 @@ Kolik společných bodů s osou $x$ má graf funkce $y=(x^2-4)\sqrt{1-x}$?
 
 </details>
 
+### `vl-cvut-065` — Vlastní úloha ve stylu přijímaček ČVUT (č. 65)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 5. Rovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Zapište funkci $f:\ y=|x-1|+|x+2|$ bez absolutních hodnot (po částech) a určete její nejmenší hodnotu.
+
+<details><summary>Ответ и решение</summary>
+
+$y=-2x-1$ pro $x<-2$; $y=3$ pro $-2\le x\le1$; $y=2x+1$ pro $x>1$; nejmenší hodnota 3. Nulové body $-2$ a $1$ rozdělí osu na tři intervaly.
+
+</details>
+
 ### `vl-nsz-071` — [Vlastní úloha ve stylu NSZ Matematika (č. 71)](https://www.scio.cz/matematika)
 
 *Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 5. Rovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -13103,6 +15431,24 @@ Jsou dány funkce $f(x)=|x+2|-|x-2|$ a $g(x)=x^2+1$. Která z nich je na celém 
 <details><summary>Ответ и решение</summary>
 
 **a** — jen $f$. Na $(-1,1)$ je $f(x)=(x+2)-(2-x)=2x$ — rostoucí. $g$ má vrchol v $x=0$, na $(-1,0)$ klesá a na $(0,1)$ roste.
+
+</details>
+
+### `vl-cvut-076` — Vlastní úloha ve stylu přijímaček ČVUT (č. 76)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Graf lineární lomené funkce má asymptoty $x=3$ a $y=-1$ a prochází bodem $[4;1]$. Jde o graf funkce
+
+- **a)** $y=\dfrac2{x-3}-1$
+- **b)** $y=\dfrac2{x+3}-1$
+- **c)** $y=-\dfrac2{x-3}-1$
+- **d)** $y=\dfrac{x-1}{x-3}$
+- **e)** $y=\dfrac2{x-3}+1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $y=\dfrac2{x-3}-1$. Tvar $y=\frac k{x-3}-1$; z bodu $[4;1]$: $k=2$.
 
 </details>
 
@@ -13698,6 +16044,66 @@ Ve vzorku radioaktivní látky se každých dvacet minut rozpadne třetina jader
 
 </details>
 
+### `vl-cvut-032` — Vlastní úloha ve stylu přijímaček ČVUT (č. 32)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte rovnici $4^x-6\cdot2^x+8=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\{1;2\}$. $t=2^x$: $t^2-6t+8=0$.
+
+</details>
+
+### `vl-obec-070` — Vlastní úloha ve stylu přijímacích testů (č. 70)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, 13. Logaritmické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $\log_2(2^x-7)=3-x$ má řešení:
+
+- **a)** $x=0$
+- **b)** $x=3$
+- **c)** $x=\log_27$
+- **d)** $x=2$
+- **e)** nemá řešení
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=3$. $2^x-7=\frac8{2^x}$, $t^2-7t-8=0$, $t=8$.
+
+</details>
+
+### `vl-cvut-078` — Vlastní úloha ve stylu přijímaček ČVUT (č. 78)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete všechna záporná řešení rovnice $5^{2x+1}-26\cdot5^x+5=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-1$. $t=5^x$: $5t^2-26t+5=0$, $t=5$ nebo $t=\frac15$; záporné je jen $x=-1$.
+
+</details>
+
+### `vl-cvut-115` — Vlastní úloha ve stylu přijímaček ČVUT (č. 115)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $3^{x^2}+27\cdot3^{-x^2}=12$
+
+- **a)** má v $\mathbb R$ právě jedno řešení
+- **b)** má v $\mathbb R$ právě dvě řešení
+- **c)** nemá řešení v $\mathbb R$
+- **d)** má v $\mathbb R$ právě tři řešení
+- **e)** má v $\mathbb R$ právě čtyři řešení
+
+<details><summary>Ответ и решение</summary>
+
+**e** — má v $\mathbb R$ právě čtyři řešení. $t=3^{x^2}$: $t^2-12t+27=0$, $t=3$ nebo $9$, tedy $x^2=1$ nebo $x^2=2$.
+
+</details>
+
 ### `vsb-fast-v1-04` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 4)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
 
 *Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
@@ -13906,6 +16312,48 @@ Které z následujících tvrzení o definičním oboru funkce $f(x)=\dfrac{\ln(
 
 </details>
 
+### `vl-cvut-007` — Vlastní úloha ve stylu přijímaček ČVUT (č. 7)
+
+*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete definiční obor funkce $f:\ y=\sqrt{\log_{\frac12}(x-1)}$.
+
+<details><summary>Ответ и решение</summary>
+
+$(1;2\rangle$. $\log_{\frac12}(x-1)\ge0\iff0<x-1\le1$.
+
+</details>
+
+### `vl-cvut-024` — Vlastní úloha ve stylu přijímaček ČVUT (č. 24)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jestliže $\log_3y=3\log_3(x+1)-\log_3(x-1)-1$ (pro $x>1$), pak $y$ je rovno
+
+- **a)** $\dfrac{(x+1)^3}{3(x-1)}$
+- **b)** $\dfrac{3(x+1)}{x-1}$
+- **c)** $\dfrac{(x+1)^3}{x-1}-1$
+- **d)** $\dfrac{(x+1)^3}{3(x-1)^3}$
+- **e)** $\dfrac{3(x+1)^3}{x-1}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac{(x+1)^3}{3(x-1)}$. $\log_3y=\log_3\frac{(x+1)^3}{(x-1)\cdot3}$.
+
+</details>
+
+### `vl-cvut-037` — Vlastní úloha ve stylu přijímaček ČVUT (č. 37)
+
+*Темы:* 12. Logaritmická funkce, 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete definiční obor funkce $f:\ y=\log(\sin x)$.
+
+<details><summary>Ответ и решение</summary>
+
+$\bigcup_{k\in\mathbb Z}(2k\pi;\pi+2k\pi)$. $\sin x>0$.
+
+</details>
+
 ### `vl-nsz-079` — [Vlastní úloha ve stylu NSZ Matematika (č. 79)](https://www.scio.cz/matematika)
 
 *Темы:* 12. Logaritmická funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -13937,6 +16385,24 @@ Kterému výrazu se pro všechna kladná $x$ rovná $\log_3x+\log_9x$?
 <details><summary>Ответ и решение</summary>
 
 **b** — $\log_9x^3$. $\log_9x=\frac12\log_3x$, takže součet je $\frac32\log_3x$; stejnou hodnotu má $\log_9x^3=3\cdot\frac12\log_3x$.
+
+</details>
+
+### `vl-cvut-099` — Vlastní úloha ve stylu přijímaček ČVUT (č. 99)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jestliže $\log_3y=2\log_3x-\frac12\log_3(x+2)-1$ (pro $x>0$), pak $y$ je rovno
+
+- **a)** $\dfrac{x^2}{3\sqrt{x+2}}$
+- **b)** $\dfrac{2x}{3\sqrt{x+2}}$
+- **c)** $\dfrac{x^2}{\sqrt{x+2}}-1$
+- **d)** $\dfrac{3x^2}{\sqrt{x+2}}$
+- **e)** $\dfrac{x^2}{3(x+2)^2}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac{x^2}{3\sqrt{x+2}}$. $\log_3y=\log_3x^2-\log_3\sqrt{x+2}-\log_33$.
 
 </details>
 
@@ -14374,6 +16840,54 @@ Množina všech reálných čísel, pro která platí $\log_2^2x-\log_2x-2<0$, j
 
 </details>
 
+### `vl-cvut-015` — Vlastní úloha ve stylu přijímaček ČVUT (č. 15)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte rovnici $\log(x+2)+\log(x-1)=1$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=3$. $(x+2)(x-1)=10$, $x=3$ nebo $x=-4$ (nevyhovuje podmínkám).
+
+</details>
+
+### `vl-cvut-035` — Vlastní úloha ve stylu přijímaček ČVUT (č. 35)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $\log_5(x-2)+\log_5(2x)=\log_5(6x-12)$
+
+- **a)** nemá žádné reálné řešení
+- **b)** má právě jedno řešení, ležící v intervalu $(2,4)$
+- **c)** má právě dvě řešení
+- **d)** má jediné řešení $x=2$
+- **e)** má právě jedno řešení, ležící v intervalu $(4,\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — má právě jedno řešení, ležící v intervalu $(2,4)$. $2x(x-2)=6(x-2)$, tedy $x=2$ (nevyhovuje podmínce $x>2$) nebo $x=3$.
+
+</details>
+
+### `vl-cvut-126` — Vlastní úloha ve stylu přijímaček ČVUT (č. 126)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $\dfrac{\log_2(x-1)}{\log_2(x^2-7)}=\dfrac12$
+
+- **a)** má právě jedno řešení, ležící v intervalu $(3,5)$
+- **b)** nemá žádné reálné řešení
+- **c)** má právě dvě řešení
+- **d)** má právě jedno řešení, ležící v intervalu $(5,\infty)$
+- **e)** má nekonečně mnoho řešení
+
+<details><summary>Ответ и решение</summary>
+
+**a** — má právě jedno řešení, ležící v intervalu $(3,5)$. $(x-1)^2=x^2-7$ dává $x=4$; podmínky $x-1=3>0$, $x^2-7=9\ne1$ splněny.
+
+</details>
+
 ### `vl-nsz-151` — [Vlastní úloha ve stylu NSZ Matematika (č. 151)](https://www.scio.cz/matematika)
 
 *Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -14692,6 +17206,24 @@ Nejmenší perioda funkce $f:\ y=\sin\frac x2+\cos\frac x3$ je:
 
 </details>
 
+### `vl-obec-037` — Vlastní úloha ve stylu přijímacích testů (č. 37)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro jaké $x$ z intervalu $\langle0;\pi\rangle$ se protínají grafy funkcí $f:\ y=\operatorname{tg}x$ a $g:\ y=\operatorname{cotg}\left(x-\frac\pi2\right)$?
+
+- **a)** pouze pro $x=0$
+- **b)** pouze pro $x=\frac\pi2$
+- **c)** pouze pro $x=0$ a $x=\pi$
+- **d)** pouze pro $x=\frac\pi4$
+- **e)** grafy se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**c** — pouze pro $x=0$ a $x=\pi$. $\operatorname{cotg}\left(x-\frac\pi2\right)=-\operatorname{tg}x$; rovnost $\operatorname{tg}x=-\operatorname{tg}x$ dává $\operatorname{tg}x=0$.
+
+</details>
+
 ### `vl-nsz-042` — [Vlastní úloha ve stylu NSZ Matematika (č. 42)](https://www.scio.cz/matematika)
 
 *Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -14706,6 +17238,36 @@ Uvažujme tvrzení: funkce $y=\cos x-1$ je sudá; funkce $y=\sin x\cdot\cos x$ j
 <details><summary>Ответ и решение</summary>
 
 **d** — právě 3. První tři platí; $2\cos0=2$, takže graf protíná osu $y$ v bodě $[0;2]$.
+
+</details>
+
+### `vl-cvut-046` — Vlastní úloha ve stylu přijímaček ČVUT (č. 46)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Výraz $\operatorname{cotg}x\cdot\dfrac{1-\cos^2x}{\sin^2x-1}$ je roven
+
+- **a)** $-\operatorname{tg}x$ pro $x\ne\frac{k\pi}2$
+- **b)** $-\operatorname{tg}x$ pro $x\ne\frac\pi2+k\pi$
+- **c)** $-\operatorname{cotg}x$ pro $x\ne k\pi$
+- **d)** $\operatorname{tg}x$ pro $x\ne\frac{k\pi}2$
+- **e)** $-\operatorname{tg}x$ pro $x\ne k\pi$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-\operatorname{tg}x$ pro $x\ne\frac{k\pi}2$. $\frac{\cos x}{\sin x}\cdot\frac{\sin^2x}{-\cos^2x}=-\frac{\sin x}{\cos x}$; potřebujeme $\sin x\ne0$ i $\cos x\ne0$.
+
+</details>
+
+### `vl-cvut-103` — Vlastní úloha ve stylu přijímaček ČVUT (č. 103)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete $\cos\alpha$ a $\operatorname{cotg}\alpha$, jestliže $\operatorname{tg}\alpha=-\frac{5}{12}$ a $\alpha\in\left(\frac{3\pi}2;2\pi\right)$.
+
+<details><summary>Ответ и решение</summary>
+
+$\cos\alpha=\frac{12}{13}$, $\operatorname{cotg}\alpha=-\frac{12}5$. $\frac1{\cos^2\alpha}=1+\operatorname{tg}^2\alpha=\frac{169}{144}$; ve IV. kvadrantu je kosinus kladný.
 
 </details>
 
@@ -15053,6 +17615,36 @@ Je-li $\cos2x=0{,}5;x\in\langle0;\pi\rangle$, pak $\operatorname{tg}x=$
 
 </details>
 
+### `vl-obec-030` — Vlastní úloha ve stylu přijímacích testů (č. 30)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Počet všech $x\in(0;\pi)$, pro která platí $\sqrt3\cos x=\sin2x$, je:
+
+- **a)** $4$
+- **b)** $2$
+- **c)** $1$
+- **d)** $0$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**e** — Žádná z ostatních odpovědí není správná.. Rovnici upravíme na součin (nebo kvadratickou rovnici pro jednu funkci) a kořeny spočítáme na daném intervalu. Mezi možnostmi a)–d) tento výsledek není, správně je tedy e).
+
+</details>
+
+### `vl-cvut-055` — Vlastní úloha ve stylu přijímaček ČVUT (č. 55)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte rovnici $\sin2x=\sqrt3\cos x$ v $\mathbb R$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=\frac\pi2+k\pi$, $x=\frac\pi3+2k\pi$, $x=\frac{2\pi}3+2k\pi$ ($k\in\mathbb Z$). $\cos x(2\sin x-\sqrt3)=0$.
+
+</details>
+
 ### `vl-nsz-064` — [Vlastní úloha ve stylu NSZ Matematika (č. 64)](https://www.scio.cz/matematika)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -15067,6 +17659,60 @@ Kolik řešení má rovnice $\operatorname{tg}x\cdot\cos x=0$ v intervalu $(-\pi
 <details><summary>Ответ и решение</summary>
 
 **b** — $2$. Kde je tangens definován ($\cos x\ne0$), je levá strana $\sin x$. Rovnice $\sin x=0$ má v intervalu kořeny $0$ a $\pi$; body $\pm\frac\pi2$, $\frac{3\pi}2$ nepatří do definičního oboru.
+
+</details>
+
+### `vl-cvut-084` — Vlastní úloha ve stylu přijímaček ČVUT (č. 84)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $2\sin^2x+\cos2x-\cos x=0$
+
+- **a)** má v $\langle0,2\pi)$ právě jedno řešení
+- **b)** má v $\langle0,2\pi)$ právě čtyři řešení
+- **c)** nemá v $\langle0,2\pi)$ žádné řešení
+- **d)** má v $\langle0,2\pi)$ právě dvě řešení
+- **e)** má v $\langle0,2\pi)$ právě tři řešení
+
+<details><summary>Ответ и решение</summary>
+
+**a** — má v $\langle0,2\pi)$ právě jedno řešení. $\cos2x=1-2\sin^2x$, rovnice je $1-\cos x=0$, tedy jen $x=0$.
+
+</details>
+
+### `vl-cvut-085` — Vlastní úloha ve stylu přijímaček ČVUT (č. 85)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množinou všech řešení rovnice $\cos^2x+2\sin x-2=0$ je
+
+- **a)** $\left\{\frac\pi2+2k\pi;\ k\in\mathbb Z\right\}$
+- **b)** $\left\{\frac\pi2+k\pi;\ k\in\mathbb Z\right\}$
+- **c)** $\emptyset$
+- **d)** $\{2k\pi;\ k\in\mathbb Z\}$
+- **e)** $\{k\pi;\ k\in\mathbb Z\}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\left\{\frac\pi2+2k\pi;\ k\in\mathbb Z\right\}$. $1-\sin^2x+2\sin x-2=0\iff(\sin x-1)^2=0$.
+
+</details>
+
+### `vl-cvut-091` — Vlastní úloha ve stylu přijímaček ČVUT (č. 91)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Největší záporný a nejmenší kladný kořen rovnice $2\cos^2x+\sin x-2=0$ jsou
+
+- **a)** $-\pi$ a $\frac\pi6$
+- **b)** $-\frac\pi6$ a $\frac\pi6$
+- **c)** $-\pi$ a $\pi$
+- **d)** $-\frac{7\pi}6$ a $\frac\pi6$
+- **e)** $-\frac\pi2$ a $\frac{5\pi}6$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-\pi$ a $\frac\pi6$. $-2\sin^2x+\sin x=0$: $\sin x=0$ nebo $\frac12$. Záporné kořeny $-\pi,-\frac{7\pi}6,\dots$; nejmenší kladný $\frac\pi6$.
 
 </details>
 
@@ -15104,6 +17750,36 @@ Kolik řešení má rovnice $2\sin^2x+5\sin x=3$ v intervalu $\langle0;3\pi\rang
 
 </details>
 
+### `vl-cvut-130` — Vlastní úloha ve stylu přijímaček ČVUT (č. 130)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice, 5. Rovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množinou všech řešení rovnice $|\cos x-3|=\sin^2x+2$ je
+
+- **a)** $\left\{\frac\pi2+k\pi,\ 2k\pi;\ k\in\mathbb Z\right\}$
+- **b)** $\left\{\frac\pi2+k\pi\right\}$
+- **c)** $\{k\pi\}$
+- **d)** $\{2k\pi\}$
+- **e)** $\mathbb R$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\left\{\frac\pi2+k\pi,\ 2k\pi;\ k\in\mathbb Z\right\}$. $3-\cos x=3-\cos^2x$, tedy $\cos x(\cos x-1)=0$.
+
+</details>
+
+### `vl-cvut-143` — Vlastní úloha ve stylu přijímaček ČVUT (č. 143)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte rovnici $2\cos^2x-3\cos x+1=0$ v intervalu $\langle0;2\pi)$.
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\left\{0;\frac\pi3;\frac{5\pi}3\right\}$. $\cos x=1$ nebo $\cos x=\frac12$.
+
+</details>
+
 ### `vl-nsz-158` — [Vlastní úloha ve stylu NSZ Matematika (č. 158)](https://www.scio.cz/matematika)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -15118,6 +17794,24 @@ Kolik řešení má rovnice $2\sin^2x+5\sin x=3$ v intervalu $\langle0;3\pi\rang
 <details><summary>Ответ и решение</summary>
 
 **b** — $\left(\frac\pi2,\pi\right)\cup\left(\frac{3\pi}2,2\pi\right)$. $\operatorname{cotg}\left(x+\frac\pi2\right)=-\operatorname{tg}x$, takže hledáme $\operatorname{tg}x<0$: II. a IV. kvadrant.
+
+</details>
+
+### `vl-cvut-164` — Vlastní úloha ve stylu přijímaček ČVUT (č. 164)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V intervalu $\langle0,2\pi)$ má rovnice $\operatorname{cotg}x-2\cos^2x=0$ právě
+
+- **a)** 2 řešení
+- **b)** 4 řešení
+- **c)** 6 řešení
+- **d)** 8 řešení
+- **e)** 3 řešení
+
+<details><summary>Ответ и решение</summary>
+
+**b** — 4 řešení. $\cos x\left(\frac1{\sin x}-2\cos x\right)=0$: $\cos x=0$ ($\frac\pi2,\frac{3\pi}2$) nebo $\sin2x=1$ ($\frac\pi4,\frac{5\pi}4$).
 
 </details>
 
@@ -15193,6 +17887,156 @@ Reálná část komplexního čísla $z=(2-i)^5$ je rovna číslu
 
 </details>
 
+### `vl-obec-017` — Vlastní úloha ve stylu přijímacích testů (č. 17)
+
+*Темы:* 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik je $|z|$, jestliže $z=\dfrac{(3+4i)^2}{1-i}$?
+
+- **a)** $\dfrac{25}{\sqrt2}$
+- **b)** $25\sqrt2$
+- **c)** $\dfrac52$
+- **d)** $5\sqrt2$
+- **e)** $25$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac{25}{\sqrt2}$. $\frac{|3+4i|^2}{|1-i|}=\frac{25}{\sqrt2}$.
+
+</details>
+
+### `vl-cvut-040` — Vlastní úloha ve stylu přijímaček ČVUT (č. 40)
+
+*Темы:* 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete reálnou a imaginární část čísla $z=\dfrac{1+i}{1-i}+i^{7}$.
+
+<details><summary>Ответ и решение</summary>
+
+$\operatorname{Re}z=0$, $\operatorname{Im}z=0$ ($z=0$). $\frac{1+i}{1-i}=i$, $i^7=-i$.
+
+</details>
+
+### `vl-cvut-041` — Vlastní úloha ve stylu přijímaček ČVUT (č. 41)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Najděte komplexní číslo $z$, pro které platí $2z+\bar z=3-4i$.
+
+<details><summary>Ответ и решение</summary>
+
+$z=1-4i$. Pro $z=a+bi$: $3a+bi=3-4i$.
+
+</details>
+
+### `vl-cvut-061` — Vlastní úloha ve stylu přijímaček ČVUT (č. 61)
+
+*Темы:* 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Komplexně sdružené číslo k číslu $z=\dfrac{7-i}{1+i}+3i$ je
+
+- **a)** $3+i$
+- **b)** $3-i$
+- **c)** $-3+i$
+- **d)** $-3-i$
+- **e)** $4+3i$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $3+i$. $\frac{(7-i)(1-i)}2=3-4i$, $z=3-i$.
+
+</details>
+
+### `vl-cvut-098` — Vlastní úloha ve stylu přijímaček ČVUT (č. 98)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte v $\mathbb C$ rovnici $z^2-4z+13=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$z=2\pm3i$. $D=16-52=-36$.
+
+</details>
+
+### `vl-cvut-036` — Vlastní úloha ve stylu přijímaček ČVUT (č. 36)
+
+*Темы:* 17. Goniometrický tvar komplexního čísla. Moivreova věta, 16. Komplexní čísla · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Goniometrický tvar čísla $z=\dfrac{1-3i}{1+2i}$ je
+
+- **a)** $\sqrt2\left(\cos\frac{5\pi}4+i\sin\frac{5\pi}4\right)$
+- **b)** $\sqrt2\left(\cos\frac{3\pi}4+i\sin\frac{3\pi}4\right)$
+- **c)** $2\left(\cos\frac{5\pi}4+i\sin\frac{5\pi}4\right)$
+- **d)** $\sqrt2\left(\cos\frac\pi4+i\sin\frac\pi4\right)$
+- **e)** $\sqrt2\left(\cos\frac{7\pi}4+i\sin\frac{7\pi}4\right)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\sqrt2\left(\cos\frac{5\pi}4+i\sin\frac{5\pi}4\right)$. $z=\frac{(1-3i)(1-2i)}5=\frac{-5-5i}5=-1-i$.
+
+</details>
+
+### `vl-obec-050` — Vlastní úloha ve stylu přijímacích testů (č. 50)
+
+*Темы:* 17. Goniometrický tvar komplexního čísla. Moivreova věta · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Imaginární část čísla $\left(\dfrac{\sqrt2}2+\dfrac{\sqrt2}2i\right)^{16}$ je rovna číslu:
+
+- **a)** $1$
+- **b)** $0$
+- **c)** $\dfrac{1}{2}$
+- **d)** $-1$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $0$. Číslo je $\cos\varphi+i\sin\varphi$ s $\varphi=\dfrac{\pi}{4}$; podle Moivreovy věty má mocnina argument $16\varphi$.
+
+</details>
+
+### `vl-cvut-058` — Vlastní úloha ve stylu přijímaček ČVUT (č. 58)
+
+*Темы:* 17. Goniometrický tvar komplexního čísla. Moivreova věta · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pomocí Moivreovy věty vypočtěte $(1+i)^8$.
+
+<details><summary>Ответ и решение</summary>
+
+$16$. $1+i=\sqrt2\left(\cos\frac\pi4+i\sin\frac\pi4\right)$, osmá mocnina $16(\cos2\pi+i\sin2\pi)$.
+
+</details>
+
+### `vl-cvut-064` — Vlastní úloha ve stylu přijímaček ČVUT (č. 64)
+
+*Темы:* 17. Goniometrický tvar komplexního čísla. Moivreova věta · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Zapište v goniometrickém tvaru číslo $z=-\sqrt3+i$.
+
+<details><summary>Ответ и решение</summary>
+
+$2\left(\cos\frac{5\pi}6+i\sin\frac{5\pi}6\right)$. $|z|=2$, $\cos\varphi=-\frac{\sqrt3}2$, $\sin\varphi=\frac12$.
+
+</details>
+
+### `vl-cvut-122` — Vlastní úloha ve stylu přijímaček ČVUT (č. 122)
+
+*Темы:* 17. Goniometrický tvar komplexního čísla. Moivreova věta · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Goniometrický tvar čísla $z=\left[3\left(\cos\frac\pi6+i\sin\frac\pi6\right)\right]^2\cdot2\left(\cos\frac\pi4+i\sin\frac\pi4\right)$ je
+
+- **a)** $18\left(\cos\frac{7\pi}{12}+i\sin\frac{7\pi}{12}\right)$
+- **b)** $6\left(\cos\frac{7\pi}{12}+i\sin\frac{7\pi}{12}\right)$
+- **c)** $18\left(\cos\frac{5\pi}{12}+i\sin\frac{5\pi}{12}\right)$
+- **d)** $12\left(\cos\frac{7\pi}{12}+i\sin\frac{7\pi}{12}\right)$
+- **e)** $9\left(\cos\frac{\pi}{12}+i\sin\frac{\pi}{12}\right)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $18\left(\cos\frac{7\pi}{12}+i\sin\frac{7\pi}{12}\right)$. Moivre: $3^2=9$, argument $\frac\pi3$; při násobení se absolutní hodnoty násobí ($18$) a argumenty sčítají ($\frac\pi3+\frac\pi4$).
+
+</details>
+
 ### `fel-vzor01-7` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 7, 1 bod)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-vzor01.pdf)
 
 *Темы:* 18. Posloupnosti, 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
@@ -15225,6 +18069,18 @@ Posloupnost $\left(n^2-n+2\right)_{n=1}^\infty$ je zadána rekurentně jako:
 <details><summary>Ответ и решение</summary>
 
 **a** — $a_{n+1}=a_n+2n,\ a_1=2$. $a_1=2$ a $a_{n+1}-a_n=(n+1)^2-(n+1)-n^2+n=2n$.
+
+</details>
+
+### `vl-cvut-072` — Vlastní úloha ve stylu přijímaček ČVUT (č. 72)
+
+*Темы:* 18. Posloupnosti · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete člen $a_5$ posloupnosti dané rekurentně $a_1=1$, $a_2=2$, $a_{n+2}=a_{n+1}+2a_n$.
+
+<details><summary>Ответ и решение</summary>
+
+$a_5=16$. $1,2,4,8,16$.
 
 </details>
 
@@ -15308,6 +18164,36 @@ Mezi kořeny kvadratické rovnice $x^2-x-2=0$ vložte dvě čísla tak, aby spol
 
 </details>
 
+### `vl-obec-002` — Vlastní úloha ve stylu přijímacích testů (č. 2)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V aritmetické posloupnosti je $a_1=3$ a $d=5$. Kolik nejméně členů musíme sečíst, aby byl součet větší než 300?
+
+<details><summary>Ответ и решение</summary>
+
+$11$. $s_n=\frac{n(5n+1)}2$; $s_{10}=255$, $s_{11}=308$.
+
+</details>
+
+### `vl-obec-019` — Vlastní úloha ve stylu přijímacích testů (č. 19)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Součet všech trojciferných přirozených čísel dělitelných deseti je roven součinu:
+
+- **a)** $45\cdot1090$
+- **b)** $90\cdot1090$
+- **c)** $45\cdot1100$
+- **d)** $90\cdot1045$
+- **e)** $50\cdot990$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $45\cdot1090$. Čísla $100,110,\dots,990$: 90 členů, součet $\frac{90(100+990)}2$.
+
+</details>
+
 ### `vl-nsz-039` — [Vlastní úloha ve stylu NSZ Matematika (č. 39)](https://www.scio.cz/matematika)
 
 *Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -15322,6 +18208,30 @@ Aritmetická posloupnost $(a_n)$ má diferenci 4 a $a_3=5$, aritmetická posloup
 <details><summary>Ответ и решение</summary>
 
 **b** — $19$. $a_k=4k-7$, $b_k=2k+30$; $4k-7>2k+30\iff k>18{,}5$.
+
+</details>
+
+### `vl-cvut-059` — Vlastní úloha ve stylu přijímaček ČVUT (č. 59)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Mezi čísla 5 a 33 vložte šest čísel tak, aby spolu s danými čísly tvořila aritmetickou posloupnost.
+
+<details><summary>Ответ и решение</summary>
+
+$9, 13, 17, 21, 25, 29$. Osm členů: $7d=28$, $d=4$.
+
+</details>
+
+### `vl-cvut-083` — Vlastní úloha ve stylu přijímaček ČVUT (č. 83)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik prvních členů aritmetické posloupnosti $3, 7, 11, \dots$ je třeba sečíst, aby součet byl 210?
+
+<details><summary>Ответ и решение</summary>
+
+$10$. $s_n=\frac n2(6+4(n-1))=2n^2+n=210$, $n=10$.
 
 </details>
 
@@ -15500,6 +18410,36 @@ Míček po každém dopadu vyskočí do $\frac23$ výšky, ze které padal. Pust
 <details><summary>Ответ и решение</summary>
 
 **c** — $\dfrac{103}9$. $3+2\left(2+\frac43+\frac89\right)=3+\frac{76}9=\frac{103}9$.
+
+</details>
+
+### `vl-obec-061` — Vlastní úloha ve stylu přijímacích testů (č. 61)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Geometrická posloupnost má $a_1=48$ a $q=\frac12$. Kolik jejích členů je větších než $\frac1{10}$?
+
+- **a)** $7$
+- **b)** $8$
+- **c)** $9$
+- **d)** $10$
+- **e)** nekonečně mnoho
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $9$. $48\cdot2^{1-n}>\frac1{10}\iff2^{n-1}<480$, tj. $n-1\le8$.
+
+</details>
+
+### `vl-cvut-157` — Vlastní úloha ve stylu přijímaček ČVUT (č. 157)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Mezi čísla 2 a 1458 vložte pět čísel tak, aby s danými čísly tvořila geometrickou posloupnost s kladným kvocientem.
+
+<details><summary>Ответ и решение</summary>
+
+$6, 18, 54, 162, 486$. $q^6=729$, $q=3$.
 
 </details>
 
@@ -15883,6 +18823,24 @@ Kolik různých „slov“ (i nesmyslných) vznikne přeházením písmen slova 
 
 </details>
 
+### `vl-obec-016` — Vlastní úloha ve stylu přijímacích testů (č. 16)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolika způsoby lze seřadit čísla 1 až 8 tak, aby sudá čísla šla (mezi sebou) vzestupně a lichá sestupně? (Sudá a lichá se mohou libovolně střídat.)
+
+- **a)** $24$
+- **b)** $35$
+- **c)** $70$
+- **d)** $576$
+- **e)** $40\,320$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $70$. Stačí vybrat 4 místa pro sudá čísla: $\binom84=70$.
+
+</details>
+
 ### `vl-nsz-021` — [Vlastní úloha ve stylu NSZ Matematika (č. 21)](https://www.scio.cz/matematika)
 
 *Темы:* 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -15917,6 +18875,42 @@ V sáčku jsou 3 červené, 2 modré a 1 bílá kulička. Vytáhneme tři kulič
 
 </details>
 
+### `vl-obec-067` — Vlastní úloha ve stylu přijímacích testů (č. 67)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik je čtyřciferných čísel, jejichž ciferný součet je 3?
+
+- **a)** $6$
+- **b)** $9$
+- **c)** $10$
+- **d)** $12$
+- **e)** $15$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $10$. První cifra je 1, 2 nebo 3; zbylý součet rozdělíme do tří míst: $\binom{4}{2}+\binom32+\binom22=6+3+1$.
+
+</details>
+
+### `vl-obec-083` — Vlastní úloha ve stylu přijímacích testů (č. 83)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Ubereme-li z množiny jeden prvek, zmenší se počet jejích dvouprvkových podmnožin o 5. Kolik prvků měla množina?
+
+- **a)** $6$
+- **b)** $5$
+- **c)** $7$
+- **d)** $8$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $6$. Zmizí dvojice s odebraným prvkem: $n-1=5$, $n=6$.
+
+</details>
+
 ### `vl-nsz-087` — [Vlastní úloha ve stylu NSZ Matematika (č. 87)](https://www.scio.cz/matematika)
 
 *Темы:* 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -15931,6 +18925,24 @@ Ve skupině je 5 dívek a 7 chlapců. Kolika způsoby lze vybrat trojici, v ní�
 <details><summary>Ответ и решение</summary>
 
 **b** — $185$. Všechny trojice minus trojice samých chlapců: $\binom{12}3-\binom73=220-35=185$.
+
+</details>
+
+### `vl-obec-092` — Vlastní úloha ve stylu přijímacích testů (č. 92)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Čtyřmístný PIN tvoří číslice 0–9 (mohou se opakovat). Kdybychom k číslicím přidali i 26 písmen, kolikrát by se počet možných PINů zvětšil?
+
+- **a)** $\left(\dfrac{36}{10}\right)^4$krát
+- **b)** $26^4$krát
+- **c)** $\dfrac{36^4}{10}$krát
+- **d)** $\dbinom{36}4:\dbinom{10}4$krát
+- **e)** $\dfrac{36!}{10!}$krát
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\left(\dfrac{36}{10}\right)^4$krát. $\frac{36^4}{10^4}$.
 
 </details>
 
@@ -16058,6 +19070,24 @@ Součin čísel $A=\dbinom{12}{10}$ a $B=\dfrac{2\cdot11!}{12!}$ je roven:
 
 </details>
 
+### `vl-obec-066` — Vlastní úloha ve stylu přijímacích testů (č. 66)
+
+*Темы:* 23. Kombinační číslo. Binomická věta · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Číslo $\binom{19}{7}+\binom{19}{8}$ se rovná číslu:
+
+- **a)** $\binom{20}{7}$
+- **b)** $\binom{20}{8}$
+- **c)** $\binom{19}{9}$
+- **d)** $\binom{38}{15}$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\binom{20}{8}$. $\binom nk+\binom n{k+1}=\binom{n+1}{k+1}$.
+
+</details>
+
 ### `fit-2015-20` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 20, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
 
 *Темы:* 24. Pravděpodobnost, 21. Kombinatorika. Faktoriál · *Текст:* текст оригинала (по курсу)
@@ -16152,6 +19182,24 @@ Náhodně vybereme trojciferné číslo. Jaká je pravděpodobnost, že se v jeh
 
 </details>
 
+### `vl-obec-032` — Vlastní úloha ve stylu přijímacích testů (č. 32)
+
+*Темы:* 24. Pravděpodobnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Ze sedmi kartiček s čísly 1–7 vytáhneme náhodně dvě. Jaká je pravděpodobnost, že součet čísel bude sudý?
+
+- **a)** $\dfrac37$
+- **b)** $\dfrac12$
+- **c)** $\dfrac47$
+- **d)** $\dfrac5{21}$
+- **e)** $\dfrac{2}{7}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac37$. Sudý součet: dvě lichá ($\binom42=6$) nebo dvě sudá ($\binom32=3$) z $\binom72=21$: $\frac9{21}$.
+
+</details>
+
 ### `vl-nsz-036` — [Vlastní úloha ve stylu NSZ Matematika (č. 36)](https://www.scio.cz/matematika)
 
 *Темы:* 24. Pravděpodobnost, 22. Variace. Permutace. Kombinace · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16203,6 +19251,24 @@ Hrací kostka tvaru pravidelného osmistěnu má 4 stěny modré, 3 bílé a 1 �
 
 </details>
 
+### `vl-obec-108` — Vlastní úloha ve stylu přijímacích testů (č. 108)
+
+*Темы:* 24. Pravděpodobnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Losujeme náhodně celé číslo od 0 do 99. Jaká je pravděpodobnost, že bude liché a zároveň bude obsahovat číslici 5?
+
+- **a)** $\dfrac1{10}$
+- **b)** $\dfrac3{20}$
+- **c)** $\dfrac7{50}$
+- **d)** $\dfrac9{50}$
+- **e)** $\dfrac15$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\dfrac7{50}$. Lichá čísla s pětkou: $05,15,\dots,95$ (10 čísel) a $51,53,57,59$; celkem 14 ze 100.
+
+</details>
+
 ### `vl-nsz-180` — [Vlastní úloha ve stylu NSZ Matematika (č. 180)](https://www.scio.cz/matematika)
 
 *Темы:* 24. Pravděpodobnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16249,6 +19315,18 @@ Jaká je vzdálenost počátku soustavy souřadnic od přímky, která procház�
 
 </details>
 
+### `vl-cvut-012` — Vlastní úloha ve stylu přijímaček ČVUT (č. 12)
+
+*Темы:* 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Napište parametrické rovnice přímky v prostoru, která prochází body $A=[1;0;2]$ a $B=[3;-1;5]$, a určete její průsečík s rovinou $z=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=1+2t$, $y=-t$, $z=2+3t$; průsečík $\left[-\frac13;\frac23;0\right]$. Z $2+3t=0$: $t=-\frac23$.
+
+</details>
+
 ### `vl-nsz-099` — [Vlastní úloha ve stylu NSZ Matematika (č. 99)](https://www.scio.cz/matematika)
 
 *Темы:* 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16263,6 +19341,18 @@ Jsou dány body $A=[k;2]$ a $B=[3;k-5]$. Střed úsečky $AB$ leží na přímce
 <details><summary>Ответ и решение</summary>
 
 **a** — $\left[\frac72;\frac12\right]$. Střed $\left[\frac{k+3}2;\frac{k-3}2\right]$, součet souřadnic $k=4$.
+
+</details>
+
+### `vl-cvut-141` — Vlastní úloha ve stylu přijímaček ČVUT (č. 141)
+
+*Темы:* 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete reálné číslo $k$ tak, aby vektory $\vec u=(k;3)$ a $\vec v=(2;k-1)$ byly kolmé.
+
+<details><summary>Ответ и решение</summary>
+
+$k=\frac35$. $2k+3(k-1)=0$.
 
 </details>
 
@@ -16350,6 +19440,24 @@ $3x+y-12=0\ \vee$ např. $x=2-t,\ y=6+3t,\ t\in\mathbb R$. Normálový vektor $b
 
 </details>
 
+### `vl-cvut-017` — Vlastní úloha ve stylu přijímaček ČVUT (č. 17)
+
+*Темы:* 27. Obecná rovnice přímky, 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V rovnostranném trojúhelníku $ABC$ je $A=[0;0]$, $B=[4;0]$ a vrchol $C$ leží nad osou $x$. Rovnice výšky z vrcholu $A$ je
+
+- **a)** $x-\sqrt3y=0$
+- **b)** $\sqrt3x-y=0$
+- **c)** $x+\sqrt3y=0$
+- **d)** $x-\sqrt3y-4=0$
+- **e)** $\sqrt3x+y=0$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x-\sqrt3y=0$. $C=[2;2\sqrt3]$, $\overrightarrow{BC}=(-2;2\sqrt3)\sim(-1;\sqrt3)$ je normálovým vektorem výšky z $A$.
+
+</details>
+
 ### `vl-nsz-056` — [Vlastní úloha ve stylu NSZ Matematika (č. 56)](https://www.scio.cz/matematika)
 
 *Темы:* 27. Obecná rovnice přímky, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16367,6 +19475,54 @@ Body $A=[1;1]$, $B=[7;3]$, $C=[2;5]$ jsou vrcholy trojúhelníku. Na které př�
 
 </details>
 
+### `vl-cvut-062` — Vlastní úloha ve stylu přijímaček ČVUT (č. 62)
+
+*Темы:* 27. Obecná rovnice přímky, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Najděte obraz bodu $A=[5;0]$ v osové souměrnosti podle přímky $o:\ x-2y=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$A'=[3;4]$. Pata kolmice z $A$ na $o$ je $[4;2]$, $A'=2\cdot[4;2]-A$.
+
+</details>
+
+### `vl-cvut-066` — Vlastní úloha ve stylu přijímaček ČVUT (č. 66)
+
+*Темы:* 27. Obecná rovnice přímky, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Přímka $x-2y+3=0$ je osou úsečky $AB$, kde $A=[3;-2]$. Pak
+
+- **a)** $B=[-1;6]$
+- **b)** $B=[1;2]$
+- **c)** $B=[-1;-6]$
+- **d)** $B=[7;-10]$
+- **e)** $B=[5;2]$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $B=[-1;6]$. $B$ je obraz $A$ v osové souměrnosti: kolmice z $A$ má směr $(1,-2)$, pata je $[1;2]$, $B=2\cdot[1;2]-A$.
+
+</details>
+
+### `vl-obec-100` — Vlastní úloha ve stylu přijímacích testů (č. 100)
+
+*Темы:* 27. Obecná rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Obecná rovnice přímky, která prochází bodem $A=[0;0]$ a je kolmá k přímce $p:\ x=-3+-1t,\ y=0+3t$, je:
+
+- **a)** $x-3y-1=0$
+- **b)** $x-3y=0$
+- **c)** $3x+y=0$
+- **d)** $x+3y=0$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x-3y=0$. Normálový vektor hledané přímky je směrovým vektorem přímky $p$; dosadíme bod $A$.
+
+</details>
+
 ### `vl-nsz-171` — [Vlastní úloha ve stylu NSZ Matematika (č. 171)](https://www.scio.cz/matematika)
 
 *Темы:* 27. Obecná rovnice přímky, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16381,6 +19537,66 @@ Jsou dány body $A=[2;-3]$ a $B=[-4;1]$. Která rovnice popisuje osu úsečky $A
 <details><summary>Ответ и решение</summary>
 
 **a** — $3x-2y+1=0$. Střed $[-1;-1]$, normálový vektor $\overrightarrow{AB}=(-6;4)\sim(3;-2)$: $3x-2y+c=0$, $c=1$. Přímka b) je přímka $AB$.
+
+</details>
+
+### `vl-obec-015` — Vlastní úloha ve stylu přijímacích testů (č. 15)
+
+*Темы:* 28. Vzájemná poloha přímek, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kosinus odchylky přímek $p:\ y=2x-1$ a $q:\ x=1+t,\ y=2+3t,\ t\in\mathbb R$ je:
+
+- **a)** $\dfrac{7\sqrt2}{10}$
+- **b)** $\dfrac{\sqrt2}2$
+- **c)** $\dfrac7{10}$
+- **d)** $\dfrac{\sqrt5}5$
+- **e)** $\dfrac{3\sqrt{10}}{10}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac{7\sqrt2}{10}$. Směry $(1;2)$ a $(1;3)$: $\frac{7}{\sqrt5\sqrt{10}}$.
+
+</details>
+
+### `vl-cvut-069` — Vlastní úloha ve stylu přijímaček ČVUT (č. 69)
+
+*Темы:* 28. Vzájemná poloha přímek · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete vzdálenost rovnoběžek $p:\ 3x+4y-2=0$ a $q:\ 3x+4y+13=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$3$. $\frac{|13-(-2)|}{\sqrt{9+16}}$.
+
+</details>
+
+### `vl-obec-087` — Vlastní úloha ve stylu přijímacích testů (č. 87)
+
+*Темы:* 28. Vzájemná poloha přímek · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Přímky $p:\ x+2y-3=0$ a $q:\ x=1+2t,\ y=1-t,\ t\in\mathbb R$ jsou:
+
+- **a)** totožné
+- **b)** rovnoběžné různé
+- **c)** kolmé
+- **d)** různoběžné, nikoli kolmé
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — totožné. Směr $q$ je $(2;-1)$, kolmý k normále $(1;2)$, a bod $[1;1]$ leží na $p$.
+
+</details>
+
+### `vl-cvut-148` — Vlastní úloha ve stylu přijímaček ČVUT (č. 148)
+
+*Темы:* 28. Vzájemná poloha přímek, 4. Rovnice s parametrem · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete parametr $a$ tak, aby přímky $ax+2y-1=0$ a $3x+(a+1)y+4=0$ byly rovnoběžné.
+
+<details><summary>Ответ и решение</summary>
+
+$a=-3$ nebo $a=2$. Normálové vektory rovnoběžné: $a(a+1)=6$. Pro obě hodnoty jsou přímky různé.
 
 </details>
 
@@ -16478,6 +19694,18 @@ Kuželosečku danou rovnicí $x^2-4x+y^2-6y+9=0$ posuňte rovnoběžně s osou $
 
 </details>
 
+### `vl-cvut-013` — Vlastní úloha ve stylu přijímaček ČVUT (č. 13)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete střed a poloměr kružnice $x^2+y^2+6x-8y=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$S=[-3;4]$, $r=5$. $(x+3)^2+(y-4)^2=25$.
+
+</details>
+
 ### `vl-nsz-054` — [Vlastní úloha ve stylu NSZ Matematika (č. 54)](https://www.scio.cz/matematika)
 
 *Темы:* 30. Kuželosečky. Kružnice, 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16492,6 +19720,36 @@ Je dána kružnice se středem $S$ a poloměrem $r$. Z bodu $M$ vně kružnice j
 <details><summary>Ответ и решение</summary>
 
 **a** — $r\sqrt2$. Tečny, poloměry k bodům dotyku a $M$ tvoří čtverec o straně $r$; $|SM|$ je jeho úhlopříčka $r\sqrt2$.
+
+</details>
+
+### `vl-obec-076` — Vlastní úloha ve stylu přijímacích testů (č. 76)
+
+*Темы:* 30. Kuželosečky. Kružnice, 31. Elipsa · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik společných bodů mají kružnice $x^2+y^2=25$ a elipsa $\dfrac{x^2}{25}+\dfrac{y^2}{9}=1$?
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $2$
+- **d)** $4$
+- **e)** nekonečně mnoho
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $2$. Elipsa leží uvnitř kružnice a dotýká se jí v hlavních vrcholech $[\pm5;0]$.
+
+</details>
+
+### `vl-cvut-111` — Vlastní úloha ve stylu přijímaček ČVUT (č. 111)
+
+*Темы:* 30. Kuželosečky. Kružnice, 28. Vzájemná poloha přímek · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Napište rovnici kružnice se středem $S=[2;-1]$, která se dotýká přímky $3x-4y+5=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$(x-2)^2+(y+1)^2=9$. $r=\frac{|6+4+5|}5=3$.
 
 </details>
 
@@ -16526,6 +19784,18 @@ Kružnice má rovnici $x^2+y^2-6x+4y-3=0$. Jaká je nejmenší vzdálenost bodu 
 <details><summary>Ответ и решение</summary>
 
 **b** — $6$. $(x-3)^2+(y+2)^2=16$: střed $[3;-2]$, $r=4$; $|RS|=\sqrt{36+64}=10$, nejmenší vzdálenost $10-4$.
+
+</details>
+
+### `vl-cvut-135` — Vlastní úloha ve stylu přijímaček ČVUT (č. 135)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Napište rovnici kružnice, která prochází body $A=[1;1]$, $B=[5;1]$ a $C=[1;5]$.
+
+<details><summary>Ответ и решение</summary>
+
+$(x-3)^2+(y-3)^2=8$. Pravý úhel u $A$, střed je střed přepony $BC$.
 
 </details>
 
@@ -16600,6 +19870,54 @@ Pro délky poloos elipsy zadané rovnicí $2x^2+9y^2+16x-36y+50=0$ platí
 
 </details>
 
+### `vl-obec-027` — Vlastní úloha ve stylu přijímacích testů (č. 27)
+
+*Темы:* 31. Elipsa, 28. Vzájemná poloha přímek · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Vzdálenost středu elipsy $4x^2+9y^2+16x-18y-11=0$ od přímky $y=-3$ je:
+
+- **a)** $1$
+- **b)** $2$
+- **c)** $3$
+- **d)** $4$
+- **e)** $5$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $4$. $4(x+2)^2+9(y-1)^2=36$, střed $[-2;1]$.
+
+</details>
+
+### `vl-cvut-142` — Vlastní úloha ve stylu přijímaček ČVUT (č. 142)
+
+*Темы:* 31. Elipsa · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete střed, délky poloos a ohniska elipsy $4x^2+9y^2-16x+18y-11=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$S=[2;-1]$, $a=3$, $b=2$, $F_{1,2}=[2\pm\sqrt5;-1]$. $4(x-2)^2+9(y+1)^2=36$, $e=\sqrt{9-4}$.
+
+</details>
+
+### `vl-cvut-163` — Vlastní úloha ve stylu přijímaček ČVUT (č. 163)
+
+*Темы:* 31. Elipsa · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Elipsa má rovnici $9x^2+25y^2-18x+100y-116=0$. Její ohnisko, které má od počátku vzdálenost větší než 5, je
+
+- **a)** $[5;-2]$
+- **b)** $[-3;-2]$
+- **c)** $[1;2]$
+- **d)** $[5;2]$
+- **e)** $[4;-2]$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $[5;-2]$. $\frac{(x-1)^2}{25}+\frac{(y+2)^2}9=1$, $e=4$: ohniska $[5;-2]$ a $[-3;-2]$; $\sqrt{29}>5>\sqrt{13}$.
+
+</details>
+
 ### `fit-2015-18` — [FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 18, 3 body)](https://fit.cvut.cz/fakulta/informacni-deska/vzorove-prijimaci-zkousky/bc/bc-vzorova-prijimaci-zkouska-2015.pdf)
 
 *Темы:* 32. Hyperbola · *Текст:* текст оригинала (по курсу)
@@ -16615,6 +19933,66 @@ Pro délky poloos hyperboly zadané rovnicí $4x^2-9y^2-24x-36y-36=0$ platí
 <details><summary>Ответ и решение</summary>
 
 **d** — Součin jejich druhých mocnin je 36.. $\frac{(x-3)^2}{9}-\frac{(y+2)^2}{4}=1$: $a^2b^2=36$.
+
+</details>
+
+### `vl-cvut-156` — Vlastní úloha ve stylu přijímaček ČVUT (č. 156)
+
+*Темы:* 32. Hyperbola · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Napište rovnici hyperboly se středem v počátku, hlavní osou na ose $x$, vrcholem $[3;0]$ a ohniskem $[5;0]$. Určete její asymptoty.
+
+<details><summary>Ответ и решение</summary>
+
+$\dfrac{x^2}9-\dfrac{y^2}{16}=1$; asymptoty $y=\pm\frac43x$. $b^2=e^2-a^2=16$.
+
+</details>
+
+### `vl-cvut-052` — Vlastní úloha ve stylu přijímaček ČVUT (č. 52)
+
+*Темы:* 33. Parabola, 4. Rovnice s parametrem · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Přímka $y=kx+1$ je tečnou paraboly $y=x^2+2$ právě pro
+
+- **a)** $k=2$
+- **b)** $k=2$ nebo $k=-2$
+- **c)** $k=0$
+- **d)** $k=1$ nebo $k=-1$
+- **e)** $k=4$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $k=2$ nebo $k=-2$. $x^2-kx+1=0$ má dvojnásobný kořen: $k^2-4=0$.
+
+</details>
+
+### `vl-cvut-077` — Vlastní úloha ve stylu přijímaček ČVUT (č. 77)
+
+*Темы:* 33. Parabola · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Parabola $y^2+4y-8x+28=0$ má vrchol $V$, ohnisko $F$ a parametr $p$:
+
+- **a)** $V=[3;-2]$, $F=[5;-2]$, $p=4$
+- **b)** $V=[-3;2]$, $F=[-1;2]$, $p=4$
+- **c)** $V=[3;-2]$, $F=[4;-2]$, $p=2$
+- **d)** $V=[3;-2]$, $F=[11;-2]$, $p=8$
+- **e)** $V=[3;2]$, $F=[5;2]$, $p=4$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $V=[3;-2]$, $F=[5;-2]$, $p=4$. $(y+2)^2=8(x-3)$, tedy $2p=8$ a ohnisko je o $\frac p2=2$ napravo od vrcholu.
+
+</details>
+
+### `vl-cvut-160` — Vlastní úloha ve stylu přijímaček ČVUT (č. 160)
+
+*Темы:* 33. Parabola · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete vrchol, ohnisko a řídicí přímku paraboly $x^2-4x-8y+12=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$V=[2;1]$, $F=[2;3]$, řídicí přímka $y=-1$. $(x-2)^2=8(y-1)$, $p=4$.
 
 </details>
 
@@ -16672,6 +20050,24 @@ Obsah $S$ rovnostranného trojúhelníku jako funkce poloměru $R$ kružnice ops
 
 </details>
 
+### `vl-cvut-027` — Vlastní úloha ve stylu přijímaček ČVUT (č. 27)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Nad úsečkou $AB$ sestrojíme půlkružnici. Pak úsečku rozdělíme na tři stejné díly a nad každým sestrojíme půlkružnici. Poměr délky velké půlkružnice a součtu délek tří malých je
+
+- **a)** $1:1$
+- **b)** $3:1$
+- **c)** $1:3$
+- **d)** $9:1$
+- **e)** $\sqrt3:1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1:1$. Velká: $\frac\pi2|AB|$, malé: $3\cdot\frac\pi2\cdot\frac{|AB|}3$.
+
+</details>
+
 ### `vl-nsz-032` — [Vlastní úloha ve stylu NSZ Matematika (č. 32)](https://www.scio.cz/matematika)
 
 *Темы:* 34. Planimetrie, 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16686,6 +20082,24 @@ Je dána kružnice $k(S;r=5\text{ cm})$ a bod $A$, $|AS|=13$ cm. Z bodu $A$ vede
 <details><summary>Ответ и решение</summary>
 
 **a** — $(0^\circ;30^\circ\rangle$. Trojúhelník $SAT$ je pravoúhlý s pravým úhlem u $T$: $\sin\angle SAT=\frac5{13}<\frac12$, úhel je menší než $30^\circ$.
+
+</details>
+
+### `vl-obec-041` — Vlastní úloha ve stylu přijímacích testů (č. 41)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Ve čtverci $ABCD$ o straně $a$ narýsujeme čtvrtkružnici se středem $A$ a čtvrtkružnici se středem $C$, obě o poloměru $a$. Jaký obsah má společná část obou čtvrtkruhů?
+
+- **a)** $a^2\left(\frac\pi2-1\right)$
+- **b)** $a^2\left(1-\frac\pi4\right)$
+- **c)** $\frac{\pi a^2}4$
+- **d)** $a^2(\pi-2)$
+- **e)** $\frac{a^2}2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a^2\left(\frac\pi2-1\right)$. Součet obsahů čtvrtkruhů minus čtverec: $2\cdot\frac{\pi a^2}4-a^2$.
 
 </details>
 
@@ -16706,6 +20120,48 @@ V rovnoběžníku $ABCD$ leží bod $E$ na straně $AB$ tak, že $|AE|=\frac13|A
 
 </details>
 
+### `vl-cvut-070` — Vlastní úloha ve stylu přijímaček ČVUT (č. 70)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Z bodu $A$ vzdáleného 13 cm od středu kružnice o poloměru 5 cm vedeme tečny. Určete délku tečných úseků a vzdálenost bodů dotyku.
+
+<details><summary>Ответ и решение</summary>
+
+$12$ cm; $\frac{120}{13}$ cm. $\sqrt{169-25}=12$. Úsečka dotykových bodů: $2\cdot\frac{5\cdot12}{13}$.
+
+</details>
+
+### `vl-obec-072` — Vlastní úloha ve stylu přijímacích testů (č. 72)
+
+*Темы:* 34. Planimetrie, 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V rovnoběžníku $ABCD$ je $|AB|=8$ cm, $|AD|=5$ cm a úhlopříčka $|BD|=7$ cm. Určete velikost vnitřního úhlu při vrcholu $A$.
+
+<details><summary>Ответ и решение</summary>
+
+$60^\circ$. Kosinová věta v $ABD$: $\cos\alpha=\frac{64+25-49}{80}=\frac12$.
+
+</details>
+
+### `vl-obec-084` — Vlastní úloha ve stylu přijímacích testů (č. 84)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kruh má obsah $16\pi$ cm$^2$. Délka oblouku, který přísluší středovému úhlu $135^\circ$, je:
+
+- **a)** $\pi$ cm
+- **b)** $2\pi$ cm
+- **c)** $3\pi$ cm
+- **d)** $4\pi$ cm
+- **e)** $6\pi$ cm
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $3\pi$ cm. $r=4$; $\frac{135}{360}\cdot8\pi$.
+
+</details>
+
 ### `vl-nsz-093` — [Vlastní úloha ve stylu NSZ Matematika (č. 93)](https://www.scio.cz/matematika)
 
 *Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16720,6 +20176,42 @@ Do kruhu o poloměru $r$ je vepsán rovnostranný trojúhelník. Poměr obsahu k
 <details><summary>Ответ и решение</summary>
 
 **a** — $\dfrac{4\pi}{3\sqrt3}$. Strana $r\sqrt3$, obsah $\frac{\sqrt3}4\cdot3r^2=\frac{3\sqrt3}4r^2$.
+
+</details>
+
+### `vl-cvut-123` — Vlastní úloha ve stylu přijímaček ČVUT (č. 123)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnostranný trojúhelník a pravidelný šestiúhelník mají stejný obsah. Jaký je poměr jejich stran?
+
+<details><summary>Ответ и решение</summary>
+
+$a_3:a_6=\sqrt6:1$. $\frac{\sqrt3}4a_3^2=\frac{3\sqrt3}2a_6^2$, tedy $a_3^2=6a_6^2$.
+
+</details>
+
+### `vl-cvut-131` — Vlastní úloha ve stylu přijímaček ČVUT (č. 131)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V rovnoramenném lichoběžníku jsou základny 14 cm a 6 cm a rameno 5 cm. Určete výšku a obsah.
+
+<details><summary>Ответ и решение</summary>
+
+$v=3$ cm, $S=30$ cm$^2$. Přesah $\frac{14-6}2=4$, $v=\sqrt{25-16}$.
+
+</details>
+
+### `vl-cvut-144` — Vlastní úloha ve stylu přijímaček ČVUT (č. 144)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Tětiva kružnice o poloměru 10 cm má délku 16 cm. Jak daleko je od středu a jaký středový úhel jí přísluší (zaokrouhlete na stupně)?
+
+<details><summary>Ответ и решение</summary>
+
+$6$ cm; $\approx106^\circ$. $\sqrt{100-64}=6$; $\sin\frac\varphi2=\frac8{10}$, $\frac\varphi2\approx53{,}1^\circ$.
 
 </details>
 
@@ -16866,6 +20358,84 @@ Objem krychle vepsané do koule o průměru $d$ je
 
 </details>
 
+### `vl-cvut-010` — Vlastní úloha ve stylu přijímaček ČVUT (č. 10)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Obdélník o stranách 12 cm a 5 cm stočíme do pláště válce tak, že delší strana je obvodem podstavy. Určete objem válce.
+
+<details><summary>Ответ и решение</summary>
+
+$\dfrac{180}{\pi}$ cm$^3$. $2\pi r=12$, $V=\pi r^2\cdot5=\pi\frac{36}{\pi^2}\cdot5$.
+
+</details>
+
+### `vl-obec-024` — Vlastní úloha ve stylu přijímacích testů (č. 24)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rotační kužel má poloměr podstavy 6 cm a stranu (površku) 10 cm. Jeho objem je:
+
+- **a)** $96\pi$ cm$^3$
+- **b)** $120\pi$ cm$^3$
+- **c)** $288\pi$ cm$^3$
+- **d)** $100\pi$ cm$^3$
+- **e)** $60\pi$ cm$^3$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $96\pi$ cm$^3$. $v=8$; $\frac13\pi\cdot36\cdot8$.
+
+</details>
+
+### `vl-obec-036` — Vlastní úloha ve stylu přijímacích testů (č. 36)
+
+*Темы:* 35. Stereometrie, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jaká je odchylka tělesové úhlopříčky $AG$ a stěnové úhlopříčky $BD$ v krychli $ABCDEFGH$?
+
+- **a)** $30^\circ$
+- **b)** $45^\circ$
+- **c)** $60^\circ$
+- **d)** $90^\circ$
+- **e)** $120^\circ$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $90^\circ$. Pro krychli o hraně 1: $\overrightarrow{AG}=(1;1;1)$, $\overrightarrow{BD}=(-1;1;0)$, skalární součin je 0.
+
+</details>
+
+### `vl-cvut-043` — Vlastní úloha ve stylu přijímaček ČVUT (č. 43)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V krychli $ABCDEFGH$ s hranou $a$ je $S$ střed hrany $BF$. Určete vzdálenost bodů $S$ a $H$.
+
+<details><summary>Ответ и решение</summary>
+
+$\dfrac32a$. V souřadnicích $S=\left[a;0;\frac a2\right]$, $H=[0;a;a]$: $|SH|^2=a^2+a^2+\frac{a^2}4=\frac94a^2$.
+
+</details>
+
+### `vl-cvut-044` — Vlastní úloha ve stylu přijímaček ČVUT (č. 44)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Do krychle o hraně $a$ je vepsán rotační válec tak, že jeho podstavy jsou vepsány do dvou protilehlých stěn. Povrch válce je
+
+- **a)** $\dfrac{3\pi a^2}2$
+- **b)** $\pi a^2$
+- **c)** $2\pi a^2$
+- **d)** $\dfrac{\pi a^2}2$
+- **e)** $\dfrac{5\pi a^2}4$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac{3\pi a^2}2$. $2\pi\left(\frac a2\right)^2+2\pi\cdot\frac a2\cdot a$.
+
+</details>
+
 ### `vl-nsz-045` — [Vlastní úloha ve stylu NSZ Matematika (č. 45)](https://www.scio.cz/matematika)
 
 *Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16880,6 +20450,48 @@ Rotační kužel s poloměrem podstavy $r$ a výškou $h$ má stejný objem jako
 <details><summary>Ответ и решение</summary>
 
 **a** — $r\sqrt{\dfrac\pi3}$. $\frac13\pi r^2h=a^2h$.
+
+</details>
+
+### `vl-cvut-054` — Vlastní úloha ve stylu přijímaček ČVUT (č. 54)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pravoúhlý trojúhelník s odvěsnami 6 cm a 8 cm se otáčí kolem delší odvěsny. Určete objem a povrch vzniklého kužele.
+
+<details><summary>Ответ и решение</summary>
+
+$V=96\pi$ cm$^3$, $S=96\pi$ cm$^2$. $r=6$, $v=8$, $s=10$: $V=\frac13\pi\cdot36\cdot8$, $S=\pi r^2+\pi rs=36\pi+60\pi$.
+
+</details>
+
+### `vl-cvut-067` — Vlastní úloha ve stylu přijímaček ČVUT (č. 67)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Zmenšíme-li poloměr podstavy válce o 20 % a jeho výšku zvětšíme o 50 %, jeho objem se
+
+- **a)** zmenší o 4 %
+- **b)** zmenší o 30 %
+- **c)** zmenší o 20 %
+- **d)** zvětší o 20 %
+- **e)** nezmění
+
+<details><summary>Ответ и решение</summary>
+
+**a** — zmenší o 4 %. $0{,}8^2\cdot1{,}5=0{,}96$.
+
+</details>
+
+### `vl-obec-073` — Vlastní úloha ve stylu přijímacích testů (č. 73)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kolik litrů vody se vejde do akvária tvaru koule o průměru 60 cm, má-li být naplněno ze 75 % objemu? Zaokrouhlete na celé litry.
+
+<details><summary>Ответ и решение</summary>
+
+$85$ litrů. $\frac43\pi\cdot30^3\approx113\,097$ cm$^3$, z toho 75 % je asi $84{,}8$ l.
 
 </details>
 
@@ -16900,6 +20512,24 @@ Kužel, válec a hranol mají obsahy podstav v poměru $3:2:4$. Kužel a válec 
 
 </details>
 
+### `vl-cvut-107` — Vlastní úloha ve stylu přijímaček ČVUT (č. 107)
+
+*Темы:* 35. Stereometrie, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kvádr má jednu hranu 3 m, objem 120 m$^3$ a povrch 158 m$^2$. Zbývající hrany měří
+
+- **a)** 5 m a 8 m
+- **b)** 4 m a 10 m
+- **c)** 5 m a 9 m
+- **d)** 6 m a 8 m
+- **e)** 4 m a 8 m
+
+<details><summary>Ответ и решение</summary>
+
+**a** — 5 m a 8 m. $bc=40$, $2(3b+3c+40)=158$, tedy $b+c=13$.
+
+</details>
+
 ### `vl-nsz-120` — [Vlastní úloha ve stylu NSZ Matematika (č. 120)](https://www.scio.cz/matematika)
 
 *Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16917,6 +20547,36 @@ Válcový kolík má průměr 8 mm. Jeho konec chceme zahrotit do pravidelného 
 
 </details>
 
+### `vl-cvut-120` — Vlastní úloha ve stylu přijímaček ČVUT (č. 120)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V krychli $ABCDEFGH$ je čtyřstěn $ACFH$. Poměr objemu krychle a objemu čtyřstěnu je
+
+- **a)** $3:1$
+- **b)** $6:1$
+- **c)** $4:1$
+- **d)** $2:1$
+- **e)** $8:1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $3:1$. Čtyřstěn vznikne odříznutím čtyř rohových jehlanů o objemu $\frac{a^3}6$: $a^3-\frac46a^3=\frac{a^3}3$.
+
+</details>
+
+### `vl-cvut-129` — Vlastní úloha ve stylu přijímaček ČVUT (č. 129)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pravidelný čtyřboký jehlan má podstavnou hranu 6 cm a boční hranu 5 cm. Určete jeho výšku a objem.
+
+<details><summary>Ответ и решение</summary>
+
+$v=\sqrt7$ cm, $V=12\sqrt7$ cm$^3$. Polovina úhlopříčky podstavy $3\sqrt2$; $v^2=25-18$.
+
+</details>
+
 ### `vl-nsz-130` — [Vlastní úloha ve stylu NSZ Matematika (č. 130)](https://www.scio.cz/matematika)
 
 *Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16931,6 +20591,48 @@ Nádobka má tvar pravidelného čtyřbokého jehlanu bez podstavy a stojí vrch
 <details><summary>Ответ и решение</summary>
 
 **b** — $12$. Objem vody roste s třetí mocninou výšky: $\frac{540}{20}=27=3^3$, výška se ztrojnásobí na 12 cm.
+
+</details>
+
+### `vl-cvut-137` — Vlastní úloha ve stylu přijímaček ČVUT (č. 137)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Do koule o poloměru $R$ je vepsána krychle. Určete objem krychle.
+
+<details><summary>Ответ и решение</summary>
+
+$\dfrac{8\sqrt3}{9}R^3$. Tělesová úhlopříčka $a\sqrt3=2R$.
+
+</details>
+
+### `vl-cvut-139` — Vlastní úloha ve stylu přijímaček ČVUT (č. 139)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete tělesovou úhlopříčku krychle, jejíž povrch je 150 cm$^2$.
+
+<details><summary>Ответ и решение</summary>
+
+$5\sqrt3$ cm. $6a^2=150$, $a=5$.
+
+</details>
+
+### `vl-cvut-162` — Vlastní úloha ve stylu přijímaček ČVUT (č. 162)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pravoúhlý trojúhelník s odvěsnami 3 a 4 se otáčí kolem přepony. Objem vzniklého tělesa je
+
+- **a)** $\dfrac{48\pi}5$
+- **b)** $12\pi$
+- **c)** $16\pi$
+- **d)** $\dfrac{96\pi}5$
+- **e)** $\dfrac{36\pi}5$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac{48\pi}5$. Dva kužely se společnou podstavou o poloměru $v=\frac{12}5$ a součtem výšek 5: $V=\frac13\pi v^2\cdot5$.
 
 </details>
 
@@ -17532,6 +21234,54 @@ $\dfrac{x^2-xy}{x^4-x^2y^2}:\dfrac{xy}{x^2y+xy^2}=$
 
 </details>
 
+### `vl-obec-004` — Vlastní úloha ve stylu přijímacích testů (č. 4)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jsou-li kladná čísla $p$, $p+2$ a $p+4$ prvočísla, je číslo $p^2+2$:
+
+- **a)** prvočíslo
+- **b)** dělitelné dvěma
+- **c)** dělitelné třemi
+- **d)** dělitelné pěti
+- **e)** dělitelné sedmi
+
+<details><summary>Ответ и решение</summary>
+
+**a** — prvočíslo. Jedno z čísel $p$, $p+2$, $p+4$ je dělitelné třemi, takže $p=3$ a $p^2+2=11$.
+
+</details>
+
+### `vl-obec-007` — Vlastní úloha ve stylu přijímacích testů (č. 7)
+
+*Темы:* Ostatní, 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro přirozená čísla $a$, $b$ platí $54=a^a\left(a^b-b\right)$. Číslo $b$ je rovno:
+
+- **a)** $1$
+- **b)** $2$
+- **c)** $3$
+- **d)** $4$
+- **e)** Taková čísla neexistují.
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1$. $a^a$ dělí 54 jen pro $a=1$ nebo $a=3$; $a=1$ dává $1-b=54$ — nelze. Pro $a=3$: $3^b-b=2$, tedy $b=1$.
+
+</details>
+
+### `vl-obec-012` — Vlastní úloha ve stylu přijímacích testů (č. 12)
+
+*Темы:* Ostatní, 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Paní Nováková uložila 50 000 Kč na 2 roky s roční úrokovou sazbou 3 %. Úrok se připisuje vždy po roce a daň z úroku je 15 %. Kolik korun bude mít po dvou letech (zaokrouhlete na koruny)?
+
+<details><summary>Ответ и решение</summary>
+
+$52\,583$ Kč. Čistý úrok $3\cdot0{,}85=2{,}55$ %: $50\,000\cdot1{,}0255^2\approx52\,582{,}5$.
+
+</details>
+
 ### `vl-nsz-014` — [Vlastní úloha ve stylu NSZ Matematika (č. 14)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -17600,6 +21350,24 @@ Ve směsi byly ořechy a rozinky v hmotnostním poměru $5:3$. Sušením ztratil
 
 </details>
 
+### `vl-obec-044` — Vlastní úloha ve stylu přijímacích testů (č. 44)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Výraz $\dfrac{x^2-9}{x^2+6x+9}\cdot\dfrac{x+3}{3-x}$ je pro přípustná $x$ roven:
+
+- **a)** $-1$
+- **b)** $1$
+- **c)** $\dfrac{x-3}{x+3}$
+- **d)** $\dfrac{x+3}{x-3}$
+- **e)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-1$. $\frac{(x-3)(x+3)}{(x+3)^2}\cdot\frac{x+3}{-(x-3)}=-1$.
+
+</details>
+
 ### `vl-nsz-048` — [Vlastní úloha ve stylu NSZ Matematika (č. 48)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -17634,6 +21402,18 @@ Množina všech kořenů rovnice $\dfrac{x+1}{x-4}-\dfrac{x-4}{x+1}=\dfrac{(x+1)
 
 </details>
 
+### `vl-obec-053` — Vlastní úloha ve stylu přijímacích testů (č. 53)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Hodiny odbíjejí každou půlhodinu jedním úderem a každou celou hodinu tolikrát, kolik ukazují hodin (1 až 12). Kolik úderů odbijí za jeden den?
+
+<details><summary>Ответ и решение</summary>
+
+$180$. Za 12 hodin: $1+2+\dots+12=78$ úderů na celé hodiny a 12 půlhodin, celkem 90; za den dvakrát tolik.
+
+</details>
+
 ### `vl-nsz-059` — [Vlastní úloha ve stylu NSZ Matematika (č. 59)](https://www.scio.cz/matematika)
 
 *Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -17648,6 +21428,24 @@ Na trhu jsou jen 4 slepice plemene A, 4 plemene B, 4 plemene C a 4 plemene D. Fa
 <details><summary>Ответ и решение</summary>
 
 **a** — 4 A, 4 D, 2 C. Týdenní hodnota: A $28$ Kč, D $27$ Kč, C $26$ Kč, B $24{,}5$ Kč. Vezmeme 4 A, 4 D a zbylé 2 z C.
+
+</details>
+
+### `vl-obec-063` — Vlastní úloha ve stylu přijímacích testů (č. 63)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Výnosy deseti polí (v q/ha) jsou: 52,1; 48,4; 50,6; 47,9; 53,0; 49,5; 51,2; 46,8; 50,1; 50,4. O kolik se liší jejich aritmetický průměr a medián?
+
+- **a)** o 0,05
+- **b)** o 0,15
+- **c)** o 0,25
+- **d)** o 0,35
+- **e)** o 0,5
+
+<details><summary>Ответ и решение</summary>
+
+**c** — o 0,25. Průměr $50{,}0$; medián je průměr 5. a 6. hodnoty po seřazení, $\frac{50{,}1+50{,}4}2=50{,}25$.
 
 </details>
 
@@ -17699,6 +21497,102 @@ Měsíc začíná ve středu. O kolik nejméně dní by musel mít víc než 30,
 <details><summary>Ответ и решение</summary>
 
 **d** — o 5. Den číslo $n$ je úterý, právě když $n-1$ dává při dělení sedmi zbytek 6, tedy $n$ je násobek 7. Nejbližší vyšší než 30 je 35.
+
+</details>
+
+### `vl-cvut-080` — Vlastní úloha ve stylu přijímaček ČVUT (č. 80)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Za předpokladu $a\ne\pm b$ zjednodušte výraz $\left(\dfrac a{a-b}-\dfrac b{a+b}\right)\cdot\dfrac{a^2-b^2}{a^2+b^2}$.
+
+<details><summary>Ответ и решение</summary>
+
+$1$. Závorka: $\frac{a(a+b)-b(a-b)}{a^2-b^2}=\frac{a^2+b^2}{a^2-b^2}$.
+
+</details>
+
+### `vl-obec-081` — Vlastní úloha ve stylu přijímacích testů (č. 81)
+
+*Темы:* Ostatní, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro všechna $a,b,c$, kde $a\ne b$ a $c\ne3b$, má platit $\dfrac{a-b}X=\dfrac{0{,}25(b-a)}{c-3b}$. Výraz $X$ je:
+
+- **a)** $12b-4c$
+- **b)** $4c-12b$
+- **c)** $\dfrac{c-3b}4$
+- **d)** $3b-c$
+- **e)** $c-12b$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $12b-4c$. $X=\frac{(a-b)(c-3b)}{0{,}25(b-a)}=-4(c-3b)$.
+
+</details>
+
+### `vl-cvut-090` — Vlastní úloha ve stylu přijímaček ČVUT (č. 90)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Zjednodušte $\left(\dfrac{x+2}{x-2}-\dfrac{x-2}{x+2}\right):\dfrac{8x}{x^2-4}$ a určete, kdy má výraz smysl.
+
+<details><summary>Ответ и решение</summary>
+
+$1$ pro $x\ne0$, $x\ne\pm2$. Rozdíl ve závorce je $\frac{8x}{x^2-4}$.
+
+</details>
+
+### `vl-obec-091` — Vlastní úloha ve stylu přijímacích testů (č. 91)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Negací výroku „Některá prvočísla jsou sudá“ je výrok:
+
+- **a)** Všechna prvočísla jsou sudá.
+- **b)** Žádné prvočíslo není sudé.
+- **c)** Některá prvočísla nejsou sudá.
+- **d)** Všechna prvočísla jsou lichá a některá sudá.
+- **e)** Žádná z uvedených možností není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Žádné prvočíslo není sudé.. Negace „existuje prvočíslo, které je sudé“ zní „neexistuje sudé prvočíslo“.
+
+</details>
+
+### `vl-obec-096` — Vlastní úloha ve stylu přijímacích testů (č. 96)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V krabici je 50 červených a 50 modrých ponožek. Kolik nejméně ponožek musíme vytáhnout naslepo, abychom měli jistě aspoň 5 červených a aspoň 2 modré?
+
+- **a)** $7$
+- **b)** $52$
+- **c)** $54$
+- **d)** $55$
+- **e)** $57$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $55$. V nejhorším případě vytáhneme všech 50 modrých a 4 červené (54 kusů); pak už stačí jedna další.
+
+</details>
+
+### `vl-cvut-110` — Vlastní úloha ve stylu přijímaček ČVUT (č. 110)
+
+*Темы:* Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Výraz $\left(\dfrac p{p-q}-\dfrac q{p+q}\right):\dfrac{p^2+q^2}{p^2-q^2}$ je roven
+
+- **a)** $0$ pro $p\ne\pm q$
+- **b)** $1$ pro $p\ne\pm q$
+- **c)** $\dfrac{p+q}{p-q}$ pro $p\ne\pm q$
+- **d)** $\dfrac{p-q}{p+q}$ pro $p\ne\pm q$
+- **e)** $\dfrac1{p^2-q^2}$ pro $p\ne\pm q$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $1$ pro $p\ne\pm q$. Závorka: $\frac{p(p+q)-q(p-q)}{p^2-q^2}=\frac{p^2+q^2}{p^2-q^2}$; vydělením stejným výrazem dostaneme 1.
 
 </details>
 
@@ -18151,6 +22045,42 @@ Určete všechny hodnoty reálného parametru $p$, pro které má následující
 
 </details>
 
+### `vl-cvut-016` — Vlastní úloha ve stylu přijímaček ČVUT (č. 16)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Jedním kořenem rovnice $x^2+(p+1)x+p^2-4=0$ je číslo $1$. Druhý kořen je
+
+- **a)** $-3$ nebo $0$
+- **b)** $-3$
+- **c)** $0$
+- **d)** $3$ nebo $0$
+- **e)** $-2$ nebo $1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-3$ nebo $0$. Dosazením $x=1$: $p^2+p-2=0$, $p=1$ (druhý kořen $-3$) nebo $p=-2$ (druhý kořen $0$).
+
+</details>
+
+### `vl-obec-045` — Vlastní úloha ve stylu přijímacích testů (č. 45)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro které hodnoty parametru $a$ má rovnice $(a-3)x^2-4x+a=0$ dva různé reálné kořeny?
+
+- **a)** $a\in(-1;4)$
+- **b)** $a\in(-1;3)\cup(3;4)$
+- **c)** $a\in(-\infty;-1)\cup(4;\infty)$
+- **d)** $a\in\langle-1;4\rangle\setminus\{3\}$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $a\in(-1;3)\cup(3;4)$. Musí jít o kvadratickou rovnici ($a\ne3$) s $\frac D4=4-a(a-3)=-(a^2-3a-4)>0$, tj. $(a-4)(a+1)<0$.
+
+</details>
+
 ### `vl-nsz-049` — [Vlastní úloha ve stylu NSZ Matematika (č. 49)](https://www.scio.cz/matematika)
 
 *Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -18165,6 +22095,90 @@ Je dána funkce $f(x)=kx^2+2x+k-3$, $k\in\mathbb R$. Rovnice $f(x)=-3$ má reál
 <details><summary>Ответ и решение</summary>
 
 **a** — $k\in\langle-1,1\rangle$. Rovnice $kx^2+2x+k=0$. Pro $k=0$ má kořen $x=0$; jinak potřebujeme $4-4k^2\ge0$.
+
+</details>
+
+### `vl-cvut-060` — Vlastní úloha ve stylu přijímaček ČVUT (č. 60)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $3x^2+(2p+4)x+p^2-2=0$ (s neznámou $x$) nemá žádný reálný kořen právě tehdy, když
+
+- **a)** $p\in(1-\sqrt6,1+\sqrt6)$
+- **b)** $p\in(-\infty,1-\sqrt6)\cup(1+\sqrt6,\infty)$
+- **c)** $p\in\mathbb R$
+- **d)** $p>1$
+- **e)** $p\in\langle1-\sqrt6,1+\sqrt6\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $p\in(-\infty,1-\sqrt6)\cup(1+\sqrt6,\infty)$. $\frac D4=(p+2)^2-3(p^2-2)=-2p^2+4p+10<0\iff p^2-2p-5>0$.
+
+</details>
+
+### `vl-obec-065` — Vlastní úloha ve stylu přijímacích testů (č. 65)
+
+*Темы:* 4. Rovnice s parametrem · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Pro které hodnoty parametru $a$ má rovnice $2ax-3=5x+a$ (s neznámou $x$) kladné řešení?
+
+- **a)** $a\in(-3;\frac52)$
+- **b)** $a\in(-\infty;-3)\cup\left(\frac52;\infty\right)$
+- **c)** $a\in\left(\frac52;\infty\right)$
+- **d)** $a\in(-\infty;-3)$
+- **e)** jiná odpověď
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $a\in(-\infty;-3)\cup\left(\frac52;\infty\right)$. $x(2a-5)=a+3$; pro $a\ne\frac52$ je $x=\frac{a+3}{2a-5}>0$, tj. čitatel a jmenovatel stejného znaménka. Pro $a=\frac52$ řešení není.
+
+</details>
+
+### `vl-cvut-112` — Vlastní úloha ve stylu přijímaček ČVUT (č. 112)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $(p-2)x^2+4x+p+1=0$ (s neznámou $x$) má alespoň jeden reálný kořen právě tehdy, když
+
+- **a)** $p\in\langle-2;3\rangle$
+- **b)** $p\in(-2;3)$
+- **c)** $p\in\langle-2;2)\cup(2;3\rangle$
+- **d)** $p\in(-\infty;-2\rangle\cup\langle3;\infty)$
+- **e)** $p\in\mathbb R$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $p\in\langle-2;3\rangle$. Pro $p=2$ je rovnice lineární a kořen má. Jinak $\frac D4=4-(p-2)(p+1)\ge0\iff p\in\langle-2;3\rangle$.
+
+</details>
+
+### `vl-cvut-118` — Vlastní úloha ve stylu přijímaček ČVUT (č. 118)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete parametr $q$ tak, aby rovnice $x^2-7x+q=0$ měla jeden kořen o 3 větší než druhý.
+
+<details><summary>Ответ и решение</summary>
+
+$q=10$. Kořeny $k$ a $k+3$: $2k+3=7$, $k=2$; $q=2\cdot5$.
+
+</details>
+
+### `vl-cvut-166` — Vlastní úloha ve stylu přijímaček ČVUT (č. 166)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnice $x^2-2ax+4a=0$ (s neznámou $x$) má dva různé kladné kořeny právě tehdy, když
+
+- **a)** $a\in(4,\infty)$
+- **b)** $a\in(0,4)$
+- **c)** $a\in(-\infty,0)\cup(4,\infty)$
+- **d)** $a\in(0,\infty)$
+- **e)** $a\in\mathbb R$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a\in(4,\infty)$. $\frac D4=a^2-4a>0$, součet $2a>0$ a součin $4a>0$.
 
 </details>
 
@@ -18205,6 +22219,36 @@ Najděte všechna reálná řešení nerovnice $(x+1)^3\le(x+1)^{-1}\,.$
 <details><summary>Ответ и решение</summary>
 
 **c** — $x\in(-\infty,-2\rangle\cup(-1,0\rangle$. $t=x+1\ne0$: $\frac{(t-1)(t+1)(t^2+1)}{t}\le0\iff t\le-1\vee0<t\le1$.
+
+</details>
+
+### `vl-cvut-005` — Vlastní úloha ve stylu přijímaček ČVUT (č. 5)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech řešení nerovnice $\left|\dfrac3{x-1}\right|>\left|\dfrac6{x+2}\right|$ je
+
+- **a)** $(0,1)\cup(1,4)$
+- **b)** $(0,4)$
+- **c)** $(-2,0)\cup(4,\infty)$
+- **d)** $(-\infty,-2)\cup(1,\infty)$
+- **e)** $(1,4)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(0,1)\cup(1,4)$. Pro $x\ne1,-2$: $|x+2|>2|x-1|$, po umocnění $3x^2-12x<0$, tj. $0<x<4$; vyloučíme $x=1$.
+
+</details>
+
+### `vl-cvut-026` — Vlastní úloha ve stylu přijímaček ČVUT (č. 26)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou, 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte nerovnici $|x^2-4|<3x$.
+
+<details><summary>Ответ и решение</summary>
+
+$(1;4)$. Musí být $x>0$ a $-3x<x^2-4<3x$, tj. $x^2+3x-4>0$ a $x^2-3x-4<0$.
 
 </details>
 
@@ -18260,6 +22304,36 @@ Najděte všechna reálná řešení nerovnice $\log_{\frac13}(x+1)-\log_{\frac1
 
 </details>
 
+### `vl-cvut-042` — Vlastní úloha ve stylu přijímaček ČVUT (č. 42)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete počet řešení rovnice $\log_2^2x-3\log_2x+2=0$ a všechna řešení.
+
+<details><summary>Ответ и решение</summary>
+
+Dvě řešení: $x=2$, $x=4$. $t=\log_2x$: $t=1$ nebo $t=2$.
+
+</details>
+
+### `vl-obec-079` — Vlastní úloha ve stylu přijímacích testů (č. 79)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice, 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Množina všech reálných $x$, pro která platí $\log_{\frac1{2}}|x-2|>-1$, je:
+
+- **a)** $(2;4)$
+- **b)** $(0;4)$
+- **c)** $(-\infty;0)\cup(4;\infty)$
+- **d)** $(0;2)\cup(2;4)$
+- **e)** Žádná z ostatních odpovědí není správná.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $(0;2)\cup(2;4)$. Základ je menší než 1, proto $0<|x-c|<b^k$ (bod, kde je absolutní hodnota nulová, je vyloučen).
+
+</details>
+
 ### `fel-vzor01-4` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 4, 1 bod)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-vzor01.pdf)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -18278,6 +22352,18 @@ V intervalu $\langle0,2\pi\rangle$ má rovnice $\sin x=\cos x-1$
 
 </details>
 
+### `vl-cvut-133` — Vlastní úloha ve stylu přijímaček ČVUT (č. 133)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Určete největší záporný a nejmenší kladný kořen rovnice $\cos2x+\sin x=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$-\frac\pi6$ a $\frac\pi2$. $1-2\sin^2x+\sin x=0$: $\sin x=1$ nebo $\sin x=-\frac12$. Záporné kořeny $-\frac\pi6,-\frac{5\pi}6,\dots$; kladné $\frac\pi2,\frac{7\pi}6,\dots$
+
+</details>
+
 ### `vl-nsz-214` — [Vlastní úloha ve stylu NSZ Matematika (č. 214)](https://www.scio.cz/matematika)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -18292,6 +22378,36 @@ Všechna řešení rovnice $\cos2x=\cos x$ jsou čísla:
 <details><summary>Ответ и решение</summary>
 
 **a** — $x=\dfrac{2k\pi}3,\ k\in\mathbb Z$. $2\cos^2x-\cos x-1=0$, $\cos x=1$ ($x=2k\pi$) nebo $\cos x=-\frac12$ ($x=\pm\frac{2\pi}3+2k\pi$). Dohromady jsou to právě násobky $\frac{2\pi}3$.
+
+</details>
+
+### `vl-cvut-161` — Vlastní úloha ve stylu přijímaček ČVUT (č. 161)
+
+*Темы:* 17. Goniometrický tvar komplexního čísla. Moivreova věta · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Řešte v $\mathbb C$ rovnici $z^3=-8$ (řešení zapište v algebraickém tvaru).
+
+<details><summary>Ответ и решение</summary>
+
+$z_1=1+i\sqrt3$, $z_2=-2$, $z_3=1-i\sqrt3$. $-8=8(\cos\pi+i\sin\pi)$; $z_k=2\left(\cos\frac{\pi+2k\pi}3+i\sin\frac{\pi+2k\pi}3\right)$.
+
+</details>
+
+### `vl-obec-023` — Vlastní úloha ve stylu přijímacích testů (č. 23)
+
+*Темы:* 18. Posloupnosti, 19. Aritmetická posloupnost, 20. Geometrická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+V posloupnosti s prvními členy $a_1=1$, $a_2=2$ platí pro každé $k\in\mathbb N$: $a_{2k-1}$, $a_{2k}$, $a_{2k+1}$ jsou po sobě jdoucí členy geometrické posloupnosti a $a_{2k}$, $a_{2k+1}$, $a_{2k+2}$ po sobě jdoucí členy aritmetické posloupnosti. Čemu je rovno $a_7$?
+
+- **a)** $12$
+- **b)** $14$
+- **c)** $16$
+- **d)** $18$
+- **e)** $25$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $16$. Postupně $1,2,4,6,9,12,16$.
 
 </details>
 
@@ -18360,6 +22476,18 @@ Délky hran kvádru tvoří tři po sobě jdoucí členy geometrické posloupnos
 <details><summary>Ответ и решение</summary>
 
 **a** — Objem kvádru je $27\ \mathrm{cm}^3$.. Hrany $a,aq,aq^2$: $2a^2q(1+q+q^2)=63$, $4a(1+q+q^2)=42$, odtud $aq=3$ a objem $(aq)^3=27$ (hrany $1{,}5$; $3$; $6$).
+
+</details>
+
+### `vl-cvut-094` — Vlastní úloha ve stylu přijímaček ČVUT (č. 94)
+
+*Темы:* 20. Geometrická posloupnost, 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Tři čísla tvoří aritmetickou posloupnost se součtem 15. Přičteme-li k nim postupně 1, 4 a 19, vznikne geometrická posloupnost. Určete čísla.
+
+<details><summary>Ответ и решение</summary>
+
+$2, 5, 8$ nebo $26, 5, -16$. Čísla $5-d, 5, 5+d$; $(6-d)(24+d)=81$, $d^2+18d-63=0$, $d=3$ nebo $d=-21$.
 
 </details>
 
@@ -18446,6 +22574,18 @@ Vrcholy pravidelného osmiúhelníku jsou body na kružnici. Náhodně vybereme 
 
 </details>
 
+### `vl-cvut-121` — Vlastní úloha ve stylu přijímaček ČVUT (č. 121)
+
+*Темы:* 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Napište obecnou rovnici roviny, která prochází body $A=[1;0;0]$, $B=[0;2;0]$ a $C=[0;0;3]$.
+
+<details><summary>Ответ и решение</summary>
+
+$6x+3y+2z-6=0$. Úsekový tvar $\frac x1+\frac y2+\frac z3=1$.
+
+</details>
+
 ### `vl-nsz-001` — [Vlastní úloha ve stylu NSZ Matematika (č. 1)](https://www.scio.cz/matematika)
 
 *Темы:* 27. Obecná rovnice přímky, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -18460,6 +22600,42 @@ Přímka prochází bodem $M=[6;8]$ a její vzdálenost od počátku soustavy so
 <details><summary>Ответ и решение</summary>
 
 **d** — $3x+4y-50=0$. $|OM|=10$, takže $M$ je pata kolmice z počátku: přímka je kolmá k $OM$, normálový vektor $(3,4)$, $3x+4y-50=0$.
+
+</details>
+
+### `vl-cvut-006` — Vlastní úloha ve stylu přijímaček ČVUT (č. 6)
+
+*Темы:* 27. Obecná rovnice přímky, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Čtverec $ABCD$ má vrcholy $A=[1;0]$, $B=[4;4]$ a vrchol $D$ má zápornou $x$-ovou souřadnici. Přímka $CD$ má rovnici
+
+- **a)** $4x-3y+21=0$
+- **b)** $4x-3y-4=0$
+- **c)** $3x+4y-3=0$
+- **d)** $4x-3y-29=0$
+- **e)** $3x+4y-28=0$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $4x-3y+21=0$. $\overrightarrow{AB}=(3;4)$, $D=A+(-4;3)=[-3;3]$; $CD\parallel AB$ s normálovým vektorem $(4;-3)$ prochází $D$.
+
+</details>
+
+### `vl-cvut-049` — Vlastní úloha ve stylu přijímaček ČVUT (č. 49)
+
+*Темы:* 27. Obecná rovnice přímky, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Trojúhelník $ABC$ má vrchol $C=[4;1]$, základnu $AB$ na přímce $x-y+1=0$ a $A=[0;a]$. Je rovnoramenný se základnou $AB$ právě tehdy, když
+
+- **a)** $a=1$, $B=[4;5]$
+- **b)** $a=1$, $B=[2;3]$
+- **c)** $a=-1$, $B=[4;5]$
+- **d)** $a=1$, $B=[5;4]$
+- **e)** $a=1$ a $B$ je libovolný bod přímky
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a=1$, $B=[4;5]$. $A$ leží na přímce, tedy $a=1$. Pata kolmice z $C$ je $[2;3]$ a musí být středem $AB$: $B=[4;5]$.
 
 </details>
 
@@ -18483,6 +22659,102 @@ Určete hodnotu parametru $p$ tak, aby přímka $q$ neměla s kružnicí $k$ ž�
 
 </details>
 
+### `vl-cvut-020` — Vlastní úloha ve stylu přijímaček ČVUT (č. 20)
+
+*Темы:* 30. Kuželosečky. Kružnice, 28. Vzájemná poloha přímek · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Přímka $x+y+m=0$ je sečnou kružnice $x^2+y^2+4x-2y-4=0$ pro všechna $m$ z množiny
+
+- **a)** $(1-3\sqrt2,1+3\sqrt2)$
+- **b)** $\langle1-3\sqrt2,1+3\sqrt2\rangle$
+- **c)** $\{1-3\sqrt2,1+3\sqrt2\}$
+- **d)** $(-3,3)$
+- **e)** $(-1-3\sqrt2,-1+3\sqrt2)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(1-3\sqrt2,1+3\sqrt2)$. Střed $[-2;1]$, $r=3$; vzdálenost středu od přímky $\frac{|m-1|}{\sqrt2}<3$.
+
+</details>
+
+### `vl-cvut-011` — Vlastní úloha ve stylu přijímaček ČVUT (č. 11)
+
+*Темы:* 31. Elipsa, 28. Vzájemná poloha přímek · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Vypočtěte délku tětivy, kterou na přímce $y=x$ vytíná elipsa $x^2+4y^2=20$.
+
+<details><summary>Ответ и решение</summary>
+
+$4\sqrt2$. $5x^2=20$, $x=\pm2$; body $[\pm2;\pm2]$.
+
+</details>
+
+### `vl-cvut-168` — Vlastní úloha ve stylu přijímaček ČVUT (č. 168)
+
+*Темы:* 33. Parabola, 4. Rovnice s parametrem · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Přímka $y=2x+1$ je tečnou paraboly $y=x^2+ax+b$ v jejím bodě s $x$-ovou souřadnicí 1 právě pro
+
+- **a)** $a=0,\ b=2$
+- **b)** $a=2,\ b=0$
+- **c)** $a=0,\ b=1$
+- **d)** $a=-2,\ b=4$
+- **e)** $a\in\mathbb R,\ b=2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a=0,\ b=2$. $x^2+(a-2)x+(b-1)$ musí být $(x-1)^2$: $a-2=-2$, $b-1=1$.
+
+</details>
+
+### `vl-cvut-002` — Vlastní úloha ve stylu přijímaček ČVUT (č. 2)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Do pravého úhlu jsou vepsány dva kruhy, které se navzájem dotýkají. Poměr poloměru menšího a většího kruhu je
+
+- **a)** $1:(3+2\sqrt2)$
+- **b)** $1:2$
+- **c)** $1:3$
+- **d)** $1:(1+\sqrt2)$
+- **e)** $1:4$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1:(3+2\sqrt2)$. Střed kruhu o poloměru $r$ je od vrcholu vzdálen $r\sqrt2$. Dotyk: $R\sqrt2=r\sqrt2+r+R$, tedy $\frac Rr=\frac{\sqrt2+1}{\sqrt2-1}=3+2\sqrt2$.
+
+</details>
+
+### `vl-cvut-018` — Vlastní úloha ve stylu přijímaček ČVUT (č. 18)
+
+*Темы:* 34. Planimetrie, 1. Množina. Podmnožina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Je dána úsečka $AB$ délky 6 cm. Popište množinu všech bodů $X$ v rovině, pro které je trojúhelník $ABX$ pravoúhlý s pravým úhlem u $X$, a určete největší možný obsah takového trojúhelníku.
+
+<details><summary>Ответ и решение</summary>
+
+Thaletova kružnice nad průměrem $AB$ bez bodů $A$, $B$; největší obsah $9$ cm$^2$. Výška je nejvýše poloměr 3 cm: $S\le\frac12\cdot6\cdot3$.
+
+</details>
+
+### `vl-cvut-023` — Vlastní úloha ve stylu přijímaček ČVUT (č. 23)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Do rovnostranného trojúhelníku o straně $a$ je vepsán čtverec tak, že jedna jeho strana leží na straně trojúhelníku. Strana čtverce má délku
+
+- **a)** $a(2\sqrt3-3)$
+- **b)** $\dfrac a2$
+- **c)** $\dfrac{a\sqrt3}3$
+- **d)** $a(\sqrt3-1)$
+- **e)** $\dfrac a{\sqrt3}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a(2\sqrt3-3)$. Nad čtvercem o straně $s$ zbude rovnostranný trojúhelník o straně $s$; výšky: $s+\frac{\sqrt3}2s=\frac{\sqrt3}2a$, tedy $s=\frac{\sqrt3a}{2+\sqrt3}=a(2\sqrt3-3)$.
+
+</details>
+
 ### `vl-nsz-062` — [Vlastní úloha ve stylu NSZ Matematika (č. 62)](https://www.scio.cz/matematika)
 
 *Темы:* 34. Planimetrie, Ostatní · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -18497,6 +22769,72 @@ Délky všech stran pravoúhlého trojúhelníku jsou v centimetrech celá čís
 <details><summary>Ответ и решение</summary>
 
 **b** — $132$ cm. $11^2=c^2-b^2=(c-b)(c+b)$; 121 se rozloží jen jako $1\cdot121$, tedy $c=61$, $b=60$.
+
+</details>
+
+### `vl-obec-089` — Vlastní úloha ve stylu přijímacích testů (č. 89)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rovnoramenný trojúhelník $ABC$ má při základně $AB$ úhly $40^\circ$. Průsečík výšek $V$, střed kružnice opsané $O$ a střed kružnice vepsané $I$ leží spolu s vrcholem $C$ na jedné přímce v pořadí (počínaje bodem nejdále od základny):
+
+- **a)** $V, C, I, O$
+- **b)** $C, V, I, O$
+- **c)** $C, I, O, V$
+- **d)** $V, C, O, I$
+- **e)** $C, I, V, O$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $V, C, I, O$. Úhel při $C$ je $100^\circ$ (tupý): průsečík výšek leží za vrcholem $C$, střed kružnice opsané za základnou $AB$, střed vepsané kružnice uvnitř.
+
+</details>
+
+### `vl-obec-090` — Vlastní úloha ve stylu přijímacích testů (č. 90)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Čtverec o obsahu 32 cm$^2$ otočíme o $45^\circ$ kolem jeho středu. Průnik původního a otočeného čtverce má obsah:
+
+- **a)** $64(\sqrt2-1)$ cm$^2$
+- **b)** $16$ cm$^2$
+- **c)** $24$ cm$^2$
+- **d)** $32(\sqrt2-1)$ cm$^2$
+- **e)** $28$ cm$^2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $64(\sqrt2-1)$ cm$^2$. Průnik je pravidelný osmiúhelník; od čtverce o straně $a=4\sqrt2$ se odříznou 4 rohové trojúhelníky s odvěsnou $\frac{a(2-\sqrt2)}2$, takže obsah je $2a^2(\sqrt2-1)$.
+
+</details>
+
+### `vl-cvut-105` — Vlastní úloha ve stylu přijímaček ČVUT (č. 105)
+
+*Темы:* 34. Planimetrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Do čtvrtkruhu o poloměru $r$ je vepsán kruh (dotýká se obou poloměrů i oblouku). Určete jeho poloměr.
+
+<details><summary>Ответ и решение</summary>
+
+$\varrho=r(\sqrt2-1)$. Střed vepsaného kruhu leží na ose pravého úhlu: $\varrho\sqrt2+\varrho=r$.
+
+</details>
+
+### `vl-cvut-147` — Vlastní úloha ve stylu přijímaček ČVUT (č. 147)
+
+*Темы:* 34. Planimetrie, 30. Kuželosečky. Kružnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Středy všech tětiv dané délky $d$ ($0<d<2r$) kružnice $k(S;r)$ leží
+
+- **a)** na kružnici se středem $S$ a poloměrem $\sqrt{r^2-\frac{d^2}4}$
+- **b)** na kružnici se středem $S$ a poloměrem $\frac d2$
+- **c)** na přímce procházející bodem $S$
+- **d)** na kružnici nad průměrem $S$ a libovolného bodu kružnice
+- **e)** na parabole s ohniskem $S$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — na kružnici se středem $S$ a poloměrem $\sqrt{r^2-\frac{d^2}4}$. Střed tětivy je patou kolmice ze $S$; podle Pythagorovy věty má od $S$ vzdálenost $\sqrt{r^2-(d/2)^2}$.
 
 </details>
 
@@ -18517,6 +22855,18 @@ V krychli $ABCDEFGH$ je $M$ střed hrany $AE$ a $S$ střed stěny $EFGH$. Jaký 
 
 </details>
 
+### `vl-cvut-075` — Vlastní úloha ve stylu přijímaček ČVUT (č. 75)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Rotační kužel má výšku rovnou průměru podstavy. Určete poměr obsahu pláště a obsahu podstavy.
+
+<details><summary>Ответ и решение</summary>
+
+$\sqrt5:1$. $v=2r$, $s=r\sqrt5$; $\pi rs:\pi r^2$.
+
+</details>
+
 ### `vl-nsz-126` — [Vlastní úloha ve stylu NSZ Matematika (č. 126)](https://www.scio.cz/matematika)
 
 *Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -18531,6 +22881,18 @@ V krychli $ABCDEFGH$ (podstava $ABCD$, nad ní $EFGH$) je $M$ střed hrany $AB$ 
 <details><summary>Ответ и решение</summary>
 
 **c** — pětiúhelník. Přímka $MN$ protne přímky $AD$ a $CD$ mimo krychli; spojnice těchto bodů s $H$ protnou hrany $AE$ a $CG$. Řez má vrcholy $M$, $N$, bod na $CG$, $H$ a bod na $AE$.
+
+</details>
+
+### `vl-cvut-150` — Vlastní úloha ve stylu přijímaček ČVUT (č. 150)
+
+*Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
+
+Kulová úseč (vrchlík) má výšku 2 cm a vznikla z koule o poloměru 5 cm. Určete poloměr podstavy úseče.
+
+<details><summary>Ответ и решение</summary>
+
+$4$ cm. Podstava je ve vzdálenosti 3 cm od středu: $\sqrt{25-9}$.
 
 </details>
 

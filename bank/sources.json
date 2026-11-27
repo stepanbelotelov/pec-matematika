@@ -474,5 +474,35 @@
   "note": "Typy úloh odpovídají zveřejněným testům NSZ Matematika (Scio) 2025–2026 a krátké ukázce; čísla, kontext i znění jsou vlastní, pořadí promíchané. Úlohy, které Scio vyřadilo (NOK) nebo které stojí jen na obrázku, jsou nahrazeny vlastní správnou verzí, nebo vynechány. Odkaz vede na popis zkoušky u Scio.",
   "include": true,
   "copyright": "vlastní úlohy autorů banky (pec-matematika); text úloh Scio se nepřebírá"
+ },
+ {
+  "id": "vlastni-cvut",
+  "uni": "Vlastní",
+  "faculty": "Vlastní",
+  "kind": "vlastní úlohy",
+  "title": "Vlastní úlohy ve stylu přijímaček ČVUT — náhrada za úlohy ze sbírek chráněných autorským právem",
+  "years": "2026",
+  "format": "otevřené úlohy a úlohy s výběrem odpovědi, u každé řešení",
+  "answers": "naše; ověřeno výpočtem (sympy, numericky) a u textových úloh hrubou silou",
+  "url": null,
+  "status": "v bance (168 úloh)",
+  "note": "Typy úloh odpovídají sbírce „Matematika – přijímací zkoušky na ČVUT“ (Vydavatelství ČVUT, 2001; testy 1–5 nahrazeny 1:1, cvičení kapitol 1–9 po typech) a přípravnému kurzu FS ČVUT. Čísla, kontext i znění jsou vlastní.",
+  "include": true,
+  "copyright": "vlastní úlohy autorů banky (pec-matematika); text úloh z původních sbírek se nepřebírá"
+ },
+ {
+  "id": "vlastni-obecne",
+  "uni": "Vlastní",
+  "faculty": "Vlastní",
+  "kind": "vlastní úlohy",
+  "title": "Vlastní úlohy ve stylu přijímacích testů — náhrada za úlohy ze Cvičebnice matematiky (Scio) a dalších materiálů",
+  "years": "2026",
+  "format": "otevřené úlohy a úlohy s výběrem odpovědi, u každé řešení",
+  "answers": "naše; ověřeno výpočtem (sympy, numericky) a u textových úloh hrubou silou",
+  "url": null,
+  "status": "v bance (109 úloh)",
+  "note": "Tři cvičné testy Cvičebnice (NSZ, cvičná maturita, cvičný test VŠE) nahrazeny 1:1, kapitoly Cvičebnice po typech, krátký test „Test 1“ 1:1. Čísla, kontext i znění jsou vlastní.",
+  "include": true,
+  "copyright": "vlastní úlohy autorů banky (pec-matematika); text úloh z původních sbírek se nepřebírá"
  }
 ]
