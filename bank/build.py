@@ -5,6 +5,8 @@
 
 Правила банка: текст задачи — только оригинал вуза (без переформулировок); задачи, которые
 пока переписаны из курса не дословно, помечены needs_original=true и ждут сверки с PDF.
+Исключение — собственные задачи банка (fidelity="own", id vl-nsz-*): свои числа, сюжет и формулировка
+вместо задач, защищённых авторским правом (тип задачи как в NSZ Matematika); они так и подписаны.
 Тема 0 = «Ostatní» — задачи вне 35 тем плана.
 
 Запуск: python3 bank/build.py            — банк технических вузов (bank/)
@@ -35,9 +37,10 @@ PLAN = {1: "Množina. Podmnožina", 2: "Mocnina. Odmocnina", 3: "Rovnice (lineá
 TOPIC_KEY = lambda n: "ostatni" if n == 0 else str(n)          # ключ в tasks.site.json
 TOPIC_ORDER = lambda n: 99 if n == 0 else n                       # «Ostatní» — в конце
 LEVEL = {1: "Уровень 1 — базовый", 2: "Уровень 2 — стандартный", 3: "Уровень 3 — сложный"}
-FIDELITY = {"original": "", "reworded": "přeformulováno", "adapted": "upraveno"}
+FIDELITY = {"original": "", "reworded": "přeformulováno", "adapted": "upraveno", "own": "vlastní úloha"}
 FIDELITY_RU = {"original": "текст оригинала (по курсу)", "reworded": "в курсе пересказано — заменить оригиналом",
-               "adapted": "в курсе изменён вопрос — заменить оригиналом"}
+               "adapted": "в курсе изменён вопрос — заменить оригиналом",
+               "own": "собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)"}
 
 
 def body_points(n):
@@ -47,6 +50,8 @@ def body_points(n):
 def src_line(t):
     """Подпись источника для сайта и обзора."""
     fid = FIDELITY[t["fidelity"]]
+    if t["fidelity"] == "own":                                   # собственные задачи банка
+        return f"{t['exam_short']} (č. {t['num']})"
     pts = f", {t['points']} {body_points(t['points'])}" if t.get("points") else ""
     if t["faculty"] == "FIT":
         v = f", {t['verze']}" if t.get("verze") else ""
@@ -102,7 +107,7 @@ def check(tasks):
         src = SOURCES.get(t["source"])
         assert src and src.get("include") is True, f"{t['id']}: источник не разрешён для банка"
         assert t["level"] in LEVEL and t["fidelity"] in FIDELITY, t["id"]
-        assert t["needs_original"] == (t["fidelity"] != "original"), t["id"]
+        assert t["needs_original"] == (t["fidelity"] in ("reworded", "adapted")), t["id"]
         assert t["topics"] and all(n in PLAN for n in t["topics"]), t["id"]
         if t["type"] == "mc":
             assert len(t["opts"]) == len(t["letters"]) and t["key"] in t["letters"], t["id"]
