@@ -2,7 +2,7 @@
 
 Файл собирается скриптом `bank/build.py` из `tasks.json` и `sources.json`; вручную не редактировать.
 
-Всего задач: **747** · базовый: 470 · стандартный: 248 · сложный: 29 · VUT FSI: 198 · ČVUT FIT: 195 · VUT FAST: 99 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FBMI: 40 · ČVUT FJFI: 24 · ČVUT FEL: 15 · VŠCHT VŠCHT: 7 · TUL FP: 5
+Всего задач: **863** · базовый: 548 · стандартный: 286 · сложный: 29 · VUT FSI: 198 · ČVUT FIT: 195 · VUT FAST: 99 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FS: 71 · ČVUT FBMI: 40 · VŠB FAST: 35 · ČVUT FJFI: 24 · ČVUT FEL: 15 · ČVUT MÚVS: 10 · VŠCHT VŠCHT: 7 · TUL FP: 5
 
 ⚠ **0** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.
 
@@ -10,46 +10,148 @@
 
 | № | Тема | Ур. 1 | Ур. 2 | Ур. 3 | Всего |
 |---|---|---|---|---|---|
-| 1 | Množina. Podmnožina |  | 2 | 7 | 9 |
-| 2 | Mocnina. Odmocnina | 39 | 4 |  | 43 |
-| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 31 | 26 | 5 | 62 |
+| 1 | Množina. Podmnožina | 4 | 2 | 7 | 13 |
+| 2 | Mocnina. Odmocnina | 41 | 4 |  | 45 |
+| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 39 | 26 | 5 | 70 |
 | 4 | Rovnice s parametrem | 4 | 7 | 2 | 13 |
-| 5 | Rovnice s absolutní hodnotou | 2 | 11 |  | 13 |
-| 6 | Nerovnice. Soustava nerovnic | 23 | 8 | 2 | 33 |
-| 7 | Nerovnice s absolutní hodnotou | 9 | 9 |  | 18 |
+| 5 | Rovnice s absolutní hodnotou | 4 | 11 |  | 15 |
+| 6 | Nerovnice. Soustava nerovnic | 27 | 8 | 2 | 37 |
+| 7 | Nerovnice s absolutní hodnotou | 15 | 10 |  | 25 |
 | 8 | Iracionální rovnice. Iracionální nerovnice | 23 | 11 |  | 34 |
-| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 19 | 5 |  | 24 |
+| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 28 | 8 |  | 36 |
 | 10 | Exponenciální funkce | 4 | 2 |  | 6 |
-| 11 | Exponenciální rovnice a nerovnice | 24 | 18 |  | 42 |
-| 12 | Logaritmická funkce | 19 | 10 |  | 29 |
-| 13 | Logaritmické rovnice a nerovnice | 7 | 18 | 1 | 26 |
+| 11 | Exponenciální rovnice a nerovnice | 29 | 19 |  | 48 |
+| 12 | Logaritmická funkce | 20 | 12 |  | 32 |
+| 13 | Logaritmické rovnice a nerovnice | 9 | 25 | 1 | 35 |
 | 14 | Goniometrické funkce | 22 | 15 |  | 37 |
-| 15 | Goniometrické rovnice a nerovnice | 14 | 19 | 1 | 34 |
-| 16 | Komplexní čísla | 20 | 2 |  | 22 |
+| 15 | Goniometrické rovnice a nerovnice | 15 | 24 | 1 | 40 |
+| 16 | Komplexní čísla | 31 | 3 |  | 34 |
 | 17 | Goniometrický tvar komplexního čísla. Moivreova věta | 1 |  |  | 1 |
 | 18 | Posloupnosti |  | 1 |  | 1 |
-| 19 | Aritmetická posloupnost | 16 | 2 | 2 | 20 |
-| 20 | Geometrická posloupnost | 10 | 7 | 2 | 19 |
+| 19 | Aritmetická posloupnost | 18 | 5 | 2 | 25 |
+| 20 | Geometrická posloupnost | 12 | 7 | 2 | 21 |
 | 21 | Kombinatorika. Faktoriál | 4 | 2 | 1 | 7 |
-| 22 | Variace. Permutace. Kombinace | 8 | 17 | 1 | 26 |
+| 22 | Variace. Permutace. Kombinace | 9 | 17 | 1 | 27 |
 | 23 | Kombinační číslo. Binomická věta | 3 | 1 |  | 4 |
 | 24 | Pravděpodobnost | 6 | 5 |  | 11 |
 | 25 | Analytická geometrie. Vektory |  | 1 |  | 1 |
 | 26 | Parametrická rovnice přímky | 3 |  |  | 3 |
-| 27 | Obecná rovnice přímky | 19 | 1 |  | 20 |
+| 27 | Obecná rovnice přímky | 21 | 7 |  | 28 |
 | 28 | Vzájemná poloha přímek | 10 |  |  | 10 |
-| 29 | Směrnicový a úsekový tvar rovnice přímky | 4 | 1 |  | 5 |
-| 30 | Kuželosečky. Kružnice | 14 | 4 | 1 | 19 |
-| 31 | Elipsa | 2 | 3 |  | 5 |
-| 32 | Hyperbola | 2 | 1 |  | 3 |
+| 29 | Směrnicový a úsekový tvar rovnice přímky | 5 | 1 |  | 6 |
+| 30 | Kuželosečky. Kružnice | 18 | 4 | 1 | 23 |
+| 31 | Elipsa | 6 | 3 |  | 9 |
+| 32 | Hyperbola | 3 | 1 |  | 4 |
 | 33 | Parabola | 6 |  |  | 6 |
-| 34 | Planimetrie | 25 | 2 |  | 27 |
-| 35 | Stereometrie | 18 | 3 |  | 21 |
-| — | Ostatní | 59 | 30 | 4 | 93 |
+| 34 | Planimetrie | 27 | 2 |  | 29 |
+| 35 | Stereometrie | 18 | 4 |  | 22 |
+| — | Ostatní | 63 | 38 | 4 | 105 |
 
 Задача считается по основной (первой) теме; дополнительные темы указаны в карточке. «Ostatní» — задачи вне 35 тем плана.
 
 ## Уровень 1 — базовый
+
+### `vsb-fast-v1-01` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 1)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу)
+
+Jsou dány množiny $A=\{1,2,3,4\}$, $B=\{2,4,6,8\}$. Určete jejich sjednocení $A\cup B$, průnik $A\cap B$ a rozdíl $A\setminus B$.
+
+- **a)** $A\cup B=\{1,2,3,4,6,8\},\ A\cap B=\{2,4\},\ A\setminus B=\{1,3\}$
+- **b)** $A\cup B=\{2,4,6\},\ A\cap B=\{1,2,3,4,5,6,7,8\},\ A\setminus B=\{1,3,5,7\}$
+- **c)** $A\cup B=\{1,4,6,7,8\},\ A\cap B=\emptyset,\ A\setminus B=\{1,3,5\}$
+- **d)** $A\cup B=\{1,4,7,8\},\ A\cap B=\{1,3,5\},\ A\setminus B=\emptyset$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $A\cup B=\{1,2,3,4,6,8\},\ A\cap B=\{2,4\},\ A\setminus B=\{1,3\}$. $A\cup B$ — prvky aspoň jedné množiny, $A\cap B$ — společné prvky $2,4$, $A\setminus B$ — prvky $A$, které nejsou v $B$.
+
+</details>
+
+### `vsb-fast-v2-01` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 1)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу)
+
+Jsou dány množiny $A=\{1,2,3,4\}$, $B=\{1,3,5,7\}$. Určete jejich sjednocení $A\cup B$, průnik $A\cap B$ a rozdíl $A\setminus B$.
+
+- **a)** $A\cup B=\{1,2,3,4,5,7\},\ A\cap B=\{1,3\},\ A\setminus B=\{2,4\}$
+- **b)** $A\cup B=\{1,3,5\},\ A\cap B=\{1,2,3,4,5,6,7\},\ A\setminus B=\{5,7\}$
+- **c)** $A\cup B=\{1,2,4,5,7\},\ A\cap B=\emptyset,\ A\setminus B=\{1,3\}$
+- **d)** $A\cup B=\{1,4,7,8\},\ A\cap B=\{1,5,7\},\ A\setminus B=\emptyset$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $A\cup B=\{1,2,3,4,5,7\},\ A\cap B=\{1,3\},\ A\setminus B=\{2,4\}$. Společné prvky jsou $1,3$; v $A$ bez $B$ zbývají $2,4$.
+
+</details>
+
+### `vsb-fast-v1-02` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 2)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу)
+
+Jsou dány intervaly $A=(2,+\infty)$, $B=\langle1,4)$. Určete jejich sjednocení $A\cup B$, průnik $A\cap B$ a rozdíl $A\setminus B$.
+
+- **a)** $A\cup B=\langle1,+\infty),\ A\cap B=(2,4),\ A\setminus B=\langle4,+\infty)$
+- **b)** $A\cup B=(2,4\rangle,\ A\cap B=\langle1,+\infty),\ A\setminus B=(4,+\infty)$
+- **c)** $A\cup B=(1,+\infty),\ A\cap B=(2,4\rangle,\ A\setminus B=(4,+\infty)$
+- **d)** $A\cup B=(-1,+\infty),\ A\cap B=(-2,4\rangle,\ A\setminus B=(4,+\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $A\cup B=\langle1,+\infty),\ A\cap B=(2,4),\ A\setminus B=\langle4,+\infty)$. Sjednocení začíná v $1$ (včetně), průnik je $(2,4)$; bod $4$ do $B$ nepatří, proto $A\setminus B=\langle4,+\infty)$.
+
+</details>
+
+### `vsb-fast-v2-02` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 2)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу)
+
+Jsou dány intervaly $A=(1,+\infty)$, $B=\langle0,3)$. Určete jejich sjednocení $A\cup B$, průnik $A\cap B$ a rozdíl $A\setminus B$.
+
+- **a)** $A\cup B=\langle0,+\infty),\ A\cap B=(1,3),\ A\setminus B=\langle3,+\infty)$
+- **b)** $A\cup B=(1,3\rangle,\ A\cap B=\langle0,+\infty),\ A\setminus B=(3,+\infty)$
+- **c)** $A\cup B=(0,+\infty),\ A\cap B=(1,3\rangle,\ A\setminus B=(3,+\infty)$
+- **d)** $A\cup B=(-2,+\infty),\ A\cap B=(-3,3\rangle,\ A\setminus B=(3,+\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $A\cup B=\langle0,+\infty),\ A\cap B=(1,3),\ A\setminus B=\langle3,+\infty)$. Sjednocení začíná v $0$ (včetně), průnik je $(1,3)$; bod $3$ do $B$ nepatří, proto $A\setminus B=\langle3,+\infty)$.
+
+</details>
+
+### `vsb-fast-v1-07` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 7)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $y=2$ a $x=-1$, pak $(y+x)^x-(-y:x+1)=$
+
+- **a)** $-2$
+- **b)** $0$
+- **c)** $2$
+- **d)** $4$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-2$. $(2-1)^{-1}-\bigl(-2:(-1)+1\bigr)=1-3=-2$.
+
+</details>
+
+### `vsb-fast-v2-07` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 7)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Je-li $a=-2$ a $b=-1$, pak $(b-a)^b-(-a:b-1)=$
+
+- **a)** $-2$
+- **b)** $0$
+- **c)** $2$
+- **d)** $4$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $4$. $1^{-1}-\bigl(2:(-1)-1\bigr)=1-(-3)=4$.
+
+</details>
 
 ### `vut-fast-102` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 102)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
 
@@ -776,6 +878,40 @@ Výraz $\sqrt y\cdot\sqrt[3]{y^{-2}}\cdot\sqrt[6]{y^3}$ je pro $y>0$ roven
 
 </details>
 
+### `vsb-fast-v1-08` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 8)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Součin všech kořenů rovnice $(2x+8)(x^2-5x+6)=0$ je
+
+- **a)** $-12$
+- **b)** $-18$
+- **c)** $-24$
+- **d)** $-35$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $-24$. Kořeny $-4$, $2$, $3$; součin $-24$.
+
+</details>
+
+### `vsb-fast-v2-08` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 8)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Součin všech kořenů rovnice $(3x-6)(x^2+5x-6)=0$ je
+
+- **a)** $-12$
+- **b)** $-18$
+- **c)** $-24$
+- **d)** $-36$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-12$. Kořeny $2$, $1$, $-6$; součin $-12$.
+
+</details>
+
 ### `vut-fast-117` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 117)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
 
 *Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
@@ -1272,6 +1408,78 @@ Nalezněte řešení soustavy rovnic $3(x+2)-4(y+x)=7$ a $2x-(x-4y)=-1$ a rozhod
 
 </details>
 
+### `fs-2026-cz1-03` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 3, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $x^4-4x^2+3=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=-\sqrt3,\ x_2=-1,\ x_3=1,\ x_4=\sqrt3$. Substituce $t=x^2$: $t^2-4t+3=0$, $t=1$ nebo $t=3$.
+
+</details>
+
+### `fs-2026-cz2-03` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 3, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $x^4-3x^2+2=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=-\sqrt2,\ x_2=-1,\ x_3=1,\ x_4=\sqrt2$. Substituce $t=x^2$: $t^2-3t+2=0$, $t=1$ nebo $t=2$.
+
+</details>
+
+### `fs-2026-cz3-03` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 3, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $x^4-6x^2+5=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=-\sqrt5,\ x_2=-1,\ x_3=1,\ x_4=\sqrt5$. Substituce $t=x^2$: $t=1$ nebo $t=5$.
+
+</details>
+
+### `fs-2026-cz4-03` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 3, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $x^4-8x^2+7=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=-\sqrt7,\ x_2=-1,\ x_3=\sqrt7,\ x_4=1$. Substituce $t=x^2$: $t=1$ nebo $t=7$.
+
+</details>
+
+### `fs-2026-cz5-03` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 3, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $x^4-5x^2+4=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=-2,\ x_2=-1,\ x_3=1,\ x_4=2$. Substituce $t=x^2$: $t=1$ nebo $t=4$.
+
+</details>
+
+### `fs-2026-cz6-03` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 3, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $x^3-3x^2+2x=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=0,\ x_2=1,\ x_3=2$. $x(x-1)(x-2)=0$.
+
+</details>
+
 ### `vut-fsi-2014-z6-03` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 6 (úloha 3, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
@@ -1406,6 +1614,40 @@ Rovnice $x^2+ax+4=0$ má dvojnásobný kořen pro
 
 </details>
 
+### `vsb-fast-v1-10` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 10)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Součin všech řešení rovnice $|2x-5|=3$ je
+
+- **a)** $3$
+- **b)** $4$
+- **c)** $5$
+- **d)** $6$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $4$. $2x-5=\pm3$, $x=4$ nebo $x=1$; součin $4$.
+
+</details>
+
+### `vsb-fast-v2-10` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 10)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Součet všech řešení rovnice $|3-x|=7$ je
+
+- **a)** $4$
+- **b)** $6$
+- **c)** $10$
+- **d)** $14$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $6$. $3-x=\pm7$, $x=-4$ nebo $x=10$; součet $6$.
+
+</details>
+
 ### `vut-fsi-2014-z1-01` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 1, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 5. Rovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
@@ -1443,6 +1685,74 @@ Všechna reálná řešení rovnice $|x^2-2x+3|=3$ jsou:
 <details><summary>Ответ и решение</summary>
 
 **c** — $x\in\{0;2\}$. $x^2-2x+3>0$, tedy $x^2-2x=0$.
+
+</details>
+
+### `vsb-fast-v1-11` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 11)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Pro kterou hodnotu $x$ jsou nerovnosti $\dfrac35<\dfrac x{10}<\dfrac45$ pravdivé?
+
+- **a)** $6$
+- **b)** $7$
+- **c)** $8$
+- **d)** $9$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $7$. Po vynásobení $10$: $6<x<8$.
+
+</details>
+
+### `vsb-fast-v2-11` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 11)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Pro kterou hodnotu $x$ jsou nerovnosti $\dfrac25<\dfrac x{10}<\dfrac35$ pravdivé?
+
+- **a)** $3$
+- **b)** $4$
+- **c)** $5$
+- **d)** $6$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $5$. Po vynásobení $10$: $4<x<6$.
+
+</details>
+
+### `vsb-fast-v1-12` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 12)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Řešením nerovnice $x^2-x-2\le0$ je
+
+- **a)** $\langle-1,2\rangle$
+- **b)** $(-1,2)$
+- **c)** $(-\infty,-1\rangle\cup\langle2,+\infty)$
+- **d)** $(-\infty,-1)\cup(2,+\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\langle-1,2\rangle$. $(x+1)(x-2)\le0$ mezi kořeny včetně nich.
+
+</details>
+
+### `vsb-fast-v2-12` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 12)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Řešením nerovnice $\frac{5-x}{x+1}\le0$ je
+
+- **a)** $(-\infty,-1\rangle\cup\langle5,+\infty)$
+- **b)** $(-\infty,-1)\cup\langle5,+\infty)$
+- **c)** $\langle-1,5\rangle$
+- **d)** $(-1,5\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $(-\infty,-1)\cup\langle5,+\infty)$. Znaménko podílu: záporný pro $x<-1$ a $x>5$, nula v $x=5$; $x=-1$ je vyloučeno.
 
 </details>
 
@@ -1842,6 +2152,80 @@ Množina všech řešení nerovnice $|x-2|\le3$ je
 <details><summary>Ответ и решение</summary>
 
 **b** — $\langle-1,5\rangle$. $-3\le x-2\le3$.
+
+</details>
+
+### `fs-2026-cz1-06` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 6, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte nerovnici $|2x-3|\le5$.
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\langle-1,4\rangle$. $-5\le2x-3\le5$.
+
+</details>
+
+### `fs-2026-cz2-06` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 6, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte nerovnici $|3x-2|>2$.
+
+<details><summary>Ответ и решение</summary>
+
+$x\in(-\infty,0)\cup\left(\frac43,\infty\right)$. $3x-2>2$ nebo $3x-2<-2$.
+
+</details>
+
+### `fs-2026-cz3-06` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 6, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte nerovnici $|3x+5|\ge1$.
+
+<details><summary>Ответ и решение</summary>
+
+$(-\infty,-2\rangle\cup\left\langle-\frac43,\infty\right)$. $3x+5\ge1$ nebo $3x+5\le-1$.
+
+</details>
+
+### `fs-2026-cz4-06` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 6, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte nerovnici $|3x+1|\le5$.
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\left\langle-2,\dfrac43\right\rangle$. $-5\le3x+1\le5$.
+
+</details>
+
+### `fs-2026-cz5-06` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 6, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte nerovnici $|3x-5|<10$.
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\left(-\frac53,5\right)$. $-10<3x-5<10$.
+
+</details>
+
+### `fs-2026-cz6-06` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 6, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte nerovnici $\left|3x-\dfrac52\right|>2$.
+
+<details><summary>Ответ и решение</summary>
+
+$x\in\left(-\infty,\dfrac16\right)\cup\left(\dfrac32,\infty\right)$. $3x-\frac52>2$ dává $x>\frac32$; $3x-\frac52<-2$ dává $x<\frac16$.
+
+*Примечание:* Ve sloupci „Výsledek“ zadání FS je uvedeno $\left(-\infty,-\frac16\right)\cup\left(\frac32,\infty\right)$ — chyba ve znaménku: např. $x=0$ nerovnici splňuje ($\frac52>2$). Zde je uveden správný výsledek.
 
 </details>
 
@@ -2329,6 +2713,78 @@ Rovnice $\sqrt{x+2}=\sqrt x$ má řešení
 
 </details>
 
+### `vsb-fast-v1-03` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 3)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor funkce $f(x)=\sqrt{x-2}+x^2-9$.
+
+- **a)** $D_f=(-3,2\rangle$
+- **b)** $D_f=\langle2,+\infty)$
+- **c)** $D_f=\langle2,3)$
+- **d)** $D_f=(-\infty,-3)\cup(3,+\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $D_f=\langle2,+\infty)$. Omezení dává jen odmocnina: $x-2\ge0$; mnohočlen $x^2-9$ je definován všude.
+
+</details>
+
+### `vsb-fast-v2-03` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 3)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor funkce $f(x)=\sqrt{3-x}+(4-x^2)$.
+
+- **a)** $D_f=\langle-2,3)$
+- **b)** $D_f=(-\infty,3\rangle$
+- **c)** $D_f=(-\infty,-2)\cup\langle2,3\rangle$
+- **d)** $D_f=(-\infty,-2)\cup(2,+\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $D_f=(-\infty,3\rangle$. Omezení dává jen odmocnina: $3-x\ge0$.
+
+</details>
+
+### `vsb-fast-v1-05` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 5)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Na obrázku je graf funkce $y=0{,}5x^2-2x+1{,}5$. Jeho průsečíky s osou $x$ jsou body
+
+- **a)** $[1;3],\ [3;1]$
+- **b)** $[0;1],\ [0;3]$
+- **c)** $[1;0],\ [3;0]$
+- **d)** $[0;1{,}5],\ [1;0],\ [3;0]$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $[1;0],\ [3;0]$. $0{,}5x^2-2x+1{,}5=0\iff x^2-4x+3=0$, $x=1$, $x=3$; průsečíky s osou $x$ mají $y=0$.
+
+*Примечание:* Obrázek v bance chybí; k řešení není potřeba.
+
+</details>
+
+### `vsb-fast-v2-05` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 5)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Na obrázku je graf funkce $y=0{,}5x^2-3x+4$. Jeho průsečíky s osou $x$ jsou body
+
+- **a)** $[2;4],\ [4;2]$
+- **b)** $[0;2],\ [0;4]$
+- **c)** $[2;0],\ [4;0]$
+- **d)** $[0;4],\ [2;0],\ [4;0]$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $[2;0],\ [4;0]$. $x^2-6x+8=0$, $x=2$, $x=4$; průsečíky s osou $x$ mají $y=0$.
+
+*Примечание:* Obrázek v bance chybí; k řešení není potřeba.
+
+</details>
+
 ### `vsb-fbi-2017-pz6-02` — [FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 6 (úloha 2, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf)
 
 *Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
@@ -2625,6 +3081,54 @@ Určete definiční obor funkce zadané předpisem $f:y=\dfrac{1}{\sqrt{2x+3}}\,
 
 </details>
 
+### `fs-2026-cz1-02` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 2, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor $D(f)$ funkce $f:\ y=\sqrt{\dfrac{x-3}{x+1}}$. Výsledek zapište pomocí intervalu(-ů).
+
+<details><summary>Ответ и решение</summary>
+
+$D(f)=(-\infty,-1)\cup\langle3,\infty)$. $\frac{x-3}{x+1}\ge0$: nulový bod $3$ patří, $-1$ (jmenovatel) ne.
+
+</details>
+
+### `fs-2026-cz2-02` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 2, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor $D(f)$ funkce $f:\ y=\sqrt{\dfrac{1-x}{x+4}}$. Výsledek zapište pomocí intervalu(-ů).
+
+<details><summary>Ответ и решение</summary>
+
+$D(f)=(-4,1\rangle$. $\frac{1-x}{x+4}\ge0$: mezi $-4$ (vyloučeno) a $1$ (patří).
+
+</details>
+
+### `fs-2026-cz4-02` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 2, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor $D(f)$ funkce $f:\ y=\sqrt{\dfrac{x-5}{2x+2}}$. Výsledek zapište pomocí intervalu(-ů).
+
+<details><summary>Ответ и решение</summary>
+
+$D(f)=(-\infty,-1)\cup\langle5,\infty)$. $\frac{x-5}{2x+2}\ge0$, $x\ne-1$.
+
+</details>
+
+### `fs-2026-cz5-02` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 2, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor $D(f)$ funkce $f:\ y=\sqrt{\dfrac{3-x}{x+1}}$. Výsledek zapište pomocí intervalu(-ů).
+
+<details><summary>Ответ и решение</summary>
+
+$D(f)=(-1,3\rangle$. $\frac{3-x}{x+1}\ge0$.
+
+</details>
+
 ### `vut-fsi-2014-z2-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу)
@@ -2662,6 +3166,24 @@ Rovnice $y=\dfrac1{x-1}$ je rovnicí
 <details><summary>Ответ и решение</summary>
 
 **e** — hyperboly
+
+</details>
+
+### `muvs-2025-06` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 6, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor funkce $f(x)=e^x+\sqrt{(1-x)}$
+
+- **a)** $(0,1\rangle$
+- **b)** $\emptyset$
+- **c)** $(-1,0)\cup(0,1)$
+- **d)** $(-\infty,1)$
+- **e)** $(-\infty,1\rangle$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $(-\infty,1\rangle$. $e^x$ je definována všude, odmocnina vyžaduje $1-x\ge0$.
 
 </details>
 
@@ -2941,6 +3463,66 @@ Množina všech řešení rovnice $\left(2^x\right)^2\cdot2^{-3x}=16$ je
 <details><summary>Ответ и решение</summary>
 
 **d** — $-7$. $\left(\frac23\right)^{2x+4}=\left(\frac23\right)^{x-3}\Rightarrow2x+4=x-3$, $x=-7$.
+
+</details>
+
+### `fs-2026-cz1-05` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 5, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $5^{x+1}\cdot25^{x-3}=125^{2x-1}$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-\dfrac23$. $5^{3x-5}=5^{6x-3}$, $3x-5=6x-3$.
+
+</details>
+
+### `fs-2026-cz2-05` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 5, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $16^{x+2}=4^{2x+3}\cdot2^{3-x}$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=1$. $2^{4x+8}=2^{4x+6+3-x}=2^{3x+9}$, $x=1$.
+
+</details>
+
+### `fs-2026-cz3-05` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 5, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $3^{x+1}\cdot9^{x-3}=27^{2x-1}$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-\dfrac23$. $3^{3x-5}=3^{6x-3}$.
+
+</details>
+
+### `fs-2026-cz4-05` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 5, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $4^{x+1}\cdot16^{x-3}=64^{2x-2}$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=\dfrac13$. $2^{6x-10}=2^{12x-12}$.
+
+</details>
+
+### `fs-2026-cz5-05` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 5, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $4^{2x}\cdot16^{x-3}=8^{2x-2}$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=3$. $2^{8x-12}=2^{6x-6}$.
 
 </details>
 
@@ -3488,6 +4070,58 @@ $\ln\dfrac{\sqrt2}{\sqrt[3]4}=$
 <details><summary>Ответ и решение</summary>
 
 **b** — $-\dfrac16\ln2$. $2^{\frac12-\frac23}=2^{-\frac16}$.
+
+</details>
+
+### `muvs-2025-02` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 2, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 12. Logaritmická funkce, 10. Exponenciální funkce · *Текст:* текст оригинала (по курсу)
+
+Která z funkcí je klesající?
+
+- **a)** $f(x)=-\log_{\frac23}x$
+- **b)** $f(x)=\log_{\frac23}x$
+- **c)** $f(x)=\log_2x$
+- **d)** $f(x)=e^{2x}$
+- **e)** žádná z odpovědí a), b), c), d) není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $f(x)=\log_{\frac23}x$. Logaritmus o základu $0<a<1$ je klesající; $-\log_{\frac23}x$, $\log_2x$ i $e^{2x}$ jsou rostoucí.
+
+</details>
+
+### `vsb-fast-v1-09` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 9)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením rovnice $\ln(\sqrt{2x-3})=0$ je
+
+- **a)** $x=1$
+- **b)** $x=2$
+- **c)** $x=3$
+- **d)** $x=4$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=2$. $\sqrt{2x-3}=1$, $2x-3=1$, $x=2$.
+
+</details>
+
+### `vsb-fast-v2-09` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 9)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením rovnice $\ln(\sqrt{9-2x})=0$ je
+
+- **a)** $x=1$
+- **b)** $x=2$
+- **c)** $x=3$
+- **d)** $x=4$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x=4$. $9-2x=1$, $x=4$.
 
 </details>
 
@@ -4106,6 +4740,18 @@ Množina všech řešení rovnice $2\cos^2x=1$, která leží v intervalu $\lang
 
 </details>
 
+### `fs-2026-cz6-07` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 7, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Na intervalu $\langle0,2\pi\rangle$ určete všechna řešení rovnice $\cos^2x-\cos2x=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=0,\ x_2=\pi,\ x_3=2\pi$. $\cos^2x-(2\cos^2x-1)=\sin^2x=0$.
+
+</details>
+
 ### `vut-fsi-2014-z1-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -4458,6 +5104,140 @@ Zapište v algebraickém tvaru číslo $z=(3+2i)^2\,.$
 <details><summary>Ответ и решение</summary>
 
 **a** — $z=5+12i$. $9+12i+4i^2=5+12i$.
+
+</details>
+
+### `fs-2026-cz1-09` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 9, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Upravte komplexní číslo $z=\dfrac{3+2i}{1-2i}$ do algebraického tvaru $z=a+bi$.
+
+<details><summary>Ответ и решение</summary>
+
+$z=-\dfrac15+\dfrac85i$. Rozšíříme $1+2i$: $\frac{(3+2i)(1+2i)}5=\frac{-1+8i}5$.
+
+</details>
+
+### `fs-2026-cz2-09` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 9, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Upravte komplexní číslo $z=\dfrac{-5-i}{2+3i}$ do algebraického tvaru $z=a+bi$.
+
+<details><summary>Ответ и решение</summary>
+
+$z=-1+i$. Rozšíříme $2-3i$: $\frac{(-5-i)(2-3i)}{13}=\frac{-13+13i}{13}$.
+
+</details>
+
+### `fs-2026-cz3-09` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 9, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Upravte komplexní číslo $z=\dfrac{11-7i}{1-2i}$ do algebraického tvaru $z=a+bi$.
+
+<details><summary>Ответ и решение</summary>
+
+$z=5+3i$. Rozšíříme $1+2i$: $\frac{25+15i}5$.
+
+</details>
+
+### `fs-2026-cz4-09` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 9, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Upravte komplexní číslo $z=\dfrac{2+2i}{2-4i}$ do algebraického tvaru $z=a+bi$.
+
+<details><summary>Ответ и решение</summary>
+
+$z=-\dfrac15+\dfrac35i$. Rozšíříme $2+4i$: $\frac{-4+12i}{20}$.
+
+</details>
+
+### `fs-2026-cz5-09` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 9, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Upravte komplexní číslo $z=\dfrac{-4+3i}{2-4i}$ do algebraického tvaru $z=a+bi$.
+
+<details><summary>Ответ и решение</summary>
+
+$z=-1-\dfrac i2$. Rozšíříme $2+4i$: $\frac{-20-10i}{20}$.
+
+</details>
+
+### `fs-2026-cz6-09` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 9, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla · *Текст:* текст оригинала (по курсу)
+
+Upravte komplexní číslo $z=\dfrac{4+2i}{3-3i}$ do algebraického tvaru $z=a+bi$.
+
+<details><summary>Ответ и решение</summary>
+
+$z=\dfrac13+i$. Rozšíříme $3+3i$: $\frac{6+18i}{18}$.
+
+</details>
+
+### `fs-2026-cz1-10` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 10, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb C$ řešte rovnici $z^2-2z+10=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$z_1=1-3i,\ z_2=1+3i$. $D=4-40=-36$, $z=\frac{2\pm6i}2$.
+
+</details>
+
+### `fs-2026-cz2-10` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 10, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb C$ řešte rovnici $z^2+4z+5=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$z_1=-2-i,\ z_2=-2+i$. $D=16-20=-4$, $z=\frac{-4\pm2i}2$.
+
+</details>
+
+### `fs-2026-cz3-10` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 10, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb C$ řešte rovnici $z^2+2z+5=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$z_1=-1-2i,\ z_2=-1+2i$. $D=4-20=-16$.
+
+</details>
+
+### `fs-2026-cz4-10` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 10, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb C$ řešte rovnici $2z^2-2z+5=0$.
+
+*Встречается также:* FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 10, 2 b)
+
+<details><summary>Ответ и решение</summary>
+
+$z_1=\dfrac12-\dfrac32i,\ z_2=\dfrac12+\dfrac32i$. $D=4-40=-36$, $z=\frac{2\pm6i}4$.
+
+</details>
+
+### `fs-2026-cz5-10` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 10, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb C$ řešte rovnici $z^2+6z+10=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$z_1=-3-i,\ z_2=-3+i$. $D=36-40=-4$.
 
 </details>
 
@@ -4869,6 +5649,30 @@ V aritmetické posloupnosti je dáno $a_1=0$, diference $d=3$ a $s_n=165$. Urče
 
 </details>
 
+### `fs-2026-cz1-08` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 8, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V aritmetické posloupnosti je $a_3=8$ a součet $s_7=77$. Určete $a_1$ a diferenci $d$.
+
+<details><summary>Ответ и решение</summary>
+
+$a_1=2,\ d=3$. $s_7=7a_4$, tedy $a_4=11$, $d=3$, $a_1=a_3-2d=2$.
+
+</details>
+
+### `fs-2026-cz3-08` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 8, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V aritmetické posloupnosti je $a_1=-1$ a $a_7=17$. Určete diferenci $d$ a člen $a_{15}$.
+
+<details><summary>Ответ и решение</summary>
+
+$d=3,\ a_{15}=41$. $6d=18$, $a_{15}=a_1+14d=41$.
+
+</details>
+
 ### `vut-fsi-2014-z1-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
@@ -5084,6 +5888,30 @@ Geometrická posloupnost má první člen $a_1=2$, druhý člen je kladný a sou
 <details><summary>Ответ и решение</summary>
 
 **d** — $3$. $2(1+q+q^2)=26\Rightarrow q^2+q-12=0$, $q=3$ nebo $q=-4$; $a_2>0$ dává $q=3$.
+
+</details>
+
+### `fs-2026-cz2-08` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 8, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V geometrické posloupnosti je $a_2=5$ a $a_5=\frac58$. Určete $a_1$ a kvocient $q$.
+
+<details><summary>Ответ и решение</summary>
+
+$a_1=10,\ q=\dfrac12$. $q^3=\frac{a_5}{a_2}=\frac18$, $q=\frac12$, $a_1=\frac{a_2}q=10$.
+
+</details>
+
+### `fs-2026-cz5-08` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 8, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V geometrické posloupnosti je $a_3=5$ a $a_6=\frac5{27}$. Určete $a_1$ a kvocient $q$.
+
+<details><summary>Ответ и решение</summary>
+
+$a_1=45,\ q=\dfrac13$. $q^3=\frac1{27}$, $a_1=\frac{a_3}{q^2}=45$.
 
 </details>
 
@@ -5375,6 +6203,24 @@ Deset šachistů má hrát každý s každým jednu partii. Kolik partií bude n
 
 </details>
 
+### `muvs-2025-04` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 4, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+V dodávce je 15 výrobků. Kolika způsoby je možné z této dodávky vybrat ke kontrole 2 výrobky?
+
+- **a)** $210$
+- **b)** $30$
+- **c)** $225$
+- **d)** $13$
+- **e)** $105$
+
+<details><summary>Ответ и решение</summary>
+
+**e** — $105$. $\binom{15}2=\frac{15\cdot14}2=105$.
+
+</details>
+
 ### `vut-fsi-2014-z1-10` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 10, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 23. Kombinační číslo. Binomická věta · *Текст:* текст оригинала (по курсу)
@@ -5595,6 +6441,40 @@ Který bod leží na přímce dané body $A=[-1,2],B=[3,1]$?
 <details><summary>Ответ и решение</summary>
 
 **c** — $[7,0]$. $x=-1+4t$, $y=2-t$; pro $t=2$ je bod $[7,0]$.
+
+</details>
+
+### `vsb-fast-v1-17` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 17)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Je dána přímka $p:\ 2x+3y-6=0$. Rozhodněte, který z bodů $A,B,C,D$ leží na přímce $p$.
+
+- **a)** $A=[1;0]$
+- **b)** $B=[0;2]$
+- **c)** $C=[2;-3]$
+- **d)** $D=[3;2]$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $B=[0;2]$. Dosazením: $0+6-6=0$ jen pro $B$.
+
+</details>
+
+### `vsb-fast-v2-17` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 17)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Je dána přímka $p:\ 3x-2y+5=0$. Rozhodněte, který z bodů $A,B,C,D$ neleží na přímce $p$.
+
+- **a)** $A=[1;4]$
+- **b)** $B=[-1;1]$
+- **c)** $C=[-3;-2]$
+- **d)** $D=[0;3]$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $D=[0;3]$. Pro $D$: $0-6+5=-1\ne0$; ostatní body rovnici splňují.
 
 </details>
 
@@ -6126,6 +7006,58 @@ Přímka o rovnici $bx+cy-m=0$; $b;c;m\neq0$; má směrnici
 
 </details>
 
+### `muvs-2025-03` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 3, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Rovnice přímky, která prochází body $[2,-2]$ a $[1,1]$, je
+
+- **a)** $y=-3x+4$
+- **b)** $y=3x-4$
+- **c)** $y=-3x-4$
+- **d)** $y=3x+4$
+- **e)** žádná z odpovědí a), b), c), d) není správná
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $y=-3x+4$. Směrnice $k=\frac{1-(-2)}{1-2}=-3$; z bodu $[1,1]$: $q=4$.
+
+</details>
+
+### `vsb-fast-v1-18` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 18)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Je dán bod $A=[3;0]$ a kružnice $k:\ x^2+y^2=9$. Který z následujících výroků je pravdivý?
+
+- **a)** Bod $A$ je vnitřní bod kružnice $k$.
+- **b)** Bod $A$ je vnější bod kružnice $k$.
+- **c)** Bod $A$ je střed kružnice $k$.
+- **d)** Bod $A$ leží na kružnici $k$.
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Bod $A$ leží na kružnici $k$.. $3^2+0^2=9$ — bod rovnici splňuje.
+
+</details>
+
+### `vsb-fast-v2-18` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 18)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Je dán bod $A=[2;2]$ a kružnice $k:\ x^2+y^2=4$. Který z následujících výroků je pravdivý?
+
+- **a)** Bod $A$ je vnitřní bod kružnice $k$.
+- **b)** Bod $A$ je vnější bod kružnice $k$.
+- **c)** Bod $A$ je střed kružnice $k$.
+- **d)** Bod $A$ leží na kružnici $k$.
+
+<details><summary>Ответ и решение</summary>
+
+**b** — Bod $A$ je vnější bod kružnice $k$.. $2^2+2^2=8>4$ — bod leží vně.
+
+</details>
+
 ### `vut-fast-195` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 195)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
 
 *Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
@@ -6305,6 +7237,18 @@ Poloměr kružnice zadané rovnicí $2x^2+2y^2+16x-12y+20=0$ splňuje:
 
 </details>
 
+### `fs-2026-cz3-11` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 11, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici kružnice se středem $S=[-2;2]$, která prochází bodem $P=[0;0]$.
+
+<details><summary>Ответ и решение</summary>
+
+$(x+2)^2+(y-2)^2=8$. $r^2=|SP|^2=4+4$.
+
+</details>
+
 ### `vut-fsi-2014-z1-05` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 5, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 30. Kuželosečky. Kružnice, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
@@ -6385,6 +7329,24 @@ Rovnice $x^2+y^2-2x=3$ je rovnicí
 
 </details>
 
+### `muvs-2025-10` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 10, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Poloměr kružnice o rovnici $x^2+y^2+6x-2y-15=0$ je
+
+- **a)** $15$
+- **b)** $25$
+- **c)** $5$
+- **d)** $-15$
+- **e)** žádná z odpovědí a), b), c), d) není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $5$. $(x+3)^2+(y-1)^2=25$, $r=5$.
+
+</details>
+
 ### `vut-fast-192` — [FAST VUT, kombinovaný test z matematiky a fyziky (otázka 192)](https://www.fce.vutbr.cz/api/cs/dokument/9815)
 
 *Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
@@ -6416,6 +7378,66 @@ Určete průsečíky elipsy $2x^2+3y^2+x+y=0$ s osou $y$.
 <details><summary>Ответ и решение</summary>
 
 **a** — $[0;0],[0;-1/3]$. $x=0$: $3y^2+y=0$.
+
+</details>
+
+### `fs-2026-cz2-11` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 11, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici elipsy se středem $S=[-2;2]$ a poloosami $a=2,\ b=\sqrt2$.
+
+<details><summary>Ответ и решение</summary>
+
+$\dfrac{(x+2)^2}4+\dfrac{(y-2)^2}2=1$. Středový tvar $\frac{(x-m)^2}{a^2}+\frac{(y-n)^2}{b^2}=1$.
+
+</details>
+
+### `fs-2026-cz4-11` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 11, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici elipsy se středem $S=[3;-2]$ a poloosami $a=2,\ b=4$.
+
+<details><summary>Ответ и решение</summary>
+
+$\dfrac{(x-3)^2}4+\dfrac{(y+2)^2}{16}=1$. Středový tvar s $a^2=4$ u $x$ a $b^2=16$ u $y$.
+
+</details>
+
+### `fs-2026-cz5-11` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 11, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici elipsy se středem $S=\left[3;\dfrac12\right]$ a poloosami $a=4,\ b=1$.
+
+<details><summary>Ответ и решение</summary>
+
+$\dfrac{(x-3)^2}{16}+\left(y-\dfrac12\right)^2=1$. Středový tvar s $a^2=16$, $b^2=1$.
+
+</details>
+
+### `fs-2026-cz6-11` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 11, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 31. Elipsa · *Текст:* текст оригинала (по курсу)
+
+Určete střed $S$ a poloosy $a,b$ elipsy s vrcholy $A=[-2,2]$, $B=[4,2]$, $C=[1,0]$, $D=[1,4]$.
+
+<details><summary>Ответ и решение</summary>
+
+$S=[1,2],\ a=3,\ b=2$. Střed je středem $AB$ i $CD$; $a=\frac{|AB|}2$, $b=\frac{|CD|}2$.
+
+</details>
+
+### `fs-2026-cz1-11` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 11, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 32. Hyperbola · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici hyperboly se středem $S=[-2;2]$, poloosami $a=2,\ b=3$ a hlavními vrcholy na rovnoběžce s osou $x$.
+
+<details><summary>Ответ и решение</summary>
+
+$\dfrac{(x+2)^2}4-\dfrac{(y-2)^2}9=1$. Hlavní osa je rovnoběžná s $x$, proto je kladný člen s $x$.
 
 </details>
 
@@ -6570,6 +7592,40 @@ Rovnice $x^2-2x-y+1=0$ je rovnicí
 <details><summary>Ответ и решение</summary>
 
 **e** — paraboly. $y=(x-1)^2$.
+
+</details>
+
+### `vsb-fast-v1-16` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 16)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Stavební parcela obdélníkového tvaru má délku a šířku v poměru 3 : 2. Jaká je plocha této parcely, víme-li, že její obvod je 150 m?
+
+- **a)** 600 m$^2$
+- **b)** 1350 m$^2$
+- **c)** 2400 m$^2$
+- **d)** 5400 m$^2$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — 1350 m$^2$. $2(3k+2k)=150$, $k=15$; strany $45$ a $30$ m, plocha $1350$ m$^2$.
+
+</details>
+
+### `vsb-fast-v2-16` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 16)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 34. Planimetrie · *Текст:* текст оригинала (по курсу)
+
+Délka stavební parcely obdélníkového tvaru je dvakrát větší než její šířka. Jaká je plocha této parcely, víme-li, že její obvod je 150 m?
+
+- **a)** 5000 m$^2$
+- **b)** 2500 m$^2$
+- **c)** 1500 m$^2$
+- **d)** 1250 m$^2$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — 1250 m$^2$. $2(2s+s)=150$, $s=25$; strany $50$ a $25$ m, plocha $1250$ m$^2$.
 
 </details>
 
@@ -7356,6 +8412,74 @@ Povrch větší krychle je čtyřnásobkem povrchu krychle menší. Její objem 
 <details><summary>Ответ и решение</summary>
 
 **d** — osmkrát. Hrana dvojnásobná.
+
+</details>
+
+### `vsb-fast-v1-13` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 13)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Výraz $\dfrac{\frac12-\frac19}{\left(\frac13\right)^2}$ je roven
+
+- **a)** $\dfrac72$
+- **b)** $\dfrac27$
+- **c)** $\dfrac73$
+- **d)** $\dfrac89$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac72$. $\frac{7}{18}:\frac19=\frac72$.
+
+</details>
+
+### `vsb-fast-v2-13` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 13)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Výraz $\dfrac{\frac13-\frac15}{\left(\frac23\right)^2}$ je roven
+
+- **a)** $\dfrac3{10}$
+- **b)** $\dfrac{10}3$
+- **c)** $\dfrac4{15}$
+- **d)** $\dfrac98$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\dfrac3{10}$. $\frac2{15}:\frac49=\frac{18}{60}=\frac3{10}$.
+
+</details>
+
+### `vsb-fast-v1-15` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 15)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Výrobek s původní cenou 500 Kč byl zlevněn o 10 % a o dva měsíce později ještě o dalších 10 %. Jaká je jeho současná cena?
+
+- **a)** 400 Kč
+- **b)** 405 Kč
+- **c)** 395 Kč
+- **d)** 410 Kč
+
+<details><summary>Ответ и решение</summary>
+
+**b** — 405 Kč. $500\cdot0{,}9\cdot0{,}9=405$.
+
+</details>
+
+### `vsb-fast-v2-15` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 15)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Výrobek s původní cenou 600 Kč byl zlevněn o 20 % a o dva měsíce později ještě o dalších 10 %. Jaká je jeho současná cena?
+
+- **a)** 418 Kč
+- **b)** 420 Kč
+- **c)** 432 Kč
+- **d)** 448 Kč
+
+<details><summary>Ответ и решение</summary>
+
+**c** — 432 Kč. $600\cdot0{,}8\cdot0{,}9=432$.
 
 </details>
 
@@ -9676,6 +10800,24 @@ b) $x\in(-\infty;-0{,}25)\cup(1{,}25;1{,}75)\cup(3{,}25;+\infty)$. $|3-2x|-2>1{,
 
 </details>
 
+### `muvs-2025-01` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 1, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Množina všech reálných čísel, pro která platí $\frac{|x-4|}{x+6}<1$, je rovna množině
+
+- **a)** $(-\infty,-6)\cup(4,\infty)$
+- **b)** $\emptyset$
+- **c)** $(-6,4)$
+- **d)** $(-\infty,-6)\cup(-1,\infty)$
+- **e)** žádná z odpovědí a), b), c), d) není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $(-\infty,-6)\cup(-1,\infty)$. Pro $x<-6$ je levá strana záporná — platí vždy. Pro $x>-6$: $|x-4|<x+6$, tj. $-x-6<x-4<x+6$, odkud $x>-1$.
+
+</details>
+
 ### `vsb-fbi-2015-pz32-03` — [FBI VŠB, přijímací zkouška z matematiky AR 2015/16, PZ 32 (úloha 3, 10 bodů)](https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf)
 
 *Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
@@ -9947,6 +11089,48 @@ Je dána funkce $f(x)=x-1$. Rovnice $\frac{1}{f(x)}=f\left(\frac1x\right)$ v re�
 <details><summary>Ответ и решение</summary>
 
 **d** — nemá řešení. $\frac1{x-1}=\frac{1-x}x\Rightarrow x=-(x-1)^2\Rightarrow x^2-x+1=0$, $D<0$.
+
+</details>
+
+### `fs-2026-cz3-02` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 2, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor $D(f)$ funkce $f:\ y=\dfrac{1-x}{\sqrt{x^2-3x-4}}$. Výsledek zapište pomocí intervalu(-ů).
+
+<details><summary>Ответ и решение</summary>
+
+$D(f)=(-\infty,-1)\cup(4,\infty)$. $x^2-3x-4=(x-4)(x+1)>0$ (odmocnina ve jmenovateli).
+
+</details>
+
+### `fs-2026-cz6-02` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 2, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor $D(f)$ funkce $f:\ y=\sqrt{\dfrac{4-x}{2x+1}}+\dfrac3{x-2}$. Výsledek zapište pomocí intervalu(-ů).
+
+<details><summary>Ответ и решение</summary>
+
+$D(f)=\left(-\dfrac12,2\right)\cup(2,4\rangle$. $\frac{4-x}{2x+1}\ge0$ dává $\left(-\frac12,4\right\rangle$; navíc $x\ne2$.
+
+</details>
+
+### `muvs-2025-07` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 7, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy, 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor funkce $f(x)=\frac{10}{\sqrt{x-|x|}}$
+
+- **a)** $(-\infty,\infty)$
+- **b)** $(-\infty,1\rangle$
+- **c)** $(-1,0)\cup(0,1)$
+- **d)** $(-\infty,1)$
+- **e)** žádná z odpovědí a), b), c), d) není správná
+
+<details><summary>Ответ и решение</summary>
+
+**e** — žádná z odpovědí a), b), c), d) není správná. Potřebujeme $x-|x|>0$, ale pro $x\ge0$ je $x-|x|=0$ a pro $x<0$ je $2x<0$ — definiční obor je prázdný.
 
 </details>
 
@@ -10233,6 +11417,18 @@ Pro řešení nerovnice $\left(\dfrac13\right)^{x^2}\le3^{-x-6}$ platí
 
 </details>
 
+### `fs-2026-cz6-05` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 5, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice, 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $4^{2x}\cdot8^{2x+3}=\sqrt8$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-\dfrac34$. $2^{4x+6x+9}=2^{\frac32}$, $10x=-\frac{15}2$.
+
+</details>
+
 ### `vut-fsi-2014-z7-14` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 14, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 11. Exponenciální rovnice a nerovnice, Ostatní · *Текст:* текст оригинала (по курсу)
@@ -10306,6 +11502,40 @@ Ve vzorku radioaktivní látky se každých dvacet minut rozpadne třetina jader
 <details><summary>Ответ и решение</summary>
 
 **d** — $\dfrac8{27}$ jader. Třikrát zůstanou $\frac23$: $\left(\frac23\right)^3$.
+
+</details>
+
+### `vsb-fast-v1-04` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 4)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor funkce $f(x)=\log\frac{x-5}{x+1}+\sqrt[3]{x}$.
+
+- **a)** $D_f=(-\infty,-1)\cup(5,+\infty)$
+- **b)** $D_f=(-1,5)$
+- **c)** $D_f=\langle0,5)$
+- **d)** $D_f=\langle5,+\infty)$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $D_f=(-\infty,-1)\cup(5,+\infty)$. Třetí odmocnina je definována pro všechna $x$; logaritmus vyžaduje $\frac{x-5}{x+1}>0$, tj. $x<-1$ nebo $x>5$.
+
+</details>
+
+### `vsb-fast-v2-04` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 4)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 12. Logaritmická funkce, 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Určete definiční obor funkce $f(x)=\log_2(2-x-x^2)+\sqrt[3]{x^2}$.
+
+- **a)** $D_f=(-\infty,-2)\cup(1,+\infty)$
+- **b)** $D_f=(-2,0)\cup(0,1)$
+- **c)** $D_f=\langle0,1)$
+- **d)** $D_f=(-2,1)$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $D_f=(-2,1)$. Třetí odmocnina je definována všude; $2-x-x^2>0\iff(x+2)(x-1)<0$.
 
 </details>
 
@@ -10611,6 +11841,78 @@ Pro řešení rovnice $\dfrac{\log_3^2(9x)}{\log_3(81x^2)}=\dfrac32$ platí:
 
 </details>
 
+### `fs-2026-cz1-04` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 4, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $\dfrac{\log_5(15+x^2)}{\log_5(5-x)}=2$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=1$. $\log_5(15+x^2)=2\log_5(5-x)$, tj. $15+x^2=(5-x)^2$, $x=1$; podmínky $x<5$, $x\ne4$ splněny.
+
+</details>
+
+### `fs-2026-cz2-04` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 4, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $\log_2(x^2+2)=2\log_2(2-x)$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=\dfrac12$. $x^2+2=(2-x)^2$, $4x=2$; podmínka $x<2$ splněna.
+
+</details>
+
+### `fs-2026-cz3-04` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 4, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $\log_4x-\log_4(2-x)=1$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=\dfrac85$. $\frac x{2-x}=4$, $x=8-4x$; podmínka $0<x<2$ splněna.
+
+</details>
+
+### `fs-2026-cz4-04` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 4, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $\dfrac{\log_3(3+4x^2)}{\log_3(3-2x)}=2$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=\dfrac12$. $3+4x^2=(3-2x)^2$, $12x=6$; podmínky $x<\frac32$, $x\ne1$ splněny.
+
+</details>
+
+### `fs-2026-cz5-04` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 4, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $\log_2(4+x^2)=2\log_2(1+x)$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=\dfrac32$. $4+x^2=(1+x)^2$, $2x=3$; podmínka $x>-1$ splněna.
+
+</details>
+
+### `fs-2026-cz6-04` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 4, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+V oboru $\mathbb R$ řešte rovnici $\log_4(2+4x^2)=2\log_4(1-2x)$.
+
+<details><summary>Ответ и решение</summary>
+
+$x=-\dfrac14$. $2+4x^2=(1-2x)^2$, $4x=-1$; podmínka $x<\frac12$ splněna.
+
+</details>
+
 ### `vut-fsi-2014-z4-12` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 12, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 13. Logaritmické rovnice a nerovnice, 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
@@ -10824,6 +12126,24 @@ Množina všech řešení rovnice $\log\left(x^{\log x}\right)=1$ je
 <details><summary>Ответ и решение</summary>
 
 **e** — $\{10;0.1\}$. $(\log x)^2=1$, $\log x=\pm1$.
+
+</details>
+
+### `muvs-2025-08` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 8, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Množina všech reálných čísel, pro která platí $\log_2^2x-\log_2x-2<0$, je rovna množině
+
+- **a)** $(-\infty,+\infty)$
+- **b)** $\emptyset$
+- **c)** $(-\infty,1)\cup(2,\infty)$
+- **d)** $\left(\frac12,\ 4\right)$
+- **e)** žádná z odpovědí a), b), c), d) není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $\left(\frac12,\ 4\right)$. Pro $t=\log_2x$: $(t-2)(t+1)<0$, $-1<t<2$, tedy $\frac12<x<4$.
 
 </details>
 
@@ -11304,6 +12624,66 @@ Jestliže $\sin\alpha\cdot\cos\alpha=\frac12$ a $\alpha\in(\pi,2\pi)$, pak $\ope
 
 </details>
 
+### `fs-2026-cz1-07` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 7, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Na intervalu $\langle0,2\pi\rangle$ určete všechna řešení rovnice $\sin2x-2\cos x=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=\dfrac\pi2,\ x_2=\dfrac{3\pi}2$. $2\cos x(\sin x-1)=0$: $\cos x=0$ dává $\frac\pi2,\frac{3\pi}2$; $\sin x=1$ dává opět $\frac\pi2$.
+
+</details>
+
+### `fs-2026-cz2-07` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 7, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Na intervalu $\langle0,2\pi\rangle$ určete všechna řešení rovnice $\cos^2x+\cos2x=-1$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=\dfrac\pi2,\ x_2=\dfrac{3\pi}2$. $\cos2x=2\cos^2x-1$, tedy $3\cos^2x=0$, $\cos x=0$.
+
+</details>
+
+### `fs-2026-cz3-07` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 7, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Na intervalu $\langle0,\pi\rangle$ určete všechna řešení rovnice $\sin^2x-\dfrac{\sin2x}2=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=0,\ x_2=\dfrac\pi4,\ x_3=\pi$. $\sin x(\sin x-\cos x)=0$: $\sin x=0$ nebo $\operatorname{tg}x=1$.
+
+</details>
+
+### `fs-2026-cz4-07` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 7, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Na intervalu $\langle-\pi,\pi\rangle$ určete všechna řešení rovnice $\sin2x-2\cos x=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=-\dfrac\pi2,\ x_2=\dfrac\pi2$. $2\cos x(\sin x-1)=0$: $\cos x=0$ dává $\pm\frac\pi2$; $\sin x=1$ dává $\frac\pi2$.
+
+</details>
+
+### `fs-2026-cz5-07` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 7, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Na intervalu $\langle0,\pi\rangle$ určete všechna řešení rovnice $\sin2x-2\cos^2x=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$x_1=\dfrac\pi4,\ x_2=\dfrac\pi2$. $2\cos x(\sin x-\cos x)=0$: $\cos x=0$ nebo $\operatorname{tg}x=1$.
+
+</details>
+
 ### `vut-fsi-2014-z10-08` — [FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 8, 1 bod)](https://www.vut.cz/pomocne/slozky/statistiky-prijimaciho-rizeni/statistiky-prijimaciho-rizeni-2014-2015-f36466/fsi-zadani-a-vysledky-prijimaci-zkousky-d95805/zadani-prijimacich-zkousek-z-matematiky-do-bakalarskeho-studia-p86179)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
@@ -11398,6 +12778,24 @@ Rovnice $x^4+1=0$ má v oboru komplexních čísel právě
 
 </details>
 
+### `muvs-2025-09` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 9, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 16. Komplexní čísla, 17. Goniometrický tvar komplexního čísla. Moivreova věta · *Текст:* текст оригинала (по курсу)
+
+Reálná část komplexního čísla $z=(2-i)^5$ je rovna číslu
+
+- **a)** $0$
+- **b)** $32$
+- **c)** $-41$
+- **d)** $-38$
+- **e)** žádná z odpovědí a), b), c), d) není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $-38$. $(2-i)^2=3-4i$, $(2-i)^4=-7-24i$, $(2-i)^5=(-7-24i)(2-i)=-38-41i$.
+
+</details>
+
 ### `fel-vzor01-7` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 7, 1 bod)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-vzor01.pdf)
 
 *Темы:* 18. Posloupnosti, 20. Geometrická posloupnost · *Текст:* текст оригинала (по курсу)
@@ -11451,6 +12849,48 @@ Mezi kořeny kvadratické rovnice $x^2-30x+81=0$ vložte čtyři čísla tak, ab
 <details><summary>Ответ и решение</summary>
 
 **d** — Čtvrtý člen vzniklé posloupnosti je $\frac{87}{5}$.. Kořeny $3$ a $27$: $d=\frac{24}{5}$, $a_4=3+3\cdot\frac{24}{5}=\frac{87}{5}$.
+
+</details>
+
+### `fs-2026-cz4-08` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 8, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V aritmetické posloupnosti je $a_2=-5$ a součet $s_6=15$. Určete $a_1$ a diferenci $d$.
+
+<details><summary>Ответ и решение</summary>
+
+$a_1=-10,\ d=5$. $a_1+d=-5$, $s_6=3(2a_1+5d)=15$; odtud $d=5$, $a_1=-10$.
+
+</details>
+
+### `fs-2026-cz6-08` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 8, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+V aritmetické posloupnosti je $s_5=20$ a $a_6-a_4=5$. Určete $a_1$ a diferenci $d$.
+
+<details><summary>Ответ и решение</summary>
+
+$a_1=-1,\ d=2.5$. $2d=5$; $s_5=5a_3=20$, $a_3=4$, $a_1=a_3-2d=-1$.
+
+</details>
+
+### `muvs-2025-05` — [MÚVS ČVUT, vzorový test z matematiky AR 2025/26, Ekonomika a management (úloha 5, 1 bod)](https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf)
+
+*Темы:* 19. Aritmetická posloupnost, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Mezi kořeny kvadratické rovnice $x^2-x-2=0$ vložte dvě čísla tak, aby spolu s těmito kořeny vznikly první čtyři členy aritmetické posloupnosti. Součet vložených čísel je
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $-1$
+- **d)** $2$
+- **e)** žádná z odpovědí a), b), c), d) není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $1$. Kořeny $-1$ a $2$; posloupnost $-1,0,1,2$, vložená čísla $0$ a $1$.
 
 </details>
 
@@ -12067,6 +13507,78 @@ $r\colon8x-5y-35=0$. Střed $S=[5,1]$; normála $p$ $(5,8)$ je směrem $r$, norm
 
 </details>
 
+### `fs-2026-cz1-12` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 12, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 27. Obecná rovnice přímky, 26. Parametrická rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici přímky $p$, která je rovnoběžná s přímkou $AB$, kde $A=[1,-3]$, $B=[4,-1]$, a prochází bodem $M=[-1,1]$.
+
+<details><summary>Ответ и решение</summary>
+
+$2x-3y+5=0\ \vee$ např. $x=-1+3t,\ y=1+2t,\ t\in\mathbb R$. Směrový vektor $\overrightarrow{AB}=(3,2)$, normálový $(2,-3)$; $2x-3y+c=0$ a z bodu $M$: $c=5$.
+
+</details>
+
+### `fs-2026-cz2-12` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 12, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 27. Obecná rovnice přímky, 26. Parametrická rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici přímky $p$, která prochází bodem $M=[1;4]$ a je kolmá k přímce $AB$, kde $A=[2;1]$, $B=[-3;2]$.
+
+<details><summary>Ответ и решение</summary>
+
+$5x-y-1=0\ \vee$ např. $x=1+t,\ y=4+5t,\ t\in\mathbb R$. Normálový vektor $p$ je $\overrightarrow{AB}=(-5,1)$: $-5x+y+c=0$, z bodu $M$: $c=1$.
+
+</details>
+
+### `fs-2026-cz3-12` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 12, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 27. Obecná rovnice přímky, 26. Parametrická rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici přímky $p$, která je rovnoběžná s přímkou $AB$, kde $A=[2;1]$, $B=[-3;2]$, a prochází bodem $M=[4;1]$.
+
+<details><summary>Ответ и решение</summary>
+
+$x+5y-9=0\ \vee$ např. $x=4-5t,\ y=1+t,\ t\in\mathbb R$. $\overrightarrow{AB}=(-5,1)$, normálový vektor $(1,5)$: $x+5y+c=0$, z bodu $M$: $c=-9$.
+
+</details>
+
+### `fs-2026-cz4-12` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 12, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 27. Obecná rovnice přímky, 26. Parametrická rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Jsou dány body $A=[1;1]$ a $B=[3;5]$. Napište rovnici přímky $p$, která je kolmá k úsečce $AB$ a prochází jejím středem.
+
+<details><summary>Ответ и решение</summary>
+
+$x+2y-8=0\ \vee$ např. $x=2+2t,\ y=3-t,\ t\in\mathbb R$. Střed $[2;3]$, normálový vektor $\overrightarrow{AB}=(2,4)\sim(1,2)$: $x+2y+c=0$, $c=-8$.
+
+</details>
+
+### `fs-2026-cz5-12` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 12, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 27. Obecná rovnice přímky, 26. Parametrická rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici přímky $p$, která prochází bodem $M=[0;-3]$ a je rovnoběžná s přímkou $AB$, kde $A=[-1;-2]$, $B=[3;2]$.
+
+<details><summary>Ответ и решение</summary>
+
+$x-y-3=0\ \vee$ např. $x=t,\ y=-3+t,\ t\in\mathbb R$. $\overrightarrow{AB}=(4,4)\sim(1,1)$, normálový $(1,-1)$: $x-y+c=0$, $c=-3$.
+
+</details>
+
+### `fs-2026-cz6-12` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 12, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* 27. Obecná rovnice přímky, 26. Parametrická rovnice přímky, 28. Vzájemná poloha přímek · *Текст:* текст оригинала (по курсу)
+
+Napište rovnici přímky $a$, která prochází bodem $M=[2;6]$ a je kolmá k přímce $b:\ -x+3y-1=0$.
+
+<details><summary>Ответ и решение</summary>
+
+$3x+y-12=0\ \vee$ např. $x=2-t,\ y=6+3t,\ t\in\mathbb R$. Normálový vektor $b$ $(-1,3)$ je směrovým vektorem $a$; normálový vektor $a$ je $(3,1)$: $3x+y+c=0$, $c=-12$.
+
+</details>
+
 ### `fel-vzor01-12` — [FEL ČVUT, vzorový přijímací test VZOR01 (příklad 12, 2 body)](https://www.feld.cvut.cz/dokumenty/ke-stazeni/materialy-doplnujici-studium/prijimaci-test-vzor01.pdf)
 
 *Темы:* 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* текст оригинала (по курсу) · *В курсе:* ČVUT lekce 9, úloha 20
@@ -12270,6 +13782,25 @@ Je-li $n$ libovolné kladné celé číslo, pak trojúhelník o stranách $n;n+1
 
 </details>
 
+### `vsb-fast-v2-19` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 19)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Dřevěnou krychli natřeme barvou a poté rozřežeme na $5\times5\times5$ stejně velkých krychliček (viz obr.). Kolik z těchto malých krychliček bude mít natřené právě dvě stěny?
+
+- **a)** $12$
+- **b)** $18$
+- **c)** $24$
+- **d)** $36$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $36$. Právě dvě stěny mají krychličky na hranách mimo rohy: $12\cdot(5-2)=36$.
+
+*Примечание:* Obrázek v bance chybí; k řešení není potřeba.
+
+</details>
+
 ### `vut-fekt-2022-v1-15` — [FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 15, 5 bodů)](https://vut.cz/pomocne2018/f124247/d232373/p229505)
 
 *Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
@@ -12323,6 +13854,40 @@ Objem krychle vepsané do koule o průměru $d$ je
 <details><summary>Ответ и решение</summary>
 
 **e** — $3^{-\frac32}d^3$. Tělesová úhlopříčka $a\sqrt3=d$.
+
+</details>
+
+### `vsb-fast-v1-14` — [FAST VŠB, přijímací zkoušky, varianta 1 (úloha 14)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte výraz $V=\dfrac{a-b}{a+b}:\left(1-\dfrac ab\right)$ a stanovte podmínky, kdy je definován.
+
+- **a)** $V=\dfrac a{a+b},\quad a\ne\pm b,\ b\ne0$
+- **b)** $V=-\dfrac a{a+b},\quad a\ne\pm b,\ b\ne0$
+- **c)** $V=\dfrac a{a-b},\quad a\ne\pm b,\ b\ne0$
+- **d)** $V=-\dfrac b{a+b},\quad a\ne\pm b,\ b\ne0$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $V=-\dfrac b{a+b},\quad a\ne\pm b,\ b\ne0$. $1-\frac ab=\frac{b-a}b$, tedy $V=\frac{a-b}{a+b}\cdot\frac b{b-a}=-\frac b{a+b}$.
+
+</details>
+
+### `vsb-fast-v2-14` — [FAST VŠB, přijímací zkoušky, varianta 2 (úloha 14)](https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte výraz $V=\dfrac{a+b}{a-b}:\left(1+\dfrac ab\right)$ a stanovte podmínky, kdy je definován.
+
+- **a)** $V=\dfrac a{a+b},\quad a\ne\pm b,\ b\ne0$
+- **b)** $V=-\dfrac a{a-b},\quad a\ne\pm b,\ b\ne0$
+- **c)** $V=\dfrac b{a+b},\quad a\ne\pm b,\ b\ne0$
+- **d)** $V=\dfrac b{a-b},\quad a\ne\pm b,\ b\ne0$
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $V=\dfrac b{a-b},\quad a\ne\pm b,\ b\ne0$. $1+\frac ab=\frac{a+b}b$, tedy $V=\frac{a+b}{a-b}\cdot\frac b{a+b}=\frac b{a-b}$.
 
 </details>
 
@@ -12718,6 +14283,78 @@ Dětský tábor má kapacitu 80 dětí. Vytvoří-li děti trojice, nikdo nezbud
 <details><summary>Ответ и решение</summary>
 
 **c** — $3$. Liché násobky $21$ do $80$: $21$, $63$; zbytek $3$ po dělení čtyřmi má jen $63$, a $63=6\cdot10+3$.
+
+</details>
+
+### `fs-2026-cz1-01` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–1 (příklad 1, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte výraz $\left(\dfrac ab-\dfrac ba\right)^2\cdot\left(\dfrac{ab}{a-b}\right)^2$ a určete podmínky jeho existence.
+
+<details><summary>Ответ и решение</summary>
+
+$(a+b)^2,\ a\ne0,\ b\ne0,\ a\ne b$. $\frac ab-\frac ba=\frac{(a-b)(a+b)}{ab}$; po umocnění a vynásobení se $ab$ i $a-b$ zkrátí.
+
+</details>
+
+### `fs-2026-cz2-01` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–2 (příklad 1, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte výraz $\left(\dfrac ab-\dfrac ba\right):\dfrac{a^2-b^2}{2a^2b^2}$ a určete podmínky jeho existence.
+
+<details><summary>Ответ и решение</summary>
+
+$2ab,\ a\ne0,\ b\ne0,\ a\ne b,\ a\ne-b$. $\frac{a^2-b^2}{ab}\cdot\frac{2a^2b^2}{a^2-b^2}=2ab$; dělitel nesmí být nulový, proto $a\ne\pm b$.
+
+</details>
+
+### `fs-2026-cz3-01` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–3 (příklad 1, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte výraz $\dfrac1{a-b}\left(1+\dfrac a{a+b}\right)-\dfrac1{a+b}\left(1+\dfrac b{a-b}\right)$ a určete podmínky jeho existence.
+
+<details><summary>Ответ и решение</summary>
+
+$\dfrac1{a-b},\ a\ne b,\ a\ne-b$. $\frac{2a+b}{(a-b)(a+b)}-\frac{a}{(a+b)(a-b)}=\frac{a+b}{(a-b)(a+b)}$.
+
+</details>
+
+### `fs-2026-cz4-01` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–4 (příklad 1, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte výraz $\left(\dfrac ab-\dfrac ba\right)^2\cdot\left(\dfrac{ab}{a+b}\right)^2$ a určete podmínky jeho existence.
+
+<details><summary>Ответ и решение</summary>
+
+$(a-b)^2,\ a\ne0,\ b\ne0,\ a\ne-b$. $\left(\frac{(a-b)(a+b)}{ab}\right)^2\cdot\frac{(ab)^2}{(a+b)^2}=(a-b)^2$.
+
+</details>
+
+### `fs-2026-cz5-01` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–5 (příklad 1, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte výraz $\left(\dfrac{4b}a-\dfrac ab\right)^2\cdot\left(\dfrac{ab}{a-2b}\right)^2$ a určete podmínky jeho existence.
+
+<details><summary>Ответ и решение</summary>
+
+$(a+2b)^2,\ a\ne0,\ b\ne0,\ a-2b\ne0$. $\frac{4b^2-a^2}{ab}=-\frac{(a-2b)(a+2b)}{ab}$; po umocnění se $ab$ i $a-2b$ zkrátí.
+
+</details>
+
+### `fs-2026-cz6-01` — [FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 1, 2 body)](https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Zjednodušte výraz $\left(\dfrac{a-2b}b+\dfrac ba\right)^2\cdot\left(\dfrac{ab}{a-b}\right)^2$ a určete podmínky jeho existence.
+
+<details><summary>Ответ и решение</summary>
+
+$(a-b)^2,\ a\ne0,\ b\ne0,\ a\ne b$. $\frac{a-2b}b+\frac ba=\frac{a^2-2ab+b^2}{ab}=\frac{(a-b)^2}{ab}$; po umocnění zbude $\frac{(a-b)^4}{(a-b)^2}$.
 
 </details>
 
