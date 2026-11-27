@@ -43,7 +43,7 @@
   "include": true,
   "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno",
   "note": "Intervaly jsou v originále sázeny znaky „<“ a „>“ (např. „<0; 9>“); v bance zapsány jako ⟨ ⟩.",
-  "answers_url": "https://www.vse.cz/wp-content/uploads/page/153/test-A-s-vysledky.pdf"
+  "answers_url": "https://www.vse.cz/wp-content/uploads/page/153/test-A-s-vysledky.pdf ; https://kmat.vse.cz/wp-content/uploads/page/44/test-A-vysledky.pdf"
  },
  {
   "id": "vse-kmat-b",
@@ -59,7 +59,7 @@
   "include": true,
   "copyright": "veřejně zveřejněný vzor VŠE; výslovné omezení užití nenalezeno",
   "note": "Intervaly jsou v originále sázeny znaky „<“ a „>“ (např. „<0; 9>“); v bance zapsány jako ⟨ ⟩.",
-  "answers_url": "https://www.vse.cz/wp-content/uploads/page/153/test-B-s-vysledky.pdf"
+  "answers_url": "https://www.vse.cz/wp-content/uploads/page/153/test-B-s-vysledky.pdf ; https://kmat.vse.cz/wp-content/uploads/page/44/test-B-vysledky.pdf"
  },
  {
   "id": "vse-podminky",
@@ -67,12 +67,12 @@
   "faculty": "všechny",
   "kind": "podmínky přijímacího řízení 2026/27",
   "title": "Podmínky přijetí do Bc. studia 2026/27 po fakultách",
-  "years": "2026/27",
+  "years": "2027/28",
   "format": "NF: jen Scio OSP/VŠP; FM: Scio NSZ; FIS: OSP/VŠP nebo prominutí; FPH, FMV: vlastní pravidla a prominutí",
   "answers": "—",
   "url": "https://fmv.vse.cz/wp-content/uploads/page/982/podminky_prijeti_bakalari_2026_2027.pdf",
   "status": "jen pro kontext",
-  "note": "FIS: https://fis.vse.cz/wp-content/uploads/page/12263/Bc_Podminky-prijimaciho-rizeni-2026.pdf ; FM: https://fm.vse.cz/wp-content/uploads/page/11080/podminky-bc-26-27.pdf ; FPH: https://fph.vse.cz/wp-content/uploads/Vyhlaska_PR26_27_final.pdf ; NF: https://www.vse.cz/wp-content/uploads/page/5764/NF_bc.pdf FPH 2027/28: https://fph.vse.cz/uchazeci/bakalarske-studium/prijimaci-zkousky/podminky-prijeti-do-bc-podnikova-ekonomika-a-management/ ; FIS 2027/28: https://fis.vse.cz/wp-content/uploads/page/12263/Bc_podminky-prijimaciho-rizeni-2027.pdf ; specifikace matematiky: https://www.vse.cz/zajemci-o-studium/bakalarske-obory/prijimaci-rizeni-a-prihlaska-ke-studiu/specifikace-obsahu-prijimacich-zkousek/matematika/",
+  "note": "FFÚ: https://ffu.vse.cz/prijimackybs/ ; FMV: https://fmv.vse.cz/wp-content/uploads/page/982/podminky_prijeti_bakalari_2027_28.pdf ; FPH: https://fph.vse.cz/uchazeci/bakalarske-studium/prijimaci-zkousky/podminky-prijeti-do-bc-podnikova-ekonomika-a-management/ ; FIS: https://fis.vse.cz/wp-content/uploads/page/12263/Bc_podminky-prijimaciho-rizeni-2027.pdf ; NF: https://nf.vse.cz/wp-content/uploads/Podminky-prijimaciho-rizeni-bakalari-2027-2028.pdf ; FM: https://fm.vse.cz/wp-content/uploads/page/11080/podminky_bc_27_28.pdf ; obsah zkoušky z matematiky: https://kmat.vse.cz/pripravne-kurzy/obsah-prijimaci-zkousky/",
   "include": false,
   "copyright": "jen informace o přijímacím řízení, bez úloh"
  },
@@ -162,9 +162,32 @@
   "faculty": "KAJ (pro všechny fakulty)",
   "kind": "související informace",
   "title": "Vstupní test z českého jazyka pro cizince — vzorová verze",
-  "url": "https://fph.vse.cz/wp-content/uploads/Vzorov%C3%A1-verze-vstupn%C3%ADho-testu-z-%C4%8CJ.pdf",
+  "url": "https://kaj.vse.cz/prijimaci-zkouska-z-ceskeho-jazyka/",
   "include": false,
   "copyright": "—",
-  "status": "není matematika; odkaz pro uchazeče bez maturity z ČJ/SJ (min. 60 %, placený test KAJ VŠE)"
+  "status": "není matematika; odkaz pro uchazeče bez maturity z ČJ/SJ (min. 60 %, placený test KAJ VŠE)",
+  "note": "Vzorový test (čtení, poslech + audio, klíč) na stránce KAJ; další vzor: https://fph.vse.cz/wp-content/uploads/Vzorov%C3%A1-verze-vstupn%C3%ADho-testu-z-%C4%8CJ.pdf ; termín 7. 6. 2027, 650 Kč, min. 36/60 bodů"
+ },
+ {
+  "id": "vse-vzorce",
+  "uni": "VŠE",
+  "faculty": "KMAT (FFÚ, FMV, FPH)",
+  "kind": "pomůcka u zkoušky",
+  "title": "Vzorce k přijímací zkoušce z matematiky (přehled nejdůležitějších vzorců, součást zadání)",
+  "url": "https://kmat.vse.cz/wp-content/uploads/page/44/vzorce_uprava2.pdf",
+  "include": false,
+  "copyright": "—",
+  "status": "není sbírka úloh; odkaz v README jako pomůcka k tréninku"
+ },
+ {
+  "id": "vse-nanecisto",
+  "uni": "VŠE",
+  "faculty": "všechny fakulty",
+  "kind": "přijímačky nanečisto",
+  "title": "Přijímací zkoušky nanečisto (zkušební termíny, 1 100 Kč)",
+  "url": "https://nanecisto.vse.cz/informace/",
+  "include": false,
+  "copyright": "—",
+  "status": "zadání se nezveřejňují; v README termíny 2027 a pravidla prominutí"
  }
 ]
