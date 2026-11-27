@@ -79,6 +79,21 @@
   "copyright": "© 2017–2026 FCE CTU in Prague (patička webu)"
  },
  {
+  "id": "fs-bc",
+  "uni": "ČVUT",
+  "faculty": "FS",
+  "kind": "reálné testy",
+  "title": "Písemná přijímací zkouška z matematiky, studium bakalářské, rok 2026, verze zadání CZ–1 až CZ–6",
+  "years": "2026",
+  "format": "6 verzí po 12 příkladech s otevřenou odpovědí, 60 minut, bez pomůcek, max. 2 body za příklad",
+  "answers": "oficiální výsledky ve sloupci „Výsledek“ (CZ–6, příklad 6: chyba ve znaménku, v bance opraveno s poznámkou)",
+  "url": "https://campuscvut.sharepoint.com/:b:/s/FS-12000-Public/IQA5OXjLExVeTqGeb9XrEY9_Ab4vPHs7n-KIV9pl31hfrdw?e=wdNCea",
+  "status": "v bance (72 příkladů, z toho 71 různých; CZ–6 č. 10 = CZ–4 č. 10, uvedeno v also_in)",
+  "note": "stránka se vzorovými testy: https://www.fs.cvut.cz/zajemci-o-studium/informace-o-prijimacim-rizeni/vzorove-testy/prijimacky-bc/ (soubor „2026-prijimaci zkousky.pdf“ na SharePointu FS); dřívější odkaz test_Bc_E.pdf už neexistuje",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
+ },
+ {
   "id": "fs-kurz",
   "uni": "ČVUT",
   "faculty": "FS",
@@ -105,6 +120,21 @@
   "url": "https://www.fd.cvut.cz/storage/prijimaci-rizeni/pr2021-2022/priloha-3-2021-PL.pdf",
   "status": "není pro Bc.: dokument obsahuje jen zkoušky navazujícího magisterského studia (letecká doprava apod.), matematika pro bakalářské studium v něm není",
   "include": false,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
+ },
+ {
+  "id": "muvs-b0413",
+  "uni": "ČVUT",
+  "faculty": "MÚVS",
+  "kind": "vzorový test",
+  "title": "Vzorový test k přijímacím zkouškám z matematiky — přijímací zkouška AR 2025/2026, bakalářský program B0413P050061 Ekonomika a management",
+  "years": "2025/26",
+  "format": "10 položek po 1 bodu, 30 minut, 5 možností a)–e) (v PDF dále test z angličtiny — ten nebereme)",
+  "answers": "klíč v PDF (1 d, 2 b, 3 a, 4 e, 5 b, 6 e, 7 e, 8 d, 9 d, 10 c)",
+  "url": "https://www.muvs.cvut.cz/dokumenty/studium/vzorove-testy/b0413_ekonomika-a-management_2025.pdf",
+  "status": "v bance (10 úloh)",
+  "note": "stránka: https://www.muvs.cvut.cz/cs/studium/prijimaci-rizeni/prijimaci-zkouska/prijimaci-zkouska-do-bakalarskeho-studia ; starší odkazy (B0413P_Merged-With-Watermark.pdf, Bc-B0413-VZOR-2022-2023) už neexistují",
+  "include": true,
   "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
  {
@@ -251,6 +281,21 @@
   "url": "https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20172018/Informace_vysledky_PR_20172018.pdf",
   "status": "v bance (13 variant, 78 úloh: AR 2013/14 PZ 3, 4, 11; 2015/16 PZ 23, 24, 25, 31, 32; 2017/18 PZ 1, 2, 6, 14, 15)",
   "note": "https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20152016/InformacePRAR20152016.pdf ; https://www.fbi.vsb.cz/export/sites/fbi/cs/.content/galerie-souboru/Studium/20132014/InformacePRAR20132014.pdf",
+  "include": true,
+  "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
+ },
+ {
+  "id": "vsb-fast",
+  "uni": "VŠB",
+  "faculty": "FAST",
+  "kind": "vzorový test",
+  "title": "PŘIJÍMACÍ ZKOUŠKY – varianta 1 a varianta 2 (Fakulta stavební VŠB-TUO)",
+  "years": "neuvedeno (PDF z roku 2018)",
+  "format": "20 úloh, 4 možnosti (a)–(d)",
+  "answers": "VÝSLEDKY na konci každé varianty",
+  "url": "https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V01.pdf",
+  "status": "v bance 35 úloh (varianta 1: 17, varianta 2: 18); vynechány úlohy, které bez obrázku nejdou řešit (V1 č. 6, 19, 20; V2 č. 6, 20)",
+  "note": "varianta 2: https://www.fast.vsb.cz/export/sites/fast/230/.content/galerie-souboru/V02.pdf",
   "include": true,
   "copyright": "veřejně zveřejněný vzor/zadání; výslovné omezení užití nenalezeno"
  },
