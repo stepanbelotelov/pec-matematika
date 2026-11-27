@@ -10258,7 +10258,7 @@
   {
    "q": "P4",
    "src": "Vlastní úloha ve stylu přijímaček VŠE (č. 42)",
-   "body": "Maximální definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{1-\\logx}\"></span> je:",
+   "body": "Maximální definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{1-\\log x}\"></span> je:",
    "opts": [
     "<span class=\"m\" data-tex=\"\\langle 1;10\\rangle\"></span>",
     "<span class=\"m\" data-tex=\"\\langle 1;10)\"></span>",
