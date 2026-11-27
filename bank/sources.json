@@ -444,5 +444,20 @@
   "status": "jen katalog",
   "include": false,
   "copyright": "komerční vlastní testy vydavatele, ne zadání vysoké školy"
+ },
+ {
+  "id": "scio-mat",
+  "uni": "Scio",
+  "faculty": "NSZ Matematika",
+  "kind": "testy NSZ",
+  "title": "Scio — Národní srovnávací zkoušky, Matematika: zveřejněné testy 2025–2026",
+  "years": "2025, 2026 (6 testů)",
+  "format": "35 úloh, 90 minut, 4 možnosti (A)–(D), přehled vzorců",
+  "answers": "správné odpovědi vyznačeny tučně, u vyřazených úloh poznámka NOK",
+  "url": "https://www.scio.cz/matematika",
+  "status": "jen katalog (210 úloh v 6 testech)",
+  "note": "Zveřejněné testy NSZ Matematika (35 úloh, 90 min, 4 možnosti, správné odpovědi tučně): Únor 2025 (T3): https://download.scio.cz/2024-2025-testy-T3/MAT-NSZ-2024-2025-T3.pdf ; Březen I 2025 (T4): https://download.scio.cz/2024-2025-testy-T4/MAT_NSZ_2024_2025_T4.pdf ; Březen II 2025 (T5): https://download.scio.cz/2024-2025-testy-T5/MAT_NSZ_2024_2025_T5.pdf ; Leden 2 2026 (T3): https://download.scio.cz/2025-2026-testy-na-web-T3/MAT-NSZ-2025-2026-T3-leden2.pdf ; Březen 2026 (T5): https://download.scio.cz/testy-T56/MAT_NSZ_2025_2026_T5.pdf ; Duben 2026 (T6): https://download.scio.cz/testy-T56/MAT_NSZ_2025_2026_T6_A.pdf ; slovenské verze NPS (překlad týchž testů): https://download.scio.cz/2024-2025-testy-T3/MAT-NPS-2024-2025-T3.pdf , https://download.scio.cz/2024-2025-testy-T4/MAT_NPS_2024_2025_T4.pdf , https://download.scio.cz/2025-2026-testy-na-web-T3/MAT-NPS-2025-2026-T3-januar.pdf ; krátké ukázky (8 úloh): https://download.scio.cz/testy-pro-skoly-nove/test-MAT-pro-skoly.pdf , https://download.scio.cz/Mat-2023-SK.pdf ; přehled: https://www.scio.cz/matematika . Starší odkazy (2019/20–2023/24) už vracejí 404; kopie na cizích webech (euroeducation.cz, mathprofi.com, docplayer.cz, scribd.com) nebereme.",
+  "include": false,
+  "copyright": "© Scio na každé stránce; ukázky „Určené pro individuální přípravu uchazečů“; obchodní podmínky Scio (https://www.scio.cz/obchodni-podminky): „Zákazník zejména není oprávněn v rozporu s autorským zákonem půjčovat, kopírovat, kopie dále prodávat ani jiným způsobem šířit žádný z produktů a dalších poskytnutých materiálů společnosti Scio.“ — do banky jen se souhlasem Scio"
  }
 ]

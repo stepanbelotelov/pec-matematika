@@ -117,6 +117,7 @@
 | Источник | Почему |
 |---|---|
 | CERMAT: Matematika+ 2014–2020, Matematika rozšiřující с 2021 | CERMAT прямо запрещает дальнейшее использование без письменного согласия |
+| Scio, NSZ Matematika: [6 опубликованных тестов 2025–2026](https://www.scio.cz/matematika) (210 задач, ключ выделен жирным) | © Scio; в [obchodní podmínky](https://www.scio.cz/obchodni-podminky) прямо запрещено копировать и «jiným způsobem šířit» материалы Scio. Нужно письменное согласие Scio, ссылки собраны в `sources.json` (`scio-mat`) |
 | Архив DML-CZ: Bečvářová 2003 (в том числе экзамен FD ČVUT 2000), FS ČVUT 1993, FSv 1993 | [условия DML-CZ](https://www.dml.cz/use): только для личного использования |
 | Petáková; Černý a kol., *Matematika – přijímací zkoušky na ČVUT* | платные книги |
 | Lumos (lms.dreval.net) | курс третьей стороны — задачи берём из оригиналов FJFI |
