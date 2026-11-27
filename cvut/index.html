@@ -1584,12 +1584,12 @@ function pbLevelsVis(tasks) {
 }
 function bankModCard() {
   if (!PB.all) {
-    return modCard({ cls: "bankmod", k: "Тренировка", h: "Банк задач", p: "Настоящие задачи из вступительных тестов по всем темам курса — с уровнем сложности и решением.",
+    return modCard({ cls: "bankmod", k: "Тренировка", h: "Банк задач", p: "Задачи из вступительных тестов и наши задачи того же типа — по всем темам курса, с уровнем сложности и решением.",
       note: PB.err ? "Не удалось загрузить задачи — нужен интернет." : "Загружаю задачи…", btn: PB.err ? "Повторить" : null, btnCls: "btn ghost", hash: "banka" });
   }
-  const open = pbOpen(), done = open.filter(pbDone).length, ok = open.filter(pbOk).length, unis = [...new Set(open.map((t) => t.uni))], facs = LINE !== "ČVUT" ? LINE : unis.length > 1 ? unis.join(", ") : pbFacs(open).map((k) => k.split(" ")[0]).join(", ");
+  const open = pbOpen(), done = open.filter(pbDone).length, ok = open.filter(pbOk).length, unis = [...new Set(open.map((t) => t.uni))].filter((u) => u !== "Vlastní"), facs = LINE !== "ČVUT" ? LINE : unis.length > 1 ? unis.join(", ") : pbFacs(open).map((k) => k.split(" ")[0]).join(", ");
   return modCard({ cls: "bankmod", k: "Тренировка", rd: `<b>${open.length}</b> ${plural(open.length, "задача", "задачи", "задач")} · ${facs}`, h: "Банк задач",
-    vis: pbLevelsVis(open), p: "Настоящие задачи из вступительных тестов по всем темам курса. Фильтр по уровню и теме, к каждой — короткое решение.",
+    vis: pbLevelsVis(open), p: "Задачи из вступительных тестов и наши задачи того же типа — по всем темам курса. Фильтр по уровню и теме, к каждой — короткое решение.",
     note: done ? `Решено <b>${done} / ${open.length}</b> · верно <b>${ok}</b>` : `Все задачи открыты — начните с уровня 1`,
     btn: done ? "Продолжить" : "Открыть банк", btnCls: "btn ghost", hash: "banka" });
 }
@@ -1608,7 +1608,7 @@ function showBank() {
   // on phones the intro and the filters fold into one line each, so the first task is visible right away
   const BIG = matchMedia("(min-width: 761px) and (min-height: 501px)").matches;
   const about = el("details", "pb-fold pb-about"); about.open = BIG; const aSum = el("summary"); aSum.append(el("b", null, "Как устроен банк"));
-  about.append(aSum, el("p", "pb-intro", `Задачи из открытых образцов ${pbFacs(open).join(", ")} — по всем темам курса. Задачи тем, которые мы ещё не прошли, помечены «тема ещё впереди». Решите на бумаге и выберите ответ: сразу увидите, верно ли, и короткое решение. Без калькулятора, как на экзамене.`)); body.append(about);
+  about.append(aSum, el("p", "pb-intro", `Задачи из открытых образцов ${pbFacs(open).filter((k) => k !== "Vlastní").join(", ")}${open.some((t) => t.fac === "Vlastní") ? " и наши собственные задачи в стиле NSZ Matematika (кнопка «Vlastní»): их числа и формулировки свои, потому что тесты Scio защищены авторским правом" : ""} — по всем темам курса. Задачи тем, которые мы ещё не прошли, помечены «тема ещё впереди». Решите на бумаге и выберите ответ: сразу увидите, верно ли, и короткое решение. Без калькулятора, как на экзамене.`)); body.append(about);
   const stat = el("div", "pb-stat"); body.append(stat);
   // фильтры
   const filt = el("div", "pb-filters"); filt.setAttribute("role", "group"); filt.setAttribute("aria-label", "Фильтры");

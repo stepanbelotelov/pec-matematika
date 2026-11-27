@@ -204,5 +204,20 @@
   "include": false,
   "copyright": "—",
   "status": "zadání se nezveřejňují; v README termíny 2027 a pravidla prominutí"
+ },
+ {
+  "id": "vlastni-nsz",
+  "uni": "Vlastní",
+  "faculty": "Vlastní",
+  "kind": "vlastní úlohy",
+  "title": "Vlastní úlohy ve stylu NSZ Matematika — náhrada za úlohy chráněné autorským právem",
+  "years": "2026",
+  "format": "216 úloh, 4 možnosti (a)–(d), řešení u každé úlohy",
+  "answers": "naše; ověřeno výpočtem (sympy) a u textových úloh hrubou silou",
+  "url": "https://www.scio.cz/matematika",
+  "status": "v bance (216 úloh)",
+  "note": "Typy úloh odpovídají zveřejněným testům NSZ Matematika (Scio) 2025–2026 a krátké ukázce; čísla, kontext i znění jsou vlastní, pořadí promíchané. Úlohy, které Scio vyřadilo (NOK) nebo které stojí jen na obrázku, jsou nahrazeny vlastní správnou verzí, nebo vynechány. Odkaz vede na popis zkoušky u Scio.",
+  "include": true,
+  "copyright": "vlastní úlohy autorů banky (pec-matematika); text úloh Scio se nepřebírá"
  }
 ]
