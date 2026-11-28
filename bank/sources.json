@@ -513,11 +513,11 @@
   "title": "Souhrnná zpráva o průběhu přijímacího řízení v roce 2019 — příloha: testy použité v přijímacím řízení (vzorové testy)",
   "years": "2019",
   "format": "matematika, varianty I–XII po 6 úlohách a)–c); dále fyzika, jazyky, anglická matematika pro N-TEEN/N-AE (a)–e)), magisterské testy",
-  "answers": "klíč nezveřejněn",
+  "answers": "klíč nezveřejněn — v bance spočítán a ověřen",
   "url": "https://www.tf.czu.cz/dl/79632?lang=cs",
-  "status": "kandidát do banky (72 úloh z matematiky pro Bc.); zatím jen katalog",
+  "status": "v bance celý (72 úloh: matematika, varianty I–XII po 6 úlohách)",
   "note": "Podmínky 2027/2028: https://www.tf.czu.cz/dl/164071?lang=cs (matematika + fyzika, resp. matematika + jazyk); v letech 2025/26 a 2026/27 byla přijímací zkouška prominuta všem uchazečům do česky vyučovaných Bc. programů (https://www.tf.czu.cz/dl/141948?lang=cs, https://www.tf.czu.cz/dl/155173?lang=cs). Zprávy 2020–2025 testy neobsahují.",
-  "include": false,
+  "include": true,
   "copyright": "veřejně zveřejněný dokument fakulty; výslovné omezení užití nenalezeno"
  },
  {
@@ -528,9 +528,9 @@
   "title": "Matematika – vzorové příklady k přijímací zkoušce (PEF ČZU)",
   "years": "2025",
   "format": "20 úloh a)–e) s možností „žádná z uvedených odpovědí není správná“",
-  "answers": "klíč nezveřejněn",
+  "answers": "klíč nezveřejněn — v bance spočítán a ověřen",
   "url": "https://www.pef.czu.cz/dl/40296?lang=cs",
-  "status": "kandidát do banky (20 úloh); zatím jen katalog",
+  "status": "v bance VŠE (bank/vse/) celý (20 úloh); sem nepatří — PEF je ekonomická fakulta",
   "note": "Podmínky 2027/2028 (matematika 50 b + angličtina 50 b, 90 minut, 7.–11. 6. 2027): https://www.pef.czu.cz/dl/123786?lang=cs ; anglická verze vzoru: https://www.pef.czu.cz/dl/40300?lang=en",
   "include": false,
   "copyright": "veřejně zveřejněný dokument fakulty; výslovné omezení užití nenalezeno"
@@ -543,9 +543,9 @@
   "title": "Přijímací řízení 2017/2018 – Matematika 1 (PEF ČZU)",
   "years": "2017/18",
   "format": "20 úloh a)–e), doporučená doba 45 minut",
-  "answers": "klíč nezveřejněn",
+  "answers": "ano — tabulka „Řešení“ na s. 3",
   "url": "https://www.pef.czu.cz/dl/59145?lang=cs",
-  "status": "kandidát do banky (20 úloh); zatím jen katalog",
+  "status": "v bance VŠE (bank/vse/) celý (20 úloh); sem nepatří — PEF je ekonomická fakulta",
   "note": "Anglická varianta Mathematics 1: https://www.pef.czu.cz/dl/59146?lang=cs ; magisterské Kvantitativní metody (dl/59143, dl/59144) nebereme.",
   "include": false,
   "copyright": "veřejně zveřejněný dokument fakulty; výslovné omezení užití nenalezeno"
