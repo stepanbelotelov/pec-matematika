@@ -249,5 +249,35 @@
   "note": "Tři cvičné testy Cvičebnice (NSZ, cvičná maturita, cvičný test VŠE) nahrazeny 1:1, kapitoly Cvičebnice po typech, krátký test „Test 1“ 1:1. Čísla, kontext i znění jsou vlastní.",
   "include": true,
   "copyright": "vlastní úlohy autorů banky (pec-matematika); text úloh z původních sbírek se nepřebírá"
+ },
+ {
+  "id": "czu-pef-vzor",
+  "uni": "ČZU",
+  "faculty": "PEF",
+  "kind": "vzorový test",
+  "title": "Matematika – vzorové příklady k přijímací zkoušce (PEF ČZU)",
+  "years": "2025",
+  "format": "20 úloh a)–e) s možností „žádná z uvedených odpovědí není správná“",
+  "answers": "klíč nezveřejněn — v bance spočítán a ověřen",
+  "url": "https://www.pef.czu.cz/dl/40296?lang=cs",
+  "status": "v bance VŠE celý (20 úloh)",
+  "note": "Podmínky 2027/2028 (matematika 50 b + angličtina 50 b, 90 minut, 7.–11. 6. 2027): https://www.pef.czu.cz/dl/123786?lang=cs ; anglická verze vzoru: https://www.pef.czu.cz/dl/40300?lang=en",
+  "include": true,
+  "copyright": "veřejně zveřejněný dokument fakulty; výslovné omezení užití nenalezeno"
+ },
+ {
+  "id": "czu-pef-2017",
+  "uni": "ČZU",
+  "faculty": "PEF",
+  "kind": "reálný test",
+  "title": "Přijímací řízení 2017/2018 – Matematika 1 (PEF ČZU)",
+  "years": "2017/18",
+  "format": "20 úloh a)–e), doporučená doba 45 minut",
+  "answers": "ano — tabulka „Řešení“ na s. 3",
+  "url": "https://www.pef.czu.cz/dl/59145?lang=cs",
+  "status": "v bance VŠE celý (20 úloh)",
+  "note": "Anglická varianta Mathematics 1: https://www.pef.czu.cz/dl/59146?lang=cs ; magisterské Kvantitativní metody (dl/59143, dl/59144) nebereme.",
+  "include": true,
+  "copyright": "veřejně zveřejněný dokument fakulty; výslovné omezení užití nenalezeno"
  }
 ]

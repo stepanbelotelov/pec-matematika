@@ -1464,6 +1464,258 @@
   },
   {
    "q": "P42",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{a^2\\cdot\\sqrt[5]{a}\\cdot a^4}{a^2\\cdot\\sqrt{a}}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[10]{a^{34}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[10]{a^{37}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[10]{a^{38}}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{37}{10}}=\\sqrt[10]{a^{37}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v1-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P43",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{a^3\\cdot a^5\\cdot a^{-1}}{\\sqrt[3]{a^2}\\cdot\\sqrt{a}}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[6]{a^{35}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[6]{a^{37}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a^{35}}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{35}{6}}=\\sqrt[6]{a^{35}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v2-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P44",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{a^{\\frac{1}{2}}\\cdot a^4\\cdot\\sqrt[3]{a}}{a^3\\cdot\\sqrt{a}}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a^2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a^4}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[4]{a^3}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{4}{3}}=\\sqrt[3]{a^{4}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v3-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P45",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{\\sqrt[4]{a^3}\\cdot a^6\\cdot\\sqrt{a}}{a^2\\cdot a^3}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[9]{a^4}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[4]{a^7}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[4]{a^9}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{9}{4}}=\\sqrt[4]{a^{9}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v4-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P46",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{a^7\\cdot a\\cdot\\sqrt{a^3}}{\\sqrt[3]{a^5}\\cdot a^2}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[6]{a^{33}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[6]{a^{37}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[6]{a^{35}}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{35}{6}}=\\sqrt[6]{a^{35}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v5-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P47",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{\\sqrt{a}\\cdot\\sqrt[3]{a}\\cdot a^3}{a\\cdot\\sqrt{a^3}}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a^4}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[4]{a^3}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{4}{3}}=\\sqrt[3]{a^{4}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v6-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P48",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{\\sqrt[4]{a^3}\\cdot a^7}{\\sqrt{a}\\cdot a^3\\cdot\\sqrt[4]{a}}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[4]{a}\"></span>",
+    "<span class=\"m\" data-tex=\"a^4\"></span>",
+    "<span class=\"m\" data-tex=\"a^5\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{4}{1}}=\\sqrt[1]{a^{4}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v7-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P49",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{a^2\\cdot a^5\\cdot\\sqrt{a}}{\\sqrt[3]{a^2}\\cdot a^3}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[6]{a^{23}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a^{23}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt{a^6}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{23}{6}}=\\sqrt[6]{a^{23}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v8-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P50",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{a^3\\cdot\\sqrt[3]{a^4}\\cdot a^{-2}}{a^{-1}\\cdot\\sqrt{a^3}}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[6]{a^{11}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[11]{a^6}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a^{11}}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{11}{6}}=\\sqrt[6]{a^{11}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v9-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P51",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{\\sqrt[3]{a^2}\\cdot a^6\\cdot a^2}{a^3\\cdot\\sqrt[3]{a}}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"a^{\\frac{16}{2}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[16]{a^3}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a^{16}}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{16}{3}}=\\sqrt[3]{a^{16}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v10-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P52",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{\\sqrt{a}^3\\cdot a^5\\cdot a^{-2}}{\\sqrt[3]{a}\\cdot\\sqrt{a}\\cdot a^{-3}}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt{a^{20}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a^{20}}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[3]{a^{10}}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{20}{3}}=\\sqrt[3]{a^{20}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v11-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P53",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 2)",
+   "body": "Úpravou výrazu <span class=\"m\" data-tex=\"\\dfrac{a^{-2}\\cdot a^3\\cdot\\sqrt[4]{a}}{\\sqrt[3]{a}\\cdot\\sqrt{a}}\"></span> dostaneme",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\sqrt[6]{a^5}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[12]{a^5}\"></span>",
+    "<span class=\"m\" data-tex=\"\\sqrt[5]{a^{12}}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Převedeme na mocniny <span class=\"m\" data-tex=\"a\"></span> a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde <span class=\"m\" data-tex=\"a^{\\frac{5}{12}}=\\sqrt[12]{a^{5}}\"></span> (pro <span class=\"m\" data-tex=\"a&gt;0\"></span>).",
+   "id": "czu-tf-2019-v12-02",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    2
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P54",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 9)",
    "body": "Číslo <span class=\"m\" data-tex=\"\\dfrac{\\sqrt[3]9\\cdot\\sqrt[6]{3}}{\\sqrt3\\cdot\\sqrt[3]3}\"></span> je rovno číslu:",
    "opts": [
@@ -1486,7 +1738,7 @@
    "needs_original": false
   },
   {
-   "q": "P43",
+   "q": "P55",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 26)",
    "body": "Číslo <span class=\"m\" data-tex=\"2^5\\cdot5^7\\cdot3^2\"></span> se rovná číslu:",
    "opts": [
@@ -1509,7 +1761,7 @@
    "needs_original": false
   },
   {
-   "q": "P44",
+   "q": "P56",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 34)",
    "body": "Číslo <span class=\"m\" data-tex=\"\\dfrac{\\sqrt[3]{11}\\cdot\\sqrt{11}}{\\sqrt{11}}\"></span> je rovno číslu:",
    "opts": [
@@ -1532,7 +1784,7 @@
    "needs_original": false
   },
   {
-   "q": "P45",
+   "q": "P57",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 40)",
    "body": "Hodnota výrazu <span class=\"m\" data-tex=\"\\left(\\sqrt3\\right)^2+\\sqrt{3^4}+\\left(\\sqrt3\\right)^4+\\sqrt{3^6}\"></span> je:",
    "opts": [
@@ -1555,7 +1807,7 @@
    "needs_original": false
   },
   {
-   "q": "P46",
+   "q": "P58",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 67)",
    "body": "Upravte na součin mocnin prvočísel: <span class=\"m\" data-tex=\"(12^3\\cdot25^2\\cdot18):(6^4\\cdot10)\"></span>",
    "opts": [
@@ -1577,7 +1829,7 @@
    "needs_original": false
   },
   {
-   "q": "P47",
+   "q": "P59",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 71)",
    "body": "Zjednodušte výraz <span class=\"m\" data-tex=\"\\dfrac{\\sqrt[4]x\\cdot\\sqrt x}{\\sqrt[6]x\\cdot\\sqrt[3]x}\"></span> pro <span class=\"m\" data-tex=\"x&gt;0\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"\\sqrt[4]x\"></span>",
@@ -1592,7 +1844,7 @@
    "needs_original": false
   },
   {
-   "q": "P48",
+   "q": "P60",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 74)",
    "body": "Číslo <span class=\"m\" data-tex=\"\\dfrac{8^{3}\\cdot4^{-2}}{2^{5}}\"></span> je rovno:",
    "opts": [
@@ -1615,7 +1867,7 @@
    "needs_original": false
   },
   {
-   "q": "P49",
+   "q": "P61",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 86)",
    "body": "Kladné číslo <span class=\"m\" data-tex=\"x\"></span>, jehož třetí mocnina je <span class=\"m\" data-tex=\"5^{12}\"></span>, vydělíme druhou mocninou čísla <span class=\"m\" data-tex=\"5^3\"></span> a dostaneme číslo <span class=\"m\" data-tex=\"y\"></span>. Hodnota <span class=\"m\" data-tex=\"y\"></span> je:",
    "opts": [
@@ -1638,7 +1890,7 @@
    "needs_original": false
   },
   {
-   "q": "P50",
+   "q": "P62",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 106)",
    "body": "Za předpokladu <span class=\"m\" data-tex=\"a&gt;0\"></span> zjednodušte <span class=\"m\" data-tex=\"\\sqrt[3]{a^2\\sqrt a}\\cdot\\sqrt[6]{a}\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"a\"></span>",
@@ -1653,7 +1905,7 @@
    "needs_original": false
   },
   {
-   "q": "P51",
+   "q": "P63",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 107)",
    "body": "Operace <span class=\"m\" data-tex=\"*\"></span> je definována vztahem <span class=\"m\" data-tex=\"a*b=a^b+b^a\"></span>. Čemu se rovná <span class=\"m\" data-tex=\"2*(-1)\"></span>?",
    "opts": [
@@ -1675,7 +1927,7 @@
    "needs_original": false
   },
   {
-   "q": "P52",
+   "q": "P64",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 117)",
    "body": "Pro každé <span class=\"m\" data-tex=\"x&gt;0\"></span> je výraz <span class=\"m\" data-tex=\"\\dfrac{\\sqrt{x\\cdot\\sqrt[3]x}}{\\sqrt[6]x}\"></span> roven",
    "opts": [
@@ -1698,7 +1950,7 @@
    "needs_original": false
   },
   {
-   "q": "P53",
+   "q": "P65",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 190)",
    "body": "Pro operaci <span class=\"m\" data-tex=\"\\diamond\"></span> platí <span class=\"m\" data-tex=\"2\\diamond(-3)=36\"></span>. Která definice tomu vyhovuje?",
    "opts": [
@@ -1720,7 +1972,7 @@
    "needs_original": false
   },
   {
-   "q": "P54",
+   "q": "P66",
    "src": "FP TUL, přijímací test z matematiky 2021/22 (Matematika, Bc.) (úloha 5, 20 bodů)",
    "body": "Uvažujte výraz <span class=\"m\" data-tex=\"\\left(\\left(2^{4(\\log_216)^2}\\right)^{\\left(2^{-2}-2^{-3}\\right)^{-1}}\\right)^{\\frac1{2^5}}\"></span>, kde <span class=\"m\" data-tex=\"\\log_2x\"></span> označuje logaritmus <span class=\"m\" data-tex=\"x\"></span> o základu 2. Zadaný výraz upravte do tvaru <span class=\"m\" data-tex=\"2^a\"></span>, kde <span class=\"m\" data-tex=\"a\"></span> je konkrétní reálné číslo (neobsahuje funkci logaritmus, mocninu ani žádnou aritmetickou operaci).",
    "answer": "<span class=\"m\" data-tex=\"2^{16}\"></span>",
@@ -1736,7 +1988,7 @@
    "needs_original": false
   },
   {
-   "q": "P55",
+   "q": "P67",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 2, 1 bod)",
    "body": "Usměrněte zlomek <span class=\"m\" data-tex=\"\\dfrac{4\\sqrt5+5\\sqrt4}{4\\sqrt5-5\\sqrt4}\"></span>:",
    "opts": [
@@ -1762,7 +2014,7 @@
    ]
   },
   {
-   "q": "P56",
+   "q": "P68",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 1 (úloha 16, 2 body)",
    "body": "<span class=\"m\" data-tex=\"\\dfrac{\\sqrt{\\frac ab+\\frac ba+2}}{\\sqrt{\\frac ab+\\frac ba-2}}=\"></span>",
    "opts": [
@@ -1789,7 +2041,7 @@
    ]
   },
   {
-   "q": "P57",
+   "q": "P69",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 16, 2 body)",
    "body": "<span class=\"m\" data-tex=\"\\sqrt[3]{\\dfrac a{\\sqrt{b^3}}}\\sqrt{\\dfrac b{\\sqrt[3]a}}=\"></span>",
    "opts": [
@@ -1815,7 +2067,7 @@
    ]
   },
   {
-   "q": "P58",
+   "q": "P70",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 14)",
    "body": "Výraz <span class=\"m\" data-tex=\"\\dfrac{|\\sqrt2-\\sqrt5|}{|1-\\sqrt2|+|3-\\sqrt5|-2}\"></span> je roven číslu:",
    "opts": [
@@ -1839,7 +2091,7 @@
    "needs_original": false
   },
   {
-   "q": "P59",
+   "q": "P71",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 24)",
    "body": "Pro všechna kladná <span class=\"m\" data-tex=\"x\"></span> platí <span class=\"m\" data-tex=\"\\dfrac{\\sqrt[3]{x^2}\\cdot x}{\\sqrt{x^5}}=x^t\"></span>. Které tvrzení o čísle <span class=\"m\" data-tex=\"t\"></span> je pravdivé?",
    "opts": [
@@ -1861,7 +2113,7 @@
    "needs_original": false
   },
   {
-   "q": "P60",
+   "q": "P72",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 101)",
    "body": "Součet <span class=\"m\" data-tex=\"4^5+4^4\\cdot3+4^3\\cdot3^2+4^2\\cdot3^3+4\\cdot3^4+3^5\"></span> je roven:",
    "opts": [
@@ -1885,7 +2137,7 @@
    "needs_original": false
   },
   {
-   "q": "P61",
+   "q": "P73",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 103)",
    "body": "Jakou hodnotu musí mít reálné číslo <span class=\"m\" data-tex=\"a\"></span>, aby pro všechna kladná <span class=\"m\" data-tex=\"s\"></span>, <span class=\"m\" data-tex=\"t\"></span> platilo <span class=\"m\" data-tex=\"(st^2)^a\\cdot\\dfrac{s^2}{t^4}=s^4\"></span>?",
    "opts": [
@@ -1907,7 +2159,7 @@
    "needs_original": false
   },
   {
-   "q": "P62",
+   "q": "P74",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 104)",
    "body": "Množina všech reálných <span class=\"m\" data-tex=\"a\"></span>, pro která je výraz <span class=\"m\" data-tex=\"\\left(a^{-1}+2^{-1}\\right)\\cdot\\dfrac{2a}{a+2}\"></span> roven 1, je",
    "opts": [
@@ -1931,7 +2183,7 @@
    "needs_original": false
   },
   {
-   "q": "P63",
+   "q": "P75",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 114)",
    "body": "Nechť <span class=\"m\" data-tex=\"n\"></span> je kladné celé číslo. Kolik čísel <span class=\"m\" data-tex=\"2^n\"></span> je třeba sečíst, abychom dostali <span class=\"m\" data-tex=\"2^{3n}\"></span>?",
    "opts": [
@@ -1953,7 +2205,7 @@
    "needs_original": false
   },
   {
-   "q": "P64",
+   "q": "P76",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 140)",
    "body": "Pro čísla <span class=\"m\" data-tex=\"2^{45}\"></span>, <span class=\"m\" data-tex=\"3^{30}\"></span> a <span class=\"m\" data-tex=\"5^{20}\"></span> platí:",
    "opts": [
@@ -1975,7 +2227,7 @@
    "needs_original": false
   },
   {
-   "q": "P65",
+   "q": "P77",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 153)",
    "body": "Za předpokladu <span class=\"m\" data-tex=\"x&gt;0\"></span>, <span class=\"m\" data-tex=\"y&gt;0\"></span> zjednodušte <span class=\"m\" data-tex=\"\\dfrac{\\sqrt{x^3y}\\cdot\\sqrt[4]{xy^2}}{\\sqrt[4]{x^7y^4}}\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"1\"></span>",
@@ -1990,7 +2242,7 @@
    "needs_original": false
   },
   {
-   "q": "P66",
+   "q": "P78",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 61)",
    "body": "Seřaďte čísla <span class=\"m\" data-tex=\"\\pi\"></span>, <span class=\"m\" data-tex=\"\\sqrt{10}\"></span>, <span class=\"m\" data-tex=\"\\log_210\"></span>, <span class=\"m\" data-tex=\"\\dfrac{22}7\"></span> sestupně podle velikosti.",
    "opts": [
@@ -2865,6 +3117,258 @@
   },
   {
    "q": "P40",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-6x+5=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=-5,\\ x_2=-1\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=1,\\ x_2=5\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-5,\\ x_2=1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=16\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{6\\pm4}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=1\"></span>, <span class=\"m\" data-tex=\"x_2=5\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v1-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P41",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-5x-14=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=-7,\\ x_2=-2\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-7,\\ x_2=2\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=7,\\ x_2=-2\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=81\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{5\\pm9}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=-2\"></span>, <span class=\"m\" data-tex=\"x_2=7\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v2-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P42",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2+3x-18=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=3,\\ x_2=-6\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-3,\\ x_2=-6\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-3,\\ x_2=6\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=81\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{-3\\pm9}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=-6\"></span>, <span class=\"m\" data-tex=\"x_2=3\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v3-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P43",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-6x+8=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=-2,\\ x_2=-4\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=2,\\ x_2=4\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-2,\\ x_2=4\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=4\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{6\\pm2}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=2\"></span>, <span class=\"m\" data-tex=\"x_2=4\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v4-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P44",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-2x-15=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=-3,\\ x_2=5\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=3,\\ x_2=-5\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-3,\\ x_2=-5\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=64\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{2\\pm8}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=-3\"></span>, <span class=\"m\" data-tex=\"x_2=5\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v5-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P45",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-4x-5=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=1,\\ x_2=-5\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-1,\\ x_2=5\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-1,\\ x_2=-5\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=36\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{4\\pm6}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=-1\"></span>, <span class=\"m\" data-tex=\"x_2=5\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v6-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P46",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-9x+20=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=4,\\ x_2=-5\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-4,\\ x_2=-5\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=4,\\ x_2=5\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=1\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{9\\pm1}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=4\"></span>, <span class=\"m\" data-tex=\"x_2=5\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v7-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P47",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-2x-24=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=6,\\ x_2=-4\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-6,\\ x_2=-4\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-6,\\ x_2=4\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=100\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{2\\pm10}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=-4\"></span>, <span class=\"m\" data-tex=\"x_2=6\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v8-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P48",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-4x-21=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=3,\\ x_2=7\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-7,\\ x_2=3\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-3,\\ x_2=7\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=100\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{4\\pm10}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=-3\"></span>, <span class=\"m\" data-tex=\"x_2=7\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v9-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P49",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2+5x-6=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=1,\\ x_2=-6\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-1,\\ x_2=-6\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-1,\\ x_2=6\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=49\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{-5\\pm7}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=-6\"></span>, <span class=\"m\" data-tex=\"x_2=1\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v10-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P50",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2-x-6=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=2,\\ x_2=-3\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=-2,\\ x_2=3\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=2,\\ x_2=3\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=25\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{1\\pm5}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=-2\"></span>, <span class=\"m\" data-tex=\"x_2=3\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v11-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P51",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 1)",
+   "body": "Kořeny kvadratické rovnice <span class=\"m\" data-tex=\"x^2+3x-10=0\"></span> jsou",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x_1=-5,\\ x_2=2\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=5,\\ x_2=-2\"></span>",
+    "<span class=\"m\" data-tex=\"x_1=5,\\ x_2=2\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Diskriminant <span class=\"m\" data-tex=\"D=49\"></span>, <span class=\"m\" data-tex=\"x_{1,2}=\\frac{-3\\pm7}{2}\"></span>, tedy <span class=\"m\" data-tex=\"x_1=-5\"></span>, <span class=\"m\" data-tex=\"x_2=2\"></span> (pořadí kořenů nehraje roli).",
+   "id": "czu-tf-2019-v12-01",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P52",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 8)",
    "body": "Na dvou policích jsou knihy, na větší 96. Petra přesunula čtvrtinu knih z větší police na menší a potom ještě šestinu knih, které na větší polici zůstaly. Pak bylo na obou policích stejně knih. Kolik knih bylo původně na menší polici?",
    "opts": [
@@ -2886,7 +3390,7 @@
    "needs_original": false
   },
   {
-   "q": "P41",
+   "q": "P53",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 13)",
    "body": "Krabička čaje obsahuje <span class=\"m\" data-tex=\"C\"></span> sáčků, krabička kávy <span class=\"m\" data-tex=\"K\"></span> kapslí. Platí <span class=\"m\" data-tex=\"\\dfrac{6C+K}{K}=3\"></span>. Které tvrzení z toho vyplývá?",
    "opts": [
@@ -2908,7 +3412,7 @@
    "needs_original": false
   },
   {
-   "q": "P42",
+   "q": "P54",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 13)",
    "body": "Ze vztahu <span class=\"m\" data-tex=\"1-\\dfrac3x=\\dfrac b{cx}\"></span> (<span class=\"m\" data-tex=\"x\\ne0\"></span>, <span class=\"m\" data-tex=\"c\\ne0\"></span>) vyjádřete <span class=\"m\" data-tex=\"x\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"x=3+\\dfrac bc\"></span>",
@@ -2923,7 +3427,7 @@
    "needs_original": false
   },
   {
-   "q": "P43",
+   "q": "P55",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 35)",
    "body": "Pro řešení soustavy <span class=\"m\" data-tex=\"3x+y=5\"></span>, <span class=\"m\" data-tex=\"2y-x=17\"></span> platí:",
    "opts": [
@@ -2945,7 +3449,7 @@
    "needs_original": false
   },
   {
-   "q": "P44",
+   "q": "P56",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 58)",
    "body": "Písmena označují ceny ovoce v korunách: <span class=\"m\" data-tex=\"J\"></span> — jablko, <span class=\"m\" data-tex=\"H\"></span> — hruška, <span class=\"m\" data-tex=\"B\"></span> — banán. Platí <span class=\"m\" data-tex=\"J+B=3H\"></span> a <span class=\"m\" data-tex=\"2J=H\"></span>. Které tvrzení z toho vyplývá?",
    "opts": [
@@ -2967,7 +3471,7 @@
    "needs_original": false
   },
   {
-   "q": "P45",
+   "q": "P57",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 103)",
    "body": "Z Plzně vyjel v 7:00 nákladní vůz rychlostí 50 km/h. V 7:45 za ním ze stejného místa vyjel osobní vůz rychlostí 80 km/h. V kolik hodin ho dohoní?",
    "answer": "v 9:00",
@@ -2982,7 +3486,7 @@
    "needs_original": false
   },
   {
-   "q": "P46",
+   "q": "P58",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 106)",
    "body": "Kořeny rovnice <span class=\"m\" data-tex=\"x^2-x-12=0\"></span> jsou <span class=\"m\" data-tex=\"x_1\"></span>, <span class=\"m\" data-tex=\"x_2\"></span>. Hodnota <span class=\"m\" data-tex=\"x_1^2+x_2^2\"></span> je:",
    "opts": [
@@ -3005,7 +3509,7 @@
    "needs_original": false
   },
   {
-   "q": "P47",
+   "q": "P59",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 108)",
    "body": "Cyklista ujel za tři dny 155 km. Druhý den ujel o 20 % více než první den a třetí den o 15 km méně než druhý den. Kolik kilometrů ujel postupně v jednotlivých dnech?",
    "opts": [
@@ -3027,7 +3531,7 @@
    "needs_original": false
   },
   {
-   "q": "P48",
+   "q": "P60",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 119)",
    "body": "Taxi A účtuje 18 Kč za kilometr a k tomu nástupní poplatek 60 Kč. Taxi B účtuje 22 Kč za kilometr bez nástupního poplatku. Při jaké délce jízdy zaplatíme u obou stejně?",
    "opts": [
@@ -3049,7 +3553,7 @@
    "needs_original": false
   },
   {
-   "q": "P49",
+   "q": "P61",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 122)",
    "body": "Malá tiskárna vytiskne za minutu <span class=\"m\" data-tex=\"M\"></span> stran, velká <span class=\"m\" data-tex=\"V\"></span> stran. Platí <span class=\"m\" data-tex=\"6M+2V=64\"></span> a <span class=\"m\" data-tex=\"3M+5V=112\"></span>. Které tvrzení z toho vyplývá?",
    "opts": [
@@ -3071,7 +3575,7 @@
    "needs_original": false
   },
   {
-   "q": "P50",
+   "q": "P62",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 131)",
    "body": "Řešením soustavy <span class=\"m\" data-tex=\"y+2z=7\"></span>, <span class=\"m\" data-tex=\"3y+5z=19\"></span>, <span class=\"m\" data-tex=\"x-y+z=4\"></span> je trojice <span class=\"m\" data-tex=\"[x;y;z]\"></span>. Kolik je <span class=\"m\" data-tex=\"x+y+z\"></span>?",
    "opts": [
@@ -3093,7 +3597,7 @@
    "needs_original": false
   },
   {
-   "q": "P51",
+   "q": "P63",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 150)",
    "body": "Proměnná <span class=\"m\" data-tex=\"x\"></span> může nabývat hodnot <span class=\"m\" data-tex=\"-4,-3,-1,0,1,2,4\"></span>. Pro kolik z nich má výraz <span class=\"m\" data-tex=\"x^3-2x^2-9x+18\"></span> hodnotu 0?",
    "opts": [
@@ -3115,7 +3619,7 @@
    "needs_original": false
   },
   {
-   "q": "P52",
+   "q": "P64",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 158)",
    "body": "Řešte rovnici <span class=\"m\" data-tex=\"\\dfrac{x-1}3-\\dfrac{x+2}4=\\dfrac{x}6-1\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"x=2\"></span>",
@@ -3130,7 +3634,7 @@
    "needs_original": false
   },
   {
-   "q": "P53",
+   "q": "P65",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 163)",
    "body": "Ve středu prodala pekárna 1,6krát více rohlíků než v úterý. Za oba dny dohromady prodala 1 040 rohlíků. Kolik rohlíků prodala v úterý?",
    "opts": [
@@ -3152,7 +3656,7 @@
    "needs_original": false
   },
   {
-   "q": "P54",
+   "q": "P66",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 167)",
    "body": "Krabice váží <span class=\"m\" data-tex=\"K\"></span> kg, balík <span class=\"m\" data-tex=\"B\"></span> kg a paleta <span class=\"m\" data-tex=\"P\"></span> kg. Balík váží třetinu krabice. Dvě palety váží stejně jako pět krabic a tři balíky dohromady. Která rovnice vyjadřuje <span class=\"m\" data-tex=\"K\"></span>?",
    "opts": [
@@ -3174,7 +3678,7 @@
    "needs_original": false
   },
   {
-   "q": "P55",
+   "q": "P67",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 175)",
    "body": "Aritmetický průměr tří různých čísel <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span> je 30. Průměr <span class=\"m\" data-tex=\"a\"></span> a <span class=\"m\" data-tex=\"b\"></span> je 40, průměr <span class=\"m\" data-tex=\"b\"></span> a <span class=\"m\" data-tex=\"c\"></span> je 22. Čemu se rovná <span class=\"m\" data-tex=\"a-2c\"></span>?",
    "opts": [
@@ -3196,7 +3700,7 @@
    "needs_original": false
   },
   {
-   "q": "P56",
+   "q": "P68",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 186)",
    "body": "Tomáš dostává měsíčně kapesné <span class=\"m\" data-tex=\"K\"></span> Kč a chce si koupit kolo za <span class=\"m\" data-tex=\"C\"></span> Kč. Platí <span class=\"m\" data-tex=\"10\\cdot\\dfrac K4=C+2\\,000\"></span>. Které tvrzení z toho vyplývá?",
    "opts": [
@@ -3218,7 +3722,7 @@
    "needs_original": false
   },
   {
-   "q": "P57",
+   "q": "P69",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 187)",
    "body": "Petr, Ondra a Radek sbírají poštovní známky. Ondra jich má 12krát více než Petr a Radek má o 140 známek méně než Ondra. Petr a Radek mají dohromady 1 030 známek. Kolik známek má Petr?",
    "opts": [
@@ -3240,7 +3744,7 @@
    "needs_original": false
   },
   {
-   "q": "P58",
+   "q": "P70",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 207)",
    "body": "V nádrži je 1 800 l vody a každý den z ní odteče 45 l. Za kolik dní v ní zbude 450 l?",
    "opts": [
@@ -3262,7 +3766,7 @@
    "needs_original": false
   },
   {
-   "q": "P59",
+   "q": "P71",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 212)",
    "body": "Pro nenulová čísla <span class=\"m\" data-tex=\"x\"></span>, <span class=\"m\" data-tex=\"y\"></span> platí <span class=\"m\" data-tex=\"9x^2+6xy+y^2=0\"></span>. Jaká je hodnota <span class=\"m\" data-tex=\"\\dfrac yx\"></span>?",
    "opts": [
@@ -3284,7 +3788,7 @@
    "needs_original": false
   },
   {
-   "q": "P60",
+   "q": "P72",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 19)",
    "body": "V oboru reálných čísel řešte rovnici: <span class=\"m\" data-tex=\"\\dfrac{x+2}{x+3}-\\dfrac{2-x}{3-x}=\\dfrac{6}{x^2-9}\"></span>",
    "opts": [
@@ -3306,7 +3810,7 @@
    "needs_original": false
   },
   {
-   "q": "P61",
+   "q": "P73",
    "src": "FBMI ČVUT, vzorové testové příklady Bc 2020/21 (úloha 20)",
    "body": "V oboru reálných čísel řešte rovnici: <span class=\"m\" data-tex=\"2+\\dfrac{x+6}{x+3}=3+\\dfrac{3}{x+3}\"></span>",
    "opts": [
@@ -3328,7 +3832,7 @@
    "needs_original": false
   },
   {
-   "q": "P62",
+   "q": "P74",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 01 (úloha 5, 2 body)",
    "body": "Rovnost <span class=\"m\" data-tex=\"\\frac{2}{1-x}=2-\\frac2x\"></span> platí právě pro",
    "opts": [
@@ -3352,7 +3856,7 @@
    "needs_original": false
   },
   {
-   "q": "P63",
+   "q": "P75",
    "src": "FEKT VUT, přijímací test MATEMATIKA 2022, verze FEKT 02 (úloha 5, 2 body)",
    "body": "Rovnost <span class=\"m\" data-tex=\"\\frac{3}{x+1}=\\frac3x+3\"></span> platí právě pro",
    "opts": [
@@ -3376,7 +3880,7 @@
    "needs_original": false
   },
   {
-   "q": "P64",
+   "q": "P76",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 5, 3 body)",
    "body": "Pro zlomek v základním tvaru platí následující. Jmenovatel zlomku je dvojnásobek čitatele zmenšený o jedna. Hodnota zlomku se nezmění, pokud k čitateli přičteme dvě a k jmenovateli přičteme tři. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3403,7 +3907,7 @@
    ]
   },
   {
-   "q": "P65",
+   "q": "P77",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 5, 3 body)",
    "body": "Pro zlomek v základním tvaru platí následující. Jmenovatel zlomku je dvojnásobek čitatele zmenšený o jedna. Hodnota zlomku se nezmění, pokud k čitateli přičteme dvě a k jmenovateli přičteme tři. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3426,7 +3930,7 @@
    "needs_original": false
   },
   {
-   "q": "P66",
+   "q": "P78",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 8, 5 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2x^8+6x^5-36x^2=0\"></span> platí",
    "opts": [
@@ -3449,7 +3953,7 @@
    "needs_original": false
   },
   {
-   "q": "P67",
+   "q": "P79",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 8, 5 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2x^8-10x^5+12x^2=0\"></span> platí",
    "opts": [
@@ -3472,7 +3976,7 @@
    "needs_original": false
   },
   {
-   "q": "P68",
+   "q": "P80",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 8, 5 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"3x^9+12x^6-63x^3=0\"></span> platí",
    "opts": [
@@ -3495,7 +3999,7 @@
    "needs_original": false
   },
   {
-   "q": "P69",
+   "q": "P81",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 8, 5 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2x^7+4x^4-16x=0\"></span> platí",
    "opts": [
@@ -3518,7 +4022,7 @@
    "needs_original": false
   },
   {
-   "q": "P70",
+   "q": "P82",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 16, 3 body)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"8x^4+4x^3+2x^2+x=0\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3541,7 +4045,7 @@
    "needs_original": false
   },
   {
-   "q": "P71",
+   "q": "P83",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 2, 7 bodů)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=\\frac{a+b}{b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star3=-1\\,.\"></span>",
    "opts": [
@@ -3564,7 +4068,7 @@
    "needs_original": false
   },
   {
-   "q": "P72",
+   "q": "P84",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 12, 5 bodů)",
    "body": "Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno <span class=\"m\" data-tex=\"15\\%\"></span> celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla 51 kg. Průměrná hmotnost pytle v druhé etapě byla 55 kg a ve třetí etapě 48 kg. Celková průměrná hmotnost pytle brambor v tomto skladu je <span class=\"m\" data-tex=\"50{,}55\"></span> kg. Určete kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.",
    "opts": [
@@ -3587,7 +4091,7 @@
    "needs_original": false
   },
   {
-   "q": "P73",
+   "q": "P85",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 15, 5 bodů)",
    "body": "Určete hodnotu parametrů <span class=\"m\" data-tex=\"a\"></span>, <span class=\"m\" data-tex=\"b\"></span>, <span class=\"m\" data-tex=\"c\"></span> tak, aby rovnost <span class=\"m\" data-tex=\"(2a-3x)(bx+3)=9x^2+2cx+2\"></span> platila pro každé reálné číslo <span class=\"m\" data-tex=\"x\"></span>, a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3610,7 +4114,7 @@
    "needs_original": false
   },
   {
-   "q": "P74",
+   "q": "P86",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2017 (příklad 20, 3 body)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"2x^5-x^3+2x^2=1\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3633,7 +4137,7 @@
    "needs_original": false
   },
   {
-   "q": "P75",
+   "q": "P87",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2019 (příklad 5, 7 bodů)",
    "body": "Na dvoře jsou psi a slepice. Dohromady mají 50 hlav. Kdyby byla psů třetina a slepic bylo o 3 více, měli by dohromady 86 nohou. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3656,7 +4160,7 @@
    "needs_original": false
   },
   {
-   "q": "P76",
+   "q": "P88",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 2, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=\\frac{a+b}{a-b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star3=3\\,.\"></span>",
    "opts": [
@@ -3682,7 +4186,7 @@
    ]
   },
   {
-   "q": "P77",
+   "q": "P89",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2020 (příklad 10, 7 bodů)",
    "body": "Za nákup <span class=\"m\" data-tex=\"1{,}5\"></span> kg mandarinek a <span class=\"m\" data-tex=\"3{,}5\"></span> kg pomerančů jsme zaplatili celkem 185 korun. Kilo pomerančů stojí o třetinu více než kilo mandarinek. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3708,7 +4212,7 @@
    ]
   },
   {
-   "q": "P78",
+   "q": "P90",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 1, 3 body)",
    "body": "Binární operace <span class=\"m\" data-tex=\"\\star\"></span> je definovaná jako <span class=\"m\" data-tex=\"a\\star b=\\frac{a+b}{a-b}\"></span>. Určete hodnotu neznámé <span class=\"m\" data-tex=\"x\"></span> tak, aby <span class=\"m\" data-tex=\"(2\\star x)\\star3=-2\\,.\"></span>",
    "opts": [
@@ -3734,7 +4238,7 @@
    ]
   },
   {
-   "q": "P79",
+   "q": "P91",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2022 (příklad 14, 7 bodů)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"2x^5-x^3+2x^2=1\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3757,7 +4261,7 @@
    "needs_original": false
   },
   {
-   "q": "P80",
+   "q": "P92",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 7, 7 bodů)",
    "body": "Pytle s bramborami byly do skladu přivezeny ve třech etapách. V první etapě bylo přivezeno <span class=\"m\" data-tex=\"15\\%\"></span> celkového počtu pytlů. Průměrná hmotnost jednoho pytle v první etapě byla 51 kg. Průměrná hmotnost pytle v druhé etapě byla 55 kg a ve třetí etapě 48 kg. Celková průměrná hmotnost pytle brambor v tomto skladu je <span class=\"m\" data-tex=\"50{,}55\"></span> kg. Určete, kolik procent z celkového počtu pytlů bylo přivezeno ve druhé etapě.",
    "opts": [
@@ -3780,7 +4284,7 @@
    "needs_original": false
   },
   {
-   "q": "P81",
+   "q": "P93",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2025 (příklad 8, 7 bodů)",
    "body": "Student měl spočítat 70 úloh. Kdyby denně vyřešil o 2 úlohy více, skončil by o 4 dny dříve. Rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -3806,7 +4310,7 @@
    ]
   },
   {
-   "q": "P82",
+   "q": "P94",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 16, 7 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"(x^2-x+3)^2-8(x^2-x)=9\"></span> je pravdivé.",
    "opts": [
@@ -3833,7 +4337,7 @@
    ]
   },
   {
-   "q": "P83",
+   "q": "P95",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 1 (příklad 3, 2 body)",
    "body": "Vyřešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\dfrac{4x-1}{x-2}+2=1-\\dfrac{5x-3}{2-x}\"></span>",
    "opts": [
@@ -3856,7 +4360,7 @@
    "needs_original": false
   },
   {
-   "q": "P84",
+   "q": "P96",
    "src": "FJFI ČVUT, přijímací zkouška z matematiky (vzor), varianta 2 (příklad 3, 2 body)",
    "body": "Vyřešte v <span class=\"m\" data-tex=\"\\mathbb{R}\"></span> rovnici <span class=\"m\" data-tex=\"\\dfrac{\\frac x4-\\frac1{2x}}{\\frac{2x+1}2-\\frac1x}=\\dfrac14\"></span>",
    "opts": [
@@ -3880,7 +4384,7 @@
    "needs_original": false
   },
   {
-   "q": "P85",
+   "q": "P97",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 17, 2 body)",
    "body": "Všechna řešení rovnice <span class=\"m\" data-tex=\"\\dfrac{x+\\sqrt3}x-\\dfrac{2x}{x+\\sqrt3}=2\"></span> lze zapsat ve tvaru",
    "opts": [
@@ -3907,7 +4411,7 @@
    ]
   },
   {
-   "q": "P86",
+   "q": "P98",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 11)",
    "body": "Soustava <span class=\"m\" data-tex=\"2x-3y=4\"></span>, <span class=\"m\" data-tex=\"-4x+6y=c\"></span> nemá žádné řešení, právě když:",
    "opts": [
@@ -3930,7 +4434,7 @@
    "needs_original": false
   },
   {
-   "q": "P87",
+   "q": "P99",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 22)",
    "body": "Dva běžci uběhnou stejnou trať stálou rychlostí. Rychlejší běží o 1,2 m/s rychleji a trať uběhne za čas o čtvrtinu kratší. Jakou rychlostí běží pomalejší běžec?",
    "opts": [
@@ -3952,7 +4456,7 @@
    "needs_original": false
   },
   {
-   "q": "P88",
+   "q": "P100",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 29)",
    "body": "Kavárna denně spotřebuje <span class=\"m\" data-tex=\"x\"></span> kg kávy na espresso a <span class=\"m\" data-tex=\"2x+0{,}5\"></span> kg na cappuccino. Na ostatní nápoje spotřebuje denně polovinu toho, co na espresso a cappuccino dohromady. Za 30 dní spotřebuje 90 kg kávy. Kolik kávy denně spotřebuje na cappuccino?",
    "opts": [
@@ -3974,7 +4478,7 @@
    "needs_original": false
   },
   {
-   "q": "P89",
+   "q": "P101",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 31)",
    "body": "Jeden kořen rovnice <span class=\"m\" data-tex=\"x^2+bx-12=0\"></span> je <span class=\"m\" data-tex=\"x_1=3\"></span>. Určete <span class=\"m\" data-tex=\"b\"></span> a druhý kořen.",
    "answer": "<span class=\"m\" data-tex=\"b=1\"></span>, <span class=\"m\" data-tex=\"x_2=-4\"></span>",
@@ -3989,7 +4493,7 @@
    "needs_original": false
   },
   {
-   "q": "P90",
+   "q": "P102",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 89)",
    "body": "Klára šije 8 hodin denně. Jitka šije o čtvrtinu rychleji, ale pracuje o 2 hodiny kratší dobu. Dohromady ušijí za den 310 kusů. Kolik kusů denně ušije Jitka?",
    "opts": [
@@ -4011,7 +4515,7 @@
    "needs_original": false
   },
   {
-   "q": "P91",
+   "q": "P103",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 95)",
    "body": "Rovnice <span class=\"m\" data-tex=\"x^4-3x^3-x^2+3x=0\"></span> má kořen <span class=\"m\" data-tex=\"x=3\"></span>. Kolik jejích kořenů leží v intervalu <span class=\"m\" data-tex=\"(-1;1\\rangle\"></span>?",
    "opts": [
@@ -4034,7 +4538,7 @@
    "needs_original": false
   },
   {
-   "q": "P92",
+   "q": "P104",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 106)",
    "body": "Když libovolné číslo <span class=\"m\" data-tex=\"x\"></span> vydělím dvěma a s výsledkem provedu tajnou operaci, dostanu totéž, jako když s číslem <span class=\"m\" data-tex=\"x\"></span> provedu tutéž tajnou operaci, od výsledku odečtu 6 a vydělím dvěma. Která z možností může být tajnou operací?",
    "opts": [
@@ -4056,7 +4560,7 @@
    "needs_original": false
   },
   {
-   "q": "P93",
+   "q": "P105",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 138)",
    "body": "Obsah obdélníku je 48 cm<span class=\"m\" data-tex=\"^2\"></span> a jedna strana je o 2 cm delší než druhá. Určete rozměry obdélníku.",
    "answer": "<span class=\"m\" data-tex=\"6\"></span> cm a <span class=\"m\" data-tex=\"8\"></span> cm",
@@ -4071,7 +4575,7 @@
    "needs_original": false
   },
   {
-   "q": "P94",
+   "q": "P106",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 155)",
    "body": "Hmotnosti tří bratrů jsou <span class=\"m\" data-tex=\"P\"></span>, <span class=\"m\" data-tex=\"Q\"></span>, <span class=\"m\" data-tex=\"R\"></span> (v kg). Platí <span class=\"m\" data-tex=\"\\dfrac{P+Q+R}3=\\dfrac{P+Q}2+2\"></span>. Které tvrzení z toho vyplývá?",
    "opts": [
@@ -4093,7 +4597,7 @@
    "needs_original": false
   },
   {
-   "q": "P95",
+   "q": "P107",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 192)",
    "body": "Kolik z čísel <span class=\"m\" data-tex=\"-3\"></span>, <span class=\"m\" data-tex=\"-2\"></span>, <span class=\"m\" data-tex=\"1\"></span>, <span class=\"m\" data-tex=\"2\"></span> není kořenem mnohočlenu <span class=\"m\" data-tex=\"x^3-2x^2-5x+6\"></span>?",
    "opts": [
@@ -4115,7 +4619,7 @@
    "needs_original": false
   },
   {
-   "q": "P96",
+   "q": "P108",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 215)",
    "body": "První čerpadlo napustí bazén za 6 hodin, s druhým čerpadlem za 4 hodiny. Když se zapne i třetí, napustí všechna tři bazén za 2 hodiny 40 minut. Za jak dlouho by ho napustilo třetí čerpadlo samo?",
    "opts": [
@@ -4137,7 +4641,7 @@
    "needs_original": false
   },
   {
-   "q": "P97",
+   "q": "P109",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 20, 7 bodů)",
    "body": "Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?",
    "opts": [
@@ -4160,7 +4664,7 @@
    "needs_original": false
   },
   {
-   "q": "P98",
+   "q": "P110",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 20, 7 bodů)",
    "body": "Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?",
    "opts": [
@@ -4183,7 +4687,7 @@
    "needs_original": false
   },
   {
-   "q": "P99",
+   "q": "P111",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 20, 7 bodů)",
    "body": "Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?",
    "opts": [
@@ -4206,7 +4710,7 @@
    "needs_original": false
   },
   {
-   "q": "P100",
+   "q": "P112",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 20, 7 bodů)",
    "body": "Prvním přítokem se bazén naplní za 8 hodin, druhým přítokem za 12 hodin a výpustí vyteče za 16 hodin. Při napouštění jsme otevřeli oba přítoky, ale zapomněli jsme zavřít výpust. Naplní se bazén? A kolik vody jsme zbytečně vypustili?",
    "opts": [
@@ -4229,7 +4733,7 @@
    "needs_original": false
   },
   {
-   "q": "P101",
+   "q": "P113",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 4, 7 bodů)",
    "body": "Tři kladná čísla splňují následující podmínky. Dělíme-li součet prvního a druhého čísla číslem třetím, vyjde jedna a zbytek dva. Dělíme-li součet prvního a třetího čísla číslem druhým, vyjde dva a zbytek nula. Při dělení součtu druhého a třetího čísla číslem prvním je podíl tři a zbytek dva. Rozhodněte, které tvrzení platí.",
    "opts": [
@@ -10521,6 +11025,258 @@
   },
   {
    "q": "P29",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{3^x}{9^x}=\\dfrac{27}{3^{2x}}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{3}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"x=2\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=3\"></span>.",
+   "id": "czu-tf-2019-v1-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P30",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{4^{2x}}{8}=\\dfrac{2^x}{4}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{1}{3}\"></span>",
+    "<span class=\"m\" data-tex=\"x=-1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=\\frac{1}{3}\"></span>.",
+   "id": "czu-tf-2019-v2-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P31",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{4^{2x}}{2^{3x}}=\\dfrac{16}{2^x}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=-2\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{1}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"x=2\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=2\"></span>.",
+   "id": "czu-tf-2019-v3-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P32",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{4^x}{2^{3x}}=\\dfrac{4^{2x}}{16}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=\\frac{4}{5}\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{5}{4}\"></span>",
+    "<span class=\"m\" data-tex=\"x=1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=\\frac{4}{5}\"></span>.",
+   "id": "czu-tf-2019-v4-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P33",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{9^x}{3^{3x}}=\\dfrac{3^x}{81}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=-2\"></span>",
+    "<span class=\"m\" data-tex=\"x=2\"></span>",
+    "<span class=\"m\" data-tex=\"x=0\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=2\"></span>.",
+   "id": "czu-tf-2019-v5-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P34",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{16^x}{4^{2x}}=\\dfrac{64}{4^x}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=2\"></span>",
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=4\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=3\"></span>.",
+   "id": "czu-tf-2019-v6-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P35",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{2^{-x}}{8^x}=\\dfrac{4}{2^{3x}}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=-2\"></span>",
+    "<span class=\"m\" data-tex=\"x=2\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{1}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=-2\"></span>.",
+   "id": "czu-tf-2019-v7-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P36",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{4^{-x}}{8}=\\dfrac{2^{3x}}{4^{2x}}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=-3\"></span>",
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{1}{3}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=-3\"></span>.",
+   "id": "czu-tf-2019-v8-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P37",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{27}{3^{-2x}}=\\dfrac{9^x}{3^{4x}}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=-3\"></span>",
+    "<span class=\"m\" data-tex=\"x=-\\frac{3}{4}\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{3}{4}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=-\\frac{3}{4}\"></span>.",
+   "id": "czu-tf-2019-v9-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P38",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{1}{3^{3x}}=\\dfrac{9^{-2x}}{27}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=-3\"></span>",
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=-1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=-3\"></span>.",
+   "id": "czu-tf-2019-v10-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P39",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{16}{4^x}=\\dfrac{2^{3x}}{8}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=\\frac{7}{5}\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{5}{7}\"></span>",
+    "<span class=\"m\" data-tex=\"x=1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=\\frac{7}{5}\"></span>.",
+   "id": "czu-tf-2019-v11-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P40",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 6)",
+   "body": "Kořenem rovnice <span class=\"m\" data-tex=\"\\dfrac{2^{4x}}{4^{2x}}=\\dfrac{16}{2^x}\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=4\"></span>",
+    "<span class=\"m\" data-tex=\"x=-4\"></span>",
+    "<span class=\"m\" data-tex=\"x=1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde <span class=\"m\" data-tex=\"x=4\"></span>.",
+   "id": "czu-tf-2019-v12-06",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    11
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P41",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 94)",
    "body": "Výraz <span class=\"m\" data-tex=\"\\left(\\frac13\\right)^x\"></span> má trojnásobnou hodnotu oproti výrazu <span class=\"m\" data-tex=\"\\left(\\frac19\\right)^x\"></span>. Které tvrzení o <span class=\"m\" data-tex=\"x\"></span> je pravdivé?",
    "opts": [
@@ -10542,7 +11298,7 @@
    "needs_original": false
   },
   {
-   "q": "P30",
+   "q": "P42",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 101)",
    "body": "Množinou všech řešení nerovnice <span class=\"m\" data-tex=\"3^{|x+2|}\\ge27\"></span> je",
    "opts": [
@@ -10566,7 +11322,7 @@
    "needs_original": false
   },
   {
-   "q": "P31",
+   "q": "P43",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 107)",
    "body": "Množina všech reálných <span class=\"m\" data-tex=\"x\"></span>, pro která platí <span class=\"m\" data-tex=\"\\left(\\dfrac{5}{9}\\right)^{x}&gt;\\left(\\dfrac{9}{5}\\right)^{3}\"></span>, je:",
    "opts": [
@@ -10589,7 +11345,7 @@
    "needs_original": false
   },
   {
-   "q": "P32",
+   "q": "P44",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 159)",
    "body": "Množinou všech řešení nerovnice <span class=\"m\" data-tex=\"2^{|x-2|}&lt;8\"></span> je",
    "opts": [
@@ -10613,7 +11369,7 @@
    "needs_original": false
   },
   {
-   "q": "P33",
+   "q": "P45",
    "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 1, 1 bod)",
    "body": "Množina všech reálných čísel, pro která platí <span class=\"m\" data-tex=\"\\left(\\frac45\\right)^x&gt;\\frac{25}{16}\"></span>, je rovna množině",
    "opts": [
@@ -10635,7 +11391,7 @@
    "needs_original": false
   },
   {
-   "q": "P34",
+   "q": "P46",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 154)",
    "body": "V oboru reálných čísel řešte rovnici <span class=\"m\" data-tex=\"2^{\\log x}\\cdot3^{\\log x}=6\"></span>",
    "opts": [
@@ -10658,7 +11414,7 @@
    "needs_original": false
   },
   {
-   "q": "P35",
+   "q": "P47",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 14 (úloha 5, 10 bodů)",
    "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"2^x+2^{1-x}-3=0\"></span> a proveďte zkoušku.",
    "answer": "<span class=\"m\" data-tex=\"x=0\"></span>, <span class=\"m\" data-tex=\"x=1\"></span>",
@@ -10673,7 +11429,7 @@
    "needs_original": false
   },
   {
-   "q": "P36",
+   "q": "P48",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 1, 1 bod)",
    "body": "Množinou všech řešení nerovnice <span class=\"m\" data-tex=\"2^{|x+3|}&lt;2\"></span> s neznámou <span class=\"m\" data-tex=\"x\\in\\mathbb{R}\"></span> je",
    "opts": [
@@ -10697,7 +11453,7 @@
    "needs_original": false
   },
   {
-   "q": "P37",
+   "q": "P49",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 11, 5 bodů)",
    "body": "Za jaký minimální počet let klesne hodnota předmětu na méně než desetinu původní ceny, pokud ročně odepisujeme <span class=\"m\" data-tex=\"18\\%\"></span> ceny předmětu z předchozího roku?",
    "opts": [
@@ -10720,7 +11476,7 @@
    "needs_original": false
   },
   {
-   "q": "P38",
+   "q": "P50",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 11, 5 bodů)",
    "body": "Za jaký minimální počet let klesne hodnota předmětu na méně než pětinu původní ceny, pokud ročně odepisujeme <span class=\"m\" data-tex=\"22\\%\"></span> ceny předmětu z předchozího roku?",
    "opts": [
@@ -10743,7 +11499,7 @@
    "needs_original": false
   },
   {
-   "q": "P39",
+   "q": "P51",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 11, 5 bodů)",
    "body": "Za jaký minimální počet let klesne hodnota předmětu na méně než desetinu původní ceny, pokud ročně odepisujeme <span class=\"m\" data-tex=\"15\\%\"></span> ceny předmětu z předchozího roku?",
    "opts": [
@@ -10766,7 +11522,7 @@
    "needs_original": false
   },
   {
-   "q": "P40",
+   "q": "P52",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 11, 5 bodů)",
    "body": "Za jaký minimální počet let klesne hodnota předmětu na méně než dvacetinu původní ceny, pokud ročně odepisujeme <span class=\"m\" data-tex=\"20\\ \\%\"></span> ceny předmětu z předchozího roku?",
    "opts": [
@@ -10789,7 +11545,7 @@
    "needs_original": false
   },
   {
-   "q": "P41",
+   "q": "P53",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 18, 7 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2^{x-2}+4^{x-\\frac12}=9\"></span> platí",
    "opts": [
@@ -10812,7 +11568,7 @@
    "needs_original": false
   },
   {
-   "q": "P42",
+   "q": "P54",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 18, 7 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"3^{2x+1}-2\\cdot3^{x+2}=36+5\\cdot3^x\"></span> platí",
    "opts": [
@@ -10835,7 +11591,7 @@
    "needs_original": false
   },
   {
-   "q": "P43",
+   "q": "P55",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 18, 7 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"2^{x-2}+4^{x-\\frac12}=9\"></span> platí",
    "opts": [
@@ -10858,7 +11614,7 @@
    "needs_original": false
   },
   {
-   "q": "P44",
+   "q": "P56",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 18, 7 bodů)",
    "body": "Pro řešení rovnice <span class=\"m\" data-tex=\"3^{2x+1}-2\\cdot3^{x+2}=36+5\\cdot3^x\"></span> platí",
    "opts": [
@@ -10881,7 +11637,7 @@
    "needs_original": false
   },
   {
-   "q": "P45",
+   "q": "P57",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 7, 5 bodů)",
    "body": "Rozhodněte, které tvrzení o řešeních rovnice <span class=\"m\" data-tex=\"9^{x-\\frac12}+9^{\\frac12-x}=\\dfrac{10}{3}\"></span> je pravdivé.",
    "opts": [
@@ -10904,7 +11660,7 @@
    "needs_original": false
   },
   {
-   "q": "P46",
+   "q": "P58",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2023 (příklad 9, 7 bodů)",
    "body": "Nalezněte řešení rovnice <span class=\"m\" data-tex=\"3^x+5\\cdot4^x=2\\cdot4^{x+1}-3^{x+1}\"></span> a rozhodněte, které tvrzení je pravdivé.",
    "opts": [
@@ -10927,7 +11683,7 @@
    "needs_original": false
   },
   {
-   "q": "P47",
+   "q": "P59",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2026 (příklad 3, 3 body)",
    "body": "Pro řešení nerovnice <span class=\"m\" data-tex=\"\\left(\\dfrac13\\right)^{x^2}\\le3^{-x-6}\"></span> platí",
    "opts": [
@@ -10953,7 +11709,7 @@
    ]
   },
   {
-   "q": "P48",
+   "q": "P60",
    "src": "FS ČVUT, přijímací zkouška z matematiky 2026, verze CZ–6 (příklad 5, 2 body)",
    "body": "V oboru <span class=\"m\" data-tex=\"\\mathbb R\"></span> řešte rovnici <span class=\"m\" data-tex=\"4^{2x}\\cdot8^{2x+3}=\\sqrt8\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"x=-\\dfrac34\"></span>",
@@ -10969,7 +11725,7 @@
    "needs_original": false
   },
   {
-   "q": "P49",
+   "q": "P61",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 7 (úloha 14, 1 bod)",
    "body": "Ve vzorku radioaktivní látky se každých dvacet minut rozpadne třetina jader radia. Z původního počtu jader radia zůstane za jednu hodinu",
    "opts": [
@@ -10993,7 +11749,7 @@
    "needs_original": false
   },
   {
-   "q": "P50",
+   "q": "P62",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 3 (úloha 20, 2 body)",
    "body": "Je-li <span class=\"m\" data-tex=\"3^3\\cdot27^{2x-3}=81^{3x-3}\"></span>, pak <span class=\"m\" data-tex=\"x=\"></span>",
    "opts": [
@@ -11019,7 +11775,7 @@
    ]
   },
   {
-   "q": "P51",
+   "q": "P63",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 10 (úloha 20, 2 body)",
    "body": "Je-li <span class=\"m\" data-tex=\"4^{\\sqrt{x+1}}=64\\cdot2^{\\sqrt{x+1}}\"></span>, pak <span class=\"m\" data-tex=\"x=\"></span>",
    "opts": [
@@ -11046,7 +11802,7 @@
    ]
   },
   {
-   "q": "P52",
+   "q": "P64",
    "src": "FSI VUT, přijímací test MATEMATIKA 2017, zadání č. 10 (úloha 14, 1 bod)",
    "body": "Ve vzorku radioaktivní látky se každých dvacet minut rozpadne třetina jader radia. Z původního počtu jader radia zůstane za jednu hodinu",
    "opts": [
@@ -11070,7 +11826,7 @@
    "needs_original": false
   },
   {
-   "q": "P53",
+   "q": "P65",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 32)",
    "body": "Řešte rovnici <span class=\"m\" data-tex=\"4^x-6\\cdot2^x+8=0\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"x\\in\\{1;2\\}\"></span>",
@@ -11085,7 +11841,7 @@
    "needs_original": false
   },
   {
-   "q": "P54",
+   "q": "P66",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 70)",
    "body": "Rovnice <span class=\"m\" data-tex=\"\\log_2(2^x-7)=3-x\"></span> má řešení:",
    "opts": [
@@ -11109,7 +11865,7 @@
    "needs_original": false
   },
   {
-   "q": "P55",
+   "q": "P67",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 78)",
    "body": "Určete všechna záporná řešení rovnice <span class=\"m\" data-tex=\"5^{2x+1}-26\\cdot5^x+5=0\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"x=-1\"></span>",
@@ -11124,7 +11880,7 @@
    "needs_original": false
   },
   {
-   "q": "P56",
+   "q": "P68",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 115)",
    "body": "Rovnice <span class=\"m\" data-tex=\"3^{x^2}+27\\cdot3^{-x^2}=12\"></span>",
    "opts": [
@@ -11147,7 +11903,7 @@
    "needs_original": false
   },
   {
-   "q": "P57",
+   "q": "P69",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 11)",
    "body": "Kolik kořenů má rovnice <span class=\"m\" data-tex=\"x^{x^2-5x+6}=1\"></span> v oboru kladných reálných čísel?",
    "opts": [
@@ -11170,7 +11926,7 @@
    "needs_original": false
   },
   {
-   "q": "P58",
+   "q": "P70",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 178)",
    "body": "Rovnici <span class=\"m\" data-tex=\"9^{\\frac{x+1}x}-4\\cdot3^{\\frac{x+1}x}+3=0\"></span>:",
    "opts": [
@@ -11675,6 +12431,258 @@
   },
   {
    "q": "P21",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{2} 16=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=\\frac{1}{4}\"></span>",
+    "<span class=\"m\" data-tex=\"x=8\"></span>",
+    "<span class=\"m\" data-tex=\"x=4\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{2} 16=4\"></span>, protože <span class=\"m\" data-tex=\"2^{4}=16\"></span>.",
+   "id": "czu-tf-2019-v1-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P22",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{5} 25=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=2\"></span>",
+    "<span class=\"m\" data-tex=\"x=5\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{1}{5}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{5} 25=2\"></span>, protože <span class=\"m\" data-tex=\"5^{2}=25\"></span>.",
+   "id": "czu-tf-2019-v2-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P23",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{2} 8=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=4\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{1}{4}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{2} 8=3\"></span>, protože <span class=\"m\" data-tex=\"2^{3}=8\"></span>.",
+   "id": "czu-tf-2019-v3-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P24",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{4} 1=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=0\"></span>",
+    "<span class=\"m\" data-tex=\"x=4\"></span>",
+    "<span class=\"m\" data-tex=\"x=1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{4} 1=0\"></span>, protože <span class=\"m\" data-tex=\"4^{0}=1\"></span>.",
+   "id": "czu-tf-2019-v4-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P25",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{6} 36=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=6\"></span>",
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=2\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{6} 36=2\"></span>, protože <span class=\"m\" data-tex=\"6^{2}=36\"></span>.",
+   "id": "czu-tf-2019-v5-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P26",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{3} 27=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=9\"></span>",
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=-3\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{3} 27=3\"></span>, protože <span class=\"m\" data-tex=\"3^{3}=27\"></span>.",
+   "id": "czu-tf-2019-v6-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P27",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{4} 64=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=12\"></span>",
+    "<span class=\"m\" data-tex=\"x=16\"></span>",
+    "<span class=\"m\" data-tex=\"x=3\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{4} 64=3\"></span>, protože <span class=\"m\" data-tex=\"4^{3}=64\"></span>.",
+   "id": "czu-tf-2019-v7-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P28",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{3} 81=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=9\"></span>",
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=4\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{3} 81=4\"></span>, protože <span class=\"m\" data-tex=\"3^{4}=81\"></span>.",
+   "id": "czu-tf-2019-v8-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P29",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{10} 100=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=100\"></span>",
+    "<span class=\"m\" data-tex=\"x=10\"></span>",
+    "<span class=\"m\" data-tex=\"x=2\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{10} 100=2\"></span>, protože <span class=\"m\" data-tex=\"10^{2}=100\"></span>.",
+   "id": "czu-tf-2019-v9-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P30",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{\\frac{1}{3}} 3=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=-1\"></span>",
+    "<span class=\"m\" data-tex=\"x=3\"></span>",
+    "<span class=\"m\" data-tex=\"x=1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{\\frac{1}{3}} 3=-1\"></span>, protože <span class=\"m\" data-tex=\"\\left(\\frac{1}{3}\\right)^{-1}=3\"></span>.",
+   "id": "czu-tf-2019-v10-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P31",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{\\sqrt{2}} 2=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=2\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\frac{1}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"x=\\sqrt{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{\\sqrt{2}} 2=2\"></span>, protože <span class=\"m\" data-tex=\"\\left(\\sqrt{2}\\right)^{2}=2\"></span>.",
+   "id": "czu-tf-2019-v11-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P32",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 3)",
+   "body": "Vypočtěte <span class=\"m\" data-tex=\"x\"></span>: <span class=\"m\" data-tex=\"\\log_{5} 1=x\"></span>",
+   "opts": [
+    "<span class=\"m\" data-tex=\"x=0\"></span>",
+    "<span class=\"m\" data-tex=\"x=5\"></span>",
+    "<span class=\"m\" data-tex=\"x=1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "<span class=\"m\" data-tex=\"\\log_{5} 1=0\"></span>, protože <span class=\"m\" data-tex=\"5^{0}=1\"></span>.",
+   "id": "czu-tf-2019-v12-03",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    12
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P33",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 29)",
    "body": "Maximální definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\log(x^2-7x)\"></span> je:",
    "opts": [
@@ -11698,7 +12706,7 @@
    "needs_original": false
   },
   {
-   "q": "P22",
+   "q": "P34",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 49)",
    "body": "Jaký je vztah hodnot <span class=\"m\" data-tex=\"\\log_{\\frac13}(x+1)\"></span> a <span class=\"m\" data-tex=\"\\log_3(x+1)\"></span> pro <span class=\"m\" data-tex=\"x=2\"></span>?",
    "opts": [
@@ -11721,7 +12729,7 @@
    "needs_original": false
   },
   {
-   "q": "P23",
+   "q": "P35",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 69)",
    "body": "Pokud pro kladné <span class=\"m\" data-tex=\"x\"></span> platí <span class=\"m\" data-tex=\"\\log x=4\"></span>, pak <span class=\"m\" data-tex=\"\\log\\sqrt{\\dfrac1x}\"></span> je rovno:",
    "opts": [
@@ -11744,7 +12752,7 @@
    "needs_original": false
   },
   {
-   "q": "P24",
+   "q": "P36",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 78)",
    "body": "Číslo <span class=\"m\" data-tex=\"\\log_{\\frac{1}{3}}9\"></span> je rovno číslu:",
    "opts": [
@@ -11767,7 +12775,7 @@
    "needs_original": false
   },
   {
-   "q": "P25",
+   "q": "P37",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 90)",
    "body": "Které nejmenší přirozené číslo je větší než hodnota výrazu <span class=\"m\" data-tex=\"\\log_48+\\log_927\"></span>?",
    "opts": [
@@ -11789,7 +12797,7 @@
    "needs_original": false
   },
   {
-   "q": "P26",
+   "q": "P38",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 119)",
    "body": "Určete definiční obor funkce <span class=\"m\" data-tex=\"f:\\ y=\\log_2\\dfrac{x+3}{2-x}\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"(-3;2)\"></span>",
@@ -11805,7 +12813,7 @@
    "needs_original": false
   },
   {
-   "q": "P27",
+   "q": "P39",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 140)",
    "body": "Definičním oborem funkce <span class=\"m\" data-tex=\"f:\\ y=\\log(x^2-4x+4)\"></span> je množina",
    "opts": [
@@ -11829,7 +12837,7 @@
    "needs_original": false
   },
   {
-   "q": "P28",
+   "q": "P40",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 144)",
    "body": "Funkce <span class=\"m\" data-tex=\"y=\\log_{\\frac12}x\"></span> je:",
    "opts": [
@@ -11851,7 +12859,7 @@
    "needs_original": false
   },
   {
-   "q": "P29",
+   "q": "P41",
    "src": "FAST VŠB, přijímací zkoušky, varianta 1 (úloha 4)",
    "body": "Určete definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\log\\frac{x-5}{x+1}+\\sqrt[3]{x}\"></span>.",
    "opts": [
@@ -11874,7 +12882,7 @@
    "needs_original": false
   },
   {
-   "q": "P30",
+   "q": "P42",
    "src": "FAST VŠB, přijímací zkoušky, varianta 2 (úloha 4)",
    "body": "Určete definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\log_2(2-x-x^2)+\\sqrt[3]{x^2}\"></span>.",
    "opts": [
@@ -11897,7 +12905,7 @@
    "needs_original": false
   },
   {
-   "q": "P31",
+   "q": "P43",
    "src": "FBI VŠB, přijímací zkouška z matematiky AR 2017/18, PZ 2 (úloha 5, 10 bodů)",
    "body": "Vyřešte rovnici <span class=\"m\" data-tex=\"\\log_a\\dfrac14=-\\dfrac23\"></span> a proveďte zkoušku.",
    "answer": "<span class=\"m\" data-tex=\"a=8\"></span>",
@@ -11913,7 +12921,7 @@
    "needs_original": false
   },
   {
-   "q": "P32",
+   "q": "P44",
    "src": "FEL ČVUT, vzorový přijímací test VZOR01 (příklad 6, 1 bod)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\log_2y=3\\log_2\\dfrac{x-2}{2}-2\\log_2\\dfrac{x^2-4}{2}\"></span>, pak číslo <span class=\"m\" data-tex=\"y\"></span> je rovno",
    "opts": [
@@ -11936,7 +12944,7 @@
    "needs_original": false
   },
   {
-   "q": "P33",
+   "q": "P45",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 1 (příklad 15, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\log_{\\frac12}x\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-2,2\\rangle\"></span> právě pro",
    "opts": [
@@ -11959,7 +12967,7 @@
    "needs_original": false
   },
   {
-   "q": "P34",
+   "q": "P46",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 2 (příklad 15, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\log_{\\frac13}x\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-2,2\\rangle\"></span> právě pro",
    "opts": [
@@ -11982,7 +12990,7 @@
    "needs_original": false
   },
   {
-   "q": "P35",
+   "q": "P47",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 3 (příklad 15, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\log_{\\frac12}x\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-3,0\\rangle\"></span> právě pro",
    "opts": [
@@ -12005,7 +13013,7 @@
    "needs_original": false
   },
   {
-   "q": "P36",
+   "q": "P48",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2015, verze 4 (příklad 15, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\log_{\\frac12}x\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-2,1\\rangle\"></span> právě pro",
    "opts": [
@@ -12028,7 +13036,7 @@
    "needs_original": false
   },
   {
-   "q": "P37",
+   "q": "P49",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 9, 5 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\sqrt{\\log_5x+1}\"></span> je pravdivé?",
    "opts": [
@@ -12051,7 +13059,7 @@
    "needs_original": false
   },
   {
-   "q": "P38",
+   "q": "P50",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2016 (příklad 10, 5 bodů)",
    "body": "Jestliže <span class=\"m\" data-tex=\"y=\\ln(2x+1)\"></span>, pak <span class=\"m\" data-tex=\"y\\in\\langle-1,1\\rangle\"></span> právě pro",
    "opts": [
@@ -12074,7 +13082,7 @@
    "needs_original": false
   },
   {
-   "q": "P39",
+   "q": "P51",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2018 (příklad 10, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2+8x+15)}{\\sqrt{2-x}}\"></span> je pravdivé?",
    "opts": [
@@ -12098,7 +13106,7 @@
    "needs_original": false
   },
   {
-   "q": "P40",
+   "q": "P52",
    "src": "FIT ČVUT, vzorová přijímací zkouška pro rok 2027 (příklad 12, 7 bodů)",
    "body": "Které z následujících tvrzení o definičním oboru funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\ln(x^2+8x+16)}{\\sqrt{x+5}}\"></span> je pravdivé?",
    "opts": [
@@ -12121,7 +13129,7 @@
    "needs_original": false
   },
   {
-   "q": "P41",
+   "q": "P53",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 7)",
    "body": "Určete definiční obor funkce <span class=\"m\" data-tex=\"f:\\ y=\\sqrt{\\log_{\\frac12}(x-1)}\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"(1;2\\rangle\"></span>",
@@ -12137,7 +13145,7 @@
    "needs_original": false
   },
   {
-   "q": "P42",
+   "q": "P54",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 24)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\log_3y=3\\log_3(x+1)-\\log_3(x-1)-1\"></span> (pro <span class=\"m\" data-tex=\"x&gt;1\"></span>), pak <span class=\"m\" data-tex=\"y\"></span> je rovno",
    "opts": [
@@ -12160,7 +13168,7 @@
    "needs_original": false
   },
   {
-   "q": "P43",
+   "q": "P55",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 37)",
    "body": "Určete definiční obor funkce <span class=\"m\" data-tex=\"f:\\ y=\\log(\\sin x)\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"\\bigcup_{k\\in\\mathbb Z}(2k\\pi;\\pi+2k\\pi)\"></span>",
@@ -12176,7 +13184,7 @@
    "needs_original": false
   },
   {
-   "q": "P44",
+   "q": "P56",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 79)",
    "body": "Graf které funkce prochází body <span class=\"m\" data-tex=\"[3;0]\"></span> a <span class=\"m\" data-tex=\"[5;1]\"></span>?",
    "opts": [
@@ -12198,7 +13206,7 @@
    "needs_original": false
   },
   {
-   "q": "P45",
+   "q": "P57",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 97)",
    "body": "Kterému výrazu se pro všechna kladná <span class=\"m\" data-tex=\"x\"></span> rovná <span class=\"m\" data-tex=\"\\log_3x+\\log_9x\"></span>?",
    "opts": [
@@ -12220,7 +13228,7 @@
    "needs_original": false
   },
   {
-   "q": "P46",
+   "q": "P58",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 99)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\log_3y=2\\log_3x-\\frac12\\log_3(x+2)-1\"></span> (pro <span class=\"m\" data-tex=\"x&gt;0\"></span>), pak <span class=\"m\" data-tex=\"y\"></span> je rovno",
    "opts": [
@@ -13697,6 +14705,258 @@
   },
   {
    "q": "P22",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\cos(-\\frac{\\pi}{6})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-\\frac{1}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{3}}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Z jednotkové kružnice, kosinus je sudá funkce: <span class=\"m\" data-tex=\"\\cos(-\\frac{\\pi}{6})=\\frac{\\sqrt{3}}{2}\"></span>.",
+   "id": "czu-tf-2019-v1-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P23",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\sin(\\frac{\\pi}{4})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{2}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt{2}}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Z jednotkové kružnice: <span class=\"m\" data-tex=\"\\sin(\\frac{\\pi}{4})=\\frac{\\sqrt{2}}{2}\"></span>.",
+   "id": "czu-tf-2019-v2-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P24",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\cos(\\frac{3\\pi}{4})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{2}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt{2}}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Z jednotkové kružnice: <span class=\"m\" data-tex=\"\\cos(\\frac{3\\pi}{4})=-\\frac{\\sqrt{2}}{2}\"></span>.",
+   "id": "czu-tf-2019-v3-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P25",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\sin(\\frac{5\\pi}{6})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{2}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{1}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Z jednotkové kružnice: <span class=\"m\" data-tex=\"\\sin(\\frac{5\\pi}{6})=\\frac{1}{2}\"></span>.",
+   "id": "czu-tf-2019-v4-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P26",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\cos(\\frac{5\\pi}{6})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{1}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Z jednotkové kružnice: <span class=\"m\" data-tex=\"\\cos(\\frac{5\\pi}{6})=-\\frac{\\sqrt{3}}{2}\"></span>.",
+   "id": "czu-tf-2019-v5-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P27",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\sin(\\frac{2\\pi}{3})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{1}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt{3}}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Z jednotkové kružnice: <span class=\"m\" data-tex=\"\\sin(\\frac{2\\pi}{3})=\\frac{\\sqrt{3}}{2}\"></span>.",
+   "id": "czu-tf-2019-v6-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P28",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\cos(-\\frac{\\pi}{3})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"\\frac{1}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{1}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Z jednotkové kružnice, kosinus je sudá funkce: <span class=\"m\" data-tex=\"\\cos(-\\frac{\\pi}{3})=\\frac{1}{2}\"></span>.",
+   "id": "czu-tf-2019-v7-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P29",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\sin(-\\frac{\\pi}{2})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"0\"></span>",
+    "<span class=\"m\" data-tex=\"-1\"></span>",
+    "<span class=\"m\" data-tex=\"1\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Z jednotkové kružnice, sinus je lichá funkce: <span class=\"m\" data-tex=\"\\sin(-\\frac{\\pi}{2})=-1\"></span>.",
+   "id": "czu-tf-2019-v8-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P30",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\cos(2\\pi)\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"-1\"></span>",
+    "<span class=\"m\" data-tex=\"2\"></span>"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Z jednotkové kružnice: <span class=\"m\" data-tex=\"\\cos(2\\pi)=1\"></span>.",
+   "id": "czu-tf-2019-v9-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P31",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\sin(-\\pi)\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"1\"></span>",
+    "<span class=\"m\" data-tex=\"-1\"></span>",
+    "<span class=\"m\" data-tex=\"0\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Z jednotkové kružnice, sinus je lichá funkce: <span class=\"m\" data-tex=\"\\sin(-\\pi)=0\"></span>.",
+   "id": "czu-tf-2019-v10-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P32",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\cos(\\frac{2\\pi}{3})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{1}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{1}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Z jednotkové kružnice: <span class=\"m\" data-tex=\"\\cos(\\frac{2\\pi}{3})=-\\frac{1}{2}\"></span>.",
+   "id": "czu-tf-2019-v11-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P33",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 4)",
+   "body": "Hodnota <span class=\"m\" data-tex=\"\\sin(-\\frac{2\\pi}{3})\"></span> je",
+   "opts": [
+    "<span class=\"m\" data-tex=\"\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{\\sqrt{3}}{2}\"></span>",
+    "<span class=\"m\" data-tex=\"-\\frac{1}{2}\"></span>"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Z jednotkové kružnice, sinus je lichá funkce: <span class=\"m\" data-tex=\"\\sin(-\\frac{2\\pi}{3})=-\\frac{\\sqrt{3}}{2}\"></span>.",
+   "id": "czu-tf-2019-v12-04",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    14
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P34",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 28)",
    "body": "Definičním oborem funkce <span class=\"m\" data-tex=\"f:\\ y=\\dfrac{3-\\cos x}{1-\\sin x}\"></span> je",
    "opts": [
@@ -13719,7 +14979,7 @@
    "needs_original": false
   },
   {
-   "q": "P23",
+   "q": "P35",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 30)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\sin\\alpha=\\frac{\\sqrt3}2\"></span> a <span class=\"m\" data-tex=\"\\alpha\\in\\left(\\frac\\pi2,\\pi\\right)\"></span>, pak",
    "opts": [
@@ -13742,7 +15002,7 @@
    "needs_original": false
   },
   {
-   "q": "P24",
+   "q": "P36",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 35)",
    "body": "Je-li <span class=\"m\" data-tex=\"\\sin x=- \\frac{\\sqrt{6}}{3}\"></span>, pak výraz <span class=\"m\" data-tex=\"\\sin^2x-\\cos^2x\"></span> je roven číslu:",
    "opts": [
@@ -13765,7 +15025,7 @@
    "needs_original": false
   },
   {
-   "q": "P25",
+   "q": "P37",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 50)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\sin\\left(\\alpha-\\frac\\pi2\\right)=1\"></span>, pak",
    "opts": [
@@ -13788,7 +15048,7 @@
    "needs_original": false
   },
   {
-   "q": "P26",
+   "q": "P38",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 55)",
    "body": "Jaká je nejmenší perioda funkce <span class=\"m\" data-tex=\"y=3\\sin\\left(2x-\\frac\\pi3\\right)\"></span>?",
    "opts": [
@@ -13811,7 +15071,7 @@
    "needs_original": false
   },
   {
-   "q": "P27",
+   "q": "P39",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 87)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\cos2\\alpha=1\"></span>, pak",
    "opts": [
@@ -13834,7 +15094,7 @@
    "needs_original": false
   },
   {
-   "q": "P28",
+   "q": "P40",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 128)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\sin(\\alpha+\\pi)=1\"></span>, pak",
    "opts": [
@@ -13857,7 +15117,7 @@
    "needs_original": false
   },
   {
-   "q": "P29",
+   "q": "P41",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 132)",
    "body": "Určete <span class=\"m\" data-tex=\"\\sin\\alpha\"></span> a <span class=\"m\" data-tex=\"\\operatorname{tg}\\alpha\"></span>, jestliže <span class=\"m\" data-tex=\"\\cos\\alpha=-\\frac45\"></span> a <span class=\"m\" data-tex=\"\\alpha\\in\\left(\\pi;\\frac{3\\pi}2\\right)\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"\\sin\\alpha=-\\frac35\"></span>, <span class=\"m\" data-tex=\"\\operatorname{tg}\\alpha=\\frac34\"></span>",
@@ -13872,7 +15132,7 @@
    "needs_original": false
   },
   {
-   "q": "P30",
+   "q": "P42",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 136)",
    "body": "Maximální definiční obor funkce <span class=\"m\" data-tex=\"f(x)=\\dfrac{\\cos2x}{\\sin x}\"></span> je",
    "opts": [
@@ -13895,7 +15155,7 @@
    "needs_original": false
   },
   {
-   "q": "P31",
+   "q": "P43",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 155)",
    "body": "Jestliže <span class=\"m\" data-tex=\"\\cos2\\alpha=-1\"></span>, pak",
    "opts": [
@@ -13918,7 +15178,7 @@
    "needs_original": false
   },
   {
-   "q": "P32",
+   "q": "P44",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 209)",
    "body": "Definiční obor funkce <span class=\"m\" data-tex=\"y=\\operatorname{tg}x\\cdot\\cos2x\"></span> je:",
    "opts": [
@@ -13940,7 +15200,7 @@
    "needs_original": false
   },
   {
-   "q": "P33",
+   "q": "P45",
    "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 4, 1 bod)",
    "body": "Je-li <span class=\"m\" data-tex=\"\\cos\\alpha=1\"></span>, pak <span class=\"m\" data-tex=\"\\cos2\\alpha\"></span> se rovná",
    "opts": [
@@ -13962,7 +15222,7 @@
    "needs_original": false
   },
   {
-   "q": "P34",
+   "q": "P46",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 131)",
    "body": "Pro celá čísla <span class=\"m\" data-tex=\"k\"></span> určete definiční obor funkce <span class=\"m\" data-tex=\"f:\\ y=\\sqrt{\\cos x}\"></span>",
    "opts": [
@@ -13984,7 +15244,7 @@
    "needs_original": false
   },
   {
-   "q": "P35",
+   "q": "P47",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 132)",
    "body": "Pro celá čísla <span class=\"m\" data-tex=\"k\"></span> určete definiční obor funkce <span class=\"m\" data-tex=\"f:\\ y=\\sqrt{\\operatorname{tg}x}\"></span>",
    "opts": [
@@ -14006,7 +15266,7 @@
    "needs_original": false
   },
   {
-   "q": "P36",
+   "q": "P48",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 136)",
    "body": "Kolik průsečíků má graf funkce <span class=\"m\" data-tex=\"f:\\ y=3\\operatorname{tg}x\"></span> s přímkou <span class=\"m\" data-tex=\"y=2\"></span> na intervalu <span class=\"m\" data-tex=\"(0;\\pi)\"></span> ?",
    "opts": [
@@ -14029,7 +15289,7 @@
    "needs_original": false
   },
   {
-   "q": "P37",
+   "q": "P49",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 137)",
    "body": "Kolik průsečíků má graf funkce <span class=\"m\" data-tex=\"f:\\ y=\\cos x\"></span> s přímkou <span class=\"m\" data-tex=\"y=-x\"></span>?",
    "opts": [
@@ -14052,7 +15312,7 @@
    "needs_original": false
   },
   {
-   "q": "P38",
+   "q": "P50",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 138)",
    "body": "Kolik průsečíků má graf funkce <span class=\"m\" data-tex=\"f:\\ y=\\sin(x/2)\"></span> s přímkou <span class=\"m\" data-tex=\"y=-x\"></span>?",
    "opts": [
@@ -14075,7 +15335,7 @@
    "needs_original": false
   },
   {
-   "q": "P39",
+   "q": "P51",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 141)",
    "body": "Zjednodušte pro přípustná <span class=\"m\" data-tex=\"x\"></span> daný výraz <span class=\"m\" data-tex=\"\\cos2x+\\sin2x\\cdot\\operatorname{tg}2x=\"></span>",
    "opts": [
@@ -14097,7 +15357,7 @@
    "needs_original": false
   },
   {
-   "q": "P40",
+   "q": "P52",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 142)",
    "body": "Zjednodušte pro přípustná <span class=\"m\" data-tex=\"x\"></span> daný výraz <span class=\"m\" data-tex=\"\\dfrac{\\cos x\\cdot\\sin2x}{1+\\cos2x}=\"></span>",
    "opts": [
@@ -14119,7 +15379,7 @@
    "needs_original": false
   },
   {
-   "q": "P41",
+   "q": "P53",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 144)",
    "body": "Zjednodušte pro přípustná <span class=\"m\" data-tex=\"x\"></span> daný výraz <span class=\"m\" data-tex=\"\\dfrac{1+\\cos2x}{1-\\cos2x}=\"></span>",
    "opts": [
@@ -14141,7 +15401,7 @@
    "needs_original": false
   },
   {
-   "q": "P42",
+   "q": "P54",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 148)",
    "body": "Zjednodušte <span class=\"m\" data-tex=\"\\operatorname{tg}(45^\\circ+180^\\circ)\\cdot[\\cos(30^\\circ-x)-\\cos(30^\\circ+x)]=\"></span>",
    "opts": [
@@ -14163,7 +15423,7 @@
    "needs_original": false
   },
   {
-   "q": "P43",
+   "q": "P55",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 149)",
    "body": "Zjednodušte: <span class=\"m\" data-tex=\"\\operatorname{tg}(45^\\circ-180^\\circ)\\cdot[\\sin(60^\\circ-x)-\\sin(60^\\circ+x)]=\"></span>",
    "opts": [
@@ -14185,7 +15445,7 @@
    "needs_original": false
   },
   {
-   "q": "P44",
+   "q": "P56",
    "src": "FAST VUT, kombinovaný test z matematiky a fyziky (otázka 150)",
    "body": "Zjednodušte: <span class=\"m\" data-tex=\"\\cos(45^\\circ+x)+\\cos(45^\\circ-x)=\"></span>",
    "opts": [
@@ -14207,7 +15467,7 @@
    "needs_original": false
   },
   {
-   "q": "P45",
+   "q": "P57",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 9, 1 bod)",
    "body": "<span class=\"m\" data-tex=\"-1+\\operatorname{tg}^2x=\"></span>",
    "opts": [
@@ -14233,7 +15493,7 @@
    ]
   },
   {
-   "q": "P46",
+   "q": "P58",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 8 (úloha 9, 1 bod)",
    "body": "<span class=\"m\" data-tex=\"1-\\operatorname{tg}^2x=\"></span>",
    "opts": [
@@ -14259,7 +15519,7 @@
    ]
   },
   {
-   "q": "P47",
+   "q": "P59",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 2 (úloha 19, 2 body)",
    "body": "Je-li <span class=\"m\" data-tex=\"\\cos x=0{,}1\"></span>, potom <span class=\"m\" data-tex=\"\\sin x=\"></span>",
    "opts": [
@@ -14285,7 +15545,7 @@
    ]
   },
   {
-   "q": "P48",
+   "q": "P60",
    "src": "FSI VUT, přijímací test MATEMATIKA 2014, zadání č. 4 (úloha 19, 2 body)",
    "body": "Je-li <span class=\"m\" data-tex=\"\\sin x=0{,}1\"></span>, potom <span class=\"m\" data-tex=\"\\cos x=\"></span>",
    "opts": [
@@ -14311,7 +15571,7 @@
    ]
   },
   {
-   "q": "P49",
+   "q": "P61",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 26)",
    "body": "Nejmenší perioda funkce <span class=\"m\" data-tex=\"f:\\ y=\\sin\\frac x2+\\cos\\frac x3\"></span> je:",
    "opts": [
@@ -14333,7 +15593,7 @@
    "needs_original": false
   },
   {
-   "q": "P50",
+   "q": "P62",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 37)",
    "body": "Pro jaké <span class=\"m\" data-tex=\"x\"></span> z intervalu <span class=\"m\" data-tex=\"\\langle0;\\pi\\rangle\"></span> se protínají grafy funkcí <span class=\"m\" data-tex=\"f:\\ y=\\operatorname{tg}x\"></span> a <span class=\"m\" data-tex=\"g:\\ y=\\operatorname{cotg}\\left(x-\\frac\\pi2\\right)\"></span>?",
    "opts": [
@@ -14356,7 +15616,7 @@
    "needs_original": false
   },
   {
-   "q": "P51",
+   "q": "P63",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 42)",
    "body": "Uvažujme tvrzení: funkce <span class=\"m\" data-tex=\"y=\\cos x-1\"></span> je sudá; funkce <span class=\"m\" data-tex=\"y=\\sin x\\cdot\\cos x\"></span> je lichá; funkce <span class=\"m\" data-tex=\"y=\\sin^2x+\\cos^2x\"></span> je konstantní; graf funkce <span class=\"m\" data-tex=\"y=2\\cos x\"></span> protíná osu <span class=\"m\" data-tex=\"y\"></span> v bodě <span class=\"m\" data-tex=\"[0;0]\"></span>. Kolik z nich je pravdivých?",
    "opts": [
@@ -14378,7 +15638,7 @@
    "needs_original": false
   },
   {
-   "q": "P52",
+   "q": "P64",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 46)",
    "body": "Výraz <span class=\"m\" data-tex=\"\\operatorname{cotg}x\\cdot\\dfrac{1-\\cos^2x}{\\sin^2x-1}\"></span> je roven",
    "opts": [
@@ -14401,7 +15661,7 @@
    "needs_original": false
   },
   {
-   "q": "P53",
+   "q": "P65",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 103)",
    "body": "Určete <span class=\"m\" data-tex=\"\\cos\\alpha\"></span> a <span class=\"m\" data-tex=\"\\operatorname{cotg}\\alpha\"></span>, jestliže <span class=\"m\" data-tex=\"\\operatorname{tg}\\alpha=-\\frac{5}{12}\"></span> a <span class=\"m\" data-tex=\"\\alpha\\in\\left(\\frac{3\\pi}2;2\\pi\\right)\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"\\cos\\alpha=\\frac{12}{13}\"></span>, <span class=\"m\" data-tex=\"\\operatorname{cotg}\\alpha=-\\frac{12}5\"></span>",
@@ -14416,7 +15676,7 @@
    "needs_original": false
   },
   {
-   "q": "P54",
+   "q": "P66",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 132)",
    "body": "Jsou dány funkce <span class=\"m\" data-tex=\"f_1:\\ y=\\cos x\"></span>, <span class=\"m\" data-tex=\"f_2:\\ y=\\sin3x\"></span>, <span class=\"m\" data-tex=\"f_3:\\ y=\\sin\\frac x2\"></span>, <span class=\"m\" data-tex=\"f_4:\\ y=\\cos2x\"></span>. Na intervalu <span class=\"m\" data-tex=\"\\left(0,\\frac\\pi3\\right)\"></span> nabývá své největší hodnoty (globálního maxima) pouze:",
    "opts": [
@@ -14438,7 +15698,7 @@
    "needs_original": false
   },
   {
-   "q": "P55",
+   "q": "P67",
    "src": "Vlastní úloha ve stylu NSZ Matematika (č. 208)",
    "body": "Jaký je nejdelší interval <span class=\"m\" data-tex=\"A\\subseteq\\langle0;2\\pi\\rangle\"></span>, na kterém jsou <span class=\"m\" data-tex=\"\\sin x\"></span> i <span class=\"m\" data-tex=\"\\cos x\"></span> záporné a zároveň <span class=\"m\" data-tex=\"\\operatorname{tg}x&gt;1\"></span>?",
    "opts": [
@@ -21605,6 +22865,270 @@
   },
   {
    "q": "P10",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"2x+5y-1=0\"></span> a <span class=\"m\" data-tex=\"-4x-3y+9=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[-1,3]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[3,-1]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Řešíme soustavu obou rovnic (sčítací metodou): <span class=\"m\" data-tex=\"x=3\"></span>, <span class=\"m\" data-tex=\"y=-1\"></span>, tedy <span class=\"m\" data-tex=\"P=[3,-1]\"></span>.",
+   "id": "czu-tf-2019-v1-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P11",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"x-2y-2=0\"></span> a <span class=\"m\" data-tex=\"-4x+8y-3=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[1,-2]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[-4,1]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Normálové vektory jsou rovnoběžné a rovnice nejsou násobky jedna druhé, přímky jsou tedy rovnoběžné různé — průsečík neexistuje.",
+   "id": "czu-tf-2019-v2-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P12",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"5x-4y-18=0\"></span> a <span class=\"m\" data-tex=\"-3x-2y+2=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[-2,2]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[2,-2]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Řešíme soustavu obou rovnic (sčítací metodou): <span class=\"m\" data-tex=\"x=2\"></span>, <span class=\"m\" data-tex=\"y=-2\"></span>, tedy <span class=\"m\" data-tex=\"P=[2,-2]\"></span>.",
+   "id": "czu-tf-2019-v3-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P13",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"-x+2y-7=0\"></span> a <span class=\"m\" data-tex=\"3x-5y+19=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[-3,2]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[2,-3]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Řešíme soustavu obou rovnic (sčítací metodou): <span class=\"m\" data-tex=\"x=-3\"></span>, <span class=\"m\" data-tex=\"y=2\"></span>, tedy <span class=\"m\" data-tex=\"P=[-3,2]\"></span>.",
+   "id": "czu-tf-2019-v4-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P14",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"4x+2y+6=0\"></span> a <span class=\"m\" data-tex=\"-3x-5y-22=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[1,-5]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[-5,1]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Řešíme soustavu obou rovnic (sčítací metodou): <span class=\"m\" data-tex=\"x=1\"></span>, <span class=\"m\" data-tex=\"y=-5\"></span>, tedy <span class=\"m\" data-tex=\"P=[1,-5]\"></span>.",
+   "id": "czu-tf-2019-v5-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P15",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"-6x+2y-5=0\"></span> a <span class=\"m\" data-tex=\"3x-y+1=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[3,-2]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[-2,1]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Normálové vektory jsou rovnoběžné a rovnice nejsou násobky jedna druhé, přímky jsou tedy rovnoběžné různé — průsečík neexistuje.",
+   "id": "czu-tf-2019-v6-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P16",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"-2x-5y+3=0\"></span> a <span class=\"m\" data-tex=\"3x+2y-10=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[-1,4]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[4,-1]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Řešíme soustavu obou rovnic (sčítací metodou): <span class=\"m\" data-tex=\"x=4\"></span>, <span class=\"m\" data-tex=\"y=-1\"></span>, tedy <span class=\"m\" data-tex=\"P=[4,-1]\"></span>.",
+   "id": "czu-tf-2019-v7-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P17",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"2x-3y+1=0\"></span> a <span class=\"m\" data-tex=\"-3x+4y=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[4,3]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[3,4]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Řešíme soustavu obou rovnic (sčítací metodou): <span class=\"m\" data-tex=\"x=4\"></span>, <span class=\"m\" data-tex=\"y=3\"></span>, tedy <span class=\"m\" data-tex=\"P=[4,3]\"></span>.",
+   "id": "czu-tf-2019-v8-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P18",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"2x+5y-1=0\"></span> a <span class=\"m\" data-tex=\"-4x-10y+3=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[1,-2]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[-2,1]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "c",
+   "sol": "Normálové vektory jsou rovnoběžné a rovnice nejsou násobky jedna druhé, přímky jsou tedy rovnoběžné různé — průsečík neexistuje.",
+   "id": "czu-tf-2019-v9-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P19",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"3x-5y+2=0\"></span> a <span class=\"m\" data-tex=\"-4x+y+3=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[1,1]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[-1,-1]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Řešíme soustavu obou rovnic (sčítací metodou): <span class=\"m\" data-tex=\"x=1\"></span>, <span class=\"m\" data-tex=\"y=1\"></span>, tedy <span class=\"m\" data-tex=\"P=[1,1]\"></span>.",
+   "id": "czu-tf-2019-v10-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P20",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"2x+4y-2=0\"></span> a <span class=\"m\" data-tex=\"-3x-5y+5=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[-2,5]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[5,-2]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "b",
+   "sol": "Řešíme soustavu obou rovnic (sčítací metodou): <span class=\"m\" data-tex=\"x=5\"></span>, <span class=\"m\" data-tex=\"y=-2\"></span>, tedy <span class=\"m\" data-tex=\"P=[5,-2]\"></span>.",
+   "id": "czu-tf-2019-v11-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P21",
+   "src": "TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 5)",
+   "body": "Vypočtěte průsečík přímek <span class=\"m\" data-tex=\"3x-2y-7=0\"></span> a <span class=\"m\" data-tex=\"-2x+5y+12=0\"></span>.",
+   "opts": [
+    "<span class=\"m\" data-tex=\"P=[1,-2]\"></span>",
+    "<span class=\"m\" data-tex=\"P=[-2,1]\"></span>",
+    "přímky se neprotínají"
+   ],
+   "letters": "abc",
+   "key": "a",
+   "sol": "Řešíme soustavu obou rovnic (sčítací metodou): <span class=\"m\" data-tex=\"x=1\"></span>, <span class=\"m\" data-tex=\"y=-2\"></span>, tedy <span class=\"m\" data-tex=\"P=[1,-2]\"></span>.",
+   "id": "czu-tf-2019-v12-05",
+   "uni": "ČZU",
+   "fac": "TF",
+   "level": 1,
+   "topics": [
+    28,
+    3
+   ],
+   "needs_original": false
+  },
+  {
+   "q": "P22",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 29)",
    "body": "Přímky <span class=\"m\" data-tex=\"p=AB\"></span>, <span class=\"m\" data-tex=\"A=[2,-1]\"></span>, <span class=\"m\" data-tex=\"B=[4,3]\"></span>, a <span class=\"m\" data-tex=\"q:\\ 2x-y+3=0\"></span> jsou",
    "opts": [
@@ -21627,7 +23151,7 @@
    "needs_original": false
   },
   {
-   "q": "P11",
+   "q": "P23",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 97)",
    "body": "Pro jakou hodnotu parametru <span class=\"m\" data-tex=\"p\"></span> je přímka <span class=\"m\" data-tex=\"y=3x-7\"></span> kolmá k přímce <span class=\"m\" data-tex=\"y=p(x+5)\"></span>?",
    "opts": [
@@ -21651,7 +23175,7 @@
    "needs_original": false
   },
   {
-   "q": "P12",
+   "q": "P24",
    "src": "VŠCHT, ukázka vzorového testu z matematiky (bakalářské studium) (úloha 2, 1 bod)",
    "body": "Přímky <span class=\"m\" data-tex=\"p\\colon x-2=0\"></span> a <span class=\"m\" data-tex=\"q\\colon y-2=0\"></span> se protínají v bodě",
    "opts": [
@@ -21673,7 +23197,7 @@
    "needs_original": false
   },
   {
-   "q": "P13",
+   "q": "P25",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 15)",
    "body": "Kosinus odchylky přímek <span class=\"m\" data-tex=\"p:\\ y=2x-1\"></span> a <span class=\"m\" data-tex=\"q:\\ x=1+t,\\ y=2+3t,\\ t\\in\\mathbb R\"></span> je:",
    "opts": [
@@ -21697,7 +23221,7 @@
    "needs_original": false
   },
   {
-   "q": "P14",
+   "q": "P26",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 69)",
    "body": "Určete vzdálenost rovnoběžek <span class=\"m\" data-tex=\"p:\\ 3x+4y-2=0\"></span> a <span class=\"m\" data-tex=\"q:\\ 3x+4y+13=0\"></span>.",
    "answer": "<span class=\"m\" data-tex=\"3\"></span>",
@@ -21712,7 +23236,7 @@
    "needs_original": false
   },
   {
-   "q": "P15",
+   "q": "P27",
    "src": "Vlastní úloha ve stylu přijímacích testů (č. 87)",
    "body": "Přímky <span class=\"m\" data-tex=\"p:\\ x+2y-3=0\"></span> a <span class=\"m\" data-tex=\"q:\\ x=1+2t,\\ y=1-t,\\ t\\in\\mathbb R\"></span> jsou:",
    "opts": [
@@ -21735,7 +23259,7 @@
    "needs_original": false
   },
   {
-   "q": "P16",
+   "q": "P28",
    "src": "Vlastní úloha ve stylu přijímaček ČVUT (č. 148)",
    "body": "Určete parametr <span class=\"m\" data-tex=\"a\"></span> tak, aby přímky <span class=\"m\" data-tex=\"ax+2y-1=0\"></span> a <span class=\"m\" data-tex=\"3x+(a+1)y+4=0\"></span> byly rovnoběžné.",
    "answer": "<span class=\"m\" data-tex=\"a=-3\"></span> nebo <span class=\"m\" data-tex=\"a=2\"></span>",

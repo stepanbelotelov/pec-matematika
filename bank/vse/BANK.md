@@ -2,7 +2,7 @@
 
 Файл собирается скриптом `bank/build.py` из `tasks.json` и `sources.json`; вручную не редактировать.
 
-Всего задач: **1615** · базовый: 841 · стандартный: 635 · сложный: 139 · Vlastní Vlastní: 1579 · VŠE KMAT: 22 · VŠE FMV: 11 · VŠE FIS: 3
+Всего задач: **1655** · базовый: 858 · стандартный: 657 · сложный: 140 · Vlastní Vlastní: 1579 · ČZU PEF: 40 · VŠE KMAT: 22 · VŠE FMV: 11 · VŠE FIS: 3
 
 ⚠ **0** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.
 
@@ -10,42 +10,42 @@
 
 | № | Тема | Ур. 1 | Ур. 2 | Ур. 3 | Всего |
 |---|---|---|---|---|---|
-| 1 | Množina. Podmnožina | 4 | 6 | 1 | 11 |
-| 2 | Mocnina. Odmocnina | 86 | 7 | 1 | 94 |
+| 1 | Množina. Podmnožina | 4 | 7 | 1 | 12 |
+| 2 | Mocnina. Odmocnina | 87 | 7 | 2 | 96 |
 | 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 21 | 12 | 2 | 35 |
-| 4 | Rovnice s parametrem |  | 3 | 8 | 11 |
+| 4 | Rovnice s parametrem |  | 4 | 8 | 12 |
 | 5 | Rovnice s absolutní hodnotou | 4 | 4 |  | 8 |
-| 6 | Nerovnice. Soustava nerovnic | 9 | 21 | 2 | 32 |
-| 7 | Nerovnice s absolutní hodnotou | 22 | 3 | 1 | 26 |
-| 8 | Iracionální rovnice. Iracionální nerovnice |  | 4 | 1 | 5 |
-| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 34 | 21 | 20 | 75 |
+| 6 | Nerovnice. Soustava nerovnic | 10 | 22 | 2 | 34 |
+| 7 | Nerovnice s absolutní hodnotou | 22 | 5 | 1 | 28 |
+| 8 | Iracionální rovnice. Iracionální nerovnice |  | 5 | 1 | 6 |
+| 9 | Funkce (lineární, kvadratická, lomená). Grafy | 34 | 22 | 20 | 76 |
 | 10 | Exponenciální funkce | 2 | 2 | 13 | 17 |
-| 11 | Exponenciální rovnice a nerovnice | 100 | 10 | 25 | 135 |
-| 12 | Logaritmická funkce | 142 | 49 |  | 191 |
-| 13 | Logaritmické rovnice a nerovnice | 40 | 44 | 25 | 109 |
-| 14 | Goniometrické funkce | 42 | 5 |  | 47 |
-| 15 | Goniometrické rovnice a nerovnice | 76 | 91 | 5 | 172 |
-| 16 | Komplexní čísla | 55 | 42 | 2 | 99 |
+| 11 | Exponenciální rovnice a nerovnice | 102 | 10 | 25 | 137 |
+| 12 | Logaritmická funkce | 143 | 51 |  | 194 |
+| 13 | Logaritmické rovnice a nerovnice | 40 | 48 | 25 | 113 |
+| 14 | Goniometrické funkce | 42 | 7 |  | 49 |
+| 15 | Goniometrické rovnice a nerovnice | 77 | 92 | 5 | 174 |
+| 16 | Komplexní čísla | 55 | 43 | 2 | 100 |
 | 17 | Goniometrický tvar komplexního čísla. Moivreova věta |  | 57 | 1 | 58 |
 | 18 | Posloupnosti | 2 | 1 | 1 | 4 |
-| 19 | Aritmetická posloupnost | 27 | 44 |  | 71 |
+| 19 | Aritmetická posloupnost | 28 | 45 |  | 73 |
 | 20 | Geometrická posloupnost | 5 | 6 | 1 | 12 |
 | 21 | Kombinatorika. Faktoriál | 1 |  | 2 | 3 |
-| 22 | Variace. Permutace. Kombinace | 34 | 36 |  | 70 |
+| 22 | Variace. Permutace. Kombinace | 34 | 37 |  | 71 |
 | 23 | Kombinační číslo. Binomická věta |  | 35 | 16 | 51 |
-| 24 | Pravděpodobnost | 3 | 6 | 1 | 10 |
+| 24 | Pravděpodobnost | 5 | 6 | 1 | 12 |
 | 25 | Analytická geometrie. Vektory | 2 | 2 |  | 4 |
 | 26 | Parametrická rovnice přímky | 20 |  |  | 20 |
-| 27 | Obecná rovnice přímky | 33 | 22 | 1 | 56 |
-| 28 | Vzájemná poloha přímek | 21 | 4 |  | 25 |
+| 27 | Obecná rovnice přímky | 34 | 22 | 1 | 57 |
+| 28 | Vzájemná poloha přímek | 23 | 5 |  | 28 |
 | 29 | Směrnicový a úsekový tvar rovnice přímky |  |  |  | — |
-| 30 | Kuželosečky. Kružnice | 2 | 45 | 1 | 48 |
+| 30 | Kuželosečky. Kružnice | 2 | 46 | 1 | 49 |
 | 31 | Elipsa |  | 1 | 2 | 3 |
 | 32 | Hyperbola |  |  |  | — |
 | 33 | Parabola |  | 1 |  | 1 |
 | 34 | Planimetrie | 7 | 11 | 3 | 21 |
-| 35 | Stereometrie | 6 | 8 | 2 | 16 |
-| — | Ostatní | 41 | 32 | 2 | 75 |
+| 35 | Stereometrie | 6 | 9 | 2 | 17 |
+| — | Ostatní | 46 | 32 | 2 | 80 |
 
 Задача считается по основной (первой) теме; дополнительные темы указаны в карточке. «Ostatní» — задачи вне 35 тем плана.
 
@@ -113,6 +113,26 @@ Kolik celých čísel obsahuje množina $\left(-\frac72;\sqrt{10}\right)\cap\lan
 <details><summary>Ответ и решение</summary>
 
 **c** — $5$. Průnik je $\langle-1;\sqrt{10})$, celá čísla $-1,0,1,2,3$.
+
+</details>
+
+### `czu-pef-vzor-19` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 19)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Pro každé $x\ge0$ je výraz $\sqrt{x\cdot\sqrt[3]{\sqrt{x}}}$ je roven:
+
+- **a)** $x^{\frac{7}{6}}$
+- **b)** $x^{\frac{5}{6}}$
+- **c)** $x^{\frac{7}{12}}$
+- **d)** $x^{\frac{3}{2}}$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x^{\frac{7}{12}}$. $\sqrt{x\cdot x^{\frac16}}=\left(x^{\frac76}\right)^{\frac12}=x^{\frac{7}{12}}$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
 
 </details>
 
@@ -2100,6 +2120,24 @@ Množinou všech řešení nerovnice $(x+3)^2<9x+19$ s neznámou $x\in R$ je
 
 </details>
 
+### `czu-pef-2017-14` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 14)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Množinou všech řešení nerovnice $\frac{x}{x-2}>1$ je množina:
+
+- **a)** $(-\infty,2\rangle$
+- **b)** $(2,+\infty)$
+- **c)** $(-\infty,2)$
+- **d)** $(-\infty,2)\cup(2,+\infty)$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $(2,+\infty)$. $\frac{x}{x-2}-1=\frac{2}{x-2}>0\iff x>2$.
+
+</details>
+
 ### `vl-obec-033` — Vlastní úloha ve stylu přijímacích testů (č. 33)
 
 *Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -3283,6 +3321,44 @@ Množina všech reálných čísel, pro která platí $\left(\dfrac23\right)^x>-
 <details><summary>Ответ и решение</summary>
 
 **a** — $(-\infty,+\infty)$. Exponenciála je vždy kladná, tedy větší než $-\frac32$ pro každé $x$.
+
+</details>
+
+### `czu-pef-vzor-11` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 11)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Všechna reálná řešení rovnice $4^{x+3}-4^x=63$ náleží intervalu:
+
+- **a)** $\langle -1,0)$
+- **b)** $\langle 0,1)$
+- **c)** $\langle 1,2)$
+- **d)** $\langle 2,4)$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\langle 0,1)$. $4^x(4^3-1)=63$, $4^x=1$, $x=0\in\langle0,1)$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-2017-06` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 6)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Řešením rovnice $100^{x-4}=\left(\frac{1}{10}\right)^{-1}$ je reálné číslo, které je prvkem intervalu:
+
+- **a)** $\langle0,2)$
+- **b)** $\langle2,4)$
+- **c)** $\langle4,6)$
+- **d)** $\langle-2,0)$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\langle4,6)$. $10^{2x-8}=10^1$, $2x-8=1$, $x=4{,}5\in\langle4,6)$.
 
 </details>
 
@@ -5060,6 +5136,24 @@ Množina všech reálných $x$, pro která platí $\left(\dfrac{3}{4}\right)^{x}
 <details><summary>Ответ и решение</summary>
 
 **e** — $-\frac34$. $\sqrt{27}=3^{3/2}$ a $\frac19=3^{-2}$, tedy $\log_{\frac19}\sqrt{27}=\frac{3/2}{-2}=-\frac34$ — mezi nabídkami a)–d) není.
+
+</details>
+
+### `czu-pef-2017-18` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 18)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Pro čísla $a=\log10$ a $b=\ln e$ platí:
+
+- **a)** $a=b$
+- **b)** $a>b$
+- **c)** $a<b$
+- **d)** $a>0$ a $b<0$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $a=b$. $\log10=1$ a $\ln e=1$, tedy $a=b$.
 
 </details>
 
@@ -9092,6 +9186,26 @@ Určete součet všech $x\in\left\langle-\frac\pi2;\frac{3\pi}2\right\rangle$, p
 
 </details>
 
+### `czu-pef-vzor-08` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 8)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Množinou všech řešení rovnice $(1-\cos x)(2-\sin x)=0$ je množina:
+
+- **a)** $\left\{(2k+1)\frac{\pi}{2}, k\in Z\right\}$
+- **b)** $\{k\pi, k\in Z\}$
+- **c)** $\{2k\pi, k\in Z\}$
+- **d)** $\{(2k+1)\pi, k\in Z\}$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\{2k\pi, k\in Z\}$. $2-\sin x=0$ nemá řešení ($\sin x\le1$), zbývá $\cos x=1$, tj. $x=2k\pi$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
 ### `vl-vse-0034` — Vlastní úloha ve stylu přijímaček VŠE (č. 34)
 
 *Темы:* 15. Goniometrické rovnice a nerovnice, 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -11486,6 +11600,26 @@ Mezi kořeny kvadratické rovnice $x^2-7x-8=0$ vložte dvě čísla tak, aby spo
 
 </details>
 
+### `czu-pef-vzor-04` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 4)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+Pro aritmetickou posloupnost platí $a_5-a_1=12$, $a_3=7$. Člen $a_{12}$ je roven číslu:
+
+- **a)** $34$
+- **b)** $31$
+- **c)** $27$
+- **d)** $19$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $34$. $a_5-a_1=4d=12$, $d=3$; $a_1=a_3-2d=1$; $a_{12}=a_1+11d=34$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
 ### `vl-nsz-081` — [Vlastní úloha ve stylu NSZ Matematika (č. 81)](https://www.scio.cz/matematika)
 
 *Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -12655,6 +12789,44 @@ Ze skupiny 20 lidí vybíráme 2členný výbor (bez funkcí). Kolik je možnost
 
 </details>
 
+### `czu-pef-vzor-18` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 18)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 24. Pravděpodobnost · *Текст:* текст оригинала (по курсу)
+
+Jaká je pravděpodobnost, že při hodu dvěma kostkami padne na obou stejné číslo.
+
+- **a)** $1/12$
+- **b)** $1/6$
+- **c)** $5/12$
+- **d)** $5/36$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $1/6$. Příznivých dvojic je $6$ z $36$: $\frac{6}{36}=\frac16$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-2017-12` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 12)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 24. Pravděpodobnost · *Текст:* текст оригинала (по курсу)
+
+Jaká je pravděpodobnost, že při dvou hodech pravidelnou kostkou nepadne ani jedna šestka:
+
+- **a)** $5/36$
+- **b)** $1/36$
+- **c)** $25/36$
+- **d)** $2/36$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $25/36$. $\left(\frac56\right)^2=\frac{25}{36}$.
+
+</details>
+
 ### `vl-nsz-018` — [Vlastní úloha ve stylu NSZ Matematika (č. 18)](https://www.scio.cz/matematika)
 
 *Темы:* 24. Pravděpodobnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -13100,6 +13272,24 @@ Na přímce procházející body $B=[-1;-1]$ a $C=[1;-3]$ leží bod:
 <details><summary>Ответ и решение</summary>
 
 **a** — $[7;-9]$. Parametricky $X=B+t\cdot(C-B)$; pro $t=4$ vyjde $[7;-9]$.
+
+</details>
+
+### `czu-pef-2017-13` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 13)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 27. Obecná rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Přímka p prochází bodem $P=[-1,2]$ a má rovnici $x+2y-m=0$. Číslo m je prvkem intervalu:
+
+- **a)** $(-\infty,1)$
+- **b)** $\langle1,3)$
+- **c)** $\langle3,7)$
+- **d)** $\langle7,20)$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\langle3,7)$. Dosazením $-1+4-m=0$, $m=3\in\langle3,7)$.
 
 </details>
 
@@ -13712,6 +13902,44 @@ Přímka $2x-3y-3=0$ a přímka $x=-2+5t,y=2-t$
 <details><summary>Ответ и решение</summary>
 
 **a** — se protnou v bodě ležícím uvnitř prvního kvadrantu. Dosazení: $2(-2+5t)-3(2-t)-3=13t-13=0$, $t=1$, průsečík $[3,1]$ leží v prvním kvadrantu.
+
+</details>
+
+### `czu-pef-vzor-12` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 12)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 29. Směrnicový a úsekový tvar rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Určete číslo $y\in R$ tak, aby bod $A=[2,y]$ ležel na přímce, která je rovnoběžná s přímkou $y=4x+5$ a prochází bodem $B=[1,4]$:
+
+- **a)** $y=4$
+- **b)** $y=8$
+- **c)** $y=9$
+- **d)** $y=13$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $y=8$. Rovnoběžka má směrnici $4$: $y=4x+q$; z bodu $B$: $4=4+q$, $q=0$. Pro $x=2$ je $y=8$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-2017-19` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 19)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 26. Parametrická rovnice přímky · *Текст:* текст оригинала (по курсу)
+
+Jaký úhel spolu svírají přímky p: $x-y-2=0$ a q: $x=2t$, $y=1+2t$:
+
+- **a)** jsou rovnoběžné
+- **b)** jsou kolmé
+- **c)** $60^\circ$
+- **d)** $45^\circ$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**a** — jsou rovnoběžné. Směrový vektor $q$ je $(2,2)$, přímka $p$ má normálu $(1,-1)$, tedy směr $(1,1)$. Přímky jsou rovnoběžné ($q$: $y=x+1$, různá od $p$).
 
 </details>
 
@@ -14370,6 +14598,106 @@ Cena za umístění informačního plakátu se odvíjí od plochy, kterou plaká
 <details><summary>Ответ и решение</summary>
 
 **d** — Plocha plakátu P2 je o méně než 6 % menší než plocha plakátu P1.. $0{,}8\cdot1{,}2=0{,}96$: plocha klesne o $4\,\%$ ($3000\to2880$ cm$^2$).
+
+</details>
+
+### `czu-pef-vzor-03` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 3)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Jakou hodnotu nabývá směrodatná odchylka, pokud je vypočtený rozptyl roven 16?
+
+- **a)** $2$
+- **b)** $3$
+- **c)** $4$
+- **d)** $4{,}2$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $4$. Směrodatná odchylka je odmocnina z rozptylu: $\sqrt{16}=4$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-vzor-09` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 9)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Tabulka uvádí rozložení prospěchu žáků třídy v biologii. Vypočítejte procento žáků, kteří nebudou předmět opakovat. $\begin{array}{|l|c|c|c|c|c|}\hline \text{Známka}&1&2&3&4&5\\\hline \text{Počet žáků}&4&8&12&3&3\\\hline\end{array}$
+
+- **a)** 20 %
+- **b)** 10 %
+- **c)** 90 %
+- **d)** 30 %
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — 90 %. Celkem $4+8+12+3+3=30$ žáků, opakovat budou $3$ žáci s pětkou. Neopakuje $\frac{27}{30}$, tj. 90 %.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-vzor-13` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 13)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Negací výroku „Alespoň jeden pes nekouše“ je výrok:
+
+- **a)** Jeden pes kouše.
+- **b)** Všichni psi nekoušou.
+- **c)** Více než jeden pes kouše.
+- **d)** Všichni psi koušou.
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — Všichni psi koušou.. Negace výroku „existuje pes, který nekouše“ je „každý pes kouše“.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-vzor-14` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 14)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Mějme soubor $n=7$ pozorování: $5, 7, 4, 5, 20, 6, 2$. Medián tohoto souboru je:
+
+- **a)** $5$
+- **b)** $4$
+- **c)** $4{,}5$
+- **d)** $20$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $5$. Seřazeno: $2,4,5,5,6,7,20$; prostřední (čtvrtá) hodnota je $5$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-vzor-20` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 20)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* Ostatní · *Текст:* текст оригинала (по курсу)
+
+Tabulka uvádí rozložení prospěchu žáků třídy v biologii. Najděte modus proměnné Známka. $\begin{array}{|l|c|c|c|c|c|}\hline \text{Známka}&1&2&3&4&5\\\hline \text{Počet žáků}&4&8&12&3&3\\\hline\end{array}$
+
+- **a)** $1$
+- **b)** $3$
+- **c)** $4$
+- **d)** $5$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $3$. Modus je nejčetnější hodnota: známku $3$ má $12$ žáků.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
 
 </details>
 
@@ -15074,6 +15402,24 @@ Mezi učiteli proběhla anketa ohledně využívání MS Teams a Zoom při onlin
 
 </details>
 
+### `czu-pef-2017-09` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 9)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 1. Množina. Podmnožina · *Текст:* текст оригинала (по курсу)
+
+Jsou dány množiny $A=\{x\in Z;\ |x|>0\}$ a $B=\{x\in Z;\ |x|\le6\}$. Jaký je počet prvků množiny $A\cap B$:
+
+- **a)** $10$
+- **b)** $6$
+- **c)** $8$
+- **d)** $4$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**e** — žádná z uvedených odpovědí není správná. $A=Z\setminus\{0\}$, $B=\{-6,\dots,6\}$; $A\cap B=\{\pm1,\dots,\pm6\}$ má $12$ prvků — žádná z možností a)–d).
+
+</details>
+
 ### `vl-nsz-023` — [Vlastní úloha ve stylu NSZ Matematika (č. 23)](https://www.scio.cz/matematika)
 
 *Темы:* 1. Množina. Podmnožina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -15494,6 +15840,26 @@ Rovnice $px^2+px+5=0$ má dva reálné různé kořeny právě tehdy, když
 
 </details>
 
+### `czu-pef-vzor-05` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 5)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 4. Rovnice s parametrem, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Rovnice $x^2+3\sqrt{n}\cdot x+n+1=0$ má jeden dvojnásobný reálný kořen pro:
+
+- **a)** $n=1$
+- **b)** $n=4$
+- **c)** $n=0$
+- **d)** $n=4/5$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $n=4/5$. Dvojnásobný kořen má rovnice právě při $D=9n-4(n+1)=5n-4=0$, tedy $n=\frac45$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
 ### `vl-nsz-213` — [Vlastní úloha ve stylu NSZ Matematika (č. 213)](https://www.scio.cz/matematika)
 
 *Темы:* 4. Rovnice s parametrem, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -15592,6 +15958,26 @@ Množinou všech řešení nerovnice $\dfrac{x+3}{2x-4}<1$ s neznámou $x\in R$ 
 <details><summary>Ответ и решение</summary>
 
 **c** — $(-\infty;2)\cup(7;\infty)$. $\frac{x+3}{2x-4}-1=\frac{7-x}{2x-4}<0\iff\frac{x-7}{x-2}>0$.
+
+</details>
+
+### `czu-pef-vzor-01` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 1)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 6. Nerovnice. Soustava nerovnic · *Текст:* текст оригинала (по курсу)
+
+Množinou všech řešení nerovnice $\frac{3}{1-x}<1$ v oboru R je množina:
+
+- **a)** $(-\infty,-2)$
+- **b)** $(-\infty,-2)\cup(1,+\infty)$
+- **c)** $(-2,1)$
+- **d)** $(1,+\infty)$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $(-\infty,-2)\cup(1,+\infty)$. $\frac{3}{1-x}-1<0\iff\frac{x+2}{1-x}<0$; nulové body $-2$ a $1$, zlomek je záporný pro $x<-2$ nebo $x>1$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
 
 </details>
 
@@ -15948,6 +16334,42 @@ Funkce je dána předpisem $f(x)=x^2-6x$. Množina všech $a$, pro která platí
 
 </details>
 
+### `czu-pef-2017-02` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 2)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou, 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу)
+
+Definičním oborem funkce $y=\sqrt{\frac{|x-2|}{2-x}}$ je množina:
+
+- **a)** $R-\{2\}$
+- **b)** $(-2,2)$
+- **c)** $(-\infty,2)$
+- **d)** $(2,+\infty)$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $(-\infty,2)$. Jmenovatel $2-x\ne0$; čitatel je pro $x\ne2$ kladný, takže zlomek je nezáporný jen pro $2-x>0$, tj. $x<2$.
+
+</details>
+
+### `czu-pef-2017-20` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 20)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* текст оригинала (по курсу)
+
+Množina všech reálných čísel vyhovujících nerovnici $x+1>|x|$ je:
+
+- **a)** $(-\infty;-0{,}5\rangle$
+- **b)** $(0;2\rangle$
+- **c)** $(-\infty;2\rangle$
+- **d)** $(-0{,}5;+\infty)$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $(-0{,}5;+\infty)$. Pro $x\ge0$ platí vždy; pro $x<0$: $x+1>-x$, $x>-\frac12$. Celkem $x>-0{,}5$.
+
+</details>
+
 ### `vl-nsz-100` — [Vlastní úloha ve stylu NSZ Matematika (č. 100)](https://www.scio.cz/matematika)
 
 *Темы:* 7. Nerovnice s absolutní hodnotou · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16012,6 +16434,26 @@ Součet všech reálných řešení rovnice $\sqrt{2x+5}=x-5$ je
 
 </details>
 
+### `czu-pef-vzor-16` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 16)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* текст оригинала (по курсу)
+
+Počet všech reálných řešení rovnice $\sqrt{5-x}=x+1$ je roven:
+
+- **a)** $1$
+- **b)** $2$
+- **c)** $3$
+- **d)** $0$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1$. Umocněním $5-x=x^2+2x+1$, $x^2+3x-4=0$, $x=1$ nebo $x=-4$. Zkouška: $x=-4$ nevyhovuje ($x+1<0$), řešení je jedno.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
 ### `vl-obec-075` — Vlastní úloha ve stylu přijímacích testů (č. 75)
 
 *Темы:* 8. Iracionální rovnice. Iracionální nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -16057,6 +16499,26 @@ V $\mathbb R$ řešte rovnici $\sqrt{3x+1}=x-1$.
 <details><summary>Ответ и решение</summary>
 
 $x=5$. Umocněním $x^2-5x=0$; zkouška vyřadí $x=0$.
+
+</details>
+
+### `czu-pef-vzor-07` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 7)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 9. Funkce (lineární, kvadratická, lomená). Grafy · *Текст:* текст оригинала (по курсу)
+
+Funkce $y=-5\cdot\frac{|x|}{x}$ je na celém definičním oboru:
+
+- **a)** sudá, rostoucí
+- **b)** sudá, klesající
+- **c)** lichá, rostoucí
+- **d)** lichá, klesající
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**e** — žádná z uvedených odpovědí není správná. $D(f)=R\setminus\{0\}$ a $f(-x)=-f(x)$, funkce je lichá. Pro $x>0$ je $f(x)=-5$, pro $x<0$ je $f(x)=5$: na každé polopřímce je konstantní, např. $f(1)=f(2)$, takže na celém definičním oboru není klesající (je jen nerostoucí). Možnosti a)–d) neplatí.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána. Možnost d) by platila jen pro „nerostoucí“; podle definice klesající funkce je správně e).
 
 </details>
 
@@ -16599,6 +17061,44 @@ Maximální definiční obor funkce $f(x)=\dfrac{\ln(x^2-4)}{x+3}$ je
 <details><summary>Ответ и решение</summary>
 
 **e** — $(-\infty;-3)\cup(-3;-2)\cup(2;\infty)$. $x^2>4$ a $x\ne-3$; bod $-3$ v nabízených množinách nevynechávají, proto „jiná odpověď“.
+
+</details>
+
+### `czu-pef-vzor-02` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 2)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Definičním oborem funkce $y=\frac{\sqrt{1-x}}{\log(x-1)}$ je množina:
+
+- **a)** $\emptyset$
+- **b)** $\{1\}$
+- **c)** $(-1,1)$
+- **d)** $R-\{1\}$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\emptyset$. Odmocnina vyžaduje $1-x\ge0$, tj. $x\le1$; logaritmus $x-1>0$, tj. $x>1$. Podmínky se vylučují, $D(f)=\emptyset$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-2017-10` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 10)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Výraz $\log_8\sqrt{8}-\log_8\sqrt[3]{8}-\log_8\sqrt[3]{\sqrt{8}}$ je roven číslu, které je prvkem intervalu:
+
+- **a)** $(-1,0)$
+- **b)** $(0,1\rangle$
+- **c)** $(1,2\rangle$
+- **d)** $(2,3\rangle$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**e** — žádná z uvedených odpovědí není správná. $\frac12-\frac13-\frac16=0$; nula neleží v žádném z intervalů a)–d).
 
 </details>
 
@@ -17454,6 +17954,82 @@ Množina všech reálných čísel, pro která platí $\log_3^2x+\log_3x-2\ge0$,
 
 </details>
 
+### `czu-pef-vzor-06` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 6)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Rozhodněte, která $x, y\in R$ jsou řešením dané soustavy rovnic $\log_{\frac13}x-\log_{\frac13}y=0\wedge y^2-2x-3=0$:
+
+- **a)** $x=y=0$
+- **b)** $x=y=3$
+- **c)** $x=0,\ y=3$
+- **d)** $x=3,\ y=0$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=y=3$. Z první rovnice $x=y>0$; dosazením $x^2-2x-3=0$, $x=3$ nebo $x=-1$ (nevyhovuje). Tedy $x=y=3$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-vzor-15` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 15)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Rovnice $\log_3(27x)+\log_3(x^2)=15$ má jediný kořen, který leží v intervalu:
+
+- **a)** $(71,83)$
+- **b)** $(49,57)$
+- **c)** $(27,50)$
+- **d)** $(3,15)$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $(71,83)$. Pro $x>0$: $3+\log_3x+2\log_3x=15$, $\log_3x=4$, $x=81\in(71,83)$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-2017-03` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 3)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Rozhodněte, která $x, y\in R$ jsou řešením soustavy rovnic $\log_3x-\log_3y=0\ \wedge\ 6x^2-11y^2+10=0$:
+
+- **a)** soustava nemá řešení v $R^2$
+- **b)** $x=y=\sqrt{2}$
+- **c)** $x=y=-\sqrt{2}$
+- **d)** $x=\sqrt{2},\ y=-\sqrt{2}$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=y=\sqrt{2}$. Z první rovnice $x=y>0$; dosazením $-5x^2+10=0$, $x^2=2$, $x=\sqrt2$.
+
+</details>
+
+### `czu-pef-2017-07` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 7)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 13. Logaritmické rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Množinou všech reálných čísel vyhovujících nerovnici $\frac{3+2\log x}{3}\le5$ je množina:
+
+- **a)** $(-\infty;6\rangle$
+- **b)** $(0;6\rangle$
+- **c)** $(-\infty;2^6\rangle$
+- **d)** $(0;10^6\rangle$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $(0;10^6\rangle$. $3+2\log x\le15$, $\log x\le6$; s podmínkou $x>0$ je $0<x\le10^6$.
+
+</details>
+
 ### `vl-vse-0010` — Vlastní úloha ve stylu přijímaček VŠE (č. 10)
 
 *Темы:* 13. Logaritmické rovnice a nerovnice, 11. Exponenciální rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -18190,6 +18766,44 @@ $x\in(0;1)\cup(4;5)$. Podmínka $x^2-5x+4>0$ a zároveň $x^2-5x+4<4$, tj. $0<x<
 
 </details>
 
+### `czu-pef-vzor-17` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 17)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte hodnotu výrazu $\frac{3\sin x+\cos x}{\cos x-3\sin x}$, je-li $\cot x=1$:
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $2$
+- **d)** $-2$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $-2$. Čitatel i jmenovatel vydělíme $\sin x\ne0$: $\frac{3+\cot x}{\cot x-3}=\frac{4}{-2}=-2$.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
+### `czu-pef-2017-15` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 15)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Definičním oborem funkce $y=\frac{\sqrt{1+\sin^2x}}{1+\cos x}$ je množina:
+
+- **a)** $R-\bigcup\limits_{k\in Z}\{2k\pi\}$
+- **b)** $R-\bigcup\limits_{k\in Z}\{\pi/2+k\pi\}$
+- **c)** $R-\bigcup\limits_{k\in Z}\{(2k+1)\pi\}$
+- **d)** $R-\bigcup\limits_{k\in Z}\{k\pi\}$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $R-\bigcup\limits_{k\in Z}\{(2k+1)\pi\}$. Odmocnina je definována vždy ($1+\sin^2x>0$); jmenovatel $1+\cos x\ne0$, tj. $x\ne(2k+1)\pi$.
+
+</details>
+
 ### `vl-nsz-026` — [Vlastní úloha ve stylu NSZ Matematika (č. 26)](https://www.scio.cz/matematika)
 
 *Темы:* 14. Goniometrické funkce · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -18293,6 +18907,24 @@ Součet všech řešení goniometrické rovnice $\sin\dfrac x2+\cos x-1=0$ v int
 <details><summary>Ответ и решение</summary>
 
 **b** — $2\pi$. $\cos x=1-2\sin^2\frac x2$: $\sin\frac x2\left(1-2\sin\frac x2\right)=0$. V $(0,2\pi)$ je $\sin\frac x2\ne0$, z $\sin\frac x2=\frac12$: $x=\frac\pi3$, $x=\frac{5\pi}3$; součet $2\pi$.
+
+</details>
+
+### `czu-pef-2017-08` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 8)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 15. Goniometrické rovnice a nerovnice, 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Množinou všech řešení rovnice $3^{1+\operatorname{tg}x}=1$ je množina:
+
+- **a)** $\bigcup\limits_{k\in Z}\{\pi/4+k\pi\}$
+- **b)** $\bigcup\limits_{k\in Z}\{(2k+1)\pi/4\}$
+- **c)** $\bigcup\limits_{k\in Z}\{\pi/2+k\pi\}$
+- **d)** $\bigcup\limits_{k\in Z}\{\pi/3+k\pi\}$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**e** — žádná z uvedených odpovědí není správná. $1+\operatorname{tg}x=0$, $\operatorname{tg}x=-1$, $x=-\frac\pi4+k\pi$. Množina a) má tangens $1$, b) obsahuje i $\frac\pi4$, c) a d) nevyhovují — správně e).
 
 </details>
 
@@ -19867,6 +20499,24 @@ Počet všech $x\in(0;3 \pi)$, pro která platí $\cos2x+\sin x=1$, je:
 <details><summary>Ответ и решение</summary>
 
 **b** — $6$. Rovnici upravíme na součin (nebo kvadratickou rovnici pro jednu funkci) a kořeny spočítáme na daném intervalu.
+
+</details>
+
+### `czu-pef-2017-04` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 4)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 16. Komplexní čísla, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kvadratická rovnice s reálnými koeficienty má jeden kořen $x_1=\frac{4i}{1-i}$. Druhý kořen je:
+
+- **a)** $x_2=-2+2i$
+- **b)** $x_2=\frac{1-i}{4i}$
+- **c)** $x_2=\frac{4i}{1+i}$
+- **d)** $x_2=-2-2i$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**d** — $x_2=-2-2i$. $x_1=\frac{4i(1+i)}{2}=-2+2i$; rovnice s reálnými koeficienty má druhý kořen komplexně sdružený: $x_2=-2-2i$.
 
 </details>
 
@@ -21663,6 +22313,24 @@ Posloupnost $\left(n^2-n+2\right)_{n=1}^\infty$ je zadána rekurentně jako:
 
 </details>
 
+### `czu-pef-2017-01` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 1)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 19. Aritmetická posloupnost · *Текст:* текст оригинала (по курсу)
+
+Kolik členů aritmetické posloupnosti, kde $a_1=3$, $d=2$, je nutné minimálně sečíst, aby jejich součet byl alespoň 120:
+
+- **a)** $12$
+- **b)** $11$
+- **c)** $10$
+- **d)** $8$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $10$. $s_n=\frac n2\,(2a_1+(n-1)d)=n(n+2)\ge120$; $n=10$ dává právě $120$, $n=9$ jen $99$.
+
+</details>
+
 ### `vl-obec-002` — Vlastní úloha ve stylu přijímacích testů (č. 2)
 
 *Темы:* 19. Aritmetická posloupnost · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -22525,6 +23193,24 @@ Geometrická posloupnost s kladným kvocientem má součet prvních tří člen�
 <details><summary>Ответ и решение</summary>
 
 $a_1=2$, $q=3$. $a_1(q^2-1)=16$ a $a_1(1+q+q^2)=26$. Vydělením $13(q^2-1)=8(q^2+q+1)$, tj. $5q^2-8q-21=0$; kladný kořen $q=3$, pak $a_1=2$.
+
+</details>
+
+### `czu-pef-2017-17` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 17)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 22. Variace. Permutace. Kombinace · *Текст:* текст оригинала (по курсу)
+
+Kolik je dáno prvků, jestliže variací čtvrté třídy bez opakování je dvacetkrát více než variací druhé třídy bez opakování:
+
+- **a)** $5$
+- **b)** $7$
+- **c)** $9$
+- **d)** $11$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $7$. $n(n-1)(n-2)(n-3)=20\,n(n-1)$, $(n-2)(n-3)=20$, $n^2-5n-14=0$, $n=7$.
 
 </details>
 
@@ -24292,6 +24978,26 @@ V trojúhelníku $A=[2;-2]$, $B=[-3;3]$, $C=[-2;0]$ leží těžnice $t_a$ na p�
 
 </details>
 
+### `czu-pef-vzor-10` — [PEF ČZU, vzorové příklady k přijímací zkoušce (úloha 10)](https://www.pef.czu.cz/dl/40296?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 25. Analytická geometrie. Vektory · *Текст:* текст оригинала (по курсу)
+
+Přímky p: $3x+4y-2=0$ a q: $8x-6y+4=0$ svírají úhel o velikosti:
+
+- **a)** $\pi/6$
+- **b)** $\pi/3$
+- **c)** $\pi/2$
+- **d)** $2\pi/3$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\pi/2$. Normálové vektory $(3,4)$ a $(8,-6)$ mají skalární součin $24-24=0$, přímky jsou kolmé.
+
+*Примечание:* Klíč v PDF není; odpověď spočítána.
+
+</details>
+
 ### `vl-obec-015` — Vlastní úloha ve stylu přijímacích testů (č. 15)
 
 *Темы:* 28. Vzájemná poloha přímek, 25. Analytická geometrie. Vektory · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -24369,6 +25075,24 @@ Rovnice tečny kružnice $x^2+y^2-2x-2y-8=0$ v bodě $T=[2,4]$ je
 <details><summary>Ответ и решение</summary>
 
 **d** — $x+3y-14=0$. Střed $S=[1,1]$, $r^2=10$, bod $T$ na kružnici leží. Normálový vektor tečny $\overrightarrow{ST}=(1,3)$: $x+3y+c=0$, z bodu $T$: $c=-14$.
+
+</details>
+
+### `czu-pef-2017-05` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 5)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 30. Kuželosečky. Kružnice · *Текст:* текст оригинала (по курсу)
+
+Počet bodů, ve kterých kružnice $y^2-12y+x^2-8x+36=0$ protíná osu x, je roven:
+
+- **a)** $0$
+- **b)** $1$
+- **c)** $2$
+- **d)** více než 2
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $0$. $(x-4)^2+(y-6)^2=16$: střed $[4,6]$, $r=4$; vzdálenost středu od osy $x$ je $6>4$ (pro $y=0$: $x^2-8x+36=0$, $D<0$). Průsečíky nejsou.
 
 </details>
 
@@ -25344,6 +26068,24 @@ Pravidelný šestiúhelník a rovnostranný trojúhelník mají stejný obvod. J
 
 </details>
 
+### `czu-pef-2017-11` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 11)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 35. Stereometrie · *Текст:* текст оригинала (по курсу)
+
+Prodloužíme-li hranu krychle o 1 m, zvětší se její objem 125krát. Délka hrany původní krychle je:
+
+- **a)** 50 cm
+- **b)** 1,25 m
+- **c)** 0,25 m
+- **d)** 60 cm
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**c** — 0,25 m. $(a+1)^3=125a^3$, $a+1=5a$, $a=0{,}25$ m.
+
+</details>
+
 ### `vl-obec-024` — Vlastní úloha ve stylu přijímacích testů (č. 24)
 
 *Темы:* 35. Stereometrie · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -26032,6 +26774,24 @@ Atletický klub Pacov má 120 členů a organizoval 3 závody. Nikdo ze členů 
 <details><summary>Ответ и решение</summary>
 
 **c** — $48$. Dva závody jen 1. a 3.: $40$ lidí; jen jeden závod: $108-40=68$. Je-li $b$ účastníků 2. závodu: jen 1. $b-20$, jen 3. $b-32$, tedy $3b-52=68$, $b=40$; třetí závod $8+40=48$.
+
+</details>
+
+### `czu-pef-2017-16` — [PEF ČZU, přijímací řízení 2017/2018, Matematika 1 (úloha 16)](https://www.pef.czu.cz/dl/59145?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Nechť p, r jsou kladná reálná čísla, pro která platí $p>r$. Výraz $\sqrt{p-\sqrt{2pr-r^2}}\cdot\sqrt{p+\sqrt{2pr-r^2}}$ se dá upravit na tvar:
+
+- **a)** $p(1-r)$
+- **b)** $p-r$
+- **c)** $p+r$
+- **d)** $r-p$
+- **e)** žádná z uvedených odpovědí není správná
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $p-r$. $\sqrt{p^2-(2pr-r^2)}=\sqrt{(p-r)^2}=|p-r|=p-r$, neboť $p>r$.
 
 </details>
 

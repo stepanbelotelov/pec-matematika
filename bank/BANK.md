@@ -2,7 +2,7 @@
 
 Файл собирается скриптом `bank/build.py` из `tasks.json` и `sources.json`; вручную не редактировать.
 
-Всего задач: **1356** · базовый: 755 · стандартный: 528 · сложный: 73 · Vlastní Vlastní: 493 · VUT FSI: 198 · ČVUT FIT: 195 · VUT FAST: 99 · VUT FEKT: 86 · VŠB FBI: 78 · ČVUT FS: 71 · ČVUT FBMI: 40 · VŠB FAST: 35 · ČVUT FJFI: 24 · ČVUT FEL: 15 · ČVUT MÚVS: 10 · VŠCHT VŠCHT: 7 · TUL FP: 5
+Всего задач: **1428** · базовый: 827 · стандартный: 528 · сложный: 73 · Vlastní Vlastní: 493 · VUT FSI: 198 · ČVUT FIT: 195 · VUT FAST: 99 · VUT FEKT: 86 · VŠB FBI: 78 · ČZU TF: 72 · ČVUT FS: 71 · ČVUT FBMI: 40 · VŠB FAST: 35 · ČVUT FJFI: 24 · ČVUT FEL: 15 · ČVUT MÚVS: 10 · VŠCHT VŠCHT: 7 · TUL FP: 5
 
 ⚠ **0** задач пока записаны так, как они пересказаны в курсе, — их текст нужно заменить дословным оригиналом из PDF (пометка ⚠ в карточке). Ответы у всех задач проверены.
 
@@ -11,8 +11,8 @@
 | № | Тема | Ур. 1 | Ур. 2 | Ур. 3 | Всего |
 |---|---|---|---|---|---|
 | 1 | Množina. Podmnožina | 8 | 6 | 7 | 21 |
-| 2 | Mocnina. Odmocnina | 53 | 12 | 1 | 66 |
-| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 59 | 37 | 5 | 101 |
+| 2 | Mocnina. Odmocnina | 65 | 12 | 1 | 78 |
+| 3 | Rovnice (lineární, kvadratické, soustava rovnic) | 71 | 37 | 5 | 113 |
 | 4 | Rovnice s parametrem | 4 | 13 | 10 | 27 |
 | 5 | Rovnice s absolutní hodnotou | 7 | 13 |  | 20 |
 | 6 | Nerovnice. Soustava nerovnic | 36 | 10 | 2 | 48 |
@@ -20,10 +20,10 @@
 | 8 | Iracionální rovnice. Iracionální nerovnice | 23 | 13 |  | 36 |
 | 9 | Funkce (lineární, kvadratická, lomená). Grafy | 51 | 31 |  | 82 |
 | 10 | Exponenciální funkce | 6 | 4 |  | 10 |
-| 11 | Exponenciální rovnice a nerovnice | 33 | 23 | 2 | 58 |
-| 12 | Logaritmická funkce | 28 | 18 |  | 46 |
+| 11 | Exponenciální rovnice a nerovnice | 45 | 23 | 2 | 70 |
+| 12 | Logaritmická funkce | 40 | 18 |  | 58 |
 | 13 | Logaritmické rovnice a nerovnice | 10 | 30 | 3 | 43 |
-| 14 | Goniometrické funkce | 33 | 22 |  | 55 |
+| 14 | Goniometrické funkce | 45 | 22 |  | 67 |
 | 15 | Goniometrické rovnice a nerovnice | 15 | 36 | 3 | 54 |
 | 16 | Komplexní čísla | 37 | 8 |  | 45 |
 | 17 | Goniometrický tvar komplexního čísla. Moivreova věta | 1 | 5 | 1 | 7 |
@@ -37,7 +37,7 @@
 | 25 | Analytická geometrie. Vektory | 4 | 5 | 1 | 10 |
 | 26 | Parametrická rovnice přímky | 3 |  |  | 3 |
 | 27 | Obecná rovnice přímky | 23 | 13 | 3 | 39 |
-| 28 | Vzájemná poloha přímek | 12 | 4 |  | 16 |
+| 28 | Vzájemná poloha přímek | 24 | 4 |  | 28 |
 | 29 | Směrnicový a úsekový tvar rovnice přímky | 5 | 1 |  | 6 |
 | 30 | Kuželosečky. Kružnice | 20 | 12 | 2 | 34 |
 | 31 | Elipsa | 6 | 6 | 1 | 13 |
@@ -943,6 +943,198 @@ Výraz $\sqrt y\cdot\sqrt[3]{y^{-2}}\cdot\sqrt[6]{y^3}$ je pro $y>0$ roven
 
 </details>
 
+### `czu-tf-2019-v1-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{a^2\cdot\sqrt[5]{a}\cdot a^4}{a^2\cdot\sqrt{a}}$ dostaneme
+
+- **a)** $\sqrt[10]{a^{34}}$
+- **b)** $\sqrt[10]{a^{37}}$
+- **c)** $\sqrt[10]{a^{38}}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt[10]{a^{37}}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{37}{10}}=\sqrt[10]{a^{37}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v2-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{a^3\cdot a^5\cdot a^{-1}}{\sqrt[3]{a^2}\cdot\sqrt{a}}$ dostaneme
+
+- **a)** $\sqrt[6]{a^{35}}$
+- **b)** $\sqrt[6]{a^{37}}$
+- **c)** $\sqrt[3]{a^{35}}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\sqrt[6]{a^{35}}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{35}{6}}=\sqrt[6]{a^{35}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v3-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{a^{\frac{1}{2}}\cdot a^4\cdot\sqrt[3]{a}}{a^3\cdot\sqrt{a}}$ dostaneme
+
+- **a)** $\sqrt[3]{a^2}$
+- **b)** $\sqrt[3]{a^4}$
+- **c)** $\sqrt[4]{a^3}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt[3]{a^4}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{4}{3}}=\sqrt[3]{a^{4}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v4-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{\sqrt[4]{a^3}\cdot a^6\cdot\sqrt{a}}{a^2\cdot a^3}$ dostaneme
+
+- **a)** $\sqrt[9]{a^4}$
+- **b)** $\sqrt[4]{a^7}$
+- **c)** $\sqrt[4]{a^9}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\sqrt[4]{a^9}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{9}{4}}=\sqrt[4]{a^{9}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v5-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{a^7\cdot a\cdot\sqrt{a^3}}{\sqrt[3]{a^5}\cdot a^2}$ dostaneme
+
+- **a)** $\sqrt[6]{a^{33}}$
+- **b)** $\sqrt[6]{a^{37}}$
+- **c)** $\sqrt[6]{a^{35}}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\sqrt[6]{a^{35}}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{35}{6}}=\sqrt[6]{a^{35}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v6-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{\sqrt{a}\cdot\sqrt[3]{a}\cdot a^3}{a\cdot\sqrt{a^3}}$ dostaneme
+
+- **a)** $\sqrt[3]{a^4}$
+- **b)** $\sqrt[4]{a^3}$
+- **c)** $\sqrt[3]{a}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\sqrt[3]{a^4}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{4}{3}}=\sqrt[3]{a^{4}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v7-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{\sqrt[4]{a^3}\cdot a^7}{\sqrt{a}\cdot a^3\cdot\sqrt[4]{a}}$ dostaneme
+
+- **a)** $\sqrt[4]{a}$
+- **b)** $a^4$
+- **c)** $a^5$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $a^4$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{4}{1}}=\sqrt[1]{a^{4}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v8-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{a^2\cdot a^5\cdot\sqrt{a}}{\sqrt[3]{a^2}\cdot a^3}$ dostaneme
+
+- **a)** $\sqrt[6]{a^{23}}$
+- **b)** $\sqrt[3]{a^{23}}$
+- **c)** $\sqrt{a^6}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\sqrt[6]{a^{23}}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{23}{6}}=\sqrt[6]{a^{23}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v9-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{a^3\cdot\sqrt[3]{a^4}\cdot a^{-2}}{a^{-1}\cdot\sqrt{a^3}}$ dostaneme
+
+- **a)** $\sqrt[6]{a^{11}}$
+- **b)** $\sqrt[11]{a^6}$
+- **c)** $\sqrt[3]{a^{11}}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $\sqrt[6]{a^{11}}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{11}{6}}=\sqrt[6]{a^{11}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v10-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{\sqrt[3]{a^2}\cdot a^6\cdot a^2}{a^3\cdot\sqrt[3]{a}}$ dostaneme
+
+- **a)** $a^{\frac{16}{2}}$
+- **b)** $\sqrt[16]{a^3}$
+- **c)** $\sqrt[3]{a^{16}}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\sqrt[3]{a^{16}}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{16}{3}}=\sqrt[3]{a^{16}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v11-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{\sqrt{a}^3\cdot a^5\cdot a^{-2}}{\sqrt[3]{a}\cdot\sqrt{a}\cdot a^{-3}}$ dostaneme
+
+- **a)** $\sqrt{a^{20}}$
+- **b)** $\sqrt[3]{a^{20}}$
+- **c)** $\sqrt[3]{a^{10}}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt[3]{a^{20}}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{20}{3}}=\sqrt[3]{a^{20}}$ (pro $a>0$).
+
+</details>
+
+### `czu-tf-2019-v12-02` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 2)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 2. Mocnina. Odmocnina · *Текст:* текст оригинала (по курсу)
+
+Úpravou výrazu $\dfrac{a^{-2}\cdot a^3\cdot\sqrt[4]{a}}{\sqrt[3]{a}\cdot\sqrt{a}}$ dostaneme
+
+- **a)** $\sqrt[6]{a^5}$
+- **b)** $\sqrt[12]{a^5}$
+- **c)** $\sqrt[5]{a^{12}}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\sqrt[12]{a^5}$. Převedeme na mocniny $a$ a sečteme exponenty: v čitateli sčítáme, exponenty jmenovatele odečteme. Vyjde $a^{\frac{5}{12}}=\sqrt[12]{a^{5}}$ (pro $a>0$).
+
+</details>
+
 ### `vl-obec-009` — Vlastní úloha ve stylu přijímacích testů (č. 9)
 
 *Темы:* 2. Mocnina. Odmocnina · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -1803,6 +1995,198 @@ Je-li $x^3-(2x)^2=0;x\neq0$, pak $8x=$
 <details><summary>Ответ и решение</summary>
 
 **e** — $32$. $x^2(x-4)=0$, $x=4$.
+
+</details>
+
+### `czu-tf-2019-v1-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2-6x+5=0$ jsou
+
+- **a)** $x_1=-5,\ x_2=-1$
+- **b)** $x_1=1,\ x_2=5$
+- **c)** $x_1=-5,\ x_2=1$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x_1=1,\ x_2=5$. Diskriminant $D=16$, $x_{1,2}=\frac{6\pm4}{2}$, tedy $x_1=1$, $x_2=5$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v2-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2-5x-14=0$ jsou
+
+- **a)** $x_1=-7,\ x_2=-2$
+- **b)** $x_1=-7,\ x_2=2$
+- **c)** $x_1=7,\ x_2=-2$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x_1=7,\ x_2=-2$. Diskriminant $D=81$, $x_{1,2}=\frac{5\pm9}{2}$, tedy $x_1=-2$, $x_2=7$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v3-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2+3x-18=0$ jsou
+
+- **a)** $x_1=3,\ x_2=-6$
+- **b)** $x_1=-3,\ x_2=-6$
+- **c)** $x_1=-3,\ x_2=6$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x_1=3,\ x_2=-6$. Diskriminant $D=81$, $x_{1,2}=\frac{-3\pm9}{2}$, tedy $x_1=-6$, $x_2=3$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v4-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2-6x+8=0$ jsou
+
+- **a)** $x_1=-2,\ x_2=-4$
+- **b)** $x_1=2,\ x_2=4$
+- **c)** $x_1=-2,\ x_2=4$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x_1=2,\ x_2=4$. Diskriminant $D=4$, $x_{1,2}=\frac{6\pm2}{2}$, tedy $x_1=2$, $x_2=4$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v5-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2-2x-15=0$ jsou
+
+- **a)** $x_1=-3,\ x_2=5$
+- **b)** $x_1=3,\ x_2=-5$
+- **c)** $x_1=-3,\ x_2=-5$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x_1=-3,\ x_2=5$. Diskriminant $D=64$, $x_{1,2}=\frac{2\pm8}{2}$, tedy $x_1=-3$, $x_2=5$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v6-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2-4x-5=0$ jsou
+
+- **a)** $x_1=1,\ x_2=-5$
+- **b)** $x_1=-1,\ x_2=5$
+- **c)** $x_1=-1,\ x_2=-5$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x_1=-1,\ x_2=5$. Diskriminant $D=36$, $x_{1,2}=\frac{4\pm6}{2}$, tedy $x_1=-1$, $x_2=5$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v7-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2-9x+20=0$ jsou
+
+- **a)** $x_1=4,\ x_2=-5$
+- **b)** $x_1=-4,\ x_2=-5$
+- **c)** $x_1=4,\ x_2=5$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x_1=4,\ x_2=5$. Diskriminant $D=1$, $x_{1,2}=\frac{9\pm1}{2}$, tedy $x_1=4$, $x_2=5$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v8-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2-2x-24=0$ jsou
+
+- **a)** $x_1=6,\ x_2=-4$
+- **b)** $x_1=-6,\ x_2=-4$
+- **c)** $x_1=-6,\ x_2=4$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x_1=6,\ x_2=-4$. Diskriminant $D=100$, $x_{1,2}=\frac{2\pm10}{2}$, tedy $x_1=-4$, $x_2=6$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v9-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2-4x-21=0$ jsou
+
+- **a)** $x_1=3,\ x_2=7$
+- **b)** $x_1=-7,\ x_2=3$
+- **c)** $x_1=-3,\ x_2=7$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x_1=-3,\ x_2=7$. Diskriminant $D=100$, $x_{1,2}=\frac{4\pm10}{2}$, tedy $x_1=-3$, $x_2=7$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v10-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2+5x-6=0$ jsou
+
+- **a)** $x_1=1,\ x_2=-6$
+- **b)** $x_1=-1,\ x_2=-6$
+- **c)** $x_1=-1,\ x_2=6$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x_1=1,\ x_2=-6$. Diskriminant $D=49$, $x_{1,2}=\frac{-5\pm7}{2}$, tedy $x_1=-6$, $x_2=1$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v11-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2-x-6=0$ jsou
+
+- **a)** $x_1=2,\ x_2=-3$
+- **b)** $x_1=-2,\ x_2=3$
+- **c)** $x_1=2,\ x_2=3$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x_1=-2,\ x_2=3$. Diskriminant $D=25$, $x_{1,2}=\frac{1\pm5}{2}$, tedy $x_1=-2$, $x_2=3$ (pořadí kořenů nehraje roli).
+
+</details>
+
+### `czu-tf-2019-v12-01` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 1)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Kořeny kvadratické rovnice $x^2+3x-10=0$ jsou
+
+- **a)** $x_1=-5,\ x_2=2$
+- **b)** $x_1=5,\ x_2=-2$
+- **c)** $x_1=5,\ x_2=2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x_1=-5,\ x_2=2$. Diskriminant $D=49$, $x_{1,2}=\frac{-3\pm7}{2}$, tedy $x_1=-5$, $x_2=2$ (pořadí kořenů nehraje roli).
 
 </details>
 
@@ -4969,6 +5353,198 @@ Je-li $\left(\dfrac34\right)^{x-1}=0$, pak $x=$
 
 </details>
 
+### `czu-tf-2019-v1-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{3^x}{9^x}=\dfrac{27}{3^{2x}}$ je
+
+- **a)** $x=3$
+- **b)** $x=\frac{3}{2}$
+- **c)** $x=2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=3$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=3$.
+
+</details>
+
+### `czu-tf-2019-v2-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{4^{2x}}{8}=\dfrac{2^x}{4}$ je
+
+- **a)** $x=3$
+- **b)** $x=\frac{1}{3}$
+- **c)** $x=-1$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=\frac{1}{3}$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=\frac{1}{3}$.
+
+</details>
+
+### `czu-tf-2019-v3-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{4^{2x}}{2^{3x}}=\dfrac{16}{2^x}$ je
+
+- **a)** $x=-2$
+- **b)** $x=\frac{1}{2}$
+- **c)** $x=2$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x=2$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=2$.
+
+</details>
+
+### `czu-tf-2019-v4-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{4^x}{2^{3x}}=\dfrac{4^{2x}}{16}$ je
+
+- **a)** $x=\frac{4}{5}$
+- **b)** $x=\frac{5}{4}$
+- **c)** $x=1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=\frac{4}{5}$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=\frac{4}{5}$.
+
+</details>
+
+### `czu-tf-2019-v5-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{9^x}{3^{3x}}=\dfrac{3^x}{81}$ je
+
+- **a)** $x=-2$
+- **b)** $x=2$
+- **c)** $x=0$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=2$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=2$.
+
+</details>
+
+### `czu-tf-2019-v6-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{16^x}{4^{2x}}=\dfrac{64}{4^x}$ je
+
+- **a)** $x=2$
+- **b)** $x=3$
+- **c)** $x=4$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=3$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=3$.
+
+</details>
+
+### `czu-tf-2019-v7-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{2^{-x}}{8^x}=\dfrac{4}{2^{3x}}$ je
+
+- **a)** $x=-2$
+- **b)** $x=2$
+- **c)** $x=\frac{1}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=-2$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=-2$.
+
+</details>
+
+### `czu-tf-2019-v8-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{4^{-x}}{8}=\dfrac{2^{3x}}{4^{2x}}$ je
+
+- **a)** $x=-3$
+- **b)** $x=3$
+- **c)** $x=\frac{1}{3}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=-3$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=-3$.
+
+</details>
+
+### `czu-tf-2019-v9-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{27}{3^{-2x}}=\dfrac{9^x}{3^{4x}}$ je
+
+- **a)** $x=-3$
+- **b)** $x=-\frac{3}{4}$
+- **c)** $x=\frac{3}{4}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=-\frac{3}{4}$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=-\frac{3}{4}$.
+
+</details>
+
+### `czu-tf-2019-v10-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{1}{3^{3x}}=\dfrac{9^{-2x}}{27}$ je
+
+- **a)** $x=-3$
+- **b)** $x=3$
+- **c)** $x=-1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=-3$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=-3$.
+
+</details>
+
+### `czu-tf-2019-v11-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{16}{4^x}=\dfrac{2^{3x}}{8}$ je
+
+- **a)** $x=\frac{7}{5}$
+- **b)** $x=\frac{5}{7}$
+- **c)** $x=1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=\frac{7}{5}$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=\frac{7}{5}$.
+
+</details>
+
+### `czu-tf-2019-v12-06` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 6)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* текст оригинала (по курсу)
+
+Kořenem rovnice $\dfrac{2^{4x}}{4^{2x}}=\dfrac{16}{2^x}$ je
+
+- **a)** $x=4$
+- **b)** $x=-4$
+- **c)** $x=1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=4$. Obě strany převedeme na mocniny téhož základu a porovnáme exponenty; vyjde $x=4$.
+
+</details>
+
 ### `vl-nsz-094` — [Vlastní úloha ve stylu NSZ Matematika (č. 94)](https://www.scio.cz/matematika)
 
 *Темы:* 11. Exponenciální rovnice a nerovnice · *Текст:* собственная задача банка (тип задачи как в NSZ Matematika, свои числа и формулировка)
@@ -5422,6 +5998,198 @@ Která z funkcí je klesající?
 <details><summary>Ответ и решение</summary>
 
 **b** — $f(x)=\log_{\frac23}x$. Logaritmus o základu $0<a<1$ je klesající; $-\log_{\frac23}x$, $\log_2x$ i $e^{2x}$ jsou rostoucí.
+
+</details>
+
+### `czu-tf-2019-v1-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{2} 16=x$
+
+- **a)** $x=\frac{1}{4}$
+- **b)** $x=8$
+- **c)** $x=4$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x=4$. $\log_{2} 16=4$, protože $2^{4}=16$.
+
+</details>
+
+### `czu-tf-2019-v2-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{5} 25=x$
+
+- **a)** $x=2$
+- **b)** $x=5$
+- **c)** $x=\frac{1}{5}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=2$. $\log_{5} 25=2$, protože $5^{2}=25$.
+
+</details>
+
+### `czu-tf-2019-v3-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{2} 8=x$
+
+- **a)** $x=3$
+- **b)** $x=4$
+- **c)** $x=\frac{1}{4}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=3$. $\log_{2} 8=3$, protože $2^{3}=8$.
+
+</details>
+
+### `czu-tf-2019-v4-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{4} 1=x$
+
+- **a)** $x=0$
+- **b)** $x=4$
+- **c)** $x=1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=0$. $\log_{4} 1=0$, protože $4^{0}=1$.
+
+</details>
+
+### `czu-tf-2019-v5-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{6} 36=x$
+
+- **a)** $x=6$
+- **b)** $x=3$
+- **c)** $x=2$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x=2$. $\log_{6} 36=2$, protože $6^{2}=36$.
+
+</details>
+
+### `czu-tf-2019-v6-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{3} 27=x$
+
+- **a)** $x=9$
+- **b)** $x=3$
+- **c)** $x=-3$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $x=3$. $\log_{3} 27=3$, protože $3^{3}=27$.
+
+</details>
+
+### `czu-tf-2019-v7-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{4} 64=x$
+
+- **a)** $x=12$
+- **b)** $x=16$
+- **c)** $x=3$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x=3$. $\log_{4} 64=3$, protože $4^{3}=64$.
+
+</details>
+
+### `czu-tf-2019-v8-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{3} 81=x$
+
+- **a)** $x=9$
+- **b)** $x=3$
+- **c)** $x=4$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x=4$. $\log_{3} 81=4$, protože $3^{4}=81$.
+
+</details>
+
+### `czu-tf-2019-v9-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{10} 100=x$
+
+- **a)** $x=100$
+- **b)** $x=10$
+- **c)** $x=2$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $x=2$. $\log_{10} 100=2$, protože $10^{2}=100$.
+
+</details>
+
+### `czu-tf-2019-v10-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{\frac{1}{3}} 3=x$
+
+- **a)** $x=-1$
+- **b)** $x=3$
+- **c)** $x=1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=-1$. $\log_{\frac{1}{3}} 3=-1$, protože $\left(\frac{1}{3}\right)^{-1}=3$.
+
+</details>
+
+### `czu-tf-2019-v11-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{\sqrt{2}} 2=x$
+
+- **a)** $x=2$
+- **b)** $x=\frac{1}{2}$
+- **c)** $x=\sqrt{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=2$. $\log_{\sqrt{2}} 2=2$, protože $\left(\sqrt{2}\right)^{2}=2$.
+
+</details>
+
+### `czu-tf-2019-v12-03` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 3)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 12. Logaritmická funkce · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte $x$: $\log_{5} 1=x$
+
+- **a)** $x=0$
+- **b)** $x=5$
+- **c)** $x=1$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $x=0$. $\log_{5} 1=0$, protože $5^{0}=1$.
 
 </details>
 
@@ -6121,6 +6889,198 @@ Nejmenší perioda funkce $y=\operatorname{tg}2x$ je
 <details><summary>Ответ и решение</summary>
 
 **d** — $\dfrac\pi2$
+
+</details>
+
+### `czu-tf-2019-v1-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\cos(-\frac{\pi}{6})$ je
+
+- **a)** $-\frac{1}{2}$
+- **b)** $\frac{\sqrt{3}}{2}$
+- **c)** $-\frac{\sqrt{3}}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\frac{\sqrt{3}}{2}$. Z jednotkové kružnice, kosinus je sudá funkce: $\cos(-\frac{\pi}{6})=\frac{\sqrt{3}}{2}$.
+
+</details>
+
+### `czu-tf-2019-v2-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\sin(\frac{\pi}{4})$ je
+
+- **a)** $-\frac{\sqrt{3}}{2}$
+- **b)** $-\frac{\sqrt{2}}{2}$
+- **c)** $\frac{\sqrt{2}}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\frac{\sqrt{2}}{2}$. Z jednotkové kružnice: $\sin(\frac{\pi}{4})=\frac{\sqrt{2}}{2}$.
+
+</details>
+
+### `czu-tf-2019-v3-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\cos(\frac{3\pi}{4})$ je
+
+- **a)** $-\frac{\sqrt{3}}{2}$
+- **b)** $-\frac{\sqrt{2}}{2}$
+- **c)** $\frac{\sqrt{2}}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $-\frac{\sqrt{2}}{2}$. Z jednotkové kružnice: $\cos(\frac{3\pi}{4})=-\frac{\sqrt{2}}{2}$.
+
+</details>
+
+### `czu-tf-2019-v4-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\sin(\frac{5\pi}{6})$ je
+
+- **a)** $-\frac{\sqrt{3}}{2}$
+- **b)** $-\frac{\sqrt{2}}{2}$
+- **c)** $\frac{1}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\frac{1}{2}$. Z jednotkové kružnice: $\sin(\frac{5\pi}{6})=\frac{1}{2}$.
+
+</details>
+
+### `czu-tf-2019-v5-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\cos(\frac{5\pi}{6})$ je
+
+- **a)** $-\frac{\sqrt{3}}{2}$
+- **b)** $\frac{\sqrt{3}}{2}$
+- **c)** $-\frac{1}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $-\frac{\sqrt{3}}{2}$. Z jednotkové kružnice: $\cos(\frac{5\pi}{6})=-\frac{\sqrt{3}}{2}$.
+
+</details>
+
+### `czu-tf-2019-v6-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\sin(\frac{2\pi}{3})$ je
+
+- **a)** $-\frac{\sqrt{3}}{2}$
+- **b)** $\frac{1}{2}$
+- **c)** $\frac{\sqrt{3}}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $\frac{\sqrt{3}}{2}$. Z jednotkové kružnice: $\sin(\frac{2\pi}{3})=\frac{\sqrt{3}}{2}$.
+
+</details>
+
+### `czu-tf-2019-v7-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\cos(-\frac{\pi}{3})$ je
+
+- **a)** $-\frac{\sqrt{3}}{2}$
+- **b)** $\frac{1}{2}$
+- **c)** $-\frac{1}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $\frac{1}{2}$. Z jednotkové kružnice, kosinus je sudá funkce: $\cos(-\frac{\pi}{3})=\frac{1}{2}$.
+
+</details>
+
+### `czu-tf-2019-v8-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\sin(-\frac{\pi}{2})$ je
+
+- **a)** $0$
+- **b)** $-1$
+- **c)** $1$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $-1$. Z jednotkové kružnice, sinus je lichá funkce: $\sin(-\frac{\pi}{2})=-1$.
+
+</details>
+
+### `czu-tf-2019-v9-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\cos(2\pi)$ je
+
+- **a)** $1$
+- **b)** $-1$
+- **c)** $2$
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $1$. Z jednotkové kružnice: $\cos(2\pi)=1$.
+
+</details>
+
+### `czu-tf-2019-v10-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\sin(-\pi)$ je
+
+- **a)** $1$
+- **b)** $-1$
+- **c)** $0$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $0$. Z jednotkové kružnice, sinus je lichá funkce: $\sin(-\pi)=0$.
+
+</details>
+
+### `czu-tf-2019-v11-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\cos(\frac{2\pi}{3})$ je
+
+- **a)** $\frac{1}{2}$
+- **b)** $-\frac{\sqrt{3}}{2}$
+- **c)** $-\frac{1}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**c** — $-\frac{1}{2}$. Z jednotkové kružnice: $\cos(\frac{2\pi}{3})=-\frac{1}{2}$.
+
+</details>
+
+### `czu-tf-2019-v12-04` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 4)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 14. Goniometrické funkce · *Текст:* текст оригинала (по курсу)
+
+Hodnota $\sin(-\frac{2\pi}{3})$ je
+
+- **a)** $\frac{\sqrt{3}}{2}$
+- **b)** $-\frac{\sqrt{3}}{2}$
+- **c)** $-\frac{1}{2}$
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $-\frac{\sqrt{3}}{2}$. Z jednotkové kružnice, sinus je lichá funkce: $\sin(-\frac{2\pi}{3})=-\frac{\sqrt{3}}{2}$.
 
 </details>
 
@@ -9274,6 +10234,198 @@ Přímky o rovnicích $p:2x-5y+13=0$; $q:2x+5y+13=0$ mají společné právě:
 <details><summary>Ответ и решение</summary>
 
 **b** — jeden bod. Normály nejsou rovnoběžné.
+
+</details>
+
+### `czu-tf-2019-v1-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta I (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $2x+5y-1=0$ a $-4x-3y+9=0$.
+
+- **a)** $P=[-1,3]$
+- **b)** $P=[3,-1]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $P=[3,-1]$. Řešíme soustavu obou rovnic (sčítací metodou): $x=3$, $y=-1$, tedy $P=[3,-1]$.
+
+</details>
+
+### `czu-tf-2019-v2-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta II (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $x-2y-2=0$ a $-4x+8y-3=0$.
+
+- **a)** $P=[1,-2]$
+- **b)** $P=[-4,1]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**c** — přímky se neprotínají. Normálové vektory jsou rovnoběžné a rovnice nejsou násobky jedna druhé, přímky jsou tedy rovnoběžné různé — průsečík neexistuje.
+
+</details>
+
+### `czu-tf-2019-v3-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta III (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $5x-4y-18=0$ a $-3x-2y+2=0$.
+
+- **a)** $P=[-2,2]$
+- **b)** $P=[2,-2]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $P=[2,-2]$. Řešíme soustavu obou rovnic (sčítací metodou): $x=2$, $y=-2$, tedy $P=[2,-2]$.
+
+</details>
+
+### `czu-tf-2019-v4-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IV (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $-x+2y-7=0$ a $3x-5y+19=0$.
+
+- **a)** $P=[-3,2]$
+- **b)** $P=[2,-3]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $P=[-3,2]$. Řešíme soustavu obou rovnic (sčítací metodou): $x=-3$, $y=2$, tedy $P=[-3,2]$.
+
+</details>
+
+### `czu-tf-2019-v5-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta V (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $4x+2y+6=0$ a $-3x-5y-22=0$.
+
+- **a)** $P=[1,-5]$
+- **b)** $P=[-5,1]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $P=[1,-5]$. Řešíme soustavu obou rovnic (sčítací metodou): $x=1$, $y=-5$, tedy $P=[1,-5]$.
+
+</details>
+
+### `czu-tf-2019-v6-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VI (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $-6x+2y-5=0$ a $3x-y+1=0$.
+
+- **a)** $P=[3,-2]$
+- **b)** $P=[-2,1]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**c** — přímky se neprotínají. Normálové vektory jsou rovnoběžné a rovnice nejsou násobky jedna druhé, přímky jsou tedy rovnoběžné různé — průsečík neexistuje.
+
+</details>
+
+### `czu-tf-2019-v7-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VII (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $-2x-5y+3=0$ a $3x+2y-10=0$.
+
+- **a)** $P=[-1,4]$
+- **b)** $P=[4,-1]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $P=[4,-1]$. Řešíme soustavu obou rovnic (sčítací metodou): $x=4$, $y=-1$, tedy $P=[4,-1]$.
+
+</details>
+
+### `czu-tf-2019-v8-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta VIII (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $2x-3y+1=0$ a $-3x+4y=0$.
+
+- **a)** $P=[4,3]$
+- **b)** $P=[3,4]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $P=[4,3]$. Řešíme soustavu obou rovnic (sčítací metodou): $x=4$, $y=3$, tedy $P=[4,3]$.
+
+</details>
+
+### `czu-tf-2019-v9-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta IX (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $2x+5y-1=0$ a $-4x-10y+3=0$.
+
+- **a)** $P=[1,-2]$
+- **b)** $P=[-2,1]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**c** — přímky se neprotínají. Normálové vektory jsou rovnoběžné a rovnice nejsou násobky jedna druhé, přímky jsou tedy rovnoběžné různé — průsečík neexistuje.
+
+</details>
+
+### `czu-tf-2019-v10-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta X (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $3x-5y+2=0$ a $-4x+y+3=0$.
+
+- **a)** $P=[1,1]$
+- **b)** $P=[-1,-1]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $P=[1,1]$. Řešíme soustavu obou rovnic (sčítací metodou): $x=1$, $y=1$, tedy $P=[1,1]$.
+
+</details>
+
+### `czu-tf-2019-v11-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XI (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $2x+4y-2=0$ a $-3x-5y+5=0$.
+
+- **a)** $P=[-2,5]$
+- **b)** $P=[5,-2]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**b** — $P=[5,-2]$. Řešíme soustavu obou rovnic (sčítací metodou): $x=5$, $y=-2$, tedy $P=[5,-2]$.
+
+</details>
+
+### `czu-tf-2019-v12-05` — [TF ČZU, písemná zkouška z matematiky 2019, varianta XII (úloha 5)](https://www.tf.czu.cz/dl/79632?lang=cs)
+
+*Темы:* 28. Vzájemná poloha přímek, 3. Rovnice (lineární, kvadratické, soustava rovnic) · *Текст:* текст оригинала (по курсу)
+
+Vypočtěte průsečík přímek $3x-2y-7=0$ a $-2x+5y+12=0$.
+
+- **a)** $P=[1,-2]$
+- **b)** $P=[-2,1]$
+- **c)** přímky se neprotínají
+
+<details><summary>Ответ и решение</summary>
+
+**a** — $P=[1,-2]$. Řešíme soustavu obou rovnic (sčítací metodou): $x=1$, $y=-2$, tedy $P=[1,-2]$.
 
 </details>
 

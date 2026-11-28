@@ -838,6 +838,10 @@ body.line-cvut { --faint: #7A8FA4 }
 .line-vse .verdict.mid, .line-vse .verdict.mid b { color: color-mix(in srgb, var(--gold) 55%, var(--fg)) }
 .line-vse .verdict.low, .line-vse .verdict.low b { color: color-mix(in srgb, var(--bad) 80%, var(--fg)) }
 .pb-more { justify-content: center }
+/* таблица в условии (array с \hline и |): Chromium не рисует rowlines/columnlines MathML — рамки через CSS */
+.m:has(mtable[rowlines^="solid"][columnlines^="solid"]:not([rowlines*="none"]):not([columnlines*="none"])) { display: block; margin: .5em 0; overflow-x: auto }
+mtable[rowlines^="solid"][columnlines^="solid"]:not([rowlines*="none"]):not([columnlines*="none"]) { border-collapse: collapse }
+mtable[rowlines^="solid"][columnlines^="solid"]:not([rowlines*="none"]):not([columnlines*="none"]) mtd { border: 1px solid currentColor; padding: .2em .5em }
 .pb-task:focus { outline: none }
 .pb-task:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px }
 .pb-res:focus { outline: none }
@@ -1557,7 +1561,7 @@ const pbOpen = () => PB.all || [];
 // пройденные темы от текущей вниз, затем темы впереди по порядку, Ostatní в конце
 const pbRank = (t) => (!t.n ? 1000 : t.n <= latest.n ? latest.n - t.n : 100 + t.n);
 const pbAhead = (t) => t.n > latest.n;
-const PB_FAC_ORDER = ["FIT", "FEL", "FJFI", "FBMI", "FSv", "FS", "FD", "MÚVS", "FEKT", "FSI", "FAST", "FBI", "VŠCHT", "FP", "FMV", "FIS", "KMAT"];
+const PB_FAC_ORDER = ["FIT", "FEL", "FJFI", "FBMI", "FSv", "FS", "FD", "MÚVS", "FEKT", "FSI", "FAST", "FBI", "VŠCHT", "FP", "TF", "FMV", "FIS", "KMAT", "PEF"];
 // фильтр по факультету идёт по ключу «факультет вуз» (fk): FAST VUT и FAST VŠB — разные кнопки
 const pbFacRank = (k) => PB_FAC_ORDER.indexOf(k.split(" ")[0]) + 1 || 99;
 const pbFacs = (ts) => [...new Set(ts.map((t) => t.fk))].sort((a, b) => pbFacRank(a) - pbFacRank(b) || a.localeCompare(b, "cs"));
