@@ -48,6 +48,108 @@
   }
 
   /* ---------- кнопка «Ошибка?» ---------- */
+  /* ---------- «Что нового» ---------- */
+  // Новости — в assets/news.json (правится вручную, gen.py его не трогает):
+  //   {"date": "2026-11-28", "line": "all" | "VŠE" | "ČVUT", "title": "…", "text": "…", "link": "#banka"}
+  // На главной линии — карточка с тремя последними новостями, «Все новости» открывают окно #novinky.
+  if (LINE && typeof openSheet === "function" && typeof go === "function") (function () {
+    var SEEN = "pec-news-seen-" + LINE, NEW_DAYS = 7;
+    var newsCss = document.createElement("style");
+    newsCss.textContent =
+      ".pec-news{grid-column:1/-1;display:grid;gap:12px}" +
+      ".line-cvut .pec-news{margin-top:18px;padding:18px 24px}" +
+      ".pec-news-h{display:flex;gap:10px;align-items:center;flex-wrap:wrap}" +
+      ".pec-news-badge{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--accent-bg);color:var(--fg)}" +
+      ".line-cvut .pec-news-badge{border-radius:0;font-family:var(--f-mono);border:1px solid var(--accent)}" +
+      ".pec-news-list{list-style:none;margin:0;padding:0;display:grid;gap:2px}" +
+      ".pec-news-it{display:flex;gap:12px;align-items:baseline;padding:8px 0;color:var(--fg);text-decoration:none;border-top:1px solid var(--line);min-height:40px;box-sizing:border-box}" +
+      ".pec-news-list li:first-child .pec-news-it{border-top:0}" +
+      "a.pec-news-it:hover .pec-news-t{text-decoration:underline;text-underline-offset:3px}" +
+      "a.pec-news-it:focus-visible{outline:3px solid var(--gold,#E0C15A);outline-offset:2px}" +
+      ".pec-news-it time{flex:none;min-width:84px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}" +
+      ".line-cvut .pec-news-it time{font-family:var(--f-mono);font-size:12px}" +
+      ".pec-news-t{font-weight:600;min-width:0}" +
+      ".pec-news-dot{flex:none;margin-left:auto;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}" +
+      ".line-vse .pec-news-dot{color:color-mix(in srgb,var(--accent) 78%,var(--fg))}" +
+      ".pec-news>.chip{justify-self:start}" +
+      ".pec-news-full{display:grid;gap:12px}" +
+      ".pec-news-item{display:grid;gap:6px;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}" +
+      ".line-cvut .pec-news-item{border-radius:0}" +
+      ".pec-news-item.is-new{border-color:var(--accent)}" +
+      ".pec-news-item h4{margin:0;font-size:16px}" +
+      ".pec-news-item p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}" +
+      ".pec-news-item .chip{justify-self:start}" +
+      ".pec-news-meta{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--muted)}" +
+      "@media (max-width:560px){.pec-news-list li:nth-child(n+3){display:none}.pec-news-it{flex-wrap:wrap;gap:2px 10px}.pec-news-it time{min-width:0}.pec-news-t{flex-basis:100%}.pec-news-dot{margin-left:0;order:-1}}";
+    document.head.appendChild(newsCss);
+    var items = [], card = null;
+    var seen = null; try { seen = localStorage.getItem(SEEN); } catch (e) {}
+    if (!seen) seen = new Date(Date.now() - NEW_DAYS * 864e5).toISOString().slice(0, 10); // первый визит: новые — за последнюю неделю
+    var isNew = function (n) { return n.date > seen; };
+    var markSeen = function () { if (!items.length) return; seen = items[0].date; try { localStorage.setItem(SEEN, seen); } catch (e) {} draw(); };
+    var fmt = function (d) { var p = d.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]).toLocaleDateString("ru-RU", { day: "numeric", month: "long" }); };
+    var mk = function (tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+    var nNew = function () { return items.filter(isNew).length; };
+    var badge = function (n) { return n + " " + (n % 10 === 1 && n % 100 !== 11 ? "новая" : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? "новые" : "новых"); };
+    var follow = function (link) { if (link && /^#[\w-]+$/.test(link)) go(link.slice(1)); };
+
+    function draw() {
+      if (!items.length) return;
+      var host = $("bento"); if (!host) return;
+      if (!card) {
+        card = mk("section", "pec-news " + (typeof IS_CVUT !== "undefined" && IS_CVUT ? "hud" : "tile"));
+        card.setAttribute("aria-labelledby", "pec-news-h");
+      }
+      // место: под карточкой следующей темы, иначе под темой недели
+      var after = $("nextcard") || $("week");
+      if (after && after.parentNode === host) { if (after.nextSibling !== card) after.after(card); } else if (card.parentNode !== host) host.prepend(card);
+      card.replaceChildren();
+      var h = mk("div", "pec-news-h"); var lb = mk("span", "lbl", "Что нового"); lb.id = "pec-news-h"; h.append(lb);
+      var k = nNew(); if (k) h.append(mk("span", "pec-news-badge", badge(k)));
+      var ul = mk("ul", "pec-news-list");
+      items.slice(0, 3).forEach(function (n) {
+        var li = mk("li", isNew(n) ? "is-new" : "");
+        var a = mk(n.link ? "a" : "span", "pec-news-it");
+        if (n.link) { a.href = n.link; a.dataset.go = n.link.slice(1); a.addEventListener("click", function (e) { e.preventDefault(); follow(n.link); }); }
+        var t = mk("time", null, fmt(n.date)); t.dateTime = n.date;
+        a.append(t, mk("span", "pec-news-t", n.title));
+        if (isNew(n)) a.append(mk("span", "pec-news-dot", "новое"));
+        li.append(a); ul.append(li);
+      });
+      // data-go: после закрытия окна страница возвращает фокус на кнопку с той же целью (карточка к этому времени перерисована)
+      var all = mk("button", "chip", items.length > 3 ? "Все новости (" + items.length + ")" : "Все новости"); all.type = "button"; all.dataset.go = "novinky";
+      all.addEventListener("click", function () { go("novinky"); });
+      card.append(h, ul, all);
+    }
+
+    function showNews() {
+      if (!items.length) return;
+      openSheet("Новости курса · " + LINE, "Что нового");
+      var body = $("sbody"), list = mk("div", "pec-news-full");
+      items.forEach(function (n) {
+        var it = mk("article", "pec-news-item" + (isNew(n) ? " is-new" : ""));
+        var top = mk("div", "pec-news-meta"); var t = mk("time", null, fmt(n.date)); t.dateTime = n.date; top.append(t);
+        if (isNew(n)) top.append(mk("span", "pec-news-dot", "новое"));
+        it.append(top, mk("h4", null, n.title));
+        if (n.text) it.append(mk("p", null, n.text));
+        if (n.link) { var b = mk("button", "chip", "Открыть"); b.type = "button"; b.addEventListener("click", function () { follow(n.link); }); it.append(b); }
+        list.append(it);
+      });
+      body.append(list);
+      markSeen(); // всё в окне увидено: отметки «новое» в окне остаются до закрытия, на главной — пропадают
+    }
+
+    window.addEventListener("hashchange", function () { if (location.hash === "#novinky") showNews(); });
+    fetch((LINE ? "../" : "") + "assets/news.json").then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) {
+      items = (Array.isArray(d) ? d : []).filter(function (n) { return n && n.date && n.title && (!n.line || n.line === "all" || n.line === LINE); })
+        .sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+      draw();
+      if (location.hash === "#novinky") showNews();
+    }).catch(function () {});
+    // главная перерисовывает плитку недели и отсчёт — держим карточку под ними
+    if (window.MutationObserver && $("bento")) new MutationObserver(function () { if (card && items.length && ($("nextcard") || $("week")) && (($("nextcard") || $("week")).nextSibling !== card)) draw(); }).observe($("bento"), { childList: true });
+  })();
+
   if (!LINE || !CONFIG.feedback) return;
 
   function feedbackUrl(where) {
